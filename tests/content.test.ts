@@ -30,6 +30,11 @@ describe('precedents timeline', () => {
     expect(EVENTS[0].date).toBe('1993')
     expect(EVENTS[EVENTS.length - 1].date).toBe('2026-07-09')
   })
+
+  it('dates are unique (each event is deep-linkable as #tl-<date>)', () => {
+    const dates = EVENTS.map((e) => e.date)
+    expect(new Set(dates).size).toBe(dates.length)
+  })
 })
 
 describe('embedded brand icons', () => {

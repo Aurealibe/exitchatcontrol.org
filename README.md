@@ -1,5 +1,8 @@
 # exitchatcontrol
 
+[![ci](https://github.com/Aurealibe/exitchatcontrol/actions/workflows/ci.yml/badge.svg)](https://github.com/Aurealibe/exitchatcontrol/actions/workflows/ci.yml)
+[![link-rot](https://github.com/Aurealibe/exitchatcontrol/actions/workflows/link-rot.yml/badge.svg)](https://github.com/Aurealibe/exitchatcontrol/actions/workflows/link-rot.yml)
+
 Guide bilingue (FR / EN) pour échapper à **Chat Control** et reprendre sa souveraineté
 numérique : messagerie chiffrée, e-mail, VPN, DNS, 2FA, Linux, GrapheneOS,
 auto-hébergement. Chaque outil : « à quoi ça sert », « pourquoi », « pour qui »,

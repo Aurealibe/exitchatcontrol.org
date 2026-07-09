@@ -59,8 +59,8 @@ export function Footer() {
         </p>
         <small>
           <T
-            fr="Ce guide est un document d'information sur la protection de la vie privée et la défense du chiffrement. Il ne conseille aucune activité illégale. Vérifiez toujours l'actualité législative : la situation évolue vite. Dernière mise à jour des faits : 9 juillet 2026."
-            en="This guide is an information document on privacy protection and the defence of encryption. It advises no illegal activity. Always check the legislative news: the situation moves fast. Facts last updated: 9 July 2026."
+            fr="Ce guide est un document d'information sur la protection de la vie privée et la défense du chiffrement. Il ne conseille aucune activité illégale. Vérifiez toujours l'actualité législative : la situation évolue vite. Dernière mise à jour des faits : 10 juillet 2026."
+            en="This guide is an information document on privacy protection and the defence of encryption. It advises no illegal activity. Always check the legislative news: the situation moves fast. Facts last updated: 10 July 2026."
           />
         </small>
       </div>

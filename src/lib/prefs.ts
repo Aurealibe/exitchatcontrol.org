@@ -75,6 +75,11 @@ export function toggleTheme() {
   }
   const next = cur === 'dark' ? 'light' : 'dark'
   root.setAttribute('data-theme', next)
+  // keep the browser chrome (URL bar / titlebar) in sync with the FORCED
+  // theme — the two media-scoped meta tags only track the system scheme
+  document.querySelectorAll('meta[name="theme-color"]').forEach((m) => {
+    m.setAttribute('content', next === 'dark' ? '#111318' : '#efece3')
+  })
   try {
     localStorage.setItem('theme', next)
   } catch {

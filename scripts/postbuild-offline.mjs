@@ -54,6 +54,10 @@ const vanilla = `
       el.addEventListener('click', function () { fn(el) })
     })
   }
+  /* React's inline handlers are gone in this file — neutralize nothing else. */
+  function pressed(sel, isOn) {
+    document.querySelectorAll(sel).forEach(function (el) { el.setAttribute('aria-pressed', String(isOn(el))) })
+  }
   on('.lang-fr', function () { setLang('fr') })
   on('.lang-en', function () { setLang('en') })
   function setLang(l) {
@@ -62,6 +66,8 @@ const vanilla = `
     document.title = l === 'en'
       ? 'Becoming Ungovernable — Escape Chat Control'
       : 'Devenir Ingouvernable — Échapper à Chat Control'
+    pressed('.lang-fr', function () { return l === 'fr' })
+    pressed('.lang-en', function () { return l === 'en' })
     try { localStorage.setItem('lang', l) } catch (e) {}
   }
   on('.controls .btn:not(.lang-fr):not(.lang-en)', function () {
@@ -69,13 +75,38 @@ const vanilla = `
     if (!cur) cur = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
     var next = cur === 'dark' ? 'light' : 'dark'
     root.setAttribute('data-theme', next)
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+      m.setAttribute('content', next === 'dark' ? '#111318' : '#efece3')
+    })
     try { localStorage.setItem('theme', next) } catch (e) {}
   })
-  function filt(f) { if (f) root.setAttribute('data-filter', f); else root.removeAttribute('data-filter') }
+  function filt(f) {
+    if (f) root.setAttribute('data-filter', f); else root.removeAttribute('data-filter')
+    pressed('.fb-all', function () { return f === null })
+    pressed('.fb-b', function () { return f === 'b' })
+    pressed('.fb-i', function () { return f === 'i' })
+    pressed('.fb-a', function () { return f === 'a' })
+  }
   on('.fb-all', function () { filt(null) })
   on('.fb-b', function () { filt('b') })
   on('.fb-i', function () { filt('i') })
   on('.fb-a', function () { filt('a') })
+  var CANON = 'https://exitchatcontrol.org/'
+  function copyLink(btn) {
+    try {
+      navigator.clipboard.writeText(CANON).then(function () {
+        var old = btn.textContent
+        btn.textContent = '✓ ok'
+        setTimeout(function () { btn.textContent = old }, 2500)
+      })
+    } catch (e) { prompt('URL :', CANON) }
+  }
+  on('.share-native', function (el) {
+    if (navigator.share) navigator.share({ title: document.title, url: CANON }).catch(function () {})
+    else copyLink(el)
+  })
+  on('.share-copy', function (el) { copyLink(el) })
+  on('.share-print', function () { window.print() })
   var KEY = 'ecc-checklist', done = {}
   try { done = JSON.parse(localStorage.getItem(KEY) || '{}') } catch (e) {}
   document.querySelectorAll('.check input[data-id]').forEach(function (box) {

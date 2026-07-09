@@ -1,0 +1,20 @@
+name: link-rot
+
+# The guide's credibility rests on its primary sources staying reachable —
+# and chronicle sites decay (EFF's own NSA archive stopped updating in 2016).
+# Weekly HTTP check of every cited source; opens the log for triage.
+# No ${{ github.event.* }} interpolation anywhere (injection-safe).
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/check-links.mjs

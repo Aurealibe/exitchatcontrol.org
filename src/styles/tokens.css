@@ -213,6 +213,8 @@ section { margin-block: clamp(3rem, 7vw, 5rem); scroll-margin-top: 4rem; }
 [id] { scroll-margin-top: 4rem; }
 .part-head { border-top: 2px solid var(--text); padding-top: 1rem; margin-bottom: 2rem; }
 .part-head .num { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--accent); }
+.sec-anchor { margin-left: 0.6ch; text-decoration: none; color: var(--rule-strong); }
+.sec-anchor:hover { color: var(--accent); }
 .part-head h2 { font-size: clamp(1.7rem, 4vw, 2.5rem); text-transform: uppercase; margin: 0.4rem 0 0; }
 .part-head p { color: var(--text-dim); margin: 0.7rem 0 0; font-size: 1.02rem; }
 h3 { font-size: clamp(1.2rem, 2.4vw, 1.5rem); margin: 2.4rem 0 0.3rem; letter-spacing: -0.01em; }
@@ -390,7 +392,13 @@ blockquote.pull {
   width: 10px; height: 10px; border-radius: 50%;
   background: var(--bg); border: 2px solid var(--tlc, var(--accent));
 }
-.tl-date { font-family: var(--mono); font-weight: 700; font-size: 0.86rem; color: var(--text-dim); text-align: right; padding-top: 0.28rem; font-variant-numeric: tabular-nums; }
+.tl-date {
+  font-family: var(--mono); font-weight: 700; font-size: 0.86rem; color: var(--text-dim);
+  text-align: right; padding-top: 0.28rem; font-variant-numeric: tabular-nums;
+  text-decoration: none;
+}
+a.tl-date:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.tl-item:target { background: color-mix(in srgb, var(--accent) 7%, transparent); border-radius: var(--radius); }
 .tl-body { font-size: 0.95rem; line-height: 1.55; }
 .tl-body p { margin: 0.15rem 0 0; }
 .tl-title { font-family: var(--mono); font-weight: 700; font-size: 0.92rem; color: var(--text); }
@@ -463,6 +471,45 @@ a.cite {
   text-decoration: none; color: var(--accent); padding: 0 0.15em;
 }
 a.cite:hover { color: var(--accent-bright); text-decoration: underline; }
+
+/* ─── share row (campaign CTA · no third-party widget) ─── */
+.share-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.6rem 0 0.4rem; }
+.share-btn {
+  font-family: var(--mono); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.03em;
+  cursor: pointer; border-radius: var(--radius); padding: 0.6rem 1rem; line-height: 1;
+  min-height: 44px; touch-action: manipulation;
+  background: var(--accent); color: var(--on-accent); border: 1px solid var(--accent);
+}
+.share-btn:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
+.share-btn.share-copy, .share-btn.share-print {
+  background: transparent; color: var(--text); border-color: var(--rule-strong);
+}
+.share-btn.share-copy:hover, .share-btn.share-print:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ─── back to top (scroll-driven reveal · CSS only · fallback: visible) ─── */
+.to-top {
+  position: fixed; z-index: 40;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  display: grid; place-items: center; width: 2.6rem; height: 2.6rem;
+  font-family: var(--mono); font-weight: 700; font-size: 1rem; text-decoration: none;
+  background: var(--surface); color: var(--text-dim);
+  border: 1px solid var(--rule-strong); border-radius: 50%;
+}
+.to-top:hover { color: var(--accent); border-color: var(--accent); }
+@supports (animation-timeline: scroll()) {
+  .to-top {
+    animation: to-top-reveal linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100vh;
+  }
+  @keyframes to-top-reveal {
+    from { opacity: 0; visibility: hidden; }
+    1% { opacity: 0; visibility: visible; }
+    to { opacity: 1; visibility: visible; }
+  }
+}
+@media print { .to-top, .share-row { display: none !important; } }
 
 /* ─── footer ─── */
 footer { border-top: 2px solid var(--text); margin-top: 4rem; padding-block: 2.5rem; background: var(--surface-2); }

@@ -41,6 +41,12 @@ check('tool cards present', (html.match(/class="tg"/g) ?? []).length >= 40, `${(
 check('canonical + hreflang', html.includes('rel="canonical"') && html.includes('hreflang="en"'))
 check('og:image + twitter card', html.includes('og:image') && html.includes('twitter:card'))
 check('noscript notice present', html.includes('<noscript>'))
+check('json-ld structured data', html.includes('application/ld+json') && html.includes('"@type": "Article"'))
+check('webmanifest linked', html.includes('rel="manifest"'))
+check('share row prerendered', html.includes('share-native') && html.includes('share-print'))
+check('back-to-top prerendered', html.includes('class="to-top"'))
+check('timeline events deep-linkable', html.includes('id="tl-2020-02-11"') && html.includes('id="tl-1993"'))
+check('section § anchors', html.includes('sec-anchor'))
 
 /* Outbound <a href> targets legitimately live in the bundle (the guide links
    out constantly). The invariant is that nothing gets LOADED from a third
@@ -60,7 +66,7 @@ for (const f of assets) {
 check('no third-party loads (CSS urls, CDN/font/analytics hosts)', externals.length === 0, externals.slice(0, 3).join(' '))
 check('no CDN icon requests', !html.includes('cdn.simpleicons.org') && !assets.some((f) => readFileSync(join(DIST, 'assets', f), 'utf8').includes('cdn.simpleicons.org')))
 
-for (const f of ['sitemap.xml', 'robots.txt', 'favicon.svg', 'og.png', 'apple-touch-icon.png', 'exitchatcontrol-offline.html']) {
+for (const f of ['sitemap.xml', 'robots.txt', 'favicon.svg', 'og.png', 'apple-touch-icon.png', 'exitchatcontrol-offline.html', '404.html', 'site.webmanifest', '.well-known/security.txt']) {
   check(`dist/${f} shipped`, existsSync(join(DIST, f)))
 }
 
@@ -70,6 +76,7 @@ const off = readFileSync(join(DIST, 'exitchatcontrol-offline.html'), 'utf8')
 check('no module scripts left', !off.includes('type="module"'))
 check('no asset references left', !/href="\/assets\/|src="\/assets\//.test(off))
 check('vanilla interactivity injected', off.includes("setLang('fr')") && off.includes('ecc-checklist'))
+check('vanilla share + print wired', off.includes('.share-native') && off.includes('window.print'))
 check('css inlined', off.includes('<style>') && off.includes('--accent'))
 check('download link points at canonical origin', off.includes('https://exitchatcontrol.org/exitchatcontrol-offline.html'))
 check('full content carried over (>250 KB)', off.length > 250_000, `${Math.round(off.length / 1024)} KB`)

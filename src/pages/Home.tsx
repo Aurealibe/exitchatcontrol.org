@@ -65,6 +65,9 @@ export default function Home() {
         <Action />
       </main>
       <Footer />
+      <a className="to-top" href="#top" aria-label="Retour en haut — Back to top">
+        ↑
+      </a>
     </>
   )
 }

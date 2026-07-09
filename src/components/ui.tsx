@@ -2,10 +2,28 @@ import type { ReactNode } from 'react'
 import { T } from '../lib/i18n'
 
 /* ─── PartHead ─── */
-export function PartHead({ num, title, intro }: { num: ReactNode; title: ReactNode; intro?: ReactNode }) {
+export function PartHead({
+  num,
+  title,
+  intro,
+  anchor,
+}: {
+  num: ReactNode
+  title: ReactNode
+  intro?: ReactNode
+  /** section id — renders a § deep-link so a reader can cite the section */
+  anchor?: string
+}) {
   return (
     <div className="part-head">
-      <div className="num">{num}</div>
+      <div className="num">
+        {num}
+        {anchor ? (
+          <a className="sec-anchor" href={`#${anchor}`} aria-label="Lien direct vers cette section — Direct link to this section">
+            §
+          </a>
+        ) : null}
+      </div>
       <h2>{title}</h2>
       {intro ? <p>{intro}</p> : null}
     </div>

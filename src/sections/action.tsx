@@ -1,6 +1,7 @@
 import { T } from '../lib/i18n'
 import { Box, PartHead } from '../components/ui'
 import { Checklist, type CheckItem } from '../components/Checklist'
+import { ShareRow } from '../components/Share'
 
 /* PART 15 · Take action — upgraded with a persisted migration checklist
    (localStorage only) replacing v1's static 3-line plan. */
@@ -68,6 +69,13 @@ export function Action() {
           />
         </p>
       </div>
+      <p>
+        <T
+          fr={<>Ce guide ne vit que s'il circule. Envoyez-le à trois personnes, imprimez-le pour ceux qui n'ont pas ce réflexe, gardez la <a href="/exitchatcontrol-offline.html">copie hors-ligne</a>.</>}
+          en={<>This guide only lives if it travels. Send it to three people, print it for those who wouldn't find it, keep the <a href="/exitchatcontrol-offline.html">offline copy</a>.</>}
+        />
+      </p>
+      <ShareRow />
     </section>
   )
 }

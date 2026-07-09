@@ -23,10 +23,5 @@ jobs:
       - run: pnpm lint
       - run: pnpm test
       - run: pnpm build
-      - name: static e2e assertions (no browser)
-        run: |
-          grep -c 'id="precedents"' dist/index.html
-          test "$(wc -c < dist/index.html)" -gt 200000
-          test -f dist/exitchatcontrol-offline.html
-          test -f dist/sitemap.xml
-          ! grep -q 'cdn.simpleicons' dist/index.html
+      - name: deep e2e battery (headless chrome — static + hydrated interactions)
+        run: node scripts/e2e.mjs
