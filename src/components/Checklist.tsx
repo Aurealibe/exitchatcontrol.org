@@ -49,7 +49,12 @@ export function Checklist({ items }: { items: CheckItem[] }) {
       {items.map((item) => (
         <li key={item.id}>
           <label>
-            <input type="checkbox" checked={state[item.id] ?? false} onChange={() => toggle(item.id)} />
+            <input
+              type="checkbox"
+              data-id={item.id}
+              checked={state[item.id] ?? false}
+              onChange={() => toggle(item.id)}
+            />
             <span className="step-lvl" aria-hidden="true">
               {item.lvl}
             </span>

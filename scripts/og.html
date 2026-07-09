@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  /* OG card rig — screenshot at exactly 1200×630 (scripts/gen-og.mjs).
+     Same dossier tokens as the site, dark scheme (reads best in feeds). */
+  :root{
+    --bg:#111318; --surface:#171a20; --text:#e6e2d6; --text-dim:#9a9585;
+    --rule:#2b2f38; --accent:#e6b23f; --warn:#e0705f;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --serif:"Iowan Old Style",Palatino,Charter,Georgia,serif;
+  }
+  *{margin:0;box-sizing:border-box}
+  body{
+    width:1200px;height:630px;overflow:hidden;color:var(--text);
+    background:
+      repeating-linear-gradient(0deg,transparent 0 3px,rgba(230,226,214,.045) 3px 4px),
+      radial-gradient(120% 90% at 82% -10%,rgba(230,178,63,.22),transparent 60%),
+      var(--bg);
+    font-family:var(--serif);padding:64px 72px;display:flex;flex-direction:column;justify-content:space-between;
+  }
+  .stamp{
+    align-self:flex-start;font-family:var(--mono);font-size:17px;font-weight:700;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--warn);
+    border:3px solid var(--warn);border-radius:3px;padding:9px 16px;transform:rotate(-3deg);opacity:.92;
+  }
+  h1{font-family:var(--mono);font-weight:700;text-transform:uppercase;font-size:96px;line-height:1.04;letter-spacing:-.01em}
+  h1 .cursor{color:var(--accent)}
+  .lede{font-size:30px;line-height:1.45;color:var(--text-dim);max-width:900px}
+  .lede b{color:var(--text)}
+  .foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--rule);padding-top:22px}
+  .url{font-family:var(--mono);font-weight:700;font-size:26px;letter-spacing:.04em}
+  .url .glyph{color:var(--accent)}
+  .tags{display:flex;gap:12px}
+  .tag{font-family:var(--mono);font-size:16px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--text-dim);border:1.5px solid #3d434f;border-radius:100px;padding:8px 16px}
+</style>
+</head>
+<body>
+  <span class="stamp">Surveillance de masse · UE · 2026</span>
+  <div>
+    <h1>Devenir<br>Ingouvernable<span class="cursor">_</span></h1>
+    <p class="lede" style="margin-top:26px">Chat Control veut scanner vos messages privés.
+    <b>Reprenez le contrôle</b> — messagerie, e-mail, VPN, Linux, GrapheneOS, auto-hébergement,
+    étape par étape. <b>Free field manual, FR/EN.</b></p>
+  </div>
+  <div class="foot">
+    <span class="url"><span class="glyph">◆</span> exitchatcontrol.org</span>
+    <span class="tags"><span class="tag">🟢 Citoyen</span><span class="tag">🟡 Pseudonyme</span><span class="tag">🔴 Lanceur d'alerte</span></span>
+  </div>
+</body>
+</html>

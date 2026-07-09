@@ -32,7 +32,7 @@ export const EVENTS: Ev[] = [
       fr: 'La NSA propose une puce de chiffrement avec clé en dépôt pour l’État, « uniquement pour la police, sous mandat ». Failles techniques démontrées, rejet massif : abandon en 1996. Première guerre de la crypto, même scénario qu’aujourd’hui.',
       en: 'The NSA pushes an encryption chip with a government-held key escrow, "for law enforcement, under warrant only". Flaws demonstrated, massive rejection: abandoned by 1996. The first crypto war, same script as today.',
     },
-    src: { label: 'EPIC · Clipper Chip', href: 'https://epic.org/crypto/clipper/' },
+    src: { label: 'EPIC · Clipper Chip', href: 'https://archive.epic.org/crypto/clipper/' },
   },
   {
     date: '2001-07-05',

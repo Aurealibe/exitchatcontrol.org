@@ -24,10 +24,16 @@ export function currentLang(): Lang {
   return document.documentElement.getAttribute('data-lang') === 'en' ? 'en' : 'fr'
 }
 
+const TITLES: Record<Lang, string> = {
+  fr: 'Devenir Ingouvernable — Échapper à Chat Control',
+  en: 'Becoming Ungovernable — Escape Chat Control',
+}
+
 export function setLang(l: Lang) {
   const root = document.documentElement
   root.setAttribute('data-lang', l)
   root.setAttribute('lang', l)
+  document.title = TITLES[l]
   try {
     localStorage.setItem('lang', l)
     const url = new URL(window.location.href)

@@ -74,7 +74,7 @@ export function StatusBanner() {
 
 const TOC: { href: string; p: string; fr: string; en: string }[] = [
   { href: '#menace', p: '00', fr: 'Comprendre la menace', en: 'Understand the threat' },
-  { href: '#precedents', p: '⏱', fr: 'Les précédents (1999-2026)', en: 'The precedents (1999-2026)' },
+  { href: '#precedents', p: '⏱', fr: 'Les précédents (1993-2026)', en: 'The precedents (1993-2026)' },
   { href: '#memo', p: '★', fr: 'À supprimer / À adopter', en: 'Delete / Adopt' },
   { href: '#messagerie', p: '01', fr: 'Messagerie chiffrée', en: 'Encrypted messaging' },
   { href: '#email', p: '02', fr: 'E-mail chiffré & PGP', en: 'Encrypted email & PGP' },

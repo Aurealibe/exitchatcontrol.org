@@ -1,0 +1,32 @@
+name: ci
+
+# Safe by construction: no ${{ github.event.* }} interpolation anywhere in
+# run: blocks (workflow-injection guidance followed).
+on:
+  push:
+    branches: [main, 'revamp/**']
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm test
+      - run: pnpm build
+      - name: static e2e assertions (no browser)
+        run: |
+          grep -c 'id="precedents"' dist/index.html
+          test "$(wc -c < dist/index.html)" -gt 200000
+          test -f dist/exitchatcontrol-offline.html
+          test -f dist/sitemap.xml
+          ! grep -q 'cdn.simpleicons' dist/index.html
