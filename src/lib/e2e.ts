@@ -54,13 +54,30 @@ export function runE2E() {
   }
   ok('checklist-stored', stored.signal === true, JSON.stringify(stored))
 
-  // 4 · theme toggle flips the attribute
+  // 4 · theme toggle flips the attribute — then flips BACK: the axe audit
+  // runs after this battery, and a leaked theme flip made axe read mixed
+  // token sets (light foreground on dark background — real debugging story)
   const before = root.getAttribute('data-theme')
   ok('click-theme', click('.controls .btn:not(.lang-fr):not(.lang-en)'))
   const after = root.getAttribute('data-theme')
   ok('theme-flipped', after !== null && after !== before, `${before} -> ${after}`)
+  click('.controls .btn:not(.lang-fr):not(.lang-en)')
+  ok('theme-restored', root.getAttribute('data-theme') === (before ?? root.getAttribute('data-theme')), `${root.getAttribute('data-theme')}`)
 
-  // 5 · restore neutral state (fresh headless profile anyway, but be polite)
+  // 5 · observatory filter drives the SECTION attribute (scoped, not :root —
+  // the profile filter owns :root; the two must not collide)
+  const bb = document.getElementById('bigbrother')
+  ok('click-bbf-world', click('.bbf[data-f="world"]'))
+  ok('bbf-attr', bb?.getAttribute('data-bbf') === 'world', bb?.getAttribute('data-bbf') ?? 'null')
+  const euItem = document.getElementById('bb-going-dark')
+  const worldItem = document.getElementById('bb-vietnam-decret-147')
+  ok('bbf-hides-eu', !!euItem && getComputedStyle(euItem).display === 'none')
+  ok('bbf-keeps-world', !!worldItem && getComputedStyle(worldItem).display !== 'none')
+  ok('profile-filter-untouched', root.getAttribute('data-filter') === null)
+  ok('click-bbf-all', click('.bbf-all'))
+  ok('bbf-cleared', bb?.getAttribute('data-bbf') === null)
+
+  // 6 · restore neutral state (fresh headless profile anyway, but be polite)
   click('.lang-fr')
 
   const failed = checks.filter((c) => !c.pass)

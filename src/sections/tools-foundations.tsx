@@ -320,7 +320,9 @@ const EMAIL: Tool[] = [
     id: 't-mailbox',
     name: 'mailbox.org · Posteo',
     tile: 'mx',
-    brand: '#2a7de1',
+    /* one shade darker than the brand blue: #2a7de1 passes 4.5:1 with NO ink
+       (white 4.10, dark 4.41) — #2470d4 lets white ink reach 4.83 */
+    brand: '#2470d4',
     levels: ['b'],
     tags: [
       <T key="l" fr="🟢 Débutant" en="🟢 Beginner" />,

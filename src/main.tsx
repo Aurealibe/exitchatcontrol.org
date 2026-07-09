@@ -51,8 +51,25 @@ addEventListener('afterprint', () => {
 })
 
 /* e2e hook — only fires with ?e2e=1 (scripts/e2e.mjs). The battery is fully
-   synchronous (flushSync per click), so it completes during module evaluation,
-   before `load` — a plain --dump-dom capture reliably sees the verdict. */
+   synchronous (flushSync per click), so its verdict is set before `load`.
+   The axe-core WCAG A/AA audit is exposed as a promise the CDP driver reads
+   with awaitPromise (the chunk is dynamic: users never download it). */
 if (new URLSearchParams(location.search).has('e2e')) {
   runE2E()
+  const axeRun = import('axe-core').then((axe) =>
+    axe.default.run(document, { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa'] } }),
+  )
+  const w = window as Window & { __axe?: Promise<unknown>; __axeFull?: Promise<unknown> }
+  w.__axe = axeRun.then((r) => r.violations.map((v) => ({ id: v.id, impact: v.impact, nodes: v.nodes.length })))
+  // full node detail (selector + failure message) — printed by the battery on
+  // failure so a contrast regression names its exact element
+  w.__axeFull = axeRun.then((r) =>
+    r.violations.map((v) => ({
+      id: v.id,
+      nodes: v.nodes.slice(0, 40).map((n) => ({
+        t: n.target.join(' '),
+        fix: (n.any[0]?.message ?? '').slice(0, 120),
+      })),
+    })),
+  )
 }

@@ -3,6 +3,7 @@ import { TopBar, FilterBar } from '../components/Chrome'
 import { Footer } from '../components/Footer'
 import { Hero, StatusBanner, Toc, Threat, Memo } from '../sections/intro'
 import { Precedents } from '../sections/precedents'
+import { BigBrother } from '../sections/bigbrother'
 import { Messaging, Email, Browsers, Dns } from '../sections/tools-foundations'
 import { Vpn, Censorship, LeaveGoogle, Storage, Passwords, TwoFa } from '../sections/tools-network'
 import { Social, Money, Ai, Toolbox } from '../sections/tools-social'
@@ -40,6 +41,7 @@ export default function Home() {
         <FilterBar />
         <Threat />
         <Precedents />
+        <BigBrother />
         <Memo />
         <Messaging />
         <Email />

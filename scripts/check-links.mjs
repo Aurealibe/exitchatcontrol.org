@@ -1,14 +1,15 @@
-/* Live-checks the guide's citation links — the timeline's primary sources and
-   the footer's legal sources. 404 / DNS failure / 5xx = FAIL; 403/429 (bot
-   walls on europa.eu etc.) are reported as WARN and tolerated.
-   Run: node scripts/check-links.mjs */
+/* Live-checks the guide's citation links — the timeline's primary sources,
+   the Big Brother observatory's sources and the footer's legal sources.
+   404 / DNS failure / 5xx = FAIL; 403/429 (bot walls on europa.eu etc.) are
+   reported as WARN and tolerated. Run: node scripts/check-links.mjs */
 import { readFileSync } from 'node:fs'
 
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36'
 
 const events = readFileSync(new URL('../src/content/events.tsx', import.meta.url), 'utf8')
+const drift = readFileSync(new URL('../src/content/drift.tsx', import.meta.url), 'utf8')
 const footer = readFileSync(new URL('../src/components/Footer.tsx', import.meta.url), 'utf8')
-const urls = [...new Set([...`${events}\n${footer}`.matchAll(/https:\/\/[^\s"'`<>)]+/g)].map((m) => m[0].replace(/[.,]$/, '')))]
+const urls = [...new Set([...`${events}\n${drift}\n${footer}`.matchAll(/https:\/\/[^\s"'`<>)]+/g)].map((m) => m[0].replace(/[.,]$/, '')))]
 
 let fail = 0
 let warn = 0

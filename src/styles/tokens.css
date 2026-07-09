@@ -14,15 +14,17 @@
   --text-dim: #5c5749;
   --rule: #cdc7b6;
   --rule-strong: #a59d86;
-  --accent: #a9761a;
-  --accent-bright: #c58c1e;
+  --accent: #7d5a10;
+  --accent-bright: #63450a;
   --on-accent: #faf7ee;
   --warn: #a83324;
   --ok: #3c6b40;
   --info: #3a5c86;
   --lvl1: #3c6b40;
-  --lvl2: #b0821c;
+  --lvl2: #8a6410;
   --lvl3: #a83324;
+  /* manifesto panel inverts bg/text, so its accent comes from the OTHER scheme */
+  --manifesto-accent: #f2c455;
   --mono: ui-monospace, 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Roboto Mono', Menlo, Consolas, monospace;
   --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Charter, Georgia, 'Times New Roman', serif;
   --sans: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -47,6 +49,7 @@
     --lvl1: #7bb083;
     --lvl2: #e6b23f;
     --lvl3: #e0705f;
+    --manifesto-accent: #7d5a10;
   }
 }
 :root[data-theme='dark'] {
@@ -66,6 +69,7 @@
   --lvl1: #7bb083;
   --lvl2: #e6b23f;
   --lvl3: #e0705f;
+  --manifesto-accent: #7d5a10;
 }
 :root[data-theme='light'] {
   --bg: #efece3;
@@ -75,15 +79,16 @@
   --text-dim: #5c5749;
   --rule: #cdc7b6;
   --rule-strong: #a59d86;
-  --accent: #a9761a;
-  --accent-bright: #c58c1e;
+  --accent: #7d5a10;
+  --accent-bright: #63450a;
   --on-accent: #faf7ee;
   --warn: #a83324;
   --ok: #3c6b40;
   --info: #3a5c86;
   --lvl1: #3c6b40;
-  --lvl2: #b0821c;
+  --lvl2: #8a6410;
   --lvl3: #a83324;
+  --manifesto-accent: #f2c455;
 }
 
 /* ─── bilingual switch (CSS-only, works pre-hydration) ─── */
@@ -213,7 +218,7 @@ section { margin-block: clamp(3rem, 7vw, 5rem); scroll-margin-top: 4rem; }
 [id] { scroll-margin-top: 4rem; }
 .part-head { border-top: 2px solid var(--text); padding-top: 1rem; margin-bottom: 2rem; }
 .part-head .num { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--accent); }
-.sec-anchor { margin-left: 0.6ch; text-decoration: none; color: var(--rule-strong); }
+.sec-anchor { margin-left: 0.6ch; text-decoration: underline; text-underline-offset: 3px; color: var(--text-dim); }
 .sec-anchor:hover { color: var(--accent); }
 .part-head h2 { font-size: clamp(1.7rem, 4vw, 2.5rem); text-transform: uppercase; margin: 0.4rem 0 0; }
 .part-head p { color: var(--text-dim); margin: 0.7rem 0 0; font-size: 1.02rem; }
@@ -241,11 +246,11 @@ h4 { font-size: 1rem; font-family: var(--mono); text-transform: uppercase; lette
 .tg-h { display: flex; gap: 0.9rem; align-items: center; margin-bottom: 0.6rem; }
 .tg-logo {
   flex: none; width: 2.9rem; height: 2.9rem; border-radius: 11px; display: grid; place-items: center;
-  font-family: var(--mono); font-weight: 700; font-size: 0.95rem; color: #fff;
+  font-family: var(--mono); font-weight: 700; font-size: 0.95rem;
   background: var(--b, var(--accent)); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
   overflow: hidden;
 }
-.tg-logo svg { width: 58%; height: 58%; fill: #fff; }
+.tg-logo svg { width: 58%; height: 58%; }
 .tg-hd { min-width: 0; }
 .tg-name { margin: 0; font-size: 1.15rem; letter-spacing: -0.01em; }
 .tg-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.35rem; }
@@ -376,9 +381,9 @@ blockquote.pull {
 
 /* ─── manifesto ─── */
 .manifesto { background: var(--text); color: var(--bg); border-radius: var(--radius); padding: clamp(1.8rem, 5vw, 3rem); margin: 2rem 0; }
-.manifesto .eyebrow { color: var(--accent-bright); }
+.manifesto .eyebrow { color: var(--manifesto-accent); }
 .manifesto p { font-family: var(--mono); font-size: clamp(1.05rem, 2vw, 1.35rem); line-height: 1.5; }
-.manifesto strong { color: var(--accent-bright); }
+.manifesto strong { color: var(--manifesto-accent); }
 
 /* ─── NEW · precedents timeline (the chronological dossier) ─── */
 .timeline { list-style: none; padding: 0; margin: 2rem 0; position: relative; }
@@ -430,6 +435,79 @@ a.tl-date:hover { color: var(--accent); text-decoration: underline; text-underli
 .ally .ally-name { font-family: var(--mono); font-weight: 700; font-size: 0.9rem; display: block; }
 .ally .ally-role { font-size: 0.85rem; color: var(--text-dim); display: block; margin-top: 0.25rem; line-height: 1.45; }
 .ally .ally-url { font-family: var(--mono); font-size: 0.66rem; color: var(--accent); display: block; margin-top: 0.45rem; word-break: break-all; }
+
+/* ─── open-source directory (license chips) ─── */
+.dir-grid { margin: 0.9rem 0 1.6rem; }
+.lic {
+  font-family: var(--mono); font-size: 0.6rem; font-weight: 600; letter-spacing: 0.04em;
+  color: var(--text-dim); border: 1px solid var(--rule); border-radius: 100px;
+  padding: 0.1rem 0.45rem; vertical-align: 0.12rem; margin-left: 0.35rem; white-space: nowrap;
+}
+
+/* ─── NEW · big brother observatory (#bigbrother) ─── */
+.bb-fronts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.6rem; margin: 1.4rem 0 0.4rem; }
+.bbfront {
+  text-align: left; cursor: pointer; font: inherit;
+  border: 1px solid var(--rule); border-top: 3px solid var(--warn); border-radius: var(--radius);
+  background: var(--surface); color: var(--text); padding: 0.75rem 0.85rem;
+}
+.bbfront:hover { border-color: var(--accent); }
+.bbfront[aria-pressed='true'] { border-color: var(--accent); border-top-color: var(--accent); }
+.bbfront .bbf-ico { font-family: var(--sans); font-size: 1.15rem; display: block; }
+.bbfront b { font-family: var(--mono); font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.06em; display: block; margin: 0.35rem 0 0.2rem; }
+.bbfront .d { font-size: 0.78rem; color: var(--text-dim); line-height: 1.45; display: block; }
+.bb-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin: 1.6rem 0 0; }
+.bb-count { font-family: var(--mono); font-size: 0.7rem; color: var(--text-dim); letter-spacing: 0.04em; margin: 0.6rem 0 0; font-variant-numeric: tabular-nums; }
+.bb-list { list-style: none; padding: 0; margin: 1rem 0 1.6rem; }
+.bb-item { margin: 0.45rem 0; }
+.bb-item:target .bb-card { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 7%, var(--surface)); }
+.bb-card {
+  border: 1px solid var(--rule); border-left: 3px solid var(--bbc, var(--rule-strong));
+  border-radius: var(--radius); background: var(--surface);
+}
+.bb-card > summary {
+  list-style: none; display: flex; flex-wrap: wrap; gap: 0.3rem 0.7rem; align-items: baseline;
+  cursor: pointer; padding: 0.6rem 0.8rem; min-height: 44px; box-sizing: border-box;
+}
+.bb-card > summary::-webkit-details-marker { display: none; }
+.bb-card > summary::before { content: '▸'; color: var(--accent); flex: none; transition: transform 0.15s; }
+.bb-card[open] > summary::before { transform: rotate(90deg); }
+@media (prefers-reduced-motion: reduce) { .bb-card > summary::before { transition: none; } }
+.bb-date { font-family: var(--mono); font-weight: 700; font-size: 0.78rem; color: var(--text-dim); font-variant-numeric: tabular-nums; flex: none; }
+.bb-flag { font-family: var(--sans); flex: none; }
+.bb-title { font-family: var(--mono); font-weight: 700; font-size: 0.88rem; flex: 1 1 12rem; min-width: 0; }
+.bb-pill {
+  font-family: var(--mono); font-size: 0.58rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--bbc, var(--text-dim));
+  border: 1px solid color-mix(in srgb, var(--bbc, var(--text-dim)) 55%, transparent);
+  border-radius: 2px; padding: 0.12rem 0.4rem; flex: none;
+}
+.bb-s-en_vigueur, .bb-s-adopte { --bbc: var(--warn); }
+.bb-s-negociation { --bbc: var(--lvl2); }
+.bb-s-propose { --bbc: var(--info); }
+.bb-s-rejete { --bbc: var(--ok); }
+/* suspendu is muted by design, but the pill TEXT must stay ≥4.5:1 (axe) —
+   text-dim reads; the color-mixed border keeps the washed-out look */
+.bb-s-suspendu { --bbc: var(--text-dim); }
+.bb-s-revele { --bbc: var(--lvl2); }
+.bb-body { padding: 0.15rem 0.95rem 0.75rem; border-top: 1px dashed var(--rule); }
+.bb-body p { font-size: 0.93rem; line-height: 1.55; margin: 0.55rem 0 0; }
+.bb-foot { display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; }
+.bb-src, .bb-anchor { font-family: var(--mono); font-size: 0.7rem; }
+.bb-anchor { color: var(--text-dim); }
+
+/* observatory filter — attribute on the SECTION (not :root — the profile
+   filter owns :root), tokens on each item; pure CSS, offline-compatible */
+#bigbrother[data-bbf='eu'] .bb-item:not([data-tags~='eu']),
+#bigbrother[data-bbf='fr'] .bb-item:not([data-tags~='fr']),
+#bigbrother[data-bbf='world'] .bb-item:not([data-tags~='world']),
+#bigbrother[data-bbf='messaging'] .bb-item:not([data-tags~='messaging']),
+#bigbrother[data-bbf='identity'] .bb-item:not([data-tags~='identity']),
+#bigbrother[data-bbf='money'] .bb-item:not([data-tags~='money']),
+#bigbrother[data-bbf='media'] .bb-item:not([data-tags~='media']),
+#bigbrother[data-bbf='aibio'] .bb-item:not([data-tags~='aibio']) { display: none; }
+/* default pressed state before hydration (React/vanilla then own aria-pressed) */
+#bigbrother:not([data-bbf]) .btn.bbf-all { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 
 /* ─── NEW · action checklist (progress lives in localStorage only) ─── */
 .check { list-style: none; padding: 0; margin: 1.2rem 0; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface); }

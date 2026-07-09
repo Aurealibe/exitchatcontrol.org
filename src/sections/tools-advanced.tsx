@@ -1,5 +1,6 @@
 import { T } from '../lib/i18n'
 import { Box, Lvl, PartHead } from '../components/ui'
+import { DIRECTORY, DIR_CATEGORIES } from '../content/directory'
 import { ToolCard, type Tool } from '../components/ToolCard'
 
 /* PART 10 · Self-hosting + PART 11 · Tor + PART 12 · Free OS + Telephony
@@ -604,45 +605,48 @@ export function Ecosystem() {
   return (
     <section id="ecosysteme">
       <PartHead
+        anchor="ecosysteme"
         num={<>PARTIE 14 · <T fr="POUR ALLER PLUS LOIN" en="GOING FURTHER" /></>}
-        title={<T fr="L'écosystème libre complet" en="The full free ecosystem" />}
+        title={<T fr="L'annuaire open source" en="The open-source directory" />}
         intro={
           <T
-            fr={<>Se dégoogliser à fond, c'est remplacer chaque brique par un équivalent libre. La logique commune (<strong>logiciel libre + contrôle de son appareil + auto-hébergement</strong>) est la vraie parade au scan côté client.</>}
-            en={<>Fully de-Googling means replacing each brick with a free equivalent. The common logic (<strong>free software + control of your device + self-hosting</strong>) is the real counter to client-side scanning.</>}
+            fr={<>Se dégoogliser à fond, c'est remplacer chaque brique par un équivalent libre. La logique commune (<strong>logiciel libre + contrôle de son appareil + auto-hébergement</strong>) est la vraie parade au scan côté client. Chaque projet ci-dessous est du logiciel libre au sens strict — <strong>licence vérifiée sur le dépôt</strong> (les « source-available » et « fair-code » n'y figurent pas).</>}
+            en={<>Fully de-Googling means replacing each brick with a free equivalent. The common logic (<strong>free software + control of your device + self-hosting</strong>) is the real counter to client-side scanning. Every project below is free software in the strict sense — <strong>license verified against the repository</strong> (source-available and fair-code projects are not listed).</>}
           />
         }
       />
-      <div className="eco">
-        <div className="eco-cat">
-          <h4><T fr="Bureautique" en="Office" /></h4>
-          <ul><li>LibreOffice</li><li>OnlyOffice</li></ul>
-        </div>
-        <div className="eco-cat">
-          <h4><T fr="Média" en="Media" /></h4>
-          <ul><li>VLC</li><li>Jellyfin</li><li>FreeTube / NewPipe</li><li>Audacity · OBS</li><li>GIMP · Inkscape</li><li>Calibre · Shotcut</li></ul>
-        </div>
-        <div className="eco-cat">
-          <h4><T fr="Cloud & réseau" en="Cloud & network" /></h4>
-          <ul><li>Nextcloud</li><li>Pi-hole</li><li>KDE Connect</li></ul>
-        </div>
-        <div className="eco-cat">
-          <h4><T fr="Mobile libre" en="Free mobile" /></h4>
-          <ul><li>F-Droid · Aurora</li><li>microG</li><li>postmarketOS</li></ul>
-        </div>
-        <div className="eco-cat">
-          <h4><T fr="Sécurité" en="Security" /></h4>
-          <ul><li>Bitwarden</li><li>KeePassXC</li><li>Wireshark</li></ul>
-        </div>
-        <div className="eco-cat">
-          <h4><T fr="E-mail & bureau" en="Email & desktop" /></h4>
-          <ul><li>Thunderbird</li><li>FairEmail</li></ul>
-        </div>
-        <div className="eco-cat">
-          <h4><T fr="Dev & avancé" en="Dev & advanced" /></h4>
-          <ul><li>Termux · git</li><li>QEMU / KVM · Wine</li><li>Flatpak · GNU/Linux</li></ul>
-        </div>
-      </div>
+      {DIR_CATEGORIES.map((cat) => {
+        const entries = DIRECTORY.filter((e) => e.cat === cat.key)
+        if (entries.length === 0) return null
+        return (
+          <div key={cat.key}>
+            <h3 id={`dir-${cat.key}`}>
+              <T fr={cat.fr} en={cat.en} />
+            </h3>
+            <div className="allies dir-grid">
+              {entries.map((e) => (
+                <a key={e.name} className="ally" href={e.href} target="_blank" rel="noopener noreferrer">
+                  <span className="ally-name">
+                    {e.name} <span className="lic">{e.license}</span>
+                  </span>
+                  <span className="ally-role">
+                    <T fr={e.fr} en={e.en} />
+                  </span>
+                  <span className="ally-url">{e.href.replace(/^https:\/\//, '').replace(/\/$/, '')} →</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        )
+      })}
+      <Box label={<T fr="Pourquoi la licence compte" en="Why the license matters" />}>
+        <p>
+          <T
+            fr={<>La licence est la parade juridique au scénario Chat Control : un logiciel <strong>AGPL/GPL</strong> qui ajouterait un mouchard peut être <em>forké</em> sans le mouchard, le jour même, par n'importe qui. C'est l'assurance-vie structurelle qu'aucune promesse d'entreprise ne remplace — la même logique que la section <a href="#precedents">Précédents</a> : ne pas faire confiance, rendre la trahison inopérante.</>}
+            en={<>The license is the legal counter to the Chat Control scenario: a <strong>AGPL/GPL</strong> program that added a scanner can be <em>forked</em> without it, same day, by anyone. Structural life insurance no corporate promise replaces — the same logic as the <a href="#precedents">Precedents</a> section: don't trust, make betrayal inoperative.</>}
+          />
+        </p>
+      </Box>
     </section>
   )
 }

@@ -5,15 +5,14 @@
    battery (src/lib/e2e.ts) and reads the E2E:PASS/FAIL verdict from <title>
    OFFLINE — asserts the single-file artifact is self-contained + interactive
    Exit code 0 = all green. */
-import { execFileSync, spawn } from 'node:child_process'
+import { spawn } from 'node:child_process'
 import { readFileSync, readdirSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
+import { withBrowser } from './cdp.mjs'
 
 const ROOT = new URL('..', import.meta.url).pathname
 const DIST = join(ROOT, 'dist')
 const PORT = 4531
-const CHROME_MAC = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
-const CHROME = existsSync(CHROME_MAC) ? CHROME_MAC : 'google-chrome'
 
 let failures = 0
 function check(name, pass, detail = '') {
@@ -26,7 +25,7 @@ console.log('▸ static (prerendered HTML, no JS)')
 const html = readFileSync(join(DIST, 'index.html'), 'utf8')
 
 const SECTIONS = [
-  'menace', 'precedents', 'memo', 'messagerie', 'email', 'navigateur', 'dns',
+  'menace', 'precedents', 'bigbrother', 'memo', 'messagerie', 'email', 'navigateur', 'dns',
   'vpn', 'censure', 'proton', 'stockage', 'motsdepasse', 'deuxfa', 'social',
   'argent', 'ia', 'boiteaoutils', 'selfhost', 'tor', 'os', 'telephonie',
   'opsec', 'ecosysteme', 'allies', 'action',
@@ -48,6 +47,9 @@ check('share row prerendered', html.includes('share-native') && html.includes('s
 check('back-to-top prerendered', html.includes('class="to-top"'))
 check('timeline events deep-linkable', html.includes('id="tl-2020-02-11"') && html.includes('id="tl-1993"'))
 check('section § anchors', html.includes('sec-anchor'))
+check('observatory events prerendered', (html.match(/bb-item/g) ?? []).length >= 30, `${(html.match(/bb-item/g) ?? []).length}`)
+check('observatory deep-linkable', html.includes('id="bb-going-dark"') && html.includes('id="bb-pega-kouloglou"'))
+check('observatory counter-wave cites Tapestry', html.includes('https://thealliance.ai/projects/tapestry'))
 
 /* Outbound <a href> targets legitimately live in the bundle (the guide links
    out constantly). The invariant is that nothing gets LOADED from a third
@@ -86,6 +88,24 @@ if (existsSync(enPath)) {
 const sitemapXml = readFileSync(join(DIST, 'sitemap.xml'), 'utf8')
 check('sitemap lists / and /en/ with hreflang cluster', sitemapXml.includes(`<loc>https://exitchatcontrol.org/en/</loc>`) && sitemapXml.includes('hreflang="x-default"'))
 
+/* anchor integrity: every internal href="#x" must target an existing id — a
+   renamed section or timeline id would silently break TOC/citations */
+{
+  const ids = new Set([...html.matchAll(/ id="([^"]+)"/g)].map((m) => m[1]))
+  const dead = [...new Set([...html.matchAll(/href="#([^"]+)"/g)].map((m) => m[1]))].filter((a) => !ids.has(a))
+  check('all internal #anchors resolve', dead.length === 0, dead.slice(0, 5).join(','))
+}
+
+/* JS weight budget: a document page has no business growing unbounded */
+{
+  // the axe-* chunk is e2e-only (dynamic import gated behind ?e2e) — real
+  // readers never fetch it, so it sits outside the shipping budget
+  const totalJs = assets
+    .filter((f) => f.endsWith('.js') && !f.startsWith('axe-'))
+    .reduce((n, f) => n + readFileSync(join(DIST, 'assets', f)).length, 0)
+  check('js budget < 800 KB raw (react runtime, axe chunk excluded)', totalJs < 800_000, `${Math.round(totalJs / 1024)} KB`)
+}
+
 /* ─── OFFLINE artifact battery ─── */
 console.log('▸ offline artifact (single file)')
 const off = readFileSync(join(DIST, 'exitchatcontrol-offline.html'), 'utf8')
@@ -93,6 +113,7 @@ check('no module scripts left', !off.includes('type="module"'))
 check('no asset references left', !/href="\/assets\/|src="\/assets\//.test(off))
 check('vanilla interactivity injected', off.includes("setLang('fr')") && off.includes('ecc-checklist'))
 check('vanilla share + print wired', off.includes('.share-native') && off.includes('window.print'))
+check('vanilla observatory filter wired', off.includes('data-bbf') && off.includes('bbOpen'))
 check('css inlined', off.includes('<style>') && off.includes('--accent'))
 check('download link points at canonical origin', off.includes('https://exitchatcontrol.org/exitchatcontrol-offline.html'))
 check('full content carried over (>250 KB)', off.length > 250_000, `${Math.round(off.length / 1024)} KB`)
@@ -118,32 +139,48 @@ try {
   check('preview server up', up)
 
   if (up) {
-    const dom = execFileSync(
-      CHROME,
-      ['--headless=new', '--disable-gpu', '--dump-dom', `http://localhost:${PORT}/?lang=fr&e2e=1`],
-      // SIGKILL: headless Chrome can ignore the default SIGTERM on timeout,
-      // which would hang execFileSync (and the whole battery) forever.
-      { encoding: 'utf8', timeout: 60_000, killSignal: 'SIGKILL' },
-    )
-    const verdict = (dom.match(/data-e2e="([^"]*)"/) ?? [])[1] ?? ''
-    check('in-page battery verdict', verdict.startsWith('E2E:PASS'), verdict || 'no data-e2e verdict on <html>')
+    const base = `http://localhost:${PORT}`
+    await withBrowser(async ({ openPage }) => {
+      /* interaction battery + axe on the DEFAULT (dark) scheme */
+      const dark = await openPage(`${base}/?lang=fr&e2e=1`)
+      const verdict = await dark.waitFor(`document.documentElement.getAttribute('data-e2e')`)
+      check('in-page battery verdict', String(verdict ?? '').startsWith('E2E:PASS'), String(verdict ?? 'no data-e2e verdict'))
+      check('battery restored fr', (await dark.evaluate(`document.documentElement.getAttribute('data-lang')`)) === 'fr')
+      const axeDark = await dark.evaluate('window.__axe', { awaitPromise: true })
+      const darkPass = Array.isArray(axeDark) && axeDark.length === 0
+      check('axe WCAG A/AA · dark: 0 violations', darkPass,
+        (axeDark ?? []).map((v) => `${v.id}(${v.impact}×${v.nodes})`).join(' '))
+      if (!darkPass) console.log(JSON.stringify(await dark.evaluate('window.__axeFull', { awaitPromise: true }), null, 1).slice(0, 2400))
+      await dark.close()
 
-    // hydration sanity: the app re-rendered EN title after battery restored FR
-    const langAttr = (dom.match(/<html[^>]*data-lang="([^"]+)"/) ?? [])[1]
-    check('battery restored fr', langAttr === 'fr', langAttr)
+      /* axe again on the LIGHT scheme (different token set, different contrast) */
+      const light = await openPage(`${base}/?lang=fr&e2e=1&theme=light`)
+      await light.waitFor(`document.documentElement.getAttribute('data-e2e')`)
+      const axeLight = await light.evaluate('window.__axe', { awaitPromise: true })
+      const lightPass = Array.isArray(axeLight) && axeLight.length === 0
+      check('axe WCAG A/AA · light: 0 violations', lightPass,
+        (axeLight ?? []).map((v) => `${v.id}(${v.impact}×${v.nodes})`).join(' '))
+      if (!lightPass) console.log(JSON.stringify(await light.evaluate('window.__axeFull', { awaitPromise: true }), null, 1).slice(0, 2400))
+      await light.close()
 
-    /* /en/ must survive HYDRATION too — a '/'-only route table would 404
-       client-side and the router would wipe the prerendered page (caught
-       once by the vision loop; never again). The guide content must still
-       be in the DOM after React takes over. */
-    const domEn = execFileSync(
-      CHROME,
-      ['--headless=new', '--disable-gpu', '--dump-dom', `http://localhost:${PORT}/en/`],
-      { encoding: 'utf8', timeout: 60_000, killSignal: 'SIGKILL' },
-    )
-    check('/en/ hydrates without router 404', !domEn.includes('Unexpected Application Error') && domEn.includes('id="precedents"'))
-    const enLang = (domEn.match(/<html[^>]*data-lang="([^"]+)"/) ?? [])[1]
-    check('/en/ stays english after hydration', enLang === 'en', enLang)
+      /* /en/ must survive HYDRATION — a '/'-only route table 404s client-side
+         and the router wipes the prerendered page (caught by the vision loop
+         once; never again) */
+      const en = await openPage(`${base}/en/?e2e=1`)
+      const enVerdict = await en.waitFor(`document.documentElement.getAttribute('data-e2e')`)
+      check('/en/ battery verdict', String(enVerdict ?? '').startsWith('E2E:PASS'), String(enVerdict ?? ''))
+      check('/en/ hydrates without router 404', (await en.evaluate(`!document.body.textContent.includes('Unexpected Application Error') && !!document.getElementById('precedents')`)) === true)
+      await en.close()
+
+      /* offline artifact from file:// — its boot script must run (lang param)
+         and the DOM must carry the guide */
+      const offUrl = `file://${join(DIST, 'exitchatcontrol-offline.html')}?lang=en&theme=dark`
+      const offline = await openPage(offUrl)
+      const offLang = await offline.waitFor(`document.documentElement.getAttribute('data-lang') === 'en' ? 'en' : null`)
+      check('offline boot script runs from file:// (lang=en)', offLang === 'en')
+      check('offline carries the guide + directory', (await offline.evaluate(`!!document.getElementById('t-signal') && !!document.getElementById('dir-ia-locale-agentique')`)) === true)
+      await offline.close()
+    })
   }
 } finally {
   server.kill()

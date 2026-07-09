@@ -91,6 +91,29 @@ const vanilla = `
   on('.fb-b', function () { filt('b') })
   on('.fb-i', function () { filt('i') })
   on('.fb-a', function () { filt('a') })
+  /* Big Brother observatory — same contract as the hydrated app: the filter
+     attribute lives on the SECTION; clicking the active chip/front clears it. */
+  var bb = document.getElementById('bigbrother')
+  function bbf(f) {
+    if (!bb) return
+    if (f) bb.setAttribute('data-bbf', f)
+    else bb.removeAttribute('data-bbf')
+    pressed('.bbf', function (el) { return (el.getAttribute('data-f') || '') === f })
+  }
+  on('.bbf', function (el) {
+    var v = el.getAttribute('data-f') || ''
+    var cur = (bb && bb.getAttribute('data-bbf')) || ''
+    bbf(v && v === cur ? '' : v)
+  })
+  function bbOpen() {
+    var id = location.hash.slice(1)
+    if (id.indexOf('bb-') !== 0) return
+    var d = document.getElementById(id)
+    d = d && d.querySelector('details')
+    if (d) d.open = true
+  }
+  bbOpen()
+  addEventListener('hashchange', bbOpen)
   var CANON = 'https://exitchatcontrol.org/'
   function copyLink(btn) {
     try {

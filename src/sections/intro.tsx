@@ -75,6 +75,7 @@ export function StatusBanner() {
 const TOC: { href: string; p: string; fr: string; en: string }[] = [
   { href: '#menace', p: '00', fr: 'Comprendre la menace', en: 'Understand the threat' },
   { href: '#precedents', p: '⏱', fr: 'Les précédents (1993-2026)', en: 'The precedents (1993-2026)' },
+  { href: '#bigbrother', p: '👁', fr: 'Big Brother, pièce par pièce', en: 'Big Brother, piece by piece' },
   { href: '#memo', p: '★', fr: 'À supprimer / À adopter', en: 'Delete / Adopt' },
   { href: '#messagerie', p: '01', fr: 'Messagerie chiffrée', en: 'Encrypted messaging' },
   { href: '#email', p: '02', fr: 'E-mail chiffré & PGP', en: 'Encrypted email & PGP' },
@@ -95,7 +96,7 @@ const TOC: { href: string; p: string; fr: string; en: string }[] = [
   { href: '#os', p: '12', fr: 'OS libres & Linux', en: 'Free OS & Linux' },
   { href: '#telephonie', p: '◦', fr: 'Téléphonie & appareil', en: 'Telephony & device' },
   { href: '#opsec', p: '13', fr: 'Anonymat & OPSEC', en: 'Anonymity & OPSEC' },
-  { href: '#ecosysteme', p: '14', fr: "L'écosystème libre", en: 'The free ecosystem' },
+  { href: '#ecosysteme', p: '14', fr: 'Annuaire open source', en: 'Open-source directory' },
   { href: '#allies', p: '🤝', fr: 'Les initiatives alliées', en: 'Allied initiatives' },
   { href: '#action', p: '15', fr: "Passer à l'action", en: 'Take action' },
 ]
@@ -271,8 +272,8 @@ export function Threat() {
       <Box tone="warn" label={<T fr="La suite logique : l'euro numérique" en="The logical next step: the digital euro" />}>
         <p>
           <T
-            fr={<>La même logique s'apprête à toucher votre argent. Le projet d'euro numérique de la BCE prévoit un <strong>plafond de détention d'environ 3 000 € par personne</strong>, interdit aux entreprises d'en détenir, et repose sur une monnaie <strong>traçable</strong>. La BCE jure qu'elle ne sera pas « programmable », mais le plafond et la traçabilité, eux, sont bien au programme, et le cadre a été validé en commission au Parlement européen en juin 2026. Le jour venu, entendrez-vous « tranquille, c'est seulement jusqu'à 3 000 € » ? C'est exactement le même piège rhétorique que « ce n'est que Gmail ». La vraie question n'est jamais ce qui est contrôlé aujourd'hui, mais l'infrastructure de contrôle que l'on installe pour demain.</>}
-            en={<>The same logic is about to reach your money. The ECB's digital euro plan includes a <strong>holding cap of about €3,000 per person</strong>, bars companies from holding any, and rests on a <strong>traceable</strong> currency. The ECB swears it won't be "programmable," but the cap and the traceability are very much on the menu, and the framework cleared committee in the European Parliament in June 2026. When it lands, will you say "relax, it's only up to €3,000"? That's the very same rhetorical trap as "it's only Gmail." The real question is never what is controlled today, but the control infrastructure being installed for tomorrow.</>}
+            fr={<>La même logique s'apprête à toucher votre argent. Le projet d'euro numérique de la BCE prévoit un <strong>plafond de détention d'environ 3 000 € par personne</strong>, interdit aux entreprises d'en détenir, et repose sur une monnaie <strong>traçable</strong>. La BCE jure qu'elle ne sera pas « programmable », mais le plafond et la traçabilité, eux, sont bien au programme, et le cadre a été validé en commission au Parlement européen en juin 2026. Le jour venu, entendrez-vous « tranquille, c'est seulement jusqu'à 3 000 € » ? C'est exactement le même piège rhétorique que « ce n'est que Gmail ». La vraie question n'est jamais ce qui est contrôlé aujourd'hui, mais l'infrastructure de contrôle que l'on installe pour demain. Et l'argent n'est qu'un front parmi cinq : <a href="#bigbrother">le dossier complet, pièce par pièce</a>.</>}
+            en={<>The same logic is about to reach your money. The ECB's digital euro plan includes a <strong>holding cap of about €3,000 per person</strong>, bars companies from holding any, and rests on a <strong>traceable</strong> currency. The ECB swears it won't be "programmable," but the cap and the traceability are very much on the menu, and the framework cleared committee in the European Parliament in June 2026. When it lands, will you say "relax, it's only up to €3,000"? That's the very same rhetorical trap as "it's only Gmail." The real question is never what is controlled today, but the control infrastructure being installed for tomorrow. And money is only one front of five: <a href="#bigbrother">the full dossier, piece by piece</a>.</>}
           />
         </p>
       </Box>
