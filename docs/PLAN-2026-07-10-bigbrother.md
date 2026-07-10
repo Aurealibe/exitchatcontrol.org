@@ -1,11 +1,21 @@
 # Plan — « Big Brother, pièce par pièce » : l'observatoire de la dérive (2026-07-10)
 
-> **Status** · EXÉCUTÉ — section `#bigbrother` live (34 événements · 10 juridictions ·
+> **Status** · EXÉCUTÉ — section `#bigbrother` live (35 événements · 10 juridictions ·
 > 5 fronts · statut `revele` pour les affaires spyware), données `src/content/drift.tsx`,
 > tests contenu + volet e2e hydraté + parité offline + link-rot élargis. Note d'arc :
 > le repo a migré `~/dev` → le container pendant l'exécution ; le dataset a été
 > réconcilié avec le stub posé par la session annuaire (API `themes[]`/statuts FR
 > conservée, son axe-pass sur les pills intégré).
+>
+> **Round « dossier analogique » (même jour, complément de la passe wow-nika de la
+> session sœur)** · `src/styles/dossier.css` chargé après tokens.css (zéro collision) :
+> grain photocopie page-wide (pseudo, axe-invisible) · hero = couverture de dossier
+> (microtype dérivé 58 faits + stagger d'entrée + balayage scanner scroll-driven) ·
+> **LE FIL** : ticker des 12 dernières entrées (marquee CSS, pause hover/focus/offscreen
+> via IntersectionObserver miroité dans l'offline, reduced-motion → liste statique
+> scrollable) · les 5 fronts = onglets numérotés 01-05 (numéral fantôme en pseudo,
+> emojis retirés) · figure 1984 (watermark ghost en ::before) · meta-strip du compteur ·
+> OG refaite (« Le dossier Big Brother, 1993→2026 »).
 
 > Demande : faire *ressentir* la convergence Big Brother dans le manifeste (Chat Control
 > n'est qu'une pièce : euro numérique, identité, vérification d'âge, contrôle de l'info,

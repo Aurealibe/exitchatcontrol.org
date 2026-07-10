@@ -114,6 +114,14 @@ const vanilla = `
   }
   bbOpen()
   addEventListener('hashchange', bbOpen)
+  /* the wire marquee pauses offscreen (mirror of the hydrated observer) */
+  var wire = document.querySelector('.bb-wire')
+  if (wire && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) {
+      if (es[0].isIntersecting) wire.removeAttribute('data-off')
+      else wire.setAttribute('data-off', '')
+    }).observe(wire)
+  }
   var CANON = 'https://exitchatcontrol.org/'
   function copyLink(btn) {
     try {

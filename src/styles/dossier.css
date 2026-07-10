@@ -1,0 +1,159 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   dossier.css · the analog layer — grain, the hero-as-cover, LE FIL wire,
+   numbered front tabs, the 1984 figure. Loaded AFTER tokens.css so overrides
+   live HERE (tokens.css is the concurrent session's surface today).
+   House rules: compositor props only (transform/opacity), every loop pauses
+   offscreen or on hover/focus, prefers-reduced-motion degrades to static,
+   print drops the theatre. Decorative glyphs (ghost numerals, the 1984
+   watermark, grain) are PSEUDO-ELEMENT content: invisible to both assistive
+   tech and axe's contrast pass — never real text nodes.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─── film grain — the whole dossier is a photocopy ─── */
+body::after {
+  content: '';
+  position: fixed; inset: 0; z-index: 80; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.83' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  opacity: 0.05;
+}
+@media print { body::after { display: none; } }
+
+/* ─── hero · the document header (microtype, derived fact count) ─── */
+.hero-doss {
+  display: flex; flex-wrap: wrap; gap: 0.35rem 1.4rem;
+  margin: 0 0 2.1rem; padding-bottom: 0.7rem; border-bottom: 1px solid var(--rule);
+  font-family: var(--mono); font-size: 0.62rem; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+}
+/* direct children only — the bilingual <T> renders sibling spans INSIDE each
+   cell, and an unscoped span+span would pin a stray dot on the EN variant */
+.hero-doss > span { position: relative; }
+.hero-doss > span + span::before {
+  content: '·'; position: absolute; left: -0.85rem; color: var(--rule-strong);
+}
+
+/* the file opens — staggered rise; the .stamp is NOT here (it has its own
+   stamp-hit animation in tokens.css, timed to land mid-stagger) */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-doss { animation: doss-rise 0.55s ease-out both; }
+  .hero .eyebrow { animation: doss-rise 0.55s ease-out 0.08s both; }
+  .hero h1 { animation: doss-rise 0.6s ease-out 0.14s both; }
+  .hero .lede { animation: doss-rise 0.6s ease-out 0.22s both; }
+  .hero-meta { animation: doss-rise 0.6s ease-out 0.3s both; }
+}
+@keyframes doss-rise { from { opacity: 0; transform: translateY(14px); } }
+
+/* the scanner passes over the cover as it leaves the viewport —
+   scroll-driven, so it costs nothing offscreen and never free-runs */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .hero::after {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background: linear-gradient(
+        to bottom,
+        color-mix(in srgb, var(--accent) 34%, transparent) 0 2px,
+        color-mix(in srgb, var(--accent) 6%, transparent) 2px 26px,
+        transparent 26px
+      );
+      transform: translateY(-30px);
+      animation: hero-scan linear both;
+      animation-timeline: view();
+      animation-range: exit 0% exit 100%;
+    }
+  }
+}
+@keyframes hero-scan {
+  from { transform: translateY(-30px); }
+  to { transform: translateY(100%); }
+}
+
+/* ─── LE FIL · the drift wire (marquee of the latest entries) ─── */
+.bb-wire {
+  display: flex; align-items: stretch; overflow: hidden;
+  margin: 1.7rem 0 0.4rem; border-block: 1px solid var(--rule); background: var(--surface);
+}
+.bb-wire-lab {
+  flex: none; display: flex; align-items: center; gap: 0.5rem;
+  font-family: var(--mono); font-size: 0.62rem; font-weight: 700;
+  letter-spacing: 0.18em; color: var(--warn);
+  padding: 0.6rem 0.9rem; border-right: 1px solid var(--rule);
+}
+/* reuses @keyframes pulse from tokens.css (the status-banner dot) */
+.bb-wire-lab::before {
+  content: ''; width: 0.45rem; height: 0.45rem; border-radius: 50%;
+  background: var(--warn); animation: pulse 2.4s infinite;
+}
+.bb-wire-view { display: flex; overflow: hidden; flex: 1; min-width: 0; }
+.bb-wire-track {
+  flex: none; display: flex; align-items: center;
+  margin: 0; padding: 0.55rem 0; list-style: none;
+  animation: wire-slide 52s linear infinite;
+}
+.bb-wire-track li { margin: 0; white-space: nowrap; font-family: var(--mono); font-size: 0.72rem; }
+.bb-wire-track li::after { content: '◆'; color: var(--rule-strong); font-size: 0.5rem; margin: 0 1.2rem; }
+.bb-wire-track a { text-decoration: none; color: var(--text-dim); }
+.bb-wire-track a:hover, .bb-wire-track a:focus-visible { color: var(--accent); }
+.bb-wire-track .w-d { color: var(--accent); font-weight: 700; margin-right: 0.5ch; font-variant-numeric: tabular-nums; }
+@keyframes wire-slide { to { transform: translateX(-100%); } }
+/* pause: reader's pointer, keyboard focus, or the wire scrolled offscreen
+   (data-off set by a tiny IntersectionObserver — mirrored in the offline
+   artifact's vanilla script) */
+.bb-wire:hover .bb-wire-track,
+.bb-wire:focus-within .bb-wire-track,
+.bb-wire[data-off] .bb-wire-track { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .bb-wire-lab::before { animation: none; }
+  .bb-wire-track { animation: none; }
+  .bb-wire-track[aria-hidden] { display: none; }
+  .bb-wire-view { overflow-x: auto; }
+}
+@media print { .bb-wire { display: none; } }
+
+/* ─── the five fronts as numbered index tabs (the numeral is decor: pseudo) ─── */
+.bbfront { position: relative; overflow: hidden; }
+.bbfront::after {
+  content: attr(data-no);
+  position: absolute; top: 0.28rem; right: 0.5rem;
+  font-family: var(--mono); font-weight: 700; font-size: 2.1rem; line-height: 1;
+  letter-spacing: -0.05em; color: color-mix(in srgb, var(--text) 13%, transparent);
+  pointer-events: none;
+}
+.bbfront[aria-pressed='true']::after { color: color-mix(in srgb, var(--accent) 60%, transparent); }
+.bbfront b { margin-top: 0; padding-right: 2.4rem; }
+@media (prefers-reduced-motion: no-preference) {
+  .bbfront { transition: transform 0.15s ease-out, border-color 0.15s; }
+  .bbfront:hover { transform: translateY(-2px); }
+}
+
+/* chip numerals — real text (accent passes contrast), silent to AT */
+.chip-no { font-size: 0.6rem; font-weight: 700; color: var(--accent); margin-right: 0.45ch; letter-spacing: 0; }
+.btn[aria-pressed='true'] .chip-no { color: var(--on-accent); }
+
+/* ─── the 1984 figure — a giant ghost watermark behind the epigraph ─── */
+.bb-1984 {
+  position: relative; overflow: hidden;
+  margin: 2.8rem 0 2.2rem; padding: 1.7rem 0 1.6rem;
+  border-block: 1px solid var(--rule);
+}
+.bb-1984::before {
+  content: '1984';
+  position: absolute; right: -0.04em; top: 50%;
+  transform: translateY(-52%) rotate(-2deg);
+  font-family: var(--mono); font-weight: 700; line-height: 1;
+  font-size: clamp(4.5rem, 15vw, 8rem); letter-spacing: -0.06em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px color-mix(in srgb, var(--text) 26%, transparent);
+  pointer-events: none; user-select: none;
+}
+.bb-1984 blockquote {
+  position: relative; margin: 0; max-width: 30ch;
+  font-family: var(--serif); font-style: italic; text-wrap: balance;
+  font-size: clamp(1.15rem, 2.4vw, 1.55rem); line-height: 1.45; color: var(--text);
+}
+
+/* ─── observatory meta strip (the derived counter line) ─── */
+.bb-count {
+  border-block: 1px solid var(--rule); padding: 0.55rem 0; margin-top: 1.1rem;
+  text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.64rem;
+}

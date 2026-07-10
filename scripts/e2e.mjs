@@ -67,6 +67,9 @@ check('agentic-AI pointer in AI section', html.includes('dir-ia-locale-agentique
 check('observatory events prerendered', (html.match(/bb-item/g) ?? []).length >= 30, `${(html.match(/bb-item/g) ?? []).length}`)
 check('observatory deep-linkable', html.includes('id="bb-going-dark"') && html.includes('id="bb-pega-kouloglou"'))
 check('observatory counter-wave cites Tapestry', html.includes('https://thealliance.ai/projects/tapestry'))
+check('the wire prerendered (both tracks)', (html.match(/bb-wire-track/g) ?? []).length >= 2, `${(html.match(/bb-wire-track/g) ?? []).length}`)
+check('hero dossier microtype (derived fact count)', html.includes('hero-doss'))
+check('front tabs carry their numerals', html.includes('data-no="01"') && html.includes('data-no="05"'))
 
 /* Outbound <a href> targets legitimately live in the bundle (the guide links
    out constantly). The invariant is that nothing gets LOADED from a third

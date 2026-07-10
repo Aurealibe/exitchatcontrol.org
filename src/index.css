@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import './styles/tokens.css';
+@import './styles/dossier.css';
 @import './styles/print.css';
 
 /* Map the dossier tokens onto Tailwind v4 utilities (bg-bg · bg-surface ·

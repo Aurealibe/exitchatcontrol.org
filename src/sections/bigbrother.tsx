@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { T } from '../lib/i18n'
 import { Box, PartHead } from '../components/ui'
@@ -16,10 +16,12 @@ import { DRIFT, REGION_META, STATUS_META, driftTags, type BbFilter, type DriftEv
    artifact via ~10 lines of vanilla (scripts/postbuild-offline.mjs). The
    attribute lives on the SECTION, not :root — two filters, zero collision. */
 
-const FRONTS: { f: BbFilter; ico: string; name: { fr: string; en: string }; d: { fr: string; en: string } }[] = [
+/* The five fronts, numbered 01-05 — the numbering IS the thesis (five files
+   in one dossier). The numeral renders as a ::after ghost from data-no. */
+const FRONTS: { f: BbFilter; no: string; name: { fr: string; en: string }; d: { fr: string; en: string } }[] = [
   {
     f: 'messaging',
-    ico: '💬',
+    no: '01',
     name: { fr: 'Les messages', en: 'The messages' },
     d: {
       fr: "Chat Control : le scan des conversations privées, adopté le 9 juillet. La lignée complète est aux Précédents.",
@@ -28,7 +30,7 @@ const FRONTS: { f: BbFilter; ico: string; name: { fr: string; en: string }; d: {
   },
   {
     f: 'money',
-    ico: '💶',
+    no: '02',
     name: { fr: "L'argent", en: 'The money' },
     d: {
       fr: 'Euro numérique traçable, plafond de détention, recul du cash : un argent qui s\'observe et se rationne.',
@@ -37,7 +39,7 @@ const FRONTS: { f: BbFilter; ico: string; name: { fr: string; en: string }; d: {
   },
   {
     f: 'identity',
-    ico: '🪪',
+    no: '03',
     name: { fr: "L'identité", en: 'The identity' },
     d: {
       fr: "Wallet d'identité européen fin 2026, vérification d'âge : montrer patte blanche pour entrer en ligne.",
@@ -46,7 +48,7 @@ const FRONTS: { f: BbFilter; ico: string; name: { fr: string; en: string }; d: {
   },
   {
     f: 'media',
-    ico: '📰',
+    no: '04',
     name: { fr: "L'information", en: 'The information' },
     d: {
       fr: 'Spyware « sécurité nationale » contre des journalistes, blocages administratifs : qui décide du visible.',
@@ -55,7 +57,7 @@ const FRONTS: { f: BbFilter; ico: string; name: { fr: string; en: string }; d: {
   },
   {
     f: 'aibio',
-    ico: '👁',
+    no: '05',
     name: { fr: 'Le corps', en: 'The body' },
     d: {
       fr: 'Biométrie aux frontières, vidéosurveillance algorithmique, police prédictive : le visage devient identifiant.',
@@ -64,17 +66,24 @@ const FRONTS: { f: BbFilter; ico: string; name: { fr: string; en: string }; d: {
   },
 ]
 
+/* region chips keep their flags (flags are data); front chips reuse the
+   tab numerals — aria-hidden decor, the label carries the meaning */
+const No = ({ n }: { n: string }) => <span className="chip-no" aria-hidden="true">{n}</span>
+
 const CHIPS: { f: BbFilter | null; label: ReactNode }[] = [
   { f: null, label: <T fr="Tous" en="All" /> },
   { f: 'eu', label: <>🇪🇺 <T fr="UE" en="EU" /></> },
   { f: 'fr', label: <>🇫🇷 France</> },
   { f: 'world', label: <>🌍 <T fr="Monde" en="World" /></> },
-  { f: 'messaging', label: <>💬 <T fr="Messages" en="Messages" /></> },
-  { f: 'money', label: <>💶 <T fr="Argent" en="Money" /></> },
-  { f: 'identity', label: <>🪪 <T fr="Identité" en="Identity" /></> },
-  { f: 'media', label: <>📰 <T fr="Information" en="Information" /></> },
-  { f: 'aibio', label: <>👁 <T fr="Biométrie & IA" en="Biometrics & AI" /></> },
+  { f: 'messaging', label: <><No n="01" /> <T fr="Messages" en="Messages" /></> },
+  { f: 'money', label: <><No n="02" /> <T fr="Argent" en="Money" /></> },
+  { f: 'identity', label: <><No n="03" /> <T fr="Identité" en="Identity" /></> },
+  { f: 'media', label: <><No n="04" /> <T fr="Information" en="Information" /></> },
+  { f: 'aibio', label: <><No n="05" /> <T fr="Biométrie & IA" en="Biometrics & AI" /></> },
 ]
+
+/* LE FIL — the last 12 entries as a news wire, most recent first */
+const WIRE = [...DRIFT].slice(-12).reverse()
 
 function BbItem({ ev }: { ev: DriftEv }) {
   const id = `bb-${ev.id}`
@@ -108,6 +117,7 @@ function BbItem({ ev }: { ev: DriftEv }) {
 
 export function BigBrother() {
   const [f, setF] = useState<BbFilter | null>(null)
+  const wireRef = useRef<HTMLDivElement>(null)
 
   /* Deep links (#bb-<id>) land on a CLOSED <details>: the browser scrolls
      and :target highlights, but only JS can open it. Same ~6 lines are
@@ -122,6 +132,19 @@ export function BigBrother() {
     openTarget()
     window.addEventListener('hashchange', openTarget)
     return () => window.removeEventListener('hashchange', openTarget)
+  }, [])
+
+  /* the wire pauses when it scrolls out of view (looping animations don't
+     get to burn compositor time offscreen) — mirrored in the offline vanilla */
+  useEffect(() => {
+    const el = wireRef.current
+    if (!el || !('IntersectionObserver' in window)) return
+    const io = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) el.removeAttribute('data-off')
+      else el.setAttribute('data-off', '')
+    })
+    io.observe(el)
+    return () => io.disconnect()
   }, [])
 
   const regionCount = new Set(DRIFT.map((e: DriftEv) => e.region)).size
@@ -140,6 +163,29 @@ export function BigBrother() {
         }
       />
 
+      <div className="bb-wire" ref={wireRef} role="navigation" aria-label="Le fil de la dérive — The drift wire">
+        <span className="bb-wire-lab"><T fr="LE FIL" en="THE WIRE" /></span>
+        <div className="bb-wire-view">
+          {[false, true].map((dup) => (
+            <ul
+              key={String(dup)}
+              className="bb-wire-track"
+              aria-hidden={dup || undefined}
+              inert={dup || undefined}
+            >
+              {WIRE.map((ev) => (
+                <li key={ev.id}>
+                  <a href={`#bb-${ev.id}`}>
+                    <span className="w-d">{ev.date}</span>
+                    <T fr={ev.title.fr} en={ev.title.en} />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ))}
+        </div>
+      </div>
+
       <div className="bb-fronts">
         {FRONTS.map((fr) => (
           <button
@@ -147,22 +193,24 @@ export function BigBrother() {
             type="button"
             className="bbfront bbf"
             data-f={fr.f}
+            data-no={fr.no}
             aria-pressed={f === fr.f}
             onClick={() => setF(f === fr.f ? null : fr.f)}
           >
-            <span className="bbf-ico" aria-hidden="true">{fr.ico}</span>
             <b><T fr={fr.name.fr} en={fr.name.en} /></b>
             <span className="d"><T fr={fr.d.fr} en={fr.d.en} /></span>
           </button>
         ))}
       </div>
 
-      <blockquote className="pull">
-        <T
-          fr="« 1984 » était un avertissement, pas un cahier des charges."
-          en={'"Nineteen Eighty-Four" was a warning, not an instruction manual.'}
-        />
-      </blockquote>
+      <figure className="bb-1984">
+        <blockquote>
+          <T
+            fr="« 1984 » était un avertissement, pas un cahier des charges."
+            en={'"Nineteen Eighty-Four" was a warning, not an instruction manual.'}
+          />
+        </blockquote>
+      </figure>
 
       <div className="bb-chips" role="group" aria-label="Filtrer la dérive — Filter the drift">
         <span className="fb-lab">

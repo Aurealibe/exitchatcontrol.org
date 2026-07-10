@@ -1,10 +1,21 @@
 import { T } from '../lib/i18n'
 import { Box, Cite, PartHead, Profiles, TableWrap } from '../components/ui'
+import { EVENTS } from '../content/events'
+import { DRIFT } from '../content/drift'
+
+/* derived, never hand-written: the precedents timeline + the observatory */
+const FACTS = EVENTS.length + DRIFT.length
 
 export function Hero() {
   return (
     <header className="hero" id="top">
       <div className="hero-inner">
+        <p className="hero-doss">
+          <span><T fr="Dossier public" en="Public dossier" /></span>
+          <span>exitchatcontrol.org</span>
+          <span>{FACTS} <T fr="faits sourcés" en="sourced facts" /></span>
+          <span>1993→2026</span>
+        </p>
         <span className="stamp">
           <T fr="Surveillance de masse · UE · 2026" en="Mass surveillance · EU · 2026" />
         </span>
