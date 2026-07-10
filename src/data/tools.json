@@ -298,7 +298,7 @@
       },
       {
         "label": "adguard home",
-        "href": "https://adguard.com/adguard-home"
+        "href": "https://adguard.com/adguard-home.html"
       }
     ],
     "iconSlug": "pihole",
@@ -712,8 +712,8 @@
         "href": "https://jitsi.org"
       },
       {
-        "label": "element.io/element-call",
-        "href": "https://element.io/element-call"
+        "label": "github.com/element-hq/element-call",
+        "href": "https://github.com/element-hq/element-call"
       }
     ],
     "iconSlug": "jitsi",
@@ -845,11 +845,11 @@
   {
     "id": "t-synapse",
     "name": "Matrix Synapse",
-    "url": "https://element.io/server",
+    "url": "https://element.io/server-suite",
     "links": [
       {
-        "label": "element.io/server",
-        "href": "https://element.io/server"
+        "label": "element.io/server-suite",
+        "href": "https://element.io/server-suite"
       }
     ],
     "iconSlug": "matrix",
