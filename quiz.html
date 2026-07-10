@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<title>Quiz · Censorship Resistance | Exit Chat Control</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A short, educational quiz to estimate how censorship-resistant your digital setup is, in FR / EN / NL.">
+<link rel="canonical" href="https://exitchatcontrol.org/quiz.html">
+<meta name="theme-color" content="#111318">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="apple-touch-icon" href="/android-chrome-192x192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Exit Chat Control">
+<meta property="og:title" content="Censorship Resistance Quiz · Exit Chat Control">
+<meta property="og:description" content="Test your setup in 3 minutes and learn what would improve your resistance to censorship and mass surveillance.">
+<meta property="og:url" content="https://exitchatcontrol.org/quiz.html">
+<meta property="og:image" content="https://exitchatcontrol.org/android-chrome-192x192.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Censorship Resistance Quiz · Exit Chat Control">
+<meta name="twitter:description" content="A short educational quiz to estimate how censorship-resistant your tools and habits are.">
+<meta name="twitter:image" content="https://exitchatcontrol.org/android-chrome-192x192.png">
+<script>(function(){try{var s=localStorage.getItem('lang');var b=(navigator.language||navigator.userLanguage||'en').toLowerCase();var l=s||(b.indexOf('fr')===0?'fr':b.indexOf('nl')===0?'nl':'en');document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l);}catch(e){document.documentElement.setAttribute('data-lang','en');document.documentElement.setAttribute('lang','en');}})();</script>
+<style>
+  :root{
+    --bg:#efece3; --surface:#f6f4ec; --surface-2:#e7e3d6; --text:#1b1813; --text-dim:#5c5749;
+    --rule:#cdc7b6; --rule-strong:#a59d86;
+    --accent:#a9761a; --accent-bright:#c58c1e; --on-accent:#faf7ee;
+    --warn:#a83324; --ok:#3c6b40; --info:#3a5c86;
+    --lvl1:#3c6b40; --lvl2:#b0821c; --lvl3:#a83324;
+    --mono:ui-monospace,"SF Mono","Cascadia Code","JetBrains Mono","Roboto Mono",Menlo,Consolas,monospace;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Charter,Georgia,"Times New Roman",serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --measure:72ch; --radius:3px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#111318; --surface:#171a20; --surface-2:#1e222a; --text:#e6e2d6; --text-dim:#9a9585;
+      --rule:#2b2f38; --rule-strong:#3d434f; --accent:#e6b23f; --accent-bright:#f2c455; --on-accent:#14161a;
+      --warn:#e0705f; --ok:#7bb083; --info:#7ba3d6;
+      --lvl1:#7bb083; --lvl2:#e6b23f; --lvl3:#e0705f;
+    }
+  }
+  :root[data-theme="dark"]{--bg:#111318; --surface:#171a20; --surface-2:#1e222a; --text:#e6e2d6; --text-dim:#9a9585; --rule:#2b2f38; --rule-strong:#3d434f; --accent:#e6b23f; --accent-bright:#f2c455; --on-accent:#14161a; --warn:#e0705f; --ok:#7bb083; --info:#7ba3d6; --lvl1:#7bb083; --lvl2:#e6b23f; --lvl3:#e0705f;}
+  :root[data-theme="light"]{--bg:#efece3; --surface:#f6f4ec; --surface-2:#e7e3d6; --text:#1b1813; --text-dim:#5c5749; --rule:#cdc7b6; --rule-strong:#a59d86; --accent:#a9761a; --accent-bright:#c58c1e; --on-accent:#faf7ee; --warn:#a83324; --ok:#3c6b40; --info:#3a5c86; --lvl1:#3c6b40; --lvl2:#b0821c; --lvl3:#a83324;}
+  :root[data-lang="fr"] [data-l="en"]{display:none;} :root[data-lang="fr"] [data-l="nl"]{display:none;} :root[data-lang="en"] [data-l="fr"]{display:none;} :root[data-lang="en"] [data-l="nl"]{display:none;} :root[data-lang="nl"] [data-l="fr"]{display:none;} :root[data-lang="nl"] [data-l="en"]{display:none;}
+  *{box-sizing:border-box;} html{scroll-behavior:smooth;} body{margin:0;background:var(--bg);color:var(--text);font-family:var(--serif);font-size:clamp(1rem,0.55vw + 0.9rem,1.12rem);line-height:1.7;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;} a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px;} a:hover{color:var(--accent-bright);} :focus-visible{outline:2px solid var(--accent-bright);outline-offset:3px;border-radius:2px;} button{font:inherit;} h1,h2,h3,h4{font-family:var(--mono);line-height:1.1;text-wrap:balance;font-weight:700;}
+  .wrap{max-width:var(--measure);margin-inline:auto;padding-inline:clamp(1rem,4vw,2rem);} .eyebrow{font-family:var(--mono);text-transform:uppercase;letter-spacing:.22em;font-size:.7rem;font-weight:600;color:var(--accent);}
+  .topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.55rem clamp(1.1rem,4vw,2rem);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(9px);border-bottom:1px solid var(--rule);} .topbar .brand{font-family:var(--mono);font-weight:700;font-size:.82rem;letter-spacing:.04em;text-decoration:none;color:var(--text);display:flex;align-items:center;gap:.5rem;} .brand .glyph{color:var(--accent);} .controls{display:flex;gap:.4rem;align-items:center;} .btn{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.03em;cursor:pointer;background:transparent;color:var(--text-dim);border:1px solid var(--rule);border-radius:var(--radius);padding:.34rem .55rem;line-height:1;transition:.15s;} .btn:hover{border-color:var(--rule-strong);color:var(--text);} .btn[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent);} .btn .flag{font-family:var(--sans);} .hero{border-bottom:1px solid var(--rule);background:radial-gradient(120% 90% at 82% -10%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 60%),var(--surface);} .hero-inner{max-width:var(--measure);margin-inline:auto;padding:clamp(2.7rem,8vw,4.6rem) clamp(1.1rem,4vw,2rem) clamp(2rem,5vw,3rem);} .stamp{display:inline-block;font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--warn);border:2px solid var(--warn);border-radius:2px;padding:.3rem .6rem;transform:rotate(-3deg);margin-bottom:1.2rem;opacity:.9;} .hero h1{font-size:clamp(2rem,6vw,3.2rem);margin:.4rem 0 0;} .hero .lede{font-size:clamp(1.02rem,1vw + .95rem,1.22rem);color:var(--text-dim);max-width:62ch;margin:.9rem 0 0;} .hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.25rem;} .hero-actions a,.hero-actions button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:.6rem .9rem;border-radius:var(--radius);border:1px solid var(--rule);background:var(--surface);color:var(--text);} .hero-actions .primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent);} .quiz-shell{padding-block:clamp(1.6rem,4vw,2.8rem);} .card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius);padding:1.2rem 1.15rem;box-shadow:0 8px 32px color-mix(in srgb,var(--text) 4%,transparent);} .card + .card{margin-top:1rem;} .progress{height:9px;background:var(--surface-2);border-radius:999px;overflow:hidden;margin-top:.5rem;} .progress > span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-bright));transition:width .25s ease;} .question-title{font-size:clamp(1.15rem,2vw,1.35rem);margin:.85rem 0 .45rem;} .options{display:grid;gap:.7rem;margin-top:1rem;} .option{width:100%;text-align:left;border:1px solid var(--rule);background:var(--surface-2);color:var(--text);padding:.9rem .95rem;border-radius:var(--radius);cursor:pointer;display:flex;flex-direction:column;gap:.28rem;transition:transform .15s ease,border-color .15s ease,background .15s ease;} .option:hover{border-color:var(--accent);transform:translateY(-1px);} .option strong{font-family:var(--mono);font-size:.82rem;letter-spacing:.03em;} .option small{font-size:.86rem;color:var(--text-dim);} .option:focus-visible{outline:2px solid var(--accent-bright);outline-offset:2px;} .muted{color:var(--text-dim);font-size:.92rem;} .result{display:none;} .result.show{display:block;} .result-score{font-size:clamp(2.1rem,4vw,3rem);font-family:var(--mono);font-weight:700;margin:.25rem 0 .2rem;} .band{font-family:var(--mono);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);} .pill{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--rule);border-radius:999px;padding:.24rem .55rem;color:var(--text-dim);} .bar-list{display:grid;gap:.6rem;margin-top:1rem;} .bar-row{display:grid;grid-template-columns:120px 1fr auto;gap:.6rem;align-items:center;font-size:.9rem;} .bar-row span{font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--text-dim);text-transform:uppercase;} .bar-track{height:8px;background:var(--surface-2);border-radius:999px;overflow:hidden;} .bar-track > i{display:block;height:100%;background:var(--accent);border-radius:inherit;} .recommendations{display:grid;gap:.7rem;margin-top:1rem;} .recommendation{border:1px solid var(--rule);border-left:3px solid var(--accent);background:var(--surface);padding:.85rem .95rem;border-radius:var(--radius);} .share-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem;} .share-actions button,.share-actions a{display:inline-flex;align-items:center;gap:.35rem;padding:.55rem .8rem;border-radius:var(--radius);border:1px solid var(--rule);background:var(--surface);color:var(--text);text-decoration:none;cursor:pointer;} .share-actions .primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent);} .sr-only{position:absolute;left:-9999px;} @media (min-width:720px){.options{grid-template-columns:1fr 1fr;}.recommendations{grid-template-columns:1fr 1fr 1fr;}} @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;} .option,.progress > span{transition:none;}}</style>
+</head>
+<body>
+<div class="topbar">
+  <a class="brand" href="index.html#top"><span class="glyph">◆</span> EXIT CHAT CONTROL</a>
+  <div class="controls">
+    <button class="btn" id="lang-fr" aria-pressed="true" onclick="setLang('fr')"><span class="flag">🇫🇷</span> FR</button>
+    <button class="btn" id="lang-nl" aria-pressed="false" onclick="setLang('nl')"><span class="flag">🇳🇱</span> NL</button>
+    <button class="btn" id="lang-en" aria-pressed="false" onclick="setLang('en')"><span class="flag">🇬🇧</span> EN</button>
+    <button class="btn" id="theme" onclick="toggleTheme()" aria-label="Theme">◐</button>
+  </div>
+</div>
+<header class="hero">
+  <div class="hero-inner">
+    <span class="stamp"><span data-l="fr">Quiz éducatif · 3 minutes</span><span data-l="en">Educational quiz · 3 minutes</span><span data-l="nl">Educatieve quiz · 3 minuten</span></span>
+    <div class="eyebrow"><span data-l="fr">Évaluer sa résistance à la censure</span><span data-l="en">Estimate your censorship resistance</span><span data-l="nl">Schat je weerstand tegen censuur in</span></div>
+    <h1><span data-l="fr">Quiz de résistance</span><span data-l="en">Resistance quiz</span><span data-l="nl">Weerstandsquiz</span></h1>
+    <p class="lede">
+      <span data-l="fr">Ce quiz est pensé comme une carte de navigation : il vous aide à repérer les points faibles de votre pile technique sans jugement, puis vous propose des pistes concrètes issues du guide.</span>
+      <span data-l="en">This quiz is meant as a compass: it helps you spot weak points in your setup without shaming you, then points you to concrete fixes from the guide.</span>
+      <span data-l="nl">Deze quiz is een kompas: hij helpt u zwakke plekken in uw setup te herkennen zonder te oordelen, en wijst u daarna naar concrete oplossingen uit de gids.</span>
+    </p>
+    <div class="hero-actions">
+      <a class="primary" href="#quiz-start" data-l="fr">Commencer</a>
+      <a href="index.html" data-l="fr">Lire le guide complet</a>
+      <a class="primary" href="#quiz-start" data-l="en">Start</a>
+      <a href="index.html" data-l="en">Read the full guide</a>
+      <a class="primary" href="#quiz-start" data-l="nl">Start</a>
+      <a href="index.html" data-l="nl">Lees de volledige gids</a>
+    </div>
+  </div>
+</header>
+<main class="wrap quiz-shell">
+  <section class="card" id="quiz-start">
+    <span class="pill" data-l="fr">Éducation · sans collecte</span><span class="pill" data-l="en">Education · no data collected</span><span class="pill" data-l="nl">Educatie · geen data verzameld</span>
+    <h2 class="question-title" data-l="fr">Répondez à 12 questions rapides.</h2>
+    <h2 class="question-title" data-l="en">Answer 12 quick questions.</h2>
+    <h2 class="question-title" data-l="nl">Beantwoord 12 snelle vragen.</h2>
+    <p class="muted" data-l="fr">Le score est calculé localement dans votre navigateur. Aucune donnée n'est envoyée ni enregistrée.</p>
+    <p class="muted" data-l="en">The score is calculated locally in your browser. No data is sent or stored.</p>
+    <p class="muted" data-l="nl">De score wordt lokaal in uw browser berekend. Er worden geen gegevens verzonden of opgeslagen.</p>
+    <div class="hero-actions">
+      <button class="primary btn" id="start-btn" onclick="startQuiz()" data-l="fr">Démarrer le quiz</button>
+      <button class="primary btn" id="start-btn-en" onclick="startQuiz()" data-l="en">Start the quiz</button>
+      <button class="primary btn" id="start-btn-nl" onclick="startQuiz()" data-l="nl">Start de quiz</button>
+    </div>
+  </section>
+
+  <section class="card" id="quiz-card" style="display:none;">
+    <div class="eyebrow" id="quiz-step-label" data-l="fr">Question 1 / 12</div>
+    <div class="eyebrow" data-l="en">Question 1 / 12</div>
+    <div class="eyebrow" data-l="nl">Vraag 1 / 12</div>
+    <div class="progress" aria-hidden="true"><span id="progress-fill"></span></div>
+    <h2 class="question-title" id="question-title"></h2>
+    <div class="options" id="options"></div>
+  </section>
+
+  <section class="card result" id="result-card">
+    <div class="band" id="result-band"></div>
+    <div class="result-score" id="result-score"></div>
+    <p id="result-summary"></p>
+    <div class="bar-list" id="bar-list"></div>
+    <h3 data-l="fr">Les 3 prochaines étapes à prioriser</h3><h3 data-l="en">Top 3 next steps</h3><h3 data-l="nl">Top 3 volgende stappen</h3>
+    <div class="recommendations" id="recommendations"></div>
+    <div class="share-actions">
+      <button class="primary" onclick="copyLink()" data-l="fr">Copier le lien</button>
+      <button class="primary" onclick="copyLink()" data-l="en">Copy link</button>
+      <button class="primary" onclick="copyLink()" data-l="nl">Kopieer link</button>
+      <button onclick="shareResult()" data-l="fr">Partager</button>
+      <button onclick="shareResult()" data-l="en">Share</button>
+      <button onclick="shareResult()" data-l="nl">Delen</button>
+      <a href="https://x.com/intent/tweet?text=" id="share-x" target="_blank" rel="noopener">X</a>
+      <a href="https://mastodonshare.com/?text=" id="share-mastodon" target="_blank" rel="noopener">Mastodon</a>
+    </div>
+    <div class="hero-actions" style="margin-top:1.1rem;">
+      <button class="btn" onclick="restartQuiz()" data-l="fr">Recommencer</button>
+      <a class="btn" href="index.html" data-l="fr">Lire le guide</a>
+      <button class="btn" onclick="restartQuiz()" data-l="en">Retake quiz</button>
+      <a class="btn" href="index.html" data-l="en">Read the guide</a>
+      <button class="btn" onclick="restartQuiz()" data-l="nl">Doe de quiz opnieuw</button>
+      <a class="btn" href="index.html" data-l="nl">Lees de gids</a>
+    </div>
+  </section>
+</main>
+<script>
+const translations = {
+  fr: {
+    intro: 'Répondez à 12 questions rapides.',
+    start: 'Démarrer le quiz',
+    questionLabel: 'Question',
+    of: '/',
+    shareTitle: 'Mon score de résistance à la censure :',
+    shareText: 'Mon score de résistance à la censure : {score}/100 — {band}. Découvrez votre niveau et les prochaines étapes.',
+    copySuccess: 'Lien copié dans le presse-papiers.',
+    copyFail: 'La copie automatique a échoué. Vous pouvez copier le lien manuellement.',
+    shareFallback: 'Impossible d’utiliser le partage natif. Le lien a été copié.',
+    band0: 'Exposé',
+    band1: 'Éveil',
+    band2: 'Résistant',
+    band3: 'Durci',
+    band4: 'Souverain',
+    summary0: 'Votre pile est encore très dépendante des grandes plateformes. Les premières étapes sont simples et utiles.',
+    summary1: 'Vous avez déjà commencé à décentraliser votre usage. Quelques changements bien choisis feraient une vraie différence.',
+    summary2: 'Votre configuration est déjà sérieuse. Vous avez une vraie base de résistance à la censure et à la surveillance.',
+    summary3: 'Vous êtes dans une logique de pseudonymat solide, avec un socle technique plus hard. L’objectif est maintenant la discipline et la séparation des identités.',
+    summary4: 'Votre posture est déjà très robuste. Vous êtes proche d’un niveau de souveraineté numérique forte, avec de la discipline et des choix techniques plus exigeants.',
+    recTitle: 'Les 3 prochaines étapes à prioriser',
+    recFallback: 'Passez à l’action sur le guide : commencez par les points les plus fragiles.',
+    recLabels: {
+      messaging: 'Messagerie',
+      email: 'Email',
+      browser: 'Navigateur',
+      dns: 'DNS',
+      vpn: 'VPN',
+      passwords: 'Mots de passe',
+      twofa: '2FA',
+      storage: 'Stockage',
+      social: 'Réseaux sociaux',
+      os: 'Système',
+      tor: 'Tor',
+      money: 'Argent'
+    },
+    recDescs: {
+      messaging: 'Privilégiez Signal, SimpleX ou Session pour les conversations sensibles.',
+      email: 'Utilisez Proton Mail ou Tuta et un vrai chiffrement de bout en bout si possible.',
+      browser: 'Évitez Google comme moteur de recherche et privilégiez un navigateur plus respectueux.',
+      dns: 'Passez à un DNS chiffré et à un fournisseur minimaliste.',
+      vpn: 'Un VPN honnête et sans journalisation est utile pour réduire la traçabilité.',
+      passwords: 'Un gestionnaire de mots de passe est déjà un grand pas.',
+      twofa: 'Le 2FA basé sur une app ou une clé matérielle est bien plus solide que le SMS.',
+      storage: 'Proton Drive, Cryptomator ou un stockage auto-hébergé seront plus sûrs.',
+      social: 'Réduire la dépendance aux grands réseaux peut limiter l’exposition.',
+      os: 'Un système libre ou plus privé réduit l’exposition à la surveillance intégrée.',
+      tor: 'Tor et Tails sont utiles pour une vraie discipline d’anonymat.',
+      money: 'Le respect de la vie privée finit par se poser aussi sur la monnaie.'
+    }
+  },
+  en: {
+    intro: 'Answer 12 quick questions.',
+    start: 'Start the quiz',
+    questionLabel: 'Question',
+    of: '/',
+    shareTitle: 'My censorship resistance score:',
+    shareText: 'My censorship resistance score: {score}/100 — {band}. See where you stand and what to improve next.',
+    copySuccess: 'Link copied to the clipboard.',
+    copyFail: 'Automatic copying failed. You can copy the link manually.',
+    shareFallback: 'Native sharing isn’t available. The link was copied instead.',
+    band0: 'Exposed',
+    band1: 'Awakening',
+    band2: 'Resistant',
+    band3: 'Hardened',
+    band4: 'Sovereign',
+    summary0: 'Your setup is still heavily tied to big platforms. The first steps are simple and high-impact.',
+    summary1: 'You have already started to diversify your tools. A few deliberate changes could make a real difference.',
+    summary2: 'Your setup is already serious. You have a solid base of censorship and surveillance resistance.',
+    summary3: 'You are operating with a strong pseudonymous baseline, with a more hardened technical stack. The next focus is discipline and compartmentalisation.',
+    summary4: 'Your posture is already very strong. You are close to high digital sovereignty, with discipline and more demanding technical choices.',
+    recTitle: 'Top 3 next steps',
+    recFallback: 'Take action from the guide and start with the weakest points.',
+    recLabels: {
+      messaging: 'Messaging',
+      email: 'Email',
+      browser: 'Browser',
+      dns: 'DNS',
+      vpn: 'VPN',
+      passwords: 'Passwords',
+      twofa: '2FA',
+      storage: 'Storage',
+      social: 'Social',
+      os: 'System',
+      tor: 'Tor',
+      money: 'Money'
+    },
+    recDescs: {
+      messaging: 'Prefer Signal, SimpleX or Session for sensitive conversations.',
+      email: 'Use Proton Mail or Tuta and strong end-to-end encryption where possible.',
+      browser: 'Avoid Google as your search engine and use a browser that better respects privacy.',
+      dns: 'Move to encrypted DNS and a minimal provider.',
+      vpn: 'A reputable no-log VPN can reduce traceability.',
+      passwords: 'A password manager is already a huge step forward.',
+      twofa: '2FA from an app or hardware key is much stronger than SMS.',
+      storage: 'Proton Drive, Cryptomator or self-hosted storage are stronger options.',
+      social: 'Reducing dependence on large platforms can limit exposure.',
+      os: 'A freer or more private operating system reduces integrated surveillance.',
+      tor: 'Tor and Tails are useful for real anonymity discipline.',
+      money: 'Privacy also matters when it comes to money.'
+    }
+  },
+  nl: {
+    intro: 'Beantwoord 12 snelle vragen.',
+    start: 'Start de quiz',
+    questionLabel: 'Vraag',
+    of: '/',
+    shareTitle: 'Mijn score voor weerstand tegen censuur:',
+    shareText: 'Mijn score voor weerstand tegen censuur: {score}/100 — {band}. Zie waar u staat en wat u het beste kunt verbeteren.',
+    copySuccess: 'Link gekopieerd naar het klembord.',
+    copyFail: 'Automatisch kopiëren is mislukt. U kunt de link handmatig kopiëren.',
+    shareFallback: 'Native delen is niet beschikbaar. De link is gekopieerd.',
+    band0: 'Blootgesteld',
+    band1: 'Ontwaken',
+    band2: 'Weerstand',
+    band3: 'Aangescherpt',
+    band4: 'Soeverein',
+    summary0: 'Uw setup is nog sterk afhankelijk van grote platforms. De eerste stappen zijn eenvoudig en effectief.',
+    summary1: 'U hebt al begonnen met het diversifiëren van uw tools. Een paar bewuste keuzes kunnen echt verschil maken.',
+    summary2: 'Uw setup is al serieus. U hebt een stevige basis voor weerstand tegen censuur en surveillance.',
+    summary3: 'U werkt met een sterke pseudonieme basis en een harder technische stack. De volgende focus is discipline en compartmentalisering.',
+    summary4: 'Uw positie is al zeer sterk. U bent dicht bij hoge digitale soevereiniteit, met discipline en meer veeleisende technische keuzes.',
+    recTitle: 'Top 3 volgende stappen',
+    recFallback: 'Ga in actie vanuit de gids en begin met de zwakste punten.',
+    recLabels: {
+      messaging: 'Berichten',
+      email: 'E-mail',
+      browser: 'Browser',
+      dns: 'DNS',
+      vpn: 'VPN',
+      passwords: 'Wachtwoorden',
+      twofa: '2FA',
+      storage: 'Opslag',
+      social: 'Sociaal',
+      os: 'Systeem',
+      tor: 'Tor',
+      money: 'Geld'
+    },
+    recDescs: {
+      messaging: 'Gebruik Signal, SimpleX of Session voor gevoelige gesprekken.',
+      email: 'Gebruik Proton Mail of Tuta en sterke eind-tot-eind-versleuteling waar mogelijk.',
+      browser: 'Vermijd Google als zoekmachine en gebruik een browser die privacy beter respecteert.',
+      dns: 'Ga over op versleutelde DNS en een minimale provider.',
+      vpn: 'Een betrouwbare no-log VPN kan de traceerbaarheid verminderen.',
+      vpn: 'Een betrouwbare no-log VPN kan de traceerbaarheid verminderen.',
+      passwords: 'Een wachtwoordmanager is al een enorme stap vooruit.',
+      twofa: '2FA via een app of hardwaretoken is veel sterker dan SMS.',
+      storage: 'Proton Drive, Cryptomator of zelf gehoste opslag zijn sterker.',
+      social: 'Minder afhankelijk zijn van grote platforms kan de blootstelling beperken.',
+      os: 'Een vrijer of privacievriendelijker besturingssysteem vermindert geïntegreerde surveillance.',
+      tor: 'Tor en Tails zijn nuttig voor echte anonimiteitsdiscipline.',
+      money: 'Privacy is ook relevant als het om geld gaat.'
+    }
+  }
+};
+
+const questions = [
+  {
+    key: 'messaging',
+    anchor: 'messagerie',
+    prompt: {
+      fr: 'Comment communiquez-vous le plus souvent avec vos proches ?',
+      en: 'How do you communicate with friends and family most of the time?',
+      nl: 'Hoe communiceert u meestal met vrienden en familie?'
+    },
+    options: [
+      { label: {fr:'WhatsApp / Messenger / SMS',en:'WhatsApp / Messenger / SMS',nl:'WhatsApp / Messenger / SMS'}, points: 0, hint: {fr:'Le métadonnées et les plateformes centralisées restent le point faible.',en:'Metadata and centralized platforms remain the weak point.',nl:'Metadata en gecentraliseerde platforms blijven de zwakke plek.'} },
+      { label: {fr:'Telegram pour la plupart des conversations',en:'Telegram for most conversations',nl:'Telegram voor de meeste gesprekken'}, points: 2, hint: {fr:'Mieux que le grand réseau, mais le niveau de confidentialité reste limité.',en:'Better than the big platforms, but privacy is still limited.',nl:'Beter dan grote platforms, maar privacy blijft beperkt.'} },
+      { label: {fr:'Signal ou Molly pour la plupart des chats',en:'Signal or Molly for most chats',nl:'Signal of Molly voor de meeste chats'}, points: 6, hint: {fr:'C’est déjà une bonne base pour la résistance à la censure.',en:'That is already a solid base for censorship resistance.',nl:'Dat is al een stevige basis voor weerstand tegen censuur.'} },
+      { label: {fr:'SimpleX / Session / Matrix pour les usages sensibles',en:'SimpleX / Session / Matrix for sensitive use',nl:'SimpleX / Session / Matrix voor gevoelige gebruik'}, points: 10, hint: {fr:'Un cadre plus robuste, avec moins de dépendance au téléphone et à la plateforme.',en:'A stronger setup with less dependence on a phone number and central platforms.',nl:'Een sterker setup met minder afhankelijkheid van telefoonnummer en centrale platforms.'} }
+    ]
+  },
+  {
+    key: 'email',
+    anchor: 'email',
+    prompt: {fr:'Quel service utilisez-vous le plus souvent pour vos e-mails ?',en:'Which service do you use most for your email?',nl:'Welke dienst gebruikt u het meest voor uw e-mail?'},
+    options: [
+      { label: {fr:'Gmail / Outlook / iCloud Mail',en:'Gmail / Outlook / iCloud Mail',nl:'Gmail / Outlook / iCloud Mail'}, points: 0, hint: {fr:'Le stockage et la lecture du contenu restent très centralisés.',en:'Storage and content access remain heavily centralized.',nl:'Opslag en inhoudsbeheersing blijven sterk gecentraliseerd.'} },
+      { label: {fr:'Proton Mail ou Tuta avec un usage courant',en:'Proton Mail or Tuta for everyday use',nl:'Proton Mail of Tuta voor dagelijks gebruik'}, points: 5, hint: {fr:'Voix déjà plus sérieuse pour la confidentialité.',en:'Already a stronger option for privacy.',nl:'Al een sterkere optie voor privacy.'} },
+      { label: {fr:'Proton/Tuta + PGP pour certains contacts',en:'Proton/Tuta + PGP for some contacts',nl:'Proton/Tuta + PGP voor sommige contacten'}, points: 7, hint: {fr:'Un bon niveau de résistance si vous maîtrisez les habitudes.',en:'A good level of resistance if you use it consistently.',nl:'Een goed niveau van weerstand als u het consequent gebruikt.'} },
+      { label: {fr:'PGP / OpenPGP régulier et attention au métadonnées',en:'Regular PGP / OpenPGP and careful metadata habits',nl:'Regelmatig PGP / OpenPGP en aandacht voor metadata'}, points: 10, hint: {fr:'C’est une posture beaucoup plus robuste.',en:'That is a much more robust posture.',nl:'Dat is een veel robuustere houding.'} }
+    ]
+  },
+  {
+    key: 'browser',
+    anchor: 'navigateur',
+    prompt: {fr:'Quel moteur de recherche et navigateur utilisez-vous le plus ?',en:'Which search engine and browser do you use most?',nl:'Welke zoekmachine en browser gebruikt u het meest?'},
+    options: [
+      { label: {fr:'Chrome + Google',en:'Chrome + Google',nl:'Chrome + Google'}, points: 0, hint: {fr:'Ce combo est très confortable, mais fortement traçable.',en:'This pair is convenient but highly trackable.',nl:'Dit paar is handig maar sterk traceerbaar.'} },
+      { label: {fr:'Firefox ou Brave avec un moteur privé',en:'Firefox or Brave with a private search engine',nl:'Firefox of Brave met een private zoekmachine'}, points: 5, hint: {fr:'Un vrai pas en avant pour la vie privée.',en:'A real step forward for privacy.',nl:'Een echte stap vooruit voor privacy.'} },
+      { label: {fr:'Brave/Firefox + DuckDuckGo / Startpage / Searx',en:'Brave/Firefox + DuckDuckGo / Startpage / Searx',nl:'Brave/Firefox + DuckDuckGo / Startpage / Searx'}, points: 7, hint: {fr:'C’est déjà une bonne base quotidienne.',en:'That is already a solid daily baseline.',nl:'Dat is al een stevige dagelijkse basis.'} },
+      { label: {fr:'Mullvad Browser / LibreWolf / Tor Browser selon le contexte',en:'Mullvad Browser / LibreWolf / Tor Browser depending on context',nl:'Mullvad Browser / LibreWolf / Tor Browser afhankelijk van de context'}, points: 10, hint: {fr:'Une posture plus sérieuse face à la surveillance.',en:'A stronger posture against surveillance.',nl:'Een sterkere houding tegen surveillance.'} }
+    ]
+  },
+  {
+    key: 'dns',
+    anchor: 'dns',
+    prompt: {fr:'Comment résolvez-vous les noms de domaine ?',en:'How do you resolve domain names?',nl:'Hoe lost u domeinnamen op?'},
+    options: [
+      { label: {fr:'Le DNS de votre FAI ou de votre box',en:'Your ISP or router DNS',nl:'De DNS van uw ISP of router'}, points: 0, hint: {fr:'Le plus simple, mais souvent le moins privé.',en:'The easiest option, but often the least private.',nl:'De makkelijkste optie, maar vaak de minst private.'} },
+      { label: {fr:'DNS chiffré standard (1.1.1.1 / 8.8.8.8)',en:'Encrypted DNS with a mainstream provider',nl:'Versleutelde DNS met een mainstream provider'}, points: 4, hint: {fr:'Un bon premier pas.',en:'A good first step.',nl:'Een goede eerste stap.'} },
+      { label: {fr:'Quad9 / Mullvad DNS / NextDNS',en:'Quad9 / Mullvad DNS / NextDNS',nl:'Quad9 / Mullvad DNS / NextDNS'}, points: 7, hint: {fr:'Une vraie amélioration si vous voulez limiter la traçabilité.',en:'A real improvement if you want to limit traceability.',nl:'Een echte verbetering als u traceerbaarheid wilt beperken.'} },
+      { label: {fr:'DNS chiffré + stratégie de contournement du tracking',en:'Encrypted DNS plus a deliberate anti-tracking strategy',nl:'Versleutelde DNS plus een bewuste anti-trackingstrategie'}, points: 10, hint: {fr:'Une posture plus consciente et plus robuste.',en:'A more deliberate and robust posture.',nl:'Een meer bewuste en robuuste houding.'} }
+    ]
+  },
+  {
+    key: 'vpn',
+    anchor: 'vpn',
+    prompt: {fr:'Quel type de VPN utilisez-vous ?',en:'What kind of VPN do you use?',nl:'Welke VPN gebruikt u?'},
+    options: [
+      { label: {fr:'Pas de VPN',en:'No VPN',nl:'Geen VPN'}, points: 0, hint: {fr:'C’est le cas le plus exposé.',en:'This is the most exposed case.',nl:'Dit is het meest blootgestelde geval.'} },
+      { label: {fr:'Un VPN gratuit ou douteux',en:'A free or dubious VPN',nl:'Een gratis of twijfelachtige VPN'}, points: 2, hint: {fr:'Peut être pire qu’un VPN honnête si le fournisseur est opaque.',en:'It can be worse than a trustworthy VPN if the provider is opaque.',nl:'Het kan slechter zijn dan een betrouwbare VPN als de provider ondoorzichtig is.'} },
+      { label: {fr:'Un VPN honnête, no-log, avec une vraie politique',en:'A reputable no-log VPN with a clear policy',nl:'Een betrouwbare no-log VPN met een duidelijke policy'}, points: 7, hint: {fr:'Une vraie amélioration pour la confidentialité.',en:'A real improvement to privacy.',nl:'Een echte verbetering voor privacy.'} },
+      { label: {fr:'Mullvad / Proton VPN / IVPN pour une utilisation régulière',en:'Mullvad / Proton VPN / IVPN for regular use',nl:'Mullvad / Proton VPN / IVPN voor regelmatig gebruik'}, points: 10, hint: {fr:'C’est une posture plus sérieuse et plus cohérente.',en:'That is a more serious and coherent posture.',nl:'Dat is een serieuzere en coherenter houding.'} }
+    ]
+  },
+  {
+    key: 'passwords',
+    anchor: 'motsdepasse',
+    prompt: {fr:'Comment gérez-vous vos mots de passe ?',en:'How do you manage your passwords?',nl:'Hoe beheert u uw wachtwoorden?'},
+    options: [
+      { label: {fr:'Mots de passe réutilisés ou stockés dans le navigateur',en:'Reused passwords or saved in the browser',nl:'Herbruikte wachtwoorden of opgeslagen in de browser'}, points: 0, hint: {fr:'Le risque est élevé en cas de fuite ou de compromission.',en:'The risk is high in a breach or compromise.',nl:'Het risico is hoog bij een lek of compromittering.'} },
+      { label: {fr:'Un gestionnaire de mots de passe basique',en:'A basic password manager',nl:'Een basis wachtwoordmanager'}, points: 5, hint: {fr:'Déjà un très bon pas en avant.',en:'Already a very good step forward.',nl:'Al een heel goede stap vooruit.'} },
+      { label: {fr:'Bitwarden / KeePassXC / Proton Pass',en:'Bitwarden / KeePassXC / Proton Pass',nl:'Bitwarden / KeePassXC / Proton Pass'}, points: 7, hint: {fr:'Une posture saine, simple à maintenir.',en:'A healthy posture that is simple to maintain.',nl:'Een gezonde houding die eenvoudig te onderhouden is.'} },
+      { label: {fr:'Gestionnaire de mots de passe + mots de passe uniques et longs',en:'Password manager + unique, long passwords',nl:'Wachtwoordmanager + unieke, lange wachtwoorden'}, points: 10, hint: {fr:'C’est le niveau le plus solide pour réduire les dégâts.',en:'That is the most robust way to reduce damage from compromise.',nl:'Dat is de meest robuuste manier om schade door compromittering te beperken.'} }
+    ]
+  },
+  {
+    key: 'twofa',
+    anchor: 'deuxfa',
+    prompt: {fr:'Quel niveau de 2FA utilisez-vous ?',en:'What level of 2FA do you use?',nl:'Welk niveau van 2FA gebruikt u?'},
+    options: [
+      { label: {fr:'Pas de 2FA',en:'No 2FA',nl:'Geen 2FA'}, points: 0, hint: {fr:'Le plus faible niveau de protection.',en:'The weakest level of protection.',nl:'Het zwakste beschermingsniveau.'} },
+      { label: {fr:'SMS ou appel',en:'SMS or phone call',nl:'SMS of telefoontje'}, points: 2, hint: {fr:'Mieux que rien, mais très fragile.',en:'Better than nothing, but very fragile.',nl:'Beter dan niets, maar zeer fragiel.'} },
+      { label: {fr:'TOTP sur une application',en:'TOTP in an app',nl:'TOTP in een app'}, points: 6, hint: {fr:'Une bonne protection quotidienne.',en:'A good everyday protection layer.',nl:'Een goede dagelijkse beschermingslaag.'} },
+      { label: {fr:'Clé matérielle ou 2FA phishing-resistant',en:'Hardware key or phishing-resistant 2FA',nl:'Hardwaretoken of phishing-resistente 2FA'}, points: 10, hint: {fr:'Le meilleur niveau de résistance pratique.',en:'The strongest practical resistance level.',nl:'Het sterkste praktische weerstandsniveau.'} }
+    ]
+  },
+  {
+    key: 'storage',
+    anchor: 'stockage',
+    prompt: {fr:'Où stockez-vous vos fichiers sensibles ?',en:'Where do you store sensitive files?',nl:'Waar bewaart u gevoelige bestanden?'},
+    options: [
+      { label: {fr:'Google Drive / iCloud / OneDrive',en:'Google Drive / iCloud / OneDrive',nl:'Google Drive / iCloud / OneDrive'}, points: 0, hint: {fr:'Très pratique, mais centralisé.',en:'Very convenient, but centralized.',nl:'Zeer handig, maar gecentraliseerd.'} },
+      { label: {fr:'Proton Drive ou un stockage chiffré de base',en:'Proton Drive or a basic encrypted storage service',nl:'Proton Drive of een basis versleutelde opslagdienst'}, points: 5, hint: {fr:'Une vraie amélioration.',en:'A real improvement.',nl:'Een echte verbetering.'} },
+      { label: {fr:'Cryptomator ou stockage local chiffré',en:'Cryptomator or local encrypted storage',nl:'Cryptomator of lokaal versleutelde opslag'}, points: 7, hint: {fr:'Une posture plus robuste.',en:'A more robust posture.',nl:'Een robuustere houding.'} },
+      { label: {fr:'Stockage local + auto-hébergement / chiffrement avancé',en:'Local storage + self-hosting / advanced encryption',nl:'Lokale opslag + zelfhosting / geavanceerde versleuteling'}, points: 10, hint: {fr:'Le niveau le plus sérieux pour la souveraineté.',en:'The most serious level for sovereignty.',nl:'Het meest serieuze niveau voor soevereiniteit.'} }
+    ]
+  },
+  {
+    key: 'social',
+    anchor: 'social',
+    prompt: {fr:'Où passez-vous la plupart de votre vie sociale en ligne ?',en:'Where do you spend most of your social online life?',nl:'Waar brengt u het grootste deel van uw online sociale leven door?'},
+    options: [
+      { label: {fr:'Meta / X / grands réseaux uniquement',en:'Meta / X / big platforms only',nl:'Meta / X / alleen grote platforms'}, points: 0, hint: {fr:'Le plus simple, mais le plus exposé aux contraintes.',en:'The simplest, but the most exposed to pressure.',nl:'De simpelste, maar ook de meest blootgestelde aan druk.'} },
+      { label: {fr:'Mastodon / Matrix / Nostr de façon ponctuelle',en:'Mastodon / Matrix / Nostr occasionally',nl:'Mastodon / Matrix / Nostr af en toe'}, points: 5, hint: {fr:'Une diversification utile.',en:'A useful diversification.',nl:'Een nuttige diversificatie.'} },
+      { label: {fr:'Un mix de réseaux décentralisés et de contacts directs',en:'A mix of decentralised networks and direct contacts',nl:'Een mix van gedecentraliseerde netwerken en directe contacten'}, points: 7, hint: {fr:'Une posture plus indépendante.',en:'A more independent posture.',nl:'Een onafhankelijkere houding.'} },
+      { label: {fr:'Réseaux alternatifs et faible dépendance aux plateformes',en:'Alternative networks and low dependence on platforms',nl:'Alternatieve netwerken en weinig afhankelijkheid van platforms'}, points: 10, hint: {fr:'La vraie logique de résistance est là.',en:'That is the true logic of resistance.',nl:'Dat is de echte logica van weerstand.'} }
+    ]
+  },
+  {
+    key: 'os',
+    anchor: 'os',
+    prompt: {fr:'Quel système d’exploitation utilisez-vous le plus ?',en:'What operating system do you use most?',nl:'Welk besturingssysteem gebruikt u het meest?'},
+    options: [
+      { label: {fr:'Android/iOS/Windows standard',en:'Stock Android/iOS/Windows',nl:'Standaard Android/iOS/Windows'}, points: 0, hint: {fr:'Très pratique, mais beaucoup moins respectueux de la vie privée.',en:'Very convenient, but much less privacy-respecting.',nl:'Zeer handig, maar veel minder privacyvriendelijk.'} },
+      { label: {fr:'Android plus privé / Linux / macOS',en:'More private Android / Linux / macOS',nl:'Meer private Android / Linux / macOS'}, points: 5, hint: {fr:'Déjà un bon progrès.',en:'Already a good improvement.',nl:'Al een goede verbetering.'} },
+      { label: {fr:'GrapheneOS / Linux / BSD',en:'GrapheneOS / Linux / BSD',nl:'GrapheneOS / Linux / BSD'}, points: 8, hint: {fr:'Une base plus sérieuse.',en:'A stronger base.',nl:'Een sterkere basis.'} },
+      { label: {fr:'GrapheneOS + Linux + discipline d’installation',en:'GrapheneOS + Linux + careful setup discipline',nl:'GrapheneOS + Linux + zorgvuldige setupdiscipline'}, points: 10, hint: {fr:'C’est déjà une posture très forte.',en:'That is already a very strong posture.',nl:'Dat is al een zeer sterke houding.'} }
+    ]
+  },
+  {
+    key: 'tor',
+    anchor: 'tor',
+    prompt: {fr:'Dans quelle mesure utilisez-vous Tor / Tails / l’anonymat ?',en:'How much do you use Tor / Tails / anonymity tools?',nl:'Hoe vaak gebruikt u Tor / Tails / anonimiteitsmiddelen?'},
+    options: [
+      { label: {fr:'Jamais ou presque jamais',en:'Almost never',nl:'Bijna nooit'}, points: 0, hint: {fr:'La posture est très exposée si la menace devient sérieuse.',en:'The posture is very exposed if the threat becomes serious.',nl:'De houding is zeer blootgesteld als de dreiging serieus wordt.'} },
+      { label: {fr:'De temps en temps, sans discipline',en:'Occasionally, without much discipline',nl:'Af en toe, zonder veel discipline'}, points: 3, hint: {fr:'Un premier pas, mais encore fragile.',en:'A first step, but still fragile.',nl:'Een eerste stap, maar nog fragiel.'} },
+      { label: {fr:'Tor pour certaines tâches sensibles',en:'Tor for some sensitive tasks',nl:'Tor voor sommige gevoelige taken'}, points: 6, hint: {fr:'Déjà plus sérieux.',en:'Already more serious.',nl:'Al serieuzer.'} },
+      { label: {fr:'Tor + Tails / discipline forte',en:'Tor + Tails / strong discipline',nl:'Tor + Tails / sterke discipline'}, points: 10, hint: {fr:'Le niveau le plus adapté à une menace élevée.',en:'The most suitable level for a high threat environment.',nl:'Het meest passende niveau voor een hoge dreigingsomgeving.'} }
+    ]
+  },
+  {
+    key: 'money',
+    anchor: 'argent',
+    prompt: {fr:'Comment gérez-vous votre argent numérique ?',en:'How do you handle your digital money?',nl:'Hoe gaat u om met uw digitale geld?'},
+    options: [
+      { label: {fr:'Seulement des cartes bancaires / comptes standards',en:'Bank cards and standard accounts only',nl:'Alleen bankkaarten en standaardrekeningen'}, points: 0, hint: {fr:'La traçabilité est forte.',en:'Traceability is high.',nl:'Traceerbaarheid is hoog.'} },
+      { label: {fr:'Quelques outils de paiement plus privés',en:'Some more privacy-aware payment tools',nl:'Sommige privacybewuste betaaltools'}, points: 4, hint: {fr:'Un premier effort de séparation.',en:'A first effort at separation.',nl:'Een eerste poging tot scheiding.'} },
+      { label: {fr:'Un mix de compte privé / crypto limitée',en:'A mix of private accounts and limited crypto use',nl:'Een mix van privérekeningen en beperkte crypto'}, points: 6, hint: {fr:'C’est déjà plus réfléchi.',en:'That is already more deliberate.',nl:'Dat is al meer doordacht.'} },
+      { label: {fr:'Pratiques de souveraineté financière plus fortes',en:'Stronger financial sovereignty practices',nl:'Sterkere praktijken van financiële soevereiniteit'}, points: 10, hint: {fr:'Une posture beaucoup plus sérieuse.',en:'A much more serious posture.',nl:'Een veel serieuzere houding.'} }
+    ]
+  }
+];
+
+const state = { currentQuestion: 0, score: 0, categoryScores: {} };
+const lang = () => document.documentElement.getAttribute('data-lang') || 'en';
+
+function setLang(nextLang){
+  try{localStorage.setItem('lang', nextLang);}catch(e){}
+  document.documentElement.setAttribute('data-lang', nextLang);
+  document.documentElement.setAttribute('lang', nextLang);
+  document.querySelectorAll('.btn').forEach(btn => {
+    if (btn.id && btn.id.startsWith('lang-')) {
+      btn.setAttribute('aria-pressed', btn.id === 'lang-' + nextLang ? 'true' : 'false');
+    }
+  });
+  updateStrings();
+}
+function toggleTheme(){
+  const root = document.documentElement;
+  const current = root.getAttribute('data-theme') || (window.matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
+  const next = current === 'dark' ? 'light' : 'dark';
+  root.setAttribute('data-theme', next);
+  try{localStorage.setItem('theme', next);}catch(e){}
+}
+function applyTheme(){
+  try{
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || saved === 'light') {
+      document.documentElement.setAttribute('data-theme', saved);
+    }
+  } catch(e){}
+}
+function updateStrings(){
+  const l = lang();
+  const startLabels = document.querySelectorAll('[data-l]');
+  startLabels.forEach(el => {
+    const value = el.getAttribute('data-l');
+    if (value === l) {
+      el.style.display = '';
+    } else {
+      el.style.display = 'none';
+    }
+  });
+  if (document.getElementById('quiz-card').style.display !== 'none') {
+    renderQuestion();
+  }
+}
+function startQuiz(){
+  document.getElementById('quiz-start').style.display = 'none';
+  document.getElementById('quiz-card').style.display = 'block';
+  document.getElementById('result-card').classList.remove('show');
+  state.currentQuestion = 0;
+  state.score = 0;
+  state.categoryScores = {};
+  renderQuestion();
+}
+function restartQuiz(){
+  document.getElementById('result-card').classList.remove('show');
+  document.getElementById('quiz-start').style.display = 'block';
+  document.getElementById('quiz-card').style.display = 'none';
+}
+function renderQuestion(){
+  const q = questions[state.currentQuestion];
+  if (!q) return;
+  const l = lang();
+  document.getElementById('question-title').textContent = q.prompt[l];
+  document.getElementById('quiz-step-label').textContent = `${translations[l].questionLabel} ${state.currentQuestion + 1} ${translations[l].of} ${questions.length}`;
+  const progress = ((state.currentQuestion) / questions.length) * 100;
+  document.getElementById('progress-fill').style.width = `${progress}%`;
+  const options = document.getElementById('options');
+  options.innerHTML = '';
+  q.options.forEach((option, index) => {
+    const btn = document.createElement('button');
+    btn.className = 'option';
+    btn.type = 'button';
+    btn.onclick = () => answerQuestion(option.points, q.key);
+    btn.innerHTML = `<strong>${option.label[l]}</strong><small>${option.hint[l]}</small>`;
+    options.appendChild(btn);
+  });
+}
+function answerQuestion(points, key){
+  state.score += points;
+  if (!state.categoryScores[key]) state.categoryScores[key] = 0;
+  state.categoryScores[key] += points;
+  state.currentQuestion += 1;
+  if (state.currentQuestion >= questions.length) {
+    showResults();
+  } else {
+    renderQuestion();
+  }
+}
+function scoreToBand(score){
+  if (score <= 24) return 0;
+  if (score <= 49) return 1;
+  if (score <= 74) return 2;
+  if (score <= 89) return 3;
+  return 4;
+}
+function showResults(){
+  const l = lang();
+  const maxPoints = questions.reduce((sum, q) => sum + Math.max(...q.options.map(o => o.points)), 0);
+  const score = Math.round((state.score / maxPoints) * 100);
+  const band = scoreToBand(score);
+  const bandLabel = translations[l][`band${band}`];
+  const summary = translations[l][`summary${band}`];
+  document.getElementById('result-band').textContent = bandLabel;
+  document.getElementById('result-score').textContent = `${score}/100`;
+  document.getElementById('result-summary').textContent = summary;
+  document.getElementById('result-card').classList.add('show');
+  document.getElementById('quiz-card').style.display = 'none';
+  const barList = document.getElementById('bar-list');
+  barList.innerHTML = '';
+  const categoryNames = Object.keys(state.categoryScores).map(key => ({ key, score: state.categoryScores[key] }));
+  const maxPerCategory = questions.length;
+  categoryNames.forEach(entry => {
+    const q = questions.find(item => item.key === entry.key);
+    const value = Math.min(100, Math.round((entry.score / 10) * 100));
+    const row = document.createElement('div');
+    row.className = 'bar-row';
+    row.innerHTML = `<span>${translations[l].recLabels[entry.key] || entry.key}</span><div class="bar-track"><i style="width:${value}%"></i></div><strong>${value}/100</strong>`;
+    barList.appendChild(row);
+  });
+  const recs = document.getElementById('recommendations');
+  recs.innerHTML = '';
+  const ranked = Object.entries(state.categoryScores)
+    .map(([key, value]) => ({ key, value }))
+    .sort((a, b) => a.value - b.value)
+    .slice(0, 3);
+  if (ranked.length) {
+    ranked.forEach(entry => {
+      const q = questions.find(item => item.key === entry.key);
+      const card = document.createElement('div');
+      card.className = 'recommendation';
+      card.innerHTML = `<strong>${translations[l].recLabels[entry.key] || entry.key}</strong><p>${translations[l].recDescs[entry.key] || translations[l].recFallback}</p><a href="index.html#${q.anchor}">Open guide →</a>`;
+      recs.appendChild(card);
+    });
+  } else {
+    recs.innerHTML = `<div class="recommendation"><strong>${translations[l].recTitle}</strong><p>${translations[l].recFallback}</p></div>`;
+  }
+  const shareText = translations[l].shareText.replace('{score}', score).replace('{band}', bandLabel);
+  document.getElementById('share-x').href = `https://x.com/intent/tweet?text=${encodeURIComponent(shareText + ' https://exitchatcontrol.org/quiz.html')}`;
+  document.getElementById('share-mastodon').href = `https://mastodonshare.com/?text=${encodeURIComponent(shareText + ' https://exitchatcontrol.org/quiz.html')}`;
+  document.getElementById('result-card').style.display = 'block';
+  document.getElementById('result-card').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function copyLink(){
+  const url = window.location.href.split('?')[0];
+  const l = lang();
+  const text = `${translations[l].shareTitle} ${document.getElementById('result-score').textContent}`;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(`${url}?score=${document.getElementById('result-score').textContent}`).then(() => {
+      window.alert(translations[l].copySuccess);
+    }).catch(() => window.alert(translations[l].copyFail));
+  } else {
+    window.alert(translations[l].copyFail);
+  }
+}
+function shareResult(){
+  const l = lang();
+  const url = window.location.href.split('?')[0];
+  const scoreText = `${translations[l].shareTitle} ${document.getElementById('result-score').textContent}`;
+  const shareText = `${scoreText} — ${document.getElementById('result-band').textContent}. ${translations[l].shareText.replace('{score}', document.getElementById('result-score').textContent).replace('{band}', document.getElementById('result-band').textContent)}`;
+  if (navigator.share) {
+    navigator.share({title:'Exit Chat Control',text:shareText,url:`${url}?score=${document.getElementById('result-score').textContent}`}).catch(() => {});
+  } else {
+    copyLink();
+    window.alert(translations[l].shareFallback);
+  }
+}
+applyTheme();
+setLang(lang());
+</script>
+</body>
+</html>

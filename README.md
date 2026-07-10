@@ -13,6 +13,7 @@ It is intentionally simple: no tracking, no dependencies, no build step. Just op
 ## Repository
 
 - **`index.html`** — the full guide (a standalone website).
+- **`quiz.html`** — a short, educational quiz that scores censorship resistance on a 0–100 scale.
 - **`article-presse.md`** — a ready-to-publish, actionable article (for a blog, a newsletter, or an X Article).
 - **`images/`** — screenshots used in the guide.
 
