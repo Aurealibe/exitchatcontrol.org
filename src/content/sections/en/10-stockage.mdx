@@ -1,0 +1,77 @@
+---
+id: 'stockage'
+part: 6
+order: 10
+title: 'Encrypted storage'
+---
+
+<p class="part-num">
+  PART 09 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Encrypted storage
+
+<ToolCard tool="t-protondrive">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Replaces Google Drive / iCloud</span>
+    <span class="tool-tag">🇨🇭 · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    An end-to-end encrypted cloud for your files and photos, part of Proton.
+  </Fragment>
+  <Fragment slot="why">
+    Unlike Google Drive or iCloud, Proton can't read your files: they're encrypted before leaving
+    your device. Swiss jurisdiction, same account as Proton Mail.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone, as a simple, direct replacement for Google's or Apple's cloud.
+  </Fragment>
+  <ol slot="install">
+    <li>Enable Proton Drive in your Proton account and install the app.</li>
+    <li>Turn on automatic photo backup, then disable Google's/Apple's.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cryptomator">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermediate</span>
+    <span class="tool-tag">Encrypt before upload</span>
+    <span class="tool-tag">🇩🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A vault that encrypts your files <b>before</b> uploading them to any cloud, even Google Drive or
+    Dropbox.
+  </Fragment>
+  <Fragment slot="why">
+    The perfect trick if you must keep an existing cloud: you keep the convenient service, but the
+    provider only sees encrypted gibberish. You alone hold the key.
+  </Fragment>
+  <Fragment slot="who">
+    Those who can't leave a mainstream cloud yet, but want to protect their files right now.
+  </Fragment>
+  <ol slot="install">
+    <li>Install Cryptomator (desktop and mobile) from cryptomator.org.</li>
+    <li>Create a "vault" in your cloud's synced folder, choose a strong password.</li>
+    <li>Put your files in the vault: they're encrypted then synced automatically.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nc-storage">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">Your own cloud</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Your own cloud (files, calendar, contacts, notes) hosted on your server.
+  </Fragment>
+  <Fragment slot="why">
+    The ultimate degree of control: your data never leaves your hardware. Detailed in section 10
+    (Self-hosting).
+  </Fragment>
+  <Fragment slot="who">Self-hosters. See the full card in section 10.</Fragment>
+  <a slot="links" class="tool-link" href="#selfhost">
+    → Section 10
+  </a>
+</ToolCard>

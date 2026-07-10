@@ -1,0 +1,16 @@
+[
+  { "id": "do-signal", "level": "green" },
+  { "id": "do-email", "level": "green" },
+  { "id": "do-pass", "level": "green" },
+  { "id": "do-ublock", "level": "green" },
+  { "id": "do-browser", "level": "green" },
+  { "id": "do-twofa", "level": "yellow" },
+  { "id": "do-cloud", "level": "yellow" },
+  { "id": "do-vpn", "level": "yellow" },
+  { "id": "do-dns", "level": "yellow" },
+  { "id": "do-social", "level": "yellow" },
+  { "id": "do-linux", "level": "red" },
+  { "id": "do-graphene", "level": "red" },
+  { "id": "do-selfhost", "level": "red" },
+  { "id": "do-opsec", "level": "red" }
+]

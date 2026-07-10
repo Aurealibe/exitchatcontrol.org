@@ -1,0 +1,1006 @@
+Aller au contenu
+EXIT CHAT CONTROLSommaire
+EnglishFrançaisNederlands
+◐
+Exit Chat Control — Devenir Ingouvernable
+Manuel de terrain pour échapper à Chat Control et reprendre le contrôle de votre vie privée numérique : messagerie chiffrée, e-mail, VPN, DNS, mots de passe, Linux, GrapheneOS, auto-hébergement. Gratuit, open source, sans pistage.
+PARTIE 00 · LE POURQUOI
+Comprendre la menace
+Avant de changer d’outils, il faut comprendre ce contre quoi on se protège. Sinon, on installe des applications au hasard et on se croit protégé alors qu’on ne l’est pas.
+Chat Control 1.0 et 2.0, en clair
+« Chat Control » est le surnom donné à deux textes européens qui autorisent (ou imposeraient) le scan de vos messages privés à la recherche de contenus pédocriminels (CSAM). L’objectif affiché est légitime ; le moyen employé, le scan généralisé des communications de personnes non suspectes, revient à une surveillance de masse.
+Chat Control 1.0
+Chat Control 2.0 (CSAR)
+Texte
+Règlement (UE) 2021/1232, dérogation à la directive ePrivacy
+Proposition COM/2022/209 (Ylva Johansson, mai 2022)
+Nature du scan
+Volontaire, les plateformes peuvent scanner
+Obligatoire via « ordres de détection » et « mesures d’atténuation des risques »
+Qui est visé
+Surtout services US non chiffrés : Gmail, Messenger/Instagram, Skype, Snapchat, iCloud Mail, Xbox
+Toutes les plateformes, y compris les messageries chiffrées de bout en bout
+Le scan côté client : le mouchard légal
+Le cœur de Chat Control 2.0 est une technique appelée scan côté client (client-side scanning). L’idée : au lieu de casser le chiffrement pendant le transport, on installe un logiciel directement sur votre téléphone qui inspecte chaque message, photo ou lien avant qu’il ne soit chiffré et envoyé. Signal résume ça d’une phrase : c’est « comme un malware sur votre appareil ».
+Honnêteté technique, à lire deux fois
+Contre le scan côté client, ni un VPN ni le chiffrement de bout en bout ne suffisent si l’application ou le système d’exploitation coopère. Le scan a lieu sur l’appareil, avant chiffrement : le VPN ne voit rien à protéger, et le chiffrement intervient trop tard. Ce qui protège réellement, c’est de choisir des logiciels libres qui refusent d’implémenter le scan, des juridictions favorables, l’auto-hébergement, et de reprendre le contrôle de son appareil (un OS non piégé). Tout le reste de ce guide découle de cette vérité.
+Le pire : l’outil ne marche même pas
+On sacrifie la vie privée de tous pour une technologie qui échoue. La propre étude du Parlement européen conclut qu’aucun système ne détecte ce contenu sans un taux d’erreur élevé (à cause du très grand nombre de messages, un faible taux de faux positifs produit des millions de fausses accusations). Les chiffres de la police irlandaise l’illustrent : sur les signalements automatiques, environ 20 % seulement correspondaient à du vrai contenu, et plus de 11 % étaient des faux positifs manifestes. Des travaux de référence (« Bugs in Our Pockets », 2021) montrent en plus que le scan côté client, une fois installé, est inévitablement détourné vers d’autres usages (terrorisme, droit d’auteur, opinions).
+Le prétexte : « protéger les enfants »
+Personne n’est contre la protection des mineurs, et c’est précisément ce qui en fait un levier si efficace. La lutte contre la pédocriminalité sert de cheval de Troie émotionnel : qui oserait s’y opposer ? Sous cette bannière, on fait accepter un principe qui, présenté seul, serait rejeté en bloc, l’inspection automatisée des communications privées de centaines de millions de personnes non suspectes. Les enfants sont le motif affiché ; la cible réelle, c’est le chiffrement et la vie privée de tous.
+Le plus révélateur : les entreprises qui poussent le plus fort pour ce scan sont celles dont le modèle économique est la surveillance. Le 19 mars 2026, un appel commun a exhorté les législateurs européens à pérenniser la détection « volontaire », signé par :
+GoogleLinkedInSnapchatMicrosoftTikTokMeta
+« Ne pas agir serait irresponsable. » L’argument des géants de la tech pour maintenir le scan des messages.
+Ces mêmes acteurs ont d’ailleurs annoncé vouloir continuer à scanner les messages même après l’expiration de la base légale, le 4 avril 2026. On demande donc aux citoyens de confier l’inspection de leurs conversations intimes aux entreprises précisément connues pour aspirer et monétiser leurs données. Voilà le vrai visage de Chat Control : une attaque contre la vie privée emballée dans un motif que personne ne peut refuser.
+Ce n’est pas « juste » de la surveillance
+On cherche à vous rassurer : « ce n’est que Gmail, Instagram, Snapchat, Messenger ». C’est faux, et c’est même le plus scandaleux. Trois basculements se cachent derrière cette minimisation.
+Ce n’est pas du ciblage, c’est du ratissage. On ne surveille pas des suspects : on installe une collecte systématique des communications de populations entières. C’est de la surveillance à l’échelle étatique, en continu.
+Ce n’est plus lire, c’est pouvoir bloquer. Un logiciel qui inspecte un message avant son envoi peut aussi refuser de l’envoyer. Le scan côté client crée l’infrastructure de la censure préalable : bloquer une parole avant même qu’elle existe pour son destinataire.
+Une fois l’infrastructure posée, elle sert à autre chose. Un dispositif construit « pour les enfants » devient un outil polyvalent de contrôle. Le motif change, la machine reste.
+La suite logique : l’euro numérique
+La même logique s’apprête à toucher votre argent. Le projet d’euro numérique de la BCE prévoit un plafond de détention d’environ 3 000 € par personne, interdit aux entreprises d’en détenir, et repose sur une monnaie traçable. La BCE jure qu’elle ne sera pas « programmable », mais le plafond et la traçabilité, eux, sont bien au programme, et le cadre a été validé en commission au Parlement européen en juin 2026. Le jour venu, entendrez-vous « tranquille, c’est seulement jusqu’à 3 000 € » ? C’est exactement le même piège rhétorique que « ce n’est que Gmail ». La vraie question n’est jamais ce qui est contrôlé aujourd’hui, mais l’infrastructure de contrôle que l’on installe pour demain.
+À quel profil appartenez-vous ?
+Aucun outil n’est magique et personne n’a besoin de tout faire. Repérez votre profil : chaque section indiquera jusqu’où aller.
+Débutant
+🟢 Le citoyen ordinaire
+Vous voulez simplement que vos conversations et votre vie privée cessent d’être scannées et monétisées. Objectif : la confidentialité au quotidien, sans devenir expert.
+Intermédiaire
+🟡 Le compte pseudonyme
+Compte d’information, page militante, créateur : vous craignez d’être déanonymisé, doxxé, ou de perdre votre compte. Objectif : séparer votre identité réelle de votre identité publique.
+Avancé
+🔴 Le lanceur d’alerte
+Journaliste, activiste, source, face à un adversaire puissant (État, employeur). Objectif : anonymat fort, anti-corrélation, transmettre des documents sans se faire prendre.
+MÉMO · LE GRAND REMPLACEMENT NUMÉRIQUE
+À supprimer / À adopter
+La vue d’ensemble en un coup d’œil. Le détail de chaque outil suit dans les sections numérotées.
+À supprimer
+WhatsApp (Meta)
+Messenger (Meta)
+Instagram (Meta)
+Snapchat
+Skype (Microsoft)
+Discord
+Gmail (Google)
+Outlook (Microsoft)
+Google Drive / Photos
+OneDrive (Microsoft)
+TikTok
+Telegram (chats normaux)
+À adopter
+Signal
+SimpleX Chat
+Session
+Bitchat
+Element (Matrix)
+Nostr
+Mastodon
+Proton Mail
+Tuta Mail
+Mullvad (VPN & navigateur)
+GrapheneOS
+PARTIE 01 · LES FONDATIONS · 🟢
+Messagerie chiffrée
+Le premier geste, celui qui protège le plus vite : quitter WhatsApp, Messenger et Telegram pour une messagerie réellement chiffrée et, idéalement, libre.
+Vous quittez
+Vous adoptez
+Pourquoi
+WhatsApp
+Signal
+Même simplicité, sans Meta ni collecte de métadonnées
+Messenger
+Signal / SimpleX
+Messenger n’est pas chiffré par défaut et fut scanné sous Chat Control 1.0
+Telegram
+Signal / SimpleX
+Telegram n’est pas chiffré de bout en bout par défaut
+S
+Signal
+🟢 DébutantRemplace WhatsApp🇺🇸 · open-source
+À quoi ça sert
+Une messagerie chiffrée pour vos textos, appels, visios et groupes. C’est le remplaçant direct de WhatsApp, en aussi simple.
+Pourquoi
+Chiffrement de bout en bout par défaut, à but non lucratif, protocole audité qui sert de référence mondiale. Presque aucune métadonnée conservée, et l’équipe a promis de quitter l’UE plutôt que d’installer un scan.
+Pour qui & quand
+Tout le monde, dès aujourd’hui. C’est le premier geste et le plus utile. Seule contrainte : un numéro de téléphone, que l’on peut masquer derrière un nom d’utilisateur.
+Installer & utiliser
+Installez depuis signal.org (App Store, Google Play, ou l’APK direct sur Android).
+Confirmez votre numéro par SMS, puis choisissez un code PIN.
+Réglages > Confidentialité : créez un nom d’utilisateur pour cacher votre numéro, et activez le verrou d’inscription.
+Invitez vos proches. Sur ordinateur, liez l’application de bureau à votre téléphone.
+signal.org →🟢🟡🔴
+SX
+SimpleX Chat
+🟡 IntermédiaireSans identifiant🌍 · open-source
+À quoi ça sert
+Une messagerie chiffrée sans aucun compte, sans numéro et sans identifiant. On se connecte en partageant un lien ou un QR code.
+Pourquoi
+Par conception, même les serveurs ignorent qui parle à qui. C’est aujourd’hui l’option la plus protectrice contre la corrélation des métadonnées.
+Pour qui & quand
+Comptes pseudonymes, contacts sensibles, haut risque. Un peu plus jeune que Signal, avec quelques aspérités.
+Installer & utiliser
+Installez depuis simplex.chat (F-Droid, Google Play, App Store ou APK).
+Choisissez un nom d’affichage local (jamais votre vrai nom : il ne quitte pas votre appareil).
+Pour ajouter un contact, partagez un lien d’invitation à usage unique ou un QR code.
+Activez le verrou par code, et (avancé) configurez vos propres serveurs SMP.
+simplex.chat →🟡🔴
+Se
+Session
+🟡 IntermédiaireSans numéro🌍 · open-source
+À quoi ça sert
+Un chiffrement à la Signal, mais sans numéro de téléphone et avec un routage en oignon.
+Pourquoi
+Votre identité est un « Session ID » aléatoire. Le trafic passe par un réseau décentralisé (Lokinet) qui réduit fortement les métadonnées.
+Pour qui & quand
+Quand un numéro de téléphone est un risque. Écosystème plus petit, à réserver aux échanges qui comptent.
+Installer & utiliser
+Installez depuis getsession.org (toutes plateformes).
+« Create account » génère votre Session ID et une phrase de récupération.
+Notez la phrase de récupération sur papier : c’est la seule clé de votre compte.
+Partagez votre Session ID (ou QR) à vos contacts.
+getsession.org →🟡🔴
+Br
+Briar
+🔴 AvancéHors-ligne / P2PAndroid · open-source
+À quoi ça sert
+Une messagerie pair-à-pair qui fonctionne sans internet : par Bluetooth, Wi-Fi Direct ou Tor.
+Pourquoi
+Aucun serveur, donc rien à couper ni à saisir. Résiste aux coupures d’internet et à la censure réseau.
+Pour qui & quand
+Manifestations, catastrophes, zones isolées, blackout. Android uniquement, et les deux personnes doivent avoir l’application.
+Installer & utiliser
+Installez depuis briarproject.org ou F-Droid (pas d’iOS).
+Créez un compte local (pseudo + mot de passe), stocké seulement sur le téléphone.
+Ajoutez un contact proche en scannant son QR code, ou à distance via un lien.
+Quand le réseau est coupé, activez le Bluetooth : les messages passent d’appareil à appareil.
+briarproject.org →🔴
+bit
+Bitchat
+🔴 AvancéMesh Bluetooth🌍 · open-source
+À quoi ça sert
+La messagerie mesh de Jack Dorsey : les téléphones proches se relaient les messages de proche en proche, sans internet ni serveur ni compte.
+Pourquoi
+Chiffrement de bout en bout (AES-256-GCM) et un « mode panique » qui efface tout en trois tapotements sur le logo.
+Pour qui & quand
+Manifestations et blackout, en complément de Briar. À utiliser avec prudence.
+Prudence : non audité
+Son propre dépôt avertit qu’il « n’a pas reçu de revue de sécurité externe ». Génial pour la résilience, mais n’en faites pas dépendre des vies pour l’instant.
+Installer & utiliser
+Installez depuis l’App Store (iOS) ou l’APK/GitHub (Android).
+Ouvrez l’application et choisissez un pseudo. Aucun compte à créer.
+Les appareils proches se découvrent automatiquement en Bluetooth.
+En cas de danger, triple-tapez le logo pour tout effacer (mode panique).
+bitchat →🔴
+M
+Molly
+🔴 AvancéSignal durciAndroid · open-source
+À quoi ça sert
+Une version durcie de Signal pour Android, compatible avec le même réseau.
+Pourquoi
+Base de données chiffrée au repos, verrouillage automatique, et une variante « FOSS » entièrement sans services Google.
+Pour qui & quand
+Utilisateurs avancés, notamment sur GrapheneOS, avec un modèle de menace élevé. Android uniquement.
+Installer & utiliser
+Ajoutez le dépôt Molly dans F-Droid, ou récupérez l’APK sur molly.im.
+Choisissez Molly-FOSS si vous voulez zéro dépendance Google.
+Enregistrez-vous avec votre numéro (même réseau que Signal).
+Définissez un mot de passe de base de données et le verrouillage automatique.
+molly.im →🔴
+Face à Chat Control
+Privilégiez des applications libres, hors des grandes plateformes américaines, dont les équipes ont publiquement promis de quitter l’UE plutôt que d’installer un scan côté client (c’est le cas de Signal). Rappel : si l’OS lui-même impose le scan, l’application n’y peut rien, d’où l’importance de la section 12.
+PARTIE 02 · 🟢
+E-mail chiffré & PGP
+Gmail lit vos e-mails et vit aux États-Unis, sous la juridiction des « Five Eyes ». Quitter Gmail/Outlook est un gain énorme pour un effort minime.
+Pm
+Proton Mail
+🟢 DébutantRemplace Gmail🇨🇭 · open-source · OpenPGP
+À quoi ça sert
+Une boîte mail chiffrée qui remplace Gmail ou Outlook, et le compte pivot de tout l’écosystème Proton.
+Pourquoi
+Basé en Suisse, hors juridiction des « Five Eyes ». Compatible OpenPGP : chiffrement automatique entre comptes Proton et vers les autres services PGP.
+Pour qui & quand
+Tout le monde. C’est le meilleur point de départ pour quitter Google (voir section 05 pour le reste de la suite).
+Installer & utiliser
+Créez un compte sur proton.me (offre gratuite suffisante pour commencer).
+Importez vos anciens messages et contacts avec Easy Switch (intégré).
+Mettez une redirection depuis Gmail et prévenez vos contacts de votre nouvelle adresse.
+Installez l’application mobile, activez la double authentification, et utilisez Proton Bridge si vous tenez à Thunderbird.
+proton.me/mail →🟢🟡
+Tu
+Tuta
+🟢 DébutantRemplace Gmail🇩🇪 · open-source · post-quantique
+À quoi ça sert
+Une messagerie e-mail allemande, entièrement open-source et sans aucun service Google.
+Pourquoi
+Elle chiffre aussi l’objet et une partie des métadonnées, avec un chiffrement résistant à l’informatique quantique. Juridiction UE.
+Pour qui & quand
+Ceux qui veulent le maximum de métadonnées chiffrées et du 100 % libre. Elle n’utilise pas PGP : pour écrire chiffré à l’extérieur, on protège le message par mot de passe.
+Installer & utiliser
+Créez un compte sur tuta.com et installez l’application (disponible sur F-Droid).
+Pour écrire à un non-utilisateur de façon chiffrée : cliquez sur le cadenas et définissez un mot de passe, transmis à votre correspondant par un autre canal.
+Activez la double authentification.
+tuta.com →🟢🟡
+mx
+mailbox.org · Posteo
+🟢 DébutantMail classique éthique🇩🇪 · UE · PGP
+À quoi ça sert
+Deux fournisseurs de mail européens, éthiques et peu coûteux, avec support PGP côté serveur.
+Pourquoi
+Respectueux de la vie privée et de l’écologie, sur des standards ouverts (IMAP, PGP). Ils fonctionnent avec n’importe quel logiciel de messagerie.
+Pour qui & quand
+Ceux qui veulent un mail « classique » (relevé dans Thunderbird) mais éthique, plutôt qu’une messagerie chiffrée fermée.
+Installer & utiliser
+Créez un compte (payant, de l’ordre de 1 à 3 € par mois).
+Activez le chiffrement PGP côté serveur (fonction « Guard » chez mailbox.org).
+Configurez le compte dans Thunderbird ou l’application mobile de votre choix.
+mailbox.org →posteo.de →🟢
+PGP en une minute
+PGP (Pretty Good Privacy) est le principe du chiffrement à clés : vous avez une clé publique que vous distribuez, et une clé privée que vous gardez secrète. Quiconque a votre clé publique peut vous écrire un message que vous seul pouvez déchiffrer. C’est la base de l’e-mail chiffré indépendamment de tout fournisseur. Proton Mail le gère automatiquement ; pour un usage manuel, on utilise OpenPGP (via Thunderbird, intégré depuis la version 78).
+PARTIE 03 · 🟢
+Navigateur & recherche
+Chrome est un mouchard publicitaire. Google Search profile chaque requête. On remplace les deux.
+Mb
+Mullvad Browser
+🟡🔴 Interm. / AvancéAnti-empreinte🇸🇪 · open-source
+À quoi ça sert
+Le navigateur du Tor Browser, mais sans le réseau Tor : à utiliser avec votre VPN pour un ordinateur difficile à pister.
+Pourquoi
+Développé avec le Tor Project, il est conçu pour que tous ses utilisateurs présentent la même empreinte numérique. Résultat : au lieu d’être unique et donc traçable, vous vous fondez dans la masse. C’est le meilleur choix de vie privée sur ordinateur.
+Pour qui & quand
+Ceux qui veulent aller au-delà du simple blocage de pub, notamment les comptes pseudonymes et les profils exposés.
+Installer & utiliser
+Téléchargez-le sur mullvad.net/browser (Windows, macOS, Linux).
+Utilisez-le tel quel, sans le personnaliser : chaque extension ou réglage ajouté vous rend à nouveau identifiable.
+Associez-le à votre VPN pour masquer aussi votre adresse IP.
+mullvad.net/browser →🟡🔴
+Fx
+Firefox (durci)
+🟢 DébutantRemplace Chrome🌍 · open-source
+À quoi ça sert
+Le navigateur libre de référence pour un usage quotidien respectueux de la vie privée.
+Pourquoi
+Contrairement à Chrome (un mouchard publicitaire de Google), Firefox est développé par une fondation et n’a pas d’intérêt à vous profiler. Avec quelques réglages (le guide arkenfox) et l’extension uBlock Origin, il devient très solide.
+Pour qui & quand
+Tout le monde, comme navigateur principal au quotidien.
+Installer & utiliser
+Installez Firefox depuis mozilla.org/firefox.
+Ajoutez l’extension uBlock Origin (blocage des pubs et traqueurs).
+Dans les réglages de vie privée, choisissez « Stricte », désactivez la télémétrie, et videz les cookies à la fermeture. Pour aller plus loin, appliquez le guide arkenfox.
+mozilla.org/firefox →🟢
+Bv
+Brave
+🟢 DébutantBloque tout par défaut🌍 · open-source
+À quoi ça sert
+Un navigateur basé sur Chromium qui bloque publicités et traqueurs par défaut, avec en prime une fenêtre privée connectée à Tor.
+Pourquoi
+C’est l’option la plus simple pour quelqu’un qui vient de Chrome : même ergonomie, mais sans le pistage. Il bloque les pubs YouTube nativement, propose une visio chiffrée (Brave Talk, basée sur Jitsi) et un accès Tor en un clic, pratique pour récupérer un site bloqué.
+Pour qui & quand
+Les débutants qui veulent un changement indolore depuis Chrome. (Ignorez les fonctions crypto/pubs récompensées si elles ne vous intéressent pas.)
+Installer & utiliser
+Installez Brave depuis brave.com.
+Réglez les « Boucliers » (Shields) sur « agressif », et désactivez Brave Rewards si vous ne voulez pas de pubs.
+Pour Tor : menu > « Nouvelle fenêtre privée avec Tor », puis attendez « Tor connecté ».
+brave.com →🟢
+uB
+uBlock Origin
+🟢 DébutantExtension🌍 · open-source
+À quoi ça sert
+L’extension de navigateur qui bloque publicités, traqueurs et scripts espions. Le geste le plus rentable, en dix secondes.
+Pourquoi
+La publicité en ligne est le principal vecteur de surveillance et de profilage. La bloquer coupe l’essentiel du pistage, accélère les pages et réduit les risques de logiciels malveillants.
+Pour qui & quand
+Tout le monde, sur Firefox comme sur les navigateurs Chromium.
+Installer & utiliser
+Ouvrez le magasin d’extensions de votre navigateur et cherchez « uBlock Origin » (l’original, par Raymond Hill).
+Installez-le. Il fonctionne aussitôt, sans réglage nécessaire.
+ublockorigin.com →🟢
+🔎
+DuckDuckGo · Brave Search · SearXNG
+🟢🟡 MoteursRemplace Google Search
+À quoi ça sert
+Des moteurs de recherche qui ne profilent pas chaque requête, contrairement à Google.
+Pourquoi
+DuckDuckGo et Brave Search ne conservent pas d’historique lié à votre identité. Startpage vous sert des résultats Google sans le pistage. SearXNG va plus loin : c’est un métamoteur auto-hébergeable, la souveraineté jusque dans la barre de recherche.
+Pour qui & quand
+Tout le monde. SearXNG vise ceux qui veulent héberger leur propre moteur.
+Installer & utiliser
+Dans les réglages de votre navigateur, changez le moteur par défaut pour DuckDuckGo, Brave Search ou Startpage.
+Pour SearXNG : utilisez une instance publique (annuaire sur searx.space) ou hébergez la vôtre (voir section 10).
+duckduckgo.com →search.brave.com →searx.space →🟢🟡
+RÉSEAU · DNS · 🟡
+DNS chiffré & Cloudflare
+Le DNS, c’est l’annuaire qui traduit un nom de site (exemple.com) en adresse machine. Problème : par défaut, c’est votre fournisseur d’accès qui gère cet annuaire, et il voit donc chaque site que vous visitez, même quand la page est en HTTPS. Chiffrer son DNS, c’est reprendre cette liste à son FAI. C’est un réglage discret mais parmi les plus efficaces.
+9
+Quad9
+🟢 DébutantAnti-maliciel🇨🇭 à but non lucratif
+À quoi ça sert
+Un résolveur DNS chiffré, suisse et à but non lucratif, qui bloque en plus les domaines malveillants connus.
+Pourquoi
+Juridiction suisse, pas de conservation de votre adresse IP, protection contre l’hameçonnage et les logiciels malveillants. Un excellent réglage « installer et oublier ».
+Pour qui & quand
+Tout le monde, en particulier ceux qui veulent la simplicité et une bonne juridiction.
+Installer & utiliser
+Sur Android : Réglages > Réseau > DNS privé > saisissez dns.quad9.net.
+Sur iPhone/Mac : installez le profil DoH depuis quad9.net. Sur PC : configurez le DNS-over-HTTPS dans le navigateur ou le système.
+quad9.net →🟢🟡
+DNS
+Mullvad DNS · NextDNS
+🟡 IntermédiaireFiltrage réseau
+À quoi ça sert
+Deux résolveurs chiffrés qui bloquent en plus pubs et traqueurs pour tout l’appareil.
+Pourquoi
+Mullvad DNS (Suède, no-log) est gratuit et propose des listes de blocage. NextDNS est très personnalisable, avec un tableau de bord et des profils par appareil, mais il est basé aux États-Unis et journalise par défaut (à désactiver dans les réglages).
+Pour qui & quand
+Ceux qui veulent un blocage des pubs à l’échelle du système, sans installer d’application par navigateur.
+Installer & utiliser
+Mullvad DNS : utilisez l’adresse indiquée sur mullvad.net/help/dns comme DNS privé (même méthode que Quad9).
+NextDNS : créez un profil sur nextdns.io, désactivez la journalisation, puis appliquez la configuration à vos appareils.
+mullvad.net/dns →nextdns.io →🟡
+CF
+Cloudflare 1.1.1.1 (à nuancer)
+🟢 DébutantRapide mais centralisé🇺🇸
+À quoi ça sert
+Le DNS chiffré 1.1.1.1 et l’application WARP de Cloudflare : rapides, gratuits, et un vrai progrès face au résolveur de votre FAI.
+Pourquoi
+C’est utile, avec un engagement de non-journalisation audité. Mais soyez lucide : Cloudflare se trouve déjà devant une immense partie du web (comme intermédiaire technique, il peut voir le trafic en clair vers ces sites). Y router aussi votre DNS revient à concentrer encore plus de vos traces chez une seule entreprise américaine soumise au droit américain.
+Pour qui & quand
+Bon pour un usage courant et le blocage des maliciels (1.1.1.1 for Families). À éviter ou à diversifier pour un usage sensible : préférez alors Quad9 ou Mullvad DNS.
+1.1.1.1 →🟢
+π
+Pi-hole · AdGuard Home
+🔴 AvancéBlocage tout le réseau🌍 · open-source
+À quoi ça sert
+Un bloqueur de publicités et de traqueurs qui protège tout votre réseau à la fois, installé sur un petit ordinateur comme un Raspberry Pi.
+Pourquoi
+Là où uBlock Origin protège un navigateur, Pi-hole filtre chaque appareil de la maison, y compris ceux où l’on ne peut pas installer d’extension : téléphones, téléviseurs connectés, objets connectés. Les pubs et traqueurs sont bloqués au niveau du DNS, avant même de se charger. AdGuard Home est une alternative à l’interface plus moderne.
+Pour qui & quand
+Les foyers qui veulent nettoyer tous leurs appareils d’un coup, et qui ont (ou veulent) un Raspberry Pi ou un petit serveur.
+Installer & utiliser
+Sur un Raspberry Pi (ou un conteneur), lancez l’installeur officiel de Pi-hole.
+Dans les réglages de votre box/routeur, indiquez l’adresse du Pi-hole comme serveur DNS.
+Désormais, tous les appareils connectés à votre réseau sont filtrés automatiquement.
+pi-hole.net →adguard home →🔴
+PARTIE 04 · 🟢
+VPN : la vérité
+Un VPN est utile, mais vendu avec beaucoup de mensonges. Voici ce qu’il protège vraiment.
+Ce qu’un VPN ne fait PAS
+Un VPN ne vous protège pas du scan côté client de Chat Control : celui-ci lit vos messages sur votre appareil, avant le chiffrement et donc avant le VPN. Ce n’est pas non plus une cape d’invisibilité : votre système et vos applications en voient plus que votre fournisseur de VPN.
+Ce qu’un VPN fait bien
+Il cache votre activité à votre fournisseur d’accès et masque votre adresse IP (donc votre localisation) aux sites visités. Utile contre la surveillance réseau, la géolocalisation et la censure. Une brique du puzzle, pas la solution.
+Mv
+Mullvad VPN
+🟢🟡🔴 Tous niveauxSans compte · cash/Monero🇸🇪 · open-source
+À quoi ça sert
+Un VPN qui masque votre adresse IP et chiffre votre trafic jusqu’à ses serveurs, sans jamais vous demander la moindre information personnelle.
+Pourquoi
+C’est l’étalon-or de la vie privée. Pas d’e-mail, pas de nom : à l’inscription, on vous attribue un simple numéro de compte. Politique « no-log » auditée, prix unique et honnête (5 € par mois, sans palier ni fausse promesse), et paiement possible en espèces ou en Monero. C’est précisément ce qui compte le jour où un État tente de couper l’accès aux VPN : un compte impossible à relier à votre identité, et un paiement que les banques ne peuvent pas bloquer.
+Pour qui & quand
+Tout le monde, du citoyen qui veut contourner une vérification d’identité au profil à haut risque. C’est le VPN à recommander en priorité.
+Installer & utiliser
+Allez sur mullvad.net. Si le site est bloqué dans votre pays, ouvrez-le via le navigateur Tor ou son adresse .onion. Cliquez sur « Générer un numéro de compte » : aucun e-mail ni nom n’est demandé. Notez ce numéro dans votre gestionnaire de mots de passe et ne le partagez jamais, c’est votre unique clé d’accès.
+Choisissez la durée et le mode de paiement. Le prix est fixe. Trois voies : carte bancaire (le plus simple si elle n’est pas bloquée), espèces envoyées par courrier, ou cryptomonnaie.
+Paiement anonyme en crypto : cliquez sur « Créer une adresse de paiement à usage unique ». Mullvad affiche une adresse (Bitcoin ou Monero) et un montant exact. Envoyez ce montant depuis votre portefeuille. Pour l’anonymat maximal, préférez Monero (confidentiel par défaut) ; Bitcoin est plus simple mais traçable. Voir la section 09 pour acheter de la crypto. Comptez environ 30 minutes de confirmation.
+Téléchargez l’application sur mullvad.net/download (via Tor si le site est filtré) et installez-la. Sur mobile, passez par l’App Store, Google Play, ou l’APK officiel si l’application a été retirée de votre magasin.
+Lancez l’application, entrez votre numéro de compte, puis connectez-vous à un serveur situé hors de votre pays, idéalement hors Union européenne (Suisse, États-Unis…). Activez le « kill switch » (qui coupe Internet si le VPN tombe) et le DNS de Mullvad.
+mullvad.net →🟢🟡🔴
+Pv
+Proton VPN
+🟢 DébutantOffre gratuite honnête🇨🇭 · open-source
+À quoi ça sert
+Le VPN de l’écosystème Proton, avec une véritable offre gratuite (rare et honnête).
+Pourquoi
+Basé en Suisse, audité, open-source. Son offre gratuite est sans publicité, sans revente de données et sans limite de volume (le nombre de pays est simplement réduit). C’est la porte d’entrée idéale pour un débutant, surtout si vous utilisez déjà Proton Mail.
+Pour qui & quand
+Débutants, et toute personne déjà dans l’écosystème Proton qui veut un seul compte pour tout.
+Installer & utiliser
+Rendez-vous sur protonvpn.com et connectez-vous avec votre compte Proton (ou créez-en un).
+Installez l’application (Windows, macOS, Linux, Android, iOS).
+Utilisez « Quick Connect » ou choisissez un pays, puis activez le kill switch et NetShield (blocage des pubs et traqueurs).
+protonvpn.com →🟢
+iv
+IVPN
+🟡🔴 Interm. / AvancéSans e-mail · no-log🇬🇮 · open-source
+À quoi ça sert
+Un petit fournisseur de VPN particulièrement rigoureux et transparent, sur le même modèle que Mullvad.
+Pourquoi
+Politique no-log auditée, pas d’e-mail obligatoire, paiement en crypto ou en espèces. Il propose même des options anti-traçage (blocage des trackers au niveau réseau) et une inscription sans aucun identifiant.
+Pour qui & quand
+Une alternative solide à Mullvad, pour les profils pseudonymes et à haut risque qui veulent diversifier.
+Installer & utiliser
+Sur ivpn.net, générez un compte (un identifiant est créé pour vous, sans e-mail).
+Payez en cryptomonnaie ou en espèces, comme pour Mullvad.
+Installez l’application, connectez-vous hors UE, activez le kill switch et le protocole WireGuard.
+ivpn.net →🟡🔴
+CENSURE · IDENTITÉ NUMÉRIQUE · 🟡
+Censure & vérification d’identité
+Le même prétexte (« protéger les mineurs ») sert à imposer la vérification d’identité pour accéder à Internet. C’est la fin programmée de l’anonymat en ligne, donc une forme de censure. Voici l’état des lieux, puis comment y échapper légalement.
+Où en est-on (2025-2026)
+France. La loi SREN (mai 2024) confie à l’Arcom la vérification d’âge ; depuis avril 2025, les sites concernés doivent la mettre en place. Un décret imposant la vérification d’âge a été validé par le Conseil d’État le 15 juillet 2025, et une proposition interdisant les réseaux sociaux aux moins de 15 ans a été votée à l’Assemblée le 26 janvier 2026, ce qui suppose de vérifier l’âge, donc l’identité, de tout le monde.
+Royaume-Uni. Depuis le 25 juillet 2025, l’Online Safety Act impose une vérification d’âge « hautement efficace » (pièce d’identité, carte bancaire, estimation faciale). Résultat immédiat : les inscriptions VPN ont bondi de plus de 1 400 % en quelques heures. La Chambre des Lords a même débattu, début 2026, d’un âge minimum pour utiliser un VPN.
+Union européenne. La Commission a présenté une application de vérification d’âge (avril 2025), pilotée dans cinq pays, pensée pour s’articuler avec le portefeuille d’identité numérique européen (EUDI Wallet, eIDAS 2) que chaque État doit proposer d’ici fin 2026. L’EFF et EDRi alertent : la preuve « à divulgation nulle » n’est qu’optionnelle, et cela construit une infrastructure d’identité en ligne bien au-delà de la protection de l’enfance.
+Y échapper légalement
+La parade tient en une idée : prendre une adresse IP dans un pays qui n’impose pas ces contrôles, et se procurer les outils de façon anonyme, même si un jour ils sont bloqués.
+Un VPN hors juridiction. Connectez-vous à un serveur situé hors du pays qui filtre (idéalement hors UE et hors « 14 Eyes »), avec une politique no-log auditée. C’est ce qui vous rend l’accès aux réseaux qui exigent une pièce d’identité.
+Un paiement anonyme. Payez le VPN en cryptomonnaie ou en espèces (Mullvad, IVPN, Proton l’acceptent). Crucial : si un jour les VPN sont « interdits », les processeurs de paiement pourraient refuser les cartes ; le cash et la crypto resteront les seuls moyens.
+Tor pour récupérer un VPN bloqué. Si le site du fournisseur devient inaccessible depuis votre pays, passez par le navigateur Tor (ou une adresse .onion) pour télécharger le client. Une fois installé, le VPN est bien plus rapide pour l’usage quotidien.
+Changer le pays du compte. Un compte Apple/Google réglé sur un autre pays fait réapparaître les applications retirées de votre magasin local.
+Le droit bouge, vérifiez
+Contourner une restriction géographique est légal dans la plupart des pays européens, mais le terrain change vite : l’Utah (États-Unis) a criminalisé le contournement par VPN, et les Lords britanniques envisagent d’encadrer l’usage des VPN. Vérifiez la loi de votre pays avant de vous reposer sur une méthode. Ce guide vise la protection de la vie privée, pas la dissimulation d’un délit.
+PARTIE 05 · REPRENDRE LE CONTRÔLE · 🟡
+Quitter Google
+Google, c’est un compte unique qui connaît vos e-mails, votre agenda, vos fichiers, vos déplacements et vos recherches. On remplace la suite entière.
+Google
+Proton
+Autres
+Gmail
+Proton Mail
+Tuta, mailbox.org
+Google Drive
+Proton Drive
+Nextcloud, Cryptomator
+Google Calendar
+Proton Calendar
+Tuta Calendar
+Google Password
+Proton Pass
+Bitwarden, KeePassXC
+Google One VPN
+Proton VPN
+Mullvad, IVPN
+L’intérêt de Proton (Suisse, à but non lucratif via une fondation, open-source) : un seul compte remplace tout Google, avec chiffrement de bout en bout et une juridiction hors « Five Eyes ». On peut migrer progressivement, service par service. Pour qui préfère éviter de recentraliser chez un seul acteur, chaque ligne du tableau a une alternative indépendante.
+PARTIE 06 · 🟡
+Stockage chiffré
+Pd
+Proton Drive
+🟢 DébutantRemplace Google Drive / iCloud🇨🇭 · E2EE
+À quoi ça sert
+Un cloud chiffré de bout en bout pour vos fichiers et vos photos, intégré à Proton.
+Pourquoi
+Contrairement à Google Drive ou iCloud, Proton ne peut pas lire vos fichiers : ils sont chiffrés avant de quitter votre appareil. Juridiction suisse, même compte que Proton Mail.
+Pour qui & quand
+Tout le monde, comme remplacement direct et simple du cloud de Google ou d’Apple.
+Installer & utiliser
+Activez Proton Drive dans votre compte Proton et installez l’application.
+Activez la sauvegarde automatique de vos photos, puis désactivez celle de Google/Apple.
+proton.me/drive →🟢🟡
+Cy
+Cryptomator
+🟡 IntermédiaireChiffre avant l’envoi🇩🇪 · open-source
+À quoi ça sert
+Un coffre qui chiffre vos fichiers avant de les envoyer sur n’importe quel cloud, même Google Drive ou Dropbox.
+Pourquoi
+L’astuce parfaite si vous devez garder un cloud existant : vous conservez le service pratique, mais le fournisseur ne voit plus que du charabia chiffré. Vous gardez seul la clé.
+Pour qui & quand
+Ceux qui ne peuvent pas quitter un cloud grand public tout de suite, mais veulent protéger leurs fichiers dès maintenant.
+Installer & utiliser
+Installez Cryptomator (PC et mobile) depuis cryptomator.org.
+Créez un « coffre » dans le dossier synchronisé de votre cloud, choisissez un mot de passe fort.
+Placez vos fichiers dans le coffre : ils sont chiffrés puis synchronisés automatiquement.
+cryptomator.org →🟡🔴
+Nc
+Nextcloud
+🔴 AvancéVotre propre cloud🌍 · open-source
+À quoi ça sert
+Votre propre nuage (fichiers, agenda, contacts, notes) hébergé sur votre serveur.
+Pourquoi
+Le degré ultime de contrôle : vos données ne quittent jamais votre matériel. Détaillé dans la section 10 (Auto-hébergement).
+Pour qui & quand
+Les auto-hébergeurs. Voir la fiche complète en section 10.
+→ Section 10nextcloud.com →🔴
+PARTIE 07 · 🟡
+Gestionnaire de mots de passe
+Un mot de passe unique et fort par service : c’est la base de toute la sécurité qui suit. Arrêtez le carnet, arrêtez le même mot de passe partout.
+Bw
+Bitwarden
+🟢 DébutantLe meilleur pour débuter🌍 · open-source
+À quoi ça sert
+Un coffre-fort à mots de passe qui les mémorise, les génère et les remplit pour vous, sur tous vos appareils.
+Pourquoi
+Gratuit, audité, multiplateforme, et chiffré de bout en bout. Vous n’avez plus qu’un seul mot de passe fort à retenir. Il est même auto-hébergeable (via Vaultwarden) pour ne dépendre de personne.
+Pour qui & quand
+Tout le monde. C’est le point de départ de toute la sécurité : un mot de passe unique et fort par service.
+Installer & utiliser
+Créez un compte sur bitwarden.com et choisissez un mot de passe maître long (une phrase). Ne l’oubliez jamais : il n’est pas récupérable.
+Installez l’extension de navigateur et l’application mobile.
+Au fil de vos connexions, laissez Bitwarden enregistrer puis remplacer vos anciens mots de passe par des mots de passe générés.
+bitwarden.com →🟢🟡🔴
+Kp
+KeePassXC
+🔴 Avancé100% local🌍 · open-source
+À quoi ça sert
+Un coffre-fort local : un fichier chiffré que vous seul détenez, sans aucun cloud ni compte.
+Pourquoi
+Rien ne quitte votre appareil, sauf si vous décidez de synchroniser le fichier vous-même (par exemple via Cryptomator). C’est le choix des puristes qui ne veulent aucun intermédiaire.
+Pour qui & quand
+Les profils avancés qui veulent le contrôle total et zéro dépendance en ligne.
+Installer & utiliser
+Installez KeePassXC (PC) et une application compatible sur mobile (KeePassDX sur Android, Strongbox sur iOS).
+Créez un fichier de base de données protégé par un mot de passe maître.
+Pour l’avoir sur tous vos appareils, synchronisez ce fichier via un cloud chiffré.
+keepassxc.org →🔴
+Pp
+Proton Pass
+🟢 DébutantAvec alias e-mail🇨🇭 · open-source
+À quoi ça sert
+Le gestionnaire de mots de passe de l’écosystème Proton, avec des alias e-mail jetables intégrés.
+Pourquoi
+Idéal si vous êtes déjà chez Proton : un seul compte pour le mail, le cloud et les mots de passe. Ses alias e-mail vous évitent de donner votre vraie adresse partout.
+Pour qui & quand
+Ceux qui veulent tout regrouper chez Proton.
+proton.me/pass →🟢🟡
+SÉCURITÉ · 2FA · 🟡
+Double authentification & clés matérielles
+Un mot de passe, même fort, peut fuiter. La double authentification (2FA) ajoute une seconde preuve à la connexion : même si votre mot de passe est volé, le compte reste fermé. C’est indispensable sur vos comptes sensibles (e-mail, gestionnaire de mots de passe, réseaux).
+Évitez le 2FA par SMS
+Le code reçu par SMS est le maillon faible : il est vulnérable au « SIM-swap » (un attaquant fait transférer votre numéro) et à l’interception via le réseau téléphonique (SS7). Des études estiment que la majorité des tentatives de SIM-swap réussissent. Utilisez le SMS seulement en dernier recours, jamais comme protection principale.
+Yk
+YubiKey · Nitrokey
+🟡🔴 Interm. / AvancéClé matérielle FIDO2
+À quoi ça sert
+Une petite clé physique (format USB, souvent avec NFC) qui prouve votre identité d’un simple contact du doigt.
+Pourquoi
+C’est la 2FA la plus solide : elle résiste à l’hameçonnage, car la clé vérifie l’adresse réelle du site avant de répondre. Nitrokey est l’alternative à matériel et micrologiciel entièrement ouverts. Un faux site ne peut pas vous piéger.
+Pour qui & quand
+Ceux qui veulent le maximum de sécurité sur leurs comptes clés. Achetez-en deux (une principale, une de secours).
+Installer & utiliser
+Procurez-vous deux clés sur yubico.com ou nitrokey.com.
+Dans les réglages de sécurité de chaque compte (e-mail, gestionnaire de mots de passe…), ajoutez une « clé de sécurité » ou « passkey ». Enregistrez vos deux clés.
+Gardez la clé de secours dans un lieu sûr, séparé.
+yubico.com →nitrokey.com →🟡🔴
+Ae
+Aegis · Ente Auth
+🟢 DébutantCodes TOTP🌍 · open-source
+À quoi ça sert
+Des applications qui génèrent les codes à six chiffres qui changent toutes les 30 secondes, en remplacement de Google Authenticator.
+Pourquoi
+Aegis (Android) garde vos codes dans un coffre chiffré local, sans cloud. Ente Auth ajoute une synchronisation chiffrée de bout en bout entre appareils, et a été audité. Bien plus sûrs que le SMS, et gratuits.
+Pour qui & quand
+Tout le monde : c’est le niveau de 2FA à adopter par défaut, avant les clés matérielles.
+Installer & utiliser
+Installez Aegis (F-Droid) ou Ente Auth (toutes plateformes).
+Sur chaque compte, activez la 2FA « application d’authentification » et scannez le QR code affiché.
+Notez les codes de secours sur papier et faites une sauvegarde chiffrée de votre coffre.
+getaegis.app →ente.io/auth →🟢🟡
+PARTIE 08 · 🟡
+Réseaux sociaux décentralisés
+Instagram, X et Facebook appartiennent à des entreprises qui vous profilent et peuvent vous censurer ou vous supprimer du jour au lendemain. Le « fédiverse » propose des réseaux appartenant à leurs utilisateurs.
+Ma
+Mastodon
+🟢 DébutantRemplace X / Twitter🌍 · open-source
+À quoi ça sert
+L’alternative à X/Twitter : un réseau social fait de milliers de serveurs indépendants qui communiquent entre eux (le « fédiverse »).
+Pourquoi
+Pas de patron unique, pas d’algorithme qui décide à votre place, pas de bannissement arbitraire par une seule entreprise. Le fil est chronologique, sans publicité ni manipulation.
+Pour qui & quand
+Tout le monde. Idéal pour les comptes d’information qui veulent une présence qu’aucune entreprise ne peut couper.
+Installer & utiliser
+Sur joinmastodon.org, choisissez un serveur (ou « instance ») qui vous correspond, puis créez un compte.
+Installez une application (l’officielle, ou Ivory, Tusky…) et suivez des comptes : vous voyez tout le fédiverse, quel que soit leur serveur.
+joinmastodon.org →🟢🟡
+No
+Nostr
+🟡🔴Incensurable🌍 · protocole ouvert
+À quoi ça sert
+Pas une application mais un protocole : un réseau social où votre identité est une simple paire de clés, comme pour Bitcoin.
+Pourquoi
+Zéro e-mail, zéro mot de passe, aucun compte qu’on puisse supprimer. Vos messages voyagent sur des relais décentralisés et vous possédez vraiment votre audience : personne ne peut vous bannir durablement. Vous pouvez même recevoir des pourboires en Bitcoin (les « zaps ») et changer d’application quand vous voulez sans perdre vos abonnés.
+Pour qui & quand
+Comptes d’information et créateurs qui craignent la censure de plateforme et veulent une présence vraiment à eux.
+Installer & utiliser
+Installez un client : Damus (iPhone), Amethyst ou Primal (Android), ou une version web.
+L’application génère votre paire de clés. Sauvegardez votre clé privée (nsec) comme une phrase de récupération Bitcoin : sur papier, jamais partagée.
+Créez votre profil, suivez des gens, activez les zaps pour recevoir des sats.
+nostr.com →🟡🔴
+El
+Matrix / Element
+🟡🔴Remplace Discord / Slack🌍 · fédéré · E2EE
+À quoi ça sert
+Une messagerie de communautés, dans l’esprit de Discord ou Slack, mais fédérée et chiffrable de bout en bout. Element est l’application, Matrix le réseau.
+Pourquoi
+Vous pouvez héberger votre propre serveur (Synapse) et contrôler vos données. Parfait pour un collectif, une rédaction, une association qui veut son espace indépendant.
+Pour qui & quand
+Communautés et groupes. Voir la nuance sur les métadonnées ci-dessous.
+Installer & utiliser
+Installez Element (element.io) et créez un compte sur un serveur public, ou sur le vôtre (section 10).
+Rejoignez ou créez des salons, et activez le chiffrement de bout en bout pour les conversations privées.
+element.io →🟡🔴
+Pi
+Pixelfed · PeerTube · Lemmy
+🟡Insta · YouTube · Reddit🌍 · open-source
+À quoi ça sert
+Les cousins fédérés d’Instagram (Pixelfed), de YouTube (PeerTube) et de Reddit (Lemmy).
+Pourquoi
+Même logique que Mastodon : pas de propriétaire unique, pas d’algorithme publicitaire, pas de traçage. Vous publiez photos, vidéos ou discussions sans nourrir une machine à profiler.
+Pour qui & quand
+Ceux qui veulent quitter Instagram, YouTube ou Reddit sans renoncer au format.
+pixelfed.org →peertube →lemmy →🟡
+Nuance métadonnées
+Matrix chiffre bien le contenu, mais en fédération, les serveurs participants voient l’appartenance aux salons et l’horodatage des messages. Pour un usage très sensible, préférez SimpleX/Session ou auto-hébergez votre serveur.
+PARTIE 09 · 🟡
+Souveraineté financière
+L’argent aussi est surveillé et censurable. Des comptes de militants ont été gelés, des dons bloqués, chaque paiement par carte est tracé. La vie privée financière fait partie de la souveraineté.
+₿
+Bitcoin (auto-conservation)
+🟡🔴Résistant à la censure
+À quoi ça sert
+Une monnaie numérique que vous détenez vous-même, sans passer par une banque.
+Pourquoi
+En auto-conservation (vos clés dans un portefeuille que vous seul contrôlez), personne ne peut geler ni bloquer vos fonds. Sa confidentialité n’est pas parfaite (le registre est public), mais il échappe à la censure bancaire, utile le jour où un paiement est refusé.
+Pour qui & quand
+Se prémunir contre le gel de compte ou la dé-bancarisation, et payer anonymement un service comme un VPN.
+Installer & utiliser
+Procurez-vous des bitcoins (plateforme d’échange, ou entre particuliers).
+Transférez-les aussitôt vers un portefeuille que vous contrôlez : un portefeuille matériel (Trezor, ColdCard) ou une application libre. Ne les laissez pas sur la plateforme.
+Sauvegardez votre phrase de récupération sur papier, jamais en photo ni en ligne.
+bitcoin.org →🟡🔴
+ɱ
+Monero (XMR)
+🔴 AvancéConfidentiel par défaut
+À quoi ça sert
+La cryptomonnaie de la vie privée : montants, expéditeur et destinataire sont masqués par défaut.
+Pourquoi
+C’est l’exact opposé de Bitcoin sur ce point : les transactions sont confidentielles par conception. C’est le meilleur moyen de payer un service sans laisser de trace reliable à vous.
+Pour qui & quand
+Ceux qui veulent le maximum de confidentialité financière. Note : Monero est déjà retiré de plusieurs plateformes en Europe, il faut souvent passer par un échange décentralisé.
+Installer & utiliser
+Installez un portefeuille (l’officiel sur getmonero.org, ou Cake Wallet sur mobile).
+Obtenez des XMR via un service d’échange décentralisé (par exemple un « swap » depuis une autre crypto).
+Sauvegardez votre phrase de récupération sur papier.
+getmonero.org →🔴
+Légalité & prudence
+La confidentialité financière est légale. Ne la confondez pas avec l’évasion fiscale : déclarez ce qui doit l’être. Les cryptomonnaies sont volatiles et les arnaques nombreuses ; ne placez jamais ce que vous ne pouvez pas perdre, et formez-vous avant d’agir.
+ANGLE MORT · LA FOLIE DE L’IA · 🟡
+L’IA conversationnelle
+Pendant qu’on se bat pour chiffrer nos messages, des centaines de millions de gens confient leurs pensées les plus intimes à ChatGPT, Gemini ou Copilot, sur des serveurs américains. C’est l’angle mort de toute cette histoire. Une pure folie.
+Ce que vous tapez dans une IA cloud est une confession écrite, horodatée et stockée. Pire qu’un message : vous y déballez vos angoisses, votre santé, vos finances, vos secrets professionnels, souvent plus honnêtement qu’à un proche. Et contrairement à une messagerie chiffrée, tout est lisible en clair côté serveur.
+Ce que disent les faits (2025-2026)
+Les offres grand public s’entraînent sur vos données par défaut. En janvier 2026, un juge américain a ordonné à OpenAI de produire 20 millions de conversations ChatGPT comme preuves : les utilisateurs concernés n’ont été ni prévenus ni consultés. Supprimer une conversation ne garantit pas son effacement. Et lors d’une fuite, 47 000 conversations exposées contenaient e-mails, numéros et détails intimes ré-identifiables.
+La parade : l’IA locale
+Ai
+Ollama · LM Studio · Jan · GPT4All
+🟡🔴Remplace ChatGPT🌍 · 100% local
+À quoi ça sert
+Des logiciels pour faire tourner un modèle d’intelligence artificielle directement sur votre ordinateur.
+Pourquoi
+Vos questions ne quittent jamais l’appareil : aucun serveur, aucun compte, aucune télémétrie, et ça marche hors ligne. La qualité dépend de votre matériel, mais rien ne fuit. Ollama et LM Studio sont les plus simples ; Jan et GPT4All visent la vie privée maximale.
+Pour qui & quand
+Tous ceux qui utilisent l’IA pour des sujets un tant soit peu personnels et ne veulent pas les confier à un serveur américain.
+Installer & utiliser
+Pour débuter en douceur, installez LM Studio ou Jan (interface graphique, comme une application classique).
+Téléchargez un modèle proposé dans l’application (par exemple Llama ou Mistral), adapté à la puissance de votre machine.
+Discutez : tout se passe en local. Ollama est la version en ligne de commande pour les plus techniques.
+lmstudio.ai →jan.ai →ollama.com →🟡🔴
+☁
+Duck.ai · Lumo (Proton)
+🟢🟡Cloud orienté vie privée
+À quoi ça sert
+Des accès à l’IA dans le cloud, mais conçus pour la vie privée, quand une IA locale n’est pas possible.
+Pourquoi
+Duck.ai (DuckDuckGo) donne un accès anonymisé à plusieurs modèles. Lumo (Proton) chiffre les échanges et ne s’en sert pas pour entraîner. Bien mieux que ChatGPT grand public, mais cela reste un serveur distant.
+Pour qui & quand
+Ceux qui veulent la commodité du cloud sans nourrir les géants. Gardez-y les sujets non sensibles.
+duck.ai →lumo →🟢🟡
+La règle simple
+Ne collez jamais dans une IA cloud ce que vous ne diriez pas à un inconnu qui enregistre : identité, santé, mots de passe, secrets professionnels, aveux. Pour tout le reste de sensible, une IA locale.
+REMPLACER LE RESTE · 🟡
+La boîte à outils du quotidien
+Google et Apple ne sont pas que des e-mails : cartes, notes, agenda, photos, visio, tout est relié à votre identité. Voici de quoi remplacer chaque brique, une par une, sans rien perdre en confort.
+Om
+Organic Maps · OsmAnd
+🟢 DébutantRemplace Google Maps🌍 · open-source
+À quoi ça sert
+Des applications de cartes et de navigation, fondées sur OpenStreetMap, qui fonctionnent hors ligne.
+Pourquoi
+Google Maps enregistre chacun de vos trajets et bâtit un historique de lieux d’une précision redoutable. Organic Maps ne trace rien et n’affiche aucune publicité ; OsmAnd vise les utilisateurs avancés (randonnée, courbes de niveau, navigation détaillée).
+Pour qui & quand
+Tout le monde. Le trafic en temps réel et les transports sont moins complets que chez Google, mais la navigation quotidienne est excellente.
+Installer & utiliser
+Installez depuis F-Droid, l’App Store ou Google Play.
+Téléchargez à l’avance les cartes des régions qui vous intéressent pour l’usage hors ligne.
+organicmaps.app →osmand.net →🟢
+No
+Standard Notes · Joplin · CryptPad
+🟢🟡Remplace Docs / Notion🌍 · open-source
+À quoi ça sert
+Des notes et documents chiffrés de bout en bout, pour remplacer Google Docs, Notion ou Evernote.
+Pourquoi
+Standard Notes (par Proton) chiffre vos notes par défaut. Joplin gère des carnets en Markdown avec chiffrement optionnel et la synchronisation de votre choix. CryptPad (français) offre l’équivalent de Google Docs en temps réel, entièrement chiffré.
+Pour qui & quand
+Tout le monde pour les notes ; CryptPad pour la collaboration à plusieurs.
+Installer & utiliser
+Standard Notes / Joplin : créez un compte, installez l’application, et activez le chiffrement (par défaut sur Standard Notes, à activer dans Joplin).
+CryptPad : utilisez cryptpad.fr ou une autre instance, aucun compte requis pour commencer.
+standardnotes.com →joplinapp.org →cryptpad.org →🟢🟡
+Vi
+Jitsi Meet · Element Call
+🟢🟡Remplace Zoom / Meet🌍 · open-source
+À quoi ça sert
+Des outils de visioconférence sans compte ni installation lourde, pour remplacer Zoom, Google Meet ou Teams.
+Pourquoi
+Jitsi Meet se lance dans le navigateur, sans compte, et peut être auto-hébergé (c’est aussi la base de Brave Talk). Element Call est chiffré de bout en bout et fédéré via Matrix. Pour un appel simple et totalement chiffré, les appels Signal font aussi le travail.
+Pour qui & quand
+Tout le monde. Sur un serveur Jitsi public, les appels à plusieurs sont chiffrés en transport ; le chiffrement de bout en bout est en option.
+Installer & utiliser
+Jitsi : allez sur meet.jit.si, créez un nom de salon, partagez le lien. Rien à installer.
+Element Call : depuis l’application Element (Matrix), lancez un appel dans un salon.
+jitsi.org →element.io/element-call →🟢🟡
+Ph
+Ente · Immich
+🟡🔴Remplace Google Photos🌍 · open-source
+À quoi ça sert
+Deux façons de garder vos photos sans les confier à Google ou Apple.
+Pourquoi
+Ente est un service géré, chiffré de bout en bout, avec reconnaissance et recherche faites sur l’appareil : simple et sûr. Immich est un clone de Google Photos que vous hébergez vous-même (recherche par visages et objets incluse), à réserver à ceux qui savent gérer un serveur.
+Pour qui & quand
+Ente pour tous ; Immich pour les auto-hébergeurs. Attention : Immich n’est pas chiffré de bout en bout, sa sécurité dépend de votre serveur.
+Installer & utiliser
+Ente : installez l’application, créez un compte, activez la sauvegarde automatique de votre pellicule.
+Immich : déployez-le sur votre serveur (voir section 10) via Docker, puis connectez l’application mobile.
+ente.io →immich.app →🟡🔴
+@
+SimpleLogin · addy.io
+🟢🟡Alias e-mail🌍 · open-source
+À quoi ça sert
+Des alias e-mail jetables : une adresse unique par site, qui redirige vers votre vraie boîte sans jamais la révéler.
+Pourquoi
+Vous ne donnez plus votre vraie adresse partout. Si un site est piraté ou vous spamme, vous coupez l’alias correspondant, et vous savez immédiatement qui a fait fuiter vos données. SimpleLogin est intégré à Proton ; addy.io propose des alias illimités dès l’offre gratuite.
+Pour qui & quand
+Tout le monde, et particulièrement les comptes pseudonymes qui veulent cloisonner leurs inscriptions.
+Installer & utiliser
+Créez un compte, installez l’extension de navigateur.
+À chaque inscription, générez un nouvel alias au lieu de saisir votre vraie adresse.
+simplelogin.io →addy.io →🟢🟡
+Bk
+Sauvegardes chiffrées
+🟡🔴Cryptomator · restic🌍 · open-source
+À quoi ça sert
+De quoi sauvegarder votre téléphone et votre ordinateur en chiffrant les données avant qu’elles ne partent dans un cloud.
+Pourquoi
+Les sauvegardes iCloud/Google sont souvent accessibles au fournisseur, donc à la justice. Cryptomator chiffre vos fichiers avant de les envoyer sur n’importe quel cloud ; restic fait des sauvegardes chiffrées automatiques ; Proton Drive est chiffré de bout en bout. Sur iPhone, activez la « Protection avancée des données » pour chiffrer vos sauvegardes iCloud.
+Pour qui & quand
+Tout le monde devrait chiffrer ses sauvegardes. Règle d’or : deux copies chiffrées, sur deux supports, en deux lieux.
+Installer & utiliser
+iPhone : Réglages > votre nom > iCloud > Protection avancée des données : activez-la.
+PC : installez Cryptomator, créez un coffre, placez-y vos fichiers avant de synchroniser vers le cloud.
+cryptomator.org →restic.net →🟡🔴
+RG
+Effacer ses données (RGPD)
+🟡Courtiers en données
+À quoi ça sert
+Faire retirer vos informations personnelles des « courtiers en données » qui les collectent et les revendent.
+Pourquoi
+En Europe, le RGPD (article 17) vous donne un droit à l’effacement : vous pouvez exiger, gratuitement, qu’une entreprise supprime vos données, en principe sous un mois. Des services comme Incogni automatisent ces demandes en masse, moyennant paiement.
+Pour qui & quand
+Ceux qui veulent réduire leur exposition. Attention : les données réapparaissent avec le temps, et cela ne touche ni les registres publics ni les réseaux sociaux. Le faire soi-même est gratuit mais fastidieux.
+Installer & utiliser
+Pour une demande manuelle : écrivez au courtier en invoquant l’article 17 du RGPD et demandez la suppression.
+Pour automatiser : souscrivez à un service de retrait et laissez-le envoyer les demandes en votre nom.
+cnil.fr →incogni.com →🟡
+PARTIE 10 · AUTODÉFENSE AVANCÉE · 🔴
+Auto-hébergement
+Le niveau ultime de souveraineté : héberger vos services vous-même. Vos données vivent sur votre matériel, sous la juridiction que vous choisissez.
+Yh
+YunoHost · Umbrel · Start9
+🔴 AvancéServeur clé en main🌍 · open-source
+À quoi ça sert
+Des systèmes qui transforment un vieux PC ou un Raspberry Pi en serveur personnel, avec un catalogue d’applications à installer en quelques clics.
+Pourquoi
+L’auto-hébergement fait peur, mais ces outils font le gros du travail. YunoHost gère même votre propre e-mail et une authentification unique. Umbrel offre un magasin de plus de 300 applications, très prisé des amateurs de vie privée et de Bitcoin. Start9 chiffre les sauvegardes et donne une adresse Tor à chaque service par défaut.
+Pour qui & quand
+Les profils avancés prêts à consacrer un après-midi à monter leur propre cloud. C’est la parade structurelle la plus radicale à Chat Control.
+Installer & utiliser
+Récupérez un vieil ordinateur, un Raspberry Pi, ou louez un petit serveur (VPS) dans un pays protecteur.
+Installez YunoHost, Umbrel ou Start9 en suivant leur guide officiel.
+Depuis le catalogue, installez Nextcloud, un serveur Matrix, une galerie photo, etc.
+Accédez-y en privé avec Tailscale (fiche ci-dessous) plutôt que d’exposer le serveur au public.
+yunohost.org →umbrel.com →start9.com →🔴
+Nc
+Nextcloud
+🔴 AvancéRemplace toute la suite Google🇩🇪 · open-source
+À quoi ça sert
+Votre propre nuage : fichiers, agenda, contacts, photos, notes et documents collaboratifs, sur votre serveur.
+Pourquoi
+C’est le remplacement complet de Google Drive, Agenda et Contacts, mais chez vous. Vous décidez de la juridiction et personne d’autre n’a la main sur vos fichiers. À savoir : c’est la confidentialité « votre serveur », pas un chiffrement de bout en bout par défaut ; vous devez le maintenir à jour.
+Pour qui & quand
+Les auto-hébergeurs. Le plus simple est de l’installer via YunoHost ou Umbrel.
+nextcloud.com →🔴
+Mx
+Matrix Synapse
+🔴 AvancéVotre serveur de chat🌍 · open-source
+À quoi ça sert
+Votre propre serveur de messagerie Matrix, sur lequel tournent Element et les appels chiffrés.
+Pourquoi
+En hébergeant le serveur, vous contrôlez aussi les métadonnées (qui parle à qui, quand), le point faible de Matrix en fédération. C’est la messagerie communautaire dont vous êtes le seul maître.
+Pour qui & quand
+Communautés, collectifs, rédactions qui veulent leur espace fédéré indépendant.
+element.io/server →🔴
+Ts
+Tailscale · Headscale · WireGuard
+🔴 AvancéAccès privé à son serveur🌍 · open-source
+À quoi ça sert
+Un réseau privé chiffré qui relie vos appareils à votre serveur, sans jamais l’exposer sur l’Internet public.
+Pourquoi
+Au lieu d’ouvrir des ports (et de vous faire attaquer), Tailscale crée un tunnel WireGuard entre vos seuls appareils autorisés : votre serveur n’a aucune surface d’attaque publique. Headscale est la version que vous hébergez vous-même, pour ne dépendre d’aucun tiers. WireGuard seul offre le contrôle total, au prix d’une configuration manuelle.
+Pour qui & quand
+Tout auto-hébergeur. C’est la façon sûre d’atteindre son Nextcloud ou ses photos depuis l’extérieur.
+Installer & utiliser
+Installez Tailscale sur votre serveur et sur votre téléphone/PC, connectez-les au même compte.
+Vos appareils se voient aussitôt sur un réseau privé ; accédez à votre serveur par son adresse Tailscale.
+Pour zéro dépendance, remplacez le serveur de coordination par Headscale, auto-hébergé.
+tailscale.com →headscale.net →🔴
+www
+Votre propre site web
+🟡🔴Résister au bannissement
+À quoi ça sert
+Un site à vous, sur votre nom de domaine, où votre contenu ne dépend d’aucune plateforme.
+Pourquoi
+Le jour où un réseau supprime ou suspend votre compte, tout votre travail disparaît. Un site personnel est votre point d’ancrage : vos articles y restent, archivés et à jour, quoi qu’il arrive. C’est exactement ce que font les comptes d’information prudents. Un site statique (généré par Hugo, Astro ou Jekyll) suffit et se publie presque gratuitement ; pour un blog dynamique, un WordPress ou un Ghost auto-hébergé fait l’affaire.
+Pour qui & quand
+Comptes d’information, créateurs, militants, quiconque publie et craint la censure de plateforme.
+Installer & utiliser
+Achetez un nom de domaine (idéalement chez un registraire respectueux de la vie privée).
+Choisissez un générateur de site statique (Astro, Hugo) et hébergez le résultat, ou installez WordPress/Ghost sur votre serveur.
+Renvoyez-y systématiquement depuis vos réseaux : votre audience vous retrouve même si un compte tombe.
+astro.build →ghost.org →🟡🔴
+Le point juridiction
+Auto-héberger, c’est aussi choisir où vivent vos données. Un serveur chez vous ou dans un pays protecteur échappe aux obligations de scan imposées à une grande plateforme. C’est la parade structurelle la plus radicale à Chat Control.
+PARTIE 11 · 🔴
+Tor
+Le réseau qui sépare qui vous êtes de ce que vous faites en ligne.
+Tor
+Tor Browser
+🔴 AvancéAnonymat réseau🌍 · open-source
+À quoi ça sert
+Un réseau qui sépare qui vous êtes de ce que vous faites en ligne, accessible via le Tor Browser.
+Pourquoi
+Votre trafic rebondit à travers plusieurs relais chiffrés dans le monde : aucun ne connaît à la fois votre identité et votre destination. C’est l’outil des journalistes et des sources, et le moyen d’atteindre un site bloqué (par exemple pour télécharger un VPN censuré).
+Pour qui & quand
+Profils à haut risque, et quiconque doit dissocier son activité de son adresse IP réelle. À utiliser ponctuellement, pas comme navigateur de tous les jours.
+Installer & utiliser
+Téléchargez le Tor Browser sur torproject.org (Windows, macOS, Linux, Android).
+Lancez-le et cliquez « Se connecter ». Si Tor est bloqué dans votre pays, activez un « pont » (bridge).
+Naviguez sans maximiser la fenêtre, sans installer d’extension, et sans vous connecter à vos vrais comptes.
+torproject.org →🔴
+Limites, pas magique
+Tor protège le transport, pas vos habitudes : si vous vous connectez à votre vrai compte, vous vous déanonymisez vous-même. Il est plus lent, et le nœud de sortie voit le trafic non chiffré (utilisez HTTPS). Pour un anonymat sérieux, associez-le à Tails (section 12).
+PARTIE 12 · 🔴
+Systèmes d’exploitation libres
+La pièce maîtresse. Si le scan côté client peut être imposé par le système d’exploitation lui-même, la seule vraie parade est de contrôler cet OS. C’est vrai sur le téléphone (GrapheneOS) comme sur l’ordinateur (Linux). Ne sous-estimez pas ce point : tant que vous restez sous Windows, macOS ou un Android Google, vous ne contrôlez pas vraiment votre machine.
+Gr
+GrapheneOS
+🔴 AvancéMobile dégoogliséAndroid · Pixel · open-source
+À quoi ça sert
+Un Android entièrement dégooglisé, installé sur un téléphone Pixel : la souveraineté sur mobile.
+Pourquoi
+C’est la défense structurelle par excellence contre un OS ou un magasin d’applications qui voudrait vous scanner. Services Google en bac à sable optionnel, permissions réseau par application, profils cloisonnés, redémarrage automatique qui purge les clés de la mémoire, code PIN de contrainte qui efface le téléphone. Réputé pour sa sécurité au point d’être utilisé par des cibles de logiciels espions.
+Pour qui & quand
+Profils exposés, mais aussi tout citoyen prêt à acheter un Pixel pour reprendre le contrôle de son téléphone.
+Installer & utiliser
+Procurez-vous un téléphone Google Pixel compatible (c’est le seul matériel supporté, pour des raisons de sécurité).
+Sur un ordinateur, allez sur grapheneos.org/install et suivez l’installeur web (quelques clics, aucun terminal requis).
+Pour vos applications, installez le magasin libre F-Droid ; ajoutez Google Play en bac à sable seulement si nécessaire.
+Réglez un long mot de passe (pas un code à 4 chiffres) et découvrez le mode « Lockdown ».
+grapheneos.org →🔴
+🐧
+Linux (sur ordinateur)
+🟡🔴Remplace Windows / macOS🌍 · libre & gratuit
+À quoi ça sert
+Un système d’exploitation libre et gratuit pour votre ordinateur, en remplacement de Windows ou de macOS. Il en existe de nombreuses variantes, appelées « distributions ».
+Pourquoi
+C’est le point aveugle de beaucoup de gens : ils chiffrent leurs messages mais gardent un Windows qui transmet en continu de la télémétrie à Microsoft (et dont la fonction « Recall » a voulu photographier l’écran en permanence), ou un macOS qui signale les applications que vous lancez. Linux, lui, ne vous espionne pas, il est gratuit, il ressuscite les vieux ordinateurs et il vous rend enfin maître de votre machine. C’est plus facile que sa réputation : les distributions modernes ressemblent à Windows ou macOS.
+Pour qui & quand
+Tout le monde peut franchir le pas. Pour débuter, Linux Mint (le plus proche de Windows) ou Fedora ; Debian pour la stabilité. Pas besoin de tout casser : on peut d’abord tester, puis installer à côté de son système actuel.
+Installer & utiliser
+Pas sûr de la distribution ? Répondez au questionnaire distrochooser.de/fr, qui vous oriente selon vos besoins.
+Testez-la sans rien installer directement dans votre navigateur sur distrosea.com.
+Une fois convaincu, téléchargez l’image de la distribution et créez une clé USB de démarrage (avec Ventoy ou Balena Etcher).
+Démarrez sur la clé pour essayer le système « en live », puis lancez l’installation. Activez le chiffrement du disque proposé.
+distrochooser.de/fr →distrosea.com →linuxmint.com →🟡🔴
+Ta
+Tails
+🔴 AvancéClé USB amnésique🌍 · tout via Tor
+À quoi ça sert
+Un système qui démarre depuis une clé USB, fait passer tout le trafic par Tor et ne laisse aucune trace à l’extinction.
+Pourquoi
+À l’arrêt, tout est oublié : c’est « amnésique ». Idéal pour un travail sensible et ponctuel sur un ordinateur qui n’est pas le vôtre, sans rien y laisser.
+Pour qui & quand
+Lanceurs d’alerte, journalistes, sources. L’outil de référence pour les missions à haut risque.
+Installer & utiliser
+Téléchargez Tails sur tails.net et suivez l’assistant pour créer la clé USB.
+Redémarrez l’ordinateur sur cette clé. Utilisez-le, puis éteignez : tout disparaît.
+tails.net →🔴
+Qb
+Qubes OS · postmarketOS
+🔴 ExpertCloisonnement🌍 · open-source
+À quoi ça sert
+Deux systèmes de niche : Qubes cloisonne votre PC en machines virtuelles étanches ; postmarketOS fait tourner du Linux sur d’anciens téléphones.
+Pourquoi
+Qubes isole chaque activité (travail, banque, navigation risquée) dans son propre compartiment : une compromission n’atteint pas le reste. postmarketOS prolonge la vie de téléphones abandonnés par leur constructeur.
+Pour qui & quand
+Utilisateurs experts avec un modèle de menace très élevé.
+qubes-os.org →postmarketos.org →🔴
+Durcir l’appareil
+Sans changer d’OS, on gagne déjà beaucoup : installer les applications via F-Droid (magasin libre) ou Aurora Store, remplacer les services Google par microG, créer des profils séparés, couper les permissions réseau inutiles, désactiver la sauvegarde cloud automatique et l’identifiant publicitaire.
+MATÉRIEL · 🔴
+Téléphonie & appareil physique
+La meilleure application ne sert à rien si l’appareil lui-même vous trahit. Voici les menaces matérielles et les gestes qui les neutralisent.
+Le numéro de téléphone est un traceur
+Votre numéro relie entre eux votre carte SIM, votre appareil (son identifiant IMEI), votre localisation et votre identité (la plupart des pays exigent une pièce d’identité à l’achat d’une SIM). C’est le fil qui permet de tout recouper.
+Utilisez des messageries sans numéro (SimpleX, Session) pour vos contacts sensibles, et préférez toujours Signal au SMS.
+Pour une identité séparée, une carte SIM « data uniquement » ou une eSIM prépayée limite le lien au point de vente (à vérifier selon les pays).
+IMSI-catchers & réseau téléphonique
+Les « IMSI-catchers » (ou « stingrays ») sont de fausses antennes-relais qui forcent les téléphones à s’y connecter pour enregistrer leur identifiant et parfois intercepter les communications, souvent en rétrogradant vers la 2G, peu chiffrée. En parallèle, une faille ancienne du réseau (SS7) permet encore d’intercepter des SMS et de localiser un téléphone à distance : une raison de plus d’abandonner le SMS.
+Désactivez la 2G dans les réglages (possible sur Android et GrapheneOS) pour couper le principal vecteur d’interception.
+En manifestation ou en zone sensible, passez en mode avion ou glissez le téléphone dans un sac de Faraday (qui bloque tout signal). L’EFF publie même un outil libre, Rayhunter, pour détecter les IMSI-catchers.
+Biométrie ou code ?
+Un doigt se force, pas un code
+On peut appliquer votre visage ou votre doigt sur le capteur pendant qu’on vous immobilise (à une frontière, lors d’une interpellation) ; un mot de passe dans votre tête, non. Avant une situation à risque, forcez le retour au code : sur iPhone, maintenez le bouton latéral et un bouton de volume (écran « SOS ») ; sur Android/GrapheneOS, utilisez le mode Lockdown du menu d’alimentation, qui désactive la biométrie jusqu’à saisie du code. Choisissez un mot de passe long, pas un code à quatre chiffres. GrapheneOS propose même un code de contrainte qui efface le téléphone.
+Dé-Microsoft, dé-Apple
+N’oubliez pas l’ordinateur : Windows transmet en continu de la télémétrie (et sa fonction « Recall » a voulu photographier l’écran en permanence), macOS signale les applications que vous lancez. La vraie sortie, c’est Linux (voir section 12). À défaut, désactivez la télémétrie, l’identifiant publicitaire et « Recall », et ajoutez un pare-feu sortant (comme Little Snitch sur Mac).
+PARTIE 13 · 🔴
+Anonymat & OPSEC
+Pour le compte pseudonyme et le lanceur d’alerte. Ici, on ne protège plus seulement un message : on protège une identité.
+Pseudonymat contre anonymat
+La règle d’or : ne jamais croiser votre identité réelle et votre identité publique. Pas le même e-mail, pas le même numéro, pas le même appareil, pas le même réseau, pas les mêmes horaires, pas le même style d’écriture. Une seule fuite suffit à relier les deux.
+Comptes sans identité : SimpleX et Session ne demandent aucun numéro ; associez-les à des alias e-mail jetables. Méfiez-vous des « numéros virtuels » revendus et traçables.
+Nettoyer les métadonnées : une photo publiée contient souvent la date, le modèle d’appareil et parfois les coordonnées GPS (données EXIF). Nettoyez avec Metadata Cleaner, mat2 ou ExifTool avant de publier ; attention aussi aux noms de fichiers et aux métadonnées de documents.
+Anti-corrélation réseau : utilisez Tor/Tails pour dissocier votre activité de votre IP domestique. Ne mélangez jamais réseau personnel et réseau pseudonyme. Une carte SIM à votre nom trahit votre localisation, peu importe le reste.
+Cloisonnement : un appareil ou au moins un profil dédié à l’identité publique, un gestionnaire de mots de passe séparé, jamais de connexion croisée entre les deux mondes.
+Transmettre des documents en tant que source
+SecureDrop est le système de dépôt anonyme utilisé par de nombreuses rédactions pour recevoir des documents de sources. Beaucoup de journaux publient aussi une clé PGP et un contact Signal. Ne transmettez jamais depuis votre matériel professionnel ni votre réseau habituel.
+Honnêteté, ne vous surestimez pas
+L’anonymat fort contre un adversaire étatique est difficile et faillible. Ce guide donne des repères, pas des garanties. Si des vies en dépendent, formez-vous auprès des références d’autorité : EFF Surveillance Self-Defense, Freedom of the Press Foundation, Privacy Guides. Cadre strictement défensif et journalistique.
+PARTIE 14 · POUR ALLER PLUS LOIN
+L’écosystème libre complet
+Se dégoogliser à fond, c’est remplacer chaque brique par un équivalent libre. La logique commune (logiciel libre + contrôle de son appareil + auto-hébergement) est la vraie parade au scan côté client.
+Bureautique
+LibreOffice
+OnlyOffice
+Média
+VLC
+Jellyfin
+FreeTube / NewPipe
+Audacity · OBS
+GIMP · Inkscape
+Calibre · Shotcut
+Cloud & réseau
+Nextcloud
+Pi-hole
+KDE Connect
+Mobile libre
+F-Droid · Aurora
+microG
+postmarketOS
+Sécurité
+Bitwarden
+KeePassXC
+Wireshark
+E-mail & bureau
+Thunderbird
+FairEmail
+Dev & avancé
+Termux · git
+QEMU / KVM · Wine
+Flatpak · GNU/Linux
+PARTIE 15 · PASSER À L’ACTION
+Migration & désobéissance civile numérique
+Un plan progressif
+Semaine 1 🟢 : Installez Signal et faites-y venir vos proches. Passez à Proton Mail ou Tuta. Installez un gestionnaire de mots de passe et uBlock Origin.
+Semaine 2 🟡 : Migrez vos fichiers vers un cloud chiffré, remplacez Chrome/Google Search, prenez un VPN, créez un compte Mastodon.
+Ensuite 🔴 : Selon votre profil : GrapheneOS, Tor/Tails, auto-hébergement, discipline OPSEC.
+Erreurs classiques
+Croire qu’un seul outil suffit ; réutiliser son vrai numéro pour un compte anonyme ; installer dix applications sans changer ses habitudes ; oublier que le maillon faible, c’est souvent l’appareil lui-même.
+La souveraineté est collective
+Une messagerie chiffrée ne sert que si votre interlocuteur l’utilise aussi. Faites migrer vos contacts, votre famille, votre communauté. Changer d’outils, c’est voter avec ses usages : chaque personne qui quitte les plateformes de surveillance affaiblit le modèle.
+Agir politiquement
+La technique ne remplace pas la politique. Suivez et soutenez la mobilisation : fightchatcontrol.eu, EDRi, le travail de Patrick Breyer. Contactez vos eurodéputés, c’est encore ce qui a fait vaciller le texte.
+Manifeste
+Refuser une surveillance de masse illégitime n’est pas se cacher : c’est un acte citoyen, légal et pacifique. La vie privée est un droit, pas un aveu. Chiffrer, c’est voter. S’auto-héberger, c’est désobéir. Reprendre ses outils, c’est devenir ingouvernable.
+Ressources
+Privacy Guides EFF · Surveillance Self-Defense Freedom of the Press Foundation Fight Chat Control
+Sources · le texte
+Parlement · amendements du 9 juillet 2026 (E2EE exclu) Résultats officiels des votes · 9 juillet 2026 Conseil de l'UE · position en première lecture du 2 juillet 2026 Parlement · rejet du 26 mars 2026 EDPS · avis du 16 février 2026 (PDF) Règlement (UE) 2021/1232 Chat Control 1.0 vs 2.0 Proton · le scan côté client Appel commun des géants (19 mars 2026) Les géants continueront de scanner
+Agir
+European Digital Rights (EDRi) Stop Scanning Me (EDRi) Fight Chat Control Signal · blog
+Code source ouvert sur GitHub⭳ Télécharger le guide (1 fichier)
+Zéro traqueur, zéro cookie, zéro requête externe. Tout (polices, icônes, styles) est embarqué. Vérifiez : ouvrez l'inspecteur réseau, rechargez — rien ne part vers un tiers.
+Ce guide est un document d'information sur la protection de la vie privée et la défense du chiffrement. Il ne conseille aucune activité illégale. Vérifiez toujours l'actualité législative : la situation évolue vite.Dernière mise à jour des faits : 10 juillet 2026.exitchatcontrol.org

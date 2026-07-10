@@ -1,0 +1,85 @@
+---
+id: 'motsdepasse'
+part: 7
+order: 11
+title: 'Password manager'
+---
+
+<p class="part-num">
+  PART 10 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Password manager
+
+One strong, unique password per service: the foundation of everything that follows. Drop the notebook, drop the reused password.
+
+<ToolCard tool="t-bitwarden">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Best to start with</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A password vault that remembers, generates and fills your passwords for you, across all your
+    devices.
+  </Fragment>
+  <Fragment slot="why">
+    Free, audited, cross-platform, and end-to-end encrypted. You only need to remember one strong
+    password. It's even <b>self-hostable</b> (via Vaultwarden) so you depend on no one.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone. It's the foundation of all security: one strong, unique password per service.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Create an account at bitwarden.com and choose a <b>long</b> master password (a phrase). Never
+      forget it: it can't be recovered.
+    </li>
+    <li>Install the browser extension and the mobile app.</li>
+    <li>
+      As you log in, let Bitwarden save and then replace your old passwords with generated ones.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-keepassxc">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">100% local</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A <b>local</b> vault: an encrypted file only you hold, with no cloud and no account.
+  </Fragment>
+  <Fragment slot="why">
+    Nothing leaves your device, unless you choose to sync the file yourself (for example via
+    Cryptomator). It's the purist's choice, with no middleman at all.
+  </Fragment>
+  <Fragment slot="who">
+    Advanced profiles who want full control and zero online dependency.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Install KeePassXC (desktop) and a compatible mobile app (KeePassDX on Android, Strongbox on
+      iOS).
+    </li>
+    <li>Create a database file protected by a master password.</li>
+    <li>To have it on all devices, sync that file through an encrypted cloud.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-protonpass">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">With email aliases</span>
+    <span class="tool-tag">🇨🇭 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    The password manager of the Proton ecosystem, with built-in disposable email aliases.
+  </Fragment>
+  <Fragment slot="why">
+    Ideal if you're already on Proton: one account for mail, cloud and passwords. Its email aliases
+    save you from giving your real address everywhere.
+  </Fragment>
+  <Fragment slot="who">Those who want everything in one place with Proton.</Fragment>
+</ToolCard>

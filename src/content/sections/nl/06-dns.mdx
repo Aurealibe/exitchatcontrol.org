@@ -1,0 +1,121 @@
+---
+id: 'dns'
+part: 3
+order: 6
+title: 'Versleutelde DNS & Cloudflare'
+---
+
+<p class="part-num">
+  DEEL 05 · NETWERK · DNS · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Versleutelde DNS &amp; Cloudflare
+
+DNS is de telefoongids die een sitenaam (example.com) omzet in een machineadres. Het addertje: standaard beheert uw internetaanbieder die gids, dus ziet hij **elke site die u bezoekt**, zelfs wanneer de pagina HTTPS gebruikt. Uw DNS versleutelen haalt die lijst terug bij uw provider. Het is een stille instelling, maar een van de meest effectieve.
+
+<ToolCard tool="t-quad9">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Anti-malware</span>
+    <span class="tool-tag">🇨🇭 non-profit</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een versleutelde, Zwitserse, non-profit DNS-resolver die ook bekende kwaadaardige domeinen
+    blokkeert.
+  </Fragment>
+  <Fragment slot="why">
+    Zwitserse jurisdictie, geen bewaring van uw IP-adres, bescherming tegen phishing en malware. Een
+    uitstekende "instellen en vergeten"-keuze.
+  </Fragment>
+  <Fragment slot="who">Iedereen, vooral wie eenvoud en een goede jurisdictie wil.</Fragment>
+  <ol slot="install">
+    <li>
+      Op Android: Instellingen &gt; Netwerk &gt; <b>Privé-DNS</b> &gt; voer <b>dns.quad9.net</b> in.
+    </li>
+    <li>
+      Op iPhone/Mac: installeer het DoH-profiel van quad9.net. Op pc: stel DNS-over-HTTPS in de
+      browser of het systeem in.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-mullvaddns">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Gevorderd</span>
+    <span class="tool-tag">Netwerkfiltering</span>
+  </Fragment>
+  <Fragment slot="what">
+    Twee versleutelde resolvers die ook advertenties en trackers blokkeren voor het hele apparaat.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Mullvad DNS</b> (Zweden, no-log) is gratis en biedt blokkeerlijsten. <b>NextDNS</b> is zeer
+    aanpasbaar, met een dashboard en profielen per apparaat, maar is in de VS gevestigd en logt
+    standaard (schakel dit uit in de instellingen).
+  </Fragment>
+  <Fragment slot="who">
+    Wie systeembrede advertentieblokkering wil zonder per browser een extensie te installeren.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Mullvad DNS: gebruik het adres op mullvad.net/help/dns als uw privé-DNS (dezelfde methode als
+      Quad9).
+    </li>
+    <li>
+      NextDNS: maak een profiel op nextdns.io, <b>schakel logging uit</b> en pas de configuratie toe
+      op uw apparaten.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cloudflare">
+  <Fragment slot="name">Cloudflare 1.1.1.1 (met nuance)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Snel maar gecentraliseerd</span>
+    <span class="tool-tag">🇺🇸</span>
+  </Fragment>
+  <Fragment slot="what">
+    De versleutelde DNS 1.1.1.1 en de WARP-app van Cloudflare: snel, gratis, en een echte
+    verbetering ten opzichte van de resolver van uw provider.
+  </Fragment>
+  <Fragment slot="why">
+    Het is nuttig, met een geauditeerde belofte van geen logging. Maar wees reëel: Cloudflare staat
+    al vóór een enorm deel van het web (als technische tussenpersoon kan het het platte tekstverkeer
+    naar die sites zien). Ook uw DNS daarheen routeren betekent{' '}
+    <b>nog meer van uw sporen concentreren</b> bij één Amerikaans bedrijf onder Amerikaans recht.
+  </Fragment>
+  <Fragment slot="who">
+    Goed voor dagelijks gebruik en malware-blokkering (1.1.1.1 for Families). Vermijden of
+    diversifiëren voor gevoelig gebruik: kies liever Quad9 of Mullvad DNS.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-pihole">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Blokkering voor het hele netwerk</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een advertentie- en trackerblokkering die <b>uw hele netwerk in één keer</b> beschermt,
+    geïnstalleerd op een kleine computer zoals een Raspberry Pi.
+  </Fragment>
+  <Fragment slot="why">
+    Waar uBlock Origin één browser beschermt, filtert Pi-hole <b>elk apparaat</b> in huis, inclusief
+    apparaten waarop u geen extensie kunt installeren: telefoons, smart-tv's, connected objects.
+    Advertenties en trackers worden op DNS-niveau geblokkeerd, nog vóór ze laden.{' '}
+    <b>AdGuard Home</b> is een alternatief met een modernere interface.
+  </Fragment>
+  <Fragment slot="who">
+    Huishoudens die al hun apparaten in één keer willen opschonen, en die een (of willen) Raspberry
+    Pi of kleine server hebben.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Voer op een Raspberry Pi (of een container) het officiële installatieprogramma van Pi-hole
+      uit.
+    </li>
+    <li>Stel in uw router-instellingen het adres van de Pi-hole in als DNS-server.</li>
+    <li>Voortaan worden alle apparaten op uw netwerk automatisch gefilterd.</li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,79 @@
+---
+// PART 16 — the precedents timeline: 23 dated, sourced, citable events
+// (src/data/events.json + per-locale prose). Fully server-rendered; the only
+// "interaction" is the native :target highlight when an entry is cited via
+// its #tl-<id> anchor. Every source goes through Ext / the md helper, so the
+// rel policy holds everywhere.
+import { useT, type Locale } from '../i18n/config'
+import { loadDataset, type EventKind } from '../lib/content'
+import { mdToHtml } from '../lib/md'
+import Ext from './Ext.astro'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+
+const events = [...loadDataset('events', locale)].sort((a, b) => a.date.localeCompare(b.date))
+
+// kind → chip color (design tokens); labels come from the dictionaries
+const KIND_CLASS: Record<EventKind, string> = {
+  promise: 'border-lvl2 text-lvl2',
+  creep: 'border-warn text-warn',
+  struck: 'border-ok text-ok',
+  revealed: 'border-info text-info',
+}
+---
+
+<section id="precedents">
+  <p class="eyebrow">{t('sections2.precedents.eyebrow')}</p>
+  <h2>{t('sections2.precedents.title')}</h2>
+  <p class="text-dim">{t('sections2.precedents.intro')}</p>
+  <ol class="m-0 mt-6 list-none border-s border-rule-strong p-0 ps-5">
+    {
+      events.map((ev) => (
+        <li id={`tl-${ev.id}`} class="tl-item relative my-6 p-2">
+          <p class="m-0 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <a href={`#tl-${ev.id}`} class="font-mono text-sm font-bold no-underline">
+              <time datetime={ev.date}>{ev.date}</time>
+            </a>
+            <span
+              class={`rounded-dossier border px-1.5 py-0.5 font-mono text-xs tracking-wide uppercase ${KIND_CLASS[ev.kind]}`}
+            >
+              {t(`sections2.precedents.kinds.${ev.kind}`)}
+            </span>
+          </p>
+          <h3 class="mt-1 mb-0 text-base">{ev.title}</h3>
+          <p class="my-1 text-sm leading-6" set:html={mdToHtml(ev.body)} />
+          <p class="mt-1 mb-0 font-mono text-xs">
+            <Ext href={ev.src.href} class="text-dim">
+              {ev.src.label} →
+            </Ext>
+          </p>
+        </li>
+      ))
+    }
+  </ol>
+</section>
+
+<style>
+  /* the dot on the timeline rail */
+  .tl-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1.25rem - 3.5px);
+    top: 1.05rem;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  /* :target = the cited entry — stamp it so the deep link is visible */
+  .tl-item:target {
+    background: var(--surface);
+    outline: 1px solid var(--accent);
+    border-radius: var(--radius-dossier);
+  }
+</style>

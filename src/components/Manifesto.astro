@@ -1,0 +1,26 @@
+---
+// The closing manifesto, the guide's last word before the footer (owner's
+// own copy). Inverted paper panel, typewriter mono, amber emphasis, the
+// final phrase highlighted. p3 carries the fightchatcontrol.eu link via a
+// {link} placeholder so word order stays free in every language.
+import { useT, type Locale } from '../i18n/config'
+import Ext from './Ext.astro'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+const [p3before, p3after] = t('manifesto.p3').split('{link}')
+---
+
+<section id="manifesto" class="manifesto">
+  <p class="eyebrow">{t('manifesto.label')}</p>
+  <p>{t('manifesto.p1')}</p>
+  <p><Fragment set:html={t('manifesto.p2')} /></p>
+  <p>
+    {p3before}<Ext href="https://fightchatcontrol.eu">fightchatcontrol.eu</Ext>{p3after}
+  </p>
+  <p>{t('manifesto.p4')}</p>
+</section>

@@ -1,0 +1,208 @@
+---
+id: 'boiteaoutils'
+part: 9
+order: 16
+title: 'De dagelijkse gereedschapskist'
+---
+
+<p class="part-num">
+  DEEL 15 · VERVANG DE REST · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## De dagelijkse gereedschapskist
+
+Google en Apple zijn niet alleen e-mail: kaarten, notities, agenda, foto's, videogesprekken, alles is aan uw identiteit gekoppeld. Hier leest u hoe u elke bouwsteen één voor één vervangt, zonder in te leveren op gemak.
+
+<ToolCard tool="t-maps">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Vervangt Google Maps</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Kaart- en navigatie-apps, gebouwd op OpenStreetMap, die offline werken.
+  </Fragment>
+  <Fragment slot="why">
+    Google Maps legt elke reis vast en bouwt een griezelig nauwkeurige locatiegeschiedenis op.{' '}
+    <b>Organic Maps</b> volgt niets en toont geen advertenties; <b>OsmAnd</b> is gericht op
+    gevorderde gebruikers (wandelen, hoogtelijnen, gedetailleerde navigatie).
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen. Live verkeersinformatie en openbaar vervoer zijn minder compleet dan bij Google, maar
+    de dagelijkse navigatie is uitstekend.
+  </Fragment>
+  <ol slot="install">
+    <li>Installeer vanuit F-Droid, de App Store of Google Play.</li>
+    <li>Download vooraf de kaarten van de regio's die u nodig heeft voor offline gebruik.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-notes">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Vervangt Docs / Notion</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    End-to-end versleutelde notities en documenten, ter vervanging van Google Docs, Notion of
+    Evernote.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Standard Notes</b> (van Proton) versleutelt uw notities standaard. <b>Joplin</b> beheert
+    Markdown-notitieboeken met optionele versleuteling en de synchronisatie van uw keuze.{' '}
+    <b>CryptPad</b> (Frans) biedt een real-time, volledig versleuteld Google Docs-alternatief.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen voor notities; CryptPad voor samenwerking met meerdere personen.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Standard Notes / Joplin: maak een account aan, installeer de app en schakel versleuteling in
+      (standaard aan bij Standard Notes, aan te zetten in Joplin).
+    </li>
+    <li>
+      CryptPad: gebruik cryptpad.fr of een andere instance, geen account nodig om te beginnen.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-visio">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Vervangt Zoom / Meet</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Videoconferentietools zonder account of zware installatie, ter vervanging van Zoom, Google Meet
+    of Teams.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Jitsi Meet</b> draait in de browser, geen account, en kan zelf worden gehost (het is ook de
+    basis van Brave Talk). <b>Element Call</b> is end-to-end versleuteld en gefedereerd via Matrix.
+    Voor een eenvoudig, volledig versleuteld gesprek voldoen <b>Signal</b>-gesprekken ook.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen. Op een publieke Jitsi-server zijn gesprekken met meerdere deelnemers in het transport
+    versleuteld; end-to-end-encryptie is optioneel.
+  </Fragment>
+  <ol slot="install">
+    <li>Jitsi: ga naar meet.jit.si, maak een kamernaam aan, deel de link. Niets te installeren.</li>
+    <li>Element Call: start vanuit de Element (Matrix)-app een gesprek in een ruimte.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-photos">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Vervangt Google Photos</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Twee manieren om uw foto's te bewaren zonder ze aan Google of Apple toe te vertrouwen.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Ente</b> is een beheerde, end-to-end versleutelde dienst, met herkenning en zoeken op het
+    apparaat: eenvoudig en veilig. <b>Immich</b> is een Google Photos-kloon die u <b>zelf host</b>{' '}
+    (inclusief gezichts- en objectherkenning), voor wie een server kan beheren.
+  </Fragment>
+  <Fragment slot="who">
+    Ente voor iedereen; Immich voor zelf-hosters. Let op: Immich is niet end-to-end versleuteld, de
+    beveiliging hangt af van uw server.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Ente: installeer de app, maak een account aan en schakel automatische back-up van uw fotorol
+      in.
+    </li>
+    <li>Immich: zet het via Docker op uw server (zie sectie 10) en koppel de mobiele app.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-alias">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">E-mailaliassen</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Wegwerpbare e-mailaliassen: een uniek adres per site, dat doorstuurt naar uw echte inbox zonder
+    deze ooit te onthullen.
+  </Fragment>
+  <Fragment slot="why">
+    U geeft niet langer overal uw echte adres op. Als een site wordt gehackt of u spamt, knipt u de
+    bijbehorende alias en weet u meteen wie uw gegevens heeft gelekt. <b>SimpleLogin</b> is
+    geïntegreerd met Proton; <b>addy.io</b> biedt onbeperkte aliassen in het gratis abonnement.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen, en vooral pseudoniem-accounts die hun aanmeldingen willen compartimenteren.
+  </Fragment>
+  <ol slot="install">
+    <li>Maak een account aan, installeer de browserextensie.</li>
+    <li>Genereer bij elke aanmelding een nieuwe alias in plaats van uw echte adres in te typen.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-backups">
+  <Fragment slot="name">Versleutelde back-ups</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een manier om een back-up te maken van uw telefoon en computer, waarbij de gegevens <b>vóór</b>{' '}
+    vertrek naar de cloud worden versleuteld.
+  </Fragment>
+  <Fragment slot="why">
+    iCloud/Google-back-ups zijn vaak toegankelijk voor de provider, en dus voor rechtbanken.{' '}
+    <b>Cryptomator</b> versleutelt uw bestanden vóór ze naar een cloud worden gestuurd;{' '}
+    <b>restic</b> maakt automatische versleutelde back-ups; <b>Proton Drive</b> is end-to-end
+    versleuteld. Schakel op de iPhone "Geavanceerde gegevensbescherming" in om uw iCloud-back-ups te
+    versleutelen.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen zou zijn back-ups moeten versleutelen. Gouden regel: twee versleutelde kopieën, op twee
+    media, op twee locaties.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      iPhone: Instellingen &gt; uw naam &gt; iCloud &gt; Geavanceerde gegevensbescherming: schakel
+      in.
+    </li>
+    <li>
+      PC: installeer Cryptomator, maak een kluis aan, plaats er uw bestanden in vóór synchronisatie
+      met de cloud.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-databrokers">
+  <Fragment slot="name">Wis uw gegevens (AVG)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡</span>
+    <span class="tool-tag">Databrokers</span>
+  </Fragment>
+  <Fragment slot="what">
+    Uw persoonlijke gegevens laten verwijderen uit de "databrokers" die ze verzamelen en
+    doorverkopen.
+  </Fragment>
+  <Fragment slot="why">
+    In Europa geeft de AVG (artikel 17) u een <b>recht op gegevenswissing</b>: u kunt gratis eisen
+    dat een bedrijf uw gegevens verwijdert, in principe binnen een maand. Diensten als{' '}
+    <b>Incogni</b> automatiseren deze verzoeken op grote schaal, tegen betaling.
+  </Fragment>
+  <Fragment slot="who">
+    Wie zijn blootstelling wil verminderen. Let op: gegevens komen na verloop van tijd terug, en dit
+    raakt geen openbare registers of sociale media. Het zelf doen is gratis maar tijdrovend.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Voor een handmatig verzoek: schrijf de broker, verwijs naar AVG-artikel 17 en vraag om
+      verwijdering.
+    </li>
+    <li>
+      Om te automatiseren: abonneer u op een verwijderservice en laat die de verzoeken namens u
+      versturen.
+    </li>
+  </ol>
+</ToolCard>

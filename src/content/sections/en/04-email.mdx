@@ -1,0 +1,103 @@
+---
+id: 'email'
+part: 2
+order: 4
+title: 'Encrypted email & PGP'
+---
+
+<p class="part-num">
+  PART 03 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Encrypted email &amp; PGP
+
+Gmail reads your email and lives in the US, under "Five Eyes" jurisdiction. Leaving Gmail/Outlook is a huge win for minimal effort.
+
+<ToolCard tool="t-protonmail">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Replaces Gmail</span>
+    <span class="tool-tag">🇨🇭 · open-source · OpenPGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    An encrypted inbox that replaces Gmail or Outlook, and the pivot account for the whole Proton
+    ecosystem.
+  </Fragment>
+  <Fragment slot="why">
+    Based in Switzerland, outside "Five Eyes" jurisdiction. OpenPGP-compatible: automatic encryption
+    between Proton accounts and to other PGP services.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone. It's the best starting point to leave Google (see section 05 for the rest of the
+    suite).
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Create an account at <b>proton.me</b> (the free tier is enough to start).
+    </li>
+    <li>
+      Import your old messages and contacts with <b>Easy Switch</b> (built in).
+    </li>
+    <li>Set up forwarding from Gmail and tell your contacts your new address.</li>
+    <li>
+      Install the mobile app, turn on <b>two-factor auth</b>, and use Proton Bridge if you want
+      Thunderbird.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tuta">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Replaces Gmail</span>
+    <span class="tool-tag">🇩🇪 · open-source · post-quantum</span>
+  </Fragment>
+  <Fragment slot="what">
+    A German email service, fully open-source and free of any Google service.
+  </Fragment>
+  <Fragment slot="why">
+    It also encrypts <b>the subject line and some metadata</b>, with post-quantum-resistant
+    encryption. EU jurisdiction.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want maximum encrypted metadata and fully free software. It doesn't use PGP: to write
+    encrypted to outsiders, you password-protect the message.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Create an account at <b>tuta.com</b> and install the app (available on F-Droid).
+    </li>
+    <li>
+      To write encrypted to a non-user: click the lock and set a password, shared with your
+      correspondent through another channel.
+    </li>
+    <li>Turn on two-factor authentication.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-mailbox">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Ethical classic mail</span>
+    <span class="tool-tag">🇩🇪 · UE · PGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Two ethical, low-cost European email providers, with server-side PGP support.
+  </Fragment>
+  <Fragment slot="why">
+    Privacy- and eco-conscious, built on open standards (IMAP, PGP). They work with any mail client.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want a "classic" mailbox (read in Thunderbird) but ethical, rather than a closed
+    encrypted app.
+  </Fragment>
+  <ol slot="install">
+    <li>Create an account (paid, roughly €1 to €3 per month).</li>
+    <li>Enable server-side PGP encryption (the "Guard" feature at mailbox.org).</li>
+    <li>Set the account up in Thunderbird or the mobile app of your choice.</li>
+  </ol>
+</ToolCard>
+
+#### PGP in one minute
+
+**PGP** (Pretty Good Privacy) is key-based encryption: you have a _public_ key you hand out, and a _private_ key you keep secret. Anyone with your public key can send you a message that **only you** can decrypt. It's the basis of provider-independent encrypted email. Proton Mail handles it automatically; for manual use, **OpenPGP** works via Thunderbird (built in since v78).

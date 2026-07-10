@@ -1,0 +1,164 @@
+---
+id: 'selfhost'
+part: 10
+order: 17
+title: 'Auto-hébergement'
+---
+
+<p class="part-num">
+  PARTIE 16 · AUTODÉFENSE AVANCÉE · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Auto-hébergement
+
+Le niveau ultime de souveraineté : héberger vos services vous-même. Vos données vivent sur votre matériel, sous la juridiction que vous choisissez.
+
+<ToolCard tool="t-yunohost">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Serveur clé en main</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Des systèmes qui transforment un vieux PC ou un Raspberry Pi en serveur personnel, avec un
+    catalogue d'applications à installer en quelques clics.
+  </Fragment>
+  <Fragment slot="why">
+    L'auto-hébergement fait peur, mais ces outils font le gros du travail. <b>YunoHost</b> gère même
+    votre propre e-mail et une authentification unique. <b>Umbrel</b> offre un magasin de plus de
+    300 applications, très prisé des amateurs de vie privée et de Bitcoin. <b>Start9</b> chiffre les
+    sauvegardes et donne une adresse Tor à chaque service par défaut.
+  </Fragment>
+  <Fragment slot="who">
+    Les profils avancés prêts à consacrer un après-midi à monter leur propre cloud. C'est la parade
+    structurelle la plus radicale à Chat Control.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Récupérez un vieil ordinateur, un Raspberry Pi, ou louez un petit serveur (VPS) dans un pays
+      protecteur.
+    </li>
+    <li>Installez YunoHost, Umbrel ou Start9 en suivant leur guide officiel.</li>
+    <li>Depuis le catalogue, installez Nextcloud, un serveur Matrix, une galerie photo, etc.</li>
+    <li>
+      Accédez-y en privé avec Tailscale (fiche ci-dessous) plutôt que d'exposer le serveur au
+      public.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nextcloud">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Remplace toute la suite Google</span>
+    <span class="tool-tag">🇩🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Votre propre nuage : fichiers, agenda, contacts, photos, notes et documents collaboratifs, sur
+    votre serveur.
+  </Fragment>
+  <Fragment slot="why">
+    C'est le remplacement complet de Google Drive, Agenda et Contacts, mais chez vous. Vous décidez
+    de la juridiction et personne d'autre n'a la main sur vos fichiers. À savoir : c'est la
+    confidentialité « votre serveur », pas un chiffrement de bout en bout par défaut ; vous devez le
+    maintenir à jour.
+  </Fragment>
+  <Fragment slot="who">
+    Les auto-hébergeurs. Le plus simple est de l'installer via YunoHost ou Umbrel.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-synapse">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Votre serveur de chat</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Votre propre serveur de messagerie Matrix, sur lequel tournent Element et les appels chiffrés.
+  </Fragment>
+  <Fragment slot="why">
+    En hébergeant le serveur, vous contrôlez aussi les <b>métadonnées</b> (qui parle à qui, quand),
+    le point faible de Matrix en fédération. C'est la messagerie communautaire dont vous êtes le
+    seul maître.
+  </Fragment>
+  <Fragment slot="who">
+    Communautés, collectifs, rédactions qui veulent leur espace fédéré indépendant.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-tailscale">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Accès privé à son serveur</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un réseau privé chiffré qui relie vos appareils à votre serveur, sans jamais l'exposer sur
+    l'Internet public.
+  </Fragment>
+  <Fragment slot="why">
+    Au lieu d'ouvrir des ports (et de vous faire attaquer), <b>Tailscale</b> crée un tunnel
+    WireGuard entre vos seuls appareils autorisés : votre serveur n'a aucune surface d'attaque
+    publique. <b>Headscale</b> est la version que vous hébergez vous-même, pour ne dépendre d'aucun
+    tiers. <b>WireGuard</b> seul offre le contrôle total, au prix d'une configuration manuelle.
+  </Fragment>
+  <Fragment slot="who">
+    Tout auto-hébergeur. C'est la façon sûre d'atteindre son Nextcloud ou ses photos depuis
+    l'extérieur.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installez Tailscale sur votre serveur et sur votre téléphone/PC, connectez-les au même compte.
+    </li>
+    <li>
+      Vos appareils se voient aussitôt sur un réseau privé ; accédez à votre serveur par son adresse
+      Tailscale.
+    </li>
+    <li>Pour zéro dépendance, remplacez le serveur de coordination par Headscale, auto-hébergé.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-website">
+  <Fragment slot="name">Votre propre site web</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Résister au bannissement</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un site à vous, sur votre nom de domaine, où votre contenu ne dépend d'aucune plateforme.
+  </Fragment>
+  <Fragment slot="why">
+    Le jour où un réseau supprime ou suspend votre compte, tout votre travail disparaît. Un site
+    personnel est votre point d'ancrage : vos articles y restent, archivés et à jour, quoi qu'il
+    arrive. C'est exactement ce que font les comptes d'information prudents. Un site statique
+    (généré par Hugo, Astro ou Jekyll) suffit et se publie presque gratuitement ; pour un blog
+    dynamique, un WordPress ou un Ghost auto-hébergé fait l'affaire.
+  </Fragment>
+  <Fragment slot="who">
+    Comptes d'information, créateurs, militants, quiconque publie et craint la censure de
+    plateforme.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Achetez un nom de domaine (idéalement chez un registraire respectueux de la vie privée).
+    </li>
+    <li>
+      Choisissez un générateur de site statique (Astro, Hugo) et hébergez le résultat, ou installez
+      WordPress/Ghost sur votre serveur.
+    </li>
+    <li>
+      Renvoyez-y systématiquement depuis vos réseaux : votre audience vous retrouve même si un
+      compte tombe.
+    </li>
+  </ol>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Le point juridiction</span>
+  <p>
+    Auto-héberger, c'est aussi choisir <em>où</em> vivent vos données. Un serveur chez vous ou dans
+    un pays protecteur échappe aux obligations de scan imposées à une grande plateforme. C'est la
+    parade structurelle la plus radicale à Chat Control.
+  </p>
+</div>

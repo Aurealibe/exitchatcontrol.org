@@ -1,0 +1,38 @@
+# Weekly link-rot watch: every cited source URL is checked over HTTP.
+# Surveillance archives decay — this applies the lesson to ourselves.
+# On failure it opens a triage issue (runner-provided vars only — nothing
+# attacker-controlled is interpolated).
+name: link-rot
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: 22
+
+      - name: Check cited sources
+        run: node scripts/check-links.mjs
+
+      - name: Open triage issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "link-rot: cited sources failing ($(date -u +%F))" \
+            --body "The weekly link check failed. See the run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"

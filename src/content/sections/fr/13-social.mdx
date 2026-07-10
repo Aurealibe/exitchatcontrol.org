@@ -1,0 +1,130 @@
+---
+id: 'social'
+part: 8
+order: 13
+title: 'Réseaux sociaux décentralisés'
+---
+
+<p class="part-num">
+  PARTIE 12 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Réseaux sociaux décentralisés
+
+Instagram, X et Facebook appartiennent à des entreprises qui vous profilent et peuvent vous censurer ou vous supprimer du jour au lendemain. Le « fédiverse » propose des réseaux appartenant à leurs utilisateurs.
+
+<ToolCard tool="t-mastodon">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Remplace X / Twitter</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    L'alternative à X/Twitter : un réseau social fait de milliers de serveurs indépendants qui
+    communiquent entre eux (le « fédiverse »).
+  </Fragment>
+  <Fragment slot="why">
+    Pas de patron unique, pas d'algorithme qui décide à votre place, pas de bannissement arbitraire
+    par une seule entreprise. Le fil est chronologique, sans publicité ni manipulation.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde. Idéal pour les comptes d'information qui veulent une présence qu'aucune
+    entreprise ne peut couper.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Sur joinmastodon.org, choisissez un serveur (ou « instance ») qui vous correspond, puis créez
+      un compte.
+    </li>
+    <li>
+      Installez une application (l'officielle, ou Ivory, Tusky…) et suivez des comptes : vous voyez
+      tout le fédiverse, quel que soit leur serveur.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nostr">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Incensurable</span>
+    <span class="tool-tag">🌍 · protocole ouvert</span>
+  </Fragment>
+  <Fragment slot="what">
+    Pas une application mais un protocole : un réseau social où votre identité est une simple paire
+    de clés, comme pour Bitcoin.
+  </Fragment>
+  <Fragment slot="why">
+    Zéro e-mail, zéro mot de passe, aucun compte qu'on puisse supprimer. Vos messages voyagent sur
+    des relais décentralisés et vous possédez vraiment votre audience : personne ne peut vous bannir
+    durablement. Vous pouvez même recevoir des pourboires en Bitcoin (les « zaps ») et changer
+    d'application quand vous voulez sans perdre vos abonnés.
+  </Fragment>
+  <Fragment slot="who">
+    Comptes d'information et créateurs qui craignent la censure de plateforme et veulent une
+    présence vraiment à eux.
+  </Fragment>
+  <ol slot="install">
+    <li>Installez un client : Damus (iPhone), Amethyst ou Primal (Android), ou une version web.</li>
+    <li>
+      L'application génère votre paire de clés. <b>Sauvegardez votre clé privée (nsec)</b> comme une
+      phrase de récupération Bitcoin : sur papier, jamais partagée.
+    </li>
+    <li>Créez votre profil, suivez des gens, activez les zaps pour recevoir des sats.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-element">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Remplace Discord / Slack</span>
+    <span class="tool-tag">🌍 · fédéré · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    Une messagerie de communautés, dans l'esprit de Discord ou Slack, mais fédérée et chiffrable de
+    bout en bout. Element est l'application, Matrix le réseau.
+  </Fragment>
+  <Fragment slot="why">
+    Vous pouvez héberger votre propre serveur (Synapse) et contrôler vos données. Parfait pour un
+    collectif, une rédaction, une association qui veut son espace indépendant.
+  </Fragment>
+  <Fragment slot="who">
+    Communautés et groupes. Voir la nuance sur les métadonnées ci-dessous.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installez Element (element.io) et créez un compte sur un serveur public, ou sur le vôtre
+      (section 10).
+    </li>
+    <li>
+      Rejoignez ou créez des salons, et activez le chiffrement de bout en bout pour les
+      conversations privées.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-fediverse">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡</span>
+    <span class="tool-tag">Insta · YouTube · Reddit</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Les cousins fédérés d'Instagram (Pixelfed), de YouTube (PeerTube) et de Reddit (Lemmy).
+  </Fragment>
+  <Fragment slot="why">
+    Même logique que Mastodon : pas de propriétaire unique, pas d'algorithme publicitaire, pas de
+    traçage. Vous publiez photos, vidéos ou discussions sans nourrir une machine à profiler.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui veulent quitter Instagram, YouTube ou Reddit sans renoncer au format.
+  </Fragment>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Nuance métadonnées</span>
+  <p>
+    Matrix chiffre bien le <em>contenu</em>, mais en fédération, les serveurs participants voient
+    l'appartenance aux salons et l'horodatage des messages. Pour un usage très sensible, préférez
+    SimpleX/Session ou auto-hébergez votre serveur.
+  </p>
+</div>

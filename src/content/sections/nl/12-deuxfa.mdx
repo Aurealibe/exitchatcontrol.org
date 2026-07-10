@@ -1,0 +1,77 @@
+---
+id: 'deuxfa'
+part: 7
+order: 12
+title: 'Tweestapsverificatie & hardwaretokens'
+---
+
+<p class="part-num">
+  DEEL 11 · BEVEILIGING · 2FA · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Tweestapsverificatie &amp; hardwaretokens
+
+Een wachtwoord, zelfs een sterk, kan uitlekken. Tweestapsverificatie (2FA) voegt een tweede bewijs toe bij het inloggen: zelfs als uw wachtwoord is gestolen, blijft het account vergrendeld. Het is essentieel op uw gevoelige accounts (e-mail, wachtwoordmanager, sociale media).
+
+<div class="box warn">
+  <span class="lab">Vermijd 2FA via sms</span>
+  <p>
+    Een code per sms is de zwakke schakel: hij is kwetsbaar voor "SIM-swap" (een aanvaller laat uw
+    nummer overzetten) en voor interceptie via het telefoonnetwerk (SS7). Studies schatten dat de
+    meeste SIM-swap-pogingen slagen. Gebruik sms alleen als laatste redmiddel, nooit als uw
+    belangrijkste bescherming.
+  </p>
+</div>
+
+<ToolCard tool="t-yubikey">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Gevorderd / Expert</span>
+    <span class="tool-tag">FIDO2-hardwaretoken</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een kleine fysieke sleutel (USB, vaak met NFC) die uw identiteit bewijst met één aanraking.
+  </Fragment>
+  <Fragment slot="why">
+    Dit is de sterkste 2FA: hij is phishing-bestendig, omdat de sleutel het echte adres van de site
+    controleert voordat hij antwoordt. <b>Nitrokey</b> is het volledig open alternatief qua hardware
+    en firmware. Een nepsite kan u niet misleiden.
+  </Fragment>
+  <Fragment slot="who">
+    Wie maximale beveiliging op sleutelaccounts wil. Koop er <b>twee</b> (één hoofd, één back-up).
+  </Fragment>
+  <ol slot="install">
+    <li>Schaf twee sleutels aan via yubico.com of nitrokey.com.</li>
+    <li>
+      Voeg in de beveiligingsinstellingen van elk account (e-mail, wachtwoordmanager…) een
+      "beveiligingssleutel" of "passkey" toe. Registreer beide sleutels.
+    </li>
+    <li>Bewaar de back-upsleutel op een veilige, afzonderlijke plek.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-aegis">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">TOTP-codes</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Apps die elke 30 seconden de zescijferige codes genereren, ter vervanging van Google
+    Authenticator.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Aegis</b> (Android) bewaart uw codes in een lokale versleutelde kluis, geen cloud.{' '}
+    <b>Ente Auth</b> voegt end-to-end versleutelde synchronisatie tussen apparaten toe, en is
+    geauditeerd. Veel veiliger dan sms, en gratis.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen: dit is het standaard 2FA-niveau om aan te nemen, vóór hardwaretokens.
+  </Fragment>
+  <ol slot="install">
+    <li>Installeer Aegis (F-Droid) of Ente Auth (alle platforms).</li>
+    <li>Schakel op elk account 2FA via een "authenticator-app" in en scan de getoonde QR-code.</li>
+    <li>
+      Noteer de <b>back-upcodes</b> op papier en maak een versleutelde back-up van uw kluis.
+    </li>
+  </ol>
+</ToolCard>

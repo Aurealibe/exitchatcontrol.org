@@ -1,0 +1,106 @@
+---
+id: 'email'
+part: 2
+order: 4
+title: 'Versleutelde e-mail & PGP'
+---
+
+<p class="part-num">
+  DEEL 03 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Versleutelde e-mail &amp; PGP
+
+Gmail leest uw e-mails en is gevestigd in de VS, onder de jurisdictie van de "Five Eyes". Gmail/Outlook verlaten is een enorme winst voor minimale inspanning.
+
+<ToolCard tool="t-protonmail">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Vervangt Gmail</span>
+    <span class="tool-tag">🇨🇭 · open-source · OpenPGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een versleutelde inbox die Gmail of Outlook vervangt, en het spilaccount voor het hele
+    Proton-ecosysteem.
+  </Fragment>
+  <Fragment slot="why">
+    Gevestigd in Zwitserland, buiten de "Five Eyes"-jurisdictie. OpenPGP-compatibel: automatische
+    versleuteling tussen Proton-accounts en naar andere PGP-diensten.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen. Het is het beste startpunt om Google te verlaten (zie sectie 05 voor de rest van de
+    suite).
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Maak een account aan op <b>proton.me</b> (het gratis abonnement is voldoende om te starten).
+    </li>
+    <li>
+      Importeer uw oude berichten en contacten met <b>Easy Switch</b> (ingebouwd).
+    </li>
+    <li>
+      Stel een doorzending in vanuit Gmail en breng uw contacten op de hoogte van uw nieuwe adres.
+    </li>
+    <li>
+      Installeer de mobiele app, schakel <strong>tweestapsverificatie</strong> in, en gebruik Proton
+      Bridge als u Thunderbird wilt blijven gebruiken.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tuta">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Vervangt Gmail</span>
+    <span class="tool-tag">🇩🇪 · open-source · post-quantum</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een Duitse e-mailservice, volledig open-source en vrij van elke Google-dienst.
+  </Fragment>
+  <Fragment slot="why">
+    Het versleutelt ook <b>het onderwerp en een deel van de metadata</b>, met
+    post-quantum-bestendige versleuteling. EU-jurisdictie.
+  </Fragment>
+  <Fragment slot="who">
+    Wie maximale versleutelde metadata en 100% vrije software wil. Het gebruikt geen PGP: om
+    versleuteld naar externen te schrijven, beveiligt u het bericht met een wachtwoord.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Maak een account aan op <b>tuta.com</b> en installeer de app (beschikbaar op F-Droid).
+    </li>
+    <li>
+      Om versleuteld te schrijven naar een niet-gebruiker: klik op het slot en stel een wachtwoord
+      in, dat u via een ander kanaal aan uw correspondent doorgeeft.
+    </li>
+    <li>Schakel tweestapsverificatie in.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-mailbox">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Ethische klassieke mail</span>
+    <span class="tool-tag">🇩🇪 · UE · PGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Twee ethische, goedkope Europese e-mailproviders, met PGP-ondersteuning aan serverzijde.
+  </Fragment>
+  <Fragment slot="why">
+    Privacy- en milieubewust, gebouwd op open standaarden (IMAP, PGP). Ze werken met elke
+    mailclient.
+  </Fragment>
+  <Fragment slot="who">
+    Wie een "klassieke" mailbox (in Thunderbird) wil, maar dan ethisch, in plaats van een gesloten
+    versleutelde app.
+  </Fragment>
+  <ol slot="install">
+    <li>Maak een account aan (betaald, ongeveer €1 tot €3 per maand).</li>
+    <li>Schakel PGP-versleuteling aan serverzijde in (de "Guard"-functie bij mailbox.org).</li>
+    <li>Configureer het account in Thunderbird of de mobiele app van uw keuze.</li>
+  </ol>
+</ToolCard>
+
+#### PGP in één minuut
+
+**PGP** (Pretty Good Privacy) is versleuteling op basis van sleutels: u hebt een _publieke_ sleutel die u uitdeelt, en een _privésleutel_ die u geheim houdt. Iedereen met uw publieke sleutel kan u een bericht sturen dat **alleen u** kunt ontsleutelen. Het is de basis van provider-onafhankelijke versleutelde e-mail. Proton Mail regelt het automatisch; voor handmatig gebruik werkt **OpenPGP** via Thunderbird (ingebouwd sinds v78).

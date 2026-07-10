@@ -1,0 +1,191 @@
+@import 'tailwindcss';
+@import './print.css';
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Exit Chat Control · design tokens ("stamped dossier" identity)
+   Editorial serif body, typewriter-mono headings, one amber accent.
+   Raw values live ONLY here, ONCE: light-dark() collapses the light/dark
+   pairs, `color-scheme` decides which side applies — the system preference
+   by default, the user's [data-theme] override when set (persisted by the
+   boot script in Base.astro). WCAG-corrected palette (light accent #7d5a10:
+   ≥4.9:1 on all three surfaces).
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  color-scheme: light dark;
+
+  --bg: light-dark(#efece3, #111318);
+  --surface: light-dark(#f6f4ec, #171a20);
+  --surface-2: light-dark(#e7e3d6, #1e222a);
+  --text: light-dark(#1b1813, #e6e2d6);
+  --text-dim: light-dark(#5c5749, #9a9585);
+  --rule: light-dark(#cdc7b6, #2b2f38);
+  --rule-strong: light-dark(#a59d86, #3d434f);
+  --accent: light-dark(#7d5a10, #e6b23f);
+  --accent-bright: light-dark(#63450a, #f2c455);
+  --on-accent: light-dark(#faf7ee, #14161a);
+  --warn: light-dark(#a83324, #e0705f);
+  --ok: light-dark(#3c6b40, #7bb083);
+  --info: light-dark(#3a5c86, #7ba3d6);
+  --lvl1: light-dark(#3c6b40, #7bb083);
+  --lvl2: light-dark(#8a6410, #e6b23f);
+  --lvl3: light-dark(#a83324, #e0705f);
+  /* manifesto panel inverts bg/text, so its accent comes from the OTHER scheme */
+  --manifesto-accent: light-dark(#f2c455, #7d5a10);
+  /* the desk behind the dossier sheet */
+  --desk-bg: light-dark(#e2ddcd, #0a0c10);
+
+  --desk: clamp(0.5rem, 1.4vw, 0.9rem);
+  --topbar-h: 3rem;
+  --measure: 68ch;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+/* Bridge: tokens → Tailwind utilities (bg-surface, text-dim, border-rule,
+   text-accent, font-mono…). `inline` keeps utilities pointing at the live
+   CSS variables so theme flips need zero extra CSS. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--text);
+  --color-dim: var(--text-dim);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-accent: var(--accent);
+  --color-accent-bright: var(--accent-bright);
+  --color-on-accent: var(--on-accent);
+  --color-warn: var(--warn);
+  --color-ok: var(--ok);
+  --color-info: var(--info);
+  --color-lvl1: var(--lvl1);
+  --color-lvl2: var(--lvl2);
+  --color-lvl3: var(--lvl3);
+  --color-manifesto-accent: var(--manifesto-accent);
+  --color-desk: var(--desk-bg);
+
+  --font-mono:
+    ui-monospace, 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Roboto Mono', Menlo, Consolas,
+    monospace;
+  --font-serif:
+    'Iowan Old Style', 'Palatino Linotype', Palatino, Charter, Georgia, 'Times New Roman', serif;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  --radius-dossier: 3px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    margin: 0;
+    padding: var(--desk);
+    background: var(--desk-bg);
+    color: var(--text);
+    font-family: var(--font-serif);
+    font-size: clamp(1.02rem, 0.55vw + 0.9rem, 1.16rem);
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--accent);
+    color: var(--on-accent);
+  }
+  a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+  a:hover {
+    color: var(--accent-bright);
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent-bright);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-mono);
+    line-height: 1.12;
+    text-wrap: balance;
+    font-weight: 700;
+  }
+  p {
+    margin: 0.9rem 0;
+    text-wrap: pretty;
+  }
+  ul,
+  ol {
+    padding-left: 1.3rem;
+  }
+  li {
+    margin: 0.35rem 0;
+  }
+}
+
+@layer components {
+  /* the dossier sheet: the framed paper the whole guide sits on */
+  .sheet {
+    background: var(--bg);
+    border: 1px solid var(--rule-strong);
+    border-radius: var(--radius-dossier);
+    min-height: calc(100vh - 2 * var(--desk));
+  }
+  .wrap {
+    max-width: var(--measure);
+    margin-inline: auto;
+    padding-inline: clamp(1.1rem, 4vw, 2rem);
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+  }
+  .skip-link:focus {
+    left: 0.75rem;
+    top: 0.75rem;
+    z-index: 50;
+    background: var(--surface);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--rule-strong);
+    border-radius: var(--radius-dossier);
+  }
+  .noscript-note {
+    margin: 0;
+    padding: 0.6rem 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--rule);
+  }
+  /* anchored targets (TOC, #tl-… citations, #dir-… categories) land clear
+     of the sticky topbar — no utility can target every [id] at once */
+  [id] {
+    scroll-margin-top: calc(var(--topbar-h) + 0.75rem);
+  }
+}

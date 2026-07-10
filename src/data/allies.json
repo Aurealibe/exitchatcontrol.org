@@ -1,0 +1,114 @@
+[
+  {
+    "id": "fight-chat-control",
+    "group": "campaigns",
+    "name": "Fight Chat Control",
+    "url": "https://fightchatcontrol.eu",
+    "displayUrl": "fightchatcontrol.eu"
+  },
+  {
+    "id": "stop-scanning-me",
+    "group": "campaigns",
+    "name": "Stop Scanning Me · EDRi",
+    "url": "https://stopscanningme.eu",
+    "displayUrl": "stopscanningme.eu"
+  },
+  {
+    "id": "patrick-breyer",
+    "group": "campaigns",
+    "name": "Patrick Breyer · chatcontrol.eu",
+    "url": "https://www.patrick-breyer.de/en/posts/chat-control/",
+    "displayUrl": "patrick-breyer.de"
+  },
+  {
+    "id": "edri",
+    "group": "campaigns",
+    "name": "EDRi",
+    "url": "https://edri.org",
+    "displayUrl": "edri.org"
+  },
+  {
+    "id": "la-quadrature-du-net",
+    "group": "campaigns",
+    "name": "La Quadrature du Net",
+    "url": "https://www.laquadrature.net",
+    "displayUrl": "laquadrature.net"
+  },
+  {
+    "id": "noyb",
+    "group": "campaigns",
+    "name": "noyb",
+    "url": "https://noyb.eu",
+    "displayUrl": "noyb.eu"
+  },
+  {
+    "id": "eff",
+    "group": "campaigns",
+    "name": "EFF",
+    "url": "https://www.eff.org",
+    "displayUrl": "eff.org"
+  },
+  {
+    "id": "signal-foundation",
+    "group": "campaigns",
+    "name": "Signal Foundation",
+    "url": "https://signal.org/blog/",
+    "displayUrl": "signal.org"
+  },
+  {
+    "id": "eff-nsa-timeline",
+    "group": "chroniclers",
+    "name": "EFF · NSA Spying Timeline",
+    "url": "https://nsa-timeline.eff.org/",
+    "displayUrl": "nsa-timeline.eff.org"
+  },
+  {
+    "id": "atlas-of-surveillance",
+    "group": "chroniclers",
+    "name": "Atlas of Surveillance",
+    "url": "https://atlasofsurveillance.org",
+    "displayUrl": "atlasofsurveillance.org"
+  },
+  {
+    "id": "technopolice",
+    "group": "chroniclers",
+    "name": "Technopolice",
+    "url": "https://technopolice.fr",
+    "displayUrl": "technopolice.fr"
+  },
+  {
+    "id": "ooni",
+    "group": "chroniclers",
+    "name": "OONI",
+    "url": "https://ooni.org",
+    "displayUrl": "ooni.org"
+  },
+  {
+    "id": "digital-violence",
+    "group": "chroniclers",
+    "name": "Digital Violence · Forensic Architecture",
+    "url": "https://forensic-architecture.org/investigation/digital-violence-how-the-nso-group-enables-state-terror",
+    "displayUrl": "forensic-architecture.org"
+  },
+  {
+    "id": "surveillance-watch",
+    "group": "chroniclers",
+    "name": "Surveillance Watch",
+    "url": "https://www.surveillancewatch.io",
+    "displayUrl": "surveillancewatch.io"
+  },
+  {
+    "id": "netblocks",
+    "group": "chroniclers",
+    "name": "NetBlocks",
+    "url": "https://netblocks.org",
+    "displayUrl": "netblocks.org"
+  },
+  {
+    "id": "big-brother-awards",
+    "group": "chroniclers",
+    "name": "Big Brother Awards",
+    "url": "https://bigbrotherawards.de",
+    "displayUrl": "bigbrotherawards.de"
+  }
+]

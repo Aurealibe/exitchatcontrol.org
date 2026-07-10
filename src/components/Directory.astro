@@ -1,0 +1,52 @@
+---
+// PART 19 — the open-source directory: 66 tools in 14 categories
+// (src/data/directory.json + per-locale one-line roles). Uniform compact
+// cards — deliberately NO featured/highlighted entry (that concept was
+// removed after PR #1; tests/unit/dist-links.test.ts asserts the smuggled
+// domains never come back). Category headings carry dir-<category> anchors.
+import { useT, type Locale } from '../i18n/config'
+import { DIRECTORY_CATEGORIES, loadDataset } from '../lib/content'
+import { mdToHtml } from '../lib/md'
+import Ext from './Ext.astro'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+
+const entries = loadDataset('directory', locale)
+const byCategory = DIRECTORY_CATEGORIES.map((category) => ({
+  category,
+  rows: entries.filter((e) => e.category === category),
+}))
+---
+
+<section id="directory">
+  <p class="eyebrow">{t('sections2.directory.eyebrow')}</p>
+  <h2>{t('sections2.directory.title')}</h2>
+  <p class="text-dim">{t('sections2.directory.intro')}</p>
+  {
+    byCategory.map(({ category, rows }) => (
+      <>
+        <h3 id={`dir-${category}`} class="mt-6 mb-2 text-base">
+          {t(`sections2.directory.categories.${category}`)}
+        </h3>
+        <ul class="m-0 grid list-none gap-2 p-0 sm:grid-cols-2">
+          {rows.map((e) => (
+            <li id={e.id} class="m-0 rounded-dossier border border-rule bg-surface p-3">
+              <p class="m-0 flex items-baseline justify-between gap-2">
+                <Ext href={e.url} class="font-bold">
+                  {e.name}
+                </Ext>
+                <span class="font-mono text-xs whitespace-nowrap text-dim">{e.license}</span>
+              </p>
+              <p class="mt-1 mb-0 text-sm leading-5 text-dim" set:html={mdToHtml(e.body)} />
+            </li>
+          ))}
+        </ul>
+      </>
+    ))
+  }
+</section>

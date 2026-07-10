@@ -1,0 +1,113 @@
+---
+import { ClientRouter } from 'astro:transitions'
+import Footer from '../components/Footer.astro'
+import TopBar from '../components/TopBar.astro'
+import { localePath, locales, useT, type Locale } from '../i18n/config'
+import '../styles/global.css'
+import '../styles/components.css'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+const site = Astro.site!
+
+const canonical = new URL(`${localePath(locale)}/`.replace('//', '/'), site)
+const alternates = locales.map((l) => ({
+  hreflang: l,
+  href: new URL(`${localePath(l)}/`.replace('//', '/'), site).href,
+}))
+---
+
+<!doctype html>
+<html lang={locale} data-theme="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{t('site.title')}</title>
+    <meta name="description" content={t('site.description')} />
+    <link rel="canonical" href={canonical.href} />
+    {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+    <link rel="alternate" hreflang="x-default" href={new URL('/', site).href} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Exit Chat Control" />
+    <meta property="og:title" content={t('site.title')} />
+    <meta property="og:description" content={t('site.description')} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:image" content={new URL('/og.png', site).href} />
+    <meta property="og:locale" content={locale} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <ClientRouter />
+    <script is:inline>
+      /* Boot script — kept tiny and dependency-free; its sha256 hash is
+         pinned in the CSP header (docker/nginx.conf). Block comments only:
+         this tag is inlined into prerendered HTML.
+         1) Theme: apply the stored override before first paint.
+         2) Language: on the default-locale root only, honor a stored
+            explicit choice, else follow the browser language once.
+            No JS = English, which is the fallback anyway. */
+      ;(() => {
+        const LANGS = ['en', 'fr', 'nl']
+        const read = (key) => {
+          try {
+            return localStorage.getItem(key) || ''
+          } catch {
+            return ''
+          }
+        }
+        const applyTheme = () => {
+          const theme = read('ecc-theme')
+          if (theme === 'light' || theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', theme)
+          }
+        }
+        applyTheme()
+        document.addEventListener('astro:after-swap', applyTheme)
+        if (location.pathname === '/') {
+          const stored = read('ecc-lang')
+          let target = ''
+          if (stored) {
+            if (stored !== 'en' && LANGS.includes(stored)) target = stored
+          } else {
+            const nav = (navigator.languages || [navigator.language || ''])
+              .map((l) => String(l).slice(0, 2).toLowerCase())
+              .find((l) => LANGS.includes(l))
+            if (nav && nav !== 'en') target = nav
+          }
+          if (target) location.replace('/' + target + '/')
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <a href="#content" class="skip-link">{t('nav.skip')}</a>
+    <div class="sheet">
+      <TopBar locale={locale} />
+      <noscript>
+        <p class="noscript-note">{t('noscript.notice')}</p>
+      </noscript>
+      <slot />
+      <Footer locale={locale} />
+    </div>
+    <script>
+      // Print: closed <details> don't print their content (print.css can't
+      // open them). Open every closed one on beforeprint, restore the
+      // reader's state on afterprint. Registered once, survives ClientRouter
+      // swaps (window listeners are not tied to the swapped DOM).
+      let printOpened: Element[] = []
+      window.addEventListener('beforeprint', () => {
+        printOpened = [...document.querySelectorAll('details:not([open])')]
+        for (const d of printOpened) d.setAttribute('open', '')
+      })
+      window.addEventListener('afterprint', () => {
+        for (const d of printOpened) d.removeAttribute('open')
+        printOpened = []
+      })
+    </script>
+  </body>
+</html>

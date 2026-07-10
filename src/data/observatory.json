@@ -1,0 +1,387 @@
+[
+  {
+    "id": "prum-2",
+    "date": "2024-03-13",
+    "region": "eu",
+    "themes": ["aibio"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Regulation (EU) 2024/982 · Prüm II",
+      "href": "https://eur-lex.europa.eu/EN/legal-content/summary/police-cooperation-automated-search-and-exchange-of-data.html"
+    }
+  },
+  {
+    "id": "eidas-wallet",
+    "date": "2024-05-20",
+    "region": "eu",
+    "themes": ["identity"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Commission · EUDI regulation",
+      "href": "https://digital-strategy.ec.europa.eu/en/policies/eudi-regulation"
+    }
+  },
+  {
+    "id": "going-dark",
+    "date": "2024-05-21",
+    "region": "eu",
+    "themes": ["messaging", "identity"],
+    "status": "propose",
+    "src": {
+      "label": "Commission · HLG recommendations",
+      "href": "https://home-affairs.ec.europa.eu/document/download/1105a0ef-535c-44a7-a6d4-a8478fce1d29_en"
+    }
+  },
+  {
+    "id": "roumanie-tiktok",
+    "date": "2024-12-17",
+    "region": "eu",
+    "themes": ["media"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Commission · DSA proceedings v. TikTok",
+      "href": "https://digital-strategy.ec.europa.eu/en/news/commission-opens-formal-proceedings-against-tiktok-election-risks-under-digital-services-act"
+    }
+  },
+  {
+    "id": "vietnam-decret-147",
+    "date": "2024-12-25",
+    "region": "vn",
+    "themes": ["identity", "media"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "The Guardian · Dec 2024",
+      "href": "https://www.theguardian.com/world/2024/dec/23/vietnam-identity-verification-internet-law-reactions-decree-147-censorship"
+    }
+  },
+  {
+    "id": "uk-apple-adp",
+    "date": "2025-02-21",
+    "region": "uk",
+    "themes": ["messaging"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "EFF · Deeplinks · Oct 2025",
+      "href": "https://www.eff.org/deeplinks/2025/10/uk-still-trying-backdoor-encryption-apple-users"
+    }
+  },
+  {
+    "id": "fr-narcotrafic-8ter",
+    "date": "2025-03-20",
+    "region": "fr",
+    "themes": ["messaging"],
+    "status": "rejete",
+    "src": {
+      "label": "La Quadrature du Net · March 2025",
+      "href": "https://www.laquadrature.net/2025/03/18/le-gouvernement-pret-a-tout-pour-casser-le-droit-au-chiffrement/"
+    }
+  },
+  {
+    "id": "protecteu",
+    "date": "2025-04-01",
+    "region": "eu",
+    "themes": ["messaging"],
+    "status": "propose",
+    "src": {
+      "label": "COM(2025) 148 · ProtectEU",
+      "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52025DC0148"
+    }
+  },
+  {
+    "id": "ice-palantir",
+    "date": "2025-04-18",
+    "region": "us",
+    "themes": ["aibio", "identity"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "WIRED · April 2025",
+      "href": "https://www.wired.com/story/ice-palantir-immigrationos/"
+    }
+  },
+  {
+    "id": "ch-vupf",
+    "date": "2025-05",
+    "region": "ch",
+    "themes": ["messaging", "identity"],
+    "status": "suspendu",
+    "src": {
+      "label": "Statewatch · Feb 2026",
+      "href": "https://statewatch.org/news/2026/february/swiss-government-urged-to-rethink-mass-telecoms-surveillance-plan/"
+    }
+  },
+  {
+    "id": "us-visa-vetting",
+    "date": "2025-06-18",
+    "region": "us",
+    "themes": ["media", "identity"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "US State Department · June 2025",
+      "href": "https://travel.state.gov/content/travel/en/News/visas-news/announcement-of-expanded-screening-and-vetting-for-visa-applicants.html"
+    }
+  },
+  {
+    "id": "roadmap-lawful-access",
+    "date": "2025-06-24",
+    "region": "eu",
+    "themes": ["messaging", "aibio"],
+    "status": "propose",
+    "src": {
+      "label": "Commission · 24 June 2025",
+      "href": "https://home-affairs.ec.europa.eu/news/commission-presents-roadmap-effective-and-lawful-access-data-law-enforcement-2025-06-24_en"
+    }
+  },
+  {
+    "id": "age-blueprint",
+    "date": "2025-07-14",
+    "region": "eu",
+    "themes": ["identity"],
+    "status": "adopte",
+    "src": {
+      "label": "Commission · blueprint · July 2025",
+      "href": "https://digital-strategy.ec.europa.eu/en/news/commission-makes-available-age-verification-blueprint"
+    }
+  },
+  {
+    "id": "fr-pornhub",
+    "date": "2025-07-15",
+    "region": "fr",
+    "themes": ["identity"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Conseil d’État · 15 July 2025",
+      "href": "https://www.conseil-etat.fr/actualites/sites-pornographiques-l-arrete-imposant-de-verifier-l-age-des-utilisateurs-est-maintenu"
+    }
+  },
+  {
+    "id": "cn-cyber-id",
+    "date": "2025-07-15",
+    "region": "cn",
+    "themes": ["identity"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "South China Morning Post · July 2025",
+      "href": "https://www.scmp.com/tech/tech-trends/article/3318302/china-rolls-out-voluntary-cyber-id-system-amid-concerns-over-privacy-censorship"
+    }
+  },
+  {
+    "id": "emfa-article-4",
+    "date": "2025-08-08",
+    "region": "eu",
+    "themes": ["media", "messaging"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Regulation (EU) 2024/1083 · EMFA",
+      "href": "https://eur-lex.europa.eu/EN/legal-content/summary/european-media-freedom-act.html"
+    }
+  },
+  {
+    "id": "ru-max",
+    "date": "2025-09-01",
+    "region": "ru",
+    "themes": ["messaging", "identity"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Reuters · Aug 2025",
+      "href": "https://www.reuters.com/technology/russia-orders-state-backed-max-messenger-app-whatsapp-rival-pre-installed-phones-2025-08-21/"
+    }
+  },
+  {
+    "id": "ru-recherche-punie",
+    "date": "2025-09-01",
+    "region": "ru",
+    "themes": ["media"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Reuters · July 2025",
+      "href": "https://www.reuters.com/world/russia-passes-law-punishing-searches-extremist-content-2025-07-22/"
+    }
+  },
+  {
+    "id": "scientifiques-csar",
+    "date": "2025-09-09",
+    "region": "eu",
+    "themes": ["messaging"],
+    "status": "negociation",
+    "src": {
+      "label": "Open letter · Sept 2025",
+      "href": "https://csa-scientist-open-letter.org/Sep2025"
+    }
+  },
+  {
+    "id": "uk-britcard",
+    "date": "2025-09-26",
+    "region": "uk",
+    "themes": ["identity"],
+    "status": "negociation",
+    "src": {
+      "label": "gov.uk · Sept 2025",
+      "href": "https://www.gov.uk/government/news/new-digital-id-scheme-to-be-rolled-out-across-uk"
+    }
+  },
+  {
+    "id": "berlin-bloque",
+    "date": "2025-10-12",
+    "region": "eu",
+    "themes": ["messaging"],
+    "status": "rejete",
+    "src": {
+      "label": "EU Perspectives · Oct 2025",
+      "href": "https://euperspectives.eu/2025/10/berlin-forces-delay-whatsapp-spying-vote/"
+    }
+  },
+  {
+    "id": "ees-biometrie",
+    "date": "2025-10-12",
+    "region": "eu",
+    "themes": ["aibio", "identity"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Commission · EES",
+      "href": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en"
+    }
+  },
+  {
+    "id": "onu-cybercrime",
+    "date": "2025-10-25",
+    "region": "world",
+    "themes": ["messaging"],
+    "status": "adopte",
+    "src": {
+      "label": "UN · UNODC · Oct 2025",
+      "href": "https://www.unodc.org/unodc/frontpage/2025/October/seventy-two-nations-sign-first-un-treaty-to-fight-cybercrime--in-milestone-for-digital-cooperation.html"
+    }
+  },
+  {
+    "id": "euro-numerique-pilote",
+    "date": "2025-10-30",
+    "region": "eu",
+    "themes": ["money"],
+    "status": "negociation",
+    "src": {
+      "label": "ECB · 30 Oct 2025",
+      "href": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251030~8c5b5beef0.en.html"
+    }
+  },
+  {
+    "id": "au-ban-16",
+    "date": "2025-12-10",
+    "region": "au",
+    "themes": ["identity", "aibio", "media"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Australian PM · Jan 2026",
+      "href": "https://www.pm.gov.au/media/4-7-million-accounts-deactivated-removed-or-restricted"
+    }
+  },
+  {
+    "id": "fr-vsa-prolongee",
+    "date": "2025-12-17",
+    "region": "fr",
+    "themes": ["aibio"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Le Monde · 18 Dec 2025",
+      "href": "https://www.lemonde.fr/pixels/article/2025/12/18/les-deputes-votent-la-prolongation-de-l-experimentation-de-la-videosurveillance-algorithmique-jusqu-a-la-fin-de-2027_6658502_4408996.html"
+    }
+  },
+  {
+    "id": "pl-ziobro-asile",
+    "date": "2026-01-12",
+    "region": "eu",
+    "themes": ["media", "messaging"],
+    "status": "revele",
+    "src": {
+      "label": "Le Monde · 12 Jan 2026",
+      "href": "https://www.lemonde.fr/international/article/2026/01/12/pologne-ancien-ministre-de-la-justice-et-procureur-general-zbigniew-ziobro-dit-avoir-obtenu-l-asile-en-hongrie_6661475_3210.html"
+    }
+  },
+  {
+    "id": "ru-whatsapp-bloque",
+    "date": "2026-02-12",
+    "region": "ru",
+    "themes": ["messaging"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Reuters · Feb 2026",
+      "href": "https://www.reuters.com/technology/russia-blocks-metas-whatsapp-messaging-service-ft-reports-2026-02-12/"
+    }
+  },
+  {
+    "id": "gr-intellexa",
+    "date": "2026-02-26",
+    "region": "eu",
+    "themes": ["media", "messaging"],
+    "status": "revele",
+    "src": {
+      "label": "Amnesty International · Feb 2026",
+      "href": "https://www.amnesty.org/en/latest/news/2026/02/greece-spyware-scandal/"
+    }
+  },
+  {
+    "id": "fr-boites-noires-urls",
+    "date": "2026-05",
+    "region": "fr",
+    "themes": ["messaging", "media"],
+    "status": "negociation",
+    "src": {
+      "label": "Le Monde · 7 May 2026",
+      "href": "https://www.lemonde.fr/pixels/article/2026/05/07/surveillance-les-deputes-elargissent-a-nouveau-le-dispositif-des-boites-noires_6686538_4408996.html"
+    }
+  },
+  {
+    "id": "palantir-europe",
+    "date": "2026-05-19",
+    "region": "eu",
+    "themes": ["aibio"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Le Monde · 19 May 2026",
+      "href": "https://www.lemonde.fr/economie/article/2026/05/19/les-services-secrets-allemands-se-tournent-vers-le-francais-chapsvision-pour-leur-logiciel-d-analyse-de-donnees-afin-d-eviter-palantir_6691466_3234.html"
+    }
+  },
+  {
+    "id": "us-fisa-702",
+    "date": "2026-06-12",
+    "region": "us",
+    "themes": ["messaging"],
+    "status": "negociation",
+    "src": {
+      "label": "Brennan Center · 2026",
+      "href": "https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page"
+    }
+  },
+  {
+    "id": "euro-numerique-econ",
+    "date": "2026-06-23",
+    "region": "eu",
+    "themes": ["money"],
+    "status": "negociation",
+    "src": {
+      "label": "European Parliament · 23 June 2026",
+      "href": "https://www.europarl.europa.eu/news/en/press-room/20260622IPR45912/digital-euro-meps-want-to-ensure-sovereignty-privacy-and-financial-stability"
+    }
+  },
+  {
+    "id": "europol-reforme",
+    "date": "2026-06-24",
+    "region": "eu",
+    "themes": ["messaging", "money", "aibio"],
+    "status": "propose",
+    "src": {
+      "label": "Commission · 24 June 2026",
+      "href": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1420"
+    }
+  },
+  {
+    "id": "pega-kouloglou",
+    "date": "2026-07",
+    "region": "eu",
+    "themes": ["media", "messaging"],
+    "status": "revele",
+    "src": {
+      "label": "Citizen Lab · July 2026",
+      "href": "https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/"
+    }
+  }
+]

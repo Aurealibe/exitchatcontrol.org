@@ -1,0 +1,95 @@
+{
+  "_machineTranslated": "2026-07-10",
+  "clipper-chip": {
+    "title": "De Clipper-chip",
+    "body": "De NSA duwt een versleutelingschip door met een sleutelkopie in handen van de overheid, \"alleen voor politie en justitie, uitsluitend met een bevelschrift\". Gebreken aangetoond ([Blaze, 1994](https://dl.acm.org/doi/pdf/10.1145/191177.191193)), massale afwijzing: in 1996 opgegeven. De eerste crypto-oorlog, hetzelfde scenario als vandaag."
+  },
+  "echelon": {
+    "title": "ECHELON bevestigd door het Europees Parlement",
+    "body": "Zes dagen voor 11 september neemt het Europees Parlement in de plenaire vergadering (367–159–39) het verslag van zijn tijdelijke commissie aan (op 3 juli in de commissie goedgekeurd) dat het bestaan bevestigt van een wereldwijd netwerk dat privé- en handelscommunicatie onderschept (VS, VK, Canada, Australië, Nieuw-Zeeland)."
+  },
+  "nsa-warrantless": {
+    "title": "23 dagen na 11 september",
+    "body": "Een geheim presidentieel bevel start het binnenlandse afluisteren zonder rechterlijk bevel door de NSA. De crisis creëert het programma; het programma overleeft de crisis. De Patriot Act volgt op 26 oktober, ook al \"tijdelijk\": de vervalclausules ervan worden 14 jaar lang verlengd."
+  },
+  "room-641a": {
+    "title": "Room 641A",
+    "body": "AT&T-technicus Mark Klein overhandigt de EFF de documenten die de geheime NSA-ruimte in het schakelcentrum van San Francisco beschrijven: interceptie op infrastructuurniveau, op al het verkeer, niet op verdachten."
+  },
+  "retention-directive": {
+    "title": "De EU-Dataretentierichtlijn",
+    "body": "De EU verplicht het bewaren van de telecom-metadata van de hele bevolking (6–24 maanden), \"tegen zware criminaliteit\". Niemand is verdacht, iedereen staat geregistreerd. De exacte blauwdruk van Chat Control, twintig jaar eerder."
+  },
+  "snowden": {
+    "title": "Snowden: \"collect it all\"",
+    "body": "The Guardian publiceert het geheime FISA-bevel dat Verizon dwingt de metadata van al zijn klanten af te staan, daarna PRISM. In maart had inlichtingendirecteur Clapper voor het Congres gezworen dat dit niet gebeurde; dagen na het lek noemt hij dat het [\"minst onware\" antwoord](https://www.washingtonpost.com/blogs/fact-checker/post/james-clappers-least-untruthful-statement-to-the-senate/2013/06/11/e50677a8-d2d8-11e2-a73e-826d299ff459_blog.html) dat hij kon geven."
+  },
+  "digital-rights-ireland": {
+    "title": "Het Hof van Justitie vernietigt de algemene bewaarplicht",
+    "body": "Digital Rights Ireland (gevoegde zaken C-293/12 en C-594/12): de richtlijn van 2006 wordt integraal vernietigd: ongedifferentieerde surveillance van de hele bevolking schendt het Handvest van de grondrechten. Een kleine vrijwilligersorganisatie haalde een EU-richtlijn onderuit."
+  },
+  "snoopers-charter": {
+    "title": "Het Britse \"Snooper's Charter\"",
+    "body": "De Investigatory Powers Act legaliseert massale dataverzameling en staatshacking, en verplicht internetproviders ieders surfgeschiedenis te bewaren. Drie weken later herhaalt het Hof van Justitie van de EU (Tele2/Watson) dat een algemene bewaarplicht onrechtmatig is; Londen houdt haar toch in stand."
+  },
+  "australia-aaa": {
+    "title": "Australië tegen de wiskunde",
+    "body": "De Assistance and Access Act laat de staat een bedrijf in het geheim bevelen zijn producten te herontwerpen (\"technical capability notices\"): versleuteling verzwakken in alles behalve naam, waarschuwen critici, ook al verbiedt de wet nominaal \"systemic weaknesses\". De premier had de toon gezet: \"de wetten van Australië gaan boven de wetten van de wiskunde\"."
+  },
+  "crypto-ag": {
+    "title": "Crypto AG: de kluizenmaker hield de sleutels",
+    "body": "The Washington Post onthult (gestaafd door de interne geschiedschrijving van de CIA zelf) dat de CIA en de BND sinds 1970 in het geheim eigenaar waren van Crypto AG, de Zwitserse encryptieleverancier van 120 regeringen. In de jaren 80 liep 40% van de diplomatieke telegrammen die de NSA ontcijferde via dit kanaal. Moraal: een \"vertrouwde\" achterdeur is een achterdeur."
+  },
+  "lqdn-cjeu": {
+    "title": "La Quadrature du Net voor het Hof van Justitie",
+    "body": "Het Hof bevestigt het verbod op algemene bewaarplicht tegen Frankrijk en België (gevoegde zaken C-511/18, C-512/18 en C-520/18), en dezelfde dag tegen het VK in Privacy International (C-623/17), maar snijdt er \"nationale veiligheid\"-vensters in uit. Dubbele les: procederen werkt, en elke uitzondering wordt de volgende regel. De Commissie is nooit een inbreukprocedure gestart tegen lidstaten die toch blijven bewaren."
+  },
+  "chatcontrol-1": {
+    "title": "Chat Control 1.0, \"tijdelijk\"",
+    "body": "Verordening 2021/1232 staat het \"vrijwillig\" scannen van privéberichten toe, in afwijking van ePrivacy. Vervaldatum 3 augustus 2024, beloofd. Verordening 2024/1307 verlengt tot 3 april 2026, waar ze verstrijkt… en vervolgens uit de dood herrijst (zie hieronder)."
+  },
+  "pegasus-project": {
+    "title": "Het Pegasus Project",
+    "body": "Meer dan 80 journalisten uit 17 redacties in 10 landen documenteren de bespionering van journalisten, advocaten, dissidenten en staatshoofden via de spyware van NSO. Het forensisch onderzoek van Amnesty (peer-reviewed door Citizen Lab) bewijst zero-click-infecties van volledig bijgewerkte iPhones: wanneer het apparaat zelf doelwit is, volstaat versleuteling niet. Exact de logica van client-side scanning."
+  },
+  "apple-csam": {
+    "title": "Apple kondigt scannen op het toestel aan… en krabbelt terug",
+    "body": "Apple onthult CSAM-fotoscanning op de iPhone zelf. Onderzoekers en ngo's komen in opstand: dit is de infrastructuur van generaliseerbare surveillance. December 2022: Apple ziet ervan af, en zal later, in een [brief van augustus 2023](https://appleinsider.com/articles/23/08/31/apple-provides-detailed-reasoning-behind-abandoning-iphone-csam-detection), een \"hellend vlak van onbedoelde gevolgen\" inroepen. Precies het mechanisme dat Chat Control 2.0 wil verplichten."
+  },
+  "chatcontrol-2": {
+    "title": "Chat Control 2.0: verplicht scannen",
+    "body": "De Commissie stelt de CSAR-verordening voor (COM/2022/209): \"detectiebevelen\" die elk platform tot scannen kunnen dwingen, ook end-to-end versleutelde. Het vrijwillige van 2021 wordt het verplichte van 2022: scope creep in de letterlijke zin."
+  },
+  "osa-spy-clause": {
+    "title": "Online Safety Act: de \"spionageclausule\"",
+    "body": "Het VK geeft zichzelf de bevoegdheid om berichtendiensten te bevelen versleutelde inhoud te scannen (artikel 121). \"Waar technisch haalbaar\" staat niet in de wet: het was de toegeving van de minister, [de verklaring van Lord Parkinson aan het Hogerhuis](https://techcrunch.com/2023/09/06/osb-encryption-scanning-feasibility/) (6 september 2023), nadat Signal en WhatsApp met vertrek hadden gedreigd. De regering geeft toe dat het niet haalbaar is, maar houdt de bevoegdheid in de wet."
+  },
+  "first-extension": {
+    "title": "Het \"tijdelijke\" krijgt zijn eerste verlenging",
+    "body": "Verordening 2024/1307 schuift de vervaldatum van Chat Control 1.0 op van 3 augustus 2024 naar 3 april 2026. Een noodmaatregel die zichzelf verlengt is geen uitzondering meer: het is een regime."
+  },
+  "uk-age-checks": {
+    "title": "VK: identiteitsbewijs tonen om het internet te gebruiken",
+    "body": "De Online Safety Act activeert \"zeer doeltreffende\" leeftijdsverificatie (identiteitsbewijs, kredietkaart, gezichtsschatting) voor grote delen van het web. Proton meet dat het aantal VPN-aanmeldingen per uur met [meer dan 1.400%](https://www.techradar.com/vpn/vpn-privacy-security/vpn-demand-skyrockets-in-the-uk-as-age-verification-checks-are-enforced) stijgt; het Hogerhuis debatteert al over beperkingen op VPN's."
+  },
+  "council-sunset-delete": {
+    "title": "De Raad wil de vervalclausule schrappen",
+    "body": "Het triloogstandpunt van de Raad (doc. 15318/25): de vervalclausule van het \"vrijwillige\" scannen gewoonweg schrappen, oftewel het permanent maken. Het ontwerp van het Deense voorzitterschap overwoog verplichte client-side scanning. In februari 2026 antwoordt de EDPS op het decembervoorstel van de Commissie om de afwijking tot 2028 te verlengen (COM(2025) 797): substantiële aantasting van de vertrouwelijkheid, ongedifferentieerde analyse die disproportioneel is."
+  },
+  "ep-says-no": {
+    "title": "Het Parlement zegt nee",
+    "body": "Het Europees Parlement verwerpt de verlenging van het vrijwillige scannen tot 2028 (228 voor, 311 tegen, 92 onthoudingen). Gevolg: de rechtsgrondslag verstrijkt op 3 april 2026. Burgerdruk en ngo-werk hielden de lijn. Drie maanden lang."
+  },
+  "scanning-continues": {
+    "title": "De wet vervalt, het scannen gaat door",
+    "body": "Nu de afwijking is vervallen, kondigen de reuzen die de gezamenlijke oproep van 19 maart ondertekenden om het regime te verankeren (Google, Meta, Microsoft, Snap, TikTok) aan dat ze berichten blijven scannen, rechtsgrondslag of niet. De bekentenis dat \"compliance\" decor was."
+  },
+  "council-resurrects": {
+    "title": "De Raad wekt de vervallen tekst weer tot leven",
+    "body": "Drie maanden na het verstrijken neemt de Raad zijn standpunt aan om het vrijwillige scannen te herstellen tot 3 april 2028, doorgestuurd naar het Parlement in tweede lezing: de procedure waarin verwerping een absolute meerderheid vereist (361 van 720), niet een meerderheid van de uitgebrachte stemmen."
+  },
+  "ep-e2ee-carveout": {
+    "title": "Verwerping mislukt, maar E2EE wordt uitgesloten",
+    "body": "Urgentieprocedure aangenomen op 7 juli (331/304/11), stemming op de 9e: 314 europarlementariërs stemmen voor verwerping van het standpunt van de Raad: een gewone meerderheid, onder de vereiste 361. Maar het Parlement neemt daarna de amendementen aan die end-to-end versleutelde communicatie van het scanregime uitsluiten (369 en 362 stemmen), en ook een laatste poging om het geamendeerde standpunt te verwerpen strandt (276/286/30). De geamendeerde tekst gaat terug naar de Raad, die ongeveer drie maanden heeft (tot rond 9 oktober 2026) om de amendementen te aanvaarden (vrijwillig scannen van niet-E2EE-diensten tot 3 april 2028) of een bemiddeling te openen. Op 10 juli 2026 is er niets van kracht: de afwijking die op 3 april verstreek, is nooit hersteld ([volledige stemuitslagen](https://howtheyvote.eu/votes/195775))."
+  }
+}

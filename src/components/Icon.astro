@@ -1,0 +1,29 @@
+---
+// Brand icon from the build-time-embedded simple-icons set (CC0).
+// Unknown slug → nothing renders; callers keep their monogram fallback.
+import { BRAND_ICONS } from '../icons.generated'
+
+interface Props {
+  slug: string
+  size?: number
+  class?: string
+}
+
+const { slug, size = 18, class: className } = Astro.props
+const path = BRAND_ICONS[slug]
+---
+
+{
+  path && (
+    <svg
+      viewBox="0 0 24 24"
+      width={size}
+      height={size}
+      fill="currentColor"
+      aria-hidden="true"
+      class={className}
+    >
+      <path d={path} />
+    </svg>
+  )
+}

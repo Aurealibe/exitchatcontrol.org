@@ -1,0 +1,84 @@
+---
+// Share / copy-link / print row at the end of the guide. Pure enhancement:
+// the whole row is server-rendered hidden and revealed by script (none of
+// the three actions can work without JS), and print.css hides .share-row on
+// paper. The share button additionally stays hidden when the Web Share API
+// is unsupported.
+import { useT, type Locale } from '../i18n/config'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+
+const btn =
+  'cursor-pointer rounded-dossier border border-rule bg-surface-2 px-3 py-1.5 font-mono text-xs text-ink hover:border-accent'
+---
+
+<div
+  class="share-row mt-12 border-t border-rule pt-5"
+  data-share-row
+  aria-label={t('share.label')}
+  hidden
+>
+  <p class="eyebrow mt-0 mb-3">{t('share.label')}</p>
+  <div class="flex flex-wrap gap-2">
+    <button type="button" data-share-action="share" class={btn} hidden>
+      {t('share.share')}
+    </button>
+    <button type="button" data-share-action="copy" data-copied={t('share.copied')} class={btn}>
+      {t('share.copy')}
+    </button>
+    <button type="button" data-share-action="print" class={btn}>
+      {t('share.print')}
+    </button>
+  </div>
+</div>
+
+<script>
+  // Reveal on load (and after every ClientRouter swap); actions delegated
+  // once on document.
+  const reveal = () => {
+    for (const row of document.querySelectorAll<HTMLElement>('[data-share-row]')) {
+      row.hidden = false
+      const share = row.querySelector<HTMLElement>('[data-share-action="share"]')
+      if (share) share.hidden = typeof navigator.share !== 'function'
+    }
+  }
+
+  document.addEventListener('click', async (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-share-action]')
+    if (!btn) return
+    const url = location.href.replace(/#.*$/, '')
+    const action = btn.dataset.shareAction
+    if (action === 'print') {
+      window.print()
+      return
+    }
+    if (action === 'share') {
+      try {
+        await navigator.share({ title: document.title, url })
+      } catch {
+        /* dismissed or unsupported: nothing to clean up */
+      }
+      return
+    }
+    if (action === 'copy') {
+      try {
+        await navigator.clipboard.writeText(url)
+        if (!btn.dataset.label) btn.dataset.label = btn.textContent ?? ''
+        btn.textContent = btn.dataset.copied ?? btn.dataset.label
+        window.setTimeout(() => {
+          btn.textContent = btn.dataset.label ?? ''
+        }, 2000)
+      } catch {
+        /* clipboard unavailable (permissions, http): leave the label as-is */
+      }
+    }
+  })
+
+  reveal()
+  document.addEventListener('astro:page-load', reveal)
+</script>

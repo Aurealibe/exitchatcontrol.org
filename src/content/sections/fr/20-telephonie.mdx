@@ -1,0 +1,47 @@
+---
+id: 'telephonie'
+part: 12
+order: 20
+title: 'Téléphonie & appareil physique'
+---
+
+<p class="part-num">
+  PARTIE 19 · MATÉRIEL · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Téléphonie &amp; appareil physique
+
+La meilleure application ne sert à rien si l'appareil lui-même vous trahit. Voici les menaces matérielles et les gestes qui les neutralisent.
+
+#### Le numéro de téléphone est un traceur
+
+Votre numéro relie entre eux votre carte SIM, votre appareil (son identifiant IMEI), votre localisation et votre identité (la plupart des pays exigent une pièce d'identité à l'achat d'une SIM). C'est le fil qui permet de tout recouper.
+
+- Utilisez des messageries **sans numéro** (SimpleX, Session) pour vos contacts sensibles, et préférez toujours Signal au SMS.
+- Pour une identité séparée, une carte SIM « data uniquement » ou une eSIM prépayée limite le lien au point de vente (à vérifier selon les pays).
+
+#### IMSI-catchers &amp; réseau téléphonique
+
+Les « IMSI-catchers » (ou « stingrays ») sont de fausses antennes-relais qui forcent les téléphones à s'y connecter pour enregistrer leur identifiant et parfois intercepter les communications, souvent en rétrogradant vers la 2G, peu chiffrée. En parallèle, une faille ancienne du réseau (SS7) permet encore d'intercepter des SMS et de localiser un téléphone à distance : une raison de plus d'abandonner le SMS.
+
+- **Désactivez la 2G** dans les réglages (possible sur Android et GrapheneOS) pour couper le principal vecteur d'interception.
+- En manifestation ou en zone sensible, passez en **mode avion** ou glissez le téléphone dans un **sac de Faraday** (qui bloque tout signal). L'EFF publie même un outil libre, Rayhunter, pour détecter les IMSI-catchers.
+
+#### Biométrie ou code ?
+
+<div class="box warn">
+  <span class="lab">Un doigt se force, pas un code</span>
+  <p>
+    On peut appliquer votre visage ou votre doigt sur le capteur pendant qu'on vous immobilise (à
+    une frontière, lors d'une interpellation) ; un mot de passe dans votre tête, non. Avant une
+    situation à risque, forcez le retour au code : sur iPhone, maintenez le bouton latéral et un
+    bouton de volume (écran « SOS ») ; sur Android/GrapheneOS, utilisez le mode <b>Lockdown</b> du
+    menu d'alimentation, qui désactive la biométrie jusqu'à saisie du code. Choisissez un mot de
+    passe long, pas un code à quatre chiffres. GrapheneOS propose même un <b>code de contrainte</b>{' '}
+    qui efface le téléphone.
+  </p>
+</div>
+
+#### Dé-Microsoft, dé-Apple
+
+N'oubliez pas l'ordinateur : Windows transmet en continu de la télémétrie (et sa fonction « Recall » a voulu photographier l'écran en permanence), macOS signale les applications que vous lancez. La vraie sortie, c'est Linux (voir section 12). À défaut, désactivez la télémétrie, l'identifiant publicitaire et « Recall », et ajoutez un pare-feu sortant (comme Little Snitch sur Mac).

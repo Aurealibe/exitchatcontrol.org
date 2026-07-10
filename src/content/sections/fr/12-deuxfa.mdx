@@ -1,0 +1,83 @@
+---
+id: 'deuxfa'
+part: 7
+order: 12
+title: 'Double authentification & clés matérielles'
+---
+
+<p class="part-num">
+  PARTIE 11 · SÉCURITÉ · 2FA · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Double authentification &amp; clés matérielles
+
+Un mot de passe, même fort, peut fuiter. La double authentification (2FA) ajoute une seconde preuve à la connexion : même si votre mot de passe est volé, le compte reste fermé. C'est indispensable sur vos comptes sensibles (e-mail, gestionnaire de mots de passe, réseaux).
+
+<div class="box warn">
+  <span class="lab">Évitez le 2FA par SMS</span>
+  <p>
+    Le code reçu par SMS est le maillon faible : il est vulnérable au « SIM-swap » (un attaquant
+    fait transférer votre numéro) et à l'interception via le réseau téléphonique (SS7). Des études
+    estiment que la majorité des tentatives de SIM-swap réussissent. Utilisez le SMS seulement en
+    dernier recours, jamais comme protection principale.
+  </p>
+</div>
+
+<ToolCard tool="t-yubikey">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Avancé</span>
+    <span class="tool-tag">Clé matérielle FIDO2</span>
+  </Fragment>
+  <Fragment slot="what">
+    Une petite clé physique (format USB, souvent avec NFC) qui prouve votre identité d'un simple
+    contact du doigt.
+  </Fragment>
+  <Fragment slot="why">
+    C'est la 2FA la plus solide : elle résiste à l'hameçonnage, car la clé vérifie l'adresse réelle
+    du site avant de répondre. <b>Nitrokey</b> est l'alternative à matériel et micrologiciel
+    entièrement ouverts. Un faux site ne peut pas vous piéger.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui veulent le maximum de sécurité sur leurs comptes clés. Achetez-en <b>deux</b> (une
+    principale, une de secours).
+  </Fragment>
+  <ol slot="install">
+    <li>Procurez-vous deux clés sur yubico.com ou nitrokey.com.</li>
+    <li>
+      Dans les réglages de sécurité de chaque compte (e-mail, gestionnaire de mots de passe…),
+      ajoutez une « clé de sécurité » ou « passkey ». Enregistrez vos deux clés.
+    </li>
+    <li>Gardez la clé de secours dans un lieu sûr, séparé.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-aegis">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Codes TOTP</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Des applications qui génèrent les codes à six chiffres qui changent toutes les 30 secondes, en
+    remplacement de Google Authenticator.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Aegis</b> (Android) garde vos codes dans un coffre chiffré local, sans cloud.{' '}
+    <b>Ente Auth</b> ajoute une synchronisation chiffrée de bout en bout entre appareils, et a été
+    audité. Bien plus sûrs que le SMS, et gratuits.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde : c'est le niveau de 2FA à adopter par défaut, avant les clés matérielles.
+  </Fragment>
+  <ol slot="install">
+    <li>Installez Aegis (F-Droid) ou Ente Auth (toutes plateformes).</li>
+    <li>
+      Sur chaque compte, activez la 2FA « application d'authentification » et scannez le QR code
+      affiché.
+    </li>
+    <li>
+      Notez les <b>codes de secours</b> sur papier et faites une sauvegarde chiffrée de votre
+      coffre.
+    </li>
+  </ol>
+</ToolCard>

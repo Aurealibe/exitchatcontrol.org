@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "en": 23,
+    "fr": 23,
+    "nl": 23
+  },
+  "tools": 54,
+  "anchors": 82,
+  "nlGaps": [],
+  "exclusions": [
+    {
+      "where": "#menace comparison table",
+      "why": "adopted/extended legislative-status claim, deferred for verified rewrite",
+      "text": "DuréeDurationLooptijdTemporaire, prolongé jusqu'au 3 avril 2028Temporary, extended to 3 April 2028Tijdelijk, verlengd tot 3 april 2028PermanentPermanentPermanent"
+    },
+    {
+      "where": "#menace comparison table",
+      "why": "adopted/extended legislative-status claim, deferred for verified rewrite",
+      "text": "Statut (juil. 2026)Status (Jul 2026)Status (juli 2026)Adopté le 9 juillet 2026Adopted 9 July 2026Aangenomen op 9 juli 2026En négociation, 5e trilogue échoué le 29 juinUnder negotiation, 5th trilogue failed 29 JuneIn onderhandeling, 5e trialoog mislukt op 29 juni"
+    }
+  ],
+  "warnings": [
+    "icon slug \"briar\" (t-briar) not found in simple-icons — set to null",
+    "icon slug \"molly\" (t-molly) not found in simple-icons — set to null",
+    "icon slug \"ivpn\" (t-ivpn) not found in simple-icons — set to null",
+    "icon slug \"protonpass\" (t-protonpass) not found in simple-icons — set to null",
+    "icon slug \"nostr\" (t-nostr) not found in simple-icons — set to null",
+    "icon slug \"standardnotes\" (t-notes) not found in simple-icons — set to null",
+    "dropped inline style \"margin:.6rem 0 .4rem\" on <div class=\"box warn\">",
+    "dropped inline style \"margin:.6rem 0 .4rem\" on <div class=\"box warn\">",
+    "dropped inline style \"margin:.6rem 0 .4rem\" on <div class=\"box warn\">"
+  ]
+}

@@ -1,0 +1,4 @@
+Contact: https://github.com/Aurealibe/exitchatcontrol/issues
+Preferred-Languages: en, fr, nl
+Expires: 2027-07-01T00:00:00.000Z
+Canonical: https://exitchatcontrol.org/.well-known/security.txt

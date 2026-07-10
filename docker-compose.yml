@@ -1,0 +1,22 @@
+services:
+  # live dev server with HMR on http://localhost:4321
+  dev:
+    image: node:22-alpine@sha256:16e22a550f3863206a3f701448c45f7912c6896a62de43add43bb9c86130c3e2
+    working_dir: /app
+    command: sh -c "corepack enable && pnpm install --frozen-lockfile && pnpm dev --host"
+    ports:
+      - '4321:4321'
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    environment:
+      - ASTRO_TELEMETRY_DISABLED=1
+
+  # production-like: the real nginx image with security headers on :8080
+  preview:
+    build: .
+    ports:
+      - '8080:8080'
+
+volumes:
+  node_modules:

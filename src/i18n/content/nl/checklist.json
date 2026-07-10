@@ -1,0 +1,45 @@
+{
+  "_machineTranslated": "2026-07-10",
+  "do-signal": {
+    "body": "**Installeer Signal** en breng uw drie meest frequente contacten mee."
+  },
+  "do-email": {
+    "body": "**Open een Proton Mail of Tuta**, importeer, stel doorsturen vanaf Gmail in."
+  },
+  "do-pass": {
+    "body": "**Installeer Bitwarden** met een lang hoofdwachtwoord (een zin)."
+  },
+  "do-ublock": {
+    "body": "**Voeg uBlock Origin toe** aan uw browser (tien seconden)."
+  },
+  "do-browser": {
+    "body": "**Vervang Chrome en Google Search** (Firefox/Brave + DuckDuckGo)."
+  },
+  "do-twofa": {
+    "body": "**Schakel 2FA in** (Aegis / Ente Auth, nooit sms) op e-mail + wachtwoordmanager."
+  },
+  "do-cloud": {
+    "body": "**Verhuis uw bestanden** naar een versleutelde cloud (Proton Drive / Cryptomator)."
+  },
+  "do-vpn": {
+    "body": "**Neem een VPN** (Mullvad), idealiter anoniem betaald."
+  },
+  "do-dns": {
+    "body": "**Versleutel uw DNS** (Quad9 / Mullvad DNS) op telefoon en computer."
+  },
+  "do-social": {
+    "body": "**Open uw Mastodon-account** en veranker uw aanwezigheid buiten de grote platforms."
+  },
+  "do-linux": {
+    "body": "**Probeer Linux** (distrosea.com) en installeer het daarna (Mint om te beginnen)."
+  },
+  "do-graphene": {
+    "body": "**Zet de telefoon over op GrapheneOS** (Pixel vereist) of verhard Android."
+  },
+  "do-selfhost": {
+    "body": "**Selfhost** een eerste dienst (YunoHost / Umbrel + Tailscale)."
+  },
+  "do-opsec": {
+    "body": "**Neem OPSEC-discipline aan** als u onder pseudoniem publiceert."
+  }
+}

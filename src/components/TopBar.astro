@@ -1,0 +1,99 @@
+---
+import { localeFlags, localeNames, localePath, locales, useT, type Locale } from '../i18n/config'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+---
+
+<header class="topbar sticky top-0 z-40 border-b border-rule bg-surface/95 backdrop-blur-sm">
+  <div class="flex items-center gap-4 px-4 py-2">
+    <a
+      href={`${localePath(locale)}/`.replace('//', '/')}
+      class="font-mono text-sm font-bold tracking-wide no-underline"
+    >
+      EXIT CHAT CONTROL
+    </a>
+    <a href="#toc" class="font-mono text-xs text-dim no-underline hover:text-accent">
+      {t('nav.toc')}
+    </a>
+    <div class="ms-auto flex items-center gap-3">
+      <nav aria-label={t('nav.language')}>
+        <details class="lang-menu" data-lang-menu>
+          <summary
+            class="cursor-pointer rounded-dossier border border-rule bg-surface-2 px-2 py-1 font-mono text-xs font-bold"
+          >
+            <span aria-hidden="true">{localeFlags[locale]}</span>
+            {locale.toUpperCase()}
+          </summary>
+          <ul class="lang-list">
+            {
+              locales.map((l) => (
+                <li>
+                  <a
+                    href={`${localePath(l)}/`.replace('//', '/')}
+                    data-lang-choice={l}
+                    aria-current={l === locale ? 'page' : undefined}
+                    class="lang-option"
+                  >
+                    <span aria-hidden="true">{localeFlags[l]}</span>
+                    {localeNames[l]}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </details>
+      </nav>
+      <button
+        type="button"
+        data-theme-toggle
+        aria-label={t('nav.themeToggle')}
+        class="cursor-pointer rounded-dossier border border-rule bg-surface-2 px-2 py-1 font-mono text-xs text-ink hover:border-accent"
+      >
+        ◐
+      </button>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Delegated once per page lifecycle — survives ClientRouter swaps.
+  // Language choice: remember the reader's explicit pick so the root
+  // boot script honors it on the next visit.
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement
+    const langLink = target.closest<HTMLElement>('[data-lang-choice]')
+    if (langLink) {
+      try {
+        localStorage.setItem('ecc-lang', langLink.dataset.langChoice ?? '')
+      } catch {
+        /* private mode: choice simply not persisted */
+      }
+      return
+    }
+    // close the language dropdown when clicking anywhere outside it
+    for (const menu of document.querySelectorAll<HTMLDetailsElement>('[data-lang-menu][open]')) {
+      if (!menu.contains(target)) menu.removeAttribute('open')
+    }
+    const toggle = target.closest<HTMLElement>('[data-theme-toggle]')
+    if (toggle) {
+      const root = document.documentElement
+      const current =
+        root.getAttribute('data-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+      const next = current === 'dark' ? 'light' : 'dark'
+      root.setAttribute('data-theme', next)
+      try {
+        localStorage.setItem('ecc-theme', next)
+      } catch {
+        /* private mode: theme applies for this page only */
+      }
+    }
+  })
+
+  export {}
+</script>

@@ -1,0 +1,10 @@
+{
+  "name": "Exit Chat Control",
+  "short_name": "ExitCC",
+  "description": "Multilingual field guide to escape Chat Control and reclaim digital privacy.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#111318",
+  "theme_color": "#e6b23f",
+  "icons": [{ "src": "/favicon.png", "sizes": "192x192", "type": "image/png" }]
+}

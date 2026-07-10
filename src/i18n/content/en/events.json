@@ -1,0 +1,94 @@
+{
+  "clipper-chip": {
+    "title": "The Clipper Chip",
+    "body": "The NSA pushes an encryption chip with a government-held key escrow, \"for law enforcement, under warrant only\". Flaws demonstrated ([Blaze, 1994](https://dl.acm.org/doi/pdf/10.1145/191177.191193)), massive rejection: abandoned by 1996. The first crypto war, same script as today."
+  },
+  "echelon": {
+    "title": "ECHELON confirmed by the European Parliament",
+    "body": "Six days before 9/11, the European Parliament adopts in plenary (367–159–39) the report of its temporary committee (approved in committee on 3 July) confirming the existence of a global network intercepting private and commercial communications (US, UK, Canada, Australia, New Zealand)."
+  },
+  "nsa-warrantless": {
+    "title": "23 days after 9/11",
+    "body": "A secret presidential order starts the NSA’s warrantless domestic spying. The crisis creates the program; the program outlives the crisis. The Patriot Act follows on 26 October, also \"temporary\": its sunset clauses get renewed for 14 years."
+  },
+  "room-641a": {
+    "title": "Room 641A",
+    "body": "AT&T technician Mark Klein hands EFF the documents describing the NSA’s secret room in the San Francisco switching hub: interception at the infrastructure level, on all traffic, not on suspects."
+  },
+  "retention-directive": {
+    "title": "EU Data Retention Directive",
+    "body": "The EU mandates retention of the whole population’s telecom metadata (6–24 months), \"against serious crime\". No one is a suspect, everyone is on file. Chat Control’s exact blueprint, twenty years earlier."
+  },
+  "snowden": {
+    "title": "Snowden: \"collect it all\"",
+    "body": "The Guardian publishes the secret FISA order forcing Verizon to hand over all customers’ metadata, then PRISM. In March, intelligence director Clapper had sworn to Congress it wasn’t happening; days after the leak he calls that the [\"least untruthful\" answer](https://www.washingtonpost.com/blogs/fact-checker/post/james-clappers-least-untruthful-statement-to-the-senate/2013/06/11/e50677a8-d2d8-11e2-a73e-826d299ff459_blog.html) he could give."
+  },
+  "digital-rights-ireland": {
+    "title": "The CJEU strikes down blanket retention",
+    "body": "Digital Rights Ireland (joined cases C-293/12 and C-594/12): the 2006 directive is annulled outright: indiscriminate surveillance of the whole population violates the Charter of Fundamental Rights. A tiny volunteer NGO brought down an EU directive."
+  },
+  "snoopers-charter": {
+    "title": "The UK \"Snooper’s Charter\"",
+    "body": "The Investigatory Powers Act legalises bulk collection and state hacking, and forces ISPs to keep everyone’s browsing history. Three weeks later the CJEU (Tele2/Watson) repeats that blanket retention is unlawful; London keeps it anyway."
+  },
+  "australia-aaa": {
+    "title": "Australia vs mathematics",
+    "body": "The Assistance and Access Act lets the state secretly order a company to re-engineer its products (\"technical capability notices\"). Critics warn this weakens encryption in all but name, even though the Act nominally bans \"systemic weaknesses\". The PM had set the tone: \"the laws of Australia prevail over the laws of mathematics\"."
+  },
+  "crypto-ag": {
+    "title": "Crypto AG: the safe-maker kept the keys",
+    "body": "The Washington Post reveals (backed by the CIA’s own internal history) that the CIA and BND secretly owned Crypto AG, the Swiss encryption vendor of 120 governments, since 1970. In the 1980s, 40% of the diplomatic cables NSA decoded came through it. Moral: a \"trusted\" backdoor is a backdoor."
+  },
+  "lqdn-cjeu": {
+    "title": "La Quadrature du Net at the CJEU",
+    "body": "The Court upholds the ban on blanket retention against France and Belgium (joined cases C-511/18, C-512/18 and C-520/18), and against the UK the same day in Privacy International (C-623/17), while carving out \"national security\" windows. Twin lesson: lawsuits work, and every exception becomes the next rule. The Commission has never opened an infringement case against states that retain anyway."
+  },
+  "chatcontrol-1": {
+    "title": "Chat Control 1.0, \"temporary\"",
+    "body": "Regulation 2021/1232 allows \"voluntary\" scanning of private messages, derogating from ePrivacy. Sunset on 3 August 2024, promised. Regulation 2024/1307 extends it to 3 April 2026, where it expires… then rises from the dead (see below)."
+  },
+  "pegasus-project": {
+    "title": "The Pegasus Project",
+    "body": "80+ journalists across 17 newsrooms in 10 countries document the spying on journalists, lawyers, dissidents and heads of state via NSO’s spyware. Amnesty’s forensics (peer-reviewed by Citizen Lab) prove zero-click infections of fully patched iPhones: when the device is targeted, encryption is not enough. Exactly the client-side scanning logic."
+  },
+  "apple-csam": {
+    "title": "Apple announces on-device scanning… then walks it back",
+    "body": "Apple unveils on-device CSAM photo scanning for the iPhone. Researchers and NGOs revolt: it is the infrastructure of generalisable surveillance. December 2022: Apple abandons it, and will later invoke, in an [August 2023 letter](https://appleinsider.com/articles/23/08/31/apple-provides-detailed-reasoning-behind-abandoning-iphone-csam-detection), a \"slippery slope of unintended consequences\". The very mechanism Chat Control 2.0 wants to mandate."
+  },
+  "chatcontrol-2": {
+    "title": "Chat Control 2.0: mandatory scanning",
+    "body": "The Commission proposes the CSAR regulation (COM/2022/209): \"detection orders\" that can force scanning on every platform, including end-to-end encrypted ones. 2021’s voluntary becomes 2022’s mandatory: scope creep in the literal sense."
+  },
+  "osa-spy-clause": {
+    "title": "Online Safety Act: the \"spy clause\"",
+    "body": "The UK grants itself the power to order messengers to scan encrypted content (section 121). \"Where technically feasible\" is not in the Act: it was the minister’s concession, [Lord Parkinson’s statement to the Lords](https://techcrunch.com/2023/09/06/osb-encryption-scanning-feasibility/) (6 September 2023), after Signal and WhatsApp threatened to leave. The government admits it is not feasible, but keeps the power on the books."
+  },
+  "first-extension": {
+    "title": "The \"temporary\" gets its first extension",
+    "body": "Regulation 2024/1307 pushes Chat Control 1.0’s sunset from 3 August 2024 to 3 April 2026. An emergency measure that renews itself is no longer an exception: it is a regime."
+  },
+  "uk-age-checks": {
+    "title": "UK: show ID to use the internet",
+    "body": "The Online Safety Act switches on \"highly effective\" age verification (ID, credit card, face estimation) for large parts of the web. Proton measures hourly VPN signups jumping [over 1,400%](https://www.techradar.com/vpn/vpn-privacy-security/vpn-demand-skyrockets-in-the-uk-as-age-verification-checks-are-enforced); the Lords are already debating limits on VPNs."
+  },
+  "council-sunset-delete": {
+    "title": "The Council moves to delete the sunset clause",
+    "body": "The Council’s trilogue position (doc. 15318/25): simply delete the sunset clause of \"voluntary\" scanning, making it permanent. The Danish presidency draft contemplated mandatory client-side scanning. In February 2026 the EDPS answers the Commission’s December proposal to extend the derogation to 2028 (COM(2025) 797): substantial degradation of confidentiality, indiscriminate analysis disproportionate."
+  },
+  "ep-says-no": {
+    "title": "Parliament says no",
+    "body": "The European Parliament rejects extending voluntary scanning to 2028 (228 for, 311 against, 92 abstentions). Consequence: the legal basis expires on 3 April 2026. Citizen pressure and NGO work held the line. For three months."
+  },
+  "scanning-continues": {
+    "title": "The law lapses, the scanning continues",
+    "body": "With the derogation lapsed, the giants that signed the 19 March joint appeal to entrench the regime (Google, Meta, Microsoft, Snap, TikTok) announce they will keep scanning messages, legal basis or not. The admission that \"compliance\" was scenery."
+  },
+  "council-resurrects": {
+    "title": "The Council resurrects the lapsed text",
+    "body": "Three months after the lapse, the Council adopts its position to reinstate voluntary scanning until 3 April 2028, sent to Parliament at second reading: the procedure where rejection needs an absolute majority (361 of 720), not a majority of votes cast."
+  },
+  "ep-e2ee-carveout": {
+    "title": "Rejection fails, but E2EE is carved out",
+    "body": "Urgent procedure passed on 7 July (331/304/11), vote on the 9th: 314 MEPs vote to reject the Council’s position: a simple majority, short of the 361 required. But Parliament then adopts the amendments excluding end-to-end encrypted communications from the scanning regime (369 and 362 votes), and a last attempt to reject the amended position fails too (276/286/30). The amended text returns to the Council, which has about three months (until around 9 October 2026) to accept the amendments (voluntary scanning of non-E2EE services until 3 April 2028) or open conciliation. As of 10 July 2026, nothing is in force: the derogation that expired on 3 April was never revived ([full roll calls](https://howtheyvote.eu/votes/195775))."
+  }
+}

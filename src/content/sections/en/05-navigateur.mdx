@@ -1,0 +1,148 @@
+---
+id: 'navigateur'
+part: 3
+order: 5
+title: 'Browser & search'
+---
+
+<p class="part-num">
+  PART 04 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Browser &amp; search
+
+Chrome is an advertising tracker. Google Search profiles every query. Replace both.
+
+<ToolCard tool="t-mullvadbrowser">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Advanced</span>
+    <span class="tool-tag">Anti-fingerprint</span>
+    <span class="tool-tag">🇸🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    The Tor Browser's browser, but without the Tor network: use it with your VPN for a hard-to-track
+    desktop.
+  </Fragment>
+  <Fragment slot="why">
+    Built with the Tor Project, it's designed so all its users present the{' '}
+    <b>same digital fingerprint</b>. The result: instead of being unique and thus trackable, you
+    blend into the crowd. It's the best privacy choice on desktop.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want to go beyond simple ad-blocking, especially pseudonymous accounts and exposed
+    profiles.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Download it from <b>mullvad.net/browser</b> (Windows, macOS, Linux).
+    </li>
+    <li>
+      Use it as-is, without customising: every added extension or setting makes you identifiable
+      again.
+    </li>
+    <li>Pair it with your VPN to also mask your IP address.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-firefox">
+  <Fragment slot="name">Firefox (hardened)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Replaces Chrome</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">The reference free browser for privacy-respecting daily use.</Fragment>
+  <Fragment slot="why">
+    Unlike Chrome (a Google advertising tracker), Firefox is built by a foundation with no interest
+    in profiling you. With a few tweaks (the <em>arkenfox</em> guide) and the uBlock Origin
+    extension, it becomes very solid.
+  </Fragment>
+  <Fragment slot="who">Everyone, as a main daily browser.</Fragment>
+  <ol slot="install">
+    <li>
+      Install Firefox from <b>mozilla.org/firefox</b>.
+    </li>
+    <li>
+      Add the <b>uBlock Origin</b> extension (ad and tracker blocking).
+    </li>
+    <li>
+      In privacy settings, choose "Strict," disable telemetry, and clear cookies on close. To go
+      further, apply the arkenfox guide.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-brave">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Blocks everything by default</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A Chromium-based browser that blocks ads and trackers by default, with a bonus private window
+    connected to Tor.
+  </Fragment>
+  <Fragment slot="why">
+    It's the simplest option for someone coming from Chrome: same feel, but without the tracking. It
+    blocks YouTube ads natively, offers encrypted video (Brave Talk, based on Jitsi) and one-click
+    Tor access, handy to reach a blocked site.
+  </Fragment>
+  <Fragment slot="who">
+    Beginners who want a painless switch from Chrome. (Ignore the crypto/rewarded-ads features if
+    they don't interest you.)
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Install Brave from <b>brave.com</b>.
+    </li>
+    <li>Set "Shields" to "aggressive," and turn off Brave Rewards if you don't want ads.</li>
+    <li>For Tor: menu &gt; "New private window with Tor," then wait for "Tor connected".</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-ublock">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Extension</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    The browser extension that blocks ads, trackers and spy scripts. The highest-return move, in ten
+    seconds.
+  </Fragment>
+  <Fragment slot="why">
+    Online advertising is the main vector of surveillance and profiling. Blocking it cuts most
+    tracking, speeds up pages and reduces malware risk.
+  </Fragment>
+  <Fragment slot="who">Everyone, on Firefox as well as Chromium browsers.</Fragment>
+  <ol slot="install">
+    <li>
+      Open your browser's extension store and search "uBlock Origin" (the original, by Raymond
+      Hill).
+    </li>
+    <li>Install it. It works right away, no setup needed.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-search">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡 Search engines</span>
+    <span class="tool-tag">Replaces Google Search</span>
+  </Fragment>
+  <Fragment slot="what">Search engines that don't profile every query, unlike Google.</Fragment>
+  <Fragment slot="why">
+    DuckDuckGo and Brave Search keep no history tied to your identity. Startpage serves Google
+    results without the tracking. SearXNG goes further: a <b>self-hostable</b> metasearch engine,
+    sovereignty down to your search bar.
+  </Fragment>
+  <Fragment slot="who">Everyone. SearXNG targets those who want to host their own engine.</Fragment>
+  <ol slot="install">
+    <li>
+      In your browser settings, change the default engine to DuckDuckGo, Brave Search or Startpage.
+    </li>
+    <li>
+      For SearXNG: use a public instance (directory at searx.space) or host your own (see section
+      10).
+    </li>
+  </ol>
+</ToolCard>

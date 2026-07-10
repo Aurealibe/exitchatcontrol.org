@@ -1,0 +1,124 @@
+---
+id: 'dns'
+part: 3
+order: 6
+title: 'DNS chiffré & Cloudflare'
+---
+
+<p class="part-num">
+  PARTIE 05 · RÉSEAU · DNS · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## DNS chiffré &amp; Cloudflare
+
+Le DNS, c'est l'annuaire qui traduit un nom de site (exemple.com) en adresse machine. Problème : par défaut, c'est votre fournisseur d'accès qui gère cet annuaire, et il voit donc **chaque site que vous visitez**, même quand la page est en HTTPS. Chiffrer son DNS, c'est reprendre cette liste à son FAI. C'est un réglage discret mais parmi les plus efficaces.
+
+<ToolCard tool="t-quad9">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Anti-maliciel</span>
+    <span class="tool-tag">🇨🇭 à but non lucratif</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un résolveur DNS chiffré, suisse et à but non lucratif, qui bloque en plus les domaines
+    malveillants connus.
+  </Fragment>
+  <Fragment slot="why">
+    Juridiction suisse, pas de conservation de votre adresse IP, protection contre l'hameçonnage et
+    les logiciels malveillants. Un excellent réglage « installer et oublier ».
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde, en particulier ceux qui veulent la simplicité et une bonne juridiction.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Sur Android : Réglages &gt; Réseau &gt; <b>DNS privé</b> &gt; saisissez <b>dns.quad9.net</b>.
+    </li>
+    <li>
+      Sur iPhone/Mac : installez le profil DoH depuis quad9.net. Sur PC : configurez le
+      DNS-over-HTTPS dans le navigateur ou le système.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-mullvaddns">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermédiaire</span>
+    <span class="tool-tag">Filtrage réseau</span>
+  </Fragment>
+  <Fragment slot="what">
+    Deux résolveurs chiffrés qui bloquent en plus pubs et traqueurs pour tout l'appareil.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Mullvad DNS</b> (Suède, no-log) est gratuit et propose des listes de blocage. <b>NextDNS</b>{' '}
+    est très personnalisable, avec un tableau de bord et des profils par appareil, mais il est basé
+    aux États-Unis et journalise par défaut (à désactiver dans les réglages).
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui veulent un blocage des pubs à l'échelle du système, sans installer d'application par
+    navigateur.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Mullvad DNS : utilisez l'adresse indiquée sur mullvad.net/help/dns comme DNS privé (même
+      méthode que Quad9).
+    </li>
+    <li>
+      NextDNS : créez un profil sur nextdns.io, <b>désactivez la journalisation</b>, puis appliquez
+      la configuration à vos appareils.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cloudflare">
+  <Fragment slot="name">Cloudflare 1.1.1.1 (à nuancer)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Rapide mais centralisé</span>
+    <span class="tool-tag">🇺🇸</span>
+  </Fragment>
+  <Fragment slot="what">
+    Le DNS chiffré 1.1.1.1 et l'application WARP de Cloudflare : rapides, gratuits, et un vrai
+    progrès face au résolveur de votre FAI.
+  </Fragment>
+  <Fragment slot="why">
+    C'est utile, avec un engagement de non-journalisation audité. Mais soyez lucide : Cloudflare se
+    trouve déjà devant une immense partie du web (comme intermédiaire technique, il peut voir le
+    trafic en clair vers ces sites). Y router aussi votre DNS revient à{' '}
+    <b>concentrer encore plus de vos traces</b> chez une seule entreprise américaine soumise au
+    droit américain.
+  </Fragment>
+  <Fragment slot="who">
+    Bon pour un usage courant et le blocage des maliciels (1.1.1.1 for Families). À éviter ou à
+    diversifier pour un usage sensible : préférez alors Quad9 ou Mullvad DNS.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-pihole">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Blocage tout le réseau</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un bloqueur de publicités et de traqueurs qui protège <b>tout votre réseau à la fois</b>,
+    installé sur un petit ordinateur comme un Raspberry Pi.
+  </Fragment>
+  <Fragment slot="why">
+    Là où uBlock Origin protège un navigateur, Pi-hole filtre <b>chaque appareil</b> de la maison, y
+    compris ceux où l'on ne peut pas installer d'extension : téléphones, téléviseurs connectés,
+    objets connectés. Les pubs et traqueurs sont bloqués au niveau du DNS, avant même de se charger.{' '}
+    <b>AdGuard Home</b> est une alternative à l'interface plus moderne.
+  </Fragment>
+  <Fragment slot="who">
+    Les foyers qui veulent nettoyer tous leurs appareils d'un coup, et qui ont (ou veulent) un
+    Raspberry Pi ou un petit serveur.
+  </Fragment>
+  <ol slot="install">
+    <li>Sur un Raspberry Pi (ou un conteneur), lancez l'installeur officiel de Pi-hole.</li>
+    <li>
+      Dans les réglages de votre box/routeur, indiquez l'adresse du Pi-hole comme serveur DNS.
+    </li>
+    <li>Désormais, tous les appareils connectés à votre réseau sont filtrés automatiquement.</li>
+  </ol>
+</ToolCard>

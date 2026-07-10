@@ -1,0 +1,94 @@
+{
+  "clipper-chip": {
+    "title": "Le Clipper Chip",
+    "body": "La NSA propose une puce de chiffrement avec clé en dépôt pour l’État, « uniquement pour la police, sous mandat ». Failles techniques démontrées ([Blaze, 1994](https://dl.acm.org/doi/pdf/10.1145/191177.191193)), rejet massif : abandon en 1996. Première guerre de la crypto, même scénario qu’aujourd’hui."
+  },
+  "echelon": {
+    "title": "ECHELON confirmé par le Parlement européen",
+    "body": "Six jours avant le 11-Septembre, le Parlement européen adopte en plénière (367-159-39) le rapport de sa commission temporaire (approuvé en commission le 3 juillet) confirmant l’existence d’un réseau mondial d’interception des communications privées et commerciales (États-Unis, Royaume-Uni, Canada, Australie, Nouvelle-Zélande)."
+  },
+  "nsa-warrantless": {
+    "title": "23 jours après le 11-Septembre",
+    "body": "Un ordre secret du président Bush lance l’écoute domestique sans mandat de la NSA. La crise crée le programme ; le programme survit à la crise. Le Patriot Act suit le 26 octobre, « temporaire » lui aussi : ses clauses seront reconduites pendant 14 ans."
+  },
+  "room-641a": {
+    "title": "Room 641A",
+    "body": "Le technicien AT&T Mark Klein apporte à l’EFF les plans de la salle secrète de la NSA dans le central de San Francisco : l’interception se fait au niveau de l’infrastructure, sur tout le trafic, pas sur des suspects."
+  },
+  "retention-directive": {
+    "title": "Directive européenne de rétention des données",
+    "body": "L’UE impose la conservation des métadonnées télécoms de toute la population (6 à 24 mois), « contre le crime grave ». Personne n’est suspect, tout le monde est fiché. Le modèle exact de Chat Control, vingt ans plus tôt."
+  },
+  "snowden": {
+    "title": "Snowden : « collect it all »",
+    "body": "Le Guardian publie l’ordre secret de la cour FISA obligeant Verizon à livrer les métadonnées de tous ses clients, puis PRISM. En mars, le directeur du renseignement Clapper avait juré au Congrès que non ; quelques jours après la fuite, il qualifiera sa réponse de [« la moins mensongère possible »](https://www.washingtonpost.com/blogs/fact-checker/post/james-clappers-least-untruthful-statement-to-the-senate/2013/06/11/e50677a8-d2d8-11e2-a73e-826d299ff459_blog.html)."
+  },
+  "digital-rights-ireland": {
+    "title": "La CJUE annule la rétention généralisée",
+    "body": "Arrêt Digital Rights Ireland (affaires jointes C-293/12 et C-594/12) : la directive de 2006 est invalidée en bloc, la surveillance indiscriminée de toute la population viole la Charte des droits fondamentaux. Une ONG de quelques bénévoles a fait tomber une directive européenne."
+  },
+  "snoopers-charter": {
+    "title": "Le « Snooper’s Charter » britannique",
+    "body": "L’Investigatory Powers Act légalise la collecte en masse et le piratage d’appareils par l’État, et oblige les FAI à conserver l’historique de navigation de chacun. Trois semaines plus tard, la CJUE (arrêt Tele2/Watson) redit que la rétention généralisée est illégale ; Londres la garde."
+  },
+  "australia-aaa": {
+    "title": "L’Australie contre les mathématiques",
+    "body": "L’Assistance and Access Act permet d’ordonner secrètement à une entreprise de modifier ses produits (« technical capability notices ») : un affaiblissement du chiffrement de fait, alertent les critiques, même si la loi interdit formellement les « systemic weaknesses ». Le Premier ministre avait donné le ton : « les lois australiennes prévalent sur les lois des mathématiques »."
+  },
+  "crypto-ag": {
+    "title": "Crypto AG : le vendeur de coffres avait les clés",
+    "body": "Le Washington Post révèle (histoire interne de la CIA à l’appui) que la CIA et le BND possédaient secrètement Crypto AG, le fournisseur suisse de machines de chiffrement de 120 gouvernements, depuis 1970. Dans les années 1980, 40 % des câbles diplomatiques décodés par la NSA passaient par ce canal. Morale : une porte dérobée « de confiance » est une porte dérobée."
+  },
+  "lqdn-cjeu": {
+    "title": "La Quadrature du Net devant la CJUE",
+    "body": "La Cour confirme l’interdiction de la conservation généralisée pour la France et la Belgique (affaires jointes C-511/18, C-512/18 et C-520/18), et le même jour pour le Royaume-Uni dans l’arrêt Privacy International (C-623/17), tout en ouvrant des exceptions « sécurité nationale ». Leçon double : les recours marchent, et chaque exception devient la prochaine règle. La Commission n’a jamais ouvert d’infraction contre les États qui conservent quand même."
+  },
+  "chatcontrol-1": {
+    "title": "Chat Control 1.0, « temporaire »",
+    "body": "Le règlement 2021/1232 autorise le scan « volontaire » des messageries, par dérogation à ePrivacy. Clause d’extinction au 3 août 2024, promis. Le règlement 2024/1307 la prolonge jusqu’au 3 avril 2026, où elle expire… avant d’être ressuscitée (voir plus bas)."
+  },
+  "pegasus-project": {
+    "title": "Projet Pegasus",
+    "body": "Plus de 80 journalistes de 17 rédactions dans 10 pays documentent l’espionnage de journalistes, d’avocats, d’opposants et de chefs d’État via le logiciel espion de NSO. La forensique d’Amnesty (revue par le Citizen Lab) prouve des infections « zéro clic » sur des iPhone à jour : quand l’appareil est visé, le chiffrement ne suffit plus. Exactement la logique du scan côté client."
+  },
+  "apple-csam": {
+    "title": "Apple annonce le scan sur l’appareil… puis renonce",
+    "body": "Apple présente un scan CSAM des photos directement sur l’iPhone. Tollé des chercheurs et des ONG : c’est l’infrastructure d’une surveillance généralisable. Décembre 2022 : Apple abandonne, avant d’invoquer, dans une [lettre d’août 2023](https://appleinsider.com/articles/23/08/31/apple-provides-detailed-reasoning-behind-abandoning-iphone-csam-detection), une « pente glissante de conséquences imprévues ». Le précédent technique que Chat Control 2.0 veut rendre obligatoire."
+  },
+  "chatcontrol-2": {
+    "title": "Chat Control 2.0 : le scan obligatoire",
+    "body": "La Commission propose le règlement CSAR (COM/2022/209) : « ordres de détection » pouvant imposer le scan à toutes les plateformes, y compris chiffrées de bout en bout. Le volontaire de 2021 devient l’obligatoire de 2022 : la dérive au sens littéral."
+  },
+  "osa-spy-clause": {
+    "title": "Online Safety Act : la « spy clause »",
+    "body": "Le Royaume-Uni se dote du pouvoir d’ordonner aux messageries de scanner les contenus chiffrés (article 121). « Dès que techniquement faisable » n’est pas dans la loi : c’est une concession ministérielle, la [déclaration de Lord Parkinson devant les Lords](https://techcrunch.com/2023/09/06/osb-encryption-scanning-feasibility/) (6 septembre 2023), après les menaces de départ de Signal et WhatsApp. Le gouvernement admet que ce n’est pas faisable, mais garde le pouvoir dans la loi."
+  },
+  "first-extension": {
+    "title": "Le « temporaire » prolongé une première fois",
+    "body": "Le règlement 2024/1307 repousse l’extinction de Chat Control 1.0 du 3 août 2024 au 3 avril 2026. Un dispositif d’exception qui se renouvelle n’est plus une exception : c’est un régime."
+  },
+  "uk-age-checks": {
+    "title": "Royaume-Uni : une pièce d’identité pour Internet",
+    "body": "L’Online Safety Act impose la vérification d’âge « hautement efficace » (pièce d’identité, carte bancaire, reconnaissance faciale) pour l’accès à des pans entiers du web. Proton mesure des inscriptions VPN horaires en hausse de [plus de 1 400 %](https://www.techradar.com/vpn/vpn-privacy-security/vpn-demand-skyrockets-in-the-uk-as-age-verification-checks-are-enforced) ; les Lords discutent déjà d’encadrer les VPN."
+  },
+  "council-sunset-delete": {
+    "title": "Le Conseil veut supprimer la clause d’extinction",
+    "body": "Position du Conseil pour les trilogues CSAR (doc. 15318/25) : supprimer purement et simplement la clause d’extinction du scan « volontaire », autrement dit le rendre permanent. Le projet de la présidence danoise envisageait le scan côté client obligatoire. En février 2026, l’EDPS répond à la proposition de décembre de la Commission de prolonger la dérogation jusqu’en 2028 (COM(2025) 797) : dégradation substantielle de la confidentialité, analyse indiscriminée disproportionnée."
+  },
+  "ep-says-no": {
+    "title": "Le Parlement dit non",
+    "body": "Le Parlement européen rejette la prolongation du scan volontaire jusqu’en 2028 (228 pour, 311 contre, 92 abstentions). Conséquence : la base légale expire le 3 avril 2026. La pression citoyenne et le travail des ONG ont tenu. Pendant trois mois."
+  },
+  "scanning-continues": {
+    "title": "La loi expire, le scan continue",
+    "body": "La dérogation expirée, les géants signataires de l’appel commun du 19 mars pour pérenniser le dispositif (Google, Meta, Microsoft, Snap, TikTok) annoncent qu’ils continueront de scanner les messages, base légale ou pas. L’aveu que la « conformité » était un décor."
+  },
+  "council-resurrects": {
+    "title": "Le Conseil ressuscite le texte expiré",
+    "body": "Trois mois après l’expiration, le Conseil adopte sa position pour rétablir le scan volontaire jusqu’au 3 avril 2028, envoyée au Parlement en seconde lecture : la procédure où le rejet exige une majorité absolue (361 voix sur 720), pas une majorité des votants."
+  },
+  "ep-e2ee-carveout": {
+    "title": "Le rejet échoue, mais le chiffrement est exclu",
+    "body": "Procédure d’urgence votée le 7 juillet (331/304/11), vote le 9 : 314 eurodéputés votent le rejet de la position du Conseil : une majorité simple, loin des 361 voix requises. Mais le Parlement adopte ensuite les amendements excluant les communications chiffrées de bout en bout du dispositif (369 et 362 voix), et l’ultime tentative de rejeter la position amendée échoue aussi (276/286/30). Le texte amendé retourne au Conseil, qui a environ trois mois (jusqu’aux alentours du 9 octobre 2026) pour accepter les amendements (scan volontaire des services non chiffrés de bout en bout jusqu’au 3 avril 2028) ou ouvrir une conciliation. Au 10 juillet 2026, rien n’est en vigueur : la dérogation expirée le 3 avril n’a jamais été ravivée ([détail des votes](https://howtheyvote.eu/votes/195775))."
+  }
+}

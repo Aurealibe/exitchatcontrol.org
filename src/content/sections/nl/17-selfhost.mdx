@@ -1,0 +1,158 @@
+---
+id: 'selfhost'
+part: 10
+order: 17
+title: 'Zelfhosting'
+---
+
+<p class="part-num">
+  DEEL 16 · GEAVANCEERDE ZELFVERDEDIGING · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Zelfhosting
+
+Het ultieme niveau van soevereiniteit: host uw diensten zelf. Uw gegevens leven op uw eigen hardware, onder de jurisdictie die u kiest.
+
+<ToolCard tool="t-yunohost">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Kant-en-klare server</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Systemen die een oude pc of Raspberry Pi omtoveren tot een persoonlijke server, met een
+    app-catalogus die u in een paar klikken installeert.
+  </Fragment>
+  <Fragment slot="why">
+    Zelfhosting klinkt eng, maar deze tools doen het zware werk. <b>YunoHost</b> beheert zelfs uw
+    eigen e-mail en single sign-on. <b>Umbrel</b> biedt een app-store met meer dan 300 apps,
+    populair bij privacy- en Bitcoin-liefhebbers. <b>Start9</b> versleutelt back-ups en geeft elke
+    dienst standaard een Tor-adres.
+  </Fragment>
+  <Fragment slot="who">
+    Gevorderde profielen die een middag willen besteden aan het opzetten van hun eigen cloud. Het is
+    de meest radicale structurele tegenzet tegen Chat Control.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Pak een oude computer, een Raspberry Pi, of huur een kleine server (VPS) in een beschermend
+      land.
+    </li>
+    <li>Installeer YunoHost, Umbrel of Start9 volgens hun officiële handleiding.</li>
+    <li>Installeer vanuit de catalogus Nextcloud, een Matrix-server, een fotogalerij, enz.</li>
+    <li>
+      Bereik het privé met Tailscale (kaart hieronder) in plaats van de server bloot te stellen aan
+      het publieke internet.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nextcloud">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Vervangt de hele Google-suite</span>
+    <span class="tool-tag">🇩🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Uw eigen cloud: bestanden, agenda, contacten, foto's, notities en samenwerkingsdocumenten, op uw
+    server.
+  </Fragment>
+  <Fragment slot="why">
+    Het is de volledige vervanging van Google Drive, Agenda en Contacten, maar dan thuis. U kiest de
+    jurisdictie en niemand anders heeft zeggenschap over uw bestanden. Let op: het is "uw
+    server"-privacy, niet standaard end-to-end versleuteld; u moet het up-to-date houden.
+  </Fragment>
+  <Fragment slot="who">
+    Zelf-hosters. De eenvoudigste weg is installatie via YunoHost of Umbrel.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-synapse">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Uw eigen chatserver</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Uw eigen Matrix-chatserver, waarop Element en versleutelde gesprekken draaien.
+  </Fragment>
+  <Fragment slot="why">
+    Door de server te hosten, beheert u ook de <b>metadata</b> (wie met wie praat, wanneer), het
+    zwakke punt van Matrix in federatie. Het is communitychat waarvan u alleen de eigenaar bent.
+  </Fragment>
+  <Fragment slot="who">
+    Gemeenschappen, collectieven, redacties die hun eigen onafhankelijke gefedereerde ruimte willen.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-tailscale">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Privétoegang tot uw server</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een privé versleuteld netwerk dat uw apparaten aan uw server koppelt, zonder deze ooit bloot te
+    stellen aan het publieke internet.
+  </Fragment>
+  <Fragment slot="why">
+    In plaats van poorten te openen (en aangevallen te worden), bouwt <b>Tailscale</b> een
+    WireGuard-tunnel tussen alleen uw geautoriseerde apparaten: uw server heeft geen publiek
+    aanvalsoppervlak. <b>Headscale</b> is de zelf-gehoste versie, zodat u van geen enkele derde
+    partij afhankelijk bent. <b>WireGuard</b> alleen biedt volledige controle, ten koste van
+    handmatige configuratie.
+  </Fragment>
+  <Fragment slot="who">
+    Elke zelf-hoster. Het is de veilige manier om van buitenaf uw Nextcloud of foto's te bereiken.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installeer Tailscale op uw server en op uw telefoon/pc, en koppel ze aan hetzelfde account.
+    </li>
+    <li>
+      Uw apparaten zien elkaar meteen op een privénetwerk; bereik uw server via het Tailscale-adres.
+    </li>
+    <li>Voor nul afhankelijkheid vervangt u de coördinatieserver door zelf-gehoste Headscale.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-website">
+  <Fragment slot="name">Uw eigen website</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Ban-bestendig uw stem</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een eigen site, op uw eigen domeinnaam, waar uw inhoud van geen enkel platform afhangt.
+  </Fragment>
+  <Fragment slot="why">
+    Op de dag dat een netwerk uw account verwijdert of schorst, verdwijnt al uw werk. Een
+    persoonlijke site is uw anker: uw berichten blijven daar, gearchiveerd en up-to-date, wat er ook
+    gebeurt. Dat is precies wat voorzichtige informatieaccounts doen. Een statische site (gebouwd
+    met Hugo, Astro of Jekyll) is voldoende en publiceert bijna gratis; voor een dynamische blog
+    voldoet een zelf-gehoste WordPress of Ghost.
+  </Fragment>
+  <Fragment slot="who">
+    Informatieaccounts, makers, activisten, iedereen die publiceert en platformcensuur vreest.
+  </Fragment>
+  <ol slot="install">
+    <li>Koop een domeinnaam (idealiter bij een privacyrespecterende registrar).</li>
+    <li>
+      Kies een statische-sitegenerator (Astro, Hugo) en host het resultaat, of installeer
+      WordPress/Ghost op uw server.
+    </li>
+    <li>
+      Verwijs er systematisch naar vanuit uw sociale netwerken: uw publiek vindt u zelfs als een
+      account wegvalt.
+    </li>
+  </ol>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Het jurisdictiepunt</span>
+  <p>
+    Zelfhosten betekent ook kiezen <em>waar</em> uw gegevens leven. Een server thuis of in een
+    beschermend land ontsnapt aan de scanverplichtingen die aan grote platforms worden opgelegd. Het
+    is de meest radicale structurele tegenzet tegen Chat Control.
+  </p>
+</div>

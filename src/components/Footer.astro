@@ -1,0 +1,118 @@
+---
+import { localePath, useT, type Locale } from '../i18n/config'
+import Ext from './Ext.astro'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+
+const resources = [
+  { href: 'https://www.privacyguides.org', label: 'Privacy Guides' },
+  { href: 'https://ssd.eff.org', label: 'EFF · Surveillance Self-Defense' },
+  { href: 'https://freedom.press', label: 'Freedom of the Press Foundation' },
+  { href: 'https://fightchatcontrol.eu', label: 'Fight Chat Control' },
+]
+
+// Legislative sources — verified primary sources first (see docs/RESEARCH
+// notes in the repo history: EP press release + official roll-calls replace
+// the secondary blog sources the old version leaned on).
+const sources = [
+  {
+    href: 'https://www.europarl.europa.eu/news/en/press-room/20260706IPR46318/',
+    key: 'ep0907',
+  },
+  { href: 'https://howtheyvote.eu/votes/195775', key: 'rollcalls' },
+  {
+    href: 'https://www.consilium.europa.eu/en/press/press-releases/2026/07/02/council-moves-to-reinstate-interim-measure-to-combat-child-sexual-abuse-online/',
+    key: 'council0207',
+  },
+  {
+    href: 'https://www.europarl.europa.eu/news/en/press-room/20260325IPR39207/child-sexual-abuse-online-voluntary-detection-measures-will-not-be-extended',
+    key: 'ep2603',
+  },
+  {
+    href: 'https://www.edps.europa.eu/system/files/2026-02/26-02-16_opinion-extending-application-regulation-2021-1232_en.pdf',
+    key: 'edps',
+  },
+  { href: 'https://eur-lex.europa.eu/eli/reg/2021/1232/oj', key: 'reg1232' },
+  { href: 'https://fightchatcontrol.eu/chat-control-overview', key: 'ccOverview' },
+  { href: 'https://proton.me/blog/why-client-side-scanning-isnt-the-answer', key: 'protonCss' },
+  {
+    href: 'https://values.snap.com/news/joint-statement-eu-eprivacy-derogation',
+    key: 'jointAppeal',
+  },
+  { href: 'https://therecord.media/big-tech-vows-to-continue-csam-scanning', key: 'bigTechScan' },
+]
+
+const act = [
+  { href: 'https://edri.org', label: 'European Digital Rights (EDRi)' },
+  { href: 'https://stopscanningme.eu', label: 'Stop Scanning Me (EDRi)' },
+  { href: 'https://fightchatcontrol.eu', label: 'Fight Chat Control' },
+  { href: 'https://signal.org/blog/', label: 'Signal · blog' },
+]
+
+const offlineHref = `/exitchatcontrol-offline${locale === 'en' ? '' : `.${locale}`}.html`
+const localeRoot = `${localePath(locale)}/`.replace('//', '/')
+---
+
+<footer class="mt-16 border-t border-rule-strong bg-surface">
+  <div class="wrap grid gap-8 py-10 sm:grid-cols-3">
+    <div>
+      <h4 class="text-sm">{t('footer.resources')}</h4>
+      <p class="text-sm leading-7">
+        {
+          resources.map((r) => (
+            <>
+              <Ext href={r.href}>{r.label}</Ext>
+              <br />
+            </>
+          ))
+        }
+      </p>
+    </div>
+    <div>
+      <h4 class="text-sm">{t('footer.sourcesLaw')}</h4>
+      <p class="text-sm leading-7">
+        {
+          sources.map((s) => (
+            <>
+              <Ext href={s.href}>{t(`footer.links.${s.key}`)}</Ext>
+              <br />
+            </>
+          ))
+        }
+      </p>
+    </div>
+    <div>
+      <h4 class="text-sm">{t('footer.act')}</h4>
+      <p class="text-sm leading-7">
+        {
+          act.map((a) => (
+            <>
+              <Ext href={a.href}>{a.label}</Ext>
+              <br />
+            </>
+          ))
+        }
+      </p>
+    </div>
+  </div>
+  <div class="wrap pb-4 text-center font-mono text-xs">
+    <Ext href="https://github.com/Aurealibe/exitchatcontrol" class="ghlink">
+      {t('footer.github')}
+    </Ext>
+    <span class="inline-block w-3"></span>
+    <a href={offlineHref} download class="ghlink">⭳ {t('footer.download')}</a>
+  </div>
+  <div class="wrap pb-8">
+    <p class="text-sm"><strong>{t('footer.proofline')}</strong></p>
+    <small class="text-dim">
+      {t('footer.disclaimer')}
+      {t('footer.factsUpdated')}
+      <a href={localeRoot} class="text-dim">exitchatcontrol.org</a>
+    </small>
+  </div>
+</footer>

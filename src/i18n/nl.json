@@ -1,0 +1,153 @@
+{
+  "site": {
+    "title": "Exit Chat Control · Word Onbestuurbaar",
+    "description": "Praktische veldgids om aan Chat Control te ontsnappen en je digitale privacy terug te winnen: versleutelde berichten, e-mail, VPN, DNS, wachtwoorden, Linux, GrapheneOS, self-hosting. Gratis, open source, zonder tracking."
+  },
+  "nav": {
+    "skip": "Naar de inhoud",
+    "toc": "Inhoud",
+    "language": "Taal",
+    "theme": "Thema",
+    "themeToggle": "Donkere modus wisselen",
+    "toTop": "Terug naar boven"
+  },
+  "banner": {
+    "reviewNote": "Automatisch vertaalde sectie, nazicht volgt."
+  },
+  "hero": {
+    "stamp": "Massasurveillance · EU · 2026",
+    "eyebrow": "Een veldgids voor digitale soevereiniteit",
+    "lede": "Chat Control wil uw privégescans lezen. Hier leest u hoe u stap voor stap weer controle krijgt over uw gesprekken, uw gegevens en uw hulpmiddelen, van beginner tot klokkenluider.",
+    "p1": "Burger",
+    "p2": "Pseudoniem account",
+    "p3": "Klokkenluider"
+  },
+  "status": {
+    "label": "Laatste nieuws · 9 juli 2026",
+    "headline": "Het Europees Parlement liet Chat Control door.",
+    "body": "De motie tot verwerping faalde: 314 europarlementariërs stemden tegen de tekst, 276 voor, 17 onthoudingen. Er waren er 361 nodig om hem te blokkeren. De meerderheid wilde verwerpen; de procedure begroef het. Eén dam werd eruit gesleept: end-to-end versleutelde berichtendiensten zijn van het scannen uitgesloten (amendementen aangenomen met 369 en 362 stemmen). De tekst ligt nu op het bureau van de Raad: één handtekening vóór oktober, en het \"vrijwillige\" scannen van je berichten is toegestaan tot 3 april 2028. Parallel keert Chat Control 2.0 (CSAR), verplicht scannen tot in versleutelde berichtendiensten, in september terug naar de onderhandelingstafel. De dreiging is niet geweken; ze nestelt zich.",
+    "cta": "Het venster om je opnieuw uit te rusten is nú, zolang de keuze nog aan jou is.",
+    "sourceEp": "Persbericht van het Parlement, 9 juli 2026",
+    "sourceVotes": "officiële stemuitslagen"
+  },
+  "noscript": {
+    "notice": "JavaScript staat uit: goed instinct. De volledige gids werkt zonder: alleen het thema, de filters en de checklist gebruiken scripts."
+  },
+  "footer": {
+    "resources": "Hulpbronnen",
+    "sourcesLaw": "Bronnen · de wet",
+    "act": "In actie komen",
+    "github": "Open source op GitHub",
+    "download": "Download de gids (1 bestand)",
+    "proofline": "Nul trackers, nul cookies, nul externe verzoeken. Alles (lettertypen, iconen, stijlen) is ingebed. Controleer het: open de netwerkinspector, herlaad. Er vertrekt niets naar derden.",
+    "disclaimer": "Deze gids is een informatiedocument over privacybescherming en de verdediging van versleuteling. Hij adviseert geen enkele illegale activiteit. Volg altijd het wetgevende nieuws: de situatie verandert snel.",
+    "factsUpdated": "Feiten laatst bijgewerkt: 10 juli 2026.",
+    "links": {
+      "council0207": "Raad van de EU · standpunt in eerste lezing van 2 juli 2026",
+      "ep2603": "Parlement · verwerping van 26 maart 2026",
+      "ep0907": "Parlement · amendementen van 9 juli 2026 (E2EE uitgesloten)",
+      "rollcalls": "Officiële stemuitslagen · 9 juli 2026",
+      "edps": "EDPS · advies van 16 februari 2026 (PDF)",
+      "reg1232": "Verordening (EU) 2021/1232",
+      "ccOverview": "Chat Control 1.0 vs 2.0",
+      "protonCss": "Proton · client-side scanning",
+      "jointAppeal": "Gezamenlijke oproep van de techreuzen (19 maart 2026)",
+      "bigTechScan": "Big Tech blijft scannen"
+    }
+  },
+  "sections2": {
+    "precedents": {
+      "eyebrow": "DEEL 23 · DE BEWIJZEN",
+      "title": "Dertig jaar precedenten",
+      "intro": "Elke generatie krijgt te horen dat de surveillance nieuw, beperkt en tijdelijk is. Gedateerd en met bronnen: hetzelfde script sinds 1993. Klik op een datum om een item te citeren.",
+      "kinds": {
+        "promise": "de belofte",
+        "creep": "de uitbreiding",
+        "struck": "teruggefloten",
+        "revealed": "onthuld"
+      }
+    },
+    "observatory": {
+      "eyebrow": "DEEL 24 · DE VERSCHUIVING, LIVE",
+      "title": "Big Brother-observatorium",
+      "intro": "Chat Control is maar één front van de vijf. Wat is aangenomen, wat op tafel ligt, wat is tegengehouden, per regio en per thema.",
+      "filterRegion": "Regio",
+      "filterTheme": "Thema",
+      "all": "Alles",
+      "regions": {
+        "eu": "EU",
+        "fr": "Frankrijk",
+        "world": "Wereld"
+      },
+      "themes": {
+        "messaging": "Berichten",
+        "identity": "Identiteit",
+        "money": "Geld",
+        "media": "Media",
+        "aibio": "AI & biometrie"
+      },
+      "statuses": {
+        "en_vigueur": "van kracht",
+        "adopte": "aangenomen",
+        "negociation": "in onderhandeling",
+        "propose": "voorgesteld",
+        "rejete": "verworpen",
+        "suspendu": "opgeschort",
+        "revele": "onthuld"
+      }
+    },
+    "allies": {
+      "eyebrow": "DEEL 25 · JE STAAT ER NIET ALLEEN VOOR",
+      "title": "Bondgenoten",
+      "intro": "De organisaties die dit gevecht voeren in rechtszalen en parlementen, en de projecten die de bewijzen bijhouden.",
+      "campaigns": "Campagnes & belangenbehartiging",
+      "chroniclers": "Documentatieprojecten"
+    },
+    "directory": {
+      "eyebrow": "DEEL 26 · HET ARSENAAL",
+      "title": "Open-source-gids",
+      "intro": "66 vrije programma's in 14 categorieën. Elk item is open source: verifieerbare code, geen goede wil nodig.",
+      "categories": {
+        "messagerie": "Berichten",
+        "email": "E-mail",
+        "navigation": "Browsen & zoeken",
+        "vpn-reseau": "VPN & netwerk",
+        "dns": "DNS",
+        "mots-de-passe": "Wachtwoorden & 2FA",
+        "stockage-photos": "Opslag, foto's & back-ups",
+        "quotidien": "Dagelijks gebruik",
+        "social": "Sociale netwerken",
+        "ia-locale-agentique": "Lokale & agentische AI",
+        "os-mobile": "Besturingssystemen",
+        "selfhost": "Zelf hosten",
+        "finance": "Financiën",
+        "opsec": "OPSEC & klokkenluiders"
+      }
+    },
+    "checklist": {
+      "eyebrow": "DEEL 27 · HET PLAN",
+      "title": "Migratiechecklist",
+      "intro": "Veertien stappen, van winst in tien minuten tot weekendprojecten. Vinkjes worden alleen in deze browser bewaard. Niets verlaat je apparaat.",
+      "progress": "{done} / {total} stappen gedaan",
+      "levels": {
+        "green": "snelle winst",
+        "yellow": "kost even tijd",
+        "red": "gevorderd"
+      }
+    }
+  },
+  "manifesto": {
+    "label": "Manifest",
+    "p1": "Van hulpmiddelen wisselen is een daad van individuele verantwoordelijkheid, eigen aan ieder van ons: zo weigert u een onwettige massasurveillance.",
+    "p2": "Versleutelen is <strong>uw privéleven beschermen</strong>. Zelf hosten is <strong>uzelf onttrekken aan de surveillance van de techbedrijven</strong>. De controle over uw hulpmiddelen terugnemen is <mark>onbestuurbaar en soeverein worden</mark>.",
+    "p3": "De strijd is politiek. Steun de organisaties die zich ertegen verzetten, zoals het initiatief {link}, en schrijf uw verkozenen aan. Dat is wat Chat Control bijna ten val bracht.",
+    "p4": "Maar omdat de oplossing waarschijnlijk noch via de stembus noch via het Europees Parlement zal komen, is het aan ieder van ons om zijn vrijheid te winnen en zijn privacy te beschermen met alle middelen die het internet biedt."
+  },
+  "share": {
+    "label": "Geef het door",
+    "share": "Deel deze gids",
+    "copy": "Link kopiëren",
+    "copied": "Link gekopieerd ✓",
+    "print": "Afdrukken / PDF"
+  }
+}

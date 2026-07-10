@@ -1,0 +1,90 @@
+---
+id: 'motsdepasse'
+part: 7
+order: 11
+title: 'Gestionnaire de mots de passe'
+---
+
+<p class="part-num">
+  PARTIE 10 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Gestionnaire de mots de passe
+
+Un mot de passe unique et fort par service : c'est la base de toute la sécurité qui suit. Arrêtez le carnet, arrêtez le même mot de passe partout.
+
+<ToolCard tool="t-bitwarden">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Le meilleur pour débuter</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un coffre-fort à mots de passe qui les mémorise, les génère et les remplit pour vous, sur tous
+    vos appareils.
+  </Fragment>
+  <Fragment slot="why">
+    Gratuit, audité, multiplateforme, et chiffré de bout en bout. Vous n'avez plus qu'un seul mot de
+    passe fort à retenir. Il est même <b>auto-hébergeable</b> (via Vaultwarden) pour ne dépendre de
+    personne.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde. C'est le point de départ de toute la sécurité : un mot de passe unique et fort
+    par service.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Créez un compte sur bitwarden.com et choisissez un mot de passe maître <b>long</b> (une
+      phrase). Ne l'oubliez jamais : il n'est pas récupérable.
+    </li>
+    <li>Installez l'extension de navigateur et l'application mobile.</li>
+    <li>
+      Au fil de vos connexions, laissez Bitwarden enregistrer puis remplacer vos anciens mots de
+      passe par des mots de passe générés.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-keepassxc">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">100% local</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un coffre-fort <b>local</b> : un fichier chiffré que vous seul détenez, sans aucun cloud ni
+    compte.
+  </Fragment>
+  <Fragment slot="why">
+    Rien ne quitte votre appareil, sauf si vous décidez de synchroniser le fichier vous-même (par
+    exemple via Cryptomator). C'est le choix des puristes qui ne veulent aucun intermédiaire.
+  </Fragment>
+  <Fragment slot="who">
+    Les profils avancés qui veulent le contrôle total et zéro dépendance en ligne.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installez KeePassXC (PC) et une application compatible sur mobile (KeePassDX sur Android,
+      Strongbox sur iOS).
+    </li>
+    <li>Créez un fichier de base de données protégé par un mot de passe maître.</li>
+    <li>Pour l'avoir sur tous vos appareils, synchronisez ce fichier via un cloud chiffré.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-protonpass">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Avec alias e-mail</span>
+    <span class="tool-tag">🇨🇭 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Le gestionnaire de mots de passe de l'écosystème Proton, avec des alias e-mail jetables
+    intégrés.
+  </Fragment>
+  <Fragment slot="why">
+    Idéal si vous êtes déjà chez Proton : un seul compte pour le mail, le cloud et les mots de
+    passe. Ses alias e-mail vous évitent de donner votre vraie adresse partout.
+  </Fragment>
+  <Fragment slot="who">Ceux qui veulent tout regrouper chez Proton.</Fragment>
+</ToolCard>

@@ -1,0 +1,51 @@
+{
+  "_machineTranslated": "2026-07-10",
+  "fight-chat-control": {
+    "role": "Burgerplatform (anoniem collectief): contacttool voor europarlementariërs, opvolging van de standpunten per lidstaat, vergelijking 1.0 vs 2.0. Bij elke stemming opnieuw gelanceerd."
+  },
+  "stop-scanning-me": {
+    "role": "Coalitie van 60+ organisaties: petitie met 200.000+ handtekeningen, open brief gegroeid van 300 naar 450 wetenschappers, gezamenlijke brief van 133 ngo's."
+  },
+  "patrick-breyer": {
+    "role": "De voormalige Piraten-europarlementariër die de term \"Chat Control\" muntte. Dé referentiekroniek van het dossier, stemming per stemming, document per document, sinds 2020."
+  },
+  "edri": {
+    "role": "Het Europese netwerk voor digitale rechten (50+ ngo's). Juridische analyse, lobbywerk in Brussel, coördinatie van campagnes."
+  },
+  "la-quadrature-du-net": {
+    "role": "Sinds 2008: procedures bij het Hof van Justitie van de EU (het bewaarplicht-arrest van 2020), de campagne Technopolice, analyse van de Franse surveillancewetten."
+  },
+  "noyb": {
+    "role": "De ngo van Max Schrems: systematische AVG-rechtszaken die twee EU-VS-doorgifteakkoorden onderuithaalden (Schrems I en II)."
+  },
+  "eff": {
+    "role": "Dertig jaar rechtszaken en tools (Jewel v. NSA, Certbot, Privacy Badger, Rayhunter) en de gids Surveillance Self-Defense."
+  },
+  "signal-foundation": {
+    "role": "Zegde toe de EU te verlaten in plaats van scanning in te bouwen. Meta/WhatsApp (okt 2025) en Threema (\"alle opties\") volgden met verzet."
+  },
+  "eff-nsa-timeline": {
+    "role": "Chronologie van de Amerikaanse surveillance 1791-2015, gebouwd op het bewijsdossier van Jewel v. NSA: elke vermelding voorzien van datum en bron. Het bewijsmodel dat onze sectie Precedenten overneemt."
+  },
+  "atlas-of-surveillance": {
+    "role": "14.900+ gedocumenteerde politie-inzetten in 6.000+ Amerikaanse jurisdicties (drones, gezichtsherkenning, IMSI-catchers…), samengesteld door 1.000+ studenten en vrijwilligers. Geografisch in plaats van chronologisch."
+  },
+  "technopolice": {
+    "role": "De campagne van La Quadrature uit 2019 die de \"Safe City\" stad per stad, bedrijf per bedrijf documenteert: aanbestedingsdossiers, participatief forum, lekkanaal."
+  },
+  "ooni": {
+    "role": "De grootste open dataset over internetcensuur: miljoenen metingen sinds 2012, 200+ landen, data onder CC-licentie en een publieke API. Censuur, in realtime bewezen."
+  },
+  "digital-violence": {
+    "role": "De interactieve kaart van het Pegasus/NSO-ecosysteem: exportvergunningen, infecties en de fysieke gevolgen voor de mensen die doelwit waren."
+  },
+  "surveillance-watch": {
+    "role": "Interactieve kaart van de spyware-industrie: wie bouwt, wie financiert, wie koopt."
+  },
+  "netblocks": {
+    "role": "Realtime-observatorium van internetafsluitingen en blokkades, land per land, incident per incident."
+  },
+  "big-brother-awards": {
+    "role": "Sinds 2000 de jaarlijkse \"prijs\" voor de ergste privacyschenders (edities in meerdere landen): een kroniek aan de hand van voorbeelden, jaar na jaar."
+  }
+}

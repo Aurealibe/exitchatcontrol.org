@@ -1,0 +1,162 @@
+---
+id: 'menace'
+part: 0
+order: 1
+title: 'Comprendre la menace'
+---
+
+<p class="part-num">PARTIE 00 · LE POURQUOI</p>
+
+## Comprendre la menace
+
+Avant de changer d'outils, il faut comprendre ce contre quoi on se protège. Sinon, on installe des applications au hasard et on se croit protégé alors qu'on ne l'est pas.
+
+### Chat Control 1.0 et 2.0, en clair
+
+« Chat Control » est le surnom donné à deux textes européens qui autorisent (ou imposeraient) le scan de vos messages privés à la recherche de contenus pédocriminels (CSAM). L'objectif affiché est légitime ; le moyen employé, le scan généralisé des communications de personnes non suspectes, revient à une surveillance de masse.
+
+<div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Chat Control 1.0</th>
+        <th>Chat Control 2.0 (CSAR)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Texte</td>
+        <td>Règlement (UE) 2021/1232, dérogation à la directive ePrivacy</td>
+        <td>Proposition COM/2022/209 (Ylva Johansson, mai 2022)</td>
+      </tr>
+      <tr>
+        <td>Nature du scan</td>
+        <td>
+          Volontaire, les plateformes <em>peuvent</em> scanner
+        </td>
+        <td>Obligatoire via « ordres de détection » et « mesures d'atténuation des risques »</td>
+      </tr>
+      <tr>
+        <td>Qui est visé</td>
+        <td>
+          Surtout services US non chiffrés : Gmail, Messenger/Instagram, Skype, Snapchat, iCloud
+          Mail, Xbox
+        </td>
+        <td>
+          <strong>Toutes</strong> les plateformes, y compris les messageries chiffrées de bout en
+          bout
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Le scan côté client : le mouchard légal
+
+Le cœur de Chat Control 2.0 est une technique appelée **scan côté client** (_client-side scanning_). L'idée : au lieu de casser le chiffrement pendant le transport, on installe un logiciel **directement sur votre téléphone** qui inspecte chaque message, photo ou lien **avant** qu'il ne soit chiffré et envoyé. Signal résume ça d'une phrase : c'est « comme un malware sur votre appareil ».
+
+<div class="box honest">
+  <span class="lab">Honnêteté technique, à lire deux fois</span>
+  <p>
+    Contre le scan côté client,{' '}
+    <strong>ni un VPN ni le chiffrement de bout en bout ne suffisent</strong> si l'application ou le
+    système d'exploitation coopère. Le scan a lieu sur l'appareil, avant chiffrement : le VPN ne
+    voit rien à protéger, et le chiffrement intervient trop tard. Ce qui protège réellement, c'est
+    de choisir des logiciels <strong>libres qui refusent d'implémenter le scan</strong>, des{' '}
+    <strong>juridictions</strong> favorables, <strong>l'auto-hébergement</strong>, et de{' '}
+    <strong>reprendre le contrôle de son appareil</strong> (un OS non piégé). Tout le reste de ce
+    guide découle de cette vérité.
+  </p>
+</div>
+
+<div class="box warn">
+  <span class="lab">Le pire : l'outil ne marche même pas</span>
+  <p>
+    On sacrifie la vie privée de tous pour une technologie qui échoue. La propre étude du Parlement
+    européen conclut qu'aucun système ne détecte ce contenu sans un taux d'erreur élevé (à cause du
+    très grand nombre de messages, un faible taux de faux positifs produit des millions de fausses
+    accusations). Les chiffres de la police irlandaise l'illustrent : sur les signalements
+    automatiques, environ 20 % seulement correspondaient à du vrai contenu, et plus de 11 % étaient
+    des faux positifs manifestes. Des travaux de référence (« Bugs in Our Pockets », 2021) montrent
+    en plus que le scan côté client, une fois installé, est inévitablement détourné vers d'autres
+    usages (terrorisme, droit d'auteur, opinions).
+  </p>
+</div>
+
+### Le prétexte : « protéger les enfants »
+
+Personne n'est contre la protection des mineurs, et c'est précisément ce qui en fait un levier si efficace. La lutte contre la pédocriminalité sert de **cheval de Troie émotionnel** : qui oserait s'y opposer ? Sous cette bannière, on fait accepter un principe qui, présenté seul, serait rejeté en bloc, l'inspection automatisée des communications privées de **centaines de millions de personnes non suspectes**. Les enfants sont le motif affiché ; la cible réelle, c'est le chiffrement et la vie privée de tous.
+
+Le plus révélateur : les entreprises qui poussent le plus fort pour ce scan sont celles dont le modèle économique **est** la surveillance. Le 19 mars 2026, un appel commun a exhorté les législateurs européens à pérenniser la détection « volontaire », signé par&nbsp;:
+
+<div class="namewall" aria-label="Google, LinkedIn, Snapchat, Microsoft, TikTok, Meta">
+  <span>Google</span>
+  <span>LinkedIn</span>
+  <span>Snapchat</span>
+  <span>Microsoft</span>
+  <span>TikTok</span>
+  <span>Meta</span>
+</div>
+
+<blockquote class="pull">
+  « Ne pas agir serait irresponsable. » L'argument des géants de la tech pour maintenir le scan des
+  messages.
+</blockquote>
+
+Ces mêmes acteurs ont d'ailleurs annoncé vouloir **continuer à scanner** les messages même après l'expiration de la base légale, le 4 avril 2026. On demande donc aux citoyens de confier l'inspection de leurs conversations intimes aux entreprises précisément connues pour aspirer et monétiser leurs données. Voilà le vrai visage de Chat Control : une **attaque contre la vie privée** emballée dans un motif que personne ne peut refuser.
+
+### Ce n'est pas « juste » de la surveillance
+
+On cherche à vous rassurer : « ce n'est que Gmail, Instagram, Snapchat, Messenger ». C'est faux, et c'est même le plus scandaleux. Trois basculements se cachent derrière cette minimisation.
+
+1. **Ce n'est pas du ciblage, c'est du ratissage.** On ne surveille pas des suspects : on installe une collecte systématique des communications de populations entières. C'est de la surveillance à l'échelle étatique, en continu.
+2. **Ce n'est plus lire, c'est pouvoir bloquer.** Un logiciel qui inspecte un message avant son envoi peut aussi **refuser de l'envoyer**. Le scan côté client crée l'infrastructure de la censure préalable : bloquer une parole avant même qu'elle existe pour son destinataire.
+3. **Une fois l'infrastructure posée, elle sert à autre chose.** Un dispositif construit « pour les enfants » devient un outil polyvalent de contrôle. Le motif change, la machine reste.
+
+<div class="box warn">
+  <span class="lab">La suite logique : l'euro numérique</span>
+  <p>
+    La même logique s'apprête à toucher votre argent. Le projet d'euro numérique de la BCE repose
+    sur une monnaie <strong>traçable</strong>, interdit aux entreprises d'en détenir, et prévoit un{' '}
+    <strong>plafond de détention</strong> : la BCE a évoqué environ 3 000 € par personne comme
+    hypothèse de travail, et la position votée en commission au Parlement européen (juin 2026)
+    confie à la Commission le soin de fixer ce plafond, révisable tous les deux ans. La BCE jure que
+    la monnaie ne sera pas « programmable », mais le plafond et la traçabilité, eux, sont bien au
+    programme. Le jour venu, entendrez-vous « tranquille, ce n'est qu'un plafond » ? C'est
+    exactement le même piège rhétorique que « ce n'est que Gmail ». La vraie question n'est jamais
+    ce qui est contrôlé aujourd'hui, mais l'infrastructure de contrôle que l'on installe pour
+    demain.
+  </p>
+</div>
+
+### À quel profil appartenez-vous ?
+
+Aucun outil n'est magique et personne n'a besoin de tout faire. Repérez votre profil : chaque section indiquera jusqu'où aller.
+
+<div class="profiles">
+  <div class="profile p1">
+    <div class="lvl lvl-1">Débutant</div>
+    <h4>🟢 Le citoyen ordinaire</h4>
+    <p>
+      Vous voulez simplement que vos conversations et votre vie privée cessent d'être scannées et
+      monétisées. Objectif : la confidentialité au quotidien, sans devenir expert.
+    </p>
+  </div>
+  <div class="profile p2">
+    <div class="lvl lvl-2">Intermédiaire</div>
+    <h4>🟡 Le compte pseudonyme</h4>
+    <p>
+      Compte d'information, page militante, créateur : vous craignez d'être déanonymisé, doxxé, ou
+      de perdre votre compte. Objectif : séparer votre identité réelle de votre identité publique.
+    </p>
+  </div>
+  <div class="profile p3">
+    <div class="lvl lvl-3">Avancé</div>
+    <h4>🔴 Le lanceur d'alerte</h4>
+    <p>
+      Journaliste, activiste, source, face à un adversaire puissant (État, employeur). Objectif :
+      anonymat fort, anti-corrélation, transmettre des documents sans se faire prendre.
+    </p>
+  </div>
+</div>

@@ -1,0 +1,123 @@
+---
+id: 'social'
+part: 8
+order: 13
+title: 'Gedecentraliseerde sociale netwerken'
+---
+
+<p class="part-num">
+  DEEL 12 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Gedecentraliseerde sociale netwerken
+
+Instagram, X en Facebook zijn van bedrijven die u profileren en u van de ene op de andere dag kunnen censureren of verwijderen. Het "fediverse" biedt netwerken die van hun gebruikers zijn.
+
+<ToolCard tool="t-mastodon">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Vervangt X / Twitter</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Het alternatief voor X/Twitter: een sociaal netwerk dat bestaat uit duizenden onafhankelijke
+    servers die met elkaar communiceren (het "fediverse").
+  </Fragment>
+  <Fragment slot="why">
+    Geen enkele eigenaar, geen algoritme dat voor u beslist, geen willekeurige ban door één bedrijf.
+    De tijdlijn is chronologisch, zonder advertenties of manipulatie.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen. Ideaal voor informatieaccounts die een aanwezigheid willen die geen enkel bedrijf kan
+    afsnijden.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Kies op joinmastodon.org een server (of "instance") die bij u past, en maak een account aan.
+    </li>
+    <li>
+      Installeer een app (de officiële, of Ivory, Tusky…) en volg accounts: u ziet het hele
+      fediverse, op welke server ze ook zitten.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nostr">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Oncensureerbaar</span>
+    <span class="tool-tag">🌍 · open protocol</span>
+  </Fragment>
+  <Fragment slot="what">
+    Geen app maar een protocol: een sociaal netwerk waarin uw identiteit een eenvoudig sleutelpaar
+    is, zoals bij Bitcoin.
+  </Fragment>
+  <Fragment slot="why">
+    Geen e-mail, geen wachtwoord, geen account dat iemand kan verwijderen. Uw berichten reizen via
+    gedecentraliseerde relays en u bezit uw publiek echt: niemand kan u blijvend verbannen. U kunt
+    zelfs fooien in Bitcoin ontvangen ("zaps") en op elk moment van app wisselen zonder uw volgers
+    te verliezen.
+  </Fragment>
+  <Fragment slot="who">
+    Informatieaccounts en makers die platformcensuur vrezen en een echt eigen aanwezigheid willen.
+  </Fragment>
+  <ol slot="install">
+    <li>Installeer een client: Damus (iPhone), Amethyst of Primal (Android), of een webversie.</li>
+    <li>
+      De app genereert uw sleutelpaar. <b>Maak een back-up van uw privésleutel (nsec)</b> zoals een
+      Bitcoin-herstelzin: op papier, nooit delen.
+    </li>
+    <li>Maak uw profiel aan, volg mensen, schakel zaps in om sats te ontvangen.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-element">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Vervangt Discord / Slack</span>
+    <span class="tool-tag">🌍 · gefedereerd · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    Communitychat, in de geest van Discord of Slack, maar dan gefedereerd en end-to-end
+    versleutelbaar. Element is de app, Matrix is het netwerk.
+  </Fragment>
+  <Fragment slot="why">
+    U kunt uw eigen server hosten (Synapse) en uw gegevens beheren. Perfect voor een collectief, een
+    redactie of een vereniging die een eigen onafhankelijke ruimte wil.
+  </Fragment>
+  <Fragment slot="who">Gemeenschappen en groepen. Zie de metadata-kanttekening hieronder.</Fragment>
+  <ol slot="install">
+    <li>
+      Installeer Element (element.io) en maak een account aan op een publieke server, of op uw eigen
+      (sectie 10).
+    </li>
+    <li>Word lid van of maak ruimtes, en schakel end-to-end-encryptie in voor privégesprekken.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-fediverse">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡</span>
+    <span class="tool-tag">Insta · YouTube · Reddit</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    De gefedereerde neven van Instagram (Pixelfed), YouTube (PeerTube) en Reddit (Lemmy).
+  </Fragment>
+  <Fragment slot="why">
+    Dezelfde logica als Mastodon: geen enkele eigenaar, geen advertentie-algoritme, geen tracking. U
+    plaatst foto's, video's of discussies zonder een profileringsmachine te voeden.
+  </Fragment>
+  <Fragment slot="who">
+    Wie Instagram, YouTube of Reddit wil verlaten zonder het formaat op te geven.
+  </Fragment>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Metadata-kanttekening</span>
+  <p>
+    Matrix versleutelt de <em>inhoud</em> goed, maar in federatie zien deelnemende servers het
+    lidmaatschap van ruimtes en de tijdstempels van berichten. Voor zeer gevoelig gebruik kiest u
+    liever SimpleX/Session of host u uw eigen server.
+  </p>
+</div>

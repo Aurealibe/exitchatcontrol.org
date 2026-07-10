@@ -1,0 +1,192 @@
+---
+id: 'boiteaoutils'
+part: 9
+order: 16
+title: 'The everyday toolbox'
+---
+
+<p class="part-num">
+  PART 15 · REPLACE THE REST · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## The everyday toolbox
+
+Google and Apple are not just email: maps, notes, calendar, photos, video calls, everything is tied to your identity. Here's how to replace each brick, one at a time, without losing convenience.
+
+<ToolCard tool="t-maps">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Replaces Google Maps</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Map and navigation apps, built on OpenStreetMap, that work offline.
+  </Fragment>
+  <Fragment slot="why">
+    Google Maps logs every trip and builds a chillingly precise location history.{' '}
+    <b>Organic Maps</b> tracks nothing and shows no ads; <b>OsmAnd</b> targets power users (hiking,
+    contour lines, detailed navigation).
+  </Fragment>
+  <Fragment slot="who">
+    Everyone. Live traffic and transit are less complete than Google's, but everyday navigation is
+    excellent.
+  </Fragment>
+  <ol slot="install">
+    <li>Install from F-Droid, the App Store or Google Play.</li>
+    <li>Download the maps of the regions you need in advance for offline use.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-notes">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Replaces Docs / Notion</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    End-to-end encrypted notes and documents, to replace Google Docs, Notion or Evernote.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Standard Notes</b> (by Proton) encrypts your notes by default. <b>Joplin</b> handles Markdown
+    notebooks with optional encryption and the sync of your choice. <b>CryptPad</b> (French) offers
+    a real-time, fully encrypted Google Docs equivalent.
+  </Fragment>
+  <Fragment slot="who">Everyone for notes; CryptPad for multi-person collaboration.</Fragment>
+  <ol slot="install">
+    <li>
+      Standard Notes / Joplin: create an account, install the app, and enable encryption (on by
+      default in Standard Notes, to switch on in Joplin).
+    </li>
+    <li>CryptPad: use cryptpad.fr or another instance, no account needed to start.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-visio">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Replaces Zoom / Meet</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Video-conferencing tools with no account or heavy install, to replace Zoom, Google Meet or
+    Teams.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Jitsi Meet</b> runs in the browser, no account, and can be self-hosted (it's also the basis
+    of Brave Talk). <b>Element Call</b> is end-to-end encrypted and federated via Matrix. For a
+    simple, fully encrypted call, <b>Signal</b> calls also do the job.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone. On a public Jitsi server, multi-party calls are transport-encrypted; end-to-end
+    encryption is optional.
+  </Fragment>
+  <ol slot="install">
+    <li>Jitsi: go to meet.jit.si, create a room name, share the link. Nothing to install.</li>
+    <li>Element Call: from the Element (Matrix) app, start a call in a room.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-photos">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Replaces Google Photos</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Two ways to keep your photos without handing them to Google or Apple.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Ente</b> is a managed, end-to-end encrypted service, with on-device recognition and search:
+    simple and safe. <b>Immich</b> is a Google Photos clone you <b>host yourself</b> (face and
+    object search included), for those comfortable running a server.
+  </Fragment>
+  <Fragment slot="who">
+    Ente for everyone; Immich for self-hosters. Note: Immich is not end-to-end encrypted, its
+    security depends on your server.
+  </Fragment>
+  <ol slot="install">
+    <li>Ente: install the app, create an account, turn on automatic backup of your camera roll.</li>
+    <li>
+      Immich: deploy it on your server (see section 10) via Docker, then connect the mobile app.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-alias">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Email aliases</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Disposable email aliases: a unique address per site, forwarding to your real inbox without ever
+    revealing it.
+  </Fragment>
+  <Fragment slot="why">
+    You stop giving out your real address everywhere. If a site is breached or spams you, you cut
+    that one alias, and you instantly know who leaked your data. <b>SimpleLogin</b> is integrated
+    with Proton; <b>addy.io</b> offers unlimited aliases on the free tier.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone, and especially pseudonymous accounts that want to compartmentalise their signups.
+  </Fragment>
+  <ol slot="install">
+    <li>Create an account, install the browser extension.</li>
+    <li>At each signup, generate a new alias instead of typing your real address.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-backups">
+  <Fragment slot="name">Encrypted backups</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A way to back up your phone and computer, encrypting the data <b>before</b> it leaves for any
+    cloud.
+  </Fragment>
+  <Fragment slot="why">
+    iCloud/Google backups are often accessible to the provider, and thus to courts.{' '}
+    <b>Cryptomator</b> encrypts your files before sending them to any cloud; <b>restic</b> makes
+    automatic encrypted backups; <b>Proton Drive</b> is end-to-end encrypted. On iPhone, enable
+    "Advanced Data Protection" to encrypt your iCloud backups.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone should encrypt their backups. Golden rule: two encrypted copies, on two media, in two
+    places.
+  </Fragment>
+  <ol slot="install">
+    <li>iPhone: Settings &gt; your name &gt; iCloud &gt; Advanced Data Protection: turn it on.</li>
+    <li>
+      PC: install Cryptomator, create a vault, put your files in it before syncing to the cloud.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-databrokers">
+  <Fragment slot="name">Erase your data (GDPR)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡</span>
+    <span class="tool-tag">Data brokers</span>
+  </Fragment>
+  <Fragment slot="what">
+    Getting your personal information removed from the "data brokers" that collect and resell it.
+  </Fragment>
+  <Fragment slot="why">
+    In Europe, the GDPR (Article 17) gives you a <b>right to erasure</b>: you can demand, for free,
+    that a company delete your data, in principle within a month. Services like <b>Incogni</b>{' '}
+    automate these requests at scale, for a fee.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want to reduce their exposure. Note: data reappears over time, and this doesn't touch
+    public records or social media. Doing it yourself is free but tedious.
+  </Fragment>
+  <ol slot="install">
+    <li>For a manual request: write to the broker citing GDPR Article 17 and ask for deletion.</li>
+    <li>
+      To automate: subscribe to a removal service and let it send the requests on your behalf.
+    </li>
+  </ol>
+</ToolCard>

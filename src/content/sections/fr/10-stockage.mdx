@@ -1,0 +1,83 @@
+---
+id: 'stockage'
+part: 6
+order: 10
+title: 'Stockage chiffré'
+---
+
+<p class="part-num">
+  PARTIE 09 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Stockage chiffré
+
+<ToolCard tool="t-protondrive">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Remplace Google Drive / iCloud</span>
+    <span class="tool-tag">🇨🇭 · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un cloud chiffré de bout en bout pour vos fichiers et vos photos, intégré à Proton.
+  </Fragment>
+  <Fragment slot="why">
+    Contrairement à Google Drive ou iCloud, Proton ne peut pas lire vos fichiers : ils sont chiffrés
+    avant de quitter votre appareil. Juridiction suisse, même compte que Proton Mail.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde, comme remplacement direct et simple du cloud de Google ou d'Apple.
+  </Fragment>
+  <ol slot="install">
+    <li>Activez Proton Drive dans votre compte Proton et installez l'application.</li>
+    <li>Activez la sauvegarde automatique de vos photos, puis désactivez celle de Google/Apple.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cryptomator">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermédiaire</span>
+    <span class="tool-tag">Chiffre avant l'envoi</span>
+    <span class="tool-tag">🇩🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un coffre qui chiffre vos fichiers <b>avant</b> de les envoyer sur n'importe quel cloud, même
+    Google Drive ou Dropbox.
+  </Fragment>
+  <Fragment slot="why">
+    L'astuce parfaite si vous devez garder un cloud existant : vous conservez le service pratique,
+    mais le fournisseur ne voit plus que du charabia chiffré. Vous gardez seul la clé.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui ne peuvent pas quitter un cloud grand public tout de suite, mais veulent protéger leurs
+    fichiers dès maintenant.
+  </Fragment>
+  <ol slot="install">
+    <li>Installez Cryptomator (PC et mobile) depuis cryptomator.org.</li>
+    <li>
+      Créez un « coffre » dans le dossier synchronisé de votre cloud, choisissez un mot de passe
+      fort.
+    </li>
+    <li>
+      Placez vos fichiers dans le coffre : ils sont chiffrés puis synchronisés automatiquement.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nc-storage">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Votre propre cloud</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Votre propre nuage (fichiers, agenda, contacts, notes) hébergé sur votre serveur.
+  </Fragment>
+  <Fragment slot="why">
+    Le degré ultime de contrôle : vos données ne quittent jamais votre matériel. Détaillé dans la
+    section 10 (Auto-hébergement).
+  </Fragment>
+  <Fragment slot="who">Les auto-hébergeurs. Voir la fiche complète en section 10.</Fragment>
+  <a slot="links" class="tool-link" href="#selfhost">
+    → Section 10
+  </a>
+</ToolCard>

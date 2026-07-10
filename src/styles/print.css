@@ -1,0 +1,62 @@
+/* Print: the guide is meant to be archived, printed, handed over.
+   Flatten chrome, force light paper, open every <details> (done by the
+   beforeprint script — CSS alone cannot open them), show link URLs. */
+@media print {
+  :root {
+    color-scheme: light;
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #f2f0e8;
+    --text: #111111;
+    --text-dim: #444444;
+    --rule: #bbbbbb;
+    --rule-strong: #888888;
+    --accent: #7a5510;
+    --accent-bright: #7a5510;
+    --on-accent: #ffffff;
+    --warn: #8a2a1d;
+    --ok: #2c5230;
+    --info: #2c4666;
+    --desk-bg: #ffffff;
+  }
+  body {
+    padding: 0;
+  }
+  .topbar,
+  .skip-link,
+  .noscript-note,
+  .filterbar,
+  .ghlink,
+  .share-row {
+    display: none !important;
+  }
+  section {
+    break-inside: avoid-page;
+    margin-block: 1.6rem;
+  }
+  .tool-card,
+  .box {
+    break-inside: avoid;
+  }
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-family: var(--font-mono);
+    font-size: 0.7em;
+    color: #555;
+    word-break: break-all;
+  }
+  a.cite::after {
+    content: '';
+  }
+  /* the printed dossier names its source on the last sheet */
+  footer::after {
+    content: 'exitchatcontrol.org — printed dossier';
+    display: block;
+    margin-top: 1.2rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid #888;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: #555;
+  }
+}

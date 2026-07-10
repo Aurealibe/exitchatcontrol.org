@@ -1,0 +1,153 @@
+{
+  "site": {
+    "title": "Exit Chat Control · Become Ungovernable",
+    "description": "A practical field guide to escape Chat Control and reclaim your digital privacy: encrypted messaging, email, VPN, DNS, passwords, Linux, GrapheneOS, self-hosting. Free, open source, no tracking."
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "toc": "Contents",
+    "language": "Language",
+    "theme": "Theme",
+    "themeToggle": "Toggle dark mode",
+    "toTop": "Back to top"
+  },
+  "banner": {
+    "reviewNote": "Machine-translated section, review pending."
+  },
+  "hero": {
+    "stamp": "Mass surveillance · EU · 2026",
+    "eyebrow": "A digital sovereignty field manual",
+    "lede": "Chat Control wants to scan your private messages. Here is how to take back control of your conversations, your data and your tools, step by step, from beginner to whistleblower.",
+    "p1": "Citizen",
+    "p2": "Pseudonymous account",
+    "p3": "Whistleblower"
+  },
+  "status": {
+    "label": "Breaking · 9 July 2026",
+    "headline": "The European Parliament let Chat Control through.",
+    "body": "The motion to reject failed: 314 MEPs voted against the text, 276 for, 17 abstentions. It took 361 to block it. The majority wanted rejection; procedure buried it. One rampart was wrenched out: end-to-end encrypted messengers are excluded from the scanning (amendments adopted with 369 and 362 votes). The text now sits on the Council's desk: one signature by October, and the \"voluntary\" scanning of your messages is authorised until 3 April 2028. In parallel, Chat Control 2.0 (CSAR), mandatory scanning even for encrypted messengers, returns to negotiation in September. The threat has not passed; it is settling in.",
+    "cta": "The window to re-equip is now, while the choice is still yours.",
+    "sourceEp": "EP press release, 9 July 2026",
+    "sourceVotes": "official roll-call results"
+  },
+  "noscript": {
+    "notice": "JavaScript is disabled: good instinct. The entire guide works without it: only the theme toggle, filters and checklist need scripts."
+  },
+  "footer": {
+    "resources": "Resources",
+    "sourcesLaw": "Sources · the law",
+    "act": "Act",
+    "github": "Open source on GitHub",
+    "download": "Download the guide (1 file)",
+    "proofline": "Zero trackers, zero cookies, zero external requests. Everything (fonts, icons, styles) is embedded. Verify it: open the network inspector, reload. Nothing leaves for a third party.",
+    "disclaimer": "This guide is an information document on privacy protection and the defence of encryption. It advises no illegal activity. Always check the legislative news: the situation moves fast.",
+    "factsUpdated": "Facts last updated: 10 July 2026.",
+    "links": {
+      "council0207": "Council of the EU · 2 July 2026 first-reading position",
+      "ep2603": "Parliament · 26 March 2026 rejection",
+      "ep0907": "Parliament · 9 July 2026 amendments (E2EE excluded)",
+      "rollcalls": "Official roll-call results · 9 July 2026",
+      "edps": "EDPS · 16 February 2026 opinion (PDF)",
+      "reg1232": "Regulation (EU) 2021/1232",
+      "ccOverview": "Chat Control 1.0 vs 2.0",
+      "protonCss": "Proton · client-side scanning",
+      "jointAppeal": "Tech giants' joint appeal (19 Mar 2026)",
+      "bigTechScan": "Big Tech vows to keep scanning"
+    }
+  },
+  "sections2": {
+    "precedents": {
+      "eyebrow": "PART 23 · THE RECEIPTS",
+      "title": "Thirty years of precedents",
+      "intro": "Every generation is told the surveillance is new, limited and temporary. Dated and sourced: the same script since 1993. Click a date to cite an entry.",
+      "kinds": {
+        "promise": "the promise",
+        "creep": "the creep",
+        "struck": "struck down",
+        "revealed": "revealed"
+      }
+    },
+    "observatory": {
+      "eyebrow": "PART 24 · THE DRIFT, LIVE",
+      "title": "Big Brother observatory",
+      "intro": "Chat Control is one front among five. What passed, what is on the table, what was pushed back, region by region, theme by theme.",
+      "filterRegion": "Region",
+      "filterTheme": "Theme",
+      "all": "All",
+      "regions": {
+        "eu": "EU",
+        "fr": "France",
+        "world": "World"
+      },
+      "themes": {
+        "messaging": "Messaging",
+        "identity": "Identity",
+        "money": "Money",
+        "media": "Media",
+        "aibio": "AI & biometrics"
+      },
+      "statuses": {
+        "en_vigueur": "in force",
+        "adopte": "adopted",
+        "negociation": "under negotiation",
+        "propose": "proposed",
+        "rejete": "rejected",
+        "suspendu": "suspended",
+        "revele": "revealed"
+      }
+    },
+    "allies": {
+      "eyebrow": "PART 25 · YOU ARE NOT ALONE",
+      "title": "Allied initiatives",
+      "intro": "The organisations fighting this in courtrooms and parliaments, and the projects keeping the receipts.",
+      "campaigns": "Campaigns & advocacy",
+      "chroniclers": "Documentation projects"
+    },
+    "directory": {
+      "eyebrow": "PART 26 · THE ARSENAL",
+      "title": "Open-source directory",
+      "intro": "66 free-software tools in 14 categories. Every entry is open source: verifiable code, no goodwill required.",
+      "categories": {
+        "messagerie": "Messaging",
+        "email": "Email",
+        "navigation": "Browsing & search",
+        "vpn-reseau": "VPN & network",
+        "dns": "DNS",
+        "mots-de-passe": "Passwords & 2FA",
+        "stockage-photos": "Storage, photos & backups",
+        "quotidien": "Everyday tools",
+        "social": "Social networks",
+        "ia-locale-agentique": "Local & agentic AI",
+        "os-mobile": "Operating systems",
+        "selfhost": "Self-hosting",
+        "finance": "Finance",
+        "opsec": "OPSEC & whistleblowing"
+      }
+    },
+    "checklist": {
+      "eyebrow": "PART 27 · THE PLAN",
+      "title": "Migration checklist",
+      "intro": "Fourteen steps, from ten-minute wins to weekend projects. Ticks are saved in this browser only. Nothing leaves your device.",
+      "progress": "{done} / {total} steps done",
+      "levels": {
+        "green": "quick win",
+        "yellow": "takes a moment",
+        "red": "advanced"
+      }
+    }
+  },
+  "manifesto": {
+    "label": "Manifesto",
+    "p1": "Changing tools is an act of individual responsibility, one that belongs to each of us: it is how you refuse an illegitimate mass surveillance.",
+    "p2": "Encrypting is <strong>protecting your private life</strong>. Self-hosting is <strong>pulling yourself out of Big Tech's surveillance</strong>. Taking back control of your tools is <mark>becoming ungovernable and sovereign</mark>.",
+    "p3": "The fight is political. Support the organisations opposing it, like the {link} initiative, and write to your representatives. That is what almost brought Chat Control down.",
+    "p4": "But since the solution will probably come neither from the ballot box nor from the European Parliament, it falls to each of us to win our freedom and protect our privacy with every tool the Internet offers."
+  },
+  "share": {
+    "label": "Pass it on",
+    "share": "Share this guide",
+    "copy": "Copy the link",
+    "copied": "Link copied ✓",
+    "print": "Print / PDF"
+  }
+}

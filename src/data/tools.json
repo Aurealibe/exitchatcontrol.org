@@ -1,0 +1,974 @@
+[
+  {
+    "id": "t-signal",
+    "name": "Signal",
+    "url": "https://signal.org",
+    "links": [
+      {
+        "label": "signal.org",
+        "href": "https://signal.org"
+      }
+    ],
+    "iconSlug": "signal",
+    "monogram": "S",
+    "color": "#3a76f0",
+    "level": 1,
+    "profiles": ["🟢", "🟡", "🔴"]
+  },
+  {
+    "id": "t-simplex",
+    "name": "SimpleX Chat",
+    "url": "https://simplex.chat",
+    "links": [
+      {
+        "label": "simplex.chat",
+        "href": "https://simplex.chat"
+      }
+    ],
+    "iconSlug": "simplex",
+    "monogram": "SX",
+    "color": "#1e63d0",
+    "level": 2,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-session",
+    "name": "Session",
+    "url": "https://getsession.org",
+    "links": [
+      {
+        "label": "getsession.org",
+        "href": "https://getsession.org"
+      }
+    ],
+    "iconSlug": "session",
+    "monogram": "Se",
+    "color": "#178a5a",
+    "level": 2,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-briar",
+    "name": "Briar",
+    "url": "https://briarproject.org",
+    "links": [
+      {
+        "label": "briarproject.org",
+        "href": "https://briarproject.org"
+      }
+    ],
+    "iconSlug": null,
+    "monogram": "Br",
+    "color": "#c1272d",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-bitchat",
+    "name": "Bitchat",
+    "url": "https://bitchat.free",
+    "links": [
+      {
+        "label": "bitchat",
+        "href": "https://bitchat.free"
+      }
+    ],
+    "iconSlug": null,
+    "monogram": "bit",
+    "color": "#e8871e",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-molly",
+    "name": "Molly",
+    "url": "https://molly.im",
+    "links": [
+      {
+        "label": "molly.im",
+        "href": "https://molly.im"
+      }
+    ],
+    "iconSlug": null,
+    "monogram": "M",
+    "color": "#6d4bb3",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-protonmail",
+    "name": "Proton Mail",
+    "url": "https://proton.me/mail",
+    "links": [
+      {
+        "label": "proton.me/mail",
+        "href": "https://proton.me/mail"
+      }
+    ],
+    "iconSlug": "protonmail",
+    "monogram": "Pm",
+    "color": "#6d4aff",
+    "level": 1,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-tuta",
+    "name": "Tuta",
+    "url": "https://tuta.com",
+    "links": [
+      {
+        "label": "tuta.com",
+        "href": "https://tuta.com"
+      }
+    ],
+    "iconSlug": "tuta",
+    "monogram": "Tu",
+    "color": "#b01e2e",
+    "level": 1,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-mailbox",
+    "name": "mailbox.org · Posteo",
+    "url": "https://mailbox.org",
+    "links": [
+      {
+        "label": "mailbox.org",
+        "href": "https://mailbox.org"
+      },
+      {
+        "label": "posteo.de",
+        "href": "https://posteo.de"
+      }
+    ],
+    "iconSlug": null,
+    "monogram": "mx",
+    "color": "#2470d4",
+    "level": 1,
+    "profiles": ["🟢"]
+  },
+  {
+    "id": "t-mullvadbrowser",
+    "name": "Mullvad Browser",
+    "url": "https://mullvad.net/browser",
+    "links": [
+      {
+        "label": "mullvad.net/browser",
+        "href": "https://mullvad.net/browser"
+      }
+    ],
+    "iconSlug": "mullvad",
+    "monogram": "Mb",
+    "color": "#2b4b8f",
+    "level": null,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-firefox",
+    "name": "Firefox (hardened)",
+    "url": "https://www.mozilla.org/firefox",
+    "links": [
+      {
+        "label": "mozilla.org/firefox",
+        "href": "https://www.mozilla.org/firefox"
+      }
+    ],
+    "iconSlug": "firefoxbrowser",
+    "monogram": "Fx",
+    "color": "#e66000",
+    "level": 1,
+    "profiles": ["🟢"]
+  },
+  {
+    "id": "t-brave",
+    "name": "Brave",
+    "url": "https://brave.com",
+    "links": [
+      {
+        "label": "brave.com",
+        "href": "https://brave.com"
+      }
+    ],
+    "iconSlug": "brave",
+    "monogram": "Bv",
+    "color": "#fb542b",
+    "level": 1,
+    "profiles": ["🟢"]
+  },
+  {
+    "id": "t-ublock",
+    "name": "uBlock Origin",
+    "url": "https://ublockorigin.com",
+    "links": [
+      {
+        "label": "ublockorigin.com",
+        "href": "https://ublockorigin.com"
+      }
+    ],
+    "iconSlug": "ublockorigin",
+    "monogram": "uB",
+    "color": "#7a0d0d",
+    "level": 1,
+    "profiles": ["🟢"]
+  },
+  {
+    "id": "t-search",
+    "name": "DuckDuckGo · Brave Search · SearXNG",
+    "url": "https://duckduckgo.com",
+    "links": [
+      {
+        "label": "duckduckgo.com",
+        "href": "https://duckduckgo.com"
+      },
+      {
+        "label": "search.brave.com",
+        "href": "https://search.brave.com"
+      },
+      {
+        "label": "searx.space",
+        "href": "https://searx.space"
+      }
+    ],
+    "iconSlug": "duckduckgo",
+    "monogram": "🔎",
+    "color": "#de5833",
+    "level": null,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-quad9",
+    "name": "Quad9",
+    "url": "https://quad9.net",
+    "links": [
+      {
+        "label": "quad9.net",
+        "href": "https://quad9.net"
+      }
+    ],
+    "iconSlug": "quad9",
+    "monogram": "9",
+    "color": "#1a5fb4",
+    "level": 1,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-mullvaddns",
+    "name": "Mullvad DNS · NextDNS",
+    "url": "https://mullvad.net/help/dns-over-https-and-dns-over-tls",
+    "links": [
+      {
+        "label": "mullvad.net/dns",
+        "href": "https://mullvad.net/help/dns-over-https-and-dns-over-tls"
+      },
+      {
+        "label": "nextdns.io",
+        "href": "https://nextdns.io"
+      }
+    ],
+    "iconSlug": "mullvad",
+    "monogram": "DNS",
+    "color": "#2b4b8f",
+    "level": 2,
+    "profiles": ["🟡"]
+  },
+  {
+    "id": "t-cloudflare",
+    "name": "Cloudflare 1.1.1.1 (with nuance)",
+    "url": "https://one.one.one.one",
+    "links": [
+      {
+        "label": "1.1.1.1",
+        "href": "https://one.one.one.one"
+      }
+    ],
+    "iconSlug": "cloudflare",
+    "monogram": "CF",
+    "color": "#f38020",
+    "level": 1,
+    "profiles": ["🟢"]
+  },
+  {
+    "id": "t-pihole",
+    "name": "Pi-hole · AdGuard Home",
+    "url": "https://pi-hole.net",
+    "links": [
+      {
+        "label": "pi-hole.net",
+        "href": "https://pi-hole.net"
+      },
+      {
+        "label": "adguard home",
+        "href": "https://adguard.com/adguard-home"
+      }
+    ],
+    "iconSlug": "pihole",
+    "monogram": "π",
+    "color": "#96060c",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-mullvad",
+    "name": "Mullvad VPN",
+    "url": "https://mullvad.net",
+    "links": [
+      {
+        "label": "mullvad.net",
+        "href": "https://mullvad.net"
+      }
+    ],
+    "iconSlug": "mullvad",
+    "monogram": "Mv",
+    "color": "#2b4b8f",
+    "level": null,
+    "profiles": ["🟢", "🟡", "🔴"]
+  },
+  {
+    "id": "t-protonvpn",
+    "name": "Proton VPN",
+    "url": "https://protonvpn.com",
+    "links": [
+      {
+        "label": "protonvpn.com",
+        "href": "https://protonvpn.com"
+      }
+    ],
+    "iconSlug": "protonvpn",
+    "monogram": "Pv",
+    "color": "#6d4aff",
+    "level": 1,
+    "profiles": ["🟢"]
+  },
+  {
+    "id": "t-ivpn",
+    "name": "IVPN",
+    "url": "https://www.ivpn.net",
+    "links": [
+      {
+        "label": "ivpn.net",
+        "href": "https://www.ivpn.net"
+      }
+    ],
+    "iconSlug": null,
+    "monogram": "iv",
+    "color": "#3b5bdb",
+    "level": null,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-protondrive",
+    "name": "Proton Drive",
+    "url": "https://proton.me/drive",
+    "links": [
+      {
+        "label": "proton.me/drive",
+        "href": "https://proton.me/drive"
+      }
+    ],
+    "iconSlug": "protondrive",
+    "monogram": "Pd",
+    "color": "#6d4aff",
+    "level": 1,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-cryptomator",
+    "name": "Cryptomator",
+    "url": "https://cryptomator.org",
+    "links": [
+      {
+        "label": "cryptomator.org",
+        "href": "https://cryptomator.org"
+      }
+    ],
+    "iconSlug": "cryptomator",
+    "monogram": "Cy",
+    "color": "#26a69a",
+    "level": 2,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-nc-storage",
+    "name": "Nextcloud",
+    "url": "https://nextcloud.com",
+    "links": [
+      {
+        "label": "nextcloud.com",
+        "href": "https://nextcloud.com"
+      }
+    ],
+    "iconSlug": "nextcloud",
+    "monogram": "Nc",
+    "color": "#0082c9",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-bitwarden",
+    "name": "Bitwarden",
+    "url": "https://bitwarden.com",
+    "links": [
+      {
+        "label": "bitwarden.com",
+        "href": "https://bitwarden.com"
+      }
+    ],
+    "iconSlug": "bitwarden",
+    "monogram": "Bw",
+    "color": "#175ddc",
+    "level": 1,
+    "profiles": ["🟢", "🟡", "🔴"]
+  },
+  {
+    "id": "t-keepassxc",
+    "name": "KeePassXC",
+    "url": "https://keepassxc.org",
+    "links": [
+      {
+        "label": "keepassxc.org",
+        "href": "https://keepassxc.org"
+      }
+    ],
+    "iconSlug": "keepassxc",
+    "monogram": "Kp",
+    "color": "#2c6b9e",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-protonpass",
+    "name": "Proton Pass",
+    "url": "https://proton.me/pass",
+    "links": [
+      {
+        "label": "proton.me/pass",
+        "href": "https://proton.me/pass"
+      }
+    ],
+    "iconSlug": null,
+    "monogram": "Pp",
+    "color": "#6d4aff",
+    "level": 1,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-yubikey",
+    "name": "YubiKey · Nitrokey",
+    "url": "https://www.yubico.com",
+    "links": [
+      {
+        "label": "yubico.com",
+        "href": "https://www.yubico.com"
+      },
+      {
+        "label": "nitrokey.com",
+        "href": "https://www.nitrokey.com"
+      }
+    ],
+    "iconSlug": "yubico",
+    "monogram": "Yk",
+    "color": "#84bd00",
+    "level": null,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-aegis",
+    "name": "Aegis · Ente Auth",
+    "url": "https://getaegis.app",
+    "links": [
+      {
+        "label": "getaegis.app",
+        "href": "https://getaegis.app"
+      },
+      {
+        "label": "ente.io/auth",
+        "href": "https://ente.io/auth"
+      }
+    ],
+    "iconSlug": "aegisauthenticator",
+    "monogram": "Ae",
+    "color": "#2c5c9c",
+    "level": 1,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-mastodon",
+    "name": "Mastodon",
+    "url": "https://joinmastodon.org",
+    "links": [
+      {
+        "label": "joinmastodon.org",
+        "href": "https://joinmastodon.org"
+      }
+    ],
+    "iconSlug": "mastodon",
+    "monogram": "Ma",
+    "color": "#6364ff",
+    "level": 1,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-nostr",
+    "name": "Nostr",
+    "url": "https://nostr.com",
+    "links": [
+      {
+        "label": "nostr.com",
+        "href": "https://nostr.com"
+      }
+    ],
+    "iconSlug": null,
+    "monogram": "No",
+    "color": "#8e30eb",
+    "level": null,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-element",
+    "name": "Matrix / Element",
+    "url": "https://element.io",
+    "links": [
+      {
+        "label": "element.io",
+        "href": "https://element.io"
+      }
+    ],
+    "iconSlug": "element",
+    "monogram": "El",
+    "color": "#0dbd8b",
+    "level": null,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-fediverse",
+    "name": "Pixelfed · PeerTube · Lemmy",
+    "url": "https://pixelfed.org",
+    "links": [
+      {
+        "label": "pixelfed.org",
+        "href": "https://pixelfed.org"
+      },
+      {
+        "label": "peertube",
+        "href": "https://joinpeertube.org"
+      },
+      {
+        "label": "lemmy",
+        "href": "https://join-lemmy.org"
+      }
+    ],
+    "iconSlug": "pixelfed",
+    "monogram": "Pi",
+    "color": "#ea580c",
+    "level": null,
+    "profiles": ["🟡"]
+  },
+  {
+    "id": "t-bitcoin",
+    "name": "Bitcoin (self-custody)",
+    "url": "https://bitcoin.org",
+    "links": [
+      {
+        "label": "bitcoin.org",
+        "href": "https://bitcoin.org"
+      }
+    ],
+    "iconSlug": "bitcoin",
+    "monogram": "₿",
+    "color": "#f7931a",
+    "level": null,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-monero",
+    "name": "Monero (XMR)",
+    "url": "https://www.getmonero.org",
+    "links": [
+      {
+        "label": "getmonero.org",
+        "href": "https://www.getmonero.org"
+      }
+    ],
+    "iconSlug": "monero",
+    "monogram": "ɱ",
+    "color": "#ff6600",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-localai",
+    "name": "Ollama · LM Studio · Jan · GPT4All",
+    "url": "https://lmstudio.ai",
+    "links": [
+      {
+        "label": "lmstudio.ai",
+        "href": "https://lmstudio.ai"
+      },
+      {
+        "label": "jan.ai",
+        "href": "https://jan.ai"
+      },
+      {
+        "label": "ollama.com",
+        "href": "https://ollama.com"
+      }
+    ],
+    "iconSlug": "ollama",
+    "monogram": "Ai",
+    "color": "#111111",
+    "level": null,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-cloudai",
+    "name": "Duck.ai · Lumo (Proton)",
+    "url": "https://duck.ai",
+    "links": [
+      {
+        "label": "duck.ai",
+        "href": "https://duck.ai"
+      },
+      {
+        "label": "lumo",
+        "href": "https://lumo.proton.me"
+      }
+    ],
+    "iconSlug": "duckduckgo",
+    "monogram": "☁",
+    "color": "#de5833",
+    "level": null,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-maps",
+    "name": "Organic Maps · OsmAnd",
+    "url": "https://organicmaps.app",
+    "links": [
+      {
+        "label": "organicmaps.app",
+        "href": "https://organicmaps.app"
+      },
+      {
+        "label": "osmand.net",
+        "href": "https://osmand.net"
+      }
+    ],
+    "iconSlug": "openstreetmap",
+    "monogram": "Om",
+    "color": "#0a7d33",
+    "level": 1,
+    "profiles": ["🟢"]
+  },
+  {
+    "id": "t-notes",
+    "name": "Standard Notes · Joplin · CryptPad",
+    "url": "https://standardnotes.com",
+    "links": [
+      {
+        "label": "standardnotes.com",
+        "href": "https://standardnotes.com"
+      },
+      {
+        "label": "joplinapp.org",
+        "href": "https://joplinapp.org"
+      },
+      {
+        "label": "cryptpad.org",
+        "href": "https://cryptpad.org"
+      }
+    ],
+    "iconSlug": null,
+    "monogram": "No",
+    "color": "#2e7d6b",
+    "level": null,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-visio",
+    "name": "Jitsi Meet · Element Call",
+    "url": "https://jitsi.org",
+    "links": [
+      {
+        "label": "jitsi.org",
+        "href": "https://jitsi.org"
+      },
+      {
+        "label": "element.io/element-call",
+        "href": "https://element.io/element-call"
+      }
+    ],
+    "iconSlug": "jitsi",
+    "monogram": "Vi",
+    "color": "#1d6fb8",
+    "level": null,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-photos",
+    "name": "Ente · Immich",
+    "url": "https://ente.io",
+    "links": [
+      {
+        "label": "ente.io",
+        "href": "https://ente.io"
+      },
+      {
+        "label": "immich.app",
+        "href": "https://immich.app"
+      }
+    ],
+    "iconSlug": "immich",
+    "monogram": "Ph",
+    "color": "#7b3fbf",
+    "level": null,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-alias",
+    "name": "SimpleLogin · addy.io",
+    "url": "https://simplelogin.io",
+    "links": [
+      {
+        "label": "simplelogin.io",
+        "href": "https://simplelogin.io"
+      },
+      {
+        "label": "addy.io",
+        "href": "https://addy.io"
+      }
+    ],
+    "iconSlug": "simplelogin",
+    "monogram": "@",
+    "color": "#c0392b",
+    "level": null,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-backups",
+    "name": "Encrypted backups",
+    "url": "https://cryptomator.org",
+    "links": [
+      {
+        "label": "cryptomator.org",
+        "href": "https://cryptomator.org"
+      },
+      {
+        "label": "restic.net",
+        "href": "https://restic.net"
+      }
+    ],
+    "iconSlug": "cryptomator",
+    "monogram": "Bk",
+    "color": "#5a6570",
+    "level": null,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-databrokers",
+    "name": "Erase your data (GDPR)",
+    "url": "https://www.cnil.fr",
+    "links": [
+      {
+        "label": "cnil.fr",
+        "href": "https://www.cnil.fr"
+      },
+      {
+        "label": "incogni.com",
+        "href": "https://incogni.com"
+      }
+    ],
+    "iconSlug": null,
+    "monogram": "RG",
+    "color": "#b8860b",
+    "level": null,
+    "profiles": ["🟡"]
+  },
+  {
+    "id": "t-yunohost",
+    "name": "YunoHost · Umbrel · Start9",
+    "url": "https://yunohost.org",
+    "links": [
+      {
+        "label": "yunohost.org",
+        "href": "https://yunohost.org"
+      },
+      {
+        "label": "umbrel.com",
+        "href": "https://umbrel.com"
+      },
+      {
+        "label": "start9.com",
+        "href": "https://start9.com"
+      }
+    ],
+    "iconSlug": null,
+    "monogram": "Yh",
+    "color": "#e29100",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-nextcloud",
+    "name": "Nextcloud",
+    "url": "https://nextcloud.com",
+    "links": [
+      {
+        "label": "nextcloud.com",
+        "href": "https://nextcloud.com"
+      }
+    ],
+    "iconSlug": "nextcloud",
+    "monogram": "Nc",
+    "color": "#0082c9",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-synapse",
+    "name": "Matrix Synapse",
+    "url": "https://element.io/server",
+    "links": [
+      {
+        "label": "element.io/server",
+        "href": "https://element.io/server"
+      }
+    ],
+    "iconSlug": "matrix",
+    "monogram": "Mx",
+    "color": "#0dbd8b",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-tailscale",
+    "name": "Tailscale · Headscale · WireGuard",
+    "url": "https://tailscale.com",
+    "links": [
+      {
+        "label": "tailscale.com",
+        "href": "https://tailscale.com"
+      },
+      {
+        "label": "headscale.net",
+        "href": "https://headscale.net"
+      }
+    ],
+    "iconSlug": "tailscale",
+    "monogram": "Ts",
+    "color": "#242424",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-website",
+    "name": "Your own website",
+    "url": "https://astro.build",
+    "links": [
+      {
+        "label": "astro.build",
+        "href": "https://astro.build"
+      },
+      {
+        "label": "ghost.org",
+        "href": "https://ghost.org"
+      }
+    ],
+    "iconSlug": null,
+    "monogram": "www",
+    "color": "#7a4ddb",
+    "level": null,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-tor",
+    "name": "Tor Browser",
+    "url": "https://www.torproject.org",
+    "links": [
+      {
+        "label": "torproject.org",
+        "href": "https://www.torproject.org"
+      }
+    ],
+    "iconSlug": "torbrowser",
+    "monogram": "Tor",
+    "color": "#7d4698",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-grapheneos",
+    "name": "GrapheneOS",
+    "url": "https://grapheneos.org",
+    "links": [
+      {
+        "label": "grapheneos.org",
+        "href": "https://grapheneos.org"
+      }
+    ],
+    "iconSlug": "grapheneos",
+    "monogram": "Gr",
+    "color": "#1f8a70",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-linux",
+    "name": "Linux (on desktop)",
+    "url": "https://distrochooser.de/fr",
+    "links": [
+      {
+        "label": "distrochooser.de/fr",
+        "href": "https://distrochooser.de/fr"
+      },
+      {
+        "label": "distrosea.com",
+        "href": "https://distrosea.com"
+      },
+      {
+        "label": "linuxmint.com",
+        "href": "https://linuxmint.com"
+      }
+    ],
+    "iconSlug": "linux",
+    "monogram": "🐧",
+    "color": "#2b2b2b",
+    "level": null,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-tails",
+    "name": "Tails",
+    "url": "https://tails.net",
+    "links": [
+      {
+        "label": "tails.net",
+        "href": "https://tails.net"
+      }
+    ],
+    "iconSlug": "tails",
+    "monogram": "Ta",
+    "color": "#56347c",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-qubes",
+    "name": "Qubes OS · postmarketOS",
+    "url": "https://www.qubes-os.org",
+    "links": [
+      {
+        "label": "qubes-os.org",
+        "href": "https://www.qubes-os.org"
+      },
+      {
+        "label": "postmarketos.org",
+        "href": "https://postmarketos.org"
+      }
+    ],
+    "iconSlug": "qubesos",
+    "monogram": "Qb",
+    "color": "#3874d8",
+    "level": null,
+    "profiles": ["🔴"]
+  }
+]

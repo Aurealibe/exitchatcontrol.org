@@ -1,0 +1,87 @@
+---
+id: 'ia'
+part: 9
+order: 15
+title: 'Conversational AI'
+---
+
+<p class="part-num">
+  PART 14 · BLIND SPOT · THE AI MADNESS · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Conversational AI
+
+While we fight to encrypt our messages, hundreds of millions of people pour their most intimate thoughts into ChatGPT, Gemini or Copilot, on US servers. This is the blind spot of the whole story. Sheer madness.
+
+What you type into a cloud AI is a **written, timestamped, stored confession**. Worse than a message: you spill your anxieties, your health, your finances, your work secrets, often more honestly than to a friend. And unlike an encrypted messenger, it's all readable in plaintext on the server.
+
+<div class="box warn">
+  <span class="lab">What the facts say (2025-2026)</span>
+  <p>
+    Consumer tiers <strong>train on your data by default</strong>. In January 2026, a US judge
+    ordered OpenAI to produce <strong>20 million ChatGPT conversations</strong> as evidence: the
+    affected users were neither notified nor consulted. Deleting a chat{' '}
+    <strong>does not guarantee</strong> it's gone. And in one leak, 47,000 exposed conversations
+    held emails, phone numbers and re-identifiable intimate details.
+  </p>
+</div>
+
+#### The counter: local AI
+
+<ToolCard tool="t-localai">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Replaces ChatGPT</span>
+    <span class="tool-tag">🌍 · 100% local</span>
+  </Fragment>
+  <Fragment slot="what">Software to run an AI model directly on your own computer.</Fragment>
+  <Fragment slot="why">
+    Your questions never leave the device: no server, no account, no telemetry, and it works
+    offline. Quality depends on your hardware, but nothing leaks. <b>Ollama</b> and <b>LM Studio</b>{' '}
+    are the easiest; <b>Jan</b> and <b>GPT4All</b> aim for maximum privacy.
+  </Fragment>
+  <Fragment slot="who">
+    Anyone who uses AI for even slightly personal topics and doesn't want to hand them to a US
+    server.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      For a gentle start, install <b>LM Studio</b> or <b>Jan</b> (a graphical interface, like a
+      normal app).
+    </li>
+    <li>
+      Download a model offered in the app (for example Llama or Mistral), matched to your machine's
+      power.
+    </li>
+    <li>
+      Chat away: everything happens locally. Ollama is the command-line version for the more
+      technical.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cloudai">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Privacy-minded cloud</span>
+  </Fragment>
+  <Fragment slot="what">
+    Cloud AI access, but built for privacy, when a local AI isn't possible.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Duck.ai</b> (DuckDuckGo) gives anonymised access to several models. <b>Lumo</b> (Proton)
+    encrypts exchanges and doesn't train on them. Far better than consumer ChatGPT, but it's still a
+    remote server.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want cloud convenience without feeding the giants. Keep non-sensitive topics there.
+  </Fragment>
+</ToolCard>
+
+<div class="box honest">
+  <span class="lab">The simple rule</span>
+  <p>
+    Never paste into a cloud AI what you wouldn't tell a stranger who's recording: identity, health,
+    passwords, work secrets, confessions. For anything sensitive, use a local AI.
+  </p>
+</div>

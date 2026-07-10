@@ -1,0 +1,47 @@
+{
+  "name": "exitchatcontrol",
+  "private": true,
+  "version": "3.0.0",
+  "type": "module",
+  "description": "Exit Chat Control — multilingual field guide to escape Chat Control and reclaim digital privacy. Astro static build, zero tracker, zero CDN.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/build-offline.mjs && node scripts/gen-csp.mjs",
+    "preview": "astro preview",
+    "check": "astro check",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --check .",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "icons": "node scripts/gen-icons.mjs"
+  },
+  "packageManager": "pnpm@10.34.4",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^7.0.2",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.0.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@axe-core/playwright": "^4.12.1",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.61.1",
+    "@tailwindcss/vite": "^4.3.2",
+    "@types/node": "^26.1.1",
+    "cheerio": "^1.2.0",
+    "eslint": "^10.6.0",
+    "eslint-plugin-astro": "^2.1.1",
+    "globals": "^17.7.0",
+    "prettier": "^3.9.5",
+    "prettier-plugin-astro": "^0.14.1",
+    "simple-icons": "^16.25.0",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.63.0",
+    "vitest": "^4.1.10"
+  }
+}

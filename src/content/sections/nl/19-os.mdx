@@ -1,0 +1,141 @@
+---
+id: 'os'
+part: 12
+order: 19
+title: 'Vrije besturingssystemen'
+---
+
+<p class="part-num">
+  DEEL 18 · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Vrije besturingssystemen
+
+De hoeksteen. Als client-side scanning kan worden opgelegd door het besturingssysteem zelf, is de enige echte tegenzet dat besturingssysteem beheersen. Dat geldt zowel voor de telefoon (GrapheneOS) als voor de computer (Linux). Onderschat dit niet: zolang u op Windows, macOS of een Google-Android blijft, beheerst u uw machine niet echt.
+
+<ToolCard tool="t-grapheneos">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Ontgooglede mobiel</span>
+    <span class="tool-tag">Android · Pixel · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een volledig ontgooglede Android, geïnstalleerd op een Pixel-telefoon: mobiele soevereiniteit.
+  </Fragment>
+  <Fragment slot="why">
+    Het is de structurele verdediging bij uitstek tegen een besturingssysteem of app-store die u zou
+    willen scannen. Google-diensten in een optionele sandbox, <b>netwerkpermissies per app</b>,
+    geïsoleerde profielen, automatische herstart die sleutels uit het geheugen wist, een dwang-PIN
+    die de telefoon wist. Zo gerespecteerd om zijn beveiliging dat het wordt gebruikt door
+    spyware-doelen.
+  </Fragment>
+  <Fragment slot="who">
+    Blootgestelde profielen, maar ook elke burger die een Pixel wil kopen om de controle over zijn
+    telefoon terug te nemen.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Schaf een compatibele <b>Google Pixel</b>-telefoon aan (de enige ondersteunde hardware, om
+      veiligheidsredenen).
+    </li>
+    <li>
+      Ga op een computer naar <b>grapheneos.org/install</b> en volg de webinstaller (een paar
+      klikken, geen terminal nodig).
+    </li>
+    <li>
+      Installeer voor uw apps de vrije F-Droid-winkel; voeg alleen indien nodig Google Play in een
+      sandbox toe.
+    </li>
+    <li>Stel een lange wachtwoordzin in (geen 4-cijferige PIN) en leer de "Lockdown"-modus.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-linux">
+  <Fragment slot="name">Linux (op desktop)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Vervangt Windows / macOS</span>
+    <span class="tool-tag">🌍 · vrij &amp; gratis</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een vrij en gratis besturingssysteem voor uw computer, ter vervanging van Windows of macOS. Het
+    bestaat in vele smaken, "distributies" genaamd.
+  </Fragment>
+  <Fragment slot="why">
+    Het is de blinde vlek van veel mensen: ze versleutelen hun berichten, maar houden een Windows
+    die onophoudelijk telemetrie naar Microsoft streamt (wiens "Recall"-functie het scherm continu
+    probeerde te fotograferen), of een macOS die rapporteert welke apps u opent. Linux bespioneert u
+    niet, is gratis, doet oude computers herleven, en maakt u eindelijk meester van uw machine. Het
+    is eenvoudiger dan zijn reputatie: moderne distributies lijken op Windows of macOS.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen kan de overstap maken. Om te beginnen: <b>Linux Mint</b> (het dichtst bij Windows) of{' '}
+    <b>Fedora</b>; <b>Debian</b> voor stabiliteit. U hoeft niets te wissen: u kunt eerst testen en
+    daarnaast uw huidige systeem installeren.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Niet zeker welke distributie? Beantwoord de <b>distrochooser.de/fr</b>-vragenlijst, die u op
+      de juiste weg helpt op basis van uw behoeften.
+    </li>
+    <li>
+      Probeer het <b>zonder iets te installeren</b>, rechtstreeks in uw browser, op{' '}
+      <b>distrosea.com</b>.
+    </li>
+    <li>
+      Eenmaal overtuigd, download de image van de distributie en maak een opstartbare USB (met
+      Ventoy of Balena Etcher).
+    </li>
+    <li>
+      Start vanaf de USB om het systeem "live" te proberen, voer dan de installatie uit. Schakel de
+      aangeboden schijfversleuteling in.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tails">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Amnesische USB</span>
+    <span class="tool-tag">🌍 · alles via Tor</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een systeem dat opstart vanaf een USB-stick, al het verkeer via Tor leidt en bij het afsluiten{' '}
+    <b>geen spoor</b> achterlaat.
+  </Fragment>
+  <Fragment slot="why">
+    Bij het afsluiten wordt alles vergeten: het is "amnesisch". Ideaal voor gevoelig, eenmalig werk
+    op een computer die niet van u is, zonder iets achter te laten.
+  </Fragment>
+  <Fragment slot="who">
+    Klokkenluiders, journalisten, bronnen. Het referentiegereedschap voor werk met hoog risico.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Download Tails van <b>tails.net</b> en volg de wizard om de USB-stick te maken.
+    </li>
+    <li>Start de computer opnieuw op vanaf die USB. Gebruik het, en sluit af: alles verdwijnt.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-qubes">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Compartimentering</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Twee nichesystemen: Qubes compartimenteert uw pc in verzegelde virtuele machines; postmarketOS
+    draait Linux op oude telefoons.
+  </Fragment>
+  <Fragment slot="why">
+    Qubes isoleert elke activiteit (werk, bankieren, risicovol browsen) in een eigen compartiment:
+    een compromittering bereikt de rest niet. postmarketOS verlengt de levensduur van telefoons die
+    door hun fabrikant zijn afgedankt.
+  </Fragment>
+  <Fragment slot="who">Expertgebruikers met een zeer hoog dreigingsmodel.</Fragment>
+</ToolCard>
+
+#### Hard uw apparaat
+
+Zonder van besturingssysteem te wisselen wint u al veel: installeer apps via **F-Droid** (vrije winkel) of **Aurora Store**, vervang Google-diensten door **microG**, maak gescheiden profielen, knip onnodige netwerkpermissies, schakel automatische cloud-back-up en de advertentie-ID uit.

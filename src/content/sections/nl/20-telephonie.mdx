@@ -1,0 +1,46 @@
+---
+id: 'telephonie'
+part: 12
+order: 20
+title: 'Telefonie & fysiek apparaat'
+---
+
+<p class="part-num">
+  DEEL 19 · HARDWARE · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Telefonie &amp; fysiek apparaat
+
+De beste app is nutteloos als het apparaat zelf u verraadt. Hier zijn de hardwaredreigingen en de stappen die ze neutraliseren.
+
+#### Het telefoonnummer is een tracker
+
+Uw nummer verbindt uw SIM-kaart, uw apparaat (de IMEI-identifier), uw locatie en uw identiteit (de meeste landen eisen identiteitsbewijs bij aankoop van een SIM). Het is de draad die alles aan elkaar knoopt.
+
+- Gebruik **nummerloze** messengers (SimpleX, Session) voor gevoelige contacten, en geef altijd de voorkeur aan Signal boven sms.
+- Voor een gescheiden identiteit beperkt een "alleen-data"-SIMkaart of prepaid eSIM de koppeling op het verkooppunt (controleer de regels van uw land).
+
+#### IMSI-catchers &amp; het telefoonnetwerk
+
+"IMSI-catchers" (of "stingrays") zijn nep-zendmasten die telefoons dwingen verbinding te maken om hun identificatie te registreren en soms communicatie te onderscheppen, vaak door terug te schakelen naar zwak versleuteld 2G. Tegelijk maakt een oude netwerkfout (SS7) het nog steeds mogelijk sms'jes te onderscheppen en telefoons op afstand te lokaliseren: een reden te meer om sms te laten vallen.
+
+- **Schakel 2G uit** in de instellingen (mogelijk op Android en GrapheneOS) om de belangrijkste interceptievector te blokkeren.
+- Schakel op een betoging of in een gevoelig gebied de **vliegtuigmodus** in of stop de telefoon in een **Faraday-zak** (die alle signalen blokkeert). De EFF publiceert zelfs een vrij hulpmiddel, Rayhunter, om IMSI-catchers te detecteren.
+
+#### Biometrie of toegangscode?
+
+<div class="box warn">
+  <span class="lab">Een vinger kan worden afgedwongen, een code niet</span>
+  <p>
+    Uw gezicht of vinger kan op de sensor worden gedrukt terwijl u wordt vastgehouden (aan een
+    grens, tijdens een arrestatie); een wachtwoord in uw hoofd kan dat niet. Dwing vóór een
+    risicovolle situatie een terugkeer naar de toegangscode af: houd op de iPhone de zijknop en een
+    volumeknop ingedrukt (het "SOS"-scherm); gebruik op Android/GrapheneOS <b>Lockdown</b> in het
+    stroommenu, wat biometrie uitschakelt totdat de code is ingevoerd. Kies een lange wachtwoordzin,
+    geen viercijferige PIN. GrapheneOS biedt zelfs een <b>dwang-PIN</b> die de telefoon wist.
+  </p>
+</div>
+
+#### De-Microsoft, de-Apple
+
+Vergeet de computer niet: Windows streamt onophoudelijk telemetrie (en de "Recall"-functie probeerde het scherm continu te fotograferen), macOS rapporteert welke apps u opent. De echte uitweg is Linux (zie sectie 12). Zo niet, schakel dan telemetrie, advertentie-ID en "Recall" uit, en voeg een uitgaande firewall toe (zoals Little Snitch op de Mac).

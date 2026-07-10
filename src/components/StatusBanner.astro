@@ -1,0 +1,35 @@
+---
+// The legislative status banner — the legacy "Dernière minute" band look
+// (full-width strip, pulsing red dot, mono warn label), carrying the
+// VERIFIED status: every claim is primary-sourced (EP press release
+// 20260706IPR46318 + official roll-calls). When the Council answers
+// (deadline ≈ 9 Oct 2026), update THIS component's i18n keys (status.*).
+import { useT, type Locale } from '../i18n/config'
+import Ext from './Ext.astro'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+---
+
+<aside aria-label={t('status.label')} class="status">
+  <div class="wrap status-inner">
+    <span class="dot" aria-hidden="true"></span>
+    <div>
+      <b>{t('status.label')}</b>
+      <p class="status-headline">{t('status.headline')}</p>
+      <p>{t('status.body')}</p>
+      <p class="status-cta">{t('status.cta')}</p>
+      <p class="status-sources">
+        <Ext href="https://www.europarl.europa.eu/news/en/press-room/20260706IPR46318/">
+          {t('status.sourceEp')}
+        </Ext>
+        ·
+        <Ext href="https://howtheyvote.eu/votes/195775">{t('status.sourceVotes')}</Ext>
+      </p>
+    </div>
+  </div>
+</aside>

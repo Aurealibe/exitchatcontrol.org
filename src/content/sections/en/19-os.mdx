@@ -1,0 +1,138 @@
+---
+id: 'os'
+part: 12
+order: 19
+title: 'Free operating systems'
+---
+
+<p class="part-num">
+  PART 18 · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Free operating systems
+
+The keystone. If client-side scanning can be imposed by the operating system itself, the only real counter is to control that OS. That's true on the phone (GrapheneOS) and on the computer (Linux). Don't underestimate this: as long as you stay on Windows, macOS or a Google Android, you don't truly control your machine.
+
+<ToolCard tool="t-grapheneos">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">De-Googled mobile</span>
+    <span class="tool-tag">Android · Pixel · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A fully de-Googled Android, installed on a Pixel phone: mobile sovereignty.
+  </Fragment>
+  <Fragment slot="why">
+    It's the structural defence par excellence against an OS or app store that would scan you.
+    Google services in an optional sandbox, <b>per-app network permissions</b>, isolated profiles,
+    auto-reboot that purges keys from memory, a duress PIN that wipes the phone. So respected for
+    security that it's used by spyware targets.
+  </Fragment>
+  <Fragment slot="who">
+    Exposed profiles, but also any citizen willing to buy a Pixel to take back control of their
+    phone.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Get a compatible <b>Google Pixel</b> phone (it's the only supported hardware, for security
+      reasons).
+    </li>
+    <li>
+      On a computer, go to <b>grapheneos.org/install</b> and follow the web installer (a few clicks,
+      no terminal needed).
+    </li>
+    <li>
+      For your apps, install the free F-Droid store; add sandboxed Google Play only if needed.
+    </li>
+    <li>Set a long passphrase (not a 4-digit PIN) and learn the "Lockdown" mode.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-linux">
+  <Fragment slot="name">Linux (on desktop)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Replaces Windows / macOS</span>
+    <span class="tool-tag">🌍 · free</span>
+  </Fragment>
+  <Fragment slot="what">
+    A free operating system for your computer, replacing Windows or macOS. It comes in many
+    flavours, called "distributions."
+  </Fragment>
+  <Fragment slot="why">
+    It's many people's blind spot: they encrypt their messages but keep a Windows that streams
+    telemetry to Microsoft nonstop (whose "Recall" feature tried to screenshot the screen
+    continuously), or a macOS that reports the apps you launch. Linux doesn't spy on you, it's free,
+    it revives old computers, and it finally makes you master of your machine. It's easier than its
+    reputation: modern distributions look like Windows or macOS.
+  </Fragment>
+  <Fragment slot="who">
+    Anyone can make the switch. To start, <b>Linux Mint</b> (closest to Windows) or <b>Fedora</b>;{' '}
+    <b>Debian</b> for stability. No need to wipe anything: you can test first, then install
+    alongside your current system.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Not sure which distribution? Answer the <b>distrochooser.de/fr</b> quiz, which points you to
+      the right one for your needs.
+    </li>
+    <li>
+      Try it <b>without installing anything</b>, right in your browser, at <b>distrosea.com</b>.
+    </li>
+    <li>
+      Once convinced, download the distribution's image and create a bootable USB (with Ventoy or
+      Balena Etcher).
+    </li>
+    <li>
+      Boot from the USB to try the system "live," then run the install. Enable the disk encryption
+      it offers.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tails">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">Amnesic USB</span>
+    <span class="tool-tag">🌍 · all via Tor</span>
+  </Fragment>
+  <Fragment slot="what">
+    A system that boots from a USB stick, routes all traffic through Tor and leaves <b>no trace</b>{' '}
+    when shut down.
+  </Fragment>
+  <Fragment slot="why">
+    On shutdown, everything is forgotten: it's "amnesic." Ideal for sensitive, one-off work on a
+    computer that isn't yours, leaving nothing behind.
+  </Fragment>
+  <Fragment slot="who">
+    Whistleblowers, journalists, sources. The reference tool for high-risk work.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Download Tails from <b>tails.net</b> and follow the wizard to create the USB stick.
+    </li>
+    <li>Reboot the computer from that USB. Use it, then shut down: everything vanishes.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-qubes">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Compartmentalisation</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Two niche systems: Qubes compartmentalises your PC into sealed virtual machines; postmarketOS
+    runs Linux on old phones.
+  </Fragment>
+  <Fragment slot="why">
+    Qubes isolates each activity (work, banking, risky browsing) in its own compartment: a
+    compromise doesn't reach the rest. postmarketOS extends the life of phones abandoned by their
+    maker.
+  </Fragment>
+  <Fragment slot="who">Expert users with a very high threat model.</Fragment>
+</ToolCard>
+
+#### Harden your device
+
+Even without switching OS, you gain a lot: install apps via **F-Droid** (free store) or **Aurora Store**, replace Google services with **microG**, create separate profiles, cut needless network permissions, disable automatic cloud backup and the advertising ID.

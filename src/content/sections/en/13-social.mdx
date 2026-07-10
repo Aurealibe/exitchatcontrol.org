@@ -1,0 +1,122 @@
+---
+id: 'social'
+part: 8
+order: 13
+title: 'Decentralised social'
+---
+
+<p class="part-num">
+  PART 12 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Decentralised social
+
+Instagram, X and Facebook belong to companies that profile you and can censor or delete you overnight. The "fediverse" offers networks owned by their users.
+
+<ToolCard tool="t-mastodon">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Replaces X / Twitter</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    The X/Twitter alternative: a social network made of thousands of independent servers that talk
+    to each other (the "fediverse").
+  </Fragment>
+  <Fragment slot="why">
+    No single owner, no algorithm deciding for you, no arbitrary ban by one company. The feed is
+    chronological, with no ads or manipulation.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone. Ideal for information accounts that want a presence no company can cut off.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      On joinmastodon.org, choose a server (or "instance") that suits you, then create an account.
+    </li>
+    <li>
+      Install an app (the official one, or Ivory, Tusky…) and follow accounts: you see the whole
+      fediverse, whatever their server.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nostr">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Un-censorable</span>
+    <span class="tool-tag">🌍 · open protocol</span>
+  </Fragment>
+  <Fragment slot="what">
+    Not an app but a protocol: a social network where your identity is a simple key pair, like
+    Bitcoin.
+  </Fragment>
+  <Fragment slot="why">
+    No email, no password, no account anyone can delete. Your posts travel across decentralised
+    relays and you truly own your audience: no one can ban you for good. You can even receive
+    Bitcoin tips ("zaps") and switch apps anytime without losing your followers.
+  </Fragment>
+  <Fragment slot="who">
+    Information accounts and creators who fear platform censorship and want a presence truly their
+    own.
+  </Fragment>
+  <ol slot="install">
+    <li>Install a client: Damus (iPhone), Amethyst or Primal (Android), or a web version.</li>
+    <li>
+      The app generates your key pair. <b>Back up your private key (nsec)</b> like a Bitcoin seed
+      phrase: on paper, never shared.
+    </li>
+    <li>Create your profile, follow people, enable zaps to receive sats.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-element">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Replaces Discord / Slack</span>
+    <span class="tool-tag">🌍 · federated · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    Community chat, in the spirit of Discord or Slack, but federated and end-to-end encryptable.
+    Element is the app, Matrix the network.
+  </Fragment>
+  <Fragment slot="why">
+    You can host your own server (Synapse) and control your data. Perfect for a collective, a
+    newsroom or an association that wants its own independent space.
+  </Fragment>
+  <Fragment slot="who">Communities and groups. See the metadata caveat below.</Fragment>
+  <ol slot="install">
+    <li>
+      Install Element (element.io) and create an account on a public server, or on your own (section
+      10).
+    </li>
+    <li>Join or create rooms, and enable end-to-end encryption for private conversations.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-fediverse">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡</span>
+    <span class="tool-tag">Insta · YouTube · Reddit</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    The federated cousins of Instagram (Pixelfed), YouTube (PeerTube) and Reddit (Lemmy).
+  </Fragment>
+  <Fragment slot="why">
+    Same logic as Mastodon: no single owner, no ad algorithm, no tracking. You post photos, videos
+    or discussions without feeding a profiling machine.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want to leave Instagram, YouTube or Reddit without giving up the format.
+  </Fragment>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Metadata caveat</span>
+  <p>
+    Matrix encrypts <em>content</em> well, but in federation, participating servers see room
+    membership and message timing. For highly sensitive use, prefer SimpleX/Session or self-host
+    your server.
+  </p>
+</div>

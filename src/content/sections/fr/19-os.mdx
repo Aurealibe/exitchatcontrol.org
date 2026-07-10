@@ -1,0 +1,144 @@
+---
+id: 'os'
+part: 12
+order: 19
+title: "Systèmes d'exploitation libres"
+---
+
+<p class="part-num">
+  PARTIE 18 · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Systèmes d'exploitation libres
+
+La pièce maîtresse. Si le scan côté client peut être imposé par le système d'exploitation lui-même, la seule vraie parade est de contrôler cet OS. C'est vrai sur le téléphone (GrapheneOS) comme sur l'ordinateur (Linux). Ne sous-estimez pas ce point : tant que vous restez sous Windows, macOS ou un Android Google, vous ne contrôlez pas vraiment votre machine.
+
+<ToolCard tool="t-grapheneos">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Mobile dégooglisé</span>
+    <span class="tool-tag">Android · Pixel · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un Android entièrement dégooglisé, installé sur un téléphone Pixel : la souveraineté sur mobile.
+  </Fragment>
+  <Fragment slot="why">
+    C'est la défense structurelle par excellence contre un OS ou un magasin d'applications qui
+    voudrait vous scanner. Services Google en bac à sable optionnel,{' '}
+    <b>permissions réseau par application</b>, profils cloisonnés, redémarrage automatique qui purge
+    les clés de la mémoire, code PIN de contrainte qui efface le téléphone. Réputé pour sa sécurité
+    au point d'être utilisé par des cibles de logiciels espions.
+  </Fragment>
+  <Fragment slot="who">
+    Profils exposés, mais aussi tout citoyen prêt à acheter un Pixel pour reprendre le contrôle de
+    son téléphone.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Procurez-vous un téléphone <b>Google Pixel</b> compatible (c'est le seul matériel supporté,
+      pour des raisons de sécurité).
+    </li>
+    <li>
+      Sur un ordinateur, allez sur <b>grapheneos.org/install</b> et suivez l'installeur web
+      (quelques clics, aucun terminal requis).
+    </li>
+    <li>
+      Pour vos applications, installez le magasin libre F-Droid ; ajoutez Google Play en bac à sable
+      seulement si nécessaire.
+    </li>
+    <li>
+      Réglez un long mot de passe (pas un code à 4 chiffres) et découvrez le mode « Lockdown ».
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-linux">
+  <Fragment slot="name">Linux (sur ordinateur)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Remplace Windows / macOS</span>
+    <span class="tool-tag">🌍 · libre &amp; gratuit</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un système d'exploitation libre et gratuit pour votre ordinateur, en remplacement de Windows ou
+    de macOS. Il en existe de nombreuses variantes, appelées « distributions ».
+  </Fragment>
+  <Fragment slot="why">
+    C'est le point aveugle de beaucoup de gens : ils chiffrent leurs messages mais gardent un
+    Windows qui transmet en continu de la télémétrie à Microsoft (et dont la fonction « Recall » a
+    voulu photographier l'écran en permanence), ou un macOS qui signale les applications que vous
+    lancez. Linux, lui, ne vous espionne pas, il est gratuit, il ressuscite les vieux ordinateurs et
+    il vous rend enfin maître de votre machine. C'est plus facile que sa réputation : les
+    distributions modernes ressemblent à Windows ou macOS.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde peut franchir le pas. Pour débuter, <b>Linux Mint</b> (le plus proche de Windows)
+    ou <b>Fedora</b> ; <b>Debian</b> pour la stabilité. Pas besoin de tout casser : on peut d'abord
+    tester, puis installer à côté de son système actuel.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Pas sûr de la distribution ? Répondez au questionnaire <b>distrochooser.de/fr</b>, qui vous
+      oriente selon vos besoins.
+    </li>
+    <li>
+      Testez-la <b>sans rien installer</b> directement dans votre navigateur sur{' '}
+      <b>distrosea.com</b>.
+    </li>
+    <li>
+      Une fois convaincu, téléchargez l'image de la distribution et créez une clé USB de démarrage
+      (avec Ventoy ou Balena Etcher).
+    </li>
+    <li>
+      Démarrez sur la clé pour essayer le système « en live », puis lancez l'installation. Activez
+      le chiffrement du disque proposé.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tails">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Clé USB amnésique</span>
+    <span class="tool-tag">🌍 · tout via Tor</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un système qui démarre depuis une clé USB, fait passer tout le trafic par Tor et ne laisse{' '}
+    <b>aucune trace</b> à l'extinction.
+  </Fragment>
+  <Fragment slot="why">
+    À l'arrêt, tout est oublié : c'est « amnésique ». Idéal pour un travail sensible et ponctuel sur
+    un ordinateur qui n'est pas le vôtre, sans rien y laisser.
+  </Fragment>
+  <Fragment slot="who">
+    Lanceurs d'alerte, journalistes, sources. L'outil de référence pour les missions à haut risque.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Téléchargez Tails sur <b>tails.net</b> et suivez l'assistant pour créer la clé USB.
+    </li>
+    <li>Redémarrez l'ordinateur sur cette clé. Utilisez-le, puis éteignez : tout disparaît.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-qubes">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Cloisonnement</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Deux systèmes de niche : Qubes cloisonne votre PC en machines virtuelles étanches ; postmarketOS
+    fait tourner du Linux sur d'anciens téléphones.
+  </Fragment>
+  <Fragment slot="why">
+    Qubes isole chaque activité (travail, banque, navigation risquée) dans son propre compartiment :
+    une compromission n'atteint pas le reste. postmarketOS prolonge la vie de téléphones abandonnés
+    par leur constructeur.
+  </Fragment>
+  <Fragment slot="who">Utilisateurs experts avec un modèle de menace très élevé.</Fragment>
+</ToolCard>
+
+#### Durcir l'appareil
+
+Sans changer d'OS, on gagne déjà beaucoup : installer les applications via **F-Droid** (magasin libre) ou **Aurora Store**, remplacer les services Google par **microG**, créer des profils séparés, couper les permissions réseau inutiles, désactiver la sauvegarde cloud automatique et l'identifiant publicitaire.

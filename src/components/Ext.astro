@@ -1,0 +1,16 @@
+---
+// The ONLY way to render an external link. Enforces the site's link policy:
+// every external anchor carries rel="noopener noreferrer" — no exceptions,
+// no per-link rel overrides (that's how PR #1 smuggled follow backlinks).
+interface Props {
+  href: string
+  class?: string
+}
+
+const { href, class: className } = Astro.props
+if (!href.startsWith('https://')) {
+  throw new Error(`Ext: external links must be https:// (got ${href})`)
+}
+---
+
+<a href={href} target="_blank" rel="noopener noreferrer" class={className}><slot /></a>

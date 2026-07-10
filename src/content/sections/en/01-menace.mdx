@@ -1,0 +1,159 @@
+---
+id: 'menace'
+part: 0
+order: 1
+title: 'Understand the threat'
+---
+
+<p class="part-num">PART 00 · THE WHY</p>
+
+## Understand the threat
+
+Before you change tools, understand what you are protecting against. Otherwise you install random apps and feel safe when you are not.
+
+### Chat Control 1.0 and 2.0, plainly
+
+"Chat Control" is the nickname for two EU texts that allow (or would require) scanning your private messages for child sexual abuse material (CSAM). The stated goal is legitimate; the method, blanket scanning of the communications of unsuspected people, amounts to mass surveillance.
+
+<div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Chat Control 1.0</th>
+        <th>Chat Control 2.0 (CSAR)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Text</td>
+        <td>Regulation (EU) 2021/1232, ePrivacy derogation</td>
+        <td>Proposal COM/2022/209 (Ylva Johansson, May 2022)</td>
+      </tr>
+      <tr>
+        <td>Scanning</td>
+        <td>
+          Voluntary, platforms <em>may</em> scan
+        </td>
+        <td>Mandatory via "detection orders" and "risk-mitigation measures"</td>
+      </tr>
+      <tr>
+        <td>Who</td>
+        <td>
+          Mostly unencrypted US services: Gmail, Messenger/Instagram, Skype, Snapchat, iCloud Mail,
+          Xbox
+        </td>
+        <td>
+          <strong>All</strong> platforms, including end-to-end encrypted messengers
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Client-side scanning: the legal wiretap
+
+The heart of Chat Control 2.0 is a technique called **client-side scanning**. The idea: instead of breaking encryption in transit, software is installed **directly on your phone** to inspect every message, photo or link **before** it is encrypted and sent. Signal put it in one line: it is "like malware on your device".
+
+<div class="box honest">
+  <span class="lab">Technical honesty, read twice</span>
+  <p>
+    Against client-side scanning, <strong>neither a VPN nor end-to-end encryption is enough</strong>{' '}
+    if the app or the operating system cooperates. The scan happens on the device, before
+    encryption: the VPN has nothing to protect, and encryption kicks in too late. What actually
+    protects you is choosing{' '}
+    <strong>free/open-source software that refuses to implement scanning</strong>, favourable{' '}
+    <strong>jurisdictions</strong>, <strong>self-hosting</strong>, and{' '}
+    <strong>taking back control of your device</strong> (an untampered OS). Everything else in this
+    guide follows from this truth.
+  </p>
+</div>
+
+<div class="box warn">
+  <span class="lab">Worst of all: the tool doesn't even work</span>
+  <p>
+    Everyone's privacy is sacrificed for a technology that fails. The European Parliament's own
+    study concludes no system detects this content without a high error rate (because across
+    billions of messages, even a tiny false-positive rate yields millions of false accusations).
+    Irish police figures show it: of automated reports, only about 20% were actual material, and
+    over 11% were outright false positives. Landmark research ("Bugs in Our Pockets," 2021) further
+    shows that once client-side scanning is installed, it is inevitably repurposed (terrorism,
+    copyright, opinions).
+  </p>
+</div>
+
+### The pretext: "protecting children"
+
+No one is against protecting minors, which is exactly what makes it such an effective lever. Fighting child abuse serves as an **emotional Trojan horse**: who would dare object? Under that banner, a principle is made acceptable that, on its own, would be flatly rejected, the automated inspection of the private communications of **hundreds of millions of unsuspected people**. Children are the stated motive; the real target is everyone's encryption and privacy.
+
+The tell: the companies pushing hardest for this scanning are the ones whose business model **is** surveillance. On 19 March 2026, a joint appeal urged EU lawmakers to entrench "voluntary" detection, signed by:
+
+<div class="namewall" aria-label="Google, LinkedIn, Snapchat, Microsoft, TikTok, Meta">
+  <span>Google</span>
+  <span>LinkedIn</span>
+  <span>Snapchat</span>
+  <span>Microsoft</span>
+  <span>TikTok</span>
+  <span>Meta</span>
+</div>
+
+<blockquote class="pull">
+  "Failure to do so would be irresponsible." The tech giants' argument for keeping message scanning
+  alive.
+</blockquote>
+
+Those same players even announced they would **keep scanning** messages after the legal basis lapsed on 4 April 2026. Citizens are thus asked to entrust the inspection of their intimate conversations to the very companies known for harvesting and monetising their data. This is the real face of Chat Control: an **attack on privacy** wrapped in a motive no one can refuse.
+
+### This is not "just" surveillance
+
+They try to reassure you: "it's only Gmail, Instagram, Snapchat, Messenger." That's false, and it's the most alarming part. Three shifts hide behind that downplaying.
+
+1. **It's not targeting, it's dragnet.** This doesn't watch suspects: it installs systematic collection of entire populations' communications. Surveillance at state scale, continuously.
+2. **It's no longer reading, it's the power to block.** Software that inspects a message before it's sent can also **refuse to send it**. Client-side scanning builds the infrastructure of prior censorship: blocking speech before it even reaches its recipient.
+3. **Once the infrastructure exists, it gets repurposed.** A system built "for the children" becomes a general-purpose control tool. The motive changes; the machine stays.
+
+<div class="box warn">
+  <span class="lab">The logical next step: the digital euro</span>
+  <p>
+    The same logic is about to reach your money. The ECB's digital euro rests on a{' '}
+    <strong>traceable</strong> currency, bars companies from holding any, and comes with a{' '}
+    <strong>holding cap</strong>: the ECB has floated about €3,000 per person as a working
+    assumption, and the position voted in the European Parliament's committee (June 2026) leaves the
+    cap for the Commission to set on the ECB's recommendation, reviewed every two years. The ECB
+    swears the currency won't be "programmable," but the cap and the traceability are very much on
+    the menu. When it lands, will you say "relax, it's only a cap"? That's the very same rhetorical
+    trap as "it's only Gmail." The real question is never what is controlled today, but the control
+    infrastructure being installed for tomorrow.
+  </p>
+</div>
+
+### Which profile are you?
+
+No tool is magic and nobody needs to do everything. Find your profile: each section tells you how far to go.
+
+<div class="profiles">
+  <div class="profile p1">
+    <div class="lvl lvl-1">Beginner</div>
+    <h4>🟢 The ordinary citizen</h4>
+    <p>
+      You just want your conversations and private life to stop being scanned and monetised. Goal:
+      everyday privacy, without becoming an expert.
+    </p>
+  </div>
+  <div class="profile p2">
+    <div class="lvl lvl-2">Intermediate</div>
+    <h4>🟡 The pseudonymous account</h4>
+    <p>
+      Information account, activist page, creator: you fear being deanonymised, doxxed, or losing
+      your account. Goal: separate your real identity from your public one.
+    </p>
+  </div>
+  <div class="profile p3">
+    <div class="lvl lvl-3">Advanced</div>
+    <h4>🔴 The whistleblower</h4>
+    <p>
+      Journalist, activist, source, facing a powerful adversary (state, employer). Goal: strong
+      anonymity, anti-correlation, passing documents without being caught.
+    </p>
+  </div>
+</div>

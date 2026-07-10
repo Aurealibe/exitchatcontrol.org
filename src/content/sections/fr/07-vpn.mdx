@@ -1,0 +1,146 @@
+---
+id: 'vpn'
+part: 4
+order: 7
+title: 'VPN : la vérité'
+---
+
+<p class="part-num">
+  PARTIE 06 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## VPN : la vérité
+
+Un VPN est utile, mais vendu avec beaucoup de mensonges. Voici ce qu'il protège vraiment.
+
+<div class="box warn">
+  <span class="lab">Ce qu'un VPN ne fait PAS</span>
+  <p>
+    Un VPN <strong>ne vous protège pas du scan côté client</strong> de Chat Control : celui-ci lit
+    vos messages sur votre appareil, avant le chiffrement et donc avant le VPN. Ce n'est pas non
+    plus une cape d'invisibilité : votre système et vos applications en voient plus que votre
+    fournisseur de VPN.
+  </p>
+</div>
+
+<div class="box ok">
+  <span class="lab">Ce qu'un VPN fait bien</span>
+  <p>
+    Il cache votre activité à votre <strong>fournisseur d'accès</strong> et masque votre{' '}
+    <strong>adresse IP</strong> (donc votre localisation) aux sites visités. Utile contre la
+    surveillance réseau, la géolocalisation et la censure. Une brique du puzzle, pas la solution.
+  </p>
+</div>
+
+<ToolCard tool="t-mullvad">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡🔴 Tous niveaux</span>
+    <span class="tool-tag">Sans compte · cash/Monero</span>
+    <span class="tool-tag">🇸🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un VPN qui masque votre adresse IP et chiffre votre trafic jusqu'à ses serveurs, sans jamais
+    vous demander la moindre information personnelle.
+  </Fragment>
+  <Fragment slot="why">
+    C'est l'étalon-or de la vie privée. Pas d'e-mail, pas de nom : à l'inscription, on vous attribue
+    un simple numéro de compte. Politique « no-log » auditée, prix unique et honnête (5 € par mois,
+    sans palier ni fausse promesse), et paiement possible en espèces ou en Monero. C'est précisément
+    ce qui compte le jour où un État tente de couper l'accès aux VPN : un compte impossible à relier
+    à votre identité, et un paiement que les banques ne peuvent pas bloquer.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde, du citoyen qui veut contourner une vérification d'identité au profil à haut
+    risque. C'est le VPN à recommander en priorité.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Allez sur <b>mullvad.net</b>. Si le site est bloqué dans votre pays, ouvrez-le via le
+      navigateur Tor ou son adresse <b>.onion</b>. Cliquez sur « Générer un numéro de compte » :
+      aucun e-mail ni nom n'est demandé. Notez ce numéro dans votre gestionnaire de mots de passe et
+      ne le partagez jamais, c'est votre unique clé d'accès.
+    </li>
+    <li>
+      Choisissez la durée et le mode de paiement. Le prix est fixe. Trois voies : carte bancaire (le
+      plus simple si elle n'est pas bloquée), espèces envoyées par courrier, ou cryptomonnaie.
+    </li>
+    <li>
+      <b>Paiement anonyme en crypto :</b> cliquez sur « Créer une adresse de paiement à usage unique
+      ». Mullvad affiche une adresse (Bitcoin ou Monero) et un montant exact. Envoyez ce montant
+      depuis votre portefeuille. Pour l'anonymat maximal, préférez <b>Monero</b> (confidentiel par
+      défaut) ; Bitcoin est plus simple mais traçable. Voir la section 09 pour acheter de la crypto.
+      Comptez environ 30 minutes de confirmation.
+    </li>
+    <li>
+      Téléchargez l'application sur <b>mullvad.net/download</b> (via Tor si le site est filtré) et
+      installez-la. Sur mobile, passez par l'App Store, Google Play, ou l'APK officiel si
+      l'application a été retirée de votre magasin.
+    </li>
+    <li>
+      Lancez l'application, entrez votre numéro de compte, puis connectez-vous à un serveur situé{' '}
+      <b>hors de votre pays</b>, idéalement hors Union européenne (Suisse, États-Unis…). Activez le
+      « kill switch » (qui coupe Internet si le VPN tombe) et le DNS de Mullvad.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-protonvpn">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Offre gratuite honnête</span>
+    <span class="tool-tag">🇨🇭 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Le VPN de l'écosystème Proton, avec une véritable offre gratuite (rare et honnête).
+  </Fragment>
+  <Fragment slot="why">
+    Basé en Suisse, audité, open-source. Son offre gratuite est sans publicité, sans revente de
+    données et sans limite de volume (le nombre de pays est simplement réduit). C'est la porte
+    d'entrée idéale pour un débutant, surtout si vous utilisez déjà Proton Mail.
+  </Fragment>
+  <Fragment slot="who">
+    Débutants, et toute personne déjà dans l'écosystème Proton qui veut un seul compte pour tout.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Rendez-vous sur <b>protonvpn.com</b> et connectez-vous avec votre compte Proton (ou créez-en
+      un).
+    </li>
+    <li>Installez l'application (Windows, macOS, Linux, Android, iOS).</li>
+    <li>
+      Utilisez « Quick Connect » ou choisissez un pays, puis activez le kill switch et NetShield
+      (blocage des pubs et traqueurs).
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-ivpn">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Avancé</span>
+    <span class="tool-tag">Sans e-mail · no-log</span>
+    <span class="tool-tag">🇬🇮 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un petit fournisseur de VPN particulièrement rigoureux et transparent, sur le même modèle que
+    Mullvad.
+  </Fragment>
+  <Fragment slot="why">
+    Politique no-log auditée, pas d'e-mail obligatoire, paiement en crypto ou en espèces. Il propose
+    même des options anti-traçage (blocage des trackers au niveau réseau) et une inscription sans
+    aucun identifiant.
+  </Fragment>
+  <Fragment slot="who">
+    Une alternative solide à Mullvad, pour les profils pseudonymes et à haut risque qui veulent
+    diversifier.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Sur <b>ivpn.net</b>, générez un compte (un identifiant est créé pour vous, sans e-mail).
+    </li>
+    <li>Payez en cryptomonnaie ou en espèces, comme pour Mullvad.</li>
+    <li>
+      Installez l'application, connectez-vous hors UE, activez le kill switch et le protocole
+      WireGuard.
+    </li>
+  </ol>
+</ToolCard>

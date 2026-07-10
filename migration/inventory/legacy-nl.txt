@@ -1,0 +1,833 @@
+◆ EXIT CHAT CONTROL
+🇫🇷 FR
+🇳🇱 NL
+🇬🇧 EN
+◐
+Massasurveillance · EU · 2026
+Een veldgids voor digitale soevereiniteit
+Exit Chat Control_
+Chat Control wil uw privégescans lezen. Hier leest u hoe u stap voor stap weer controle krijgt over uw gesprekken, uw gegevens en uw hulpmiddelen, van beginner tot klokkenluider.
+🟢 Burger 🟡 Pseudoniem account 🔴 Klokkenluider
+Laatste nieuws: 9 juli 2026
+Het Europees Parlement heeft Chat Control 1.0 doorgelaten. De motie van afwijzing strandde: 314 Europarlementariërs tegen de tekst, 276 voor, 17 onthoudingen, maar er waren 361 stemmen nodig om hem te blokkeren. Het "vrijwillige" scannen van berichten is toegestaan tot 3 april 2028. Intussen is de 5e trialoog over Chat Control 2.0 (CSAR) op 29 juni mislukt; de onderhandelingen gaan door. De dreiging is niet geweken, ze nestelt zich.
+Inhoudsopgave
+00Begrijp de dreiging
+★Verwijderen / Overstappen
+01Versleutelde berichten
+02Versleutelde e-mail & PGP
+03Browser & zoeken
+◦Versleutelde DNS & Cloudflare
+04VPN: de waarheid
+✋Censuur & identiteit
+05Google verlaten (Proton)
+06Versleutelde opslag
+07Wachtwoorden
+◦2FA & hardwaretokens
+08Gedecentraliseerde netwerken
+09Financiële soevereiniteit
+⚠Conversationele AI
+◦Dagelijkse gereedschapskist
+10Zelfhosting
+11Tor
+12Vrije besturingssystemen & Linux
+◦Telefonie & apparaat
+13Anonimiteit & OPSEC
+14Het vrije-software-ecosysteem
+15In actie komen
+DEEL 00 · HET WAAROM
+Begrijp de dreiging
+Voordat u van hulpmiddelen wisselt, moet u begrijp waartegen u zich beschermt. Anders installeert u lukraak apps en denkt u veilig te zijn terwijl dat niet zo is.
+Chat Control 1.0 en 2.0, in klare taal
+"Chat Control" is de bijnaam voor twee Europese teksten die het scannen van uw privégescans toestaan (of zouden verplichten) op zoek naar kinderporno (CSAM). Het opgegeven doel is legitiem; het gebruikte middel, het blind scannen van de communicatie van niet-verdachte personen, komt neer op massasurveillance.
+Chat Control 1.0
+Chat Control 2.0 (CSAR)
+Tekst
+Verordening (EU) 2021/1232, ePrivacy-uitzondering
+Voorstel COM/2022/209 (Ylva Johansson, mei 2022)
+Aard van de scan
+Vrijwillig, platforms mogen scannen
+Verplicht via "detectiebevelen" en "risicobeperkende maatregelen"
+Doelwit
+Vooral niet-versleutelde Amerikaanse diensten: Gmail, Messenger/Instagram, Skype, Snapchat, iCloud Mail, Xbox
+Alle platforms, ook end-to-end versleutelde berichtendiensten
+Looptijd
+Tijdelijk, verlengd tot 3 april 2028
+Permanent
+Status (juli 2026)
+Aangenomen op 9 juli 2026
+In onderhandeling, 5e trialoog mislukt op 29 juni
+Client-side scannen: de wettelijke tap
+De kern van Chat Control 2.0 is een techniek die client-side scanning heet. Het idee: in plaats van de versleuteling tijdens het transport te breken, wordt software direct op uw telefoon geïnstalleerd die elk bericht, elke foto of elke link inspecteert voor het wordt versleuteld en verstuurd. Signal vat het in één zin samen: het is "zoals malware op uw apparaat".
+Technische eerlijkheid, lees twee keer
+Tegen client-side scannen zijn noch een VPN noch end-to-end-encryptie voldoende als de app of het besturingssysteem meewerkt. De scan vindt op het apparaat plaats, vóór de versleuteling: de VPN heeft niets te beschermen, en de versleuteling komt te laat. Wat u echt beschermt, is kiezen voor vrije software die weigert scanning in te bouwen, gunstige jurisdicties, zelfhosting, en de controle over uw apparaat terugwinnen (een ongeknoeid besturingssysteem). Al het andere in deze gids volgt uit deze waarheid.
+Het ergste: het werkt zelfs niet
+Ieders privacy wordt opgeofferd voor een technologie die faalt. De eigen studie van het Europees Parlement concludeert dat geen enkel systeem deze inhoud kan detecteren zonder hoge foutpercentages (omdat over miljarden berichten zelfs een klein percentage foutpositieven miljoenen valse beschuldigingen oplevert). De Ierse politiecijfers illustreren het: van de automatische meldingen was slechts zo'n 20% echt materiaal, en ruim 11% was overduidelijk foutpositief. Baanbrekend onderzoek ("Bugs in Our Pockets", 2021) toont bovendien aan dat client-side scanning, eenmaal geïnstalleerd, onvermijdelijk voor andere doelen wordt ingezet (terrorisme, auteursrecht, meningen).
+Het voorwendsel: "kinderen beschermen"
+Niemand is tegen de bescherming van minderjarigen, en dat is precies wat het zo'n effectieve hefboom maakt. De strijd tegen kindermisbruik dient als emotioneel Trojaans paard: wie zou het durven tegenspreken? Onder die vlag wordt een principe aanvaardbaar gemaakt dat op zichzelf resoluut verworpen zou worden: de geautomatiseerde inspectie van de privécommunicatie van honderden miljoenen niet-verdachte mensen. Kinderen zijn het opgegeven motief; het echte doelwit is ieders versleuteling en privacy.
+Het meest veelzeggend: de bedrijven die het hardst voor deze scan duwen, zijn de bedrijven wier verdienmodel surveillance is. Op 19 maart 2026 riep een gezamenlijke oproep EU-wetgevers op om "vrijwillige" detectie te verankeren, ondertekend door:
+GoogleLinkedInSnapchatMicrosoftTikTokMeta
+"Niets doen zou onverantwoord zijn." Het argument van de techreuzen om het scannen van berichten in stand te houden.
+Dezelfde spelers hebben overigens aangekondigd berichten te willen blijven scannen zelfs nadat de wettelijke grondslag op 4 april 2026 verviel. Aan burgers wordt dus gevraagd om de inspectie van hun intieme gesprekken toe te vertrouwen aan precies de bedrijven die erom bekend staan hun gegevens te verzamelen en te gelde te maken. Dit is het echte gezicht van Chat Control: een aanval op de privacy verpakt in een motief dat niemand kan weigeren.
+Dit is niet "gewoon" surveillance
+Men probeert u gerust te stellen: "het gaat alleen om Gmail, Instagram, Snapchat, Messenger." Dat is onwaar, en het is juist het meest alarmerende. Drie verschuivingen schuilen achter die bagatellisering.
+Dit is geen gerichte aanpak, dit is een sleepnet. Hier worden geen verdachten gevolgd: er wordt een systematische verzameling van de communicatie van hele bevolkingsgroepen geïnstalleerd. Surveillance op staatsschaal, voortdurend.
+Het is niet langer lezen, het is de macht om te blokkeren. Software die een bericht vóór het versturen inspecteert, kan het ook weigeren te versturen. Client-side scanning bouwt de infrastructuur van voorafgaande censuur: spreek blokkeren voordat het zelfs maar bij de ontvanger bestaat.
+Is de infrastructuur er eenmaal, dan wordt ze voor iets anders gebruikt. Een systeem dat "voor de kinderen" is gebouwd, wordt een universeel controlemiddel. Het motief verandert; de machine blijft.
+De logische volgende stap: de digitale euro
+Dezelfde logiek staat op het punt ook uw geld te bereiken. Het digitale-europlan van de ECB voorziet in een bezitplafond van ongeveer €3.000 per persoon, verbiedt bedrijven om er een aan te houden, en rust op een traceerbare munteenheid. De ECB zwoer dat het niet "programmeerbaar" zou zijn, maar het plafond en de traceerbaarheid staan duidelijk op het menu, en het kader werd in juni 2026 in commissie goedgekeurd door het Europees Parlement. Wanneer het zover is, zult u dan zeggen "kalm, het is maar tot €3.000"? Dat is precies dezelfde retorische valstrik als "het is maar Gmail". De echte vraag is nooit wat vandaag wordt gecontroleerd, maar welke controle-infrastructuur voor morgen wordt gebouwd.
+Welk profiel bent u?
+Geen enkel hulpmiddel is magisch en niemand hoeft alles te doen. Bepaal uw profiel: elke sectie geeft aan hoe ver u moet gaan.
+Beginner
+🟢 De gewone burger
+U wilt simpelweg dat uw gesprekken en uw privéleven niet langer worden gescand en te gelde gemaakt. Doel: dagelijkse privacy, zonder expert te worden.
+Gevorderd
+🟡 Het pseudoniem-account
+Informatieaccount, activistenpagina, maker: u vreest gedéanonimiseerd, gedoxxt of uw account te verliezen. Doel: uw echte identiteit gescheiden houden van uw publieke identiteit.
+Expert
+🔴 De klokkenluider
+Journalist, activist, bron, tegenover een machtige tegenstander (staat, werkgever). Doel: sterke anonimiteit, anti-correlatie, documenten doorspelen zonder gepakt te worden.
+MEMO · DE DIGITALE OMMEZWAAI
+Verwijderen / Overstappen
+Het grote geheel in één oogopslag. Elke tool wordt in de genummerde secties hieronder gedetailleerd.
+Verwijderen
+WhatsApp (Meta)
+Messenger (Meta)
+Instagram (Meta)
+Snapchat
+Skype (Microsoft)
+Discord
+Gmail (Google)
+Outlook (Microsoft)
+Google Drive / Photos
+OneDrive (Microsoft)
+TikTok
+Telegram (normale chats)
+Overstappen
+Signal
+SimpleX Chat
+Session
+Bitchat
+Element (Matrix)
+Nostr
+Mastodon
+Proton Mail
+Tuta Mail
+Mullvad (VPN & browser)
+GrapheneOS
+DEEL 01 · DE FUNDAMENTEN · 🟢
+Versleutelde berichten
+De eerste stap, degene die u het snelst beschermt: weg van WhatsApp, Messenger en Telegram, naar een echt versleutelde (en idealiter vrije) berichtendienst.
+U stapt weg van
+U stapt over op
+Waarom
+WhatsApp
+Signal
+Even eenvoudig, zonder Meta of metadata-verzameling
+Messenger
+Signal / SimpleX
+Messenger is niet standaard end-to-end versleuteld en werd gescand onder Chat Control 1.0
+Telegram
+Signal / SimpleX
+Telegram is niet standaard end-to-end versleuteld
+S
+Signal
+🟢 BeginnerVervangt WhatsApp🇺🇸 · open-source
+Een versleutelde berichtendienst voor uw sms'jes, oproepen, video's en groepen. De directe vervanger van WhatsApp, even eenvoudig.
+Standaard end-to-end-encryptie, non-profit, een geauditeerd protocol dat de wereldwijde standaard is. Vrijwel geen metadata bewaard, en het team heeft beloofd de EU te verlaten liever dan scanning in te bouwen.
+Iedereen, vandaag nog. Het is de eerste en nuttigste stap. Eén voorwaarde: een telefoonnummer, dat u kunt verbergen achter een gebruikersnaam.
+Installeer vanaf signal.org (App Store, Google Play, of de directe APK op Android).
+Bevestig uw nummer via sms, en kies dan een pincode.
+Instellingen > Privacy: maak een gebruikersnaam aan om uw nummer te verbergen, en schakel het registratieslot in.
+Nodig uw naasten uit. Koppel op de computer de desktop-app aan uw telefoon.
+signal.org →🟢🟡🔴
+SX
+SimpleX Chat
+🟡 GevorderdZonder identificatie🌍 · open-source
+Een versleutelde berichtendienst zonder account, nummer of identificatie. U maakt verbinding door een link of QR-code te delen.
+Per ontwerp weten zelfs de servers niet wie met wie praat. Het is op dit moment de sterkste optie tegen metadata-correlatie.
+Pseudoniem-accounts, gevoelige contacten, hoog risico. Iets jonger dan Signal, met wat ruwe kantjes.
+Installeer vanaf simplex.chat (F-Droid, Google Play, App Store of APK).
+Kies een lokale weergavenaam (nooit uw echte naam: die blijft op uw apparaat).
+Deel om een contact toe te voegen een eenmalige uitnodigingslink of QR-code.
+Schakel de toegangscode in, en (voor gevorderden) configureer uw eigen SMP-servers.
+simplex.chat →🟡🔴
+Se
+Session
+🟡 GevorderdZonder nummer🌍 · open-source
+Versleuteling op Signal-niveau, maar zonder telefoonnummer en met onion-routing.
+Uw identiteit is een willekeurige "Session ID". Het verkeer gaat via een gedecentraliseerd netwerk (Lokinet) dat metadata sterk vermindert.
+Wanneer een telefoonnummer een risico is. Kleiner ecosysteem, het beste voor gesprekken die ertoe doen.
+Installeer vanaf getsession.org (alle platforms).
+"Create account" genereert uw Session ID en een herstelzin.
+Noteer de herstelzin op papier: het is de enige sleutel tot uw account.
+Deel uw Session ID (of QR) met uw contacten.
+getsession.org →🟡🔴
+Br
+Briar
+🔴 ExpertOffline / P2PAndroid · open-source
+Een peer-to-peer berichtendienst die werkt zonder internet: via Bluetooth, Wi-Fi Direct of Tor.
+Geen server, dus niets om af te sluiten of in beslag te nemen. Bestand tegen internetstoringen en netwerkcensuur.
+Betogingen, rampen, afgelegen gebieden, black-outs. Alleen Android, en beide personen moeten de app hebben.
+Installeer vanaf briarproject.org of F-Droid (geen iOS).
+Maak een lokaal account aan (bijnaam + wachtwoord), alleen op de telefoon opgeslagen.
+Voeg een nabij contact toe door de QR-code te scannen, of op afstand via een link.
+Wanneer het netwerk uitligt, zet Bluetooth aan: berichten springen van apparaat naar apparaat.
+briarproject.org →🔴
+bit
+Bitchat
+🔴 ExpertBluetooth-mesh🌍 · open-source
+De mesh-berichtendienst van Jack Dorsey: nabijgelegen telefoons geven berichten van apparaat naar apparaat door, zonder internet, server of account.
+End-to-end-encryptie (AES-256-GCM) en een "paniekmodus" die alles wist met drie tikken op het logo.
+Betogingen en black-outs, als aanvulling op Briar. Met voorzichtigheid te gebruiken.
+Voorzichtig: niet geauditeerd
+De eigen repository waarschuwt dat het "geen externe beveiligingsreview heeft ontvangen". Geweldig voor veerkracht, maar zet er voorlopig geen levens op het spel.
+Installeer via de App Store (iOS) of de APK/GitHub (Android).
+Open de app en kies een bijnaam. Geen account aan te maken.
+Nabijgelegen apparaten vinden elkaar automatisch via Bluetooth.
+Tik in gevaar driemaal op het logo om alles te wissen (paniekmodus).
+bitchat →🔴
+M
+Molly
+🔴 ExpertGeharde SignalAndroid · open-source
+Een geharde versie van Signal voor Android, compatibel met hetzelfde netwerk.
+Database in rust versleuteld, automatische vergrendeling, en een "FOSS"-variant volledig zonder Google-diensten.
+Gevorderde gebruikers, vooral op GrapheneOS, met een hoog dreigingsmodel. Alleen Android.
+Voeg de Molly-repo toe in F-Droid, of haal de APK van molly.im.
+Kies Molly-FOSS als u geen Google-afhankelijkheden wilt.
+Registreer met uw nummer (hetzelfde netwerk als Signal).
+Stel een databasewachtwoord en automatische vergrendeling in.
+molly.im →🔴
+Tegen Chat Control
+Geef de voorkeur aan vrije software buiten de grote Amerikaanse platforms, waarvan de teams publiekelijk hebben beloofd de EU te verlaten liever dan client-side scanning in te bouwen (Signal heeft dat gedaan). Herinnering: als het besturingssysteem zelf scanning afdwingt, kan de app niet helpen, vandaar sectie 12.
+DEEL 02 · 🟢
+Versleutelde e-mail & PGP
+Gmail leest uw e-mails en is gevestigd in de VS, onder de jurisdictie van de "Five Eyes". Gmail/Outlook verlaten is een enorme winst voor minimale inspanning.
+Pm
+Proton Mail
+🟢 BeginnerVervangt Gmail🇨🇭 · open-source · OpenPGP
+Een versleutelde inbox die Gmail of Outlook vervangt, en het spilaccount voor het hele Proton-ecosysteem.
+Gevestigd in Zwitserland, buiten de "Five Eyes"-jurisdictie. OpenPGP-compatibel: automatische versleuteling tussen Proton-accounts en naar andere PGP-diensten.
+Iedereen. Het is het beste startpunt om Google te verlaten (zie sectie 05 voor de rest van de suite).
+Maak een account aan op proton.me (het gratis abonnement is voldoende om te starten).
+Importeer uw oude berichten en contacten met Easy Switch (ingebouwd).
+Stel een doorzending in vanuit Gmail en breng uw contacten op de hoogte van uw nieuwe adres.
+Installeer de mobiele app, schakel tweestapsverificatie in, en gebruik Proton Bridge als u Thunderbird wilt blijven gebruiken.
+proton.me/mail →🟢🟡
+Tu
+Tuta
+🟢 BeginnerVervangt Gmail🇩🇪 · open-source · post-quantum
+Een Duitse e-mailservice, volledig open-source en vrij van elke Google-dienst.
+Het versleutelt ook het onderwerp en een deel van de metadata, met post-quantum-bestendige versleuteling. EU-jurisdictie.
+Wie maximale versleutelde metadata en 100% vrije software wil. Het gebruikt geen PGP: om versleuteld naar externen te schrijven, beveiligt u het bericht met een wachtwoord.
+Maak een account aan op tuta.com en installeer de app (beschikbaar op F-Droid).
+Om versleuteld te schrijven naar een niet-gebruiker: klik op het slot en stel een wachtwoord in, dat u via een ander kanaal aan uw correspondent doorgeeft.
+Schakel tweestapsverificatie in.
+tuta.com →🟢🟡
+mx
+mailbox.org · Posteo
+🟢 BeginnerEthische klassieke mail🇩🇪 · UE · PGP
+Twee ethische, goedkope Europese e-mailproviders, met PGP-ondersteuning aan serverzijde.
+Privacy- en milieubewust, gebouwd op open standaarden (IMAP, PGP). Ze werken met elke mailclient.
+Wie een "klassieke" mailbox (in Thunderbird) wil, maar dan ethisch, in plaats van een gesloten versleutelde app.
+Maak een account aan (betaald, ongeveer €1 tot €3 per maand).
+Schakel PGP-versleuteling aan serverzijde in (de "Guard"-functie bij mailbox.org).
+Configureer het account in Thunderbird of de mobiele app van uw keuze.
+mailbox.org →posteo.de →🟢
+PGP in één minuut
+PGP (Pretty Good Privacy) is versleuteling op basis van sleutels: u hebt een publieke sleutel die u uitdeelt, en een privésleutel die u geheim houdt. Iedereen met uw publieke sleutel kan u een bericht sturen dat alleen u kunt ontsleutelen. Het is de basis van provider-onafhankelijke versleutelde e-mail. Proton Mail regelt het automatisch; voor handmatig gebruik werkt OpenPGP via Thunderbird (ingebouwd sinds v78).
+DEEL 03 · 🟢
+Browser & zoeken
+Chrome is een reclametracker. Google Search profieleert elke zoekopdracht. Vervang beide.
+Mb
+Mullvad Browser
+🟡🔴 Gevorderd / ExpertAnti-vingerafdruk🇸🇪 · open-source
+De browser van de Tor Browser, maar dan zonder het Tor-netwerk: gebruik hem met uw VPN voor een moeilijk te volgen computer.
+Ontworpen met het Tor-project: alle gebruikers hebben dezelfde digitale vingerafdruk. Het resultaat: in plaats van uniek en dus traceerbaar te zijn, lost u op in de massa. De beste privék euze op de desktop.
+Wie verder wil gaan dan eenvoudig adblocken, vooral pseudoniem-accounts en blootgestelde profielen.
+Download hem van mullvad.net/browser (Windows, macOS, Linux).
+Gebruik hem standaard, zonder aanpassingen: elke toegevoegde extensie of instelling maakt u opnieuw identificeerbaar.
+Combineer hem met uw VPN om ook uw IP-adres te verbergen.
+mullvad.net/browser →🟡🔴
+Fx
+Firefox (gehard)
+🟢 BeginnerVervangt Chrome🌍 · open-source
+De referentie-vrije browser voor privacyvriendelijk dagelijks gebruik.
+In tegenstelling tot Chrome (een reclametracker van Google) wordt Firefox ontwikkeld door een stichting die er geen belang bij heeft u te profileren. Met enkele aanpassingen (de arkenfox-gids) en de extensie uBlock Origin wordt hij heel solide.
+Iedereen, als dagelijkse hoofd browser.
+Installeer Firefox vanaf mozilla.org/firefox.
+Voeg de extensie uBlock Origin toe (blokkeert advertenties en trackers).
+Kies bij privacy-instellingen "Streng", schakel telemetrie uit en wis cookies bij het afsluiten. Voor wie verder wil: pas de arkenfox-gids toe.
+mozilla.org/firefox →🟢
+Bv
+Brave
+🟢 BeginnerBlokkeert standaard alles🌍 · open-source
+Een op Chromium gebaseerde browser die standaard advertenties en trackers blokkeert, met een privévenster dat met Tor is verbonden.
+Het is de eenvoudigste optie voor wie van Chrome komt: dezelfde ergonomie, maar zonder tracking. Het blokkeert YouTube-advertenties standaard, biedt versleutelde video (Brave Talk, gebaseerd op Jitsi) en Tor-toegang met één klik, handig om een geblokkeerde site te bereiken.
+Beginners die een pijnloze overstap vanuit Chrome willen. (Negeer de crypto-/beloningsadvertentiefuncties als ze u niet interesseren.)
+Installeer Brave vanaf brave.com.
+Stel "Shields" in op "agressief", en schakel Brave Rewards uit als u geen advertenties wilt.
+Voor Tor: menu > "Nieuw privévenster met Tor", wacht tot "Tor verbonden" verschijnt.
+brave.com →🟢
+uB
+uBlock Origin
+🟢 BeginnerExtensie🌍 · open-source
+De browserextensie die advertenties, trackers en spionagescripts blokkeert. De actie met het hoogste rendement, in tien seconden.
+Online advertenties zijn de belangrijkste vector van surveillance en profilering. Het blokkeren ervan snijdt het leeuwendeel van de tracking weg, versnelt pagina's en verkleint het risico op malware.
+Iedereen, op Firefox en op Chromium-browsers.
+Open de extensiewinkel van uw browser en zoek "uBlock Origin" (het origineel, van Raymond Hill).
+Installeer hem. Hij werkt meteen, geen instellingen nodig.
+ublockorigin.com →🟢
+🔎
+DuckDuckGo · Brave Search · SearXNG
+🟢🟡 ZoekmachinesVervangt Google Search
+Zoekmachines die elke zoekopdracht niet profileren, in tegenstelling tot Google.
+DuckDuckGo en Brave Search bewaren geen geschiedenis die aan uw identiteit is gekoppeld. Startpage levert Google-resultaten zonder de tracking. SearXNG gaat verder: een zelf-hostbare metazoekmachine, soevereiniteit tot in uw zoekbalk.
+Iedereen. SearXNG is bedoeld voor wie zijn eigen engine wil hosten.
+Wijzig in uw browserinstellingen de standaardzoekmachine in DuckDuckGo, Brave Search of Startpage.
+Voor SearXNG: gebruik een publieke instance (gids op searx.space) of host uw eigen (zie sectie 10).
+duckduckgo.com →search.brave.com →searx.space →🟢🟡
+NETWERK · DNS · 🟡
+Versleutelde DNS & Cloudflare
+DNS is de telefoongids die een sitenaam (example.com) omzet in een machineadres. Het addertje: standaard beheert uw internetaanbieder die gids, dus ziet hij elke site die u bezoekt, zelfs wanneer de pagina HTTPS gebruikt. Uw DNS versleutelen haalt die lijst terug bij uw provider. Het is een stille instelling, maar een van de meest effectieve.
+9
+Quad9
+🟢 BeginnerAnti-malware🇨🇭 non-profit
+Een versleutelde, Zwitserse, non-profit DNS-resolver die ook bekende kwaadaardige domeinen blokkeert.
+Zwitserse jurisdictie, geen bewaring van uw IP-adres, bescherming tegen phishing en malware. Een uitstekende "instellen en vergeten"-keuze.
+Iedereen, vooral wie eenvoud en een goede jurisdictie wil.
+Op Android: Instellingen > Netwerk > Privé-DNS > voer dns.quad9.net in.
+Op iPhone/Mac: installeer het DoH-profiel van quad9.net. Op pc: stel DNS-over-HTTPS in de browser of het systeem in.
+quad9.net →🟢🟡
+DNS
+Mullvad DNS · NextDNS
+🟡 GevorderdNetwerkfiltering
+Twee versleutelde resolvers die ook advertenties en trackers blokkeren voor het hele apparaat.
+Mullvad DNS (Zweden, no-log) is gratis en biedt blokkeerlijsten. NextDNS is zeer aanpasbaar, met een dashboard en profielen per apparaat, maar is in de VS gevestigd en logt standaard (schakel dit uit in de instellingen).
+Wie systeembrede advertentieblokkering wil zonder per browser een extensie te installeren.
+Mullvad DNS: gebruik het adres op mullvad.net/help/dns als uw privé-DNS (dezelfde methode als Quad9).
+NextDNS: maak een profiel op nextdns.io, schakel logging uit en pas de configuratie toe op uw apparaten.
+mullvad.net/dns →nextdns.io →🟡
+CF
+Cloudflare 1.1.1.1 (met nuance)
+🟢 BeginnerSnel maar gecentraliseerd🇺🇸
+De versleutelde DNS 1.1.1.1 en de WARP-app van Cloudflare: snel, gratis, en een echte verbetering ten opzichte van de resolver van uw provider.
+Het is nuttig, met een geauditeerde belofte van geen logging. Maar wees reëel: Cloudflare staat al vóór een enorm deel van het web (als technische tussenpersoon kan het het platte tekstverkeer naar die sites zien). Ook uw DNS daarheen routeren betekent nog meer van uw sporen concentreren bij één Amerikaans bedrijf onder Amerikaans recht.
+Goed voor dagelijks gebruik en malware-blokkering (1.1.1.1 for Families). Vermijden of diversifiëren voor gevoelig gebruik: kies liever Quad9 of Mullvad DNS.
+1.1.1.1 →🟢
+π
+Pi-hole · AdGuard Home
+🔴 ExpertBlokkering voor het hele netwerk🌍 · open-source
+Een advertentie- en trackerblokkering die uw hele netwerk in één keer beschermt, geïnstalleerd op een kleine computer zoals een Raspberry Pi.
+Waar uBlock Origin één browser beschermt, filtert Pi-hole elk apparaat in huis, inclusief apparaten waarop u geen extensie kunt installeren: telefoons, smart-tv's, connected objects. Advertenties en trackers worden op DNS-niveau geblokkeerd, nog vóór ze laden. AdGuard Home is een alternatief met een modernere interface.
+Huishoudens die al hun apparaten in één keer willen opschonen, en die een (of willen) Raspberry Pi of kleine server hebben.
+Voer op een Raspberry Pi (of een container) het officiële installatieprogramma van Pi-hole uit.
+Stel in uw router-instellingen het adres van de Pi-hole in als DNS-server.
+Voortaan worden alle apparaten op uw netwerk automatisch gefilterd.
+pi-hole.net →adguard home →🔴
+DEEL 04 · 🟢
+VPN: de waarheid
+Een VPN is nuttig, maar wordt met veel leugens verkocht. Dit is wat het daadwerkelijk beschermt.
+Wat een VPN NIET doet
+Een VPN beschermt u niet tegen de client-side scanning van Chat Control: die leest uw berichten op uw apparaat, vóór de versleuteling en dus vóór de VPN. Het is ook geen onzichtbaarheidsmantel: uw besturingssysteem en apps zien meer dan uw VPN-provider.
+Wat een VPN wél goed doet
+Het verbergt uw activiteit voor uw internetaanbieder en maskeert uw IP-adres (en dus locatie) voor de sites die u bezoekt. Nuttig tegen netwerksurveillance, geolocatie en censuur. Eén stukje van de puzzel, niet de oplossing.
+Mv
+Mullvad VPN
+🟢🟡🔴 Alle niveausZonder account · cash/Monero🇸🇪 · open-source
+Een VPN die uw IP-adres maskeert en uw verkeer versleutelt tot aan zijn servers, zonder ooit ook maar één stukje persoonlijke informatie te vragen.
+Het is de gouden standaard voor privacy. Geen e-mail, geen naam: bij inschrijving krijgt u een eenvoudig accountnummer. Geauditeerd no-log-beleid, één eerlijke prijs (€5 per maand, geen niveaus, geen valse beloften), en betaling mogelijk in cash of Monero. Dat is precies wat ertoe doet op de dag dat een staat de VPN-toegang probeert af te snijden: een account dat niet aan uw identiteit te koppelen is, en een betaling die banken niet kunnen blokkeren.
+Iedereen, van de burger die een identiteitscontrole wil omzeilen tot het hoogrisicoprofiel. Dit is de VPN om als eerste aan te bevelen.
+Ga naar mullvad.net. Als de site in uw land geblokkeerd is, open hem dan via de Tor Browser of het .onion-adres. Klik op "Generate account number": er wordt niet om een e-mail of naam gevraagd. Bewaar dit nummer in uw wachtwoordmanager en deel het nooit, het is uw enige toegangssleutel.
+Kies de looptijd en de betaalmethode. De prijs staat vast. Drie wegen: bankkaart (het eenvoudigst indien niet geblokkeerd), per post verzonden contanten, of cryptocurrency.
+Anonieme cryptobetaling: klik op "Create a one-time payment address". Mullvad toont een adres (Bitcoin of Monero) en een exact bedrag. Stuur dat bedrag vanuit uw portemonnee. Voor maximale anonimiteit kiest u Monero (standaard privé); Bitcoin is eenvoudiger maar traceerbaar. Zie sectie 09 om crypto te kopen. Reken op circa 30 minuten bevestiging.
+Download de app van mullvad.net/download (via Tor als de site wordt gefilterd) en installeer hem. Op mobiel: App Store, Google Play, of de officiële APK als de app uit uw store is verwijderd.
+Start de app, voer uw accountnummer in en maak verbinding met een server buiten uw land, idealiter buiten de Europese Unie (Zwitserland, VS…). Schakel de "kill switch" in (die het internet afsluit als de VPN wegvalt) en de DNS van Mullvad.
+mullvad.net →🟢🟡🔴
+Pv
+Proton VPN
+🟢 BeginnerEerlijk gratis abonnement🇨🇭 · open-source
+De VPN uit het Proton-ecosysteem, met een echt gratis abonnement (zeldzaam en eerlijk).
+In Zwitserland gevestigd, geauditeerd, open-source. Het gratis abonnement heeft geen advertenties, geen doorverkoop van gegevens en geen datalimiet (alleen het aantal landen is beperkt). De ideale opstap voor een beginner, vooral als u al Proton Mail gebruikt.
+Beginners, en iedereen die al in het Proton-ecosysteem zit en één account voor alles wil.
+Ga naar protonvpn.com en meld u aan met uw Proton-account (of maak er een aan).
+Installeer de app (Windows, macOS, Linux, Android, iOS).
+Gebruik "Quick Connect" of kies een land, schakel de kill switch en NetShield in (blokkering van advertenties en trackers).
+protonvpn.com →🟢
+iv
+IVPN
+🟡🔴 Gevorderd / ExpertZonder e-mail · no-log🇬🇮 · open-source
+Een kleine, bijzonder rigoureuze en transparante VPN-provider, volgens hetzelfde model als Mullvad.
+Geauditeerd no-log-beleid, geen verplichte e-mail, betaling in crypto of contanten. Het biedt zelfs anti-trackingopties (blokkering van trackers op netwerkniveau) en inschrijving zonder enige identificatie.
+Een solide alternatief voor Mullvad, voor pseudoniem- en hoogrisicoprofielen die willen diversifiëren.
+Genereer op ivpn.net een account (er wordt een ID voor u aangemaakt, geen e-mail nodig).
+Betaal in crypto of contanten, net als bij Mullvad.
+Installeer de app, maak verbinding buiten de EU, schakel de kill switch en het WireGuard-protocol in.
+ivpn.net →🟡🔴
+CENSURE · DIGITALE IDENTITEIT · 🟡
+Censuur & identiteitscontroles
+Hetzelfde voorwendsel ("bescherm minderjarigen") wordt gebruikt om identiteitscontroles af te dwingen om toegang tot internet te krijgen. Het is het geplande einde van online anonimiteit, en dus een vorm van censuur. Hier is de stand van zaken, en hoe u er wettelijk aan kunt ontsnappen.
+Stand van zaken (2025-2026)
+Frankrijk. De SREN-wet (mei 2024) geeft toezichthouder Arcom de leiding over leeftijdsverificatie; sinds april 2025 moeten de betrokken sites dit invoeren. Een decreet dat leeftijdscontroles oplegt, werd op 15 juli 2025 bekrachtigd door de Raad van State, en een wetsvoorstel dat sociale media verbiedt voor -15-jarigen werd op 26 januari 2026 aangenomen in de Assemblée, wat betekent dat de leeftijd, en dus de identiteit, van iedereen moet worden geverifieerd.
+Verenigd Koninkrijk. Sinds 25 juli 2025 vereist de Online Safety Act "hoogst effectieve" leeftijdsverificatie (ID, creditcard, gezichtsschatting). Het directe resultaat: VPN-aanmeldingen schoten binnen enkele uren met meer dan 1.400% omhoog. Het House of Lords debatteerde begin 2026 zelfs over een minimumleeftijd voor VPN-gebruik zelf.
+Europese Unie. De Commissie presenteerde een leeftijdsverificatie-app (april 2025), gepiloteerd in vijf landen, ontworpen om aan te sluiten op de Europese digitale-identiteitsportemonnee (EUDI Wallet, eIDAS 2) die elke staat eind 2026 moet aanbieden. EFF en EDRi waarschuwen: het "zero-knowledge"-bewijs is slechts optioneel, en dit bouwt een online-ID-infrastructuur die veel verder gaat dan kinderbescherming.
+Er wettelijk aan ontsnappen
+De tegenzet komt neer op één idee: neem een IP-adres in een land dat deze controles niet oplegt, en verkrijg de hulpmiddelen anoniem, zelfs als ze op een dag worden geblokkeerd.
+Een VPN buiten de jurisdictie. Maak verbinding met een server buiten het filterende land (idealiter buiten de EU en de "14 Eyes"), met een geauditeerd no-log-beleid. Dit herstelt de toegang tot netwerken die om een identiteitsbewijs vragen.
+Anonieme betaling. Betaal de VPN in crypto of contanten (Mullvad, IVPN, Proton accepteren dit). Cruciaal: als VPN's ooit worden "verboden", kunnen betalingsverwerkers kaarten weigeren; cash en crypto zouden dan de enige opties zijn.
+Tor om een geblokkeerde VPN op te halen. Als de site van de provider vanuit uw land onbereikbaar wordt, gebruik dan de Tor Browser (of een .onion-adres) om de client te downloaden. Eenmaal geïnstalleerd is de VPN veel sneller voor dagelijks gebruik.
+Wijzig het land van uw account. Een Apple/Google-account dat op een ander land is ingesteld, laat apps die uit uw lokale store zijn verwijderd opnieuw verschijnen.
+De wet verandert, controleer
+Het omzeilen van een geografische beperking is in de meeste Europese landen legaal, maar het terrein verschuift snel: Utah (VS) heeft VPN-omzeiling strafbaar gesteld, en de Britse Lords kijken naar VPN-beperkingen. Controleer de wet van uw land voordat u op een methode vertrouwt. Deze gids gaat over privacybescherming, niet over het verbergen van een misdrijf.
+DEEL 05 · NEEM DE CONTROLE TERUG · 🟡
+Google verlaten
+Google is één account dat uw e-mail, agenda, bestanden, bewegingen en zoekopdrachten kent. Vervang de hele suite.
+Google
+Proton
+Overige
+Gmail
+Proton Mail
+Tuta, mailbox.org
+Google Drive
+Proton Drive
+Nextcloud, Cryptomator
+Google Calendar
+Proton Calendar
+Tuta Calendar
+Google Password
+Proton Pass
+Bitwarden, KeePassXC
+Google One VPN
+Proton VPN
+Mullvad, IVPN
+De aantrekkingskracht van Proton (Zwitserland, non-profit stichting, open-source): één account vervangt heel Google, met end-to-end-encryptie en een jurisdictie buiten de "Five Eyes". U kunt geleidelijk migreren, dienst per dienst. Wie liever niet opnieuw centraliseert bij één aanbieder, vindt in elke rij een onafhankelijk alternatief.
+DEEL 06 · 🟡
+Versleutelde opslag
+Pd
+Proton Drive
+🟢 BeginnerVervangt Google Drive / iCloud🇨🇭 · E2EE
+Een end-to-end versleutelde cloud voor uw bestanden en foto's, onderdeel van Proton.
+In tegenstelling tot Google Drive of iCloud kan Proton uw bestanden niet lezen: ze worden versleuteld voordat ze uw apparaat verlaten. Zwitserse jurisdictie, hetzelfde account als Proton Mail.
+Iedereen, als eenvoudige, directe vervanging van de cloud van Google of Apple.
+Activeer Proton Drive in uw Proton-account en installeer de app.
+Schakel automatische back-up van uw foto's in, en schakel die van Google/Apple uit.
+proton.me/drive →🟢🟡
+Cy
+Cryptomator
+🟡 GevorderdVersleutelt vóór upload🇩🇪 · open-source
+Een kluis die uw bestanden vóór het uploaden versleutelt, naar elke cloud, zelfs Google Drive of Dropbox.
+De perfecte truc als u een bestaande cloud moet behouden: u houdt de handige dienst, maar de provider ziet alleen versleutelde brij. Alleen u heeft de sleutel.
+Wie nog niet van een grote publieke cloud af kan, maar zijn bestanden nu al wil beschermen.
+Installeer Cryptomator (desktop en mobiel) vanaf cryptomator.org.
+Maak een "kluis" aan in de gesynchroniseerde map van uw cloud, kies een sterk wachtwoord.
+Plaats uw bestanden in de kluis: ze worden versleuteld en automatisch gesynchroniseerd.
+cryptomator.org →🟡🔴
+Nc
+Nextcloud
+🔴 ExpertUw eigen cloud🌍 · open-source
+Uw eigen cloud (bestanden, agenda, contacten, notities) gehost op uw eigen server.
+De ultieme graad van controle: uw gegevens verlaten nooit uw hardware. Gedetailleerd in sectie 10 (zelfhosting).
+Zelf-hosters. Zie de volledige kaart in sectie 10.
+→ Sectie 10nextcloud.com →🔴
+DEEL 07 · 🟡
+Wachtwoordmanager
+Eén sterk, uniek wachtwoord per dienst: de basis van alle beveiliging die volgt. Weg met het notitieboekje, weg met het hergebruikte wachtwoord.
+Bw
+Bitwarden
+🟢 BeginnerBeste om mee te starten🌍 · open-source
+Een wachtwoordkluis die uw wachtwoorden onthoudt, genereert en voor u invult, op al uw apparaten.
+Gratis, geauditeerd, platformonafhankelijk en end-to-end versleuteld. U hoeft nog maar één sterk wachtwoord te onthouden. Hij is zelfs zelf-hostbaar (via Vaultwarden), zodat u van niemand afhankelijk bent.
+Iedereen. Het is de basis van alle beveiliging: één sterk, uniek wachtwoord per dienst.
+Maak een account aan op bitwarden.com en kies een lang hoofdwachtwoord (een wachtwoordzin). Vergeet het nooit: het kan niet worden hersteld.
+Installeer de browserextensie en de mobiele app.
+Laat Bitwarden terwijl u inlogt uw oude wachtwoorden opslaan en ze vervangen door gegenereerde wachtwoorden.
+bitwarden.com →🟢🟡🔴
+Kp
+KeePassXC
+🔴 Expert100% lokaal🌍 · open-source
+Een lokale kluis: een versleuteld bestand dat alleen u bezit, zonder cloud en zonder account.
+Niets verlaat uw apparaat, tenzij u er zelf voor kiest het bestand te synchroniseren (bijvoorbeeld via Cryptomator). De keuze van de purist, zonder enige tussenpersoon.
+Gevorderde profielen die volledige controle willen en nul online-afhankelijkheid.
+Installeer KeePassXC (desktop) en een compatibele mobiele app (KeePassDX op Android, Strongbox op iOS).
+Maak een databasebestand dat met een hoofdwachtwoord is beveiligd.
+Om het op alle apparaten te hebben, synchroniseert u dit bestand via een versleutelde cloud.
+keepassxc.org →🔴
+Pp
+Proton Pass
+🟢 BeginnerMet e-mailaliassen🇨🇭 · open-source
+De wachtwoordmanager uit het Proton-ecosysteem, met ingebouwde wegwerpbare e-mailaliassen.
+Ideaal als u al bij Proton zit: één account voor mail, cloud en wachtwoorden. De e-mailaliassen besparen u overal uw echte adres te geven.
+Wie alles bij Proton wil bundelen.
+proton.me/pass →🟢🟡
+BEVEILIGING · 2FA · 🟡
+Tweestapsverificatie & hardwaretokens
+Een wachtwoord, zelfs een sterk, kan uitlekken. Tweestapsverificatie (2FA) voegt een tweede bewijs toe bij het inloggen: zelfs als uw wachtwoord is gestolen, blijft het account vergrendeld. Het is essentieel op uw gevoelige accounts (e-mail, wachtwoordmanager, sociale media).
+Vermijd 2FA via sms
+Een code per sms is de zwakke schakel: hij is kwetsbaar voor "SIM-swap" (een aanvaller laat uw nummer overzetten) en voor interceptie via het telefoonnetwerk (SS7). Studies schatten dat de meeste SIM-swap-pogingen slagen. Gebruik sms alleen als laatste redmiddel, nooit als uw belangrijkste bescherming.
+Yk
+YubiKey · Nitrokey
+🟡🔴 Gevorderd / ExpertFIDO2-hardwaretoken
+Een kleine fysieke sleutel (USB, vaak met NFC) die uw identiteit bewijst met één aanraking.
+Dit is de sterkste 2FA: hij is phishing-bestendig, omdat de sleutel het echte adres van de site controleert voordat hij antwoordt. Nitrokey is het volledig open alternatief qua hardware en firmware. Een nepsite kan u niet misleiden.
+Wie maximale beveiliging op sleutelaccounts wil. Koop er twee (één hoofd, één back-up).
+Schaf twee sleutels aan via yubico.com of nitrokey.com.
+Voeg in de beveiligingsinstellingen van elk account (e-mail, wachtwoordmanager…) een "beveiligingssleutel" of "passkey" toe. Registreer beide sleutels.
+Bewaar de back-upsleutel op een veilige, afzonderlijke plek.
+yubico.com →nitrokey.com →🟡🔴
+Ae
+Aegis · Ente Auth
+🟢 BeginnerTOTP-codes🌍 · open-source
+Apps die elke 30 seconden de zescijferige codes genereren, ter vervanging van Google Authenticator.
+Aegis (Android) bewaart uw codes in een lokale versleutelde kluis, geen cloud. Ente Auth voegt end-to-end versleutelde synchronisatie tussen apparaten toe, en is geauditeerd. Veel veiliger dan sms, en gratis.
+Iedereen: dit is het standaard 2FA-niveau om aan te nemen, vóór hardwaretokens.
+Installeer Aegis (F-Droid) of Ente Auth (alle platforms).
+Schakel op elk account 2FA via een "authenticator-app" in en scan de getoonde QR-code.
+Noteer de back-upcodes op papier en maak een versleutelde back-up van uw kluis.
+getaegis.app →ente.io/auth →🟢🟡
+DEEL 08 · 🟡
+Gedecentraliseerde sociale netwerken
+Instagram, X en Facebook zijn van bedrijven die u profileren en u van de ene op de andere dag kunnen censureren of verwijderen. Het "fediverse" biedt netwerken die van hun gebruikers zijn.
+Ma
+Mastodon
+🟢 BeginnerVervangt X / Twitter🌍 · open-source
+Het alternatief voor X/Twitter: een sociaal netwerk dat bestaat uit duizenden onafhankelijke servers die met elkaar communiceren (het "fediverse").
+Geen enkele eigenaar, geen algoritme dat voor u beslist, geen willekeurige ban door één bedrijf. De tijdlijn is chronologisch, zonder advertenties of manipulatie.
+Iedereen. Ideaal voor informatieaccounts die een aanwezigheid willen die geen enkel bedrijf kan afsnijden.
+Kies op joinmastodon.org een server (of "instance") die bij u past, en maak een account aan.
+Installeer een app (de officiële, of Ivory, Tusky…) en volg accounts: u ziet het hele fediverse, op welke server ze ook zitten.
+joinmastodon.org →🟢🟡
+No
+Nostr
+🟡🔴Oncensureerbaar🌍 · open protocol
+Geen app maar een protocol: een sociaal netwerk waarin uw identiteit een eenvoudig sleutelpaar is, zoals bij Bitcoin.
+Geen e-mail, geen wachtwoord, geen account dat iemand kan verwijderen. Uw berichten reizen via gedecentraliseerde relays en u bezit uw publiek echt: niemand kan u blijvend verbannen. U kunt zelfs fooien in Bitcoin ontvangen ("zaps") en op elk moment van app wisselen zonder uw volgers te verliezen.
+Informatieaccounts en makers die platformcensuur vrezen en een echt eigen aanwezigheid willen.
+Installeer een client: Damus (iPhone), Amethyst of Primal (Android), of een webversie.
+De app genereert uw sleutelpaar. Maak een back-up van uw privésleutel (nsec) zoals een Bitcoin-herstelzin: op papier, nooit delen.
+Maak uw profiel aan, volg mensen, schakel zaps in om sats te ontvangen.
+nostr.com →🟡🔴
+El
+Matrix / Element
+🟡🔴Vervangt Discord / Slack🌍 · gefedereerd · E2EE
+Communitychat, in de geest van Discord of Slack, maar dan gefedereerd en end-to-end versleutelbaar. Element is de app, Matrix is het netwerk.
+U kunt uw eigen server hosten (Synapse) en uw gegevens beheren. Perfect voor een collectief, een redactie of een vereniging die een eigen onafhankelijke ruimte wil.
+Gemeenschappen en groepen. Zie de metadata-kanttekening hieronder.
+Installeer Element (element.io) en maak een account aan op een publieke server, of op uw eigen (sectie 10).
+Word lid van of maak ruimtes, en schakel end-to-end-encryptie in voor privégesprekken.
+element.io →🟡🔴
+Pi
+Pixelfed · PeerTube · Lemmy
+🟡Insta · YouTube · Reddit🌍 · open-source
+De gefedereerde neven van Instagram (Pixelfed), YouTube (PeerTube) en Reddit (Lemmy).
+Dezelfde logica als Mastodon: geen enkele eigenaar, geen advertentie-algoritme, geen tracking. U plaatst foto's, video's of discussies zonder een profileringsmachine te voeden.
+Wie Instagram, YouTube of Reddit wil verlaten zonder het formaat op te geven.
+pixelfed.org →peertube →lemmy →🟡
+Metadata-kanttekening
+Matrix versleutelt de inhoud goed, maar in federatie zien deelnemende servers het lidmaatschap van ruimtes en de tijdstempels van berichten. Voor zeer gevoelig gebruik kiest u liever SimpleX/Session of host u uw eigen server.
+DEEL 09 · 🟡
+Financiële soevereiniteit
+Ook geld wordt in de gaten gehouden en kan worden gecensureerd. Accounts van activisten zijn bevroren, donaties geblokkeerd, en elke kaartbetaling wordt gevolgd. Financiële privacy maakt deel uit van soevereiniteit.
+₿
+Bitcoin (zelfbewaring)
+🟡🔴Censuurbestendig
+Een digitaal geld dat u zelf bewaart, zonder via een bank te gaan.
+Bij zelfbewaring (uw sleutels in een portemonnee die alleen u beheert) kan niemand uw tegoeden bevriezen of blokkeren. De privacy is niet perfect (het grootboek is openbaar), maar het ontsnapt aan bankcensuur, handig op de dag dat een betaling wordt geweigerd.
+Zich beschermen tegen het bevriezen van accounts of de-banking, en anoniem betalen voor een dienst zoals een VPN.
+Schaf bitcoins aan (via een exchange, of peer-to-peer).
+Verplaats ze meteen naar een portemonnee die u beheert: een hardwareportemonnee (Trezor, ColdCard) of een open-source-app. Laat ze niet op de exchange staan.
+Maak een back-up van uw herstelzin op papier, nooit als foto of online.
+bitcoin.org →🟡🔴
+ɱ
+Monero (XMR)
+🔴 ExpertStandaard privé
+De privacycryptocurrency: bedragen, afzender en ontvanger zijn standaard verborgen.
+Het is op dit punt het exacte tegenovergestelde van Bitcoin: transacties zijn privé per ontwerp. Het is de beste manier om een dienst te betalen zonder een spoor naar u achter te laten.
+Wie maximale financiële privacy wil. Let op: Monero is al van verschillende Europese exchanges gehaald, dus u heeft vaak een gedecentraliseerde swap nodig.
+Installeer een portemonnee (de officiële op getmonero.org, of Cake Wallet op mobiel).
+Verkrijg XMR via een gedecentraliseerde exchange-dienst (bijvoorbeeld een "swap" vanuit een andere crypto).
+Maak een back-up van uw herstelzin op papier.
+getmonero.org →🔴
+Wettigheid & voorzichtigheid
+Financiële privacy is legaal. Verwar het niet met belastingontduiking: geef op wat opgegeven moet worden. Cryptocurrencies zijn volatiel en oplichting komt veel voor; zet nooit in wat u niet kunt verliezen, en leer voordat u handelt.
+BLINDE VLEK · DE AI-WAANZIN · 🟡
+Conversationele AI
+Terwijl we vechten om onze berichten te versleutelen, geven honderden miljoenen mensen hun meest intieme gedachten in ChatGPT, Gemini of Copilot, op Amerikaanse servers. Dit is de blinde vlek van het hele verhaal. Pure waanzin.
+Wat u in een cloud-AI typt, is een geschreven, van een tijdstempel voorziene, opgeslagen bekentenis. Erger dan een bericht: u stort er uw angsten, gezondheid, financiën, werkgeheimen in uit, vaak eerlijker dan bij een vriend. En in tegenstelling tot een versleutelde messenger is alles in platte tekst leesbaar op de server.
+Wat de feiten zeggen (2025-2026)
+Consumentenabonnementen trainen standaard op uw gegevens. In januari 2026 beval een Amerikaanse rechter OpenAI om 20 miljoen ChatGPT-gesprekken als bewijs te overleggen: de getroffen gebruikers werden niet geïnformeerd noch geraadpleegd. Een gesprek verwijderen garandeert niet dat het weg is. Bij één lek bevatten 47.000 blootgelegde gesprekken e-mails, telefoonnummers en herleidbare intieme details.
+De tegenzet: lokale AI
+Ai
+Ollama · LM Studio · Jan · GPT4All
+🟡🔴Vervangt ChatGPT🌍 · 100% lokaal
+Software om een AI-model rechtstreeks op uw eigen computer te draaien.
+Uw vragen verlaten het apparaat nooit: geen server, geen account, geen telemetrie, en het werkt offline. De kwaliteit hangt af van uw hardware, maar er lekt niets. Ollama en LM Studio zijn het eenvoudigst; Jan en GPT4All mikken op maximale privacy.
+Iedereen die AI gebruikt voor zelfs maar enigszins persoonlijke onderwerpen en ze niet aan een Amerikaanse server wil toevertrouwen.
+Installeer voor een zachte start LM Studio of Jan (een grafische interface, als een gewone app).
+Download een model dat in de app wordt aangeboden (bijvoorbeeld Llama of Mistral), afgestemd op de kracht van uw machine.
+Chat weg: alles gebeurt lokaal. Ollama is de opdrachtpromptversie voor de meer technische gebruikers.
+lmstudio.ai →jan.ai →ollama.com →🟡🔴
+☁
+Duck.ai · Lumo (Proton)
+🟢🟡Privacybewuste cloud
+Cloud-AI-toegang, maar dan gebouwd voor privacy, wanneer een lokale AI niet mogelijk is.
+Duck.ai (DuckDuckGo) biedt geanonimiseerde toegang tot meerdere modellen. Lumo (Proton) versleutelt de uitwisselingen en traint er niet op. Veel beter dan consumenten-ChatGPT, maar het blijft een server op afstand.
+Wie de gemakken van de cloud wil zonder de reuzen te voeden. Houd niet-gevoelige onderwerpen daar.
+duck.ai →lumo →🟢🟡
+De simpele regel
+Plak nooit iets in een cloud-AI dat u niet zou vertellen aan een vreemde die meeluistert: identiteit, gezondheid, wachtwoorden, werkgeheimen, bekentenissen. Voor al het andere dat gevoelig is, gebruikt u een lokale AI.
+VERVANG DE REST · 🟡
+De dagelijkse gereedschapskist
+Google en Apple zijn niet alleen e-mail: kaarten, notities, agenda, foto's, videogesprekken, alles is aan uw identiteit gekoppeld. Hier leest u hoe u elke bouwsteen één voor één vervangt, zonder in te leveren op gemak.
+Om
+Organic Maps · OsmAnd
+🟢 BeginnerVervangt Google Maps🌍 · open-source
+Kaart- en navigatie-apps, gebouwd op OpenStreetMap, die offline werken.
+Google Maps legt elke reis vast en bouwt een griezelig nauwkeurige locatiegeschiedenis op. Organic Maps volgt niets en toont geen advertenties; OsmAnd is gericht op gevorderde gebruikers (wandelen, hoogtelijnen, gedetailleerde navigatie).
+Iedereen. Live verkeersinformatie en openbaar vervoer zijn minder compleet dan bij Google, maar de dagelijkse navigatie is uitstekend.
+Installeer vanuit F-Droid, de App Store of Google Play.
+Download vooraf de kaarten van de regio's die u nodig heeft voor offline gebruik.
+organicmaps.app →osmand.net →🟢
+No
+Standard Notes · Joplin · CryptPad
+🟢🟡Vervangt Docs / Notion🌍 · open-source
+End-to-end versleutelde notities en documenten, ter vervanging van Google Docs, Notion of Evernote.
+Standard Notes (van Proton) versleutelt uw notities standaard. Joplin beheert Markdown-notitieboeken met optionele versleuteling en de synchronisatie van uw keuze. CryptPad (Frans) biedt een real-time, volledig versleuteld Google Docs-alternatief.
+Iedereen voor notities; CryptPad voor samenwerking met meerdere personen.
+Standard Notes / Joplin: maak een account aan, installeer de app en schakel versleuteling in (standaard aan bij Standard Notes, aan te zetten in Joplin).
+CryptPad: gebruik cryptpad.fr of een andere instance, geen account nodig om te beginnen.
+standardnotes.com →joplinapp.org →cryptpad.org →🟢🟡
+Vi
+Jitsi Meet · Element Call
+🟢🟡Vervangt Zoom / Meet🌍 · open-source
+Videoconferentietools zonder account of zware installatie, ter vervanging van Zoom, Google Meet of Teams.
+Jitsi Meet draait in de browser, geen account, en kan zelf worden gehost (het is ook de basis van Brave Talk). Element Call is end-to-end versleuteld en gefedereerd via Matrix. Voor een eenvoudig, volledig versleuteld gesprek voldoen Signal-gesprekken ook.
+Iedereen. Op een publieke Jitsi-server zijn gesprekken met meerdere deelnemers in het transport versleuteld; end-to-end-encryptie is optioneel.
+Jitsi: ga naar meet.jit.si, maak een kamernaam aan, deel de link. Niets te installeren.
+Element Call: start vanuit de Element (Matrix)-app een gesprek in een ruimte.
+jitsi.org →element.io/element-call →🟢🟡
+Ph
+Ente · Immich
+🟡🔴Vervangt Google Photos🌍 · open-source
+Twee manieren om uw foto's te bewaren zonder ze aan Google of Apple toe te vertrouwen.
+Ente is een beheerde, end-to-end versleutelde dienst, met herkenning en zoeken op het apparaat: eenvoudig en veilig. Immich is een Google Photos-kloon die u zelf host (inclusief gezichts- en objectherkenning), voor wie een server kan beheren.
+Ente voor iedereen; Immich voor zelf-hosters. Let op: Immich is niet end-to-end versleuteld, de beveiliging hangt af van uw server.
+Ente: installeer de app, maak een account aan en schakel automatische back-up van uw fotorol in.
+Immich: zet het via Docker op uw server (zie sectie 10) en koppel de mobiele app.
+ente.io →immich.app →🟡🔴
+@
+SimpleLogin · addy.io
+🟢🟡E-mailaliassen🌍 · open-source
+Wegwerpbare e-mailaliassen: een uniek adres per site, dat doorstuurt naar uw echte inbox zonder deze ooit te onthullen.
+U geeft niet langer overal uw echte adres op. Als een site wordt gehackt of u spamt, knipt u de bijbehorende alias en weet u meteen wie uw gegevens heeft gelekt. SimpleLogin is geïntegreerd met Proton; addy.io biedt onbeperkte aliassen in het gratis abonnement.
+Iedereen, en vooral pseudoniem-accounts die hun aanmeldingen willen compartimenteren.
+Maak een account aan, installeer de browserextensie.
+Genereer bij elke aanmelding een nieuwe alias in plaats van uw echte adres in te typen.
+simplelogin.io →addy.io →🟢🟡
+Bk
+Versleutelde back-ups
+🟡🔴Cryptomator · restic🌍 · open-source
+Een manier om een back-up te maken van uw telefoon en computer, waarbij de gegevens vóór vertrek naar de cloud worden versleuteld.
+iCloud/Google-back-ups zijn vaak toegankelijk voor de provider, en dus voor rechtbanken. Cryptomator versleutelt uw bestanden vóór ze naar een cloud worden gestuurd; restic maakt automatische versleutelde back-ups; Proton Drive is end-to-end versleuteld. Schakel op de iPhone "Geavanceerde gegevensbescherming" in om uw iCloud-back-ups te versleutelen.
+Iedereen zou zijn back-ups moeten versleutelen. Gouden regel: twee versleutelde kopieën, op twee media, op twee locaties.
+iPhone: Instellingen > uw naam > iCloud > Geavanceerde gegevensbescherming: schakel in.
+PC: installeer Cryptomator, maak een kluis aan, plaats er uw bestanden in vóór synchronisatie met de cloud.
+cryptomator.org →restic.net →🟡🔴
+RG
+Wis uw gegevens (AVG)
+🟡Databrokers
+Uw persoonlijke gegevens laten verwijderen uit de "databrokers" die ze verzamelen en doorverkopen.
+In Europa geeft de AVG (artikel 17) u een recht op gegevenswissing: u kunt gratis eisen dat een bedrijf uw gegevens verwijdert, in principe binnen een maand. Diensten als Incogni automatiseren deze verzoeken op grote schaal, tegen betaling.
+Wie zijn blootstelling wil verminderen. Let op: gegevens komen na verloop van tijd terug, en dit raakt geen openbare registers of sociale media. Het zelf doen is gratis maar tijdrovend.
+Voor een handmatig verzoek: schrijf de broker, verwijs naar AVG-artikel 17 en vraag om verwijdering.
+Om te automatiseren: abonneer u op een verwijderservice en laat die de verzoeken namens u versturen.
+cnil.fr →incogni.com →🟡
+DEEL 10 · GEAVANCEERDE ZELFVERDEDIGING · 🔴
+Zelfhosting
+Het ultieme niveau van soevereiniteit: host uw diensten zelf. Uw gegevens leven op uw eigen hardware, onder de jurisdictie die u kiest.
+Yh
+YunoHost · Umbrel · Start9
+🔴 ExpertKant-en-klare server🌍 · open-source
+Systemen die een oude pc of Raspberry Pi omtoveren tot een persoonlijke server, met een app-catalogus die u in een paar klikken installeert.
+Zelfhosting klinkt eng, maar deze tools doen het zware werk. YunoHost beheert zelfs uw eigen e-mail en single sign-on. Umbrel biedt een app-store met meer dan 300 apps, populair bij privacy- en Bitcoin-liefhebbers. Start9 versleutelt back-ups en geeft elke dienst standaard een Tor-adres.
+Gevorderde profielen die een middag willen besteden aan het opzetten van hun eigen cloud. Het is de meest radicale structurele tegenzet tegen Chat Control.
+Pak een oude computer, een Raspberry Pi, of huur een kleine server (VPS) in een beschermend land.
+Installeer YunoHost, Umbrel of Start9 volgens hun officiële handleiding.
+Installeer vanuit de catalogus Nextcloud, een Matrix-server, een fotogalerij, enz.
+Bereik het privé met Tailscale (kaart hieronder) in plaats van de server bloot te stellen aan het publieke internet.
+yunohost.org →umbrel.com →start9.com →🔴
+Nc
+Nextcloud
+🔴 ExpertVervangt de hele Google-suite🇩🇪 · open-source
+Uw eigen cloud: bestanden, agenda, contacten, foto's, notities en samenwerkingsdocumenten, op uw server.
+Het is de volledige vervanging van Google Drive, Agenda en Contacten, maar dan thuis. U kiest de jurisdictie en niemand anders heeft zeggenschap over uw bestanden. Let op: het is "uw server"-privacy, niet standaard end-to-end versleuteld; u moet het up-to-date houden.
+Zelf-hosters. De eenvoudigste weg is installatie via YunoHost of Umbrel.
+nextcloud.com →🔴
+Mx
+Matrix Synapse
+🔴 ExpertUw eigen chatserver🌍 · open-source
+Uw eigen Matrix-chatserver, waarop Element en versleutelde gesprekken draaien.
+Door de server te hosten, beheert u ook de metadata (wie met wie praat, wanneer), het zwakke punt van Matrix in federatie. Het is communitychat waarvan u alleen de eigenaar bent.
+Gemeenschappen, collectieven, redacties die hun eigen onafhankelijke gefedereerde ruimte willen.
+element.io/server →🔴
+Ts
+Tailscale · Headscale · WireGuard
+🔴 ExpertPrivétoegang tot uw server🌍 · open-source
+Een privé versleuteld netwerk dat uw apparaten aan uw server koppelt, zonder deze ooit bloot te stellen aan het publieke internet.
+In plaats van poorten te openen (en aangevallen te worden), bouwt Tailscale een WireGuard-tunnel tussen alleen uw geautoriseerde apparaten: uw server heeft geen publiek aanvalsoppervlak. Headscale is de zelf-gehoste versie, zodat u van geen enkele derde partij afhankelijk bent. WireGuard alleen biedt volledige controle, ten koste van handmatige configuratie.
+Elke zelf-hoster. Het is de veilige manier om van buitenaf uw Nextcloud of foto's te bereiken.
+Installeer Tailscale op uw server en op uw telefoon/pc, en koppel ze aan hetzelfde account.
+Uw apparaten zien elkaar meteen op een privénetwerk; bereik uw server via het Tailscale-adres.
+Voor nul afhankelijkheid vervangt u de coördinatieserver door zelf-gehoste Headscale.
+tailscale.com →headscale.net →🔴
+www
+Uw eigen website
+🟡🔴Ban-bestendig uw stem
+Een eigen site, op uw eigen domeinnaam, waar uw inhoud van geen enkel platform afhangt.
+Op de dag dat een netwerk uw account verwijdert of schorst, verdwijnt al uw werk. Een persoonlijke site is uw anker: uw berichten blijven daar, gearchiveerd en up-to-date, wat er ook gebeurt. Dat is precies wat voorzichtige informatieaccounts doen. Een statische site (gebouwd met Hugo, Astro of Jekyll) is voldoende en publiceert bijna gratis; voor een dynamische blog voldoet een zelf-gehoste WordPress of Ghost.
+Informatieaccounts, makers, activisten, iedereen die publiceert en platformcensuur vreest.
+Koop een domeinnaam (idealiter bij een privacyrespecterende registrar).
+Kies een statische-sitegenerator (Astro, Hugo) en host het resultaat, of installeer WordPress/Ghost op uw server.
+Verwijs er systematisch naar vanuit uw sociale netwerken: uw publiek vindt u zelfs als een account wegvalt.
+astro.build →ghost.org →🟡🔴
+Het jurisdictiepunt
+Zelfhosten betekent ook kiezen waar uw gegevens leven. Een server thuis of in een beschermend land ontsnapt aan de scanverplichtingen die aan grote platforms worden opgelegd. Het is de meest radicale structurele tegenzet tegen Chat Control.
+DEEL 11 · 🔴
+Tor
+Het netwerk dat scheidt wie u bent van wat u online doet.
+Tor
+Tor Browser
+🔴 ExpertNetwerkanonimiteit🌍 · open-source
+Een netwerk dat scheidt wie u bent van wat u online doet, toegankelijk via de Tor Browser.
+Uw verkeer stuitert via meerdere versleutelde relays wereldwijd: geen enkele kent zowel uw identiteit als uw bestemming. Het is het gereedschap van journalisten en bronnen, en de manier om een geblokkeerde site te bereiken (bijvoorbeeld om een gecensureerde VPN te downloaden).
+Hoogrisicoprofielen, en iedereen die zijn activiteit moet loskoppelen van zijn echte IP. Gebruik het af en toe, niet als dagelijkse browser.
+Download de Tor Browser van torproject.org (Windows, macOS, Linux, Android).
+Start hem en klik op "Verbinden". Als Tor in uw land geblokkeerd is, schakel dan een "bridge" in.
+Blader zonder het venster te maximaliseren, zonder extensies te installeren, en zonder u aan te melden bij uw echte accounts.
+torproject.org →🔴
+Beperkingen, geen magie
+Tor beschermt het transport, niet uw gewoonten: meld u aan bij uw echte account en u de-anonimiseert uzelf. Het is trager, en de exit-node ziet onversleuteld verkeer (gebruik HTTPS). Voor serieuze anonimiteit, combineer het met Tails (sectie 12).
+DEEL 12 · 🔴
+Vrije besturingssystemen
+De hoeksteen. Als client-side scanning kan worden opgelegd door het besturingssysteem zelf, is de enige echte tegenzet dat besturingssysteem beheersen. Dat geldt zowel voor de telefoon (GrapheneOS) als voor de computer (Linux). Onderschat dit niet: zolang u op Windows, macOS of een Google-Android blijft, beheerst u uw machine niet echt.
+Gr
+GrapheneOS
+🔴 ExpertOntgooglede mobielAndroid · Pixel · open-source
+Een volledig ontgooglede Android, geïnstalleerd op een Pixel-telefoon: mobiele soevereiniteit.
+Het is de structurele verdediging bij uitstek tegen een besturingssysteem of app-store die u zou willen scannen. Google-diensten in een optionele sandbox, netwerkpermissies per app, geïsoleerde profielen, automatische herstart die sleutels uit het geheugen wist, een dwang-PIN die de telefoon wist. Zo gerespecteerd om zijn beveiliging dat het wordt gebruikt door spyware-doelen.
+Blootgestelde profielen, maar ook elke burger die een Pixel wil kopen om de controle over zijn telefoon terug te nemen.
+Schaf een compatibele Google Pixel-telefoon aan (de enige ondersteunde hardware, om veiligheidsredenen).
+Ga op een computer naar grapheneos.org/install en volg de webinstaller (een paar klikken, geen terminal nodig).
+Installeer voor uw apps de vrije F-Droid-winkel; voeg alleen indien nodig Google Play in een sandbox toe.
+Stel een lange wachtwoordzin in (geen 4-cijferige PIN) en leer de "Lockdown"-modus.
+grapheneos.org →🔴
+🐧
+Linux (op desktop)
+🟡🔴Vervangt Windows / macOS🌍 · vrij & gratis
+Een vrij en gratis besturingssysteem voor uw computer, ter vervanging van Windows of macOS. Het bestaat in vele smaken, "distributies" genaamd.
+Het is de blinde vlek van veel mensen: ze versleutelen hun berichten, maar houden een Windows die onophoudelijk telemetrie naar Microsoft streamt (wiens "Recall"-functie het scherm continu probeerde te fotograferen), of een macOS die rapporteert welke apps u opent. Linux bespioneert u niet, is gratis, doet oude computers herleven, en maakt u eindelijk meester van uw machine. Het is eenvoudiger dan zijn reputatie: moderne distributies lijken op Windows of macOS.
+Iedereen kan de overstap maken. Om te beginnen: Linux Mint (het dichtst bij Windows) of Fedora; Debian voor stabiliteit. U hoeft niets te wissen: u kunt eerst testen en daarnaast uw huidige systeem installeren.
+Niet zeker welke distributie? Beantwoord de distrochooser.de/fr-vragenlijst, die u op de juiste weg helpt op basis van uw behoeften.
+Probeer het zonder iets te installeren, rechtstreeks in uw browser, op distrosea.com.
+Eenmaal overtuigd, download de image van de distributie en maak een opstartbare USB (met Ventoy of Balena Etcher).
+Start vanaf de USB om het systeem "live" te proberen, voer dan de installatie uit. Schakel de aangeboden schijfversleuteling in.
+distrochooser.de/fr →distrosea.com →linuxmint.com →🟡🔴
+Ta
+Tails
+🔴 ExpertAmnesische USB🌍 · alles via Tor
+Een systeem dat opstart vanaf een USB-stick, al het verkeer via Tor leidt en bij het afsluiten geen spoor achterlaat.
+Bij het afsluiten wordt alles vergeten: het is "amnesisch". Ideaal voor gevoelig, eenmalig werk op een computer die niet van u is, zonder iets achter te laten.
+Klokkenluiders, journalisten, bronnen. Het referentiegereedschap voor werk met hoog risico.
+Download Tails van tails.net en volg de wizard om de USB-stick te maken.
+Start de computer opnieuw op vanaf die USB. Gebruik het, en sluit af: alles verdwijnt.
+tails.net →🔴
+Qb
+Qubes OS · postmarketOS
+🔴 ExpertCompartimentering🌍 · open-source
+Twee nichesystemen: Qubes compartimenteert uw pc in verzegelde virtuele machines; postmarketOS draait Linux op oude telefoons.
+Qubes isoleert elke activiteit (werk, bankieren, risicovol browsen) in een eigen compartiment: een compromittering bereikt de rest niet. postmarketOS verlengt de levensduur van telefoons die door hun fabrikant zijn afgedankt.
+Expertgebruikers met een zeer hoog dreigingsmodel.
+qubes-os.org →postmarketos.org →🔴
+Hard uw apparaat
+Zonder van besturingssysteem te wisselen wint u al veel: installeer apps via F-Droid (vrije winkel) of Aurora Store, vervang Google-diensten door microG, maak gescheiden profielen, knip onnodige netwerkpermissies, schakel automatische cloud-back-up en de advertentie-ID uit.
+HARDWARE · 🔴
+Telefonie & fysiek apparaat
+De beste app is nutteloos als het apparaat zelf u verraadt. Hier zijn de hardwaredreigingen en de stappen die ze neutraliseren.
+Het telefoonnummer is een tracker
+Uw nummer verbindt uw SIM-kaart, uw apparaat (de IMEI-identifier), uw locatie en uw identiteit (de meeste landen eisen identiteitsbewijs bij aankoop van een SIM). Het is de draad die alles aan elkaar knoopt.
+Gebruik nummerloze messengers (SimpleX, Session) voor gevoelige contacten, en geef altijd de voorkeur aan Signal boven sms.
+Voor een gescheiden identiteit beperkt een "alleen-data"-SIMkaart of prepaid eSIM de koppeling op het verkooppunt (controleer de regels van uw land).
+IMSI-catchers & het telefoonnetwerk
+"IMSI-catchers" (of "stingrays") zijn nep-zendmasten die telefoons dwingen verbinding te maken om hun identificatie te registreren en soms communicatie te onderscheppen, vaak door terug te schakelen naar zwak versleuteld 2G. Tegelijk maakt een oude netwerkfout (SS7) het nog steeds mogelijk sms'jes te onderscheppen en telefoons op afstand te lokaliseren: een reden te meer om sms te laten vallen.
+Schakel 2G uit in de instellingen (mogelijk op Android en GrapheneOS) om de belangrijkste interceptievector te blokkeren.
+Schakel op een betoging of in een gevoelig gebied de vliegtuigmodus in of stop de telefoon in een Faraday-zak (die alle signalen blokkeert). De EFF publiceert zelfs een vrij hulpmiddel, Rayhunter, om IMSI-catchers te detecteren.
+Biometrie of toegangscode?
+Een vinger kan worden afgedwongen, een code niet
+Uw gezicht of vinger kan op de sensor worden gedrukt terwijl u wordt vastgehouden (aan een grens, tijdens een arrestatie); een wachtwoord in uw hoofd kan dat niet. Dwing vóór een risicovolle situatie een terugkeer naar de toegangscode af: houd op de iPhone de zijknop en een volumeknop ingedrukt (het "SOS"-scherm); gebruik op Android/GrapheneOS Lockdown in het stroommenu, wat biometrie uitschakelt totdat de code is ingevoerd. Kies een lange wachtwoordzin, geen viercijferige PIN. GrapheneOS biedt zelfs een dwang-PIN die de telefoon wist.
+De-Microsoft, de-Apple
+Vergeet de computer niet: Windows streamt onophoudelijk telemetrie (en de "Recall"-functie probeerde het scherm continu te fotograferen), macOS rapporteert welke apps u opent. De echte uitweg is Linux (zie sectie 12). Zo niet, schakel dan telemetrie, advertentie-ID en "Recall" uit, en voeg een uitgaande firewall toe (zoals Little Snitch op de Mac).
+DEEL 13 · 🔴
+Anonimiteit & OPSEC
+Voor het pseudoniem-account en de klokkenluider. Hier beschermt u niet langer alleen een bericht: u beschermt een identiteit.
+Pseudonimiteit versus anonimiteit
+De gouden regel: kruis uw echte identiteit nooit met uw publieke. Niet hetzelfde e-mailadres, nummer, apparaat, netwerk, posttijdstip of schrijfstijl. Eén lek koppelt de twee.
+Identiteitloze accounts: SimpleX en Session vragen geen nummer; combineer ze met wegwerpbare e-mailaliassen. Pas op voor doorverkochte, traceerbare "virtuele nummers".
+Metadata opschonen: een geplaatste foto bevat vaak de datum, het apparaatmodel en soms GPS-coördinaten (EXIF-gegevens). Verwijder ze met Metadata Cleaner, mat2 of ExifTool voordat u iets plaatst; let ook op bestandsnamen en documentmetadata.
+Netwerk-anti-correlatie: gebruik Tor/Tails om uw activiteit los te koppelen van uw thuis-IP. Meng nooit uw persoonlijke en pseudonimennetwerken. Een SIM op uw naam verraadt uw locatie, wat u ook doet.
+Compartimentering: een apparaat, of minstens een profiel, gewijd aan de publieke identiteit, een aparte wachtwoordmanager, en nooit kruislings inloggen tussen de twee werelden.
+Documenten doorspelen als bron
+SecureDrop is het anonieme indienensysteem dat veel redacties gebruiken om documenten van bronnen te ontvangen. Veel media publiceren ook een PGP-sleutel en een Signal-contact. Dien nooit in vanaf uw werkmaterialen of uw gebruikelijke netwerk.
+Eerlijkheid, overschat uzelf niet
+Sterke anonimiteit tegen een staatsvijand is moeilijk en feilbaar. Deze gids geeft bakens, geen garanties. Als er levens van afhangen, train dan met de gezaghebbende bronnen: EFF Surveillance Self-Defense, Freedom of the Press Foundation, Privacy Guides. Strikt defensieve en journalistieke context.
+DEEL 14 · VERDER GAAN
+Het complete vrije-software-ecosysteem
+Volledig ontgoogelen betekent elke bouwsteen vervangen door een vrij equivalent. De gemeenschappelijke logica (vrije software + controle over uw apparaat + zelfhosting) is de echte tegenzet tegen client-side scanning.
+Kantoorsoftware
+LibreOffice
+OnlyOffice
+Media
+VLC
+Jellyfin
+FreeTube / NewPipe
+Audacity · OBS
+GIMP · Inkscape
+Calibre · Shotcut
+Cloud & netwerk
+Nextcloud
+Pi-hole
+KDE Connect
+Vrije mobiel
+F-Droid · Aurora
+microG
+postmarketOS
+Beveiliging
+Bitwarden
+KeePassXC
+Wireshark
+E-mail & desktop
+Thunderbird
+FairEmail
+Dev & gevorderd
+Termux · git
+QEMU / KVM · Wine
+Flatpak · GNU/Linux
+DEEL 15 · IN ACTIE KOMEN
+Migratie & digitale burgerlijke ongehoorzaamheid
+Een stapsgewijs plan
+Week 1 🟢: Installeer Signal en haal uw naasten over. Stap over op Proton Mail of Tuta. Stel een wachtwoordmanager en uBlock Origin in.
+Week 2 🟡: Migreer bestanden naar een versleutelde cloud, vervang Chrome/Google Search, neem een VPN, open een Mastodon-account.
+Daarna 🔴: Afhankelijk van uw profiel: GrapheneOS, Tor/Tails, zelfhosting, OPSEC-discipline.
+Veelgemaakte fouten
+Denken dat één hulpmiddel genoeg is; uw echte nummer hergebruiken voor een anoniem account; tien apps installeren zonder gewoontes te veranderen; vergeten dat de zwakke schakel vaak het apparaat zelf is.
+Soevereiniteit is collectief
+Een versleutelde messenger werkt alleen als de ander hem ook gebruikt. Neem uw contacten, familie en gemeenschap mee. Van hulpmiddel wisselen is stemmen met uw gebruik: iedereen die de surveillanceplatforms verlaat, verzwakt het model.
+Politiek handelen
+Techniek vervangt de politiek niet. Volg en steun de mobilisatie: fightchatcontrol.eu, EDRi, het werk van Patrick Breyer. Neem contact op met uw Europarlementariërs, dat is wat de tekst bijna heeft doen vallen.
+Manifest
+Illegitieme massasurveillance weigeren is geen verbergen: het is een wettelijke, vreedzame, burgerlijke daad. Privacy is een recht, geen bekentenis. Versleutelen is stemmen. Zelfhosten is ongehoorzaam zijn. Uw hulpmiddelen terugwinnen is onbestuurbaar worden.
+Bronnen
+Privacy Guides EFF · Surveillance Self-Defense Freedom of the Press Foundation Fight Chat Control
+Bronnen · de wet
+Chat Control · Wikipedia Breyer · vote 9 juillet 2026 Chat Control 1.0 vs 2.0 Proton · client-side scanning Gezamenlijke oproep van de techreuzen (19 mrt 2026) Big Tech vows to keep scanning
+Handel
+European Digital Rights (EDRi) Patrick Breyer · Chat Control Signal · blog
+Open source op GitHub
+Deze gids is een informatiedocument over privacybescherming en de verdediging van versleuteling. Het raadt geen illegale activiteiten aan. Controleer altijd het wetgevingsnieuws: de situatie verandert snel. Feiten laatst bijgewerkt: 9 juli 2026.

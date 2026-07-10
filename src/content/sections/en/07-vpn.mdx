@@ -1,0 +1,139 @@
+---
+id: 'vpn'
+part: 4
+order: 7
+title: 'VPN: the truth'
+---
+
+<p class="part-num">
+  PART 06 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## VPN: the truth
+
+A VPN is useful, but sold with a lot of lies. Here's what it actually protects.
+
+<div class="box warn">
+  <span class="lab">What a VPN does NOT do</span>
+  <p>
+    A VPN <strong>does not protect you from Chat Control's client-side scanning</strong>: that reads
+    your messages on your device, before encryption and therefore before the VPN. It's also not an
+    invisibility cloak: your OS and apps see more than your VPN provider does.
+  </p>
+</div>
+
+<div class="box ok">
+  <span class="lab">What a VPN does well</span>
+  <p>
+    It hides your activity from your <strong>ISP</strong> and masks your <strong>IP address</strong>{' '}
+    (and thus location) from the sites you visit. Useful against network surveillance, geolocation
+    and censorship. One piece of the puzzle, not the solution.
+  </p>
+</div>
+
+<ToolCard tool="t-mullvad">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡🔴 All levels</span>
+    <span class="tool-tag">No account · cash/Monero</span>
+    <span class="tool-tag">🇸🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A VPN that masks your IP address and encrypts your traffic up to its servers, without ever
+    asking for a single piece of personal information.
+  </Fragment>
+  <Fragment slot="why">
+    It's the privacy gold standard. No email, no name: at signup you're given a plain account
+    number. Audited no-log policy, a single honest price (€5 per month, no tiers, no false
+    promises), and payment in cash or Monero. That's exactly what matters the day a state tries to
+    cut off VPN access: an account that can't be tied to your identity, and a payment banks can't
+    block.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone, from the citizen bypassing an ID check to the high-risk profile. It's the VPN to
+    recommend first.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Go to <b>mullvad.net</b>. If the site is blocked in your country, open it through the Tor
+      Browser or its <b>.onion</b> address. Click "Generate account number": no email or name is
+      asked. Save this number in your password manager and never share it, it's your only access
+      key.
+    </li>
+    <li>
+      Choose the duration and payment method. The price is flat. Three routes: bank card (simplest
+      if not blocked), cash sent by post, or cryptocurrency.
+    </li>
+    <li>
+      <b>Anonymous crypto payment:</b> click "Create a one-time payment address." Mullvad shows an
+      address (Bitcoin or Monero) and an exact amount. Send that amount from your wallet. For
+      maximum anonymity, prefer <b>Monero</b> (private by default); Bitcoin is simpler but
+      traceable. See section 09 to buy crypto. Allow about 30 minutes for confirmation.
+    </li>
+    <li>
+      Download the app from <b>mullvad.net/download</b> (via Tor if the site is filtered) and
+      install it. On mobile, use the App Store, Google Play, or the official APK if the app was
+      pulled from your store.
+    </li>
+    <li>
+      Launch the app, enter your account number, then connect to a server{' '}
+      <b>outside your country</b>, ideally outside the EU (Switzerland, US…). Enable the "kill
+      switch" (which cuts the internet if the VPN drops) and Mullvad's DNS.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-protonvpn">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Honest free tier</span>
+    <span class="tool-tag">🇨🇭 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    The VPN from the Proton ecosystem, with a genuine free tier (rare and honest).
+  </Fragment>
+  <Fragment slot="why">
+    Swiss-based, audited, open-source. Its free tier has no ads, no data resale and no data cap
+    (only the number of countries is limited). It's the ideal on-ramp for a beginner, especially if
+    you already use Proton Mail.
+  </Fragment>
+  <Fragment slot="who">
+    Beginners, and anyone already in the Proton ecosystem who wants a single account for everything.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Go to <b>protonvpn.com</b> and sign in with your Proton account (or create one).
+    </li>
+    <li>Install the app (Windows, macOS, Linux, Android, iOS).</li>
+    <li>
+      Use "Quick Connect" or pick a country, then enable the kill switch and NetShield (ad and
+      tracker blocking).
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-ivpn">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Advanced</span>
+    <span class="tool-tag">No email · no-log</span>
+    <span class="tool-tag">🇬🇮 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A small, especially rigorous and transparent VPN provider, on the same model as Mullvad.
+  </Fragment>
+  <Fragment slot="why">
+    Audited no-log policy, no mandatory email, payment in crypto or cash. It even offers
+    anti-tracking options (network-level tracker blocking) and signup with no identifier at all.
+  </Fragment>
+  <Fragment slot="who">
+    A solid alternative to Mullvad, for pseudonymous and high-risk profiles who want to diversify.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      At <b>ivpn.net</b>, generate an account (an ID is created for you, no email).
+    </li>
+    <li>Pay in crypto or cash, as with Mullvad.</li>
+    <li>
+      Install the app, connect outside the EU, enable the kill switch and the WireGuard protocol.
+    </li>
+  </ol>
+</ToolCard>

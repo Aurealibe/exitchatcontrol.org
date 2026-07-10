@@ -1,0 +1,201 @@
+{
+  "_machineTranslated": "2026-07-10",
+  "signal": {
+    "body": "Vervangt WhatsApp. Standaard E2EE, non-profitstichting."
+  },
+  "simplex-chat": {
+    "body": "Geen enkele identifier: zelfs de servers kunnen niet weten wie met wie praat."
+  },
+  "session": {
+    "body": "Geen telefoonnummer, onion-routing."
+  },
+  "element-matrix": {
+    "body": "Vervangt Discord/Slack. Gefedereerd, zelf te hosten."
+  },
+  "briar": {
+    "body": "P2P zonder internet (Bluetooth/Tor): protesten, black-outs."
+  },
+  "molly": {
+    "body": "Geharde Signal voor Android (volledig FOSS-variant)."
+  },
+  "thunderbird": {
+    "body": "Dé vrije referentie-mailclient, OpenPGP ingebouwd."
+  },
+  "proton-mail": {
+    "body": "Opensource-apps van de Zwitserse versleutelde dienst."
+  },
+  "tuta": {
+    "body": "Vrije apps, kwantumbestendige versleuteling, EU-jurisdictie."
+  },
+  "firefox": {
+    "body": "Vervangt Chrome. De onafhankelijke engine."
+  },
+  "tor-browser": {
+    "body": "Anonimiteit op netwerkniveau, anti-fingerprinting."
+  },
+  "mullvad-browser": {
+    "body": "De browser van het Tor Project, zonder het Tor-netwerk."
+  },
+  "brave": {
+    "body": "Chromium dat advertenties en trackers standaard blokkeert."
+  },
+  "ublock-origin": {
+    "body": "DÉ advertentie- en trackerblokker."
+  },
+  "searxng": {
+    "body": "Zelf te hosten metazoekmachine."
+  },
+  "wireguard": {
+    "body": "Het moderne VPN-protocol waar iedereen op voortbouwt."
+  },
+  "mullvad-vpn": {
+    "body": "Client van de VPN zonder account (contant/Monero aanvaard)."
+  },
+  "proton-vpn": {
+    "body": "Vrije clients, eerlijk gratis aanbod."
+  },
+  "tor": {
+    "body": "Het netwerk dat scheidt wie u bent van wat u doet."
+  },
+  "tailscale": {
+    "body": "Privé WireGuard-netwerk tussen uw apparaten."
+  },
+  "headscale": {
+    "body": "De coördinatieserver van Tailscale, op uw eigen hardware."
+  },
+  "pi-hole": {
+    "body": "Blokkeert advertenties en trackers voor het hele netwerk."
+  },
+  "adguard-home": {
+    "body": "Alternatief voor Pi-hole met een moderne interface."
+  },
+  "bitwarden": {
+    "body": "Wachtwoordmanager voor alle platformen."
+  },
+  "vaultwarden": {
+    "body": "Lichtgewicht zelfgehoste Bitwarden-server."
+  },
+  "keepassxc": {
+    "body": "100% lokale kluis, nul cloud."
+  },
+  "aegis": {
+    "body": "2FA-codes (TOTP) in een lokale versleutelde kluis (Android)."
+  },
+  "ente-auth": {
+    "body": "2FA met end-to-end versleutelde synchronisatie."
+  },
+  "nextcloud": {
+    "body": "Vervangt de hele Google-suite, bij u thuis."
+  },
+  "cryptomator": {
+    "body": "Versleutelt uw bestanden VÓÓR welke cloud dan ook."
+  },
+  "syncthing": {
+    "body": "Synchronisatie van apparaat naar apparaat, zonder server."
+  },
+  "restic": {
+    "body": "Versleutelde, gededupliceerde, automatische back-ups."
+  },
+  "immich": {
+    "body": "Zelfgehost Google Photos (gezichten, zoeken)."
+  },
+  "ente-photos": {
+    "body": "E2EE-foto's, herkenning op het apparaat zelf."
+  },
+  "libreoffice": {
+    "body": "Dé vrije kantoorsuite."
+  },
+  "onlyoffice": {
+    "body": "Zelf te hosten kantoorsuite voor samenwerking."
+  },
+  "joplin": {
+    "body": "Markdown-notities, optionele versleuteling en synchronisatie."
+  },
+  "standard-notes": {
+    "body": "Notities, standaard versleuteld."
+  },
+  "cryptpad": {
+    "body": "Samenwerken à la Google Docs, volledig versleuteld."
+  },
+  "organic-maps": {
+    "body": "Offline kaarten zonder enige tracking (OpenStreetMap)."
+  },
+  "osmand": {
+    "body": "Kaarten voor veeleisende gebruikers (wandelen, hoogtelijnen)."
+  },
+  "jitsi-meet": {
+    "body": "Videogesprekken zonder account, zelf te hosten."
+  },
+  "mastodon": {
+    "body": "Vervangt X/Twitter. Gefedereerd, geen opgelegd algoritme."
+  },
+  "pixelfed": {
+    "body": "De Instagram van de fediverse."
+  },
+  "peertube": {
+    "body": "Gefedereerde YouTube."
+  },
+  "lemmy": {
+    "body": "Gefedereerde Reddit."
+  },
+  "damus": {
+    "body": "Nostr-client: uw identiteit is een sleutelpaar."
+  },
+  "ollama": {
+    "body": "Draai LLM's lokaal, met één commando."
+  },
+  "llama-cpp": {
+    "body": "De lokale inference-engine die alles mogelijk maakte."
+  },
+  "jan": {
+    "body": "100% lokale ChatGPT-achtige, eenvoudige interface."
+  },
+  "gpt4all": {
+    "body": "Privacygerichte lokale LLM's, CPU-vriendelijk."
+  },
+  "grapheneos": {
+    "body": "Ontgoogeld, gehard Android (Pixel)."
+  },
+  "tails": {
+    "body": "Amnesisch USB-besturingssysteem, alles via Tor."
+  },
+  "qubes-os": {
+    "body": "Compartimentering via afgesloten VM's."
+  },
+  "f-droid": {
+    "body": "De 100% vrije appwinkel."
+  },
+  "postmarketos": {
+    "body": "Linux op afgedankte telefoons."
+  },
+  "yunohost": {
+    "body": "Kant-en-klare persoonlijke server (e-mail inbegrepen)."
+  },
+  "startos": {
+    "body": "Soevereine server, standaard Tor."
+  },
+  "synapse": {
+    "body": "Uw gefedereerde chatserver."
+  },
+  "bitcoin-core": {
+    "body": "Geld dat u zelf in handen houdt."
+  },
+  "monero": {
+    "body": "Standaard private transacties."
+  },
+  "securedrop": {
+    "body": "Anonieme documentenbrievenbus voor redacties."
+  },
+  "onionshare": {
+    "body": "Bestanden delen via Tor, zonder tussenpersoon."
+  },
+  "rayhunter": {
+    "body": "IMSI-catcher-detector."
+  },
+  "mat2": {
+    "body": "Verwijdert metadata vóór publicatie."
+  },
+  "exiftool": {
+    "body": "EXIF-metadata lezen en wissen."
+  }
+}

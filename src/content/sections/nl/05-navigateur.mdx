@@ -1,0 +1,158 @@
+---
+id: 'navigateur'
+part: 3
+order: 5
+title: 'Browser & zoeken'
+---
+
+<p class="part-num">
+  DEEL 04 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Browser &amp; zoeken
+
+Chrome is een reclametracker. Google Search profieleert elke zoekopdracht. Vervang beide.
+
+<ToolCard tool="t-mullvadbrowser">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Gevorderd / Expert</span>
+    <span class="tool-tag">Anti-vingerafdruk</span>
+    <span class="tool-tag">🇸🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    De browser van de Tor Browser, maar dan zonder het Tor-netwerk: gebruik hem met uw VPN voor een
+    moeilijk te volgen computer.
+  </Fragment>
+  <Fragment slot="why">
+    Ontworpen met het Tor-project: alle gebruikers hebben dezelfde <b>digitale vingerafdruk</b>. Het
+    resultaat: in plaats van uniek en dus traceerbaar te zijn, lost u op in de massa. De beste
+    privék euze op de desktop.
+  </Fragment>
+  <Fragment slot="who">
+    Wie verder wil gaan dan eenvoudig adblocken, vooral pseudoniem-accounts en blootgestelde
+    profielen.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Download hem van <b>mullvad.net/browser</b> (Windows, macOS, Linux).
+    </li>
+    <li>
+      Gebruik hem standaard, zonder aanpassingen: elke toegevoegde extensie of instelling maakt u
+      opnieuw identificeerbaar.
+    </li>
+    <li>Combineer hem met uw VPN om ook uw IP-adres te verbergen.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-firefox">
+  <Fragment slot="name">Firefox (gehard)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Vervangt Chrome</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    De referentie-vrije browser voor privacyvriendelijk dagelijks gebruik.
+  </Fragment>
+  <Fragment slot="why">
+    In tegenstelling tot Chrome (een reclametracker van Google) wordt Firefox ontwikkeld door een
+    stichting die er geen belang bij heeft u te profileren. Met enkele aanpassingen (de{' '}
+    <em>arkenfox</em>-gids) en de extensie uBlock Origin wordt hij heel solide.
+  </Fragment>
+  <Fragment slot="who">Iedereen, als dagelijkse hoofd browser.</Fragment>
+  <ol slot="install">
+    <li>
+      Installeer Firefox vanaf <b>mozilla.org/firefox</b>.
+    </li>
+    <li>
+      Voeg de extensie <b>uBlock Origin</b> toe (blokkeert advertenties en trackers).
+    </li>
+    <li>
+      Kies bij privacy-instellingen "Streng", schakel telemetrie uit en wis cookies bij het
+      afsluiten. Voor wie verder wil: pas de arkenfox-gids toe.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-brave">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Blokkeert standaard alles</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een op Chromium gebaseerde browser die standaard advertenties en trackers blokkeert, met een
+    privévenster dat met Tor is verbonden.
+  </Fragment>
+  <Fragment slot="why">
+    Het is de eenvoudigste optie voor wie van Chrome komt: dezelfde ergonomie, maar zonder tracking.
+    Het blokkeert YouTube-advertenties standaard, biedt versleutelde video (Brave Talk, gebaseerd op
+    Jitsi) en Tor-toegang met één klik, handig om een geblokkeerde site te bereiken.
+  </Fragment>
+  <Fragment slot="who">
+    Beginners die een pijnloze overstap vanuit Chrome willen. (Negeer de
+    crypto-/beloningsadvertentiefuncties als ze u niet interesseren.)
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installeer Brave vanaf <b>brave.com</b>.
+    </li>
+    <li>
+      Stel "Shields" in op "agressief", en schakel Brave Rewards uit als u geen advertenties wilt.
+    </li>
+    <li>Voor Tor: menu &gt; "Nieuw privévenster met Tor", wacht tot "Tor verbonden" verschijnt.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-ublock">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Extensie</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    De browserextensie die advertenties, trackers en spionagescripts blokkeert. De actie met het
+    hoogste rendement, in tien seconden.
+  </Fragment>
+  <Fragment slot="why">
+    Online advertenties zijn de belangrijkste vector van surveillance en profilering. Het blokkeren
+    ervan snijdt het leeuwendeel van de tracking weg, versnelt pagina's en verkleint het risico op
+    malware.
+  </Fragment>
+  <Fragment slot="who">Iedereen, op Firefox en op Chromium-browsers.</Fragment>
+  <ol slot="install">
+    <li>
+      Open de extensiewinkel van uw browser en zoek "uBlock Origin" (het origineel, van Raymond
+      Hill).
+    </li>
+    <li>Installeer hem. Hij werkt meteen, geen instellingen nodig.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-search">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡 Zoekmachines</span>
+    <span class="tool-tag">Vervangt Google Search</span>
+  </Fragment>
+  <Fragment slot="what">
+    Zoekmachines die elke zoekopdracht niet profileren, in tegenstelling tot Google.
+  </Fragment>
+  <Fragment slot="why">
+    DuckDuckGo en Brave Search bewaren geen geschiedenis die aan uw identiteit is gekoppeld.
+    Startpage levert Google-resultaten zonder de tracking. SearXNG gaat verder: een{' '}
+    <b>zelf-hostbare</b> metazoekmachine, soevereiniteit tot in uw zoekbalk.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen. SearXNG is bedoeld voor wie zijn eigen engine wil hosten.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Wijzig in uw browserinstellingen de standaardzoekmachine in DuckDuckGo, Brave Search of
+      Startpage.
+    </li>
+    <li>
+      Voor SearXNG: gebruik een publieke instance (gids op searx.space) of host uw eigen (zie sectie
+      10).
+    </li>
+  </ol>
+</ToolCard>

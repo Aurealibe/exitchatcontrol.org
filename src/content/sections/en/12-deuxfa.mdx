@@ -1,0 +1,76 @@
+---
+id: 'deuxfa'
+part: 7
+order: 12
+title: 'Two-factor auth & hardware keys'
+---
+
+<p class="part-num">
+  PART 11 · SECURITY · 2FA · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Two-factor auth &amp; hardware keys
+
+A password, even a strong one, can leak. Two-factor authentication (2FA) adds a second proof at login: even if your password is stolen, the account stays locked. It's essential on your sensitive accounts (email, password manager, social).
+
+<div class="box warn">
+  <span class="lab">Avoid SMS 2FA</span>
+  <p>
+    A code sent by SMS is the weak link: it's vulnerable to "SIM-swap" (an attacker gets your number
+    transferred) and to interception over the phone network (SS7). Studies estimate most SIM-swap
+    attempts succeed. Use SMS only as a last resort, never as your main protection.
+  </p>
+</div>
+
+<ToolCard tool="t-yubikey">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Advanced</span>
+    <span class="tool-tag">FIDO2 hardware key</span>
+  </Fragment>
+  <Fragment slot="what">
+    A small physical key (USB, often with NFC) that proves your identity with a single touch.
+  </Fragment>
+  <Fragment slot="why">
+    It's the strongest 2FA: it resists phishing, because the key checks the site's real address
+    before responding. <b>Nitrokey</b> is the fully open-hardware, open-firmware alternative. A fake
+    site can't trick you.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want maximum security on key accounts. Buy <b>two</b> (one main, one backup).
+  </Fragment>
+  <ol slot="install">
+    <li>Get two keys from yubico.com or nitrokey.com.</li>
+    <li>
+      In each account's security settings (email, password manager…), add a "security key" or
+      "passkey." Enrol both keys.
+    </li>
+    <li>Keep the backup key in a safe, separate place.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-aegis">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">TOTP codes</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Apps that generate the six-digit codes changing every 30 seconds, replacing Google
+    Authenticator.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Aegis</b> (Android) keeps your codes in a local encrypted vault, no cloud. <b>Ente Auth</b>{' '}
+    adds end-to-end encrypted sync across devices, and has been audited. Far safer than SMS, and
+    free.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone: it's the default 2FA level to adopt, ahead of hardware keys.
+  </Fragment>
+  <ol slot="install">
+    <li>Install Aegis (F-Droid) or Ente Auth (all platforms).</li>
+    <li>On each account, enable "authenticator app" 2FA and scan the QR code shown.</li>
+    <li>
+      Write down the <b>backup codes</b> on paper and make an encrypted backup of your vault.
+    </li>
+  </ol>
+</ToolCard>

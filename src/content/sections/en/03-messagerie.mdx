@@ -1,0 +1,241 @@
+---
+id: 'messagerie'
+part: 1
+order: 3
+title: 'Encrypted messaging'
+---
+
+<p class="part-num">
+  PART 02 · FOUNDATIONS · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Encrypted messaging
+
+The first move, the one that protects you fastest: leave WhatsApp, Messenger and Telegram for a genuinely encrypted (ideally open-source) messenger.
+
+<div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th>You leave</th>
+        <th>You adopt</th>
+        <th>Why</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="old">WhatsApp</span>
+        </td>
+        <td>
+          <span class="new">Signal</span>
+        </td>
+        <td>Same simplicity, without Meta or metadata harvesting</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="old">Messenger</span>
+        </td>
+        <td>
+          <span class="new">Signal / SimpleX</span>
+        </td>
+        <td>Messenger isn't E2EE by default and was scanned under Chat Control 1.0</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="old">Telegram</span>
+        </td>
+        <td>
+          <span class="new">Signal / SimpleX</span>
+        </td>
+        <td>Telegram isn't end-to-end encrypted by default</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ToolCard tool="t-signal">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Replaces WhatsApp</span>
+    <span class="tool-tag">🇺🇸 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    An encrypted messenger for your texts, calls, video and groups. The direct replacement for
+    WhatsApp, just as simple.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end encryption by default, non-profit, an audited protocol that is the world standard.
+    Almost no metadata kept, and the team has pledged to leave the EU rather than install scanning.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone, starting today. It's the first and most useful step. One catch: a phone number, which
+    you can hide behind a username.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Install from <b>signal.org</b> (App Store, Google Play, or the direct APK on Android).
+    </li>
+    <li>Confirm your number by SMS, then set a PIN.</li>
+    <li>
+      Settings &gt; Privacy: create a <b>username</b> to hide your number, and turn on{' '}
+      <b>registration lock</b>.
+    </li>
+    <li>Invite your contacts. On desktop, link the desktop app to your phone.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-simplex">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermediate</span>
+    <span class="tool-tag">No identifier</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    An encrypted messenger with no account, no number and no identifier. You connect by sharing a
+    link or QR code.
+  </Fragment>
+  <Fragment slot="why">
+    By design, even the servers can't know who talks to whom. It's currently the strongest option
+    against metadata correlation.
+  </Fragment>
+  <Fragment slot="who">
+    Pseudonymous accounts, sensitive contacts, high-risk. A bit younger than Signal, with a few
+    rough edges.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Install from <b>simplex.chat</b> (F-Droid, Google Play, App Store or APK).
+    </li>
+    <li>
+      Pick a <b>local</b> display name (never your real name: it stays on your device).
+    </li>
+    <li>
+      To add a contact, share a <b>one-time invitation link</b> or a QR code.
+    </li>
+    <li>Turn on the passcode lock, and (advanced) configure your own SMP servers.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-session">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermediate</span>
+    <span class="tool-tag">No phone</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Signal-grade encryption, but with no phone number and onion routing.
+  </Fragment>
+  <Fragment slot="why">
+    Your identity is a random "Session ID." Traffic goes through a decentralised network (Lokinet)
+    that sharply reduces metadata.
+  </Fragment>
+  <Fragment slot="who">
+    When a phone number is a liability. Smaller ecosystem, best kept for conversations that matter.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Install from <b>getsession.org</b> (all platforms).
+    </li>
+    <li>
+      "Create account" generates your Session ID and a <b>recovery phrase</b>.
+    </li>
+    <li>Write the recovery phrase on paper: it's the only key to your account.</li>
+    <li>Share your Session ID (or QR) with your contacts.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-briar">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">Offline / P2P</span>
+    <span class="tool-tag">Android · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A peer-to-peer messenger that works <b>with no internet</b>: over Bluetooth, Wi-Fi Direct or
+    Tor.
+  </Fragment>
+  <Fragment slot="why">
+    No server, so nothing to shut down or seize. Survives internet shutdowns and network censorship.
+  </Fragment>
+  <Fragment slot="who">
+    Protests, disasters, remote areas, blackouts. Android only, and both people need the app.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Install from <b>briarproject.org</b> or F-Droid (no iOS).
+    </li>
+    <li>
+      Create a <b>local</b> account (nickname + password), stored only on the phone.
+    </li>
+    <li>Add a nearby contact by scanning their QR code, or remotely via a link.</li>
+    <li>When the network is down, turn on Bluetooth: messages hop device to device.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-bitchat">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">Bluetooth mesh</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Jack Dorsey's mesh messenger: nearby phones relay messages hop by hop, with no internet, server
+    or account.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end encryption (AES-256-GCM) and a "panic mode" that wipes everything with three taps on
+    the logo.
+  </Fragment>
+  <Fragment slot="who">Protests and blackouts, alongside Briar. Use with caution.</Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Caution: unaudited</span>
+    <p>
+      Its own repo warns it "has not received external security review." Great for resilience, but
+      don't stake lives on it yet.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Install from the App Store (iOS) or the APK/GitHub (Android).</li>
+    <li>Open the app and pick a nickname. No account to create.</li>
+    <li>Nearby devices auto-discover over Bluetooth.</li>
+    <li>In danger, triple-tap the logo to wipe everything (panic mode).</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-molly">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">Hardened Signal</span>
+    <span class="tool-tag">Android · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A hardened build of Signal for Android, compatible with the same network.
+  </Fragment>
+  <Fragment slot="why">
+    Database encrypted at rest, automatic locking, and a "FOSS" variant fully free of Google
+    services.
+  </Fragment>
+  <Fragment slot="who">
+    Advanced users, especially on GrapheneOS, with a high threat model. Android only.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Add the Molly repo in F-Droid, or grab the APK from <b>molly.im</b>.
+    </li>
+    <li>
+      Choose <b>Molly-FOSS</b> if you want zero Google dependencies.
+    </li>
+    <li>Register with your number (same network as Signal).</li>
+    <li>Set a database password and automatic locking.</li>
+  </ol>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Against Chat Control</span>
+  <p>
+    Prefer <strong>open-source</strong> apps <strong>outside the big US platforms</strong>, whose
+    teams have publicly pledged to leave the EU rather than install client-side scanning (Signal
+    has). Reminder: if the OS itself enforces scanning, the app can't help, hence section 12.
+  </p>
+</div>

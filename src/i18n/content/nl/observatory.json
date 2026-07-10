@@ -1,0 +1,143 @@
+{
+  "_machineTranslated": "2026-07-10",
+  "prum-2": {
+    "title": "Prüm II: gezichtszoekopdrachten bij elke politiedienst in Europa",
+    "body": "Verordening 2024/982 voegt gezichtsopnames toe, ook van verdachten die nooit zijn veroordeeld, aan de geautomatiseerde uitwisseling van politiegegevens tussen lidstaten, via een centrale router. Een pan-Europese biometrische identificatiecapaciteit, aangenomen zonder echt nationaal debat; EDRi noemt het een risico op \"buitensporig staatsoptreden en massasurveillance\"."
+  },
+  "eidas-wallet": {
+    "title": "eIDAS 2.0: de identiteitswallet landt, browsers moeten de staat vertrouwen",
+    "body": "Elke lidstaat moet uiterlijk 24 december 2026 een Europese digitale-identiteitswallet (EUDI Wallet) aanbieden; banken, telecombedrijven, zorgdiensten en zeer grote platforms zullen die moeten aanvaarden. Dezelfde wallet zal uw leeftijd bewijzen, de rekening openen, de betaling ondertekenen: één toegangspoort, dus één controlepunt; de EDPS documenteert de trackingrisico's bij kruisgebruik. En artikel 45 dwingt browsers om door staten aangewezen webcertificaten te erkennen: meer dan 500 onderzoekers waarschuwden ([last-chance-for-eidas.org](https://last-chance-for-eidas.org/)) dat dit de infrastructuur is voor het onderscheppen van versleuteld verkeer."
+  },
+  "going-dark": {
+    "title": "Het \"Going Dark\"-plan: politietoegang by design",
+    "body": "De High-Level Group over \"toegang tot data\", bijna volledig bemand door vertegenwoordigers van politie en justitie, neemt op 21 mei 2024 42 aanbevelingen aan: \"lawful access by design\" (politietoegang vanaf de tekentafel in producten ingebouwd), geharmoniseerde metadatabewaring, een plicht om elke gebruiker te identificeren, berichtendiensten inbegrepen. In december 2024 ondertekenen 55 maatschappelijke organisaties, bedrijven en verenigingen een open brief die de uitkomst een [\"mission failure\"](https://edri.org/our-work/high-level-group-going-dark-outcome-a-mission-failure/) noemt: een blauwdruk voor massasurveillance. Het is de matrix van alles wat volgt."
+  },
+  "roumanie-tiktok": {
+    "title": "Roemenië: verkiezing vernietigd, de DSA arbitreert het zichtbare",
+    "body": "Op 6 december vernietigt het Roemeense Grondwettelijk Hof de eerste ronde van de presidentsverkiezingen, met als reden een niet-aangegeven gecoördineerde campagne op TikTok; op 17 december opent de Commissie een formele DSA-procedure tegen het platform (aanbevelingssystemen, politieke reclame), in 2026 nog altijd lopend. Wat de uitkomst ook wordt, het precedent staat: \"wie bepaalt wat zichtbaar is tijdens een verkiezing\" wordt voortaan beslecht tussen platforms, de Commissie en grondwettelijke hoven."
+  },
+  "vietnam-decret-147": {
+    "title": "Vietnam: geverifieerde identiteit of zwijgen",
+    "body": "Decreet 147 verplicht platforms de identiteit van elke gebruiker te verifiëren (telefoonnummer of identiteitsnummer), de gegevens op te slaan en aan de autoriteiten te overhandigen; alleen geverifieerde accounts mogen posten, reageren of streamen. De vergelijking wordt onomwonden gesteld: geen geverifieerde identiteit, geen stem in het openbaar."
+  },
+  "uk-apple-adp": {
+    "title": "Londen eist een achterdeur, Apple trekt zijn versleuteling in",
+    "body": "Bij geheim bevel (een Technical Capability Notice onder de Investigatory Powers Act) eist het Home Office toegang tot versleutelde iCloud-gegevens (wereldwijde reikwijdte, bevestigd door processtukken). Apple antwoordt door Advanced Data Protection (end-to-end versleutelde iCloud) voor alle Britse gebruikers in te trekken, liever dan de sleutel te bouwen. Onder Amerikaanse druk \"trekt\" Londen de eis in de zomer in… en vaardigt begin september 2025 een nieuw bevel uit, onthuld op 1 oktober, hertekend naar de gegevens van Britse gebruikers. Medio 2026 leven Britse gebruikers nog altijd zonder E2EE op hun back-ups."
+  },
+  "fr-narcotrafic-8ter": {
+    "title": "Frankrijk: de Narcotrafic-achterdeur sneuvelt",
+    "body": "Artikel 8 ter van de Narcotrafic-wet zou versleutelde berichtendiensten hebben gedwongen om inlichtingendiensten toegang te geven tot correspondentie: het mechanisme van de \"spookdeelnemer\". Geschrapt in de commissie; het herstel ervan wordt in de nacht van 20 maart 2025 [verworpen met 119 stemmen tegen 24](https://lcp.fr/actualites/narcotrafic-l-assemblee-refuse-l-acces-aux-messageries-chiffrees-contre-l-avis-de-bruno) door een partijoverstijgende coalitie, tegen de wil van de minister van Binnenlandse Zaken. Een nationaal parlement kan nee zeggen; de regering geeft niet op: de toegangseis keert in cycli terug, hier en daarna in Brussel."
+  },
+  "protecteu": {
+    "title": "\"ProtectEU\": versleuteling breken wordt officieel beleid",
+    "body": "De interneveiligheidsstrategie van de Commissie (COM(2025) 148) kondigt een routekaart aan voor \"rechtmatige en doeltreffende toegang tot data\" en een \"Technology Roadmap\" over versleuteling, plus een opgetuigd Europol. Verspreide politie-eisen worden een meerjarig politiek programma van de Unie: toegang tot versleutelde communicatie, zwart op wit."
+  },
+  "ice-palantir": {
+    "title": "ICE koopt \"ImmigrationOS\" bij Palantir",
+    "body": "30 miljoen dollar voor een platform dat federale databanken kruist en \"vrijwel realtime zicht\" biedt op mensen die voor uitzetting zijn aangemerkt. Gerichte surveillance van een hele bevolkingsgroep wordt een kant-en-klaar softwareproduct, uitgebaat door een privébedrijf."
+  },
+  "ch-vupf": {
+    "title": "Zelfs Zwitserland: de verordening die Proton zou wegjagen",
+    "body": "De herziene surveillanceverordening (VÜPF) zou identificatie- en bewaarplichten (6 maanden IP-logs) uitbreiden naar elke dienst met meer dan 5.000 gebruikers. De CEO van Proton zweert het land te verlaten als ze erdoor komt (\"we zouden minder vertrouwelijk zijn dan Google\") en bevriest de Zwitserse investeringen; ook Threema protesteert. Begin 2026 zit het project vast: vrijwel unanieme oppositie in de consultatie, het parlement eist een herschrijving. De historische vrijhaven van de vertrouwelijkheid probeerde, per gewone verordening, wat de EU in Chat Control bediscussieert."
+  },
+  "us-visa-vetting": {
+    "title": "Amerikaanse visa: uw sociale media op openbaar, of niets",
+    "body": "Het State Department eist dat aanvragers van een studentenvisum hun sociale profielen op openbaar zetten (telegram van 18 juni 2025), en screent op elke \"vijandigheid\" tegenover de Verenigde Staten; het DS-160-formulier eiste sinds 2019 al vijf jaar aan gebruikersnamen. Op 15 december uitgebreid naar H-1B, in maart 2026 naar 14+ visumcategorieën. Toegang tot het land op voorwaarde van ideologische inspectie van wat u online zegt: een wereldwijde aansporing tot zelfcensuur."
+  },
+  "roadmap-lawful-access": {
+    "title": "De routekaart: staatsontsleuteling ingepland tot 2030",
+    "body": "De Commissie publiceert haar agenda voor \"rechtmatige toegang tot data\" (COM(2025) 349): nieuwe bewaarregels, grensoverschrijdende interceptie tegen 2027, AI-analyse van in beslag genomen data tegen 2028, en een \"next-generation decryption capability\" voor Europol vanaf 2030. De EU plant, gespreid over vijf jaar, de juridische en technische bouwstenen om te lezen wat vandaag onleesbaar is. De EFF vat het samen: \"deze routekaart maakt iedereen minder veilig\"."
+  },
+  "age-blueprint": {
+    "title": "Leeftijdsverificatie: de pilot-app in vijf landen",
+    "body": "De Commissie publiceert haar DSA-richtsnoeren bij \"artikel 28\" en een blauwdruk voor leeftijdsverificatie (een \"mini-wallet\"), getest met Denemarken, Frankrijk, Griekenland, Italië en Spanje, ontworpen om tegen eind 2026 op te gaan in de EUDI Wallet. Zelfs \"privacyvriendelijk\" installeert deze logica een identiteitscontrole aan de ingang van het internet: een attribuut van de burgerlijke staat bewijzen om legale inhoud te bekijken wordt een normaal gebaar."
+  },
+  "fr-pornhub": {
+    "title": "Frankrijk: de Conseil d'État herstelt de leeftijdscontrole",
+    "body": "Onder de SREN-wet en het Arcom-kader (\"dubbele anonimiteit\") moeten pornosites de leeftijd van hun bezoekers verifiëren. Aylo (Pornhub) sluit uit protest de toegang vanuit Frankrijk af; de bestuursrechter schorst het besluit in juni, de Conseil d'État vernietigt die schorsing op 15 juli: de verplichting blijft, de sites blokkeren opnieuw. De eerste grootschalige uitrol van de \"identiteitskaart om het internet op te mogen\", met blokkering als drukmiddel."
+  },
+  "cn-cyber-id": {
+    "title": "China: het nationale internet-ID, gecentraliseerd bij de politie",
+    "body": "Lancering van het \"cyberspace-ID\": één identifier, gezamenlijk uitgegeven door het Ministerie van Openbare Veiligheid en de Cyberspace Administration of China, gekoppeld aan gezichtsherkenning en de nationale identiteitskaart, gebruikt om op onlinediensten in te loggen, van kracht sinds 15 juli 2025. Officieel vrijwillig, bovenop de registratie onder echte naam die overal al verplicht is. Wanneer online-identificatie door de staat wordt gecentraliseerd, verdwijnt anonimiteit by design en wordt internettoegang een intrekbaar voorrecht. Het is het voltooide model van wat westerse leeftijdscontroles en wallets schetsen."
+  },
+  "emfa-article-4": {
+    "title": "EMFA: journalistenbescherming, doorzeefd door haar uitzonderingen",
+    "body": "De European Media Freedom Act wordt volledig van toepassing. Artikel 4 verbiedt in principe spyware tegen journalisten… en staat die vervolgens bij uitzondering toe voor een lijst zware misdrijven; tijdens de onderhandelingen duwde de Raad, met Frankrijk voorop, een algemene uitzondering voor \"nationale veiligheid\" door, aangeklaagd door RSF. De eerste Europese tekst die journalisten tegen staatsspionage moest beschermen, codificeert in negatief de voorwaarden waaronder die spionage legaal blijft."
+  },
+  "ru-max": {
+    "title": "Rusland: de staatsmessenger per decreet voorgeïnstalleerd",
+    "body": "Elke smartphone die in Rusland wordt verkocht moet MAX meeleveren, de berichtendienst gebouwd door VK en aangewezen als \"nationale app\"; ambtenaren en leraren worden erop gecommandeerd. Onafhankelijke analyses beschrijven verregaande tracking en integratie met het interceptiesysteem van de FSB. Het eindpunt van de anti-versleutelingslogica: een berichtendienst die de diensten kunnen meelezen, opgelegd via het distributiekanaal van de hardware zelf."
+  },
+  "ru-recherche-punie": {
+    "title": "Rusland: zoeken wordt strafbaar",
+    "body": "\"Opzettelijk\" online zoeken naar inhoud die als \"extremistisch\" is geclassificeerd (een lijst van 5.000+ vermeldingen, oppositie inbegrepen) wordt beboetbaar (ook via een VPN), en reclame maken voor omzeilingstools wordt verboden. Een historische drempel: de staat bestraft niet langer wat u zegt, maar wat u probeert te weten te komen. Het logische eindpunt van het inspecteren van individueel gebruik."
+  },
+  "scientifiques-csar": {
+    "title": "500 wetenschappers: \"technisch onhaalbaar\"",
+    "body": "Meer dan 500 cryptografen en onderzoekers uit 34 landen (tegen oktober zo'n 800 uit 37 landen) tekenen tegen het Deense CSAR-ontwerp: betrouwbare detectie is op deze schaal onmogelijk, omzeiling is voor criminelen triviaal, en elke vorm van client-side scanning \"ondermijnt inherent\" end-to-end versleuteling. De cijfers van de Duitse federale recherche (BKA) maken het punt op zichzelf al: van de 205.728 NCMEC-meldingen ontvangen in 2024 waren er 99.375 (48,3%) \"niet strafrechtelijk relevant\". De wetenschappelijke consensus is ondubbelzinnig. En het project gaat door."
+  },
+  "uk-britcard": {
+    "title": "\"BritCard\": een digitale identiteit om te mogen werken",
+    "body": "De regering-Starmer kondigt een digitale identiteit aan (\"BritCard\" is de informele bijnaam, geen officiële naam) die tegen het einde van de zittingsperiode verplicht wordt voor controles op het recht om te werken, in naam van de strijd tegen illegale immigratie. Een petitie passeert in ongeveer twee dagen het miljoen handtekeningen (sindsdien 2,9 miljoen+); de regering houdt koers (een wetsontwerp staat in de King's Speech van mei 2026). Het recht om te werken afhankelijk maken van een staatsidentifier installeert een centraal controlepunt op ieders economische leven."
+  },
+  "berlin-bloque": {
+    "title": "Berlijn brengt het verplichte scannen ten val",
+    "body": "Signal-voorzitter Meredith Whittaker verklaart publiekelijk dat de berichtendienst de Europese markt zou verlaten, liever dan zijn versleuteling te ondermijnen; de CDU/CSU-fractie vergelijkt scannen zonder verdenking met het openstomen van ieders post. Het punt wordt van de agenda van de JBZ-Raad van 14 oktober gehaald: de blokkerende minderheid houdt stand. De machtsverhouding kan kantelen, maar het project sterft nooit: herwerkt als \"vrijwillig\" keert het zes weken later terug."
+  },
+  "ees-biometrie": {
+    "title": "EES: gezicht en vingers worden het paspoort",
+    "body": "Het Entry/Exit System gaat live: van elke niet-EU-reiziger worden vingerafdrukken en een gezichtsopname verzameld in een gecentraliseerde databank, ter vervanging van de paspoortstempel (volledige uitrol op 10 april 2026); ETIAS, een betaalde autorisatie gebouwd op die databanken, volgt. De EU schakelt over op de grens-als-databank: het lichaam wordt de standaard-reisidentifier, opgeslagen in systemen die ontworpen zijn om onderling gekoppeld te worden."
+  },
+  "onu-cybercrime": {
+    "title": "VN-Cybercrimeverdrag: surveillance geëxporteerd per verdrag",
+    "body": "Onderhandeld op initiatief van Rusland en eind 2024 aangenomen, verzamelt het verdrag in Hanoi 72 ondertekenaars: 71 staten plus de EU. EFF en Human Rights Watch waarschuwen: brede definities, verplichte wederzijdse bijstand bij het verzamelen van elektronisch bewijs, realtime-interceptie inbegrepen, voor \"zware misdrijven\" zoals gedefinieerd door het recht van het verzoekende land, met facultatieve waarborgen. Een gelegaliseerd wereldwijd kanaal waarlangs de normen van het meest repressieve regime kunnen reizen."
+  },
+  "euro-numerique-pilote": {
+    "title": "Digitale euro: de architectuur wordt gebouwd vóór de waarborgen",
+    "body": "De ECB sluit haar \"voorbereidingsfase\" af en start de volgende: een pilotoefening medio 2027, een mogelijke eerste uitgifte in 2029, terwijl de verordening nog niet is aangenomen. De Eurogroep werd het in september eens over de governance en de procedure voor het vaststellen van aanhoudingslimieten. Een digitale centralebankmunt is een infrastructuur waarin elke transactie van nature registreerbaar is; ze wordt gebouwd terwijl haar wettelijke grenzen nog ongeschreven zijn."
+  },
+  "au-ban-16": {
+    "title": "Australië: 4,7 miljoen accounts in een maand uitgeschakeld",
+    "body": "Een wereldprimeur: vanaf 10 december 2025 zijn onder-16-jarigen verbannen van de tien platforms die de eSafety-toezichthouder heeft aangewezen; die moeten de leeftijd schatten (gedragsinferentie, gezichtsscan-selfies, identiteitsdocumenten) op straffe van boetes van A$49,5 miljoen. Medio januari 2026 kondigt de premier 4,7 miljoen gedeactiveerde, verwijderde of beperkte accounts aan. Om minderjarigen te weren moet u ieders leeftijd schatten: biometrie wordt de tolpoort van het sociale web, en regeringen wereldwijd kijken mee naar het laboratorium."
+  },
+  "fr-vsa-prolongee": {
+    "title": "Algoritmische camerabewaking: het olympische \"experiment\" op weg naar jaar zeven",
+    "body": "\"Experimenteel\" toegestaan door de Olympische wet van 2023 (verval maart 2025), wordt algoritmische videosurveillance verlengd tot eind 2027, goedgekeurd door de Conseil constitutionnel. In mei 2026 stemt de Senaat al over het vervolg (de wet \"Ripost\"): verlenging tot eind 2030 en uitbreiding naar elke publiek toegankelijke ruimte. De klassieke ratel: de uitzondering wordt doorgerold, het toepassingsgebied verbreedt, de evaluatie kan wachten."
+  },
+  "pl-ziobro-asile": {
+    "title": "Pegasus in Polen: de beschuldigde vindt asiel… binnen de EU",
+    "body": "Voormalig justitieminister Zbigniew Ziobro, tegen wie 26 aanklachten lopen (waaronder het financieren van Pegasus uit een fonds voor slachtofferhulp en de inzet ervan tegen opposanten), zegt politiek asiel te hebben gekregen in Hongarije nadat zijn immuniteit was opgeheven; in mei 2026 vlucht hij door naar de Verenigde Staten. De juridische afrekening met politieke staatsspionage belandt in een ongekende impasse: een EU-lidstaat beschermt de vermoedelijke dader, en de verantwoording stopt aan de binnengrens."
+  },
+  "ru-whatsapp-bloque": {
+    "title": "Rusland: WhatsApp afgesneden voor 100 miljoen gebruikers",
+    "body": "De volledige sequens duurde zes maanden: augustus 2025, WhatsApp- en Telegram-gesprekken worden afgeknepen (de platforms \"weigeren data met de autoriteiten te delen\"); december, de vertraging verbreedt; februari 2026, WhatsApp wordt volledig geblokkeerd, bevestigd door het Kremlin. De les is helder: eis de data op, wurg de dienst die weigert, snijd hem daarna af. Weigeren om versleuteling te breken wordt bestraft met uitsluiting uit het land."
+  },
+  "gr-intellexa": {
+    "title": "Predator in Griekenland: de verkopers veroordeeld, de opdrachtgevers onvindbaar",
+    "body": "Een rechtbank in Athene veroordeelt vier bestuurders verbonden aan Intellexa (oprichter Tal Dilian, plus Hamou, Bitzios en Lavranos) voor illegale toegang tot privécommunicatie in het Predator-schandaal (~87 doelwitten: journalisten, ministers, militairen; een telling gerapporteerd door The Record en ICIJ). De eerste strafrechtelijke veroordeling van spywarehandelaars in de EU. Maar geen enkele politieke verantwoordelijke wordt veroordeeld: wie de afluisteroperaties bestelde, blijft officieel onvindbaar."
+  },
+  "fr-boites-noires-urls": {
+    "title": "Zwarte dozen: de inlichtingendiensten willen de volledige URL's",
+    "body": "Parlementsleden verbreden de \"zwarte dozen\" (de algoritmische metadata-analyse die in 2015 tegen terrorisme werd gecreëerd en sindsdien permanent is gemaakt) naar de georganiseerde misdaad en, voor het eerst, naar de volledige URL's van bezochte pagina's. De Conseil constitutionnel vernietigde in 2025 een vergelijkbaar systeem; de regering probeert het opnieuw, bijgesteld. Een volledige URL onthult wat u leest, niet alleen met wie u praat: een kwalitatieve sprong naar geautomatiseerde inspectie van leesgedrag, onder bestuurlijke (niet rechterlijke) machtiging."
+  },
+  "palantir-europe": {
+    "title": "Palantir in Europa: de leverancier verandert, de vraag niet",
+    "body": "Medio mei 2026 laat de Duitse binnenlandse inlichtingendienst (BfV) Palantir vallen voor het Franse ChapsVision. De Franse DGSI (die haar Palantir-contract in november 2025 had verlengd, tot in 2028) volgt later dezelfde weg: op 16 juni 2026 kondigt Sébastien Lecornu een migratie naar ChapsVision aan in de loop van 2027. Ondertussen blijft de politie in Beieren en Hessen Gotham gebruiken (Noordrijn-Westfalen tot oktober 2026), aangevochten voor het Grondwettelijk Hof. Het publieke debat is verschoven van \"mogen politiebestanden door AI worden samengevoegd\" naar \"welke leverancier moet dat doen\": soevereiniteit heeft proportionaliteit vervangen, en de massa-analyse zelf staat niet langer ter discussie."
+  },
+  "us-fisa-702": {
+    "title": "FISA 702 verstrijkt, de dataverzameling draait gewoon door",
+    "body": "Sectie 702, het zonder bevelschrift verzamelen van communicatie die via Amerikaanse providers loopt, zou in april 2026 verstrijken. Twee korte verlengingen later vervalt de bevoegdheid medio juni, met een Congres dat muurvast zit op de vraag of FBI-zoekopdrachten naar Amerikanen een bevelschrift vereisen. Maar de bestaande certificeringen blijven geldig tot maart 2027: de machine draait nog een jaar door zonder hernieuwde grondslag. Een \"tijdelijke\" surveillancebevoegdheid gaat nooit helemaal uit."
+  },
+  "euro-numerique-econ": {
+    "title": "Digitale euro: \"niet programmeerbaar\", maar wel conditioneel",
+    "body": "De ECON-commissie van het Parlement neemt haar standpunt aan (43 stemmen tegen 14, één onthouding): koers gezet naar een lancering tegen 2029. De eigen FAQ van de ECB bezweert dat de digitale euro \"geen programmeerbaar geld zal zijn\", terwijl ze \"conditionele betalingen\" presenteert als optionele diensten; volgens het standpunt van de europarlementariërs zou de aanhoudingslimiet later door de Commissie worden vastgesteld op aanbeveling van de ECB, om de twee jaar herzien. De kloof tussen de belofte en het platform berust op een politieke beslissing, niet op een technische onmogelijkheid: de infrastructuur voor conditionaliteit en traceerbaarheid bestaat vanaf dag één."
+  },
+  "europol-reforme": {
+    "title": "Europol: budget naar 3 miljard euro, een mandaat over versleuteling",
+    "body": "De Commissie stelt de grootste hervorming van Europol in 25 jaar voor: budget van €1,9 mld naar €3 mld, 900 extra personeelsleden, een mandaat uitgebreid naar versleutelde communicatie, cryptoactiva en AI-ondersteunde fraude; een \"technology and innovation hub\" waarvan het versleutelingswerk de ProtectEU-routekaart volgt (die tegen 2030 een ontsleutelingscapaciteit voor Europol inplant); een geautomatiseerde \"Europese politiedataruimte\". De gewapende arm van ProtectEU: een supranationaal agentschap waarvan één europarlementariër nu al waarschuwt dat het \"niet tot massasurveillance mag leiden\"."
+  },
+  "pega-kouloglou": {
+    "title": "Pegasus in het Parlement: de waakhond werd zelf bewaakt",
+    "body": "Citizen Lab onthult dat europarlementariër Stelios Kouloglou, plaatsvervangend lid van de PEGA-commissie (nota bene het orgaan dat Pegasus en spywaremisbruik in Europa onderzocht), met Pegasus werd gehackt terwijl hij er zitting in had (infecties gedateerd op 21 oktober 2022 en 6–7 maart 2023), met mogelijke toegang tot vertrouwelijke beraadslagingen. Citizen Lab weigert uitdrukkelijk de aanval te attribueren; een coalitie van ngo's eist een Europese reactie. Het orgaan bespioneren dat toezicht moet houden op spyware is de ultieme omkering van democratische controle, en niemand wordt verantwoordelijk genoemd."
+  }
+}

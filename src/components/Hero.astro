@@ -1,0 +1,28 @@
+---
+// The stamped-dossier hero, restored from the legacy site: rotated warning
+// stamp, mono eyebrow, oversized typewriter title with blinking cursor,
+// serif lede and the three reader-profile chips (their colors legend the
+// 🟢🟡🔴 levels used across the guide).
+import { useT, type Locale } from '../i18n/config'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+---
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="stamp">{t('hero.stamp')}</span>
+    <p class="eyebrow">{t('hero.eyebrow')}</p>
+    <h1 id="top">EXIT CHAT CONTROL<span class="cursor">_</span></h1>
+    <p class="lede">{t('hero.lede')}</p>
+    <div class="hero-meta">
+      <span class="tag p1">{t('hero.p1')}</span>
+      <span class="tag p2">{t('hero.p2')}</span>
+      <span class="tag p3">{t('hero.p3')}</span>
+    </div>
+  </div>
+</header>

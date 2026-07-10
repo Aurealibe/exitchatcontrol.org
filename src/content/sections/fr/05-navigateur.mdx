@@ -1,0 +1,160 @@
+---
+id: 'navigateur'
+part: 3
+order: 5
+title: 'Navigateur & recherche'
+---
+
+<p class="part-num">
+  PARTIE 04 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Navigateur &amp; recherche
+
+Chrome est un mouchard publicitaire. Google Search profile chaque requête. On remplace les deux.
+
+<ToolCard tool="t-mullvadbrowser">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Avancé</span>
+    <span class="tool-tag">Anti-empreinte</span>
+    <span class="tool-tag">🇸🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Le navigateur du Tor Browser, mais sans le réseau Tor : à utiliser avec votre VPN pour un
+    ordinateur difficile à pister.
+  </Fragment>
+  <Fragment slot="why">
+    Développé avec le Tor Project, il est conçu pour que tous ses utilisateurs présentent la{' '}
+    <b>même empreinte numérique</b>. Résultat : au lieu d'être unique et donc traçable, vous vous
+    fondez dans la masse. C'est le meilleur choix de vie privée sur ordinateur.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui veulent aller au-delà du simple blocage de pub, notamment les comptes pseudonymes et
+    les profils exposés.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Téléchargez-le sur <b>mullvad.net/browser</b> (Windows, macOS, Linux).
+    </li>
+    <li>
+      Utilisez-le tel quel, sans le personnaliser : chaque extension ou réglage ajouté vous rend à
+      nouveau identifiable.
+    </li>
+    <li>Associez-le à votre VPN pour masquer aussi votre adresse IP.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-firefox">
+  <Fragment slot="name">Firefox (durci)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Remplace Chrome</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Le navigateur libre de référence pour un usage quotidien respectueux de la vie privée.
+  </Fragment>
+  <Fragment slot="why">
+    Contrairement à Chrome (un mouchard publicitaire de Google), Firefox est développé par une
+    fondation et n'a pas d'intérêt à vous profiler. Avec quelques réglages (le guide{' '}
+    <em>arkenfox</em>) et l'extension uBlock Origin, il devient très solide.
+  </Fragment>
+  <Fragment slot="who">Tout le monde, comme navigateur principal au quotidien.</Fragment>
+  <ol slot="install">
+    <li>
+      Installez Firefox depuis <b>mozilla.org/firefox</b>.
+    </li>
+    <li>
+      Ajoutez l'extension <b>uBlock Origin</b> (blocage des pubs et traqueurs).
+    </li>
+    <li>
+      Dans les réglages de vie privée, choisissez « Stricte », désactivez la télémétrie, et videz
+      les cookies à la fermeture. Pour aller plus loin, appliquez le guide arkenfox.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-brave">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Bloque tout par défaut</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un navigateur basé sur Chromium qui bloque publicités et traqueurs par défaut, avec en prime une
+    fenêtre privée connectée à Tor.
+  </Fragment>
+  <Fragment slot="why">
+    C'est l'option la plus simple pour quelqu'un qui vient de Chrome : même ergonomie, mais sans le
+    pistage. Il bloque les pubs YouTube nativement, propose une visio chiffrée (Brave Talk, basée
+    sur Jitsi) et un accès Tor en un clic, pratique pour récupérer un site bloqué.
+  </Fragment>
+  <Fragment slot="who">
+    Les débutants qui veulent un changement indolore depuis Chrome. (Ignorez les fonctions
+    crypto/pubs récompensées si elles ne vous intéressent pas.)
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installez Brave depuis <b>brave.com</b>.
+    </li>
+    <li>
+      Réglez les « Boucliers » (Shields) sur « agressif », et désactivez Brave Rewards si vous ne
+      voulez pas de pubs.
+    </li>
+    <li>
+      Pour Tor : menu &gt; « Nouvelle fenêtre privée avec Tor », puis attendez « Tor connecté ».
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-ublock">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Extension</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    L'extension de navigateur qui bloque publicités, traqueurs et scripts espions. Le geste le plus
+    rentable, en dix secondes.
+  </Fragment>
+  <Fragment slot="why">
+    La publicité en ligne est le principal vecteur de surveillance et de profilage. La bloquer coupe
+    l'essentiel du pistage, accélère les pages et réduit les risques de logiciels malveillants.
+  </Fragment>
+  <Fragment slot="who">Tout le monde, sur Firefox comme sur les navigateurs Chromium.</Fragment>
+  <ol slot="install">
+    <li>
+      Ouvrez le magasin d'extensions de votre navigateur et cherchez « uBlock Origin » (l'original,
+      par Raymond Hill).
+    </li>
+    <li>Installez-le. Il fonctionne aussitôt, sans réglage nécessaire.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-search">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡 Moteurs</span>
+    <span class="tool-tag">Remplace Google Search</span>
+  </Fragment>
+  <Fragment slot="what">
+    Des moteurs de recherche qui ne profilent pas chaque requête, contrairement à Google.
+  </Fragment>
+  <Fragment slot="why">
+    DuckDuckGo et Brave Search ne conservent pas d'historique lié à votre identité. Startpage vous
+    sert des résultats Google sans le pistage. SearXNG va plus loin : c'est un métamoteur{' '}
+    <b>auto-hébergeable</b>, la souveraineté jusque dans la barre de recherche.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde. SearXNG vise ceux qui veulent héberger leur propre moteur.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Dans les réglages de votre navigateur, changez le moteur par défaut pour DuckDuckGo, Brave
+      Search ou Startpage.
+    </li>
+    <li>
+      Pour SearXNG : utilisez une instance publique (annuaire sur searx.space) ou hébergez la vôtre
+      (voir section 10).
+    </li>
+  </ol>
+</ToolCard>

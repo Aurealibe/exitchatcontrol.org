@@ -1,0 +1,80 @@
+{
+  "en": {
+    "legacy": {
+      "chromeHead": 36,
+      "narrative": 789,
+      "chromeTail": 8
+    },
+    "built": {
+      "chromeHead": 6,
+      "narrative": 991,
+      "chromeTail": 9
+    },
+    "matchedAfterCategories": true,
+    "toolCardLabelLines": 208,
+    "deferredLegislativeLines": [
+      "Duration",
+      "Temporary, extended to 3 April 2028",
+      "Permanent",
+      "Status (Jul 2026)",
+      "Adopted 9 July 2026",
+      "Under negotiation, 5th trilogue failed 29 June"
+    ],
+    "linesWithSmartQuotes": 138,
+    "tagBoundarySpacingLines": 0,
+    "tagBoundarySpacingSamples": [],
+    "unexplained": []
+  },
+  "fr": {
+    "legacy": {
+      "chromeHead": 36,
+      "narrative": 789,
+      "chromeTail": 8
+    },
+    "built": {
+      "chromeHead": 6,
+      "narrative": 991,
+      "chromeTail": 9
+    },
+    "matchedAfterCategories": true,
+    "toolCardLabelLines": 208,
+    "deferredLegislativeLines": [
+      "Durée",
+      "Temporaire, prolongé jusqu'au 3 avril 2028",
+      "Permanent",
+      "Statut (juil. 2026)",
+      "Adopté le 9 juillet 2026",
+      "En négociation, 5e trilogue échoué le 29 juin"
+    ],
+    "linesWithSmartQuotes": 225,
+    "tagBoundarySpacingLines": 0,
+    "tagBoundarySpacingSamples": [],
+    "unexplained": []
+  },
+  "nl": {
+    "legacy": {
+      "chromeHead": 36,
+      "narrative": 789,
+      "chromeTail": 8
+    },
+    "built": {
+      "chromeHead": 6,
+      "narrative": 991,
+      "chromeTail": 9
+    },
+    "matchedAfterCategories": true,
+    "toolCardLabelLines": 208,
+    "deferredLegislativeLines": [
+      "Looptijd",
+      "Tijdelijk, verlengd tot 3 april 2028",
+      "Permanent",
+      "Status (juli 2026)",
+      "Aangenomen op 9 juli 2026",
+      "In onderhandeling, 5e trialoog mislukt op 29 juni"
+    ],
+    "linesWithSmartQuotes": 70,
+    "tagBoundarySpacingLines": 0,
+    "tagBoundarySpacingSamples": [],
+    "unexplained": []
+  }
+}

@@ -1,0 +1,120 @@
+---
+// Tool card shell. Language-neutral facts (name, links, level, icon…) come
+// from src/data/tools.json, looked up by the `tool` id prop — the same ids the
+// legacy page used (#t-signal, …). Localized prose arrives through named
+// slots, mirroring the legacy card structure:
+//   name    — display name, only when the legacy name carried localized text
+//   tags    — the tag row (level, "replaces X", jurisdiction/licence)
+//   what    — "What it's for"
+//   why     — "Why it matters"
+//   who     — "For whom & when"
+//   extra   — optional callout between the fields and the install steps
+//   install — the step list of the "Install & use" disclosure
+//   links   — optional localized footer links (neutral ones come from JSON)
+// The field labels below reproduce the legacy CSS-generated label strings.
+import tools from '../data/tools.json'
+import { BRAND_ICONS } from '../icons.generated'
+import { defaultLocale, type Locale } from '../i18n/config'
+
+interface Props {
+  tool: string
+}
+
+const { tool: toolId } = Astro.props
+const tool = tools.find((t) => t.id === toolId)
+if (!tool) {
+  throw new Error(`ToolCard: unknown tool id "${toolId}" (not in src/data/tools.json)`)
+}
+
+// Tile ink picked by WCAG contrast against the brand color — white ink fails
+// on several light brands (the axe lesson from the reviewed PR).
+function luminance(hex: string): number {
+  const n = hex.replace('#', '')
+  const [r, g, b] = [0, 2, 4].map((i) => {
+    const c = parseInt(n.slice(i, i + 2), 16) / 255
+    return c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4
+  })
+  return 0.2126 * r! + 0.7152 * g! + 0.0722 * b!
+}
+const brand = tool.color ?? '#7d5a10'
+const ink = (() => {
+  const L = luminance(brand)
+  const white = 1.05 / (L + 0.05)
+  const dark = (L + 0.05) / 0.05
+  return white >= dark ? '#faf7ee' : '#14161a'
+})()
+const iconPath = tool.iconSlug ? BRAND_ICONS[tool.iconSlug] : undefined
+
+const locale = (Astro.currentLocale ?? defaultLocale) as Locale
+
+const LABELS: Record<Locale, { what: string; why: string; who: string; install: string }> = {
+  en: {
+    what: "What it's for",
+    why: 'Why it matters',
+    who: 'For whom & when',
+    install: 'Install & use',
+  },
+  fr: {
+    what: 'À quoi ça sert',
+    why: 'Pourquoi',
+    who: 'Pour qui & quand',
+    install: 'Installer & utiliser',
+  },
+  nl: {
+    what: 'Waarvoor dient het',
+    why: 'Waarom het ertoe doet',
+    who: 'Voor wie & wanneer',
+    install: 'Installeren & gebruiken',
+  },
+}
+const labels = LABELS[locale]
+---
+
+<article class="tool-card" id={tool.id} data-level={tool.level ?? undefined}>
+  <header class="tool-head">
+    <span class="tool-logo" aria-hidden="true" style={`--b:${brand};--ink-on-brand:${ink}`}>
+      {
+        iconPath ? (
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d={iconPath} />
+          </svg>
+        ) : (
+          tool.monogram
+        )
+      }
+    </span>
+    <div class="tool-heading">
+      <h3 class="tool-name">{Astro.slots.has('name') ? <slot name="name" /> : tool.name}</h3>
+      {
+        Astro.slots.has('tags') && (
+          <div class="tool-tags">
+            <slot name="tags" />
+          </div>
+        )
+      }
+    </div>
+  </header>
+  <p class="tool-field"><b class="tool-label">{labels.what}</b> <slot name="what" /></p>
+  <p class="tool-field"><b class="tool-label">{labels.why}</b> <slot name="why" /></p>
+  <p class="tool-field"><b class="tool-label">{labels.who}</b> <slot name="who" /></p>
+  <slot name="extra" />
+  {
+    Astro.slots.has('install') && (
+      <details class="tool-install">
+        <summary>{labels.install}</summary>
+        <slot name="install" />
+      </details>
+    )
+  }
+  <footer class="tool-foot">
+    <slot name="links" />
+    {
+      tool.links.map((link) => (
+        <a class="tool-link" href={link.href} target="_blank" rel="noopener noreferrer">
+          {link.label} →
+        </a>
+      ))
+    }
+    <span class="tool-note">{tool.profiles.join('')}</span>
+  </footer>
+</article>

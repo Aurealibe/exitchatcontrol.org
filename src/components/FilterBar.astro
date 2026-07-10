@@ -1,0 +1,42 @@
+---
+// A row of filter <button>s for the observatory. A button only flips a data
+// attribute on the section root (script in Observatory.astro) — the hiding
+// itself is pure CSS, so with JS off the bar is inert and all items stay
+// visible (the buttons are enhancement, never a gate on content).
+interface Option {
+  value: string
+  label: string
+}
+
+interface Props {
+  group: string // e.g. "region" | "theme" → data-obs-<group> on the section
+  label: string // localized group label
+  allLabel: string // localized "All" (value "" = attribute removed)
+  options: Option[]
+}
+
+const { group, label, allLabel, options } = Astro.props
+
+const btn =
+  'cursor-pointer rounded-dossier border border-rule bg-surface-2 px-2 py-0.5 font-mono text-xs text-ink hover:border-accent aria-pressed:border-accent aria-pressed:bg-accent aria-pressed:text-on-accent'
+---
+
+<div class="filterbar my-2 flex flex-wrap items-baseline gap-2" role="group" aria-label={label}>
+  <span class="min-w-16 font-mono text-xs tracking-wide text-dim uppercase">{label}</span>
+  <button type="button" data-obs-filter={group} data-value="" aria-pressed="true" class={btn}>
+    {allLabel}
+  </button>
+  {
+    options.map((o) => (
+      <button
+        type="button"
+        data-obs-filter={group}
+        data-value={o.value}
+        aria-pressed="false"
+        class={btn}
+      >
+        {o.label}
+      </button>
+    ))
+  }
+</div>

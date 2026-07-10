@@ -1,0 +1,50 @@
+{
+  "fight-chat-control": {
+    "role": "Plateforme citoyenne (collectif anonyme) : outil de contact des eurodéputés, suivi des positions par État membre, comparatif 1.0 vs 2.0. Relancée pour chaque vote."
+  },
+  "stop-scanning-me": {
+    "role": "Coalition de 60+ organisations : pétition à 200 000+ signatures, lettre ouverte passée de 300 à 450 scientifiques, lettre commune de 133 ONG."
+  },
+  "patrick-breyer": {
+    "role": "L’ex-eurodéputé Pirate qui a nommé « Chat Control ». La chronique de référence du dossier, vote par vote, document par document, depuis 2020."
+  },
+  "edri": {
+    "role": "Le réseau européen des droits numériques (50+ ONG). Analyses juridiques, plaidoyer à Bruxelles, coordination des campagnes."
+  },
+  "la-quadrature-du-net": {
+    "role": "Depuis 2008 : recours devant la CJUE (arrêt de 2020 sur la rétention), campagne Technopolice, analyses des lois françaises de surveillance."
+  },
+  "noyb": {
+    "role": "L’ONG de Max Schrems : le contentieux RGPD systématique qui a fait tomber deux accords de transfert UE-US (Schrems I et II)."
+  },
+  "eff": {
+    "role": "Trente ans de contentieux et d’outils (Jewel v. NSA, Certbot, Privacy Badger, Rayhunter) et le guide Surveillance Self-Defense."
+  },
+  "signal-foundation": {
+    "role": "A promis de quitter l’UE plutôt que d’installer un scan. Meta/WhatsApp (oct. 2025) et Threema (« toutes les options ») ont suivi sur l’opposition."
+  },
+  "eff-nsa-timeline": {
+    "role": "Chronologie 1791-2015 de la surveillance américaine, bâtie sur les preuves du procès Jewel v. NSA : chaque entrée datée et sourcée. Le modèle « receipts » dont s’inspire notre section Précédents."
+  },
+  "atlas-of-surveillance": {
+    "role": "14 900+ déploiements policiers documentés dans 6 000+ juridictions US (drones, reconnaissance faciale, IMSI-catchers…), compilés par 1 000+ étudiants et bénévoles. Cartographique plutôt que chronologique."
+  },
+  "technopolice": {
+    "role": "Campagne de La Quadrature (2019) qui documente la « Safe City » ville par ville, entreprise par entreprise : marchés publics, forum participatif, canal de fuites."
+  },
+  "ooni": {
+    "role": "Le plus grand jeu de données ouvert sur la censure d’Internet : des millions de mesures depuis 2012, 200+ pays, données CC et API publique. La censure, prouvée en temps réel."
+  },
+  "digital-violence": {
+    "role": "La cartographie interactive de l’écosystème Pegasus/NSO : licences d’export, infections, et les conséquences physiques pour les personnes visées."
+  },
+  "surveillance-watch": {
+    "role": "Cartographie interactive de l’industrie du logiciel espion : qui fabrique, qui finance, qui achète."
+  },
+  "netblocks": {
+    "role": "Observatoire en temps réel des coupures d’Internet et des blocages, pays par pays, incident par incident."
+  },
+  "big-brother-awards": {
+    "role": "Depuis 2000, le « prix » annuel des pires atteintes à la vie privée (éditions dans plusieurs pays) : une chronique par l’exemple, année après année."
+  }
+}

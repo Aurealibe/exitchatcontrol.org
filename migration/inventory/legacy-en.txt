@@ -1,0 +1,833 @@
+◆ EXIT CHAT CONTROL
+🇫🇷 FR
+🇳🇱 NL
+🇬🇧 EN
+◐
+Mass surveillance · EU · 2026
+A digital sovereignty field manual
+Exit Chat Control_
+Chat Control wants to scan your private messages. Here is how to take back control of your conversations, your data and your tools, step by step, from beginner to whistleblower.
+🟢 Citizen 🟡 Pseudonymous account 🔴 Whistleblower
+Breaking: 9 July 2026
+The European Parliament let Chat Control 1.0 through. The motion to reject failed: 314 MEPs against the text, 276 in favour, 17 abstentions, but 361 votes were needed to block it. "Voluntary" message scanning is now allowed until 3 April 2028. Meanwhile the 5th trilogue on Chat Control 2.0 (CSAR) collapsed on 29 June; negotiations continue. The threat hasn't passed, it's settling in.
+Contents
+00Understand the threat
+★Delete / Adopt
+01Encrypted messaging
+02Encrypted email & PGP
+03Browser & search
+◦Encrypted DNS & Cloudflare
+04VPN: the truth
+✋Censorship & ID
+05Leave Google (Proton)
+06Encrypted storage
+07Passwords
+◦2FA & hardware keys
+08Decentralised social
+09Financial sovereignty
+⚠Conversational AI
+◦Everyday toolbox
+10Self-hosting
+11Tor
+12Free OS & Linux
+◦Telephony & device
+13Anonymity & OPSEC
+14The free ecosystem
+15Take action
+PART 00 · THE WHY
+Understand the threat
+Before you change tools, understand what you are protecting against. Otherwise you install random apps and feel safe when you are not.
+Chat Control 1.0 and 2.0, plainly
+"Chat Control" is the nickname for two EU texts that allow (or would require) scanning your private messages for child sexual abuse material (CSAM). The stated goal is legitimate; the method, blanket scanning of the communications of unsuspected people, amounts to mass surveillance.
+Chat Control 1.0
+Chat Control 2.0 (CSAR)
+Text
+Regulation (EU) 2021/1232, ePrivacy derogation
+Proposal COM/2022/209 (Ylva Johansson, May 2022)
+Scanning
+Voluntary, platforms may scan
+Mandatory via "detection orders" and "risk-mitigation measures"
+Who
+Mostly unencrypted US services: Gmail, Messenger/Instagram, Skype, Snapchat, iCloud Mail, Xbox
+All platforms, including end-to-end encrypted messengers
+Duration
+Temporary, extended to 3 April 2028
+Permanent
+Status (Jul 2026)
+Adopted 9 July 2026
+Under negotiation, 5th trilogue failed 29 June
+Client-side scanning: the legal wiretap
+The heart of Chat Control 2.0 is a technique called client-side scanning. The idea: instead of breaking encryption in transit, software is installed directly on your phone to inspect every message, photo or link before it is encrypted and sent. Signal put it in one line: it is "like malware on your device".
+Technical honesty, read twice
+Against client-side scanning, neither a VPN nor end-to-end encryption is enough if the app or the operating system cooperates. The scan happens on the device, before encryption: the VPN has nothing to protect, and encryption kicks in too late. What actually protects you is choosing free/open-source software that refuses to implement scanning, favourable jurisdictions, self-hosting, and taking back control of your device (an untampered OS). Everything else in this guide follows from this truth.
+Worst of all: the tool doesn't even work
+Everyone's privacy is sacrificed for a technology that fails. The European Parliament's own study concludes no system detects this content without a high error rate (because across billions of messages, even a tiny false-positive rate yields millions of false accusations). Irish police figures show it: of automated reports, only about 20% were actual material, and over 11% were outright false positives. Landmark research ("Bugs in Our Pockets," 2021) further shows that once client-side scanning is installed, it is inevitably repurposed (terrorism, copyright, opinions).
+The pretext: "protecting children"
+No one is against protecting minors, which is exactly what makes it such an effective lever. Fighting child abuse serves as an emotional Trojan horse: who would dare object? Under that banner, a principle is made acceptable that, on its own, would be flatly rejected, the automated inspection of the private communications of hundreds of millions of unsuspected people. Children are the stated motive; the real target is everyone's encryption and privacy.
+The tell: the companies pushing hardest for this scanning are the ones whose business model is surveillance. On 19 March 2026, a joint appeal urged EU lawmakers to entrench "voluntary" detection, signed by:
+GoogleLinkedInSnapchatMicrosoftTikTokMeta
+"Failure to do so would be irresponsible." The tech giants' argument for keeping message scanning alive.
+Those same players even announced they would keep scanning messages after the legal basis lapsed on 4 April 2026. Citizens are thus asked to entrust the inspection of their intimate conversations to the very companies known for harvesting and monetising their data. This is the real face of Chat Control: an attack on privacy wrapped in a motive no one can refuse.
+This is not "just" surveillance
+They try to reassure you: "it's only Gmail, Instagram, Snapchat, Messenger." That's false, and it's the most alarming part. Three shifts hide behind that downplaying.
+It's not targeting, it's dragnet. This doesn't watch suspects: it installs systematic collection of entire populations' communications. Surveillance at state scale, continuously.
+It's no longer reading, it's the power to block. Software that inspects a message before it's sent can also refuse to send it. Client-side scanning builds the infrastructure of prior censorship: blocking speech before it even reaches its recipient.
+Once the infrastructure exists, it gets repurposed. A system built "for the children" becomes a general-purpose control tool. The motive changes; the machine stays.
+The logical next step: the digital euro
+The same logic is about to reach your money. The ECB's digital euro plan includes a holding cap of about €3,000 per person, bars companies from holding any, and rests on a traceable currency. The ECB swears it won't be "programmable," but the cap and the traceability are very much on the menu, and the framework cleared committee in the European Parliament in June 2026. When it lands, will you say "relax, it's only up to €3,000"? That's the very same rhetorical trap as "it's only Gmail." The real question is never what is controlled today, but the control infrastructure being installed for tomorrow.
+Which profile are you?
+No tool is magic and nobody needs to do everything. Find your profile: each section tells you how far to go.
+Beginner
+🟢 The ordinary citizen
+You just want your conversations and private life to stop being scanned and monetised. Goal: everyday privacy, without becoming an expert.
+Intermediate
+🟡 The pseudonymous account
+Information account, activist page, creator: you fear being deanonymised, doxxed, or losing your account. Goal: separate your real identity from your public one.
+Advanced
+🔴 The whistleblower
+Journalist, activist, source, facing a powerful adversary (state, employer). Goal: strong anonymity, anti-correlation, passing documents without being caught.
+MEMO · THE DIGITAL SWAP
+Delete / Adopt
+The big picture at a glance. Each tool is detailed in the numbered sections below.
+Delete
+WhatsApp (Meta)
+Messenger (Meta)
+Instagram (Meta)
+Snapchat
+Skype (Microsoft)
+Discord
+Gmail (Google)
+Outlook (Microsoft)
+Google Drive / Photos
+OneDrive (Microsoft)
+TikTok
+Telegram (normal chats)
+Adopt
+Signal
+SimpleX Chat
+Session
+Bitchat
+Element (Matrix)
+Nostr
+Mastodon
+Proton Mail
+Tuta Mail
+Mullvad (VPN & browser)
+GrapheneOS
+PART 01 · FOUNDATIONS · 🟢
+Encrypted messaging
+The first move, the one that protects you fastest: leave WhatsApp, Messenger and Telegram for a genuinely encrypted (ideally open-source) messenger.
+You leave
+You adopt
+Why
+WhatsApp
+Signal
+Same simplicity, without Meta or metadata harvesting
+Messenger
+Signal / SimpleX
+Messenger isn't E2EE by default and was scanned under Chat Control 1.0
+Telegram
+Signal / SimpleX
+Telegram isn't end-to-end encrypted by default
+S
+Signal
+🟢 BeginnerReplaces WhatsApp🇺🇸 · open-source
+An encrypted messenger for your texts, calls, video and groups. The direct replacement for WhatsApp, just as simple.
+End-to-end encryption by default, non-profit, an audited protocol that is the world standard. Almost no metadata kept, and the team has pledged to leave the EU rather than install scanning.
+Everyone, starting today. It's the first and most useful step. One catch: a phone number, which you can hide behind a username.
+Install from signal.org (App Store, Google Play, or the direct APK on Android).
+Confirm your number by SMS, then set a PIN.
+Settings > Privacy: create a username to hide your number, and turn on registration lock.
+Invite your contacts. On desktop, link the desktop app to your phone.
+signal.org →🟢🟡🔴
+SX
+SimpleX Chat
+🟡 IntermediateNo identifier🌍 · open-source
+An encrypted messenger with no account, no number and no identifier. You connect by sharing a link or QR code.
+By design, even the servers can't know who talks to whom. It's currently the strongest option against metadata correlation.
+Pseudonymous accounts, sensitive contacts, high-risk. A bit younger than Signal, with a few rough edges.
+Install from simplex.chat (F-Droid, Google Play, App Store or APK).
+Pick a local display name (never your real name: it stays on your device).
+To add a contact, share a one-time invitation link or a QR code.
+Turn on the passcode lock, and (advanced) configure your own SMP servers.
+simplex.chat →🟡🔴
+Se
+Session
+🟡 IntermediateNo phone🌍 · open-source
+Signal-grade encryption, but with no phone number and onion routing.
+Your identity is a random "Session ID." Traffic goes through a decentralised network (Lokinet) that sharply reduces metadata.
+When a phone number is a liability. Smaller ecosystem, best kept for conversations that matter.
+Install from getsession.org (all platforms).
+"Create account" generates your Session ID and a recovery phrase.
+Write the recovery phrase on paper: it's the only key to your account.
+Share your Session ID (or QR) with your contacts.
+getsession.org →🟡🔴
+Br
+Briar
+🔴 AdvancedOffline / P2PAndroid · open-source
+A peer-to-peer messenger that works with no internet: over Bluetooth, Wi-Fi Direct or Tor.
+No server, so nothing to shut down or seize. Survives internet shutdowns and network censorship.
+Protests, disasters, remote areas, blackouts. Android only, and both people need the app.
+Install from briarproject.org or F-Droid (no iOS).
+Create a local account (nickname + password), stored only on the phone.
+Add a nearby contact by scanning their QR code, or remotely via a link.
+When the network is down, turn on Bluetooth: messages hop device to device.
+briarproject.org →🔴
+bit
+Bitchat
+🔴 AdvancedBluetooth mesh🌍 · open-source
+Jack Dorsey's mesh messenger: nearby phones relay messages hop by hop, with no internet, server or account.
+End-to-end encryption (AES-256-GCM) and a "panic mode" that wipes everything with three taps on the logo.
+Protests and blackouts, alongside Briar. Use with caution.
+Caution: unaudited
+Its own repo warns it "has not received external security review." Great for resilience, but don't stake lives on it yet.
+Install from the App Store (iOS) or the APK/GitHub (Android).
+Open the app and pick a nickname. No account to create.
+Nearby devices auto-discover over Bluetooth.
+In danger, triple-tap the logo to wipe everything (panic mode).
+bitchat →🔴
+M
+Molly
+🔴 AdvancedHardened SignalAndroid · open-source
+A hardened build of Signal for Android, compatible with the same network.
+Database encrypted at rest, automatic locking, and a "FOSS" variant fully free of Google services.
+Advanced users, especially on GrapheneOS, with a high threat model. Android only.
+Add the Molly repo in F-Droid, or grab the APK from molly.im.
+Choose Molly-FOSS if you want zero Google dependencies.
+Register with your number (same network as Signal).
+Set a database password and automatic locking.
+molly.im →🔴
+Against Chat Control
+Prefer open-source apps outside the big US platforms, whose teams have publicly pledged to leave the EU rather than install client-side scanning (Signal has). Reminder: if the OS itself enforces scanning, the app can't help, hence section 12.
+PART 02 · 🟢
+Encrypted email & PGP
+Gmail reads your email and lives in the US, under "Five Eyes" jurisdiction. Leaving Gmail/Outlook is a huge win for minimal effort.
+Pm
+Proton Mail
+🟢 BeginnerReplaces Gmail🇨🇭 · open-source · OpenPGP
+An encrypted inbox that replaces Gmail or Outlook, and the pivot account for the whole Proton ecosystem.
+Based in Switzerland, outside "Five Eyes" jurisdiction. OpenPGP-compatible: automatic encryption between Proton accounts and to other PGP services.
+Everyone. It's the best starting point to leave Google (see section 05 for the rest of the suite).
+Create an account at proton.me (the free tier is enough to start).
+Import your old messages and contacts with Easy Switch (built in).
+Set up forwarding from Gmail and tell your contacts your new address.
+Install the mobile app, turn on two-factor auth, and use Proton Bridge if you want Thunderbird.
+proton.me/mail →🟢🟡
+Tu
+Tuta
+🟢 BeginnerReplaces Gmail🇩🇪 · open-source · post-quantum
+A German email service, fully open-source and free of any Google service.
+It also encrypts the subject line and some metadata, with post-quantum-resistant encryption. EU jurisdiction.
+Those who want maximum encrypted metadata and fully free software. It doesn't use PGP: to write encrypted to outsiders, you password-protect the message.
+Create an account at tuta.com and install the app (available on F-Droid).
+To write encrypted to a non-user: click the lock and set a password, shared with your correspondent through another channel.
+Turn on two-factor authentication.
+tuta.com →🟢🟡
+mx
+mailbox.org · Posteo
+🟢 BeginnerEthical classic mail🇩🇪 · UE · PGP
+Two ethical, low-cost European email providers, with server-side PGP support.
+Privacy- and eco-conscious, built on open standards (IMAP, PGP). They work with any mail client.
+Those who want a "classic" mailbox (read in Thunderbird) but ethical, rather than a closed encrypted app.
+Create an account (paid, roughly €1 to €3 per month).
+Enable server-side PGP encryption (the "Guard" feature at mailbox.org).
+Set the account up in Thunderbird or the mobile app of your choice.
+mailbox.org →posteo.de →🟢
+PGP in one minute
+PGP (Pretty Good Privacy) is key-based encryption: you have a public key you hand out, and a private key you keep secret. Anyone with your public key can send you a message that only you can decrypt. It's the basis of provider-independent encrypted email. Proton Mail handles it automatically; for manual use, OpenPGP works via Thunderbird (built in since v78).
+PART 03 · 🟢
+Browser & search
+Chrome is an advertising tracker. Google Search profiles every query. Replace both.
+Mb
+Mullvad Browser
+🟡🔴 Interm. / AdvancedAnti-fingerprint🇸🇪 · open-source
+The Tor Browser's browser, but without the Tor network: use it with your VPN for a hard-to-track desktop.
+Built with the Tor Project, it's designed so all its users present the same digital fingerprint. The result: instead of being unique and thus trackable, you blend into the crowd. It's the best privacy choice on desktop.
+Those who want to go beyond simple ad-blocking, especially pseudonymous accounts and exposed profiles.
+Download it from mullvad.net/browser (Windows, macOS, Linux).
+Use it as-is, without customising: every added extension or setting makes you identifiable again.
+Pair it with your VPN to also mask your IP address.
+mullvad.net/browser →🟡🔴
+Fx
+Firefox (hardened)
+🟢 BeginnerReplaces Chrome🌍 · open-source
+The reference free browser for privacy-respecting daily use.
+Unlike Chrome (a Google advertising tracker), Firefox is built by a foundation with no interest in profiling you. With a few tweaks (the arkenfox guide) and the uBlock Origin extension, it becomes very solid.
+Everyone, as a main daily browser.
+Install Firefox from mozilla.org/firefox.
+Add the uBlock Origin extension (ad and tracker blocking).
+In privacy settings, choose "Strict," disable telemetry, and clear cookies on close. To go further, apply the arkenfox guide.
+mozilla.org/firefox →🟢
+Bv
+Brave
+🟢 BeginnerBlocks everything by default🌍 · open-source
+A Chromium-based browser that blocks ads and trackers by default, with a bonus private window connected to Tor.
+It's the simplest option for someone coming from Chrome: same feel, but without the tracking. It blocks YouTube ads natively, offers encrypted video (Brave Talk, based on Jitsi) and one-click Tor access, handy to reach a blocked site.
+Beginners who want a painless switch from Chrome. (Ignore the crypto/rewarded-ads features if they don't interest you.)
+Install Brave from brave.com.
+Set "Shields" to "aggressive," and turn off Brave Rewards if you don't want ads.
+For Tor: menu > "New private window with Tor," then wait for "Tor connected".
+brave.com →🟢
+uB
+uBlock Origin
+🟢 BeginnerExtension🌍 · open-source
+The browser extension that blocks ads, trackers and spy scripts. The highest-return move, in ten seconds.
+Online advertising is the main vector of surveillance and profiling. Blocking it cuts most tracking, speeds up pages and reduces malware risk.
+Everyone, on Firefox as well as Chromium browsers.
+Open your browser's extension store and search "uBlock Origin" (the original, by Raymond Hill).
+Install it. It works right away, no setup needed.
+ublockorigin.com →🟢
+🔎
+DuckDuckGo · Brave Search · SearXNG
+🟢🟡 Search enginesReplaces Google Search
+Search engines that don't profile every query, unlike Google.
+DuckDuckGo and Brave Search keep no history tied to your identity. Startpage serves Google results without the tracking. SearXNG goes further: a self-hostable metasearch engine, sovereignty down to your search bar.
+Everyone. SearXNG targets those who want to host their own engine.
+In your browser settings, change the default engine to DuckDuckGo, Brave Search or Startpage.
+For SearXNG: use a public instance (directory at searx.space) or host your own (see section 10).
+duckduckgo.com →search.brave.com →searx.space →🟢🟡
+NETWORK · DNS · 🟡
+Encrypted DNS & Cloudflare
+DNS is the directory that turns a site name (example.com) into a machine address. The catch: by default your internet provider runs that directory, so it sees every site you visit, even when the page is HTTPS. Encrypting your DNS takes that list back from your ISP. It's a quiet setting but one of the most effective.
+9
+Quad9
+🟢 BeginnerMalware-blocking🇨🇭 non-profit
+An encrypted, Swiss, non-profit DNS resolver that also blocks known malicious domains.
+Swiss jurisdiction, no retention of your IP address, protection against phishing and malware. An excellent "set and forget" choice.
+Everyone, especially those who want simplicity and a good jurisdiction.
+On Android: Settings > Network > Private DNS > enter dns.quad9.net.
+On iPhone/Mac: install the DoH profile from quad9.net. On PC: set DNS-over-HTTPS in the browser or the system.
+quad9.net →🟢🟡
+DNS
+Mullvad DNS · NextDNS
+🟡 IntermediateNetwork filtering
+Two encrypted resolvers that also block ads and trackers for the whole device.
+Mullvad DNS (Sweden, no-log) is free and offers blocklists. NextDNS is highly customisable, with a dashboard and per-device profiles, but it's US-based and logs by default (turn it off in settings).
+Those who want system-wide ad-blocking without installing a per-browser extension.
+Mullvad DNS: use the address shown at mullvad.net/help/dns as your private DNS (same method as Quad9).
+NextDNS: create a profile at nextdns.io, disable logging, then apply the config to your devices.
+mullvad.net/dns →nextdns.io →🟡
+CF
+Cloudflare 1.1.1.1 (with nuance)
+🟢 BeginnerFast but centralised🇺🇸
+Cloudflare's 1.1.1.1 encrypted DNS and WARP app: fast, free, and a real upgrade over your ISP's resolver.
+It's useful, with an audited no-logging pledge. But be clear-eyed: Cloudflare already sits in front of a huge share of the web (as a technical middleman, it can see plaintext traffic to those sites). Routing your DNS there too means concentrating even more of your footprint with one US company under US law.
+Fine for everyday use and malware-blocking (1.1.1.1 for Families). Avoid or diversify for sensitive use: prefer Quad9 or Mullvad DNS instead.
+1.1.1.1 →🟢
+π
+Pi-hole · AdGuard Home
+🔴 AdvancedWhole-network blocking🌍 · open-source
+An ad and tracker blocker that protects your whole network at once, installed on a small computer like a Raspberry Pi.
+Where uBlock Origin protects one browser, Pi-hole filters every device in the home, including those where you can't install an extension: phones, smart TVs, connected objects. Ads and trackers are blocked at the DNS level, before they even load. AdGuard Home is an alternative with a more modern interface.
+Households that want to clean up all their devices at once, and who have (or want) a Raspberry Pi or small server.
+On a Raspberry Pi (or a container), run Pi-hole's official installer.
+In your router's settings, set the Pi-hole's address as the DNS server.
+From now on, every device on your network is filtered automatically.
+pi-hole.net →adguard home →🔴
+PART 04 · 🟢
+VPN: the truth
+A VPN is useful, but sold with a lot of lies. Here's what it actually protects.
+What a VPN does NOT do
+A VPN does not protect you from Chat Control's client-side scanning: that reads your messages on your device, before encryption and therefore before the VPN. It's also not an invisibility cloak: your OS and apps see more than your VPN provider does.
+What a VPN does well
+It hides your activity from your ISP and masks your IP address (and thus location) from the sites you visit. Useful against network surveillance, geolocation and censorship. One piece of the puzzle, not the solution.
+Mv
+Mullvad VPN
+🟢🟡🔴 All levelsNo account · cash/Monero🇸🇪 · open-source
+A VPN that masks your IP address and encrypts your traffic up to its servers, without ever asking for a single piece of personal information.
+It's the privacy gold standard. No email, no name: at signup you're given a plain account number. Audited no-log policy, a single honest price (€5 per month, no tiers, no false promises), and payment in cash or Monero. That's exactly what matters the day a state tries to cut off VPN access: an account that can't be tied to your identity, and a payment banks can't block.
+Everyone, from the citizen bypassing an ID check to the high-risk profile. It's the VPN to recommend first.
+Go to mullvad.net. If the site is blocked in your country, open it through the Tor Browser or its .onion address. Click "Generate account number": no email or name is asked. Save this number in your password manager and never share it, it's your only access key.
+Choose the duration and payment method. The price is flat. Three routes: bank card (simplest if not blocked), cash sent by post, or cryptocurrency.
+Anonymous crypto payment: click "Create a one-time payment address." Mullvad shows an address (Bitcoin or Monero) and an exact amount. Send that amount from your wallet. For maximum anonymity, prefer Monero (private by default); Bitcoin is simpler but traceable. See section 09 to buy crypto. Allow about 30 minutes for confirmation.
+Download the app from mullvad.net/download (via Tor if the site is filtered) and install it. On mobile, use the App Store, Google Play, or the official APK if the app was pulled from your store.
+Launch the app, enter your account number, then connect to a server outside your country, ideally outside the EU (Switzerland, US…). Enable the "kill switch" (which cuts the internet if the VPN drops) and Mullvad's DNS.
+mullvad.net →🟢🟡🔴
+Pv
+Proton VPN
+🟢 BeginnerHonest free tier🇨🇭 · open-source
+The VPN from the Proton ecosystem, with a genuine free tier (rare and honest).
+Swiss-based, audited, open-source. Its free tier has no ads, no data resale and no data cap (only the number of countries is limited). It's the ideal on-ramp for a beginner, especially if you already use Proton Mail.
+Beginners, and anyone already in the Proton ecosystem who wants a single account for everything.
+Go to protonvpn.com and sign in with your Proton account (or create one).
+Install the app (Windows, macOS, Linux, Android, iOS).
+Use "Quick Connect" or pick a country, then enable the kill switch and NetShield (ad and tracker blocking).
+protonvpn.com →🟢
+iv
+IVPN
+🟡🔴 Interm. / AdvancedNo email · no-log🇬🇮 · open-source
+A small, especially rigorous and transparent VPN provider, on the same model as Mullvad.
+Audited no-log policy, no mandatory email, payment in crypto or cash. It even offers anti-tracking options (network-level tracker blocking) and signup with no identifier at all.
+A solid alternative to Mullvad, for pseudonymous and high-risk profiles who want to diversify.
+At ivpn.net, generate an account (an ID is created for you, no email).
+Pay in crypto or cash, as with Mullvad.
+Install the app, connect outside the EU, enable the kill switch and the WireGuard protocol.
+ivpn.net →🟡🔴
+CENSURE · DIGITAL IDENTITY · 🟡
+Censorship & identity checks
+The same pretext ("protect minors") is used to force identity checks to access the internet. It's the planned end of online anonymity, and therefore a form of censorship. Here's the state of play, then how to escape it lawfully.
+Where we stand (2025-2026)
+France. The SREN law (May 2024) tasks regulator Arcom with age verification; since April 2025, covered sites must implement it. A decree imposing age checks was upheld by the Conseil d'État on 15 July 2025, and a bill banning under-15s from social media passed the Assemblée on 26 January 2026, which means verifying the age, and thus the identity, of everyone.
+UK. Since 25 July 2025, the Online Safety Act requires "highly effective" age verification (ID, credit card, facial estimation). The immediate result: VPN signups jumped over 1,400% within hours. The House of Lords even debated, in early 2026, an age limit on VPN use itself.
+EU. The Commission unveiled an age-verification app (April 2025), piloted in five countries, designed to plug into the European digital identity wallet (EUDI Wallet, eIDAS 2) that every state must offer by end of 2026. EFF and EDRi warn: the "zero-knowledge" proof is only optional, and this builds an online-ID infrastructure far beyond child protection.
+Escaping it lawfully
+The counter comes down to one idea: take an IP address in a country that doesn't impose these checks, and obtain the tools anonymously, even if they get blocked one day.
+An offshore VPN. Connect to a server outside the filtering country (ideally outside the EU and the "14 Eyes"), with an audited no-log policy. This restores access to networks demanding an ID.
+Anonymous payment. Pay for the VPN in crypto or cash (Mullvad, IVPN, Proton accept it). Crucial: if VPNs ever get "banned," payment processors could refuse cards; cash and crypto would be the only options left.
+Tor to fetch a blocked VPN. If the provider's site becomes unreachable from your country, use the Tor Browser (or a .onion address) to download the client. Once installed, the VPN is far faster for daily use.
+Switch your store country. An Apple/Google account set to another country brings back apps pulled from your local store.
+The law is shifting, check
+Bypassing a geo-restriction is legal in most European countries, but the ground shifts fast: Utah (US) has criminalised VPN circumvention, and the UK Lords are eyeing VPN limits. Check your country's law before relying on any method. This guide is about protecting privacy, not hiding a crime.
+PART 05 · TAKE BACK CONTROL · 🟡
+Leave Google
+Google is a single account that knows your email, calendar, files, movements and searches. Replace the whole suite.
+Google
+Proton
+Others
+Gmail
+Proton Mail
+Tuta, mailbox.org
+Google Drive
+Proton Drive
+Nextcloud, Cryptomator
+Google Calendar
+Proton Calendar
+Tuta Calendar
+Google Password
+Proton Pass
+Bitwarden, KeePassXC
+Google One VPN
+Proton VPN
+Mullvad, IVPN
+The appeal of Proton (Swiss, non-profit foundation, open-source): one account replaces all of Google, with end-to-end encryption and a jurisdiction outside "Five Eyes". You can migrate gradually, service by service. If you'd rather not recentralise on one provider, every row has an independent alternative.
+PART 06 · 🟡
+Encrypted storage
+Pd
+Proton Drive
+🟢 BeginnerReplaces Google Drive / iCloud🇨🇭 · E2EE
+An end-to-end encrypted cloud for your files and photos, part of Proton.
+Unlike Google Drive or iCloud, Proton can't read your files: they're encrypted before leaving your device. Swiss jurisdiction, same account as Proton Mail.
+Everyone, as a simple, direct replacement for Google's or Apple's cloud.
+Enable Proton Drive in your Proton account and install the app.
+Turn on automatic photo backup, then disable Google's/Apple's.
+proton.me/drive →🟢🟡
+Cy
+Cryptomator
+🟡 IntermediateEncrypt before upload🇩🇪 · open-source
+A vault that encrypts your files before uploading them to any cloud, even Google Drive or Dropbox.
+The perfect trick if you must keep an existing cloud: you keep the convenient service, but the provider only sees encrypted gibberish. You alone hold the key.
+Those who can't leave a mainstream cloud yet, but want to protect their files right now.
+Install Cryptomator (desktop and mobile) from cryptomator.org.
+Create a "vault" in your cloud's synced folder, choose a strong password.
+Put your files in the vault: they're encrypted then synced automatically.
+cryptomator.org →🟡🔴
+Nc
+Nextcloud
+🔴 AdvancedYour own cloud🌍 · open-source
+Your own cloud (files, calendar, contacts, notes) hosted on your server.
+The ultimate degree of control: your data never leaves your hardware. Detailed in section 10 (Self-hosting).
+Self-hosters. See the full card in section 10.
+→ Section 10nextcloud.com →🔴
+PART 07 · 🟡
+Password manager
+One strong, unique password per service: the foundation of everything that follows. Drop the notebook, drop the reused password.
+Bw
+Bitwarden
+🟢 BeginnerBest to start with🌍 · open-source
+A password vault that remembers, generates and fills your passwords for you, across all your devices.
+Free, audited, cross-platform, and end-to-end encrypted. You only need to remember one strong password. It's even self-hostable (via Vaultwarden) so you depend on no one.
+Everyone. It's the foundation of all security: one strong, unique password per service.
+Create an account at bitwarden.com and choose a long master password (a phrase). Never forget it: it can't be recovered.
+Install the browser extension and the mobile app.
+As you log in, let Bitwarden save and then replace your old passwords with generated ones.
+bitwarden.com →🟢🟡🔴
+Kp
+KeePassXC
+🔴 Advanced100% local🌍 · open-source
+A local vault: an encrypted file only you hold, with no cloud and no account.
+Nothing leaves your device, unless you choose to sync the file yourself (for example via Cryptomator). It's the purist's choice, with no middleman at all.
+Advanced profiles who want full control and zero online dependency.
+Install KeePassXC (desktop) and a compatible mobile app (KeePassDX on Android, Strongbox on iOS).
+Create a database file protected by a master password.
+To have it on all devices, sync that file through an encrypted cloud.
+keepassxc.org →🔴
+Pp
+Proton Pass
+🟢 BeginnerWith email aliases🇨🇭 · open-source
+The password manager of the Proton ecosystem, with built-in disposable email aliases.
+Ideal if you're already on Proton: one account for mail, cloud and passwords. Its email aliases save you from giving your real address everywhere.
+Those who want everything in one place with Proton.
+proton.me/pass →🟢🟡
+SECURITY · 2FA · 🟡
+Two-factor auth & hardware keys
+A password, even a strong one, can leak. Two-factor authentication (2FA) adds a second proof at login: even if your password is stolen, the account stays locked. It's essential on your sensitive accounts (email, password manager, social).
+Avoid SMS 2FA
+A code sent by SMS is the weak link: it's vulnerable to "SIM-swap" (an attacker gets your number transferred) and to interception over the phone network (SS7). Studies estimate most SIM-swap attempts succeed. Use SMS only as a last resort, never as your main protection.
+Yk
+YubiKey · Nitrokey
+🟡🔴 Interm. / AdvancedFIDO2 hardware key
+A small physical key (USB, often with NFC) that proves your identity with a single touch.
+It's the strongest 2FA: it resists phishing, because the key checks the site's real address before responding. Nitrokey is the fully open-hardware, open-firmware alternative. A fake site can't trick you.
+Those who want maximum security on key accounts. Buy two (one main, one backup).
+Get two keys from yubico.com or nitrokey.com.
+In each account's security settings (email, password manager…), add a "security key" or "passkey." Enrol both keys.
+Keep the backup key in a safe, separate place.
+yubico.com →nitrokey.com →🟡🔴
+Ae
+Aegis · Ente Auth
+🟢 BeginnerTOTP codes🌍 · open-source
+Apps that generate the six-digit codes changing every 30 seconds, replacing Google Authenticator.
+Aegis (Android) keeps your codes in a local encrypted vault, no cloud. Ente Auth adds end-to-end encrypted sync across devices, and has been audited. Far safer than SMS, and free.
+Everyone: it's the default 2FA level to adopt, ahead of hardware keys.
+Install Aegis (F-Droid) or Ente Auth (all platforms).
+On each account, enable "authenticator app" 2FA and scan the QR code shown.
+Write down the backup codes on paper and make an encrypted backup of your vault.
+getaegis.app →ente.io/auth →🟢🟡
+PART 08 · 🟡
+Decentralised social
+Instagram, X and Facebook belong to companies that profile you and can censor or delete you overnight. The "fediverse" offers networks owned by their users.
+Ma
+Mastodon
+🟢 BeginnerReplaces X / Twitter🌍 · open-source
+The X/Twitter alternative: a social network made of thousands of independent servers that talk to each other (the "fediverse").
+No single owner, no algorithm deciding for you, no arbitrary ban by one company. The feed is chronological, with no ads or manipulation.
+Everyone. Ideal for information accounts that want a presence no company can cut off.
+On joinmastodon.org, choose a server (or "instance") that suits you, then create an account.
+Install an app (the official one, or Ivory, Tusky…) and follow accounts: you see the whole fediverse, whatever their server.
+joinmastodon.org →🟢🟡
+No
+Nostr
+🟡🔴Un-censorable🌍 · open protocol
+Not an app but a protocol: a social network where your identity is a simple key pair, like Bitcoin.
+No email, no password, no account anyone can delete. Your posts travel across decentralised relays and you truly own your audience: no one can ban you for good. You can even receive Bitcoin tips ("zaps") and switch apps anytime without losing your followers.
+Information accounts and creators who fear platform censorship and want a presence truly their own.
+Install a client: Damus (iPhone), Amethyst or Primal (Android), or a web version.
+The app generates your key pair. Back up your private key (nsec) like a Bitcoin seed phrase: on paper, never shared.
+Create your profile, follow people, enable zaps to receive sats.
+nostr.com →🟡🔴
+El
+Matrix / Element
+🟡🔴Replaces Discord / Slack🌍 · federated · E2EE
+Community chat, in the spirit of Discord or Slack, but federated and end-to-end encryptable. Element is the app, Matrix the network.
+You can host your own server (Synapse) and control your data. Perfect for a collective, a newsroom or an association that wants its own independent space.
+Communities and groups. See the metadata caveat below.
+Install Element (element.io) and create an account on a public server, or on your own (section 10).
+Join or create rooms, and enable end-to-end encryption for private conversations.
+element.io →🟡🔴
+Pi
+Pixelfed · PeerTube · Lemmy
+🟡Insta · YouTube · Reddit🌍 · open-source
+The federated cousins of Instagram (Pixelfed), YouTube (PeerTube) and Reddit (Lemmy).
+Same logic as Mastodon: no single owner, no ad algorithm, no tracking. You post photos, videos or discussions without feeding a profiling machine.
+Those who want to leave Instagram, YouTube or Reddit without giving up the format.
+pixelfed.org →peertube →lemmy →🟡
+Metadata caveat
+Matrix encrypts content well, but in federation, participating servers see room membership and message timing. For highly sensitive use, prefer SimpleX/Session or self-host your server.
+PART 09 · 🟡
+Financial sovereignty
+Money is surveilled and censorable too. Activists' accounts have been frozen, donations blocked, and every card payment is tracked. Financial privacy is part of sovereignty.
+₿
+Bitcoin (self-custody)
+🟡🔴Censorship-resistant
+A digital money you hold yourself, without going through a bank.
+In self-custody (your keys in a wallet only you control), no one can freeze or block your funds. Its privacy isn't perfect (the ledger is public), but it escapes banking censorship, useful the day a payment is refused.
+Guarding against account freezes or de-banking, and paying anonymously for a service like a VPN.
+Get some bitcoin (an exchange, or peer-to-peer).
+Move them right away to a wallet you control: a hardware wallet (Trezor, ColdCard) or an open-source app. Don't leave them on the exchange.
+Back up your recovery phrase on paper, never as a photo or online.
+bitcoin.org →🟡🔴
+ɱ
+Monero (XMR)
+🔴 AdvancedPrivate by default
+The privacy cryptocurrency: amounts, sender and recipient are hidden by default.
+It's the exact opposite of Bitcoin here: transactions are private by design. It's the best way to pay for a service without leaving a trail back to you.
+Those who want maximum financial privacy. Note: Monero is already delisted from several European exchanges, so you often need a decentralised swap.
+Install a wallet (the official one at getmonero.org, or Cake Wallet on mobile).
+Get XMR through a decentralised exchange service (for example a "swap" from another crypto).
+Back up your recovery phrase on paper.
+getmonero.org →🔴
+Legality & caution
+Financial privacy is legal. Don't confuse it with tax evasion: declare what must be declared. Cryptocurrencies are volatile and scams are common; never risk what you can't lose, and learn before you act.
+BLIND SPOT · THE AI MADNESS · 🟡
+Conversational AI
+While we fight to encrypt our messages, hundreds of millions of people pour their most intimate thoughts into ChatGPT, Gemini or Copilot, on US servers. This is the blind spot of the whole story. Sheer madness.
+What you type into a cloud AI is a written, timestamped, stored confession. Worse than a message: you spill your anxieties, your health, your finances, your work secrets, often more honestly than to a friend. And unlike an encrypted messenger, it's all readable in plaintext on the server.
+What the facts say (2025-2026)
+Consumer tiers train on your data by default. In January 2026, a US judge ordered OpenAI to produce 20 million ChatGPT conversations as evidence: the affected users were neither notified nor consulted. Deleting a chat does not guarantee it's gone. And in one leak, 47,000 exposed conversations held emails, phone numbers and re-identifiable intimate details.
+The counter: local AI
+Ai
+Ollama · LM Studio · Jan · GPT4All
+🟡🔴Replaces ChatGPT🌍 · 100% local
+Software to run an AI model directly on your own computer.
+Your questions never leave the device: no server, no account, no telemetry, and it works offline. Quality depends on your hardware, but nothing leaks. Ollama and LM Studio are the easiest; Jan and GPT4All aim for maximum privacy.
+Anyone who uses AI for even slightly personal topics and doesn't want to hand them to a US server.
+For a gentle start, install LM Studio or Jan (a graphical interface, like a normal app).
+Download a model offered in the app (for example Llama or Mistral), matched to your machine's power.
+Chat away: everything happens locally. Ollama is the command-line version for the more technical.
+lmstudio.ai →jan.ai →ollama.com →🟡🔴
+☁
+Duck.ai · Lumo (Proton)
+🟢🟡Privacy-minded cloud
+Cloud AI access, but built for privacy, when a local AI isn't possible.
+Duck.ai (DuckDuckGo) gives anonymised access to several models. Lumo (Proton) encrypts exchanges and doesn't train on them. Far better than consumer ChatGPT, but it's still a remote server.
+Those who want cloud convenience without feeding the giants. Keep non-sensitive topics there.
+duck.ai →lumo →🟢🟡
+The simple rule
+Never paste into a cloud AI what you wouldn't tell a stranger who's recording: identity, health, passwords, work secrets, confessions. For anything sensitive, use a local AI.
+REPLACE THE REST · 🟡
+The everyday toolbox
+Google and Apple are not just email: maps, notes, calendar, photos, video calls, everything is tied to your identity. Here's how to replace each brick, one at a time, without losing convenience.
+Om
+Organic Maps · OsmAnd
+🟢 BeginnerReplaces Google Maps🌍 · open-source
+Map and navigation apps, built on OpenStreetMap, that work offline.
+Google Maps logs every trip and builds a chillingly precise location history. Organic Maps tracks nothing and shows no ads; OsmAnd targets power users (hiking, contour lines, detailed navigation).
+Everyone. Live traffic and transit are less complete than Google's, but everyday navigation is excellent.
+Install from F-Droid, the App Store or Google Play.
+Download the maps of the regions you need in advance for offline use.
+organicmaps.app →osmand.net →🟢
+No
+Standard Notes · Joplin · CryptPad
+🟢🟡Replaces Docs / Notion🌍 · open-source
+End-to-end encrypted notes and documents, to replace Google Docs, Notion or Evernote.
+Standard Notes (by Proton) encrypts your notes by default. Joplin handles Markdown notebooks with optional encryption and the sync of your choice. CryptPad (French) offers a real-time, fully encrypted Google Docs equivalent.
+Everyone for notes; CryptPad for multi-person collaboration.
+Standard Notes / Joplin: create an account, install the app, and enable encryption (on by default in Standard Notes, to switch on in Joplin).
+CryptPad: use cryptpad.fr or another instance, no account needed to start.
+standardnotes.com →joplinapp.org →cryptpad.org →🟢🟡
+Vi
+Jitsi Meet · Element Call
+🟢🟡Replaces Zoom / Meet🌍 · open-source
+Video-conferencing tools with no account or heavy install, to replace Zoom, Google Meet or Teams.
+Jitsi Meet runs in the browser, no account, and can be self-hosted (it's also the basis of Brave Talk). Element Call is end-to-end encrypted and federated via Matrix. For a simple, fully encrypted call, Signal calls also do the job.
+Everyone. On a public Jitsi server, multi-party calls are transport-encrypted; end-to-end encryption is optional.
+Jitsi: go to meet.jit.si, create a room name, share the link. Nothing to install.
+Element Call: from the Element (Matrix) app, start a call in a room.
+jitsi.org →element.io/element-call →🟢🟡
+Ph
+Ente · Immich
+🟡🔴Replaces Google Photos🌍 · open-source
+Two ways to keep your photos without handing them to Google or Apple.
+Ente is a managed, end-to-end encrypted service, with on-device recognition and search: simple and safe. Immich is a Google Photos clone you host yourself (face and object search included), for those comfortable running a server.
+Ente for everyone; Immich for self-hosters. Note: Immich is not end-to-end encrypted, its security depends on your server.
+Ente: install the app, create an account, turn on automatic backup of your camera roll.
+Immich: deploy it on your server (see section 10) via Docker, then connect the mobile app.
+ente.io →immich.app →🟡🔴
+@
+SimpleLogin · addy.io
+🟢🟡Email aliases🌍 · open-source
+Disposable email aliases: a unique address per site, forwarding to your real inbox without ever revealing it.
+You stop giving out your real address everywhere. If a site is breached or spams you, you cut that one alias, and you instantly know who leaked your data. SimpleLogin is integrated with Proton; addy.io offers unlimited aliases on the free tier.
+Everyone, and especially pseudonymous accounts that want to compartmentalise their signups.
+Create an account, install the browser extension.
+At each signup, generate a new alias instead of typing your real address.
+simplelogin.io →addy.io →🟢🟡
+Bk
+Encrypted backups
+🟡🔴Cryptomator · restic🌍 · open-source
+A way to back up your phone and computer, encrypting the data before it leaves for any cloud.
+iCloud/Google backups are often accessible to the provider, and thus to courts. Cryptomator encrypts your files before sending them to any cloud; restic makes automatic encrypted backups; Proton Drive is end-to-end encrypted. On iPhone, enable "Advanced Data Protection" to encrypt your iCloud backups.
+Everyone should encrypt their backups. Golden rule: two encrypted copies, on two media, in two places.
+iPhone: Settings > your name > iCloud > Advanced Data Protection: turn it on.
+PC: install Cryptomator, create a vault, put your files in it before syncing to the cloud.
+cryptomator.org →restic.net →🟡🔴
+RG
+Erase your data (GDPR)
+🟡Data brokers
+Getting your personal information removed from the "data brokers" that collect and resell it.
+In Europe, the GDPR (Article 17) gives you a right to erasure: you can demand, for free, that a company delete your data, in principle within a month. Services like Incogni automate these requests at scale, for a fee.
+Those who want to reduce their exposure. Note: data reappears over time, and this doesn't touch public records or social media. Doing it yourself is free but tedious.
+For a manual request: write to the broker citing GDPR Article 17 and ask for deletion.
+To automate: subscribe to a removal service and let it send the requests on your behalf.
+cnil.fr →incogni.com →🟡
+PART 10 · ADVANCED SELF-DEFENCE · 🔴
+Self-hosting
+The ultimate level of sovereignty: host your services yourself. Your data lives on your hardware, under the jurisdiction you choose.
+Yh
+YunoHost · Umbrel · Start9
+🔴 AdvancedTurnkey server🌍 · open-source
+Systems that turn an old PC or a Raspberry Pi into a personal server, with an app catalogue you install in a few clicks.
+Self-hosting sounds scary, but these tools do the heavy lifting. YunoHost even runs your own email and single sign-on. Umbrel offers a 300+ app store, popular with privacy and Bitcoin folks. Start9 encrypts backups and gives every service a Tor address by default.
+Advanced profiles ready to spend an afternoon building their own cloud. It's the most radical structural counter to Chat Control.
+Get an old computer, a Raspberry Pi, or rent a small server (VPS) in a protective country.
+Install YunoHost, Umbrel or Start9 following their official guide.
+From the catalogue, install Nextcloud, a Matrix server, a photo gallery, etc.
+Reach it privately with Tailscale (card below) rather than exposing the server to the public.
+yunohost.org →umbrel.com →start9.com →🔴
+Nc
+Nextcloud
+🔴 AdvancedReplaces all of Google🇩🇪 · open-source
+Your own cloud: files, calendar, contacts, photos, notes and collaborative documents, on your server.
+It's the full replacement for Google Drive, Calendar and Contacts, but at home. You choose the jurisdiction and no one else controls your files. Note: it's "your server" privacy, not end-to-end encryption by default; you must keep it updated.
+Self-hosters. The easiest path is to install it via YunoHost or Umbrel.
+nextcloud.com →🔴
+Mx
+Matrix Synapse
+🔴 AdvancedYour chat server🌍 · open-source
+Your own Matrix chat server, powering Element and encrypted calls.
+By hosting the server, you also control the metadata (who talks to whom, when), Matrix's weak point in federation. It's community chat that you alone own.
+Communities, collectives, newsrooms that want their own independent federated space.
+element.io/server →🔴
+Ts
+Tailscale · Headscale · WireGuard
+🔴 AdvancedPrivate access to your server🌍 · open-source
+A private encrypted network linking your devices to your server, without ever exposing it on the public internet.
+Instead of opening ports (and getting attacked), Tailscale builds a WireGuard tunnel between your authorised devices only: your server has no public attack surface. Headscale is the self-hosted version, so you depend on no third party. WireGuard alone gives full control, at the cost of manual setup.
+Every self-hoster. It's the safe way to reach your Nextcloud or photos from outside.
+Install Tailscale on your server and on your phone/PC, connect them to the same account.
+Your devices instantly see each other on a private network; reach your server at its Tailscale address.
+For zero dependency, replace the coordination server with self-hosted Headscale.
+tailscale.com →headscale.net →🔴
+www
+Your own website
+🟡🔴Ban-proof your voice
+A site of your own, on your own domain name, where your content depends on no platform.
+The day a network deletes or suspends your account, all your work vanishes. A personal site is your anchor: your posts stay there, archived and up to date, whatever happens. It's exactly what cautious information accounts do. A static site (built with Hugo, Astro or Jekyll) is enough and publishes almost for free; for a dynamic blog, a self-hosted WordPress or Ghost does the job.
+Information accounts, creators, activists, anyone who publishes and fears platform censorship.
+Buy a domain name (ideally from a privacy-respecting registrar).
+Choose a static-site generator (Astro, Hugo) and host the output, or install WordPress/Ghost on your server.
+Always point to it from your social accounts: your audience finds you even if one account falls.
+astro.build →ghost.org →🟡🔴
+The jurisdiction point
+Self-hosting also means choosing where your data lives. A server at home or in a protective country escapes the scanning duties imposed on big platforms. It's the most radical structural counter to Chat Control.
+PART 11 · 🔴
+Tor
+The network that separates who you are from what you do online.
+Tor
+Tor Browser
+🔴 AdvancedNetwork anonymity🌍 · open-source
+A network that separates who you are from what you do online, accessible via the Tor Browser.
+Your traffic bounces through several encrypted relays worldwide: none knows both your identity and your destination. It's the tool of journalists and sources, and the way to reach a blocked site (for example to download a censored VPN).
+High-risk profiles, and anyone who must decouple their activity from their real IP. Use it occasionally, not as an everyday browser.
+Download the Tor Browser from torproject.org (Windows, macOS, Linux, Android).
+Launch it and click "Connect." If Tor is blocked in your country, enable a "bridge."
+Browse without maximising the window, without installing extensions, and without logging into your real accounts.
+torproject.org →🔴
+Limits, not magic
+Tor protects transport, not your habits: log into your real account and you deanonymise yourself. It's slower, and the exit node sees unencrypted traffic (use HTTPS). For serious anonymity, pair it with Tails (section 12).
+PART 12 · 🔴
+Free operating systems
+The keystone. If client-side scanning can be imposed by the operating system itself, the only real counter is to control that OS. That's true on the phone (GrapheneOS) and on the computer (Linux). Don't underestimate this: as long as you stay on Windows, macOS or a Google Android, you don't truly control your machine.
+Gr
+GrapheneOS
+🔴 AdvancedDe-Googled mobileAndroid · Pixel · open-source
+A fully de-Googled Android, installed on a Pixel phone: mobile sovereignty.
+It's the structural defence par excellence against an OS or app store that would scan you. Google services in an optional sandbox, per-app network permissions, isolated profiles, auto-reboot that purges keys from memory, a duress PIN that wipes the phone. So respected for security that it's used by spyware targets.
+Exposed profiles, but also any citizen willing to buy a Pixel to take back control of their phone.
+Get a compatible Google Pixel phone (it's the only supported hardware, for security reasons).
+On a computer, go to grapheneos.org/install and follow the web installer (a few clicks, no terminal needed).
+For your apps, install the free F-Droid store; add sandboxed Google Play only if needed.
+Set a long passphrase (not a 4-digit PIN) and learn the "Lockdown" mode.
+grapheneos.org →🔴
+🐧
+Linux (on desktop)
+🟡🔴Replaces Windows / macOS🌍 · free
+A free operating system for your computer, replacing Windows or macOS. It comes in many flavours, called "distributions."
+It's many people's blind spot: they encrypt their messages but keep a Windows that streams telemetry to Microsoft nonstop (whose "Recall" feature tried to screenshot the screen continuously), or a macOS that reports the apps you launch. Linux doesn't spy on you, it's free, it revives old computers, and it finally makes you master of your machine. It's easier than its reputation: modern distributions look like Windows or macOS.
+Anyone can make the switch. To start, Linux Mint (closest to Windows) or Fedora; Debian for stability. No need to wipe anything: you can test first, then install alongside your current system.
+Not sure which distribution? Answer the distrochooser.de/fr quiz, which points you to the right one for your needs.
+Try it without installing anything, right in your browser, at distrosea.com.
+Once convinced, download the distribution's image and create a bootable USB (with Ventoy or Balena Etcher).
+Boot from the USB to try the system "live," then run the install. Enable the disk encryption it offers.
+distrochooser.de/fr →distrosea.com →linuxmint.com →🟡🔴
+Ta
+Tails
+🔴 AdvancedAmnesic USB🌍 · all via Tor
+A system that boots from a USB stick, routes all traffic through Tor and leaves no trace when shut down.
+On shutdown, everything is forgotten: it's "amnesic." Ideal for sensitive, one-off work on a computer that isn't yours, leaving nothing behind.
+Whistleblowers, journalists, sources. The reference tool for high-risk work.
+Download Tails from tails.net and follow the wizard to create the USB stick.
+Reboot the computer from that USB. Use it, then shut down: everything vanishes.
+tails.net →🔴
+Qb
+Qubes OS · postmarketOS
+🔴 ExpertCompartmentalisation🌍 · open-source
+Two niche systems: Qubes compartmentalises your PC into sealed virtual machines; postmarketOS runs Linux on old phones.
+Qubes isolates each activity (work, banking, risky browsing) in its own compartment: a compromise doesn't reach the rest. postmarketOS extends the life of phones abandoned by their maker.
+Expert users with a very high threat model.
+qubes-os.org →postmarketos.org →🔴
+Harden your device
+Even without switching OS, you gain a lot: install apps via F-Droid (free store) or Aurora Store, replace Google services with microG, create separate profiles, cut needless network permissions, disable automatic cloud backup and the advertising ID.
+HARDWARE · 🔴
+Telephony & physical device
+The best app is useless if the device itself betrays you. Here are the hardware threats and the moves that neutralise them.
+The phone number is a tracker
+Your number ties together your SIM card, your device (its IMEI identifier), your location and your identity (most countries require ID to buy a SIM). It's the thread that lets everything be cross-referenced.
+Use number-free messengers (SimpleX, Session) for sensitive contacts, and always prefer Signal over SMS.
+For a separate identity, a "data-only" SIM or prepaid eSIM limits the link at the point of sale (check your country's rules).
+IMSI-catchers & the phone network
+"IMSI-catchers" (or "stingrays") are fake cell towers that force phones to connect so they can log their identifier and sometimes intercept communications, often by downgrading to weakly encrypted 2G. In parallel, an old network flaw (SS7) still allows SMS interception and remote phone location: one more reason to drop SMS.
+Disable 2G in settings (possible on Android and GrapheneOS) to cut the main interception vector.
+At a protest or in a sensitive area, switch to airplane mode or slip the phone into a Faraday bag (which blocks all signal). The EFF even publishes a free tool, Rayhunter, to detect IMSI-catchers.
+Biometrics or passcode?
+A finger can be forced, a passcode can't
+Your face or finger can be applied to the sensor while you're restrained (at a border, during an arrest); a password in your head cannot. Before a risky situation, force a return to the passcode: on iPhone, hold the side button and a volume button (the "SOS" screen); on Android/GrapheneOS, use Lockdown in the power menu, which disables biometrics until the PIN is entered. Choose a long passphrase, not a four-digit PIN. GrapheneOS even offers a duress PIN that wipes the phone.
+De-Microsoft, de-Apple
+Don't forget the computer: Windows streams telemetry nonstop (and its "Recall" feature tried to screenshot the screen continuously), macOS reports the apps you launch. The real exit is Linux (see section 12). Short of that, disable telemetry, the advertising ID and "Recall," and add an outbound firewall (like Little Snitch on Mac).
+PART 13 · 🔴
+Anonymity & OPSEC
+For the pseudonymous account and the whistleblower. Here you no longer protect just a message: you protect an identity.
+Pseudonymity vs anonymity
+The golden rule: never cross your real identity with your public one. Not the same email, number, device, network, posting hours or writing style. A single leak links the two.
+Identity-less accounts : SimpleX and Session need no number; pair them with disposable email aliases. Beware resold, traceable "virtual numbers".
+Clean metadata : a posted photo often carries the date, device model and sometimes GPS coordinates (EXIF data). Strip it with Metadata Cleaner, mat2 or ExifTool before posting; watch file names and document metadata too.
+Network anti-correlation : use Tor/Tails to decouple your activity from your home IP. Never mix your personal and pseudonymous networks. A SIM in your name betrays your location no matter what else you do.
+Compartmentalisation : a device, or at least a profile, dedicated to the public identity, a separate password manager, and never a cross-login between the two worlds.
+Passing documents as a source
+SecureDrop is the anonymous submission system many newsrooms use to receive documents from sources. Many outlets also publish a PGP key and a Signal contact. Never submit from your work hardware or usual network.
+Honesty, don't overestimate yourself
+Strong anonymity against a state adversary is hard and fallible. This guide gives bearings, not guarantees. If lives depend on it, train with the authoritative references: EFF Surveillance Self-Defense, Freedom of the Press Foundation, Privacy Guides. Strictly defensive and journalistic context.
+PART 14 · GOING FURTHER
+The full free ecosystem
+Fully de-Googling means replacing each brick with a free equivalent. The common logic (free software + control of your device + self-hosting) is the real counter to client-side scanning.
+Office
+LibreOffice
+OnlyOffice
+Media
+VLC
+Jellyfin
+FreeTube / NewPipe
+Audacity · OBS
+GIMP · Inkscape
+Calibre · Shotcut
+Cloud & network
+Nextcloud
+Pi-hole
+KDE Connect
+Free mobile
+F-Droid · Aurora
+microG
+postmarketOS
+Security
+Bitwarden
+KeePassXC
+Wireshark
+Email & desktop
+Thunderbird
+FairEmail
+Dev & advanced
+Termux · git
+QEMU / KVM · Wine
+Flatpak · GNU/Linux
+PART 15 · TAKE ACTION
+Migration & digital civil disobedience
+A step-by-step plan
+Week 1 🟢 : Install Signal and bring your close ones over. Move to Proton Mail or Tuta. Set up a password manager and uBlock Origin.
+Week 2 🟡 : Move files to an encrypted cloud, replace Chrome/Google Search, get a VPN, open a Mastodon account.
+Then 🔴 : Depending on your profile: GrapheneOS, Tor/Tails, self-hosting, OPSEC discipline.
+Common mistakes
+Believing one tool is enough; reusing your real number for an anonymous account; installing ten apps without changing habits; forgetting the weak link is often the device itself.
+Sovereignty is collective
+An encrypted messenger only works if the other person uses it too. Bring your contacts, family and community along. Switching tools is voting with your usage: every person who leaves surveillance platforms weakens the model.
+Act politically
+Technology doesn't replace politics. Follow and support the mobilisation: fightchatcontrol.eu, EDRi, the work of Patrick Breyer. Contact your MEPs, that's still what nearly stopped the text.
+Manifesto
+Refusing illegitimate mass surveillance is not hiding: it is a lawful, peaceful, civic act. Privacy is a right, not a confession. To encrypt is to vote. To self-host is to disobey. To reclaim your tools is to become ungovernable.
+Resources
+Privacy Guides EFF · Surveillance Self-Defense Freedom of the Press Foundation Fight Chat Control
+Sources · the law
+Chat Control · Wikipedia Breyer · vote 9 juillet 2026 Chat Control 1.0 vs 2.0 Proton · client-side scanning Tech giants' joint appeal (19 Mar 2026) Big Tech vows to keep scanning
+Act
+European Digital Rights (EDRi) Patrick Breyer · Chat Control Signal · blog
+Open source on GitHub
+This guide is an information document on privacy protection and the defence of encryption. It advises no illegal activity. Always check the legislative news: the situation moves fast. Facts last updated: 9 July 2026.

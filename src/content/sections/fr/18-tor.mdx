@@ -1,0 +1,57 @@
+---
+id: 'tor'
+part: 11
+order: 18
+title: 'Tor'
+---
+
+<p class="part-num">
+  PARTIE 17 · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Tor
+
+Le réseau qui sépare qui vous êtes de ce que vous faites en ligne.
+
+<ToolCard tool="t-tor">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Anonymat réseau</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un réseau qui sépare qui vous êtes de ce que vous faites en ligne, accessible via le Tor
+    Browser.
+  </Fragment>
+  <Fragment slot="why">
+    Votre trafic rebondit à travers plusieurs relais chiffrés dans le monde : aucun ne connaît à la
+    fois votre identité et votre destination. C'est l'outil des journalistes et des sources, et le
+    moyen d'atteindre un site bloqué (par exemple pour télécharger un VPN censuré).
+  </Fragment>
+  <Fragment slot="who">
+    Profils à haut risque, et quiconque doit dissocier son activité de son adresse IP réelle. À
+    utiliser ponctuellement, pas comme navigateur de tous les jours.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Téléchargez le Tor Browser sur <b>torproject.org</b> (Windows, macOS, Linux, Android).
+    </li>
+    <li>
+      Lancez-le et cliquez « Se connecter ». Si Tor est bloqué dans votre pays, activez un « pont »
+      (bridge).
+    </li>
+    <li>
+      Naviguez sans maximiser la fenêtre, sans installer d'extension, et{' '}
+      <b>sans vous connecter à vos vrais comptes</b>.
+    </li>
+  </ol>
+</ToolCard>
+
+<div class="box warn">
+  <span class="lab">Limites, pas magique</span>
+  <p>
+    Tor protège le transport, pas vos habitudes : si vous vous connectez à votre vrai compte, vous
+    vous déanonymisez vous-même. Il est plus lent, et le nœud de sortie voit le trafic non chiffré
+    (utilisez HTTPS). Pour un anonymat sérieux, associez-le à Tails (section 12).
+  </p>
+</div>

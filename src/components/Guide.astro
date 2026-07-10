@@ -1,0 +1,85 @@
+---
+// Composition root: renders every migrated guide section for one locale.
+// Sections live in src/content/sections/<locale>/NN-<slug>.mdx; each keeps
+// its LEGACY anchor id on the <section> wrapper so old deep links resolve.
+// ToolCard is injected into the MDX scope via the components prop.
+import { getCollection, render } from 'astro:content'
+import { useT, type Locale } from '../i18n/config'
+import Allies from './Allies.astro'
+import Checklist from './Checklist.astro'
+import Directory from './Directory.astro'
+import Hero from './Hero.astro'
+import Manifesto from './Manifesto.astro'
+import Observatory from './Observatory.astro'
+import ShareRow from './ShareRow.astro'
+import StatusBanner from './StatusBanner.astro'
+import Timeline from './Timeline.astro'
+import ToolCard from './ToolCard.astro'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+
+const entries = await getCollection('sections', ({ id }) => id.startsWith(`${locale}/`))
+entries.sort((a, b) => a.data.part - b.data.part || a.data.order - b.data.order)
+const sections = await Promise.all(
+  entries.map(async (entry) => ({ data: entry.data, Content: (await render(entry)).Content })),
+)
+
+// The dataset-driven sections appended after the migrated guide, in reading
+// order — also listed in the TOC below (titles from the same i18n keys).
+const dataSections = ['precedents', 'observatory', 'allies', 'directory', 'checklist'].map(
+  (id) => ({ id, title: t(`sections2.${id}.title`) }),
+)
+
+// Sequential part numbering, 00…27 — mirrors the PART NN headers inside
+// the sections (renumbered the same way).
+const tocEntries = [
+  ...sections.map(({ data }) => ({ id: data.id, title: data.title })),
+  ...dataSections,
+  { id: 'manifesto', title: t('manifesto.label') },
+].map((s, i) => ({ ...s, prefix: String(i).padStart(2, '0') }))
+---
+
+<Hero locale={locale} />
+<StatusBanner locale={locale} />
+<main id="content" class="mx-auto max-w-3xl px-4 py-8">
+  <nav
+    id="toc"
+    aria-label={t('nav.toc')}
+    class="my-8 rounded-dossier border border-rule bg-surface p-5"
+  >
+    <p class="eyebrow mt-0 mb-3">{t('nav.toc')}</p>
+    <ul class="m-0 list-none gap-6 p-0 text-sm leading-7 sm:columns-2">
+      {
+        tocEntries.map((s) => (
+          <li class="m-0">
+            <a href={`#${s.id}`} class="text-ink no-underline hover:text-accent">
+              <span class="toc-p" aria-hidden="true">
+                {s.prefix}
+              </span>
+              {s.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+  {
+    sections.map(({ data, Content }) => (
+      <section id={data.id}>
+        <Content components={{ ToolCard }} />
+      </section>
+    ))
+  }
+  <Timeline locale={locale} />
+  <Observatory locale={locale} />
+  <Allies locale={locale} />
+  <Directory locale={locale} />
+  <Checklist locale={locale} />
+  <Manifesto locale={locale} />
+  <ShareRow locale={locale} />
+</main>

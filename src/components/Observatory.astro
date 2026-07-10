@@ -1,0 +1,138 @@
+---
+// PART 17 — the Big Brother observatory: 35 dated, sourced drift items
+// (src/data/observatory.json + per-locale prose), filterable by region group
+// and by theme. The filtering is attribute-driven CSS (see <style> below):
+// the buttons only set data-obs-region / data-obs-theme on the section root,
+// so the no-JS state is simply "everything visible".
+import { useT, type Locale } from '../i18n/config'
+import { loadDataset, THEMES, type Status } from '../lib/content'
+import { mdToHtml } from '../lib/md'
+import Ext from './Ext.astro'
+import FilterBar from './FilterBar.astro'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+
+const items = [...loadDataset('observatory', locale)].sort((a, b) => a.date.localeCompare(b.date))
+
+// The UI groups the 10 raw regions into the 3 chips the dataset guarantees
+// are never empty (see tests/unit/content.test.ts): EU, France, World.
+const REGION_GROUPS = ['eu', 'fr', 'world'] as const
+type RegionGroup = (typeof REGION_GROUPS)[number]
+const regionGroup = (region: string): RegionGroup =>
+  region === 'eu' ? 'eu' : region === 'fr' ? 'fr' : 'world'
+
+const STATUS_CLASS: Record<Status, string> = {
+  en_vigueur: 'border-warn text-warn',
+  adopte: 'border-warn text-warn',
+  negociation: 'border-lvl2 text-lvl2',
+  propose: 'border-info text-info',
+  rejete: 'border-ok text-ok',
+  suspendu: 'border-ok text-ok',
+  revele: 'border-info text-info',
+}
+---
+
+<section id="observatory">
+  <p class="eyebrow">{t('sections2.observatory.eyebrow')}</p>
+  <h2>{t('sections2.observatory.title')}</h2>
+  <p class="text-dim">{t('sections2.observatory.intro')}</p>
+  <FilterBar
+    group="region"
+    label={t('sections2.observatory.filterRegion')}
+    allLabel={t('sections2.observatory.all')}
+    options={REGION_GROUPS.map((g) => ({
+      value: g,
+      label: t(`sections2.observatory.regions.${g}`),
+    }))}
+  />
+  <FilterBar
+    group="theme"
+    label={t('sections2.observatory.filterTheme')}
+    allLabel={t('sections2.observatory.all')}
+    options={THEMES.map((th) => ({ value: th, label: t(`sections2.observatory.themes.${th}`) }))}
+  />
+  <div class="mt-4">
+    {
+      items.map((ev) => (
+        <article
+          id={ev.id}
+          class="obs-item my-5"
+          data-region={regionGroup(ev.region)}
+          data-themes={ev.themes.join(' ')}
+        >
+          <p class="m-0 flex flex-wrap items-baseline gap-x-2 gap-y-1">
+            <span class="font-mono text-sm font-bold">{ev.date}</span>
+            <span class="rounded-dossier border border-rule px-1.5 py-0.5 font-mono text-xs text-dim">
+              {t(`sections2.observatory.regions.${regionGroup(ev.region)}`)}
+            </span>
+            {ev.themes.map((th) => (
+              <span class="rounded-dossier border border-rule px-1.5 py-0.5 font-mono text-xs text-dim">
+                {t(`sections2.observatory.themes.${th}`)}
+              </span>
+            ))}
+            <span
+              class={`rounded-dossier border px-1.5 py-0.5 font-mono text-xs tracking-wide uppercase ${STATUS_CLASS[ev.status]}`}
+            >
+              {t(`sections2.observatory.statuses.${ev.status}`)}
+            </span>
+          </p>
+          <h3 class="mt-1 mb-0 text-base">{ev.title}</h3>
+          <p class="my-1 text-sm leading-6" set:html={mdToHtml(ev.body)} />
+          <p class="mt-1 mb-0 font-mono text-xs">
+            <Ext href={ev.src.href} class="text-dim">
+              {ev.src.label} →
+            </Ext>
+          </p>
+        </article>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  /* Attribute-driven filtering: one rule per chip value, mirroring
+     REGION_GROUPS and THEMES above. The buttons only flip the section's
+     data attributes — no attribute, nothing hidden (the no-JS state). */
+  section[data-obs-region='eu'] .obs-item:not([data-region='eu']),
+  section[data-obs-region='fr'] .obs-item:not([data-region='fr']),
+  section[data-obs-region='world'] .obs-item:not([data-region='world']),
+  section[data-obs-theme='messaging'] .obs-item:not([data-themes~='messaging']),
+  section[data-obs-theme='identity'] .obs-item:not([data-themes~='identity']),
+  section[data-obs-theme='money'] .obs-item:not([data-themes~='money']),
+  section[data-obs-theme='media'] .obs-item:not([data-themes~='media']),
+  section[data-obs-theme='aibio'] .obs-item:not([data-themes~='aibio']) {
+    display: none;
+  }
+  /* the printed dossier is always complete, whatever filters are active */
+  @media print {
+    .obs-item {
+      display: block !important;
+    }
+  }
+</style>
+
+<script>
+  // Delegated once per page lifecycle (survives ClientRouter swaps): a
+  // filter button sets/removes the section's data attribute and mirrors
+  // the pressed state on its own group's buttons.
+  document.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-obs-filter]')
+    if (!btn) return
+    const root = btn.closest<HTMLElement>('#observatory')
+    if (!root) return
+    const group = btn.dataset.obsFilter ?? ''
+    const value = btn.dataset.value ?? ''
+    if (value) root.setAttribute(`data-obs-${group}`, value)
+    else root.removeAttribute(`data-obs-${group}`)
+    for (const other of root.querySelectorAll(`[data-obs-filter="${group}"]`)) {
+      other.setAttribute('aria-pressed', String(other === btn))
+    }
+  })
+
+  export {}
+</script>

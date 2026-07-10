@@ -1,0 +1,50 @@
+{
+  "fight-chat-control": {
+    "role": "Citizen-led platform (anonymous collective): MEP contact tool, per-member-state position tracking, 1.0 vs 2.0 comparison. Relaunched for every vote."
+  },
+  "stop-scanning-me": {
+    "role": "Coalition of 60+ organisations: 200,000+ signature petition, open letter grown from 300 to 450 scientists, joint letter of 133 NGOs."
+  },
+  "patrick-breyer": {
+    "role": "The former Pirate MEP who coined \"Chat Control\". The reference chronicle of the file, vote by vote, document by document, since 2020."
+  },
+  "edri": {
+    "role": "The European digital rights network (50+ NGOs). Legal analysis, Brussels advocacy, campaign coordination."
+  },
+  "la-quadrature-du-net": {
+    "role": "Since 2008: CJEU litigation (the 2020 retention ruling), the Technopolice campaign, analysis of French surveillance laws."
+  },
+  "noyb": {
+    "role": "Max Schrems’ NGO: systematic GDPR litigation that brought down two EU-US transfer deals (Schrems I and II)."
+  },
+  "eff": {
+    "role": "Thirty years of litigation and tools (Jewel v. NSA, Certbot, Privacy Badger, Rayhunter) and the Surveillance Self-Defense guide."
+  },
+  "signal-foundation": {
+    "role": "Pledged to leave the EU rather than install scanning. Meta/WhatsApp (Oct 2025) and Threema (\"all options\") followed with opposition."
+  },
+  "eff-nsa-timeline": {
+    "role": "US surveillance chronology 1791-2015, built on the Jewel v. NSA evidence record: every entry dated and sourced. The receipts model our Precedents section borrows."
+  },
+  "atlas-of-surveillance": {
+    "role": "14,900+ documented police deployments across 6,000+ US jurisdictions (drones, face recognition, IMSI catchers…), compiled by 1,000+ students and volunteers. Geographic rather than chronological."
+  },
+  "technopolice": {
+    "role": "La Quadrature’s 2019 campaign documenting the \"Safe City\" city by city, company by company: procurement records, participatory forum, leak channel."
+  },
+  "ooni": {
+    "role": "The largest open dataset on internet censorship: millions of measurements since 2012, 200+ countries, CC-licensed data and a public API. Censorship, proven in real time."
+  },
+  "digital-violence": {
+    "role": "The interactive map of the Pegasus/NSO ecosystem: export licenses, infections, and the physical consequences for the people targeted."
+  },
+  "surveillance-watch": {
+    "role": "Interactive map of the spyware industry: who builds, who funds, who buys."
+  },
+  "netblocks": {
+    "role": "Real-time observatory of internet shutdowns and blocking, country by country, incident by incident."
+  },
+  "big-brother-awards": {
+    "role": "Since 2000, the annual \"award\" for the worst privacy offenders (editions in several countries): a chronicle by example, year after year."
+  }
+}

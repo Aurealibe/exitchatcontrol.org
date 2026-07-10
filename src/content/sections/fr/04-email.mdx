@@ -1,0 +1,104 @@
+---
+id: 'email'
+part: 2
+order: 4
+title: 'E-mail chiffré & PGP'
+---
+
+<p class="part-num">
+  PARTIE 03 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## E-mail chiffré &amp; PGP
+
+Gmail lit vos e-mails et vit aux États-Unis, sous la juridiction des « Five Eyes ». Quitter Gmail/Outlook est un gain énorme pour un effort minime.
+
+<ToolCard tool="t-protonmail">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Remplace Gmail</span>
+    <span class="tool-tag">🇨🇭 · open-source · OpenPGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Une boîte mail chiffrée qui remplace Gmail ou Outlook, et le compte pivot de tout l'écosystème
+    Proton.
+  </Fragment>
+  <Fragment slot="why">
+    Basé en Suisse, hors juridiction des « Five Eyes ». Compatible OpenPGP : chiffrement automatique
+    entre comptes Proton et vers les autres services PGP.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde. C'est le meilleur point de départ pour quitter Google (voir section 05 pour le
+    reste de la suite).
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Créez un compte sur <b>proton.me</b> (offre gratuite suffisante pour commencer).
+    </li>
+    <li>
+      Importez vos anciens messages et contacts avec <b>Easy Switch</b> (intégré).
+    </li>
+    <li>Mettez une redirection depuis Gmail et prévenez vos contacts de votre nouvelle adresse.</li>
+    <li>
+      Installez l'application mobile, activez la <b>double authentification</b>, et utilisez Proton
+      Bridge si vous tenez à Thunderbird.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tuta">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Remplace Gmail</span>
+    <span class="tool-tag">🇩🇪 · open-source · post-quantique</span>
+  </Fragment>
+  <Fragment slot="what">
+    Une messagerie e-mail allemande, entièrement open-source et sans aucun service Google.
+  </Fragment>
+  <Fragment slot="why">
+    Elle chiffre aussi <b>l'objet et une partie des métadonnées</b>, avec un chiffrement résistant à
+    l'informatique quantique. Juridiction UE.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui veulent le maximum de métadonnées chiffrées et du 100 % libre. Elle n'utilise pas PGP :
+    pour écrire chiffré à l'extérieur, on protège le message par mot de passe.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Créez un compte sur <b>tuta.com</b> et installez l'application (disponible sur F-Droid).
+    </li>
+    <li>
+      Pour écrire à un non-utilisateur de façon chiffrée : cliquez sur le cadenas et définissez un
+      mot de passe, transmis à votre correspondant par un autre canal.
+    </li>
+    <li>Activez la double authentification.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-mailbox">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Mail classique éthique</span>
+    <span class="tool-tag">🇩🇪 · UE · PGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Deux fournisseurs de mail européens, éthiques et peu coûteux, avec support PGP côté serveur.
+  </Fragment>
+  <Fragment slot="why">
+    Respectueux de la vie privée et de l'écologie, sur des standards ouverts (IMAP, PGP). Ils
+    fonctionnent avec n'importe quel logiciel de messagerie.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui veulent un mail « classique » (relevé dans Thunderbird) mais éthique, plutôt qu'une
+    messagerie chiffrée fermée.
+  </Fragment>
+  <ol slot="install">
+    <li>Créez un compte (payant, de l'ordre de 1 à 3 € par mois).</li>
+    <li>Activez le chiffrement PGP côté serveur (fonction « Guard » chez mailbox.org).</li>
+    <li>Configurez le compte dans Thunderbird ou l'application mobile de votre choix.</li>
+  </ol>
+</ToolCard>
+
+#### PGP en une minute
+
+**PGP** (Pretty Good Privacy) est le principe du chiffrement à clés : vous avez une clé _publique_ que vous distribuez, et une clé _privée_ que vous gardez secrète. Quiconque a votre clé publique peut vous écrire un message que **vous seul** pouvez déchiffrer. C'est la base de l'e-mail chiffré indépendamment de tout fournisseur. Proton Mail le gère automatiquement ; pour un usage manuel, on utilise **OpenPGP** (via Thunderbird, intégré depuis la version 78).

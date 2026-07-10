@@ -1,0 +1,46 @@
+---
+id: 'telephonie'
+part: 12
+order: 20
+title: 'Telephony & physical device'
+---
+
+<p class="part-num">
+  PART 19 · HARDWARE · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Telephony &amp; physical device
+
+The best app is useless if the device itself betrays you. Here are the hardware threats and the moves that neutralise them.
+
+#### The phone number is a tracker
+
+Your number ties together your SIM card, your device (its IMEI identifier), your location and your identity (most countries require ID to buy a SIM). It's the thread that lets everything be cross-referenced.
+
+- Use **number-free** messengers (SimpleX, Session) for sensitive contacts, and always prefer Signal over SMS.
+- For a separate identity, a "data-only" SIM or prepaid eSIM limits the link at the point of sale (check your country's rules).
+
+#### IMSI-catchers &amp; the phone network
+
+"IMSI-catchers" (or "stingrays") are fake cell towers that force phones to connect so they can log their identifier and sometimes intercept communications, often by downgrading to weakly encrypted 2G. In parallel, an old network flaw (SS7) still allows SMS interception and remote phone location: one more reason to drop SMS.
+
+- **Disable 2G** in settings (possible on Android and GrapheneOS) to cut the main interception vector.
+- At a protest or in a sensitive area, switch to **airplane mode** or slip the phone into a **Faraday bag** (which blocks all signal). The EFF even publishes a free tool, Rayhunter, to detect IMSI-catchers.
+
+#### Biometrics or passcode?
+
+<div class="box warn">
+  <span class="lab">A finger can be forced, a passcode can't</span>
+  <p>
+    Your face or finger can be applied to the sensor while you're restrained (at a border, during an
+    arrest); a password in your head cannot. Before a risky situation, force a return to the
+    passcode: on iPhone, hold the side button and a volume button (the "SOS" screen); on
+    Android/GrapheneOS, use <b>Lockdown</b> in the power menu, which disables biometrics until the
+    PIN is entered. Choose a long passphrase, not a four-digit PIN. GrapheneOS even offers a{' '}
+    <b>duress PIN</b> that wipes the phone.
+  </p>
+</div>
+
+#### De-Microsoft, de-Apple
+
+Don't forget the computer: Windows streams telemetry nonstop (and its "Recall" feature tried to screenshot the screen continuously), macOS reports the apps you launch. The real exit is Linux (see section 12). Short of that, disable telemetry, the advertising ID and "Recall," and add an outbound firewall (like Little Snitch on Mac).

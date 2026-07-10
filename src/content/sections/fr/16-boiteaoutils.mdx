@@ -1,0 +1,219 @@
+---
+id: 'boiteaoutils'
+part: 9
+order: 16
+title: 'La boîte à outils du quotidien'
+---
+
+<p class="part-num">
+  PARTIE 15 · REMPLACER LE RESTE · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## La boîte à outils du quotidien
+
+Google et Apple ne sont pas que des e-mails : cartes, notes, agenda, photos, visio, tout est relié à votre identité. Voici de quoi remplacer chaque brique, une par une, sans rien perdre en confort.
+
+<ToolCard tool="t-maps">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Remplace Google Maps</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Des applications de cartes et de navigation, fondées sur OpenStreetMap, qui fonctionnent hors
+    ligne.
+  </Fragment>
+  <Fragment slot="why">
+    Google Maps enregistre chacun de vos trajets et bâtit un historique de lieux d'une précision
+    redoutable. <b>Organic Maps</b> ne trace rien et n'affiche aucune publicité ; <b>OsmAnd</b> vise
+    les utilisateurs avancés (randonnée, courbes de niveau, navigation détaillée).
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde. Le trafic en temps réel et les transports sont moins complets que chez Google,
+    mais la navigation quotidienne est excellente.
+  </Fragment>
+  <ol slot="install">
+    <li>Installez depuis F-Droid, l'App Store ou Google Play.</li>
+    <li>
+      Téléchargez à l'avance les cartes des régions qui vous intéressent pour l'usage hors ligne.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-notes">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Remplace Docs / Notion</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Des notes et documents chiffrés de bout en bout, pour remplacer Google Docs, Notion ou Evernote.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Standard Notes</b> (par Proton) chiffre vos notes par défaut. <b>Joplin</b> gère des carnets
+    en Markdown avec chiffrement optionnel et la synchronisation de votre choix. <b>CryptPad</b>{' '}
+    (français) offre l'équivalent de Google Docs en temps réel, entièrement chiffré.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde pour les notes ; CryptPad pour la collaboration à plusieurs.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Standard Notes / Joplin : créez un compte, installez l'application, et activez le chiffrement
+      (par défaut sur Standard Notes, à activer dans Joplin).
+    </li>
+    <li>
+      CryptPad : utilisez cryptpad.fr ou une autre instance, aucun compte requis pour commencer.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-visio">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Remplace Zoom / Meet</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Des outils de visioconférence sans compte ni installation lourde, pour remplacer Zoom, Google
+    Meet ou Teams.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Jitsi Meet</b> se lance dans le navigateur, sans compte, et peut être auto-hébergé (c'est
+    aussi la base de Brave Talk). <b>Element Call</b> est chiffré de bout en bout et fédéré via
+    Matrix. Pour un appel simple et totalement chiffré, les appels <b>Signal</b> font aussi le
+    travail.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde. Sur un serveur Jitsi public, les appels à plusieurs sont chiffrés en transport ;
+    le chiffrement de bout en bout est en option.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Jitsi : allez sur meet.jit.si, créez un nom de salon, partagez le lien. Rien à installer.
+    </li>
+    <li>Element Call : depuis l'application Element (Matrix), lancez un appel dans un salon.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-photos">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Remplace Google Photos</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Deux façons de garder vos photos sans les confier à Google ou Apple.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Ente</b> est un service géré, chiffré de bout en bout, avec reconnaissance et recherche
+    faites sur l'appareil : simple et sûr. <b>Immich</b> est un clone de Google Photos que vous{' '}
+    <b>hébergez vous-même</b> (recherche par visages et objets incluse), à réserver à ceux qui
+    savent gérer un serveur.
+  </Fragment>
+  <Fragment slot="who">
+    Ente pour tous ; Immich pour les auto-hébergeurs. Attention : Immich n'est pas chiffré de bout
+    en bout, sa sécurité dépend de votre serveur.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Ente : installez l'application, créez un compte, activez la sauvegarde automatique de votre
+      pellicule.
+    </li>
+    <li>
+      Immich : déployez-le sur votre serveur (voir section 10) via Docker, puis connectez
+      l'application mobile.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-alias">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Alias e-mail</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Des alias e-mail jetables : une adresse unique par site, qui redirige vers votre vraie boîte
+    sans jamais la révéler.
+  </Fragment>
+  <Fragment slot="why">
+    Vous ne donnez plus votre vraie adresse partout. Si un site est piraté ou vous spamme, vous
+    coupez l'alias correspondant, et vous savez immédiatement qui a fait fuiter vos données.{' '}
+    <b>SimpleLogin</b> est intégré à Proton ; <b>addy.io</b> propose des alias illimités dès l'offre
+    gratuite.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde, et particulièrement les comptes pseudonymes qui veulent cloisonner leurs
+    inscriptions.
+  </Fragment>
+  <ol slot="install">
+    <li>Créez un compte, installez l'extension de navigateur.</li>
+    <li>À chaque inscription, générez un nouvel alias au lieu de saisir votre vraie adresse.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-backups">
+  <Fragment slot="name">Sauvegardes chiffrées</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    De quoi sauvegarder votre téléphone et votre ordinateur en chiffrant les données <b>avant</b>{' '}
+    qu'elles ne partent dans un cloud.
+  </Fragment>
+  <Fragment slot="why">
+    Les sauvegardes iCloud/Google sont souvent accessibles au fournisseur, donc à la justice.{' '}
+    <b>Cryptomator</b> chiffre vos fichiers avant de les envoyer sur n'importe quel cloud ;{' '}
+    <b>restic</b> fait des sauvegardes chiffrées automatiques ; <b>Proton Drive</b> est chiffré de
+    bout en bout. Sur iPhone, activez la « Protection avancée des données » pour chiffrer vos
+    sauvegardes iCloud.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde devrait chiffrer ses sauvegardes. Règle d'or : deux copies chiffrées, sur deux
+    supports, en deux lieux.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      iPhone : Réglages &gt; votre nom &gt; iCloud &gt; Protection avancée des données : activez-la.
+    </li>
+    <li>
+      PC : installez Cryptomator, créez un coffre, placez-y vos fichiers avant de synchroniser vers
+      le cloud.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-databrokers">
+  <Fragment slot="name">Effacer ses données (RGPD)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡</span>
+    <span class="tool-tag">Courtiers en données</span>
+  </Fragment>
+  <Fragment slot="what">
+    Faire retirer vos informations personnelles des « courtiers en données » qui les collectent et
+    les revendent.
+  </Fragment>
+  <Fragment slot="why">
+    En Europe, le RGPD (article 17) vous donne un <b>droit à l'effacement</b> : vous pouvez exiger,
+    gratuitement, qu'une entreprise supprime vos données, en principe sous un mois. Des services
+    comme <b>Incogni</b> automatisent ces demandes en masse, moyennant paiement.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui veulent réduire leur exposition. Attention : les données réapparaissent avec le temps,
+    et cela ne touche ni les registres publics ni les réseaux sociaux. Le faire soi-même est gratuit
+    mais fastidieux.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Pour une demande manuelle : écrivez au courtier en invoquant l'article 17 du RGPD et demandez
+      la suppression.
+    </li>
+    <li>
+      Pour automatiser : souscrivez à un service de retrait et laissez-le envoyer les demandes en
+      votre nom.
+    </li>
+  </ol>
+</ToolCard>

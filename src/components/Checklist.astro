@@ -1,0 +1,126 @@
+---
+// PART 20 — the 14-step migration checklist (src/data/checklist.json +
+// per-locale prose). Real checkboxes, server-rendered: with JS off they
+// still toggle natively, they just don't persist. The script persists the
+// checked ids to localStorage ("ecc-checklist", a JSON array) and keeps the
+// progress line current; the server renders the 0-state.
+import { useT, type Locale } from '../i18n/config'
+import { loadDataset, type ChecklistLevel } from '../lib/content'
+import { mdToHtml } from '../lib/md'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+
+const items = loadDataset('checklist', locale)
+const template = t('sections2.checklist.progress') // "{done} / {total} …"
+const initialProgress = template.replace('{done}', '0').replace('{total}', String(items.length))
+
+const LEVEL_CLASS: Record<ChecklistLevel, string> = {
+  green: 'border-lvl1 text-lvl1',
+  yellow: 'border-lvl2 text-lvl2',
+  red: 'border-lvl3 text-lvl3',
+}
+---
+
+<section id="checklist">
+  <p class="eyebrow">{t('sections2.checklist.eyebrow')}</p>
+  <h2>{t('sections2.checklist.title')}</h2>
+  <p class="text-dim">{t('sections2.checklist.intro')}</p>
+  <div data-checklist>
+    <p
+      data-checklist-progress
+      data-template={template}
+      aria-live="polite"
+      class="font-mono text-sm font-bold text-accent"
+    >
+      {initialProgress}
+    </p>
+    <ul class="m-0 list-none p-0">
+      {
+        items.map((item) => (
+          <li
+            id={item.id}
+            class="my-2 flex items-start gap-3 rounded-dossier border border-rule bg-surface p-3"
+          >
+            <input
+              type="checkbox"
+              id={`check-${item.id}`}
+              value={item.id}
+              class="mt-1.5 size-4 shrink-0 cursor-pointer accent-accent"
+            />
+            <label for={`check-${item.id}`} class="cursor-pointer text-sm leading-6">
+              <span set:html={mdToHtml(item.body)} />
+              <span
+                class={`ms-1 rounded-dossier border px-1 py-0.5 align-middle font-mono text-[0.65rem] whitespace-nowrap ${LEVEL_CLASS[item.level]}`}
+              >
+                {t(`sections2.checklist.levels.${item.level}`)}
+              </span>
+            </label>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<script>
+  // Persistence is enhancement only: localStorage key "ecc-checklist" holds
+  // the JSON array of checked ids. Change handling is delegated on document
+  // (registers once, survives ClientRouter swaps); restore re-runs on every
+  // astro:page-load since the swap replaces the DOM.
+  const KEY = 'ecc-checklist'
+
+  const readSaved = (): string[] => {
+    try {
+      const parsed: unknown = JSON.parse(localStorage.getItem(KEY) ?? '[]')
+      return Array.isArray(parsed) ? parsed.filter((x): x is string => typeof x === 'string') : []
+    } catch {
+      /* private mode or corrupted value: start unchecked */
+      return []
+    }
+  }
+
+  const boxes = (root: HTMLElement) => [
+    ...root.querySelectorAll<HTMLInputElement>('input[type="checkbox"]'),
+  ]
+
+  const updateProgress = (root: HTMLElement) => {
+    const line = root.querySelector<HTMLElement>('[data-checklist-progress]')
+    if (!line) return
+    const all = boxes(root)
+    const done = all.filter((b) => b.checked).length
+    line.textContent = (line.dataset.template ?? '{done} / {total}')
+      .replace('{done}', String(done))
+      .replace('{total}', String(all.length))
+  }
+
+  const restore = () => {
+    const root = document.querySelector<HTMLElement>('[data-checklist]')
+    if (!root) return
+    const saved = new Set(readSaved())
+    for (const box of boxes(root)) box.checked = saved.has(box.value)
+    updateProgress(root)
+  }
+
+  document.addEventListener('change', (e) => {
+    const box = e.target as HTMLInputElement
+    const root = box.closest?.('[data-checklist]') as HTMLElement | null
+    if (!root || box.type !== 'checkbox') return
+    const checked = boxes(root)
+      .filter((b) => b.checked)
+      .map((b) => b.value)
+    try {
+      localStorage.setItem(KEY, JSON.stringify(checked))
+    } catch {
+      /* private mode: ticks apply for this page only */
+    }
+    updateProgress(root)
+  })
+
+  restore()
+  document.addEventListener('astro:page-load', restore)
+</script>

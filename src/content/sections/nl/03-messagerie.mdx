@@ -1,0 +1,253 @@
+---
+id: 'messagerie'
+part: 1
+order: 3
+title: 'Versleutelde berichten'
+---
+
+<p class="part-num">
+  DEEL 02 · DE FUNDAMENTEN · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Versleutelde berichten
+
+De eerste stap, degene die u het snelst beschermt: weg van WhatsApp, Messenger en Telegram, naar een echt versleutelde (en idealiter vrije) berichtendienst.
+
+<div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th>U stapt weg van</th>
+        <th>U stapt over op</th>
+        <th>Waarom</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="old">WhatsApp</span>
+        </td>
+        <td>
+          <span class="new">Signal</span>
+        </td>
+        <td>Even eenvoudig, zonder Meta of metadata-verzameling</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="old">Messenger</span>
+        </td>
+        <td>
+          <span class="new">Signal / SimpleX</span>
+        </td>
+        <td>
+          Messenger is niet standaard end-to-end versleuteld en werd gescand onder Chat Control 1.0
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="old">Telegram</span>
+        </td>
+        <td>
+          <span class="new">Signal / SimpleX</span>
+        </td>
+        <td>Telegram is niet standaard end-to-end versleuteld</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ToolCard tool="t-signal">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Vervangt WhatsApp</span>
+    <span class="tool-tag">🇺🇸 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een versleutelde berichtendienst voor uw sms'jes, oproepen, video's en groepen. De directe
+    vervanger van WhatsApp, even eenvoudig.
+  </Fragment>
+  <Fragment slot="why">
+    Standaard end-to-end-encryptie, non-profit, een geauditeerd protocol dat de wereldwijde
+    standaard is. Vrijwel geen metadata bewaard, en het team heeft beloofd de EU te verlaten liever
+    dan scanning in te bouwen.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen, vandaag nog. Het is de eerste en nuttigste stap. Eén voorwaarde: een telefoonnummer,
+    dat u kunt verbergen achter een gebruikersnaam.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installeer vanaf <b>signal.org</b> (App Store, Google Play, of de directe APK op Android).
+    </li>
+    <li>Bevestig uw nummer via sms, en kies dan een pincode.</li>
+    <li>
+      Instellingen &gt; Privacy: maak een <b>gebruikersnaam</b> aan om uw nummer te verbergen, en
+      schakel het <b>registratieslot</b> in.
+    </li>
+    <li>Nodig uw naasten uit. Koppel op de computer de desktop-app aan uw telefoon.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-simplex">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Gevorderd</span>
+    <span class="tool-tag">Zonder identificatie</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een versleutelde berichtendienst zonder account, nummer of identificatie. U maakt verbinding
+    door een link of QR-code te delen.
+  </Fragment>
+  <Fragment slot="why">
+    Per ontwerp weten zelfs de servers niet wie met wie praat. Het is op dit moment de sterkste
+    optie tegen metadata-correlatie.
+  </Fragment>
+  <Fragment slot="who">
+    Pseudoniem-accounts, gevoelige contacten, hoog risico. Iets jonger dan Signal, met wat ruwe
+    kantjes.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installeer vanaf <b>simplex.chat</b> (F-Droid, Google Play, App Store of APK).
+    </li>
+    <li>
+      Kies een <b>lokale</b> weergavenaam (nooit uw echte naam: die blijft op uw apparaat).
+    </li>
+    <li>
+      Deel om een contact toe te voegen een <b>eenmalige uitnodigingslink</b> of QR-code.
+    </li>
+    <li>Schakel de toegangscode in, en (voor gevorderden) configureer uw eigen SMP-servers.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-session">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Gevorderd</span>
+    <span class="tool-tag">Zonder nummer</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Versleuteling op Signal-niveau, maar zonder telefoonnummer en met onion-routing.
+  </Fragment>
+  <Fragment slot="why">
+    Uw identiteit is een willekeurige "Session ID". Het verkeer gaat via een gedecentraliseerd
+    netwerk (Lokinet) dat metadata sterk vermindert.
+  </Fragment>
+  <Fragment slot="who">
+    Wanneer een telefoonnummer een risico is. Kleiner ecosysteem, het beste voor gesprekken die
+    ertoe doen.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installeer vanaf <b>getsession.org</b> (alle platforms).
+    </li>
+    <li>
+      "Create account" genereert uw Session ID en een <b>herstelzin</b>.
+    </li>
+    <li>Noteer de herstelzin op papier: het is de enige sleutel tot uw account.</li>
+    <li>Deel uw Session ID (of QR) met uw contacten.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-briar">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Offline / P2P</span>
+    <span class="tool-tag">Android · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een peer-to-peer berichtendienst die werkt <b>zonder internet</b>: via Bluetooth, Wi-Fi Direct
+    of Tor.
+  </Fragment>
+  <Fragment slot="why">
+    Geen server, dus niets om af te sluiten of in beslag te nemen. Bestand tegen internetstoringen
+    en netwerkcensuur.
+  </Fragment>
+  <Fragment slot="who">
+    Betogingen, rampen, afgelegen gebieden, black-outs. Alleen Android, en beide personen moeten de
+    app hebben.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installeer vanaf <b>briarproject.org</b> of F-Droid (geen iOS).
+    </li>
+    <li>
+      Maak een <b>lokaal</b> account aan (bijnaam + wachtwoord), alleen op de telefoon opgeslagen.
+    </li>
+    <li>Voeg een nabij contact toe door de QR-code te scannen, of op afstand via een link.</li>
+    <li>
+      Wanneer het netwerk uitligt, zet Bluetooth aan: berichten springen van apparaat naar apparaat.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-bitchat">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Bluetooth-mesh</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    De mesh-berichtendienst van Jack Dorsey: nabijgelegen telefoons geven berichten van apparaat
+    naar apparaat door, zonder internet, server of account.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end-encryptie (AES-256-GCM) en een "paniekmodus" die alles wist met drie tikken op het
+    logo.
+  </Fragment>
+  <Fragment slot="who">
+    Betogingen en black-outs, als aanvulling op Briar. Met voorzichtigheid te gebruiken.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Voorzichtig: niet geauditeerd</span>
+    <p>
+      De eigen repository waarschuwt dat het "geen externe beveiligingsreview heeft ontvangen".
+      Geweldig voor veerkracht, maar zet er voorlopig geen levens op het spel.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Installeer via de App Store (iOS) of de APK/GitHub (Android).</li>
+    <li>Open de app en kies een bijnaam. Geen account aan te maken.</li>
+    <li>Nabijgelegen apparaten vinden elkaar automatisch via Bluetooth.</li>
+    <li>Tik in gevaar driemaal op het logo om alles te wissen (paniekmodus).</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-molly">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Geharde Signal</span>
+    <span class="tool-tag">Android · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een geharde versie van Signal voor Android, compatibel met hetzelfde netwerk.
+  </Fragment>
+  <Fragment slot="why">
+    Database in rust versleuteld, automatische vergrendeling, en een "FOSS"-variant volledig zonder
+    Google-diensten.
+  </Fragment>
+  <Fragment slot="who">
+    Gevorderde gebruikers, vooral op GrapheneOS, met een hoog dreigingsmodel. Alleen Android.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Voeg de Molly-repo toe in F-Droid, of haal de APK van <b>molly.im</b>.
+    </li>
+    <li>
+      Kies <b>Molly-FOSS</b> als u geen Google-afhankelijkheden wilt.
+    </li>
+    <li>Registreer met uw nummer (hetzelfde netwerk als Signal).</li>
+    <li>Stel een databasewachtwoord en automatische vergrendeling in.</li>
+  </ol>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Tegen Chat Control</span>
+  <p>
+    Geef de voorkeur aan <strong>vrije software</strong>{' '}
+    <strong>buiten de grote Amerikaanse platforms</strong>, waarvan de teams publiekelijk hebben
+    beloofd de EU te verlaten liever dan client-side scanning in te bouwen (Signal heeft dat
+    gedaan). Herinnering: als het besturingssysteem zelf scanning afdwingt, kan de app niet helpen,
+    vandaar sectie 12.
+  </p>
+</div>

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "clipper-chip",
+    "date": "1993",
+    "kind": "promise",
+    "src": { "label": "EPIC · Clipper Chip", "href": "https://archive.epic.org/crypto/clipper/" }
+  },
+  {
+    "id": "echelon",
+    "date": "2001-09-05",
+    "kind": "revealed",
+    "src": {
+      "label": "European Parliament · A5-0264/2001",
+      "href": "https://www.europarl.europa.eu/doceo/document/A-5-2001-0264_EN.html"
+    }
+  },
+  {
+    "id": "nsa-warrantless",
+    "date": "2001-10-04",
+    "kind": "creep",
+    "src": { "label": "EFF · NSA Spying Timeline", "href": "https://nsa-timeline.eff.org/" }
+  },
+  {
+    "id": "room-641a",
+    "date": "2006-01-20",
+    "kind": "revealed",
+    "src": { "label": "EFF · Jewel v. NSA evidence", "href": "https://nsa-timeline.eff.org/" }
+  },
+  {
+    "id": "retention-directive",
+    "date": "2006-03-15",
+    "kind": "creep",
+    "src": {
+      "label": "Directive 2006/24/EC",
+      "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32006L0024"
+    }
+  },
+  {
+    "id": "snowden",
+    "date": "2013-06-05",
+    "kind": "revealed",
+    "src": {
+      "label": "The Guardian · 5 June 2013",
+      "href": "https://www.theguardian.com/world/2013/jun/06/nsa-phone-records-verizon-court-order"
+    }
+  },
+  {
+    "id": "digital-rights-ireland",
+    "date": "2014-04-08",
+    "kind": "struck",
+    "src": {
+      "label": "CJEU · C-293/12 & C-594/12",
+      "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A62012CJ0293"
+    }
+  },
+  {
+    "id": "snoopers-charter",
+    "date": "2016-11-29",
+    "kind": "creep",
+    "src": {
+      "label": "legislation.gov.uk",
+      "href": "https://www.legislation.gov.uk/ukpga/2016/25/contents/enacted"
+    }
+  },
+  {
+    "id": "australia-aaa",
+    "date": "2018-12-06",
+    "kind": "creep",
+    "src": {
+      "label": "legislation.gov.au · C2018A00148",
+      "href": "https://www.legislation.gov.au/Details/C2018A00148"
+    }
+  },
+  {
+    "id": "crypto-ag",
+    "date": "2020-02-11",
+    "kind": "revealed",
+    "src": {
+      "label": "Washington Post · Operation Rubicon",
+      "href": "https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/"
+    }
+  },
+  {
+    "id": "lqdn-cjeu",
+    "date": "2020-10-06",
+    "kind": "struck",
+    "src": {
+      "label": "CJEU · C-511/18, C-512/18 & C-520/18",
+      "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A62018CJ0511"
+    }
+  },
+  {
+    "id": "chatcontrol-1",
+    "date": "2021-07-14",
+    "kind": "promise",
+    "src": {
+      "label": "Regulation (EU) 2021/1232",
+      "href": "https://eur-lex.europa.eu/eli/reg/2021/1232/oj"
+    }
+  },
+  {
+    "id": "pegasus-project",
+    "date": "2021-07-18",
+    "kind": "revealed",
+    "src": {
+      "label": "Amnesty · Forensic Methodology Report",
+      "href": "https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/"
+    }
+  },
+  {
+    "id": "apple-csam",
+    "date": "2021-08-05",
+    "kind": "struck",
+    "src": {
+      "label": "WIRED · Apple kills CSAM scanning",
+      "href": "https://www.wired.com/story/apple-photo-scanning-csam-communication-safety-messages/"
+    }
+  },
+  {
+    "id": "chatcontrol-2",
+    "date": "2022-05-11",
+    "kind": "creep",
+    "src": {
+      "label": "COM/2022/209",
+      "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52022PC0209"
+    }
+  },
+  {
+    "id": "osa-spy-clause",
+    "date": "2023-10-26",
+    "kind": "creep",
+    "src": {
+      "label": "Online Safety Act 2023 · s.121",
+      "href": "https://www.legislation.gov.uk/ukpga/2023/50/section/121"
+    }
+  },
+  {
+    "id": "first-extension",
+    "date": "2024-04-29",
+    "kind": "creep",
+    "src": {
+      "label": "Regulation (EU) 2024/1307",
+      "href": "https://eur-lex.europa.eu/eli/reg/2024/1307/oj"
+    }
+  },
+  {
+    "id": "uk-age-checks",
+    "date": "2025-07-25",
+    "kind": "creep",
+    "src": {
+      "label": "Ofcom · age assurance",
+      "href": "https://www.ofcom.org.uk/online-safety/protecting-children/age-checks-to-protect-children-online"
+    }
+  },
+  {
+    "id": "council-sunset-delete",
+    "date": "2025-11-13",
+    "kind": "creep",
+    "src": {
+      "label": "EDPS · Opinion 7/2026",
+      "href": "https://www.edps.europa.eu/system/files/2026-02/26-02-16_opinion-extending-application-regulation-2021-1232_en.pdf"
+    }
+  },
+  {
+    "id": "ep-says-no",
+    "date": "2026-03-26",
+    "kind": "struck",
+    "src": {
+      "label": "European Parliament · 26 March 2026",
+      "href": "https://www.europarl.europa.eu/news/en/press-room/20260325IPR39207/child-sexual-abuse-online-voluntary-detection-measures-will-not-be-extended"
+    }
+  },
+  {
+    "id": "scanning-continues",
+    "date": "2026-04-04",
+    "kind": "revealed",
+    "src": {
+      "label": "The Record · Big Tech vows to keep scanning",
+      "href": "https://therecord.media/big-tech-vows-to-continue-csam-scanning"
+    }
+  },
+  {
+    "id": "council-resurrects",
+    "date": "2026-07-02",
+    "kind": "creep",
+    "src": {
+      "label": "Council of the EU · 2 July 2026",
+      "href": "https://www.consilium.europa.eu/en/press/press-releases/2026/07/02/council-moves-to-reinstate-interim-measure-to-combat-child-sexual-abuse-online/"
+    }
+  },
+  {
+    "id": "ep-e2ee-carveout",
+    "date": "2026-07-09",
+    "kind": "struck",
+    "src": {
+      "label": "European Parliament · 9 July 2026",
+      "href": "https://www.europarl.europa.eu/news/en/press-room/20260706IPR46318/"
+    }
+  }
+]

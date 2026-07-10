@@ -1,0 +1,513 @@
+[
+  {
+    "id": "signal",
+    "category": "messagerie",
+    "name": "Signal",
+    "url": "https://signal.org",
+    "license": "AGPL-3.0",
+    "iconSlug": "signal"
+  },
+  {
+    "id": "simplex-chat",
+    "category": "messagerie",
+    "name": "SimpleX Chat",
+    "url": "https://simplex.chat",
+    "license": "AGPL-3.0",
+    "iconSlug": "simplex"
+  },
+  {
+    "id": "session",
+    "category": "messagerie",
+    "name": "Session",
+    "url": "https://getsession.org",
+    "license": "GPL-3.0",
+    "iconSlug": "session"
+  },
+  {
+    "id": "element-matrix",
+    "category": "messagerie",
+    "name": "Element · Matrix",
+    "url": "https://element.io",
+    "license": "AGPL-3.0",
+    "iconSlug": "element"
+  },
+  {
+    "id": "briar",
+    "category": "messagerie",
+    "name": "Briar",
+    "url": "https://briarproject.org",
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "molly",
+    "category": "messagerie",
+    "name": "Molly",
+    "url": "https://molly.im",
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "thunderbird",
+    "category": "email",
+    "name": "Thunderbird",
+    "url": "https://www.thunderbird.net",
+    "license": "MPL-2.0",
+    "iconSlug": "thunderbird"
+  },
+  {
+    "id": "proton-mail",
+    "category": "email",
+    "name": "Proton Mail (apps)",
+    "url": "https://proton.me/mail",
+    "license": "GPL-3.0",
+    "iconSlug": "protonmail"
+  },
+  {
+    "id": "tuta",
+    "category": "email",
+    "name": "Tuta (apps)",
+    "url": "https://tuta.com",
+    "license": "GPL-3.0",
+    "iconSlug": "tuta"
+  },
+  {
+    "id": "firefox",
+    "category": "navigation",
+    "name": "Firefox",
+    "url": "https://www.mozilla.org/firefox",
+    "license": "MPL-2.0",
+    "iconSlug": "firefox"
+  },
+  {
+    "id": "tor-browser",
+    "category": "navigation",
+    "name": "Tor Browser",
+    "url": "https://www.torproject.org",
+    "license": "MPL-2.0",
+    "iconSlug": "torbrowser"
+  },
+  {
+    "id": "mullvad-browser",
+    "category": "navigation",
+    "name": "Mullvad Browser",
+    "url": "https://mullvad.net/browser",
+    "license": "MPL-2.0",
+    "iconSlug": "mullvad"
+  },
+  {
+    "id": "brave",
+    "category": "navigation",
+    "name": "Brave",
+    "url": "https://brave.com",
+    "license": "MPL-2.0",
+    "iconSlug": "brave"
+  },
+  {
+    "id": "ublock-origin",
+    "category": "navigation",
+    "name": "uBlock Origin",
+    "url": "https://ublockorigin.com",
+    "license": "GPL-3.0",
+    "iconSlug": "ublockorigin"
+  },
+  {
+    "id": "searxng",
+    "category": "navigation",
+    "name": "SearXNG",
+    "url": "https://docs.searxng.org",
+    "license": "AGPL-3.0",
+    "iconSlug": "searxng"
+  },
+  {
+    "id": "wireguard",
+    "category": "vpn-reseau",
+    "name": "WireGuard",
+    "url": "https://www.wireguard.com",
+    "license": "GPL-2.0",
+    "iconSlug": "wireguard"
+  },
+  {
+    "id": "mullvad-vpn",
+    "category": "vpn-reseau",
+    "name": "Mullvad VPN (app)",
+    "url": "https://mullvad.net",
+    "license": "GPL-3.0",
+    "iconSlug": "mullvad"
+  },
+  {
+    "id": "proton-vpn",
+    "category": "vpn-reseau",
+    "name": "Proton VPN (apps)",
+    "url": "https://protonvpn.com",
+    "license": "GPL-3.0",
+    "iconSlug": "protonvpn"
+  },
+  {
+    "id": "tor",
+    "category": "vpn-reseau",
+    "name": "Tor",
+    "url": "https://www.torproject.org",
+    "license": "BSD-3-Clause",
+    "iconSlug": "torproject"
+  },
+  {
+    "id": "tailscale",
+    "category": "vpn-reseau",
+    "name": "Tailscale",
+    "url": "https://tailscale.com",
+    "license": "BSD-3-Clause",
+    "iconSlug": "tailscale"
+  },
+  {
+    "id": "headscale",
+    "category": "vpn-reseau",
+    "name": "Headscale",
+    "url": "https://headscale.net",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "id": "pi-hole",
+    "category": "dns",
+    "name": "Pi-hole",
+    "url": "https://pi-hole.net",
+    "license": "EUPL-1.2",
+    "iconSlug": "pihole"
+  },
+  {
+    "id": "adguard-home",
+    "category": "dns",
+    "name": "AdGuard Home",
+    "url": "https://adguard.com/adguard-home.html",
+    "license": "GPL-3.0",
+    "iconSlug": "adguard"
+  },
+  {
+    "id": "bitwarden",
+    "category": "mots-de-passe",
+    "name": "Bitwarden",
+    "url": "https://bitwarden.com",
+    "license": "GPL-3.0",
+    "iconSlug": "bitwarden"
+  },
+  {
+    "id": "vaultwarden",
+    "category": "mots-de-passe",
+    "name": "Vaultwarden",
+    "url": "https://github.com/dani-garcia/vaultwarden",
+    "license": "AGPL-3.0",
+    "iconSlug": "vaultwarden"
+  },
+  {
+    "id": "keepassxc",
+    "category": "mots-de-passe",
+    "name": "KeePassXC",
+    "url": "https://keepassxc.org",
+    "license": "GPL-2.0/3.0",
+    "iconSlug": "keepassxc"
+  },
+  {
+    "id": "aegis",
+    "category": "mots-de-passe",
+    "name": "Aegis",
+    "url": "https://getaegis.app",
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "ente-auth",
+    "category": "mots-de-passe",
+    "name": "Ente Auth",
+    "url": "https://ente.io/auth",
+    "license": "AGPL-3.0",
+    "iconSlug": "ente"
+  },
+  {
+    "id": "nextcloud",
+    "category": "stockage-photos",
+    "name": "Nextcloud",
+    "url": "https://nextcloud.com",
+    "license": "AGPL-3.0",
+    "iconSlug": "nextcloud"
+  },
+  {
+    "id": "cryptomator",
+    "category": "stockage-photos",
+    "name": "Cryptomator",
+    "url": "https://cryptomator.org",
+    "license": "GPL-3.0",
+    "iconSlug": "cryptomator"
+  },
+  {
+    "id": "syncthing",
+    "category": "stockage-photos",
+    "name": "Syncthing",
+    "url": "https://syncthing.net",
+    "license": "MPL-2.0",
+    "iconSlug": "syncthing"
+  },
+  {
+    "id": "restic",
+    "category": "stockage-photos",
+    "name": "restic",
+    "url": "https://restic.net",
+    "license": "BSD-2-Clause"
+  },
+  {
+    "id": "immich",
+    "category": "stockage-photos",
+    "name": "Immich",
+    "url": "https://immich.app",
+    "license": "AGPL-3.0",
+    "iconSlug": "immich"
+  },
+  {
+    "id": "ente-photos",
+    "category": "stockage-photos",
+    "name": "Ente Photos",
+    "url": "https://ente.io",
+    "license": "AGPL-3.0",
+    "iconSlug": "ente"
+  },
+  {
+    "id": "libreoffice",
+    "category": "quotidien",
+    "name": "LibreOffice",
+    "url": "https://www.libreoffice.org",
+    "license": "MPL-2.0",
+    "iconSlug": "libreoffice"
+  },
+  {
+    "id": "onlyoffice",
+    "category": "quotidien",
+    "name": "OnlyOffice",
+    "url": "https://www.onlyoffice.com",
+    "license": "AGPL-3.0",
+    "iconSlug": "onlyoffice"
+  },
+  {
+    "id": "joplin",
+    "category": "quotidien",
+    "name": "Joplin",
+    "url": "https://joplinapp.org",
+    "license": "AGPL-3.0",
+    "iconSlug": "joplin"
+  },
+  {
+    "id": "standard-notes",
+    "category": "quotidien",
+    "name": "Standard Notes",
+    "url": "https://standardnotes.com",
+    "license": "AGPL-3.0"
+  },
+  {
+    "id": "cryptpad",
+    "category": "quotidien",
+    "name": "CryptPad",
+    "url": "https://cryptpad.org",
+    "license": "AGPL-3.0",
+    "iconSlug": "cryptpad"
+  },
+  {
+    "id": "organic-maps",
+    "category": "quotidien",
+    "name": "Organic Maps",
+    "url": "https://organicmaps.app",
+    "license": "Apache-2.0",
+    "iconSlug": "organicmaps"
+  },
+  {
+    "id": "osmand",
+    "category": "quotidien",
+    "name": "OsmAnd",
+    "url": "https://osmand.net",
+    "license": "GPL-3.0",
+    "iconSlug": "osmand"
+  },
+  {
+    "id": "jitsi-meet",
+    "category": "quotidien",
+    "name": "Jitsi Meet",
+    "url": "https://jitsi.org",
+    "license": "Apache-2.0",
+    "iconSlug": "jitsi"
+  },
+  {
+    "id": "mastodon",
+    "category": "social",
+    "name": "Mastodon",
+    "url": "https://joinmastodon.org",
+    "license": "AGPL-3.0",
+    "iconSlug": "mastodon"
+  },
+  {
+    "id": "pixelfed",
+    "category": "social",
+    "name": "Pixelfed",
+    "url": "https://pixelfed.org",
+    "license": "AGPL-3.0",
+    "iconSlug": "pixelfed"
+  },
+  {
+    "id": "peertube",
+    "category": "social",
+    "name": "PeerTube",
+    "url": "https://joinpeertube.org",
+    "license": "AGPL-3.0",
+    "iconSlug": "peertube"
+  },
+  {
+    "id": "lemmy",
+    "category": "social",
+    "name": "Lemmy",
+    "url": "https://join-lemmy.org",
+    "license": "AGPL-3.0",
+    "iconSlug": "lemmy"
+  },
+  {
+    "id": "damus",
+    "category": "social",
+    "name": "Damus (Nostr)",
+    "url": "https://damus.io",
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "ollama",
+    "category": "ia-locale-agentique",
+    "name": "Ollama",
+    "url": "https://ollama.com",
+    "license": "MIT",
+    "iconSlug": "ollama"
+  },
+  {
+    "id": "llama-cpp",
+    "category": "ia-locale-agentique",
+    "name": "llama.cpp",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "license": "MIT"
+  },
+  {
+    "id": "jan",
+    "category": "ia-locale-agentique",
+    "name": "Jan",
+    "url": "https://jan.ai",
+    "license": "AGPL-3.0"
+  },
+  {
+    "id": "gpt4all",
+    "category": "ia-locale-agentique",
+    "name": "GPT4All",
+    "url": "https://gpt4all.io",
+    "license": "MIT"
+  },
+  {
+    "id": "grapheneos",
+    "category": "os-mobile",
+    "name": "GrapheneOS",
+    "url": "https://grapheneos.org",
+    "license": "MIT",
+    "iconSlug": "grapheneos"
+  },
+  {
+    "id": "tails",
+    "category": "os-mobile",
+    "name": "Tails",
+    "url": "https://tails.net",
+    "license": "GPL-3.0",
+    "iconSlug": "tails"
+  },
+  {
+    "id": "qubes-os",
+    "category": "os-mobile",
+    "name": "Qubes OS",
+    "url": "https://www.qubes-os.org",
+    "license": "GPL-2.0",
+    "iconSlug": "qubesos"
+  },
+  {
+    "id": "f-droid",
+    "category": "os-mobile",
+    "name": "F-Droid",
+    "url": "https://f-droid.org",
+    "license": "GPL-3.0",
+    "iconSlug": "fdroid"
+  },
+  {
+    "id": "postmarketos",
+    "category": "os-mobile",
+    "name": "postmarketOS",
+    "url": "https://postmarketos.org",
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "yunohost",
+    "category": "selfhost",
+    "name": "YunoHost",
+    "url": "https://yunohost.org",
+    "license": "AGPL-3.0",
+    "iconSlug": "yunohost"
+  },
+  {
+    "id": "startos",
+    "category": "selfhost",
+    "name": "StartOS (Start9)",
+    "url": "https://start9.com",
+    "license": "MIT"
+  },
+  {
+    "id": "synapse",
+    "category": "selfhost",
+    "name": "Synapse (Matrix)",
+    "url": "https://element.io/server-suite",
+    "license": "AGPL-3.0",
+    "iconSlug": "matrix"
+  },
+  {
+    "id": "bitcoin-core",
+    "category": "finance",
+    "name": "Bitcoin Core",
+    "url": "https://bitcoincore.org",
+    "license": "MIT",
+    "iconSlug": "bitcoin"
+  },
+  {
+    "id": "monero",
+    "category": "finance",
+    "name": "Monero",
+    "url": "https://www.getmonero.org",
+    "license": "BSD-3-Clause",
+    "iconSlug": "monero"
+  },
+  {
+    "id": "securedrop",
+    "category": "opsec",
+    "name": "SecureDrop",
+    "url": "https://securedrop.org",
+    "license": "AGPL-3.0"
+  },
+  {
+    "id": "onionshare",
+    "category": "opsec",
+    "name": "OnionShare",
+    "url": "https://onionshare.org",
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "rayhunter",
+    "category": "opsec",
+    "name": "Rayhunter (EFF)",
+    "url": "https://github.com/EFForg/rayhunter",
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "mat2",
+    "category": "opsec",
+    "name": "mat2",
+    "url": "https://0xacab.org/jvoisin/mat2",
+    "license": "LGPL-3.0"
+  },
+  {
+    "id": "exiftool",
+    "category": "opsec",
+    "name": "ExifTool",
+    "url": "https://exiftool.org",
+    "license": "Artistic/GPL"
+  }
+]
