@@ -17,7 +17,7 @@ services:
   preview:
     build: .
     ports:
-      - '8080:8080'
+      - '8080:80'
 
 volumes:
   node_modules:
