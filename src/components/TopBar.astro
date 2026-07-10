@@ -17,8 +17,17 @@ const t = useT(locale)
     >
       EXIT CHAT CONTROL
     </a>
-    <a href="#toc" class="font-mono text-xs text-dim no-underline hover:text-accent">
+    <a
+      href={`${localePath(locale)}/#toc`.replace('//', '/')}
+      class="font-mono text-xs text-dim no-underline hover:text-accent"
+    >
       {t('nav.toc')}
+    </a>
+    <a
+      href={`${localePath(locale)}/quiz`.replace('//', '/')}
+      class="font-mono text-xs text-dim no-underline hover:text-accent"
+    >
+      {t('nav.quiz')}
     </a>
     <div class="ms-auto flex items-center gap-3">
       <nav aria-label={t('nav.language')}>

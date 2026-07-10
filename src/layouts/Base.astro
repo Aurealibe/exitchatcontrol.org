@@ -8,17 +8,22 @@ import '../styles/components.css'
 
 interface Props {
   locale: Locale
+  // Subpage slug appended after the locale prefix ('' = home). Drives the
+  // canonical + hreflang URLs so /quiz and /fr/quiz point at themselves.
+  path?: string
 }
 
-const { locale } = Astro.props
+const { locale, path = '' } = Astro.props
 const t = useT(locale)
 const site = Astro.site!
 
-const canonical = new URL(`${localePath(locale)}/`.replace('//', '/'), site)
-const alternates = locales.map((l) => ({
-  hreflang: l,
-  href: new URL(`${localePath(l)}/`.replace('//', '/'), site).href,
-}))
+const localeRoot = (l: Locale) => `${localePath(l)}/`.replace('//', '/')
+const localeHref = (l: Locale) =>
+  new URL(path ? `${localeRoot(l)}${path}` : localeRoot(l), site).href
+
+const canonical = new URL(localeHref(locale))
+const alternates = locales.map((l) => ({ hreflang: l, href: localeHref(l) }))
+const xDefaultHref = new URL(path ? `/${path}` : '/', site).href
 ---
 
 <!doctype html>
@@ -30,7 +35,7 @@ const alternates = locales.map((l) => ({
     <meta name="description" content={t('site.description')} />
     <link rel="canonical" href={canonical.href} />
     {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
-    <link rel="alternate" hreflang="x-default" href={new URL('/', site).href} />
+    <link rel="alternate" hreflang="x-default" href={xDefaultHref} />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
     <link rel="manifest" href="/site.webmanifest" />

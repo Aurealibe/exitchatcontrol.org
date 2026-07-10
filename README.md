@@ -11,8 +11,9 @@ In July 2026, the European Parliament let the "Chat Control" machinery advance �
 Its promises, all enforced by tests:
 
 - **Static and self-contained** — no tracker, no cookie, not a single request to a third-party domain.
-- **Readable with JavaScript disabled** (Tor Browser "safest" mode included) — scripts only power the theme, filters and checklist.
+- **Readable with JavaScript disabled** (Tor Browser "safest" mode included) — scripts only power the theme, filters, checklist and quiz.
 - **Multilingual by design** — every language is a real prerendered route with correct `hreflang`; adding one means adding translation files, not touching code.
+- **Educational quiz** — `/quiz` scores your censorship resistance on a 0–100 scale and points you at concrete fixes in the guide. Server-rendered questions and scoring key (readable with JS off); the score itself is computed locally in the browser, nothing sent or stored.
 - **Printable and mirrorable** — a single-file offline version ships with every build.
 
 ## Stack

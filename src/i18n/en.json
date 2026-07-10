@@ -9,7 +9,8 @@
     "language": "Language",
     "theme": "Theme",
     "themeToggle": "Toggle dark mode",
-    "toTop": "Back to top"
+    "toTop": "Back to top",
+    "quiz": "Quiz"
   },
   "banner": {
     "reviewNote": "Machine-translated section, review pending."
@@ -149,5 +150,29 @@
     "copy": "Copy the link",
     "copied": "Link copied ✓",
     "print": "Print / PDF"
+  },
+  "quiz": {
+    "stamp": "Educational quiz · 3 min",
+    "eyebrow": "Estimate your censorship resistance",
+    "title": "Resistance quiz",
+    "lede": "A compass, not a scoreboard: answer twelve quick questions to spot the weak points in your setup — no shame — then follow concrete fixes from the guide.",
+    "privacyNote": "The score is calculated locally in your browser. Nothing is sent, nothing is stored.",
+    "start": "Start the quiz",
+    "readGuide": "Read the full guide",
+    "progress": "{done} / {total} answered",
+    "completePrompt": "Answer all twelve questions to reveal your score.",
+    "resultEyebrow": "Your result",
+    "outOf": "/ 100",
+    "barsHeading": "Score by area",
+    "recHeading": "Your top 3 next steps",
+    "openGuide": "Open guide →",
+    "restart": "Retake the quiz",
+    "copy": "Copy result link",
+    "copied": "Link copied ✓",
+    "share": "Share",
+    "shareX": "Post on X",
+    "shareText": "My censorship-resistance score: {score}/100 — {band}. Check yours:",
+    "bandsHeading": "What the score means",
+    "categoriesHeading": "The twelve areas, and where to improve"
   }
 }

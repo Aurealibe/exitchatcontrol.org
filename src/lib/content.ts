@@ -17,6 +17,7 @@ import observatoryCore from '../data/observatory.json'
 import directoryCore from '../data/directory.json'
 import checklistCore from '../data/checklist.json'
 import alliesCore from '../data/allies.json'
+import quizCore from '../data/quiz.json'
 
 import enEvents from '../i18n/content/en/events.json'
 import enObservatory from '../i18n/content/en/observatory.json'
@@ -33,6 +34,9 @@ import nlObservatory from '../i18n/content/nl/observatory.json'
 import nlDirectory from '../i18n/content/nl/directory.json'
 import nlChecklist from '../i18n/content/nl/checklist.json'
 import nlAllies from '../i18n/content/nl/allies.json'
+import enQuiz from '../i18n/content/en/quiz.json'
+import frQuiz from '../i18n/content/fr/quiz.json'
+import nlQuiz from '../i18n/content/nl/quiz.json'
 
 /* ─── enums (mirroring pr1's content model) ────────────────────────────── */
 
@@ -251,4 +255,122 @@ export function loadDataset<N extends DatasetName>(name: N, locale: Locale): Dat
     ...row,
     ...(def.overlaySchema.parse(prose[row.id]) as Record<string, string>),
   })) as DatasetShapes[N][]
+}
+
+/* ─── quiz (nested: questions × options + bands) ───────────────────────────
+   The censorship-resistance quiz doesn't fit the flat id→prose overlay model
+   of loadDataset (each question owns four options), so it gets its own core
+   schema and loader. It stays OUT of DATASET_NAMES/registry on purpose — the
+   generic dataset tests iterate that list and assume the flat shape. Parity
+   (questions, per-question options, bands) is still checked in all three
+   locales via assertOverlayParity, so a drifted translation fails the build. */
+
+const quizOptionCoreSchema = z
+  .object({ id: slug, points: z.number().int().min(0).max(10) })
+  .strict()
+const quizQuestionCoreSchema = z
+  .object({ id: slug, anchor: slug, options: z.array(quizOptionCoreSchema).min(2) })
+  .strict()
+const quizBandCoreSchema = z
+  .object({
+    id: slug,
+    min: z.number().int().min(0).max(100),
+    max: z.number().int().min(0).max(100),
+  })
+  .strict()
+const quizCoreSchema = z
+  .object({
+    bands: z.array(quizBandCoreSchema).min(1),
+    questions: z.array(quizQuestionCoreSchema).min(1),
+  })
+  .strict()
+
+const quizOptionProseSchema = z
+  .object({ label: z.string().min(1), hint: z.string().min(1) })
+  .strict()
+const quizQuestionProseSchema = z
+  .object({
+    label: z.string().min(1),
+    prompt: z.string().min(1),
+    rec: z.string().min(1),
+    options: z.record(z.string(), quizOptionProseSchema),
+  })
+  .strict()
+const quizBandProseSchema = z
+  .object({ title: z.string().min(1), summary: z.string().min(1) })
+  .strict()
+const quizOverlaySchema = z
+  .object({
+    questions: z.record(z.string(), quizQuestionProseSchema),
+    bands: z.record(z.string(), quizBandProseSchema),
+  })
+  .strict()
+
+export interface QuizOption {
+  id: string
+  points: number
+  label: string
+  hint: string
+}
+export interface QuizQuestion {
+  id: string
+  anchor: string
+  label: string
+  prompt: string
+  rec: string
+  options: QuizOption[]
+}
+export interface QuizBand {
+  id: string
+  min: number
+  max: number
+  title: string
+  summary: string
+}
+export interface Quiz {
+  bands: QuizBand[]
+  questions: QuizQuestion[]
+}
+
+const quizOverlays: Record<Locale, OverlayFile> = { en: enQuiz, fr: frQuiz, nl: nlQuiz }
+
+/**
+ * Validates the language-neutral quiz core and the requested locale overlay,
+ * checks id parity for bands, questions and each question's options, then
+ * returns the fully merged, localized quiz in authoring order.
+ */
+export function loadQuiz(locale: Locale): Quiz {
+  const core = quizCoreSchema.parse(quizCore)
+  const overlay = quizOverlaySchema.parse(overlayEntries(quizOverlays[locale]))
+
+  assertOverlayParity(
+    core.bands.map((b) => b.id),
+    overlay.bands,
+    `quiz.bands/${locale}`,
+  )
+  assertOverlayParity(
+    core.questions.map((q) => q.id),
+    overlay.questions,
+    `quiz.questions/${locale}`,
+  )
+
+  const bands = core.bands.map((band) => ({ ...band, ...overlay.bands[band.id] }))
+  const questions = core.questions.map((question) => {
+    const prose = overlay.questions[question.id]
+    assertOverlayParity(
+      question.options.map((o) => o.id),
+      prose.options,
+      `quiz.${question.id}.options/${locale}`,
+    )
+    return {
+      id: question.id,
+      anchor: question.anchor,
+      label: prose.label,
+      prompt: prose.prompt,
+      rec: prose.rec,
+      options: question.options.map((option) => ({ ...option, ...prose.options[option.id] })),
+    }
+  })
+
+  return { bands, questions }
 }

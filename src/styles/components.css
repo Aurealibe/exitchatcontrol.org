@@ -742,4 +742,48 @@
   .hero-meta .tag.p3 {
     --dotc: var(--lvl3);
   }
+
+  /* ─── quiz (progress + per-area score bars) ─── */
+  /* Widths come from --quiz-progress / --quiz-bar, set by the quiz script via
+     the CSSOM. style-src 'self' blocks inline style="" attributes but allows
+     programmatic style writes, so the bars stay CSP-clean. */
+  .quiz-progress {
+    height: 9px;
+    background: var(--surface-2);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .quiz-progress__fill {
+    display: block;
+    height: 100%;
+    width: var(--quiz-progress, 0);
+    background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+    transition: width 0.25s ease;
+  }
+  .quiz-bar-row {
+    display: grid;
+    grid-template-columns: minmax(5.5rem, 8rem) 1fr auto;
+    gap: 0.6rem;
+    align-items: center;
+  }
+  .quiz-bar {
+    height: 8px;
+    background: var(--surface-2);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .quiz-bar__fill {
+    display: block;
+    height: 100%;
+    width: var(--quiz-bar, 0);
+    background: var(--accent);
+    border-radius: inherit;
+    transition: width 0.25s ease;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .quiz-progress__fill,
+    .quiz-bar__fill {
+      transition: none;
+    }
+  }
 }

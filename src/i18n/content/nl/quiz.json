@@ -1,0 +1,303 @@
+{
+  "_machineTranslated": "2026-07-10",
+  "questions": {
+    "messaging": {
+      "label": "Berichten",
+      "prompt": "Hoe communiceert u meestal met vrienden en familie?",
+      "rec": "Verplaats gevoelige gesprekken naar Signal, SimpleX of Session.",
+      "options": {
+        "o0": {
+          "label": "WhatsApp / Messenger / SMS",
+          "hint": "Metadata en gecentraliseerde platforms blijven de zwakke plek."
+        },
+        "o1": {
+          "label": "Telegram voor de meeste gesprekken",
+          "hint": "Beter dan de grote platforms, maar de privacy blijft beperkt."
+        },
+        "o2": {
+          "label": "Signal of Molly voor de meeste chats",
+          "hint": "Al een stevige basis voor weerstand tegen censuur."
+        },
+        "o3": {
+          "label": "SimpleX / Session / Matrix voor gevoelig gebruik",
+          "hint": "Minder afhankelijk van een telefoonnummer en een centraal platform."
+        }
+      }
+    },
+    "email": {
+      "label": "E-mail",
+      "prompt": "Welke dienst gebruikt u het meest voor uw e-mail?",
+      "rec": "Gebruik Proton Mail of Tuta en voeg PGP toe voor de contacten die ertoe doen.",
+      "options": {
+        "o0": {
+          "label": "Gmail / Outlook / iCloud Mail",
+          "hint": "Opslag en toegang tot inhoud blijven sterk gecentraliseerd."
+        },
+        "o1": {
+          "label": "Proton Mail of Tuta voor dagelijks gebruik",
+          "hint": "Al een sterkere optie voor privacy."
+        },
+        "o2": {
+          "label": "Proton / Tuta + PGP voor sommige contacten",
+          "hint": "Een goed niveau van weerstand als u het consequent gebruikt."
+        },
+        "o3": {
+          "label": "Regelmatig PGP / OpenPGP en aandacht voor metadata",
+          "hint": "Een veel robuustere houding."
+        }
+      }
+    },
+    "browser": {
+      "label": "Browser & zoeken",
+      "prompt": "Welke browser en zoekmachine gebruikt u het meest?",
+      "rec": "Laat Chrome + Google los voor een privacyvriendelijke browser en zoekmachine.",
+      "options": {
+        "o0": {
+          "label": "Chrome + Google",
+          "hint": "Handig, maar sterk traceerbaar."
+        },
+        "o1": {
+          "label": "Firefox of Brave met een private zoekmachine",
+          "hint": "Een echte stap vooruit voor privacy."
+        },
+        "o2": {
+          "label": "Brave / Firefox + DuckDuckGo / Startpage / SearXNG",
+          "hint": "Al een stevige dagelijkse basis."
+        },
+        "o3": {
+          "label": "Mullvad Browser / LibreWolf / Tor Browser naar context",
+          "hint": "Een sterkere houding tegen surveillance."
+        }
+      }
+    },
+    "dns": {
+      "label": "DNS",
+      "prompt": "Hoe lost u domeinnamen op?",
+      "rec": "Ga over op versleutelde DNS met een minimale, privacyvriendelijke resolver.",
+      "options": {
+        "o0": {
+          "label": "De DNS van uw provider of router",
+          "hint": "De makkelijkste optie, maar vaak de minst private."
+        },
+        "o1": {
+          "label": "Versleutelde DNS bij een mainstream provider",
+          "hint": "Een goede eerste stap."
+        },
+        "o2": {
+          "label": "Quad9 / Mullvad DNS / NextDNS",
+          "hint": "Een echte verbetering als u traceerbaarheid wilt beperken."
+        },
+        "o3": {
+          "label": "Versleutelde DNS plus een bewuste anti-trackingstrategie",
+          "hint": "Een meer bewuste en robuuste houding."
+        }
+      }
+    },
+    "vpn": {
+      "label": "VPN",
+      "prompt": "Welke soort VPN gebruikt u?",
+      "rec": "Kies een betrouwbare no-log VPN zoals Mullvad, Proton VPN of IVPN.",
+      "options": {
+        "o0": {
+          "label": "Geen VPN",
+          "hint": "Het meest blootgestelde geval voor netwerktraceerbaarheid."
+        },
+        "o1": {
+          "label": "Een gratis of twijfelachtige VPN",
+          "hint": "Kan slechter zijn dan geen als de provider ondoorzichtig is."
+        },
+        "o2": {
+          "label": "Een betrouwbare no-log VPN met een duidelijk beleid",
+          "hint": "Een echte verbetering voor privacy."
+        },
+        "o3": {
+          "label": "Mullvad / Proton VPN / IVPN voor regelmatig gebruik",
+          "hint": "Een serieuzere en coherentere houding."
+        }
+      }
+    },
+    "passwords": {
+      "label": "Wachtwoorden",
+      "prompt": "Hoe beheert u uw wachtwoorden?",
+      "rec": "Gebruik een wachtwoordmanager met unieke, lange wachtwoorden.",
+      "options": {
+        "o0": {
+          "label": "Hergebruikte wachtwoorden of opgeslagen in de browser",
+          "hint": "Hoog risico bij een lek of accountcompromittering."
+        },
+        "o1": {
+          "label": "Een basis wachtwoordmanager",
+          "hint": "Al een heel goede stap vooruit."
+        },
+        "o2": {
+          "label": "Bitwarden / KeePassXC / Proton Pass",
+          "hint": "Een gezonde houding die eenvoudig te onderhouden is."
+        },
+        "o3": {
+          "label": "Wachtwoordmanager + unieke, lange wachtwoorden",
+          "hint": "De meest robuuste manier om schade door een lek te beperken."
+        }
+      }
+    },
+    "twofa": {
+      "label": "Tweefactorauth",
+      "prompt": "Welk niveau van tweefactorauthenticatie gebruikt u?",
+      "rec": "Verplaats 2FA naar een authenticator-app of, beter, een hardwaretoken.",
+      "options": {
+        "o0": {
+          "label": "Geen 2FA",
+          "hint": "Het zwakste niveau van accountbescherming."
+        },
+        "o1": {
+          "label": "SMS of telefoontje",
+          "hint": "Beter dan niets, maar zeer fragiel."
+        },
+        "o2": {
+          "label": "TOTP in een app (Aegis / Ente Auth)",
+          "hint": "Een goede dagelijkse beschermingslaag."
+        },
+        "o3": {
+          "label": "Hardwaretoken of phishing-resistente 2FA",
+          "hint": "Het sterkste praktische weerstandsniveau."
+        }
+      }
+    },
+    "storage": {
+      "label": "Opslag",
+      "prompt": "Waar bewaart u uw gevoelige bestanden?",
+      "rec": "Verplaats gevoelige bestanden naar Proton Drive, Cryptomator of versleutelde lokale opslag.",
+      "options": {
+        "o0": {
+          "label": "Google Drive / iCloud / OneDrive",
+          "hint": "Zeer handig, maar gecentraliseerd."
+        },
+        "o1": {
+          "label": "Proton Drive of een basis versleutelde opslagdienst",
+          "hint": "Een echte verbetering."
+        },
+        "o2": {
+          "label": "Cryptomator of lokaal versleutelde opslag",
+          "hint": "Een robuustere houding."
+        },
+        "o3": {
+          "label": "Lokale opslag + zelfhosting / geavanceerde versleuteling",
+          "hint": "Het meest serieuze niveau voor soevereiniteit."
+        }
+      }
+    },
+    "social": {
+      "label": "Sociaal",
+      "prompt": "Waar brengt u het grootste deel van uw online sociale leven door?",
+      "rec": "Veranker uw aanwezigheid op gedecentraliseerde netwerken en verlaag de afhankelijkheid van platforms.",
+      "options": {
+        "o0": {
+          "label": "Meta / X / alleen grote platforms",
+          "hint": "Het simpelst, maar het meest blootgesteld aan druk."
+        },
+        "o1": {
+          "label": "Mastodon / Matrix / Nostr af en toe",
+          "hint": "Een nuttige diversificatie."
+        },
+        "o2": {
+          "label": "Een mix van gedecentraliseerde netwerken en direct contact",
+          "hint": "Een onafhankelijkere houding."
+        },
+        "o3": {
+          "label": "Alternatieve netwerken en weinig platformafhankelijkheid",
+          "hint": "Dat is de echte logica van weerstand."
+        }
+      }
+    },
+    "os": {
+      "label": "Besturingssysteem",
+      "prompt": "Welk besturingssysteem gebruikt u het meest?",
+      "rec": "Evolueer naar GrapheneOS op mobiel en Linux op de desktop.",
+      "options": {
+        "o0": {
+          "label": "Standaard Android / iOS / Windows",
+          "hint": "Zeer handig, maar veel minder privacyvriendelijk."
+        },
+        "o1": {
+          "label": "Een meer private Android / Linux / macOS",
+          "hint": "Al een goede verbetering."
+        },
+        "o2": {
+          "label": "GrapheneOS / Linux / BSD",
+          "hint": "Een sterkere basis."
+        },
+        "o3": {
+          "label": "GrapheneOS + Linux + zorgvuldige setupdiscipline",
+          "hint": "Al een zeer sterke houding."
+        }
+      }
+    },
+    "tor": {
+      "label": "Tor & anonimiteit",
+      "prompt": "In welke mate gebruikt u Tor / Tails / anonimiteit?",
+      "rec": "Bouw een gewoonte op met Tor (en Tails waar nodig) voor uw meest gevoelige taken.",
+      "options": {
+        "o0": {
+          "label": "Bijna nooit",
+          "hint": "Zeer blootgesteld als de dreiging serieus wordt."
+        },
+        "o1": {
+          "label": "Af en toe, zonder veel discipline",
+          "hint": "Een eerste stap, maar nog fragiel."
+        },
+        "o2": {
+          "label": "Tor voor sommige gevoelige taken",
+          "hint": "Al serieuzer."
+        },
+        "o3": {
+          "label": "Tor + Tails met sterke discipline",
+          "hint": "Het meest passende niveau voor een hoge dreiging."
+        }
+      }
+    },
+    "money": {
+      "label": "Geld",
+      "prompt": "Hoe gaat u om met uw digitale geld?",
+      "rec": "Voeg privacybewuste betaalmiddelen toe en scheid identiteiten waar mogelijk.",
+      "options": {
+        "o0": {
+          "label": "Alleen bankkaarten en standaardrekeningen",
+          "hint": "De traceerbaarheid is hoog."
+        },
+        "o1": {
+          "label": "Enkele privacybewuste betaaltools",
+          "hint": "Een eerste poging tot scheiding."
+        },
+        "o2": {
+          "label": "Een mix van privérekeningen en beperkte crypto",
+          "hint": "Al meer doordacht."
+        },
+        "o3": {
+          "label": "Sterkere praktijken van financiële soevereiniteit",
+          "hint": "Een veel serieuzere houding."
+        }
+      }
+    }
+  },
+  "bands": {
+    "exposed": {
+      "title": "Blootgesteld",
+      "summary": "Uw setup is nog sterk afhankelijk van de grote platforms. De eerste stappen zijn eenvoudig en effectief."
+    },
+    "awakening": {
+      "title": "Ontwaken",
+      "summary": "U bent begonnen met het diversifiëren van uw tools. Een paar bewuste keuzes kunnen echt verschil maken."
+    },
+    "resistant": {
+      "title": "Weerstand",
+      "summary": "Uw setup is al serieus. U hebt een stevige basis voor weerstand tegen censuur en surveillance."
+    },
+    "hardened": {
+      "title": "Aangescherpt",
+      "summary": "U draait een aangescherpte stack met een sterke pseudonieme basis. De volgende focus is discipline en compartimentering."
+    },
+    "sovereign": {
+      "title": "Soeverein",
+      "summary": "Uw positie is al zeer sterk. U bent dicht bij hoge digitale soevereiniteit, met veeleisende technische keuzes."
+    }
+  }
+}

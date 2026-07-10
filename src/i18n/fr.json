@@ -9,7 +9,8 @@
     "language": "Langue",
     "theme": "Thème",
     "themeToggle": "Basculer le mode sombre",
-    "toTop": "Haut de page"
+    "toTop": "Haut de page",
+    "quiz": "Quiz"
   },
   "banner": {
     "reviewNote": "Section traduite automatiquement, relecture en attente."
@@ -149,5 +150,29 @@
     "copy": "Copier le lien",
     "copied": "Lien copié ✓",
     "print": "Imprimer / PDF"
+  },
+  "quiz": {
+    "stamp": "Quiz éducatif · 3 min",
+    "eyebrow": "Évaluer sa résistance à la censure",
+    "title": "Quiz de résistance",
+    "lede": "Une boussole, pas un classement : répondez à douze questions rapides pour repérer les points faibles de votre pile — sans jugement — puis suivez des pistes concrètes issues du guide.",
+    "privacyNote": "Le score est calculé localement dans votre navigateur. Rien n'est envoyé, rien n'est enregistré.",
+    "start": "Commencer le quiz",
+    "readGuide": "Lire le guide complet",
+    "progress": "{done} / {total} répondues",
+    "completePrompt": "Répondez aux douze questions pour révéler votre score.",
+    "resultEyebrow": "Votre résultat",
+    "outOf": "/ 100",
+    "barsHeading": "Score par domaine",
+    "recHeading": "Vos 3 prochaines étapes",
+    "openGuide": "Ouvrir le guide →",
+    "restart": "Refaire le quiz",
+    "copy": "Copier le lien du résultat",
+    "copied": "Lien copié ✓",
+    "share": "Partager",
+    "shareX": "Publier sur X",
+    "shareText": "Mon score de résistance à la censure : {score}/100 — {band}. Évaluez le vôtre :",
+    "bandsHeading": "Ce que le score signifie",
+    "categoriesHeading": "Les douze domaines, et où progresser"
   }
 }

@@ -1,0 +1,470 @@
+---
+// Censorship-resistance quiz — a progressive-enhancement scorer. EVERYTHING
+// the reader needs is server-rendered: the twelve questions (native radios,
+// selectable with JS off) and the full scoring key (what each band means +
+// where to improve, with deep links into the guide). The client script only
+// computes the live score and reveals the result panel; with JS off the
+// static key still teaches the whole thing. No third-party request, no inline
+// styles (bar widths come from a CSS custom property set via the CSSOM, which
+// style-src 'self' allows), no inline handlers (delegated on document).
+import { localePath, useT, type Locale } from '../i18n/config'
+import { loadQuiz } from '../lib/content'
+import Ext from './Ext.astro'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useT(locale)
+const { bands, questions } = loadQuiz(locale)
+
+const localeRoot = `${localePath(locale)}/`.replace('//', '/')
+const guideHref = (anchor: string) => `${localeRoot}#${anchor}`
+const total = questions.length
+const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', String(total))
+---
+
+<main id="content" class="mx-auto max-w-3xl px-4 py-8">
+  <header class="my-8">
+    <p class="eyebrow mt-0">{t('quiz.eyebrow')}</p>
+    <h1 class="my-2 text-4xl uppercase sm:text-5xl">{t('quiz.title')}</h1>
+    <p class="text-dim max-w-[60ch]">{t('quiz.lede')}</p>
+    <p class="text-dim font-mono text-xs">{t('quiz.privacyNote')}</p>
+    <div class="mt-4 flex flex-wrap gap-2">
+      <a
+        href="#quiz-form"
+        class="rounded-dossier border border-accent bg-accent px-3 py-1.5 font-mono text-xs text-on-accent no-underline"
+      >
+        {t('quiz.start')}
+      </a>
+      <a
+        href={localeRoot}
+        class="rounded-dossier border border-rule bg-surface px-3 py-1.5 font-mono text-xs text-ink no-underline hover:border-accent"
+      >
+        {t('quiz.readGuide')}
+      </a>
+    </div>
+  </header>
+
+  <div data-quiz-progress class="sticky top-12 z-30 bg-bg/95 py-2 backdrop-blur-sm" hidden>
+    <p
+      data-quiz-progress-text
+      data-tpl={t('quiz.progress')}
+      class="eyebrow mt-0 mb-1"
+      aria-live="polite"
+    >
+      {progress0}
+    </p>
+    <div class="quiz-progress" aria-hidden="true"><i class="quiz-progress__fill"></i></div>
+  </div>
+
+  <form id="quiz-form" data-quiz aria-describedby="quiz-note">
+    <p id="quiz-note" class="sr-only">{t('quiz.privacyNote')}</p>
+    <ol class="m-0 list-none p-0">
+      {
+        questions.map((question, i) => (
+          <li class="my-6">
+            <fieldset
+              data-quiz-question
+              data-cat={question.id}
+              class="rounded-dossier border border-rule bg-surface m-0 p-4"
+            >
+              <legend class="px-1 font-mono text-base font-bold">
+                <span class="text-accent">{String(i + 1).padStart(2, '0')}</span> {question.prompt}
+              </legend>
+              <div class="mt-3 grid gap-2 sm:grid-cols-2">
+                {question.options.map((option) => (
+                  <label class="rounded-dossier border border-rule bg-surface-2 has-[:checked]:border-accent has-[:checked]:bg-surface flex cursor-pointer flex-col gap-1 p-3">
+                    <span class="flex items-start gap-2">
+                      <input
+                        type="radio"
+                        name={question.id}
+                        value={option.points}
+                        class="mt-1 size-4 shrink-0 cursor-pointer accent-accent"
+                      />
+                      <span class="font-mono text-sm font-bold">{option.label}</span>
+                    </span>
+                    <span class="text-dim ms-6 text-sm">{option.hint}</span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+          </li>
+        ))
+      }
+    </ol>
+  </form>
+
+  <section
+    data-quiz-result
+    data-share-tpl={t('quiz.shareText')}
+    tabindex="-1"
+    aria-live="polite"
+    class="rounded-dossier border border-rule border-l-4 border-l-accent bg-surface my-8 p-5"
+    hidden
+  >
+    <p class="eyebrow mt-0 mb-1">{t('quiz.resultEyebrow')}</p>
+    <p class="font-mono text-5xl font-bold">
+      <span data-quiz-score>0</span><span class="text-dim text-2xl"> {t('quiz.outOf')}</span>
+    </p>
+    <p data-quiz-band class="text-accent font-mono text-sm font-bold tracking-widest uppercase"></p>
+    <p data-quiz-summary class="text-dim"></p>
+
+    <h3 class="mt-6 mb-2 font-mono text-sm uppercase">{t('quiz.barsHeading')}</h3>
+    <div data-quiz-bars class="grid gap-2"></div>
+
+    <h3 class="mt-6 mb-2 font-mono text-sm uppercase">{t('quiz.recHeading')}</h3>
+    <div data-quiz-recs class="grid gap-2 sm:grid-cols-3"></div>
+
+    <div class="mt-5 flex flex-wrap gap-2 border-t border-rule pt-4">
+      <button
+        type="button"
+        data-quiz-share="copy"
+        data-copied={t('quiz.copied')}
+        class="rounded-dossier border border-rule bg-surface-2 text-ink cursor-pointer px-3 py-1.5 font-mono text-xs hover:border-accent"
+      >
+        {t('quiz.copy')}
+      </button>
+      <button
+        type="button"
+        data-quiz-share="native"
+        class="rounded-dossier border border-rule bg-surface-2 text-ink cursor-pointer px-3 py-1.5 font-mono text-xs hover:border-accent"
+        hidden
+      >
+        {t('quiz.share')}
+      </button>
+      <Ext
+        href="https://x.com/intent/tweet"
+        class="quiz-x-share rounded-dossier border border-rule bg-surface-2 text-ink px-3 py-1.5 font-mono text-xs no-underline hover:border-accent"
+      >
+        {t('quiz.shareX')}
+      </Ext>
+      <button
+        type="button"
+        data-quiz-restart
+        class="rounded-dossier border border-rule bg-surface text-dim ms-auto cursor-pointer px-3 py-1.5 font-mono text-xs hover:border-accent"
+      >
+        {t('quiz.restart')}
+      </button>
+    </div>
+  </section>
+
+  <section id="quiz-key" aria-labelledby="quiz-key-bands" class="my-10">
+    <h2 id="quiz-key-bands" class="text-2xl uppercase">{t('quiz.bandsHeading')}</h2>
+    <ul data-quiz-band-key class="m-0 grid list-none gap-2 p-0">
+      {
+        bands.map((band) => (
+          <li
+            data-band-id={band.id}
+            data-band-min={band.min}
+            data-band-max={band.max}
+            class="rounded-dossier border border-rule bg-surface p-3"
+          >
+            <span class="flex items-baseline gap-2">
+              <strong data-band-title class="font-mono text-sm uppercase">
+                {band.title}
+              </strong>
+              <span class="text-dim font-mono text-xs">
+                {band.min}–{band.max}
+              </span>
+            </span>
+            <p data-band-summary class="text-dim my-1 text-sm">
+              {band.summary}
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+
+    <h2 class="mt-8 text-2xl uppercase">{t('quiz.categoriesHeading')}</h2>
+    <ul data-quiz-cat-key class="m-0 grid list-none gap-2 p-0 sm:grid-cols-2">
+      {
+        questions.map((question) => (
+          <li data-cat={question.id} class="rounded-dossier border border-rule bg-surface p-3">
+            <strong data-cat-label class="font-mono text-sm">
+              {question.label}
+            </strong>
+            <p data-cat-rec class="text-dim my-1 text-sm">
+              {question.rec}
+            </p>
+            <a data-cat-link href={guideHref(question.anchor)} class="font-mono text-xs">
+              {t('quiz.openGuide')}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</main>
+
+<script>
+  // ── Quiz enhancement ──────────────────────────────────────────────────
+  // Delegated on document (survives ClientRouter swaps), re-init on
+  // astro:page-load. Answers persist in localStorage 'ecc-quiz'.
+  const KEY = 'ecc-quiz'
+  type Answers = Record<string, number>
+
+  const qa = <T extends Element>(sel: string, root: ParentNode = document): T[] =>
+    Array.from(root.querySelectorAll<T>(sel))
+  const one = <T extends Element>(sel: string, root: ParentNode = document): T | null =>
+    root.querySelector<T>(sel)
+
+  const form = () => one<HTMLFormElement>('[data-quiz]')
+
+  const readSaved = (): Answers => {
+    try {
+      const parsed: unknown = JSON.parse(localStorage.getItem(KEY) ?? '{}')
+      const out: Answers = {}
+      if (parsed && typeof parsed === 'object') {
+        for (const [k, v] of Object.entries(parsed as Record<string, unknown>)) {
+          if (typeof v === 'number') out[k] = v
+        }
+      }
+      return out
+    } catch {
+      return {}
+    }
+  }
+
+  const save = (answers: Answers) => {
+    try {
+      localStorage.setItem(KEY, JSON.stringify(answers))
+    } catch {
+      /* private mode: not persisted, quiz still works for this visit */
+    }
+  }
+
+  type Cat = { cat: string; points: number | null; max: number }
+
+  const scan = (root: HTMLFormElement): { total: number; answered: number; cats: Cat[] } => {
+    const cats: Cat[] = []
+    let answered = 0
+    for (const fs of qa<HTMLFieldSetElement>('[data-quiz-question]', root)) {
+      const radios = qa<HTMLInputElement>('input[type="radio"]', fs)
+      const max = Math.max(0, ...radios.map((r) => Number(r.value)))
+      const checked = radios.find((r) => r.checked)
+      if (checked) answered += 1
+      cats.push({ cat: fs.dataset.cat ?? '', points: checked ? Number(checked.value) : null, max })
+    }
+    return { total: cats.length, answered, cats }
+  }
+
+  const bandFor = (score: number): { title: string; summary: string } => {
+    for (const li of qa<HTMLElement>('[data-quiz-band-key] [data-band-id]')) {
+      const min = Number(li.dataset.bandMin)
+      const max = Number(li.dataset.bandMax)
+      if (score >= min && score <= max) {
+        return {
+          title: one<HTMLElement>('[data-band-title]', li)?.textContent ?? '',
+          summary: one<HTMLElement>('[data-band-summary]', li)?.textContent ?? '',
+        }
+      }
+    }
+    return { title: '', summary: '' }
+  }
+
+  const catNode = (cat: string) => one<HTMLElement>(`[data-quiz-cat-key] [data-cat="${cat}"]`)
+  const catLabel = (cat: string) =>
+    one<HTMLElement>('[data-cat-label]', catNode(cat) ?? undefined)?.textContent ?? cat
+
+  const setBar = (fill: HTMLElement, ratio: number) => {
+    fill.style.setProperty('--quiz-bar', `${Math.round(ratio * 100)}%`)
+  }
+
+  const buildBars = (cats: Cat[]) => {
+    const host = one<HTMLElement>('[data-quiz-bars]')
+    if (!host) return
+    host.textContent = ''
+    for (const c of cats) {
+      const ratio = c.max > 0 && c.points != null ? c.points / c.max : 0
+      const row = document.createElement('div')
+      row.className = 'quiz-bar-row'
+      const label = document.createElement('span')
+      label.className = 'quiz-bar-row__label font-mono text-xs text-dim uppercase'
+      label.textContent = catLabel(c.cat)
+      const track = document.createElement('div')
+      track.className = 'quiz-bar'
+      const fill = document.createElement('i')
+      fill.className = 'quiz-bar__fill'
+      setBar(fill, ratio)
+      track.appendChild(fill)
+      const val = document.createElement('strong')
+      val.className = 'font-mono text-xs'
+      val.textContent = `${c.points ?? 0}/${c.max}`
+      row.append(label, track, val)
+      host.appendChild(row)
+    }
+  }
+
+  const buildRecs = (cats: Cat[]) => {
+    const host = one<HTMLElement>('[data-quiz-recs]')
+    if (!host) return
+    host.textContent = ''
+    const weakest = [...cats]
+      .filter((c) => c.points != null)
+      .sort((a, b) => a.points! / a.max - b.points! / b.max)
+      .slice(0, 3)
+    for (const c of weakest) {
+      const node = catNode(c.cat)
+      const card = document.createElement('div')
+      card.className =
+        'rounded-dossier border border-rule border-l-2 border-l-accent bg-surface p-3'
+      const label = document.createElement('strong')
+      label.className = 'font-mono text-sm'
+      label.textContent = catLabel(c.cat)
+      const rec = document.createElement('p')
+      rec.className = 'text-dim my-1 text-sm'
+      rec.textContent = one<HTMLElement>('[data-cat-rec]', node ?? undefined)?.textContent ?? ''
+      const link = document.createElement('a')
+      link.className = 'font-mono text-xs'
+      const src = one<HTMLAnchorElement>('[data-cat-link]', node ?? undefined)
+      link.href = src?.getAttribute('href') ?? '#'
+      link.textContent = src?.textContent ?? ''
+      card.append(label, rec, link)
+      host.appendChild(card)
+    }
+  }
+
+  const shareUrl = () => location.href.replace(/[?#].*$/, '')
+
+  const shareMessage = (score: number, band: string): string => {
+    const panel = one<HTMLElement>('[data-quiz-result]')
+    const tpl = panel?.dataset.shareTpl ?? '{score}/100 — {band}'
+    return tpl.replace('{score}', String(score)).replace('{band}', band)
+  }
+
+  const showResult = (cats: Cat[]) => {
+    const totalPoints = cats.reduce((s, c) => s + (c.points ?? 0), 0)
+    const maxPoints = cats.reduce((s, c) => s + c.max, 0)
+    const score = maxPoints > 0 ? Math.round((totalPoints / maxPoints) * 100) : 0
+    const band = bandFor(score)
+
+    const scoreEl = one<HTMLElement>('[data-quiz-score]')
+    if (scoreEl) scoreEl.textContent = String(score)
+    const bandEl = one<HTMLElement>('[data-quiz-band]')
+    if (bandEl) bandEl.textContent = band.title
+    const summaryEl = one<HTMLElement>('[data-quiz-summary]')
+    if (summaryEl) summaryEl.textContent = band.summary
+
+    buildBars(cats)
+    buildRecs(cats)
+
+    const msg = shareMessage(score, band.title)
+    const x = one<HTMLAnchorElement>('.quiz-x-share')
+    if (x) x.href = `https://x.com/intent/tweet?text=${encodeURIComponent(`${msg} ${shareUrl()}`)}`
+
+    const panel = one<HTMLElement>('[data-quiz-result]')
+    if (panel && panel.hidden) {
+      panel.hidden = false
+      panel.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      panel.focus({ preventScroll: true })
+    }
+  }
+
+  const hideResult = () => {
+    const panel = one<HTMLElement>('[data-quiz-result]')
+    if (panel) panel.hidden = true
+  }
+
+  const update = () => {
+    const root = form()
+    if (!root) return
+    const { total, answered, cats } = scan(root)
+
+    const block = one<HTMLElement>('[data-quiz-progress]')
+    if (block) block.hidden = false
+    const fill = one<HTMLElement>('[data-quiz-progress] .quiz-progress__fill')
+    if (fill) fill.style.setProperty('--quiz-progress', `${total ? (answered / total) * 100 : 0}%`)
+    const text = one<HTMLElement>('[data-quiz-progress-text]')
+    if (text)
+      text.textContent = (text.dataset.tpl ?? '{done} / {total}')
+        .replace('{done}', String(answered))
+        .replace('{total}', String(total))
+
+    const answers: Answers = {}
+    for (const c of cats) if (c.points != null) answers[c.cat] = c.points
+    save(answers)
+
+    if (answered === total && total > 0) showResult(cats)
+    else hideResult()
+  }
+
+  const restore = () => {
+    const root = form()
+    if (!root) return
+    const native = one<HTMLButtonElement>('[data-quiz-share="native"]')
+    if (native) native.hidden = typeof navigator.share !== 'function'
+
+    const saved = readSaved()
+    for (const fs of qa<HTMLFieldSetElement>('[data-quiz-question]', root)) {
+      const cat = fs.dataset.cat ?? ''
+      if (!(cat in saved)) continue
+      for (const radio of qa<HTMLInputElement>('input[type="radio"]', fs)) {
+        if (Number(radio.value) === saved[cat]) radio.checked = true
+      }
+    }
+    update()
+  }
+
+  const restart = () => {
+    const root = form()
+    if (!root) return
+    for (const radio of qa<HTMLInputElement>('input[type="radio"]', root)) radio.checked = false
+    try {
+      localStorage.removeItem(KEY)
+    } catch {
+      /* nothing to clear */
+    }
+    hideResult()
+    update()
+    root.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  document.addEventListener('change', (e) => {
+    const target = e.target as HTMLElement
+    if (
+      target instanceof HTMLInputElement &&
+      target.type === 'radio' &&
+      target.closest('[data-quiz]')
+    )
+      update()
+  })
+
+  document.addEventListener('click', async (e) => {
+    const target = e.target as HTMLElement
+    if (target.closest('[data-quiz-restart]')) {
+      restart()
+      return
+    }
+    const btn = target.closest<HTMLButtonElement>('[data-quiz-share]')
+    if (!btn) return
+    const action = btn.dataset.quizShare
+    const score = one<HTMLElement>('[data-quiz-score]')?.textContent ?? ''
+    const band = one<HTMLElement>('[data-quiz-band]')?.textContent ?? ''
+    const message = shareMessage(Number(score), band)
+    if (action === 'native') {
+      try {
+        await navigator.share({ title: document.title, text: message, url: shareUrl() })
+      } catch {
+        /* dismissed or unsupported */
+      }
+      return
+    }
+    if (action === 'copy') {
+      try {
+        await navigator.clipboard.writeText(`${message} ${shareUrl()}`)
+        if (!btn.dataset.label) btn.dataset.label = btn.textContent ?? ''
+        btn.textContent = btn.dataset.copied ?? btn.dataset.label
+        window.setTimeout(() => {
+          btn.textContent = btn.dataset.label ?? ''
+        }, 2000)
+      } catch {
+        /* clipboard unavailable */
+      }
+    }
+  })
+
+  restore()
+  document.addEventListener('astro:page-load', restore)
+</script>

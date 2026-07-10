@@ -1,0 +1,131 @@
+{
+  "bands": [
+    { "id": "exposed", "min": 0, "max": 24 },
+    { "id": "awakening", "min": 25, "max": 49 },
+    { "id": "resistant", "min": 50, "max": 74 },
+    { "id": "hardened", "min": 75, "max": 89 },
+    { "id": "sovereign", "min": 90, "max": 100 }
+  ],
+  "questions": [
+    {
+      "id": "messaging",
+      "anchor": "messagerie",
+      "options": [
+        { "id": "o0", "points": 0 },
+        { "id": "o1", "points": 2 },
+        { "id": "o2", "points": 6 },
+        { "id": "o3", "points": 10 }
+      ]
+    },
+    {
+      "id": "email",
+      "anchor": "email",
+      "options": [
+        { "id": "o0", "points": 0 },
+        { "id": "o1", "points": 5 },
+        { "id": "o2", "points": 7 },
+        { "id": "o3", "points": 10 }
+      ]
+    },
+    {
+      "id": "browser",
+      "anchor": "navigateur",
+      "options": [
+        { "id": "o0", "points": 0 },
+        { "id": "o1", "points": 5 },
+        { "id": "o2", "points": 7 },
+        { "id": "o3", "points": 10 }
+      ]
+    },
+    {
+      "id": "dns",
+      "anchor": "dns",
+      "options": [
+        { "id": "o0", "points": 0 },
+        { "id": "o1", "points": 4 },
+        { "id": "o2", "points": 7 },
+        { "id": "o3", "points": 10 }
+      ]
+    },
+    {
+      "id": "vpn",
+      "anchor": "vpn",
+      "options": [
+        { "id": "o0", "points": 0 },
+        { "id": "o1", "points": 2 },
+        { "id": "o2", "points": 7 },
+        { "id": "o3", "points": 10 }
+      ]
+    },
+    {
+      "id": "passwords",
+      "anchor": "motsdepasse",
+      "options": [
+        { "id": "o0", "points": 0 },
+        { "id": "o1", "points": 5 },
+        { "id": "o2", "points": 7 },
+        { "id": "o3", "points": 10 }
+      ]
+    },
+    {
+      "id": "twofa",
+      "anchor": "deuxfa",
+      "options": [
+        { "id": "o0", "points": 0 },
+        { "id": "o1", "points": 2 },
+        { "id": "o2", "points": 6 },
+        { "id": "o3", "points": 10 }
+      ]
+    },
+    {
+      "id": "storage",
+      "anchor": "stockage",
+      "options": [
+        { "id": "o0", "points": 0 },
+        { "id": "o1", "points": 5 },
+        { "id": "o2", "points": 7 },
+        { "id": "o3", "points": 10 }
+      ]
+    },
+    {
+      "id": "social",
+      "anchor": "social",
+      "options": [
+        { "id": "o0", "points": 0 },
+        { "id": "o1", "points": 5 },
+        { "id": "o2", "points": 7 },
+        { "id": "o3", "points": 10 }
+      ]
+    },
+    {
+      "id": "os",
+      "anchor": "os",
+      "options": [
+        { "id": "o0", "points": 0 },
+        { "id": "o1", "points": 5 },
+        { "id": "o2", "points": 8 },
+        { "id": "o3", "points": 10 }
+      ]
+    },
+    {
+      "id": "tor",
+      "anchor": "tor",
+      "options": [
+        { "id": "o0", "points": 0 },
+        { "id": "o1", "points": 3 },
+        { "id": "o2", "points": 6 },
+        { "id": "o3", "points": 10 }
+      ]
+    },
+    {
+      "id": "money",
+      "anchor": "argent",
+      "options": [
+        { "id": "o0", "points": 0 },
+        { "id": "o1", "points": 4 },
+        { "id": "o2", "points": 6 },
+        { "id": "o3", "points": 10 }
+      ]
+    }
+  ]
+}
