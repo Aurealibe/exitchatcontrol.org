@@ -418,6 +418,17 @@
     }
   },
   {
+    "id": "ripost-vsa-supprime",
+    "date": "2026-07-07",
+    "region": "fr",
+    "themes": ["aibio"],
+    "status": "rejete",
+    "src": {
+      "label": "Assemblée nationale · dossier RIPOST",
+      "href": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N53980"
+    }
+  },
+  {
     "id": "euro-numerique-mandat",
     "date": "2026-07-09",
     "region": "eu",
