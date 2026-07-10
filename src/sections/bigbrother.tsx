@@ -117,6 +117,7 @@ function BbItem({ ev }: { ev: DriftEv }) {
 
 export function BigBrother() {
   const [f, setF] = useState<BbFilter | null>(null)
+  const [wirePaused, setWirePaused] = useState(false)
   const wireRef = useRef<HTMLDivElement>(null)
 
   /* Deep links (#bb-<id>) land on a CLOSED <details>: the browser scrolls
@@ -163,8 +164,27 @@ export function BigBrother() {
         }
       />
 
-      <div className="bb-wire" ref={wireRef} role="navigation" aria-label="Le fil de la dérive — The drift wire">
-        <span className="bb-wire-lab"><T fr="LE FIL" en="THE WIRE" /></span>
+      <div
+        className="bb-wire"
+        ref={wireRef}
+        role="navigation"
+        aria-label="Le fil de la dérive — The drift wire"
+        data-paused={wirePaused || undefined}
+      >
+        <span className="bb-wire-lab">
+          <T fr="LE FIL" en="THE WIRE" />
+          {/* WCAG 2.2.2: moving content needs an explicit pause control —
+              hover/focus pause doesn't exist on touch (mq-toggle's sibling) */}
+          <button
+            type="button"
+            className="bb-wire-toggle"
+            aria-pressed={wirePaused}
+            aria-label="Mettre le fil en pause — Pause the wire"
+            onClick={() => setWirePaused((p) => !p)}
+          >
+            {wirePaused ? '▶' : '∥'}
+          </button>
+        </span>
         <div className="bb-wire-view">
           {[false, true].map((dup) => (
             <ul

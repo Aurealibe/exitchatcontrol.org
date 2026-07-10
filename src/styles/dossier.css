@@ -96,17 +96,28 @@ body::after {
 .bb-wire-track a:hover, .bb-wire-track a:focus-visible { color: var(--accent); }
 .bb-wire-track .w-d { color: var(--accent); font-weight: 700; margin-right: 0.5ch; font-variant-numeric: tabular-nums; }
 @keyframes wire-slide { to { transform: translateX(-100%); } }
-/* pause: reader's pointer, keyboard focus, or the wire scrolled offscreen
-   (data-off set by a tiny IntersectionObserver — mirrored in the offline
-   artifact's vanilla script) */
+/* pause: the explicit toggle (WCAG 2.2.2 — touch has no hover), the reader's
+   pointer, keyboard focus, or the wire scrolled offscreen (data-off set by a
+   tiny IntersectionObserver — mirrored in the offline artifact's vanilla) */
+.bb-wire[data-paused] .bb-wire-track,
 .bb-wire:hover .bb-wire-track,
 .bb-wire:focus-within .bb-wire-track,
 .bb-wire[data-off] .bb-wire-track { animation-play-state: paused; }
+.bb-wire-toggle {
+  cursor: pointer; margin-left: 0.15rem; min-width: 24px; min-height: 24px;
+  font-family: var(--mono); font-size: 0.62rem; line-height: 1;
+  color: var(--text-dim); background: transparent;
+  border: 1px solid var(--rule); border-radius: var(--radius); padding: 0.18rem 0.4rem;
+}
+.bb-wire-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.bb-wire-toggle[aria-pressed='true'] { color: var(--accent); border-color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   .bb-wire-lab::before { animation: none; }
   .bb-wire-track { animation: none; }
   .bb-wire-track[aria-hidden] { display: none; }
   .bb-wire-view { overflow-x: auto; }
+  /* nothing moves — the pause control would toggle nothing */
+  .bb-wire-toggle { display: none; }
 }
 @media print { .bb-wire { display: none; } }
 

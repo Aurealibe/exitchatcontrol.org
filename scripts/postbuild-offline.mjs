@@ -148,14 +148,25 @@ const vanilla = `
   })
   var KEY = 'ecc-checklist', done = {}
   try { done = JSON.parse(localStorage.getItem(KEY) || '{}') } catch (e) {}
+  function syncMeter() {
+    var boxes = document.querySelectorAll('.check input[data-id]')
+    var n = 0
+    boxes.forEach(function (b) { if (b.checked) n++ })
+    var count = document.querySelector('.check-count')
+    var fill = document.querySelector('.check-meter-fill')
+    if (count) count.textContent = n + '/' + boxes.length
+    if (fill) fill.style.transform = 'scaleX(' + (boxes.length ? n / boxes.length : 0) + ')'
+  }
   document.querySelectorAll('.check input[data-id]').forEach(function (box) {
     var id = box.getAttribute('data-id')
     if (done[id]) box.checked = true
     box.addEventListener('change', function () {
       done[id] = box.checked
       try { localStorage.setItem(KEY, JSON.stringify(done)) } catch (e) {}
+      syncMeter()
     })
   })
+  syncMeter()
   addEventListener('beforeprint', function () {
     document.querySelectorAll('details:not([open])').forEach(function (d) {
       d.setAttribute('data-print-opened', '1'); d.open = true

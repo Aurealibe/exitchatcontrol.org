@@ -801,3 +801,41 @@ footer small { color: var(--text-dim); font-family: var(--mono); font-size: 0.72
   font-family: var(--mono); font-size: 0.72rem; color: var(--text-dim);
 }
 @media print { .showcase { display: none; } }
+
+/* ═══ iteration 2 · feedback & reading comfort ═══════════════════════════════ */
+
+/* checklist progress meter (derived from localStorage state) */
+.check-meter {
+  display: flex; align-items: center; gap: 0.8rem; margin: 1.1rem 0 0.5rem;
+  font-family: var(--mono); font-size: 0.82rem; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+.check-count { color: var(--ok); min-width: 3.2ch; }
+.check-meter-bar { flex: 1; height: 4px; background: var(--rule); border-radius: 2px; overflow: hidden; }
+.check-meter-fill {
+  height: 100%; background: var(--ok); transform-origin: 0 50%; transform: scaleX(0);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .check-meter-fill { transition: transform 0.35s ease-out; }
+}
+
+/* tables: zebra + row hover (reading comfort on the comparison tables) */
+tbody tr:nth-child(even) td { background: color-mix(in srgb, var(--text) 2.5%, transparent); }
+@media (hover: hover) {
+  tbody tr:hover td { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+}
+
+/* expandable summaries acknowledge the pointer */
+.tg-install > summary:hover, .tg-install > summary:focus-visible { color: var(--accent); }
+.bb-card > summary:hover .bb-title { color: var(--accent); }
+
+/* TOC rows nudge on hover (compositor-only) */
+@media (prefers-reduced-motion: no-preference) {
+  .toc a { transition: color 0.13s ease-out, transform 0.13s ease-out; }
+  .toc a:hover { transform: translateX(4px); }
+}
+
+/* scrollbars follow the desk (thin, quiet, both engines) */
+html { scrollbar-width: thin; scrollbar-color: var(--rule-strong) var(--desk-bg); }
+.tablewrap { scrollbar-width: thin; scrollbar-color: var(--rule-strong) transparent; }
+.tablewrap::-webkit-scrollbar { height: 6px; }
+.tablewrap::-webkit-scrollbar-thumb { background: var(--rule-strong); border-radius: 3px; }

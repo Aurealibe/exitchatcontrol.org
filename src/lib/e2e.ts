@@ -53,6 +53,8 @@ export function runE2E() {
     /* private mode */
   }
   ok('checklist-stored', stored.signal === true, JSON.stringify(stored))
+  const meter = document.querySelector('.check-count')
+  ok('checklist-meter-updates', meter?.textContent?.startsWith('1/') === true, meter?.textContent ?? 'none')
 
   // 4 · theme toggle flips the attribute — then flips BACK: the axe audit
   // runs after this battery, and a leaked theme flip made axe read mixed

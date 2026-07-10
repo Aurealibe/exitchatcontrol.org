@@ -43,9 +43,23 @@ export function Checklist({ items }: { items: CheckItem[] }) {
     () => done,
     () => EMPTY,
   )
+  const doneCount = items.filter((i) => state[i.id]).length
 
   return (
-    <ul className="check">
+    <>
+      {/* progress meter — derived from the same store, localStorage only */}
+      <div className="check-meter">
+        <span className="check-count" aria-live="polite">
+          {doneCount}/{items.length}
+        </span>
+        <div className="check-meter-bar" aria-hidden="true">
+          <div
+            className="check-meter-fill"
+            style={{ transform: `scaleX(${items.length ? doneCount / items.length : 0})` }}
+          ></div>
+        </div>
+      </div>
+      <ul className="check">
       {items.map((item) => (
         <li key={item.id}>
           <label>
@@ -62,6 +76,7 @@ export function Checklist({ items }: { items: CheckItem[] }) {
           </label>
         </li>
       ))}
-    </ul>
+      </ul>
+    </>
   )
 }
