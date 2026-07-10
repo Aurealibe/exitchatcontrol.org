@@ -1,0 +1,51 @@
+{
+  "fight-chat-control": {
+    "role": "Občansky vedená platforma (anonymní kolektiv): nástroj pro kontaktování poslanců EP, sledování postojů podle členských států, srovnání 1.0 a 2.0. Znovu spuštěna pro každé hlasování."
+  },
+  "stop-scanning-me": {
+    "role": "Koalice více než 60 organizací: petice s více než 200 000 podpisy, otevřený dopis rozšířený z 300 na 450 vědců, společný dopis 133 nevládních organizací."
+  },
+  "patrick-breyer": {
+    "role": "Bývalý pirátský poslanec EP, který vytvořil pojem „Chat Control“. Referenční kronika tohoto spisu, hlasování po hlasování, dokument po dokumentu, od roku 2020."
+  },
+  "edri": {
+    "role": "Evropská síť pro digitální práva (více než 50 nevládních organizací). Právní analýzy, zastupování zájmů v Bruselu, koordinace kampaní."
+  },
+  "la-quadrature-du-net": {
+    "role": "Od roku 2008: soudní spory před SDEU (rozhodnutí z roku 2020 o uchovávání dat), kampaň Technopolice, analýza francouzských zákonů o sledování."
+  },
+  "noyb": {
+    "role": "NGO Maxe Schremse: systematické soudní spory podle GDPR, které zrušily dvě dohody EU–USA o předávání dat (Schrems I a II)."
+  },
+  "eff": {
+    "role": "Třicet let soudních sporů a nástrojů (Jewel v. NSA, Certbot, Privacy Badger, Rayhunter) a příručka Surveillance Self-Defense."
+  },
+  "signal-foundation": {
+    "role": "Zavázala se raději opustit EU, než zavést skenování. Meta/WhatsApp (říjen 2025) a Threema („všechny možnosti“) následovaly s odporem."
+  },
+  "eff-nsa-timeline": {
+    "role": "Chronologie amerického sledování z let 1791–2015, založená na důkazním materiálu ve věci Jewel v. NSA: každá položka je datovaná a opatřená zdrojem. Model doložených faktů, z něhož vychází naše sekce Precedenty."
+  },
+  "atlas-of-surveillance": {
+    "role": "Více než 14 900 zdokumentovaných nasazení policií ve více než 6 000 jurisdikcích USA (drony, rozpoznávání obličejů, IMSI catchery…), sestavených více než 1 000 studenty a dobrovolníky. Geografické, nikoli chronologické uspořádání."
+  },
+  "technopolice": {
+    "role": "Kampaň La Quadrature z roku 2019, dokumentující „Safe City“ město po městě, společnost po společnosti: záznamy o zakázkách, participativní fórum, kanál pro úniky."
+  },
+  "ooni": {
+    "role": "Největší otevřený soubor dat o internetové cenzuře: miliony měření od roku 2012, více než 200 zemí, data pod licencí CC a veřejné API. Cenzura prokázaná v reálném čase."
+  },
+  "digital-violence": {
+    "role": "Interaktivní mapa ekosystému Pegasus/NSO: vývozní licence, infekce a fyzické důsledky pro cílené osoby."
+  },
+  "surveillance-watch": {
+    "role": "Interaktivní mapa odvětví špionážního softwaru: kdo jej vyvíjí, kdo ho financuje, kdo ho kupuje."
+  },
+  "netblocks": {
+    "role": "Observatoř vypínání a blokování internetu v reálném čase, země po zemi, incident po incidentu."
+  },
+  "big-brother-awards": {
+    "role": "Od roku 2000 každoroční „ocenění“ pro nejhorší narušitele soukromí (edice v několika zemích): kronika prostřednictvím příkladů, rok co rok."
+  },
+  "_machineTranslated": "2026-07-10"
+}

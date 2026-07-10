@@ -1,0 +1,204 @@
+{
+  "signal": {
+    "body": "Nahrazuje WhatsApp. E2EE ve výchozím nastavení, nezisková nadace."
+  },
+  "simplex-chat": {
+    "body": "Vůbec žádný identifikátor: ani servery nemohou vědět, kdo s kým mluví."
+  },
+  "session": {
+    "body": "Bez telefonního čísla, onion routing."
+  },
+  "element-matrix": {
+    "body": "Nahrazuje Discord/Slack. Federované, možnost vlastního hostování."
+  },
+  "briar": {
+    "body": "P2P bez internetu (Bluetooth/Tor): protesty, výpadky."
+  },
+  "molly": {
+    "body": "Zabezpečený Signal pro Android (plně FOSS varianta)."
+  },
+  "thunderbird": {
+    "body": "Referenční svobodný poštovní klient s integrovaným OpenPGP."
+  },
+  "proton-mail": {
+    "body": "Open-source aplikace švýcarské šifrované služby."
+  },
+  "tuta": {
+    "body": "Svobodné aplikace, postkvantové šifrování, jurisdikce EU."
+  },
+  "firefox": {
+    "body": "Nahrazuje Chrome. Nezávislé jádro."
+  },
+  "tor-browser": {
+    "body": "Síťová anonymita, ochrana proti fingerprintingu."
+  },
+  "mullvad-browser": {
+    "body": "Prohlížeč projektu Tor bez sítě Tor."
+  },
+  "brave": {
+    "body": "Chromium, který ve výchozím nastavení blokuje reklamy a trackery."
+  },
+  "ublock-origin": {
+    "body": "TEN blokátor reklam a trackerů."
+  },
+  "searxng": {
+    "body": "Metavyhledávač s možností vlastního hostování."
+  },
+  "wireguard": {
+    "body": "Moderní VPN protokol, na kterém všichni staví."
+  },
+  "mullvad-vpn": {
+    "body": "Klient VPN bez účtu (přijímá hotovost/Monero)."
+  },
+  "proton-vpn": {
+    "body": "Svobodní klienti, poctivý bezplatný tarif."
+  },
+  "tor": {
+    "body": "Síť, která odděluje to, kým jste, od toho, co děláte."
+  },
+  "tailscale": {
+    "body": "Soukromá síť WireGuard mezi vašimi zařízeními."
+  },
+  "headscale": {
+    "body": "Koordinační server Tailscale na vašem hardwaru."
+  },
+  "pi-hole": {
+    "body": "Blokuje reklamy a trackery v celé síti."
+  },
+  "adguard-home": {
+    "body": "Alternativa k Pi-hole s moderním uživatelským rozhraním."
+  },
+  "bitwarden": {
+    "body": "Multiplatformní správce hesel."
+  },
+  "vaultwarden": {
+    "body": "Lehký Bitwarden server pro vlastní hostování."
+  },
+  "keepassxc": {
+    "body": "100% lokální trezor, bez cloudu."
+  },
+  "aegis": {
+    "body": "2FA kódy (TOTP) v lokálním šifrovaném trezoru (Android)."
+  },
+  "ente-auth": {
+    "body": "2FA se synchronizací šifrovanou end-to-end."
+  },
+  "nextcloud": {
+    "body": "Nahrazuje celou sadu Google u vás doma."
+  },
+  "cryptomator": {
+    "body": "Šifruje vaše soubory PŘED jakýmkoli cloudem."
+  },
+  "syncthing": {
+    "body": "Synchronizace mezi zařízeními, bez serveru."
+  },
+  "restic": {
+    "body": "Šifrované, deduplikované, automatické zálohy."
+  },
+  "immich": {
+    "body": "Google Photos s vlastním hostováním (obličeje, vyhledávání)."
+  },
+  "ente-photos": {
+    "body": "Fotky s E2EE, rozpoznávání přímo v zařízení."
+  },
+  "libreoffice": {
+    "body": "Svobodný kancelářský balík."
+  },
+  "onlyoffice": {
+    "body": "Kancelářský balík pro spolupráci s možností vlastního hostování."
+  },
+  "joplin": {
+    "body": "Poznámky v Markdownu, volitelné šifrování a synchronizace."
+  },
+  "standard-notes": {
+    "body": "Poznámky šifrované ve výchozím nastavení."
+  },
+  "cryptpad": {
+    "body": "Kolaborativní Google Docs, plně šifrované."
+  },
+  "organic-maps": {
+    "body": "Offline mapy bez sledování (OpenStreetMap)."
+  },
+  "osmand": {
+    "body": "Mapy pro pokročilé uživatele (turistika, vrstevnice)."
+  },
+  "jitsi-meet": {
+    "body": "Videohovory bez účtu, možnost vlastního hostování."
+  },
+  "mastodon": {
+    "body": "Nahrazuje X/Twitter. Federované, bez vnuceného algoritmu."
+  },
+  "pixelfed": {
+    "body": "Instagram fediverza."
+  },
+  "peertube": {
+    "body": "Federovaný YouTube."
+  },
+  "lemmy": {
+    "body": "Federovaný Reddit."
+  },
+  "damus": {
+    "body": "Klient Nostr: vaše identita je pár klíčů."
+  },
+  "ollama": {
+    "body": "Spouštějte LLM lokálně jediným příkazem."
+  },
+  "llama-cpp": {
+    "body": "Lokální inferenční engine, který to všechno umožnil."
+  },
+  "jan": {
+    "body": "100% lokální alternativa k ChatGPT s jednoduchým rozhraním."
+  },
+  "gpt4all": {
+    "body": "Lokální LLM zaměřené na soukromí, přívětivé pro CPU."
+  },
+  "pocketpal": {
+    "body": "Spouštějte LLM offline v telefonu (iOS/Android), bez účtu."
+  },
+  "grapheneos": {
+    "body": "Android bez Googlu se zvýšeným zabezpečením (Pixel)."
+  },
+  "tails": {
+    "body": "Amnestický OS na USB, vše přes Tor."
+  },
+  "qubes-os": {
+    "body": "Oddělení prostředí pomocí izolovaných VM."
+  },
+  "f-droid": {
+    "body": "100% svobodný obchod s aplikacemi."
+  },
+  "postmarketos": {
+    "body": "Linux na opuštěných telefonech."
+  },
+  "yunohost": {
+    "body": "Osobní server na klíč (včetně e-mailu)."
+  },
+  "startos": {
+    "body": "Suverénní server, Tor ve výchozím nastavení."
+  },
+  "synapse": {
+    "body": "Váš federovaný chatovací server."
+  },
+  "bitcoin-core": {
+    "body": "Peníze, které držíte sami."
+  },
+  "monero": {
+    "body": "Soukromé transakce ve výchozím nastavení."
+  },
+  "securedrop": {
+    "body": "Anonymní schránka pro dokumenty pro redakce."
+  },
+  "onionshare": {
+    "body": "Sdílejte soubory přes Tor bez prostředníka."
+  },
+  "rayhunter": {
+    "body": "Detektor IMSI-catcherů."
+  },
+  "mat2": {
+    "body": "Před zveřejněním odstraňuje metadata."
+  },
+  "exiftool": {
+    "body": "Čte a maže EXIF metadata."
+  },
+  "_machineTranslated": "2026-07-10"
+}

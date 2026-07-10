@@ -1,0 +1,45 @@
+{
+  "do-signal": {
+    "body": "**Nainstalujte Signal** a převeďte tam své tři nejčastější kontakty."
+  },
+  "do-email": {
+    "body": "**Založte si Proton Mail nebo Tuta**, importujte poštu a nastavte přeposílání z Gmailu."
+  },
+  "do-pass": {
+    "body": "**Nainstalujte Bitwarden** s dlouhým hlavním heslem (frází)."
+  },
+  "do-ublock": {
+    "body": "**Přidejte uBlock Origin** do svého prohlížeče (deset sekund)."
+  },
+  "do-browser": {
+    "body": "**Nahraďte Chrome a Google Search** (Firefox/Brave + DuckDuckGo)."
+  },
+  "do-twofa": {
+    "body": "**Zapněte 2FA** (Aegis / Ente Auth, nikdy SMS) u e-mailu a správce hesel."
+  },
+  "do-cloud": {
+    "body": "**Přesuňte své soubory** do šifrovaného cloudu (Proton Drive / Cryptomator)."
+  },
+  "do-vpn": {
+    "body": "**Pořiďte si VPN** (Mullvad), ideálně placenou anonymně."
+  },
+  "do-dns": {
+    "body": "**Zašifrujte své DNS** (Quad9 / Mullvad DNS) v telefonu i počítači."
+  },
+  "do-social": {
+    "body": "**Založte si účet na Mastodonu** a ukotvěte svou přítomnost mimo platformy."
+  },
+  "do-linux": {
+    "body": "**Vyzkoušejte Linux** (distrosea.com), pak ho nainstalujte (na začátek Mint)."
+  },
+  "do-graphene": {
+    "body": "**Přejděte s telefonem na GrapheneOS** (je potřeba Pixel) nebo Android zabezpečte."
+  },
+  "do-selfhost": {
+    "body": "**Provozujte sami** první službu (YunoHost / Umbrel + Tailscale)."
+  },
+  "do-opsec": {
+    "body": "**Osvojte si zásady OPSEC**, pokud publikujete pod pseudonymem."
+  },
+  "_machineTranslated": "2026-07-10"
+}

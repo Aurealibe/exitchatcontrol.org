@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import en from '../../src/i18n/en.json'
 import fr from '../../src/i18n/fr.json'
 import nl from '../../src/i18n/nl.json'
+import cs from '../../src/i18n/cs.json'
 import { defaultLocale, locales } from '../../src/i18n/locales'
 
 // Every locale dictionary must have exactly the English key shape:
@@ -14,7 +15,7 @@ function keyPaths(node: unknown, prefix = ''): string[] {
   return [prefix]
 }
 
-const dicts: Record<string, unknown> = { en, fr, nl }
+const dicts: Record<string, unknown> = { en, fr, nl, cs }
 
 describe('i18n dictionary parity', () => {
   it('declares a dictionary for every locale', () => {

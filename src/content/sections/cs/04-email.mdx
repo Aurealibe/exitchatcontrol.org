@@ -1,0 +1,103 @@
+---
+id: 'email'
+part: 2
+order: 4
+title: 'Šifrovaný e-mail a PGP'
+---
+
+<p class="part-num">
+  ČÁST 03 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Šifrovaný e-mail a PGP
+
+Gmail čte vaše e-maily a sídlí v USA, pod jurisdikcí „Five Eyes“. Odchod od Gmailu/Outlooku je velký přínos s minimálním úsilím.
+
+<ToolCard tool="t-protonmail">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Nahrazuje Gmail</span>
+    <span class="tool-tag">🇨🇭 · open-source · OpenPGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Šifrovaná schránka, která nahrazuje Gmail nebo Outlook, a centrální účet pro celý ekosystém
+    Proton.
+  </Fragment>
+  <Fragment slot="why">
+    Sídlí ve Švýcarsku, mimo jurisdikci „Five Eyes“. Je kompatibilní s OpenPGP: automatické
+    šifrování mezi účty Proton a pro další PGP služby.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého. Je to nejlepší výchozí bod pro odchod od Googlu (zbytek sady najdete v části 05).
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Vytvořte si účet na <b>proton.me</b> (bezplatný tarif pro začátek stačí).
+    </li>
+    <li>
+      Importujte své staré zprávy a kontakty pomocí <b>Easy Switch</b> (je vestavěný).
+    </li>
+    <li>Nastavte přeposílání z Gmailu a sdělte svým kontaktům novou adresu.</li>
+    <li>
+      Nainstalujte mobilní aplikaci, zapněte <b>dvoufaktorové ověřování</b> a pokud chcete používat
+      Thunderbird, použijte Proton Bridge.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tuta">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Nahrazuje Gmail</span>
+    <span class="tool-tag">🇩🇪 · open-source · postkvantové</span>
+  </Fragment>
+  <Fragment slot="what">
+    Německá e-mailová služba, plně open-source a bez jakékoli služby Googlu.
+  </Fragment>
+  <Fragment slot="why">
+    Šifruje také <b>předmět zprávy a některá metadata</b>, a to šifrováním odolným vůči kvantovým
+    počítačům. Jurisdikce EU.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo chtějí maximální šifrování metadat a plně svobodný software. Nepoužívá PGP: pro
+    šifrované psaní lidem mimo službu zprávu chráníte heslem.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Vytvořte si účet na <b>tuta.com</b> a nainstalujte aplikaci (je dostupná na F-Droid).
+    </li>
+    <li>
+      Chcete-li šifrovaně psát člověku, který službu nepoužívá: klikněte na zámek a nastavte heslo,
+      které svému protějšku sdělíte jiným kanálem.
+    </li>
+    <li>Zapněte dvoufaktorové ověřování.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-mailbox">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Etický klasický e-mail</span>
+    <span class="tool-tag">🇩🇪 · UE · PGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Dva etičtí evropskí poskytovatelé e-mailu s nízkou cenou a podporou PGP na straně serveru.
+  </Fragment>
+  <Fragment slot="why">
+    Dbají na soukromí a ekologii a jsou postaveni na otevřených standardech (IMAP, PGP). Fungují s
+    jakýmkoli e-mailovým klientem.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo chtějí „klasickou“ schránku (čtenou v Thunderbirdu), ale etickou, místo uzavřené
+    šifrované aplikace.
+  </Fragment>
+  <ol slot="install">
+    <li>Vytvořte si účet (placený, přibližně 1 až 3 € měsíčně).</li>
+    <li>Povolte šifrování PGP na straně serveru (funkce „Guard“ na mailbox.org).</li>
+    <li>Nastavte účet v Thunderbirdu nebo v mobilní aplikaci podle svého výběru.</li>
+  </ol>
+</ToolCard>
+
+#### PGP za jednu minutu
+
+**PGP** (Pretty Good Privacy) je šifrování založené na klíčích: máte _veřejný_ klíč, který rozdáváte, a _soukromý_ klíč, který držíte v tajnosti. Kdokoli s vaším veřejným klíčem vám může poslat zprávu, kterou můžete dešifrovat **jen vy**. Je základem šifrovaného e-mailu nezávislého na poskytovateli. Proton Mail jej zpracovává automaticky; pro ruční použití funguje **OpenPGP** přes Thunderbird (vestavěné od verze v78).

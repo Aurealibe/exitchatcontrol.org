@@ -76,5 +76,24 @@
     "tagBoundarySpacingLines": 0,
     "tagBoundarySpacingSamples": [],
     "unexplained": []
+  },
+  "cs": {
+    "legacy": {
+      "chromeHead": 48,
+      "narrative": 1204,
+      "chromeTail": 16
+    },
+    "built": {
+      "chromeHead": 48,
+      "narrative": 1416,
+      "chromeTail": 16
+    },
+    "matchedAfterCategories": true,
+    "toolCardLabelLines": 212,
+    "deferredLegislativeLines": [],
+    "linesWithSmartQuotes": 119,
+    "tagBoundarySpacingLines": 0,
+    "tagBoundarySpacingSamples": [],
+    "unexplained": []
   }
 }

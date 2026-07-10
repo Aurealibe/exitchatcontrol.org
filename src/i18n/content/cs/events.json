@@ -1,0 +1,95 @@
+{
+  "clipper-chip": {
+    "title": "Čip Clipper",
+    "body": "NSA prosazuje šifrovací čip s úschovou klíče drženou vládou, „pouze pro orgány činné v trestním řízení a jen na základě povolení“. Byly prokázány nedostatky ([Blaze, 1994](https://dl.acm.org/doi/pdf/10.1145/191177.191193)), návrh byl masivně odmítnut a do roku 1996 opuštěn. První kryptoválka, stejný scénář jako dnes."
+  },
+  "echelon": {
+    "title": "ECHELON potvrzen Evropským parlamentem",
+    "body": "Šest dní před 11. zářím Evropský parlament na plenárním zasedání (367–159–39) přijímá zprávu svého dočasného výboru (výborem schválenou 3. července), která potvrzuje existenci globální sítě zachycující soukromou a obchodní komunikaci (USA, Spojené království, Kanada, Austrálie, Nový Zéland)."
+  },
+  "nsa-warrantless": {
+    "title": "23 dní po 11. září",
+    "body": "Tajný prezidentský příkaz zahajuje domácí špehování NSA bez soudního povolení. Krize vytvoří program; program krizi přežije. Patriot Act následuje 26. října, také jako „dočasný“: jeho doložky o ukončení platnosti se prodlužují po 14 let."
+  },
+  "room-641a": {
+    "title": "Místnost 641A",
+    "body": "Technik AT&T Mark Klein předává EFF dokumenty popisující tajnou místnost NSA v přepojovacím uzlu v San Francisku: zachycování na úrovni infrastruktury, veškerého provozu, nikoli provozu podezřelých."
+  },
+  "retention-directive": {
+    "title": "Směrnice EU o uchovávání údajů",
+    "body": "EU nařizuje uchovávání telekomunikačních metadat celé populace (6–24 měsíců), „proti závažné trestné činnosti“. Nikdo není podezřelý, všichni jsou evidováni. Přesný plán Chat Control, o dvacet let dříve."
+  },
+  "snowden": {
+    "title": "Snowden: „shromažďovat vše“",
+    "body": "The Guardian zveřejňuje tajný příkaz FISA, který nutí Verizon předat metadata všech zákazníků, a následně PRISM. V březnu ředitel zpravodajských služeb Clapper Kongresu přísahal, že se to neděje; několik dní po úniku to označuje za [„nejméně nepravdivou“ odpověď](https://www.washingtonpost.com/blogs/fact-checker/post/james-clappers-least-untruthful-statement-to-the-senate/2013/06/11/e50677a8-d2d8-11e2-a73e-826d299ff459_blog.html), kterou mohl dát."
+  },
+  "digital-rights-ireland": {
+    "title": "SDEU ruší plošné uchovávání údajů",
+    "body": "Digital Rights Ireland (spojené věci C-293/12 a C-594/12): směrnice z roku 2006 je bez výhrad zrušena: nerozlišující dohled nad celou populací porušuje Listinu základních práv. Malá dobrovolnická nevládní organizace zrušila směrnici EU."
+  },
+  "snoopers-charter": {
+    "title": "Britská „šmírovací charta“",
+    "body": "Investigatory Powers Act legalizuje hromadný sběr a státní hacking a nutí poskytovatele internetového připojení uchovávat historii prohlížení všech. O tři týdny později SDEU (Tele2/Watson) opakuje, že plošné uchovávání údajů je nezákonné; Londýn v něm přesto pokračuje."
+  },
+  "australia-aaa": {
+    "title": "Austrálie proti matematice",
+    "body": "Assistance and Access Act umožňuje státu tajně nařídit firmě přepracovat její produkty („oznámení o technické schopnosti“). Kritici varují, že to de facto oslabuje šifrování, přestože zákon nominálně zakazuje „systémové slabiny“. Tón udal premiér: „zákony Austrálie mají přednost před zákony matematiky“."
+  },
+  "crypto-ag": {
+    "title": "Crypto AG: výrobce trezorů si ponechal klíče",
+    "body": "The Washington Post odhaluje (s oporou o vlastní interní historii CIA), že CIA a BND od roku 1970 tajně vlastnily Crypto AG, švýcarského dodavatele šifrování pro 120 vlád. V 80. letech přes ni procházelo 40 % diplomatických depeší, které NSA dešifrovala. Ponaučení: „důvěryhodná“ zadní vrátka jsou zadní vrátka."
+  },
+  "lqdn-cjeu": {
+    "title": "La Quadrature du Net před SDEU",
+    "body": "Soud potvrzuje zákaz plošného uchovávání údajů vůči Francii a Belgii (spojené věci C-511/18, C-512/18 a C-520/18) a téhož dne vůči Spojenému království ve věci Privacy International (C-623/17), zároveň však vymezuje okna pro „národní bezpečnost“. Dvojí ponaučení: žaloby fungují a každá výjimka se stane dalším pravidlem. Komise nikdy nezahájila řízení pro porušení práva proti státům, které údaje přesto uchovávají."
+  },
+  "chatcontrol-1": {
+    "title": "Chat Control 1.0, „dočasný“",
+    "body": "Nařízení 2021/1232 umožňuje „dobrovolné“ skenování soukromých zpráv jako výjimku z ePrivacy. Konec platnosti byl slíben na 3. srpna 2024. Nařízení 2024/1307 jej prodlužuje do 3. dubna 2026, kdy vyprší… a pak vstane z mrtvých (viz níže)."
+  },
+  "pegasus-project": {
+    "title": "Projekt Pegasus",
+    "body": "Více než 80 novinářů ze 17 redakcí v 10 zemích dokumentuje špehování novinářů, právníků, disidentů a hlav států prostřednictvím spywaru NSO. Forenzní analýzy Amnesty (posouzené Citizen Lab) dokazují zero-click infekce plně aktualizovaných iPhonů: když je cílem zařízení, šifrování nestačí. Přesně logika skenování na straně klienta."
+  },
+  "apple-csam": {
+    "title": "Apple oznamuje skenování v zařízení… pak od něj ustupuje",
+    "body": "Apple představuje skenování fotografií CSAM v iPhonu přímo v zařízení. Výzkumníci a nevládní organizace se bouří: jde o infrastrukturu zobecnitelného dohledu. Prosinec 2022: Apple od něj upouští a později v [dopise ze srpna 2023](https://appleinsider.com/articles/23/08/31/apple-provides-detailed-reasoning-behind-abandoning-iphone-csam-detection) uvede „kluzký svah nezamýšlených důsledků“. Právě tento mechanismus chce Chat Control 2.0 nařídit."
+  },
+  "chatcontrol-2": {
+    "title": "Chat Control 2.0: povinné skenování",
+    "body": "Komise navrhuje nařízení CSAR (COM/2022/209): „příkazy k detekci“, které mohou vynutit skenování na každé platformě, včetně těch s koncovým šifrováním. Dobrovolnost z roku 2021 se v roce 2022 stává povinností: rozšiřování rozsahu v doslovném smyslu."
+  },
+  "osa-spy-clause": {
+    "title": "Online Safety Act: „špionážní doložka“",
+    "body": "Spojené království si uděluje pravomoc nařídit komunikátorům skenovat šifrovaný obsah (oddíl 121). Formulace „je-li to technicky proveditelné“ v zákoně není: šlo o ústupek ministra, [prohlášení lorda Parkinsona ve Sněmovně lordů](https://techcrunch.com/2023/09/06/osb-encryption-scanning-feasibility/) (6. září 2023), poté co Signal a WhatsApp pohrozily odchodem. Vláda připouští, že to není proveditelné, ale pravomoc v zákoně ponechává."
+  },
+  "first-extension": {
+    "title": "„Dočasné“ opatření dostává první prodloužení",
+    "body": "Nařízení 2024/1307 posouvá konec platnosti Chat Control 1.0 z 3. srpna 2024 na 3. dubna 2026. Mimořádné opatření, které se samo obnovuje, už není výjimkou: je to režim."
+  },
+  "uk-age-checks": {
+    "title": "Spojené království: pro používání internetu ukažte průkaz totožnosti",
+    "body": "Online Safety Act zavádí „vysoce účinné“ ověřování věku (doklad totožnosti, kreditní karta, odhad věku z obličeje) pro velké části webu. Proton zaznamenává, že počet hodinových registrací VPN vyskočil [o více než 1 400 %](https://www.techradar.com/vpn/vpn-privacy-security/vpn-demand-skyrockets-in-the-uk-as-age-verification-checks-are-enforced); Sněmovna lordů už debatuje o omezeních VPN."
+  },
+  "council-sunset-delete": {
+    "title": "Rada směřuje ke zrušení doložky o ukončení platnosti",
+    "body": "Postoj Rady pro trialog (dokument 15318/25): jednoduše odstranit doložku o ukončení platnosti „dobrovolného“ skenování a učinit je trvalým. Návrh dánského předsednictví počítal s povinným skenováním na straně klienta. V únoru 2026 evropský inspektor ochrany údajů odpovídá na prosincový návrh Komise prodloužit výjimku do roku 2028 (COM(2025) 797): podstatné zhoršení důvěrnosti, nerozlišující analýza je nepřiměřená."
+  },
+  "ep-says-no": {
+    "title": "Parlament říká ne",
+    "body": "Evropský parlament odmítá prodloužení dobrovolného skenování do roku 2028 (228 pro, 311 proti, 92 se zdrželo). Důsledek: právní základ končí 3. dubna 2026. Tlak občanů a práce nevládních organizací udržely hranici. Na tři měsíce."
+  },
+  "scanning-continues": {
+    "title": "Zákon přestává platit, skenování pokračuje",
+    "body": "Po skončení výjimky oznamují giganti, kteří podepsali společnou výzvu z 19. března k zakotvení režimu (Google, Meta, Microsoft, Snap, TikTok), že budou zprávy skenovat dál, ať už existuje právní základ, nebo ne. Přiznání, že „dodržování předpisů“ bylo jen kulisou."
+  },
+  "council-resurrects": {
+    "title": "Rada oživuje neplatný text",
+    "body": "Tři měsíce po skončení platnosti Rada přijímá svůj postoj k obnovení dobrovolného skenování do 3. dubna 2028 a zasílá jej Parlamentu do druhého čtení: postupu, v němž odmítnutí vyžaduje absolutní většinu (361 ze 720), nikoli většinu odevzdaných hlasů."
+  },
+  "ep-e2ee-carveout": {
+    "title": "Odmítnutí neprojde, ale E2EE je vyňato",
+    "body": "Zrychlené řízení prošlo 7. července (331/304/11), hlasování 9. července: 314 poslanců Evropského parlamentu hlasuje pro odmítnutí postoje Rady — prostá většina, avšak méně než požadovaných 361. Parlament ale následně přijímá pozměňovací návrhy vylučující komunikaci s koncovým šifrováním z režimu skenování (369 a 362 hlasů) a neprochází ani poslední pokus o odmítnutí pozměněného postoje (276/286/30). Pozměněný text se vrací Radě, která má přibližně tři měsíce (zhruba do 9. října 2026) na přijetí změn (dobrovolné skenování služeb bez E2EE do 3. dubna 2028), nebo na zahájení dohodovacího řízení. K 10. červenci 2026 nic neplatí: výjimka, která skončila 3. dubna, nikdy nebyla obnovena ([úplné jmenovité hlasování](https://howtheyvote.eu/votes/195775))."
+  },
+  "_machineTranslated": "2026-07-10"
+}

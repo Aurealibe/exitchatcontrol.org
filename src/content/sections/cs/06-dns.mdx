@@ -1,0 +1,122 @@
+---
+id: 'dns'
+part: 3
+order: 6
+title: 'Šifrované DNS a Cloudflare'
+---
+
+<p class="part-num">
+  ČÁST 05 · SÍŤ · DNS · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Šifrované DNS a Cloudflare
+
+DNS je adresář, který převádí název webu (example.com) na strojovou adresu. Háček je v tom, že tento adresář ve výchozím nastavení provozuje váš poskytovatel internetu, takže vidí **každý web, který navštívíte**, i když stránka používá HTTPS. Šifrováním DNS tento seznam svému ISP vezmete zpět. Je to nenápadné nastavení, ale jedno z nejúčinnějších.
+
+<ToolCard tool="t-quad9">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Blokování malwaru</span>
+    <span class="tool-tag">🇨🇭 nezisková organizace</span>
+  </Fragment>
+  <Fragment slot="what">
+    Šifrovaný švýcarský DNS resolver provozovaný neziskovou organizací, který také blokuje známé
+    škodlivé domény.
+  </Fragment>
+  <Fragment slot="why">
+    Švýcarská jurisdikce, žádné uchovávání vaší IP adresy, ochrana před phishingem a malwarem.
+    Výborná volba typu „nastavit a zapomenout“.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého, zejména pro ty, kteří chtějí jednoduchost a dobrou jurisdikci.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      V Androidu: Nastavení &gt; Síť &gt; <b>Soukromý DNS</b> &gt; zadejte <b>dns.quad9.net</b>.
+    </li>
+    <li>
+      Na iPhonu/Macu: nainstalujte DoH profil z quad9.net. Na PC: nastavte DNS-over-HTTPS v
+      prohlížeči nebo systému.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-mullvaddns">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Pokročilý</span>
+    <span class="tool-tag">Filtrování sítě</span>
+  </Fragment>
+  <Fragment slot="what">
+    Dva šifrované resolvery, které zároveň blokují reklamy a trackery pro celé zařízení.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Mullvad DNS</b> (Švédsko, bez logování) je zdarma a nabízí blokovací seznamy. <b>NextDNS</b>{' '}
+    je vysoce přizpůsobitelný, s přehledem a profily pro jednotlivá zařízení, ale sídlí v USA a ve
+    výchozím nastavení zaznamenává logy (v nastavení to vypněte).
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kteří chtějí blokování reklam v celém systému bez instalace rozšíření do každého
+    prohlížeče.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Mullvad DNS: použijte adresu uvedenou na mullvad.net/help/dns jako své soukromé DNS (stejný
+      postup jako u Quad9).
+    </li>
+    <li>
+      NextDNS: vytvořte profil na nextdns.io, <b>vypněte logování</b> a poté konfiguraci použijte na
+      svých zařízeních.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cloudflare">
+  <Fragment slot="name">Cloudflare 1.1.1.1 (s výhradou)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Rychlé, ale centralizované</span>
+    <span class="tool-tag">🇺🇸</span>
+  </Fragment>
+  <Fragment slot="what">
+    Šifrované DNS Cloudflare 1.1.1.1 a aplikace WARP: rychlé, zdarma a skutečné zlepšení oproti
+    resolveru vašeho ISP.
+  </Fragment>
+  <Fragment slot="why">
+    Je užitečné a má auditovaný závazek neuchovávat logy. Buďte však realističtí: Cloudflare už
+    stojí před obrovskou částí webu (jako technický prostředník může vidět nešifrovaný provoz k
+    těmto webům). Směrování DNS tam také znamená{' '}
+    <b>soustředění ještě větší části vaší digitální stopy</b> u jedné americké společnosti
+    podléhající americkému právu.
+  </Fragment>
+  <Fragment slot="who">
+    Vhodné pro každodenní použití a blokování malwaru (1.1.1.1 for Families). Pro citlivé použití se
+    mu vyhněte nebo služby diverzifikujte: místo toho preferujte Quad9 nebo Mullvad DNS.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-pihole">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Blokování v celé síti</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Blokovač reklam a trackerů, který chrání <b>celou vaši síť najednou</b>, nainstalovaný na malém
+    počítači, jako je Raspberry Pi.
+  </Fragment>
+  <Fragment slot="why">
+    Zatímco uBlock Origin chrání jeden prohlížeč, Pi-hole filtruje <b>každé zařízení</b> v
+    domácnosti, včetně těch, kde nelze nainstalovat rozšíření: telefony, chytré televize, připojená
+    zařízení. Reklamy a trackery jsou blokovány na úrovni DNS ještě předtím, než se vůbec načtou.{' '}
+    <b>AdGuard Home</b> je alternativa s modernějším rozhraním.
+  </Fragment>
+  <Fragment slot="who">
+    Pro domácnosti, které chtějí najednou vyčistit všechna svá zařízení a mají (nebo chtějí)
+    Raspberry Pi či malý server.
+  </Fragment>
+  <ol slot="install">
+    <li>Na Raspberry Pi (nebo v kontejneru) spusťte oficiální instalátor Pi-hole.</li>
+    <li>V nastavení routeru nastavte adresu Pi-hole jako DNS server.</li>
+    <li>Odteď se každé zařízení ve vaší síti filtruje automaticky.</li>
+  </ol>
+</ToolCard>

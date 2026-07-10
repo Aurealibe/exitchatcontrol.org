@@ -1,0 +1,143 @@
+{
+  "prum-2": {
+    "title": "Prüm II: vyhledávání podle obličeje napříč všemi policejními sbory v Evropě",
+    "body": "Nařízení 2024/982 přidává snímky obličejů, včetně snímků osob, které nikdy nebyly odsouzeny, do automatizované výměny policejních údajů mezi členskými státy prostřednictvím centrálního směrovače. Celoevropská schopnost biometrické identifikace, přijatá bez skutečné vnitrostátní debaty; EDRi ji označuje za riziko „překračování pravomocí státu a hromadného sledování“."
+  },
+  "eidas-wallet": {
+    "title": "eIDAS 2.0: přichází peněženka identity, prohlížeče pod státní důvěrou",
+    "body": "Každý členský stát musí do 24. prosince 2026 poskytnout evropskou peněženku digitální identity (EUDI Wallet); banky, telekomunikační společnosti, zdravotní služby a velmi velké platformy ji budou muset přijímat. Tatáž peněženka prokáže váš věk, otevře účet, podepíše platbu: jedna brána, tedy jeden kontrolní bod; EDPS dokumentuje rizika sledování napříč způsoby použití. A článek 45 nutí prohlížeče uznávat státem určené webové certifikáty: více než 500 výzkumníků varovalo ([last-chance-for-eidas.org](https://last-chance-for-eidas.org/)), že jde o infrastrukturu pro zachycování šifrovaného provozu."
+  },
+  "going-dark": {
+    "title": "Plán „Going Dark“: přístup policie už v návrhu",
+    "body": "Skupina na vysoké úrovni pro „přístup k datům“, obsazená téměř výhradně zástupci orgánů vymáhání práva, přijala 21. května 2024 42 doporučení: „zákonný přístup už v návrhu“ (přístup policie zabudovaný do produktů od rýsovacího prkna), harmonizované uchovávání metadat, povinnost identifikovat každého uživatele včetně uživatelů messengerů. V prosinci 2024 podepsalo 55 organizací občanské společnosti, společností a sdružení otevřený dopis, který výsledek označuje za [„selhání mise“](https://edri.org/our-work/high-level-group-going-dark-outcome-a-mission-failure/): plán hromadného sledování. Je to matice všeho, co následuje."
+  },
+  "roumanie-tiktok": {
+    "title": "Rumunsko: volby zrušeny, DSA rozhoduje o viditelnosti",
+    "body": "Dne 6. prosince rumunský Ústavní soud ruší první kolo prezidentských voleb s odkazem na nepřiznanou koordinovanou kampaň na TikToku; 17. prosince Komise zahajuje proti platformě formální řízení podle DSA (doporučovací systémy, politická reklama), které pokračuje i v roce 2026. Ať už bude výsledek jakýkoli, precedens zůstává: o tom, „kdo rozhoduje, co je během voleb viditelné“, nyní rozhodují platformy, Komise a ústavní soudy."
+  },
+  "vietnam-decret-147": {
+    "title": "Vietnam: ověřená identita, nebo mlčení",
+    "body": "Dekret 147 nutí platformy ověřovat identitu každého uživatele (telefonním nebo identifikačním číslem), ukládat údaje a předávat je úřadům; pouze ověřené účty mohou zveřejňovat příspěvky, komentovat nebo vysílat. Rovnice je vyjádřena jasně: žádná ověřená identita, žádný veřejný projev."
+  },
+  "uk-apple-adp": {
+    "title": "Londýn požaduje zadní vrátka, Apple stahuje své šifrování",
+    "body": "Ministerstvo vnitra tajným příkazem (Technical Capability Notice podle Investigatory Powers Act) požaduje přístup k šifrovaným datům iCloudu, přičemž soudní podání potvrzují celosvětový rozsah. Apple reaguje stažením Advanced Data Protection (end-to-end šifrovaného iCloudu) pro všechny uživatele ve Spojeném království, místo aby vytvořil klíč. Pod tlakem USA Londýn v létě požadavek „stahuje“… pak však začátkem září 2025 vydává nový příkaz, zveřejněný 1. října, zúžený na data britských uživatelů. V polovině roku 2026 britští uživatelé stále žijí bez E2EE pro své zálohy."
+  },
+  "fr-narcotrafic-8ter": {
+    "title": "Francie: zadní vrátka zákona Narcotrafic neprošla",
+    "body": "Článek 8 ter zákona Narcotrafic by nutil šifrované messengery poskytnout zpravodajským službám přístup ke korespondenci: mechanismus „duchovního účastníka“. Po vypuštění ve výboru bylo jeho znovuzařazení v noci 20. března 2025 [zamítnuto poměrem 119 hlasů ku 24](https://lcp.fr/actualites/narcotrafic-l-assemblee-refuse-l-acces-aux-messageries-chiffrees-contre-l-avis-de-bruno) mezistranickou koalicí, proti vůli ministra vnitra. Národní parlament může říci ne; vláda se však nevzdala: požadavek na přístup se vrací ve vlnách, zde a poté v Bruselu."
+  },
+  "protecteu": {
+    "title": "„ProtectEU“: prolomení šifrování se stává oficiální politikou",
+    "body": "Strategie vnitřní bezpečnosti Komise (COM(2025) 148) oznamuje plán pro „zákonný a účinný přístup k datům“ a „technologický plán“ pro šifrování spolu s posíleným Europolem. Rozptýlené požadavky policie se stávají víceletým politickým programem Unie: přístup k šifrované komunikaci, písemně."
+  },
+  "ice-palantir": {
+    "title": "ICE kupuje od Palantiru „ImmigrationOS“",
+    "body": "30 milionů dolarů za platformu, která křížově porovnává federální databáze a poskytuje „téměř okamžitý přehled“ o osobách určených k vyhoštění. Cílené sledování celé populace se stává běžně dostupným softwarovým produktem provozovaným soukromou společností."
+  },
+  "ch-vupf": {
+    "title": "I Švýcarsko: vyhláška, která by vyhnala Proton ze země",
+    "body": "Revidovaná vyhláška o sledování (VÜPF) by rozšířila povinnosti identifikace uživatelů a uchovávání údajů (IP záznamy po dobu 6 měsíců) na každou službu s více než 5 000 uživateli. CEO Protonu slibuje, že pokud projde, společnost zemi opustí („byli bychom méně důvěrní než Google“) a zmrazuje švýcarské investice; protestuje také Threema. Začátkem roku 2026 je projekt zablokován: v konzultaci čelí téměř jednomyslnému odporu a parlament požaduje přepracování. Historické útočiště důvěrnosti se pouhou vyhláškou pokusilo o to, o čem EU debatuje v Chat Control."
+  },
+  "us-visa-vetting": {
+    "title": "Vízum do USA: veřejné sociální sítě, nebo nic",
+    "body": "Ministerstvo zahraničí vyžaduje po žadatelích o studentská víza, aby nastavili své sociální profily jako veřejné (depeše z 18. června 2025), a prověřuje jakoukoli „nepřátelskost“ vůči Spojeným státům; formulář DS-160 už od roku 2019 vyžadoval pětiletou historii uživatelských jmen. Dne 15. prosince se opatření rozšířilo na H-1B, poté v březnu 2026 na více než 14 kategorií víz. Vstup je podmíněn ideologickou kontrolou online projevu: celosvětová pobídka k autocenzuře."
+  },
+  "roadmap-lawful-access": {
+    "title": "Plán: státní dešifrování naplánované do roku 2030",
+    "body": "Komise zveřejňuje harmonogram pro „zákonný přístup k datům“ (COM(2025) 349): nová pravidla uchovávání údajů, přeshraniční odposlechy do roku 2027, analýzu zabavených dat pomocí AI do roku 2028 a „schopnost dešifrování nové generace“ pro Europol od roku 2030. EU v průběhu pěti let plánuje právní a technické stavební kameny pro čtení toho, co je dnes nečitelné. EFF to shrnuje: „tento plán činí všechny méně bezpečnými“."
+  },
+  "age-blueprint": {
+    "title": "Ověřování věku: pilotní aplikace v pěti zemích",
+    "body": "Komise zveřejňuje své pokyny DSA k „článku 28“ a plán ověřování věku („mini-peněženku“), pilotně zaváděný s Dánskem, Francií, Řeckem, Itálií a Španělskem, který má do konce roku 2026 splynout s EUDI Wallet. I když údajně „chrání soukromí“, tato logika zavádí kontrolu identity u vstupu na internet: prokazovat atribut osobního stavu pro zobrazení legálního obsahu se stává běžným úkonem."
+  },
+  "fr-pornhub": {
+    "title": "Francie: Conseil d’État obnovuje kontrolu věku",
+    "body": "Podle zákona SREN a rámce Arcom („dvojitá anonymita“) musí stránky pro dospělé ověřovat věk návštěvníků. Aylo (Pornhub) na protest odpojuje přístup z Francie; správní soud v červnu dekret pozastavuje, Conseil d’État toto pozastavení 15. července ruší: povinnost platí a stránky se znovu blokují. První plnohodnotné nasazení „občanského průkazu pro vstup na internet“, kde je nástrojem vynucení dodržování blokování."
+  },
+  "cn-cyber-id": {
+    "title": "Čína: národní internetová identita centralizovaná u policie",
+    "body": "Zavedení „identity kyberprostoru“: jediného identifikátoru vydávaného společně Ministerstvem veřejné bezpečnosti a Cyberspace Administration of China, založeného na rozpoznávání obličeje a národním občanském průkazu, používaného pro přihlašování k online službám, účinného od 15. července 2025. Oficiálně dobrovolného, nad rámec registrace skutečným jménem, která je již všude povinná. Když je online identifikace centralizována státem, anonymita zaniká už svou konstrukcí a přístup k internetu se stává odvolatelným privilegiem. Jde o dokončený model toho, co západní kontroly věku a peněženky pouze načrtávají."
+  },
+  "emfa-article-4": {
+    "title": "EMFA: ochrana novinářů proděravěná výjimkami",
+    "body": "Evropský akt o svobodě médií se stává plně použitelným. Jeho článek 4 v zásadě zakazuje spyware proti novinářům… pak jej však výjimečně povoluje pro seznam závažných trestných činů; během jednání Rada pod vedením Francie prosazovala plošnou výjimku pro „národní bezpečnost“, kterou RSF odsoudila. První evropský text určený k ochraně novinářů před státním špehováním kodifikuje v prostoru svých výjimek podmínky, za kterých toto špehování zůstává legální."
+  },
+  "ru-max": {
+    "title": "Rusko: státní messenger předinstalovaný vyhláškou",
+    "body": "Každý chytrý telefon prodávaný v Rusku musí obsahovat MAX, messenger vytvořený společností VK a označený za „národní aplikaci“; státní zaměstnanci a učitelé jsou nuceni jej používat. Nezávislé analýzy popisují rozsáhlé sledování a integraci se systémem odposlechů FSB. Konečný bod logiky proti šifrování: messenger čitelný pro služby, vnucený přímo prostřednictvím distribučního kanálu hardwaru."
+  },
+  "ru-recherche-punie": {
+    "title": "Rusko: vyhledávání se stává přestupkem",
+    "body": "„Úmyslné“ vyhledávání online obsahu klasifikovaného jako „extremistický“ (seznam s více než 5 000 položkami včetně opozice) se stává pokutovatelným, a to i přes VPN, a propagace nástrojů k obcházení blokací je zakázána. Historický práh: stát už netrestá to, co říkáte, ale to, co se snažíte zjistit. Logický konec kontroly individuálního používání."
+  },
+  "scientifiques-csar": {
+    "title": "500 vědců: „technicky neproveditelné“",
+    "body": "Více než 500 kryptografů a výzkumníků z 34 zemí (do října zhruba 800 ze 37 zemí) podepisuje stanovisko proti dánskému návrhu CSAR: spolehlivá detekce je v tomto měřítku nemožná, obcházení je pro zločince triviální a jakékoli skenování na straně klienta „ze své podstaty oslabuje“ end-to-end šifrování. Data německé spolkové kriminální policie (BKA) ukazují totéž samostatně: z 205 728 hlášení NCMEC přijatých v roce 2024 nebylo 99 375 (48,3 %) „trestně relevantních“. Vědecká shoda je jednoznačná. A projekt pokračuje."
+  },
+  "uk-britcard": {
+    "title": "„BritCard“: digitální identita jako podmínka k práci",
+    "body": "Starmerova vláda oznamuje digitální identitu („BritCard“ je její neoficiální přezdívka, nikoli oficiální název), která se má do konce volebního období stát povinnou pro kontroly práva pracovat, ve jménu boje proti nelegální migraci. Petice během zhruba dvou dnů překračuje jeden milion podpisů (od té doby více než 2,9 milionu); vláda drží kurz (návrh zákona figuruje v květnovém projevu krále z roku 2026). Podmínění práva pracovat státním identifikátorem zavádí centrální kontrolní bod do ekonomického života každého člověka."
+  },
+  "berlin-bloque": {
+    "title": "Berlín zastavuje povinné skenování",
+    "body": "Prezidentka Signalu Meredith Whittaker veřejně uvádí, že by messenger raději opustil evropský trh, než aby oslabil své šifrování; skupina CDU/CSU přirovnává skenování bez podezření k napařování a otevírání pošty každého člověka. Bod je stažen z programu Rady SVV dne 14. října: blokující menšina obstála. Poměr sil se může obrátit, projekt však nikdy neumírá: přepracovaný jako „dobrovolný“ se vrací o šest týdnů později."
+  },
+  "ees-biometrie": {
+    "title": "EES: obličej a prsty se stávají pasem",
+    "body": "Systém vstupu/výstupu začíná fungovat: otisky prstů a snímek obličeje každého cestujícího ze země mimo EU se shromažďují v centralizované databázi a nahrazují razítko do pasu (úplné zavedení 10. dubna 2026); dalším krokem je ETIAS, placené povolení založené na těchto databázích. EU přechází k hranici jako databázi: tělo se stává výchozím cestovním identifikátorem ukládaným v systémech navržených k vzájemnému propojení."
+  },
+  "onu-cybercrime": {
+    "title": "Úmluva OSN o kyberkriminalitě: sledování vyvážené smlouvou",
+    "body": "Úmluva, vyjednaná z iniciativy Ruska a přijatá na konci roku 2024, shromažďuje v Hanoji 72 signatářů: 71 států a EU. EFF a Human Rights Watch varují: široké definice, povinná vzájemná pomoc při shromažďování elektronických důkazů včetně odposlechů v reálném čase pro „závažné trestné činy“ definované právem žádající země, s nepovinnými zárukami. Legalizovaný celosvětový kanál, jímž mohou standardy nejrepresivnějšího režimu putovat dál."
+  },
+  "euro-numerique-pilote": {
+    "title": "Digitální euro: architektura se buduje před zárukami",
+    "body": "ECB uzavírá svou „přípravnou fázi“ a zahajuje další: pilotní cvičení v polovině roku 2027, možné první vydání v roce 2029, zatímco nařízení dosud nebylo přijato. Euroskupina se v září dohodla na správě a postupu pro stanovení limitů držby. Digitální měna centrální banky je infrastruktura, kde je každá transakce přirozeně zaznamenatelná; buduje se, zatímco její právní limity jsou stále nenapsané."
+  },
+  "au-ban-16": {
+    "title": "Austrálie: 4,7 milionu účtů vypnuto za měsíc",
+    "body": "Světová premiéra: od 10. prosince 2025 mají osoby mladší 16 let zakázán přístup k deseti platformám určeným regulátorem eSafety, které musí odhadovat věk (behaviorální odvozování, selfie skeny obličeje, doklady totožnosti), jinak jim hrozí pokuty ve výši 49,5 milionu A$. V polovině ledna 2026 premiér oznamuje 4,7 milionu deaktivovaných, odstraněných nebo omezených účtů. Chcete-li vyloučit nezletilé, musíte odhadovat věk každého: biometrie se stává mýtnou branou sociálního webu a vlády po celém světě sledují tuto laboratoř."
+  },
+  "fr-vsa-prolongee": {
+    "title": "Algoritmické kamerové sledování: „experiment“ z olympiády míří do sedmého roku",
+    "body": "Algoritmické kamerové sledování, povolené „experimentálně“ olympijským zákonem z roku 2023 (s platností do března 2025), je prodlouženo do konce roku 2027 se souhlasem Ústavní rady. Do května 2026 už Senát schvaluje pokračování („zákon Ripost“): prodloužení do konce roku 2030 a rozšíření do všech veřejně přístupných prostor. Klasická ráčna: výjimka se prodlužuje, rozsah se rozšiřuje, hodnocení může počkat."
+  },
+  "pl-ziobro-asile": {
+    "title": "Pegasus v Polsku: obviněný nalézá azyl… uvnitř EU",
+    "body": "Bývalý ministr spravedlnosti Zbigniew Ziobro, který čelí 26 obviněním včetně financování Pegasu z fondu na pomoc obětem a jeho používání proti oponentům, uvádí, že po zbavení imunity získal politický azyl v Maďarsku; v květnu 2026 poté utíká do Spojených států. Soudní vyrovnání se státním politickým špehováním naráží na bezprecedentní slepou uličku: členský stát EU poskytuje útočiště údajnému viníkovi a odpovědnost končí na vnitřní hranici."
+  },
+  "ru-whatsapp-bloque": {
+    "title": "Rusko: WhatsApp odpojen pro 100 milionů uživatelů",
+    "body": "Celá sekvence trvala šest měsíců: v srpnu 2025 jsou hovory přes WhatsApp a Telegram zpomalovány (platformy „odmítají sdílet data s úřady“); v prosinci se zpomalování rozšiřuje; v únoru 2026 je WhatsApp plně zablokován, což potvrzuje Kreml. Poučení je jasné: požadujte data, přiškrťte službu, která je odmítne vydat, a pak ji odpojte. Odmítnutí prolomit šifrování se trestá vyloučením ze země."
+  },
+  "gr-intellexa": {
+    "title": "Predator v Řecku: dodavatelé odsouzeni, kupující nevystopovatelní",
+    "body": "Aténský soud odsuzuje čtyři vedoucí pracovníky spojené s Intellexou (zakladatele Tala Diliana a dále Hamoua, Bitziose a Lavranose) za nezákonný přístup k soukromé komunikaci ve skandálu Predator (přibližně 87 cílů: novináři, ministři, vojenští důstojníci; počet uváděný The Record a ICIJ). První trestní odsouzení obchodníků se spywarem v EU. Žádný politický představitel však odsouzen není: kdo odposlechy nařídil, zůstává oficiálně nevystopovatelný."
+  },
+  "fr-boites-noires-urls": {
+    "title": "Černé skříňky: zpravodajské služby chtějí úplné URL",
+    "body": "Poslanci rozšiřují „černé skříňky“ (algoritmickou analýzu metadat vytvořenou v roce 2015 proti terorismu, od té doby trvalou) na organizovaný zločin a poprvé i na úplné URL navštívených stránek. Ústavní rada podobný systém v roce 2025 zrušila; vláda to zkouší znovu, v upravené podobě. Úplné URL prozrazuje, co čtete, nejen s kým komunikujete: jde o kvalitativní skok směrem k automatizované kontrole čtenářských návyků, na základě správního, nikoli soudního povolení."
+  },
+  "palantir-europe": {
+    "title": "Palantir v Evropě: dodavatel se mění, otázka ne",
+    "body": "V polovině května 2026 německá domácí zpravodajská služba (BfV) opouští Palantir a přechází k francouzské společnosti ChapsVision. Stejnou cestu následně volí francouzská DGSI, která v listopadu 2025 prodloužila smlouvu s Palantirem do roku 2028: 16. června 2026 Sébastien Lecornu oznamuje přechod na ChapsVision v průběhu roku 2027. Policie v Bavorsku a Hesensku mezitím nadále používá Gotham (v Severním Porýní-Vestfálsku do října 2026), napadený u Ústavního soudu. Veřejná debata se posunula od otázky „mají policejní spisy spojovat AI?“ k otázce „který dodavatel to má dělat?“: suverenita nahradila proporcionalitu a samotná hromadná analýza už není zpochybňována."
+  },
+  "us-fisa-702": {
+    "title": "FISA 702 končí, sběr dat přesto pokračuje",
+    "body": "Oddíl 702, tedy sběr komunikace procházející poskytovateli v USA bez soudního příkazu, měl skončit v dubnu 2026. Po dvou krátkých prodlouženích oprávnění v polovině června zaniká, protože Kongres je zablokován ve sporu o povinnost soudního příkazu pro vyhledávání FBI týkající se Američanů. Stávající certifikace však zůstávají platné do března 2027: stroj běží další rok bez obnoveného právního základu. „Dočasná“ sledovací pravomoc se nikdy zcela nevypne."
+  },
+  "euro-numerique-econ": {
+    "title": "Digitální euro: „neprogramovatelné“, přesto podmíněné",
+    "body": "Hospodářský a měnový výbor Parlamentu přijímá svou pozici (43 hlasů ku 14, jedno zdržení se): kurz je nastaven na spuštění do roku 2029. Vlastní FAQ ECB přísahá, že digitální euro „nebude programovatelnými penězi“, zatímco „podmíněné platby“ představuje jako volitelné služby; podle postoje poslanců by limit držby stanovila později Komise na doporučení ECB a každé dva roky by jej přezkoumávala. Rozdíl mezi slibem a platformou spočívá na politickém rozhodnutí, nikoli na technické nemožnosti: infrastruktura podmíněnosti a sledovatelnosti bude existovat od prvního dne."
+  },
+  "europol-reforme": {
+    "title": "Europol: rozpočet zvýšen na 3 miliardy eur, mandát pro šifrování",
+    "body": "Komise navrhuje největší reformu Europolu za 25 let: rozpočet se zvyšuje z 1,9 miliardy eur na 3 miliardy eur, přibude 900 zaměstnanců a mandát se rozšíří na šifrovanou komunikaci, kryptoaktiva a podvody s pomocí AI; vznikne „centrum technologií a inovací“, jehož práce na šifrování navazuje na plán ProtectEU, jenž počítá se schopností Europolu dešifrovat data do roku 2030; a automatizovaný „evropský prostor policejních dat“. Ozbrojené křídlo ProtectEU: nadnárodní agentura, která, jak již varoval jeden poslanec EP, „nesmí vést k hromadnému sledování“."
+  },
+  "pega-kouloglou": {
+    "title": "Pegasus v Parlamentu: hlídač byl sledován",
+    "body": "Citizen Lab odhaluje, že poslanec EP Stelios Kouloglou, náhradní člen výboru PEGA, tedy samotného orgánu, který vyšetřoval Pegasus a zneužívání spywaru v Evropě, byl během svého působení ve výboru napaden Pegasem (infekce datované 21. října 2022 a 6.–7. března 2023), s možným přístupem k důvěrným jednáním. Citizen Lab výslovně odmítá útok připsat konkrétnímu aktérovi; koalice nevládních organizací požaduje reakci EU. Špehování orgánu pověřeného dohledem nad spywarem je krajním převrácením demokratické kontroly a nikdo není označen za odpovědného."
+  },
+  "_machineTranslated": "2026-07-10"
+}

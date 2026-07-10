@@ -646,7 +646,12 @@ function extract() {
 }
 
 function dumpBuilt() {
-  const pages = { en: 'dist/index.html', fr: 'dist/fr/index.html', nl: 'dist/nl/index.html' }
+  const pages = {
+    en: 'dist/index.html',
+    fr: 'dist/fr/index.html',
+    nl: 'dist/nl/index.html',
+    cs: 'dist/cs/index.html',
+  }
   for (const [lang, rel] of Object.entries(pages)) {
     const $ = cheerio.load(readFileSync(join(ROOT, rel), 'utf8'))
     const lines = textLines($, $('body')[0])

@@ -1,0 +1,131 @@
+---
+id: 'social'
+part: 8
+order: 13
+title: 'Decentralizované sociální sítě'
+---
+
+<p class="part-num">
+  ČÁST 12 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Decentralizované sociální sítě
+
+Instagram, X a Facebook patří společnostem, které vás profilují a mohou vás přes noc cenzurovat nebo smazat. „Fediverse“ nabízí sítě vlastněné svými uživateli.
+
+<ToolCard tool="t-mastodon">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Nahrazuje X / Twitter</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Alternativa k X/Twitteru: sociální síť tvořená tisíci nezávislých serverů, které spolu
+    komunikují (tzv. „fediverse“).
+  </Fragment>
+  <Fragment slot="why">
+    Žádný jediný vlastník, žádný algoritmus rozhodující za vás, žádný svévolný zákaz od jedné
+    společnosti. Příspěvky jsou chronologicky řazené, bez reklam a manipulace.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého. Ideální pro informační účty, které chtějí být přítomné na místě, jež jim žádná
+    společnost nemůže odříznout.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Na joinmastodon.org vyberte server (nebo „instanci“), který vám vyhovuje, a poté si vytvořte
+      účet.
+    </li>
+    <li>
+      Nainstalujte si aplikaci (oficiální, nebo Ivory, Tusky…) a sledujte účty: uvidíte celý
+      fediverse bez ohledu na to, na jakém jsou serveru.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nostr">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Necenzurovatelné</span>
+    <span class="tool-tag">🌍 · otevřený protokol</span>
+  </Fragment>
+  <Fragment slot="what">
+    Nejde o aplikaci, ale o protokol: sociální síť, kde je vaše identita jednoduchý pár klíčů,
+    podobně jako u Bitcoinu.
+  </Fragment>
+  <Fragment slot="why">
+    Žádný e-mail, žádné heslo, žádný účet, který může kdokoli smazat. Vaše příspěvky putují přes
+    decentralizované relaye a své publikum skutečně vlastníte: nikdo vám nemůže natrvalo zakázat
+    přístup. Můžete dokonce přijímat bitcoinové spropitné („zaps“) a kdykoli změnit aplikaci, aniž
+    byste přišli o své sledující.
+  </Fragment>
+  <Fragment slot="who">
+    Informační účty a tvůrci, kteří se obávají cenzury platforem a chtějí mít skutečně vlastní
+    prostor.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte si klienta: Damus (iPhone), Amethyst nebo Primal (Android), případně webovou
+      verzi.
+    </li>
+    <li>
+      Aplikace vygeneruje váš pár klíčů. <b>Zálohujte si soukromý klíč (nsec)</b> jako seed frázi k
+      Bitcoinu: na papír, nikdy jej nesdílejte.
+    </li>
+    <li>Vytvořte si profil, sledujte lidi a povolte zaps, abyste mohli přijímat saty.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-element">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Nahrazuje Discord / Slack</span>
+    <span class="tool-tag">🌍 · federované · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    Komunitní chat ve stylu Discordu nebo Slacku, ale federovaný a s možností end-to-end šifrování.
+    Element je aplikace, Matrix síť.
+  </Fragment>
+  <Fragment slot="why">
+    Můžete hostovat vlastní server (Synapse) a mít svá data pod kontrolou. Ideální pro kolektiv,
+    redakci nebo spolek, který chce vlastní nezávislý prostor.
+  </Fragment>
+  <Fragment slot="who">Komunity a skupiny. Viz upozornění ohledně metadat níže.</Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte Element (element.io) a vytvořte si účet na veřejném serveru nebo na vlastním
+      (část 10).
+    </li>
+    <li>
+      Připojte se k místnostem nebo je vytvořte a pro soukromé konverzace zapněte end-to-end
+      šifrování.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-fediverse">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡</span>
+    <span class="tool-tag">Insta · YouTube · Reddit</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Federovaní příbuzní Instagramu (Pixelfed), YouTube (PeerTube) a Redditu (Lemmy).
+  </Fragment>
+  <Fragment slot="why">
+    Stejná logika jako u Mastodonu: žádný jediný vlastník, žádný reklamní algoritmus, žádné
+    sledování. Zveřejňujete fotografie, videa nebo diskuse, aniž byste krmili stroj na profilování.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo chtějí opustit Instagram, YouTube nebo Reddit, aniž by se vzdali daného formátu.
+  </Fragment>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Upozornění ohledně metadat</span>
+  <p>
+    Matrix dobře šifruje <em>obsah</em>, ale při federaci zúčastněné servery vidí členství v
+    místnostech a načasování zpráv. Pro vysoce citlivé použití dejte přednost SimpleX/Session nebo
+    hostujte vlastní server.
+  </p>
+</div>

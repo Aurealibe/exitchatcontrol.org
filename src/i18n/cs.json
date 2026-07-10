@@ -1,0 +1,178 @@
+{
+  "site": {
+    "title": "Ukončete Chat Control · Staňte se neovladatelnými",
+    "description": "Praktický terénní průvodce, jak uniknout Chat Control a znovu získat digitální soukromí: šifrované zprávy, e-mail, VPN, DNS, hesla, Linux, GrapheneOS, vlastní hosting. Zdarma, open source, bez sledování."
+  },
+  "nav": {
+    "skip": "Přejít na obsah",
+    "toc": "Obsah",
+    "language": "Jazyk",
+    "theme": "Vzhled",
+    "themeToggle": "Přepnout tmavý režim",
+    "toTop": "Zpět nahoru",
+    "quiz": "Kvíz"
+  },
+  "banner": {
+    "reviewNote": "Strojově přeložená sekce, čeká na kontrolu."
+  },
+  "hero": {
+    "stamp": "Hromadné sledování · EU · 2026",
+    "eyebrow": "Terénní příručka digitální suverenity",
+    "lede": "Chat Control chce skenovat vaše soukromé zprávy. Zde se krok za krokem dozvíte, jak převzít zpět kontrolu nad svými konverzacemi, daty a nástroji – od začátečníka po whistleblowera.",
+    "p1": "Občan",
+    "p2": "Pseudonymní účet",
+    "p3": "Whistleblower"
+  },
+  "status": {
+    "label": "Aktuálně · 9. července 2026",
+    "headline": "Evropský parlament nechal Chat Control projít.",
+    "body": "Návrh na zamítnutí neprošel: 314 europoslanců hlasovalo proti textu, 276 pro a 17 se zdrželo. K jeho zablokování bylo potřeba 361 hlasů. Většina chtěla zamítnutí, postup ho však pohřbil. Jeden val byl prolomen: end-to-end šifrované messengery jsou ze skenování vyloučeny (pozměňovací návrhy byly přijaty 369 a 362 hlasy). Text nyní leží na stole Rady: jeden podpis do října a „dobrovolné“ skenování vašich zpráv je povoleno do 3. dubna 2028. Souběžně se v září vrací k vyjednávání Chat Control 2.0 (CSAR), povinné skenování i pro šifrované messengery. Hrozba nepominula; usazuje se.",
+    "cta": "Okno pro změnu vybavení je právě teď, dokud je volba stále na vás.",
+    "sourceEp": "Tisková zpráva EP, 9. července 2026",
+    "sourceVotes": "oficiální výsledky jmenovitého hlasování"
+  },
+  "noscript": {
+    "notice": "JavaScript je vypnutý: dobrý instinkt. Celý průvodce funguje i bez něj; skripty potřebují jen přepínač vzhledu, filtry a kontrolní seznam."
+  },
+  "footer": {
+    "resources": "Zdroje",
+    "sourcesLaw": "Zdroje · právní předpisy",
+    "act": "Jednejte",
+    "github": "Open source na GitHubu",
+    "download": "Stáhnout průvodce (1 soubor)",
+    "proofline": "Nula trackerů, nula cookies, nula externích požadavků. Vše (písma, ikony, styly) je vloženo přímo. Ověřte si to: otevřete síťový inspektor a stránku znovu načtěte. Nic neodchází třetí straně.",
+    "disclaimer": "Tento průvodce je informační dokument o ochraně soukromí a obraně šifrování. Nedoporučuje žádnou nezákonnou činnost. Vždy sledujte legislativní novinky: situace se rychle mění.",
+    "factsUpdated": "Informace naposledy aktualizovány: 10. července 2026.",
+    "links": {
+      "council0207": "Rada EU · pozice v prvním čtení z 2. července 2026",
+      "ep2603": "Parlament · zamítnutí z 26. března 2026",
+      "ep0907": "Parlament · pozměňovací návrhy z 9. července 2026 (E2EE vyloučeno)",
+      "rollcalls": "Oficiální výsledky jmenovitého hlasování · 9. července 2026",
+      "edps": "EDPS · stanovisko ze 16. února 2026 (PDF)",
+      "reg1232": "Nařízení (EU) 2021/1232",
+      "ccOverview": "Chat Control 1.0 vs 2.0",
+      "protonCss": "Proton · skenování na straně klienta",
+      "jointAppeal": "Společná výzva technologických gigantů (19. března 2026)",
+      "bigTechScan": "Big Tech slibuje pokračovat ve skenování"
+    }
+  },
+  "sections2": {
+    "precedents": {
+      "eyebrow": "ČÁST 23 · DŮKAZY",
+      "title": "Třicet let precedentů",
+      "intro": "Každé generaci se říká, že sledování je nové, omezené a dočasné. S daty a zdroji: stejný scénář od roku 1993. Kliknutím na datum citujete položku.",
+      "kinds": {
+        "promise": "slib",
+        "creep": "nenápadné rozšiřování",
+        "struck": "zrušeno soudem",
+        "revealed": "odhaleno"
+      }
+    },
+    "observatory": {
+      "eyebrow": "ČÁST 24 · VÝVOJ V PŘÍMÉM PŘENOSU",
+      "title": "Observatoř Velkého bratra",
+      "intro": "Chat Control je jednou z pěti front. Co prošlo, co je na stole, co bylo odloženo – region po regionu, téma po tématu.",
+      "filterRegion": "Region",
+      "filterTheme": "Téma",
+      "all": "Vše",
+      "regions": {
+        "eu": "EU",
+        "fr": "Francie",
+        "world": "Svět"
+      },
+      "themes": {
+        "messaging": "Zprávy",
+        "identity": "Identita",
+        "money": "Peníze",
+        "media": "Média",
+        "aibio": "AI a biometrie"
+      },
+      "statuses": {
+        "en_vigueur": "v platnosti",
+        "adopte": "přijato",
+        "negociation": "v jednání",
+        "propose": "navrženo",
+        "rejete": "zamítnuto",
+        "suspendu": "pozastaveno",
+        "revele": "odhaleno"
+      }
+    },
+    "allies": {
+      "eyebrow": "ČÁST 25 · NEJSTE SAMI",
+      "title": "Spojenecké iniciativy",
+      "intro": "Organizace, které proti tomu bojují u soudů a v parlamentech, a projekty, jež shromažďují důkazy.",
+      "campaigns": "Kampaně a advokacie",
+      "chroniclers": "Dokumentační projekty"
+    },
+    "directory": {
+      "eyebrow": "ČÁST 26 · ARZENÁL",
+      "title": "Adresář open-source nástrojů",
+      "intro": "66 nástrojů svobodného softwaru ve 14 kategoriích. Každá položka je open source: ověřitelný kód, žádná nutná důvěra v dobrou vůli.",
+      "categories": {
+        "messagerie": "Zprávy",
+        "email": "E-mail",
+        "navigation": "Prohlížení a vyhledávání",
+        "vpn-reseau": "VPN a síť",
+        "dns": "DNS",
+        "mots-de-passe": "Hesla a 2FA",
+        "stockage-photos": "Úložiště, fotografie a zálohy",
+        "quotidien": "Každodenní nástroje",
+        "social": "Sociální sítě",
+        "ia-locale-agentique": "Lokální a agentní AI",
+        "os-mobile": "Operační systémy",
+        "selfhost": "Vlastní hosting",
+        "finance": "Finance",
+        "opsec": "OPSEC a whistleblowing"
+      }
+    },
+    "checklist": {
+      "eyebrow": "ČÁST 27 · PLÁN",
+      "title": "Kontrolní seznam pro migraci",
+      "intro": "Čtrnáct kroků, od desetiminutových úspěchů po víkendové projekty. Zaškrtnutí se ukládají pouze v tomto prohlížeči. Nic neopouští vaše zařízení.",
+      "progress": "{done} / {total} kroků dokončeno",
+      "levels": {
+        "green": "rychlé vítězství",
+        "yellow": "zabere chvilku",
+        "red": "pokročilé"
+      }
+    }
+  },
+  "manifesto": {
+    "label": "Manifest",
+    "p1": "Změna nástrojů je aktem osobní odpovědnosti, který patří každému z nás: tak odmítáte nelegitimní hromadné sledování.",
+    "p2": "Šifrování znamená <strong>chránit svůj soukromý život</strong>. Vlastní hosting znamená <strong>vymanit se ze sledování Big Tech</strong>. Převzít zpět kontrolu nad svými nástroji znamená <mark>stát se neovladatelnými a suverénními</mark>.",
+    "p3": "Boj je politický. Podpořte organizace, které se mu stavějí, například iniciativu {link}, a napište svým zástupcům. Právě to málem vedlo k pádu Chat Control.",
+    "p4": "Jelikož však řešení nejspíš nepřijde ani od volebních uren, ani od Evropského parlamentu, je na každém z nás, aby si vybojoval svobodu a chránil soukromí všemi nástroji, které internet nabízí."
+  },
+  "share": {
+    "label": "Předejte dál",
+    "share": "Sdílet tohoto průvodce",
+    "copy": "Kopírovat odkaz",
+    "copied": "Odkaz zkopírován ✓",
+    "print": "Tisk / PDF"
+  },
+  "quiz": {
+    "stamp": "Vzdělávací kvíz · 3 min",
+    "eyebrow": "Odhadněte svou odolnost vůči cenzuře",
+    "title": "Kvíz odolnosti",
+    "lede": "Kompas, ne výsledková tabulka: odpovězte na dvanáct rychlých otázek, abyste odhalili slabá místa svého nastavení – bez studu – a poté postupujte podle konkrétních řešení z průvodce.",
+    "privacyNote": "Skóre se vypočítává lokálně ve vašem prohlížeči. Nic se neodesílá ani neukládá.",
+    "start": "Spustit kvíz",
+    "readGuide": "Přečíst celý průvodce",
+    "progress": "{done} / {total} zodpovězeno",
+    "completePrompt": "Odpovězte na všech dvanáct otázek, abyste zobrazili své skóre.",
+    "resultEyebrow": "Váš výsledek",
+    "outOf": "/ 100",
+    "barsHeading": "Skóre podle oblastí",
+    "recHeading": "Vaše 3 hlavní další kroky",
+    "openGuide": "Otevřít průvodce →",
+    "restart": "Zkusit kvíz znovu",
+    "copy": "Kopírovat odkaz na výsledek",
+    "copied": "Odkaz zkopírován ✓",
+    "share": "Sdílet",
+    "shareX": "Publikovat na X",
+    "shareText": "Moje skóre odolnosti vůči cenzuře: {score}/100 — {band}. Zjistěte své:",
+    "bandsHeading": "Co skóre znamená",
+    "categoriesHeading": "Dvanáct oblastí a možnosti zlepšení"
+  }
+}

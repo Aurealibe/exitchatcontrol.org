@@ -1,0 +1,1480 @@
+Přejít na obsah
+EXIT CHAT CONTROLObsahKvíz
+🇨🇿CS
+🇬🇧English
+🇫🇷Français
+🇳🇱Nederlands
+🇨🇿Čeština
+◐
+Hromadné sledování · EU · 2026
+Terénní příručka digitální suverenity
+EXIT CHAT CONTROL_
+Chat Control chce skenovat vaše soukromé zprávy. Zde se krok za krokem dozvíte, jak převzít zpět kontrolu nad svými konverzacemi, daty a nástroji – od začátečníka po whistleblowera.
+ObčanPseudonymní účetWhistleblower
+Aktuálně · 9. července 2026
+Evropský parlament nechal Chat Control projít.
+Návrh na zamítnutí neprošel: 314 europoslanců hlasovalo proti textu, 276 pro a 17 se zdrželo. K jeho zablokování bylo potřeba 361 hlasů. Většina chtěla zamítnutí, postup ho však pohřbil. Jeden val byl prolomen: end-to-end šifrované messengery jsou ze skenování vyloučeny (pozměňovací návrhy byly přijaty 369 a 362 hlasy). Text nyní leží na stole Rady: jeden podpis do října a „dobrovolné“ skenování vašich zpráv je povoleno do 3. dubna 2028. Souběžně se v září vrací k vyjednávání Chat Control 2.0 (CSAR), povinné skenování i pro šifrované messengery. Hrozba nepominula; usazuje se.
+Okno pro změnu vybavení je právě teď, dokud je volba stále na vás.
+Tisková zpráva EP, 9. července 2026·oficiální výsledky jmenovitého hlasování
+Obsah
+00Pochopte hrozbu
+01Odstranit / Přijmout
+02Šifrované zprávy
+03Šifrovaný e-mail a PGP
+04Prohlížeč a vyhledávání
+05Šifrované DNS a Cloudflare
+06VPN: pravda
+07Cenzura a kontroly identity
+08Odejít od Googlu
+09Šifrované úložiště
+10Správce hesel
+11Dvoufaktorové ověřování a hardwarové klíče
+12Decentralizované sociální sítě
+13Finanční suverenita
+14Konverzační AI
+15Každodenní sada nástrojů
+16Vlastní hosting
+17Tor
+18Svobodné operační systémy
+19Telefonie a fyzické zařízení
+20Anonymita a OPSEC
+21Kompletní svobodný ekosystém
+22Migrace a digitální občanská neposlušnost
+23Třicet let precedentů
+24Observatoř Velkého bratra
+25Spojenecké iniciativy
+26Adresář open-source nástrojů
+27Kontrolní seznam pro migraci
+28Manifest
+ČÁST 00 · PROČ
+Pochopte hrozbu
+Než změníte nástroje, pochopte, před čím se chráníte. Jinak si nainstalujete náhodné aplikace a budete se cítit v bezpečí, i když nejste.
+Chat Control 1.0 a 2.0, jednoduše
+„Chat Control“ je přezdívka pro dva texty EU, které umožňují (nebo by vyžadovaly) skenování vašich soukromých zpráv kvůli materiálům sexuálního zneužívání dětí (CSAM). Uváděný cíl je legitimní; metoda, plošné skenování komunikace lidí, kteří nejsou podezřelí, však představuje masové sledování.
+Chat Control 1.0
+Chat Control 2.0 (CSAR)
+Text
+Regulation (EU) 2021/1232, výjimka z ePrivacy
+Návrh COM/2022/209 (Ylva Johansson, květen 2022)
+Skenování
+Dobrovolné, platformy mohou skenovat
+Povinné na základě „příkazů k odhalování“ a „opatření ke zmírnění rizik“
+Kdo
+Převážně nešifrované americké služby: Gmail, Messenger/Instagram, Skype, Snapchat, iCloud Mail, Xbox
+Všechny platformy, včetně messengerů s koncovým šifrováním
+Skenování na straně klienta: legální odposlech
+Srdcem Chat Control 2.0 je technika nazývaná skenování na straně klienta. Princip: namísto prolomení šifrování během přenosu je software nainstalován přímo do vašeho telefonu, aby kontroloval každou zprávu, fotku nebo odkaz ještě předtím, než jsou zašifrovány a odeslány. Signal to vystihl jednou větou: je to „jako malware ve vašem zařízení“.
+Technická upřímnost, přečtěte si to dvakrát
+Proti skenování na straně klienta nestačí ani VPN, ani koncové šifrování pokud aplikace nebo operační systém spolupracují. Skenování probíhá v zařízení před šifrováním: VPN nemá co chránit a šifrování nastupuje příliš pozdě. Skutečně vás chrání volba svobodného/open-source softwaru, který odmítá zavést skenování, příznivé jurisdikce, vlastní hosting a získání kontroly nad svým zařízením zpět (neupravený OS). Vše ostatní v tomto průvodci vychází z této skutečnosti.
+Nejhorší ze všeho: ten nástroj ani nefunguje
+Soukromí všech je obětováno technologii, která selhává. Vlastní studie Evropského parlamentu dochází k závěru, že žádný systém nedokáže tento obsah odhalovat bez vysoké chybovosti (protože mezi miliardami zpráv i nepatrná míra falešných pozitivních výsledků vede k milionům falešných obvinění). Údaje irské policie to ukazují: z automatizovaných hlášení tvořilo skutečný materiál jen asi 20 % a více než 11 % byly vyloženě falešně pozitivní výsledky. Zásadní výzkum („Bugs in Our Pockets“, 2021) dále ukazuje, že jakmile je skenování na straně klienta zavedeno, nevyhnutelně se začne používat k jiným účelům (terorismus, autorská práva, názory).
+Záminka: „ochrana dětí“
+Nikdo není proti ochraně nezletilých, a právě proto je to tak účinná páka. Boj proti zneužívání dětí slouží jako emocionální trojský kůň: kdo by se odvážil namítat? Pod touto zástěrkou se přijímá princip, který by byl sám o sobě jednoznačně odmítnut: automatizovaná kontrola soukromé komunikace stovek milionů lidí, kteří nejsou podezřelí. Děti jsou uváděným motivem; skutečným cílem je šifrování a soukromí všech.
+Výmluvné je, že společnosti, které na toto skenování tlačí nejvíce, jsou právě ty, jejichž obchodní model je sledování. Dne 19. března 2026 společná výzva vyzvala zákonodárce EU, aby zakotvili „dobrovolné“ odhalování; podepsaly ji:
+GoogleLinkedInSnapchatMicrosoftTikTokMeta
+„Neučinit tak by bylo nezodpovědné.“ Argument technologických gigantů pro zachování skenování zpráv.
+Tytéž společnosti dokonce oznámily, že budou zprávy nadále skenovat i poté, co právní základ 4. dubna 2026 zanikl. Občané jsou tedy žádáni, aby kontrolu svých intimních rozhovorů svěřili právě společnostem známým shromažďováním a zpeněžováním jejich dat. To je skutečná tvář Chat Control: útok na soukromí zabalený do motivu, který nikdo nemůže odmítnout.
+Nejde „jen“ o sledování
+Snaží se vás uklidnit: „týká se to jen Gmailu, Instagramu, Snapchatu, Messengeru.“ To není pravda — a právě to je nejvíce znepokojivé. Za tímto zlehčováním se skrývají tři posuny.
+Nejde o cílené sledování, ale o síťový zátah. Nesleduje podezřelé: zavádí systematický sběr komunikace celých populací. Nepřetržité sledování v rozsahu státu.
+Už nejde jen o čtení, ale o moc blokovat. Software, který zprávu kontroluje před odesláním, ji může také odmítnout odeslat. Skenování na straně klienta buduje infrastrukturu předběžné cenzury: blokování projevu dříve, než vůbec dorazí příjemci.
+Jakmile infrastruktura existuje, použije se k jiným účelům. Systém vybudovaný „pro děti“ se stává univerzálním nástrojem kontroly. Motiv se změní; stroj zůstává.
+Logický další krok: digitální euro
+Stejná logika se brzy dostane k vašim penězům. Digitální euro ECB stojí na sledovatelné měně, zakazuje společnostem držet jakékoli množství a přichází s limitem držby: ECB uvedla jako pracovní předpoklad zhruba 3 000 € na osobu a postoj, o němž hlasoval výbor Evropského parlamentu (červen 2026), ponechává stanovení limitu Komisi na doporučení ECB, s přezkumem každé dva roky. ECB přísahá, že měna nebude „programovatelná“, ale limit i sledovatelnost jsou zcela reálné možnosti. Až to přijde, řeknete si „v klidu, je to jen limit“? Je to přesně stejná rétorická past jako „je to jen Gmail“. Skutečná otázka nikdy nezní, co je kontrolováno dnes, ale jaká kontrolní infrastruktura se instaluje pro zítřek.
+Který profil jste vy?
+Žádný nástroj není kouzelný a nikdo nemusí dělat všechno. Najděte svůj profil: každá část vám řekne, jak daleko jít.
+Začátečník
+🟢 Běžný občan
+Chcete jen, aby vaše rozhovory a soukromý život přestaly být skenovány a zpeněžovány. Cíl: každodenní soukromí, aniž byste se museli stát odborníkem.
+Pokročilý
+🟡 Pseudonymní účet
+Informační účet, aktivistická stránka, tvůrce: obáváte se deanonymizace, doxxingu nebo ztráty svého účtu. Cíl: oddělit svou skutečnou identitu od veřejné.
+Expert
+🔴 Oznamovatel
+Novinář, aktivista, zdroj čelící mocnému protivníkovi (stát, zaměstnavatel). Cíl: silná anonymita, ochrana proti korelaci, předávání dokumentů bez dopadení.
+ČÁST 01 · MEMO · DIGITÁLNÍ VÝMĚNA
+Odstranit / Přijmout
+Celkový přehled na první pohled. Každý nástroj je podrobně popsán v očíslovaných oddílech níže.
+Odstranit
+WhatsApp (Meta)
+Messenger (Meta)
+Instagram (Meta)
+Snapchat
+Skype (Microsoft)
+Discord
+Gmail (Google)
+Outlook (Microsoft)
+Google Drive / Photos
+OneDrive (Microsoft)
+TikTok
+Telegram (běžné chaty)
+Přijmout
+Signal
+SimpleX Chat
+Session
+Bitchat
+Element (Matrix)
+Nostr
+Mastodon
+Proton Mail
+Tuta Mail
+Mullvad (VPN & prohlížeč)
+GrapheneOS
+ČÁST 02 · ZÁKLADY · 🟢
+Šifrované zprávy
+První krok, ten, který vás ochrání nejrychleji: opusťte WhatsApp, Messenger a Telegram ve prospěch skutečně šifrovaného (ideálně open-source) messengeru.
+Opustíte
+Zvolíte
+Proč
+WhatsApp
+Signal
+Stejná jednoduchost bez Mety a sběru metadat
+Messenger
+Signal / SimpleX
+Messenger ve výchozím nastavení nepoužívá E2EE a byl skenován v rámci Chat Control 1.0
+Telegram
+Signal / SimpleX
+Telegram ve výchozím nastavení nepoužívá end-to-end šifrování
+Signal
+🟢 ZačátečníkNahrazuje WhatsApp🇺🇸 · open-source
+K čemu slouží
+Šifrovaný messenger pro zprávy, hovory, videohovory a skupiny. Přímá náhrada WhatsAppu, stejně jednoduchá.
+Proč na tom záleží
+End-to-end šifrování ve výchozím nastavení, nezisková organizace a auditovaný protokol, který je světovým standardem. Uchovává téměř žádná metadata a tým se zavázal raději opustit EU, než zavést skenování.
+Pro koho a kdy
+Pro každého, hned od dneška. Je to první a nejužitečnější krok. Jeden háček: telefonní číslo, které můžete skrýt za uživatelské jméno.
+Instalace a použití
+Nainstalujte z signal.org (App Store, Google Play nebo přímé APK pro Android).
+Potvrďte své číslo pomocí SMS a poté nastavte PIN.
+Nastavení > Soukromí: vytvořte si uživatelské jméno, abyste skryli své číslo, a zapněte zámek registrace.
+Pozvěte své kontakty. Na počítači propojte desktopovou aplikaci s telefonem.
+signal.org →🟢🟡🔴
+SimpleX Chat
+🟡 PokročilýBez identifikátoru🌍 · open-source
+K čemu slouží
+Šifrovaný messenger bez účtu, čísla i identifikátoru. Propojíte se sdílením odkazu nebo QR kódu.
+Proč na tom záleží
+Už z principu ani servery nemohou vědět, kdo s kým mluví. V současnosti jde o nejsilnější volbu proti korelaci metadat.
+Pro koho a kdy
+Pseudonymní účty, citlivé kontakty, vysoké riziko. Je o něco mladší než Signal a má několik nedotažených míst.
+Instalace a použití
+Nainstalujte z simplex.chat (F-Droid, Google Play, App Store nebo APK).
+Zvolte místní zobrazované jméno (nikdy své skutečné jméno: zůstává ve vašem zařízení).
+Chcete-li přidat kontakt, sdílejte jednorázový zvací odkaz nebo QR kód.
+Zapněte zámek přístupovým kódem a (pro pokročilé) nakonfigurujte vlastní servery SMP.
+simplex.chat →🟡🔴
+Session
+🟡 PokročilýBez telefonu🌍 · open-source
+K čemu slouží
+Šifrování na úrovni Signalu, ale bez telefonního čísla a s onion routingem.
+Proč na tom záleží
+Vaší identitou je náhodné „Session ID“. Provoz prochází decentralizovanou sítí (Lokinet), která výrazně omezuje metadata.
+Pro koho a kdy
+Když je telefonní číslo přítěží. Menší ekosystém, nejlépe si ho nechte pro konverzace, na kterých záleží.
+Instalace a použití
+Nainstalujte z getsession.org (všechny platformy).
+„Create account“ vygeneruje vaše Session ID a obnovovací frázi.
+Obnovovací frázi si napište na papír: je to jediný klíč k vašemu účtu.
+Sdílejte své Session ID (nebo QR) s kontakty.
+getsession.org →🟡🔴
+Br
+Briar
+🔴 PokročilýOffline / P2PAndroid · open-source
+K čemu slouží
+Peer-to-peer messenger, který funguje bez internetu: přes Bluetooth, Wi-Fi Direct nebo Tor.
+Proč na tom záleží
+Žádný server, tedy nic, co by bylo možné vypnout nebo zabavit. Přežije výpadky internetu i síťovou cenzuru.
+Pro koho a kdy
+Protesty, katastrofy, odlehlé oblasti, výpadky proudu. Pouze pro Android a aplikaci musí mít oba lidé.
+Instalace a použití
+Nainstalujte z briarproject.org nebo F-Droidu (bez iOS).
+Vytvořte místní účet (přezdívka + heslo), uložený pouze v telefonu.
+Přidejte blízký kontakt naskenováním jeho QR kódu nebo vzdáleně pomocí odkazu.
+Když síť nefunguje, zapněte Bluetooth: zprávy putují ze zařízení do zařízení.
+briarproject.org →🔴
+bit
+Bitchat
+🔴 PokročilýBluetooth mesh🌍 · open-source
+K čemu slouží
+Mesh messenger Jacka Dorseyho: blízké telefony přeposílají zprávy po krocích, bez internetu, serveru i účtu.
+Proč na tom záleží
+End-to-end šifrování (AES-256-GCM) a „panic mode“, který třemi klepnutími na logo smaže vše.
+Pro koho a kdy
+Pro protesty a výpadky proudu, vedle Briaru. Používejte opatrně.
+Pozor: bez auditu
+Vlastní repozitář upozorňuje, že aplikace „has not received external security review“. Je skvělá pro odolnost, ale zatím na ni nesázejte životy.
+Instalace a použití
+Nainstalujte z App Store (iOS) nebo APK/GitHubu (Android).
+Otevřete aplikaci a zvolte přezdívku. Není třeba vytvářet účet.
+Blízká zařízení se automaticky najdou přes Bluetooth.
+V nebezpečí třikrát klepněte na logo a vše smažte (panic mode).
+bitchat →🔴
+M
+Molly
+🔴 PokročilýZabezpečený SignalAndroid · open-source
+K čemu slouží
+Zabezpečená verze Signalu pro Android, kompatibilní se stejnou sítí.
+Proč na tom záleží
+Databáze šifrovaná v klidovém stavu, automatické zamykání a varianta „FOSS“ zcela bez služeb Googlu.
+Pro koho a kdy
+Pokročilí uživatelé, zejména na GrapheneOS, s vysokým modelem hrozeb. Pouze pro Android.
+Instalace a použití
+Přidejte repozitář Molly do F-Droidu nebo stáhněte APK z molly.im.
+Pokud chcete nulovou závislost na Googlu, zvolte Molly-FOSS.
+Zaregistrujte se pomocí svého čísla (stejná síť jako Signal).
+Nastavte heslo databáze a automatické zamykání.
+molly.im →🔴
+Proti Chat Control
+Upřednostňujte aplikace open-source mimo velké americké platformy, jejichž týmy se veřejně zavázaly raději opustit EU, než zavést skenování na straně klienta (Signal to učinil). Připomínka: pokud skenování vynucuje samotný OS, aplikace vám nepomůže, proto sekce 12.
+ČÁST 03 · 🟢
+Šifrovaný e-mail a PGP
+Gmail čte vaše e-maily a sídlí v USA, pod jurisdikcí „Five Eyes“. Odchod od Gmailu/Outlooku je velký přínos s minimálním úsilím.
+Proton Mail
+🟢 ZačátečníkNahrazuje Gmail🇨🇭 · open-source · OpenPGP
+K čemu slouží
+Šifrovaná schránka, která nahrazuje Gmail nebo Outlook, a centrální účet pro celý ekosystém Proton.
+Proč na tom záleží
+Sídlí ve Švýcarsku, mimo jurisdikci „Five Eyes“. Je kompatibilní s OpenPGP: automatické šifrování mezi účty Proton a pro další PGP služby.
+Pro koho a kdy
+Pro každého. Je to nejlepší výchozí bod pro odchod od Googlu (zbytek sady najdete v části 05).
+Instalace a použití
+Vytvořte si účet na proton.me (bezplatný tarif pro začátek stačí).
+Importujte své staré zprávy a kontakty pomocí Easy Switch (je vestavěný).
+Nastavte přeposílání z Gmailu a sdělte svým kontaktům novou adresu.
+Nainstalujte mobilní aplikaci, zapněte dvoufaktorové ověřování a pokud chcete používat Thunderbird, použijte Proton Bridge.
+proton.me/mail →🟢🟡
+Tuta
+🟢 ZačátečníkNahrazuje Gmail🇩🇪 · open-source · postkvantové
+K čemu slouží
+Německá e-mailová služba, plně open-source a bez jakékoli služby Googlu.
+Proč na tom záleží
+Šifruje také předmět zprávy a některá metadata, a to šifrováním odolným vůči kvantovým počítačům. Jurisdikce EU.
+Pro koho a kdy
+Pro ty, kdo chtějí maximální šifrování metadat a plně svobodný software. Nepoužívá PGP: pro šifrované psaní lidem mimo službu zprávu chráníte heslem.
+Instalace a použití
+Vytvořte si účet na tuta.com a nainstalujte aplikaci (je dostupná na F-Droid).
+Chcete-li šifrovaně psát člověku, který službu nepoužívá: klikněte na zámek a nastavte heslo, které svému protějšku sdělíte jiným kanálem.
+Zapněte dvoufaktorové ověřování.
+tuta.com →🟢🟡
+mx
+mailbox.org · Posteo
+🟢 ZačátečníkEtický klasický e-mail🇩🇪 · UE · PGP
+K čemu slouží
+Dva etičtí evropskí poskytovatelé e-mailu s nízkou cenou a podporou PGP na straně serveru.
+Proč na tom záleží
+Dbají na soukromí a ekologii a jsou postaveni na otevřených standardech (IMAP, PGP). Fungují s jakýmkoli e-mailovým klientem.
+Pro koho a kdy
+Pro ty, kdo chtějí „klasickou“ schránku (čtenou v Thunderbirdu), ale etickou, místo uzavřené šifrované aplikace.
+Instalace a použití
+Vytvořte si účet (placený, přibližně 1 až 3 € měsíčně).
+Povolte šifrování PGP na straně serveru (funkce „Guard“ na mailbox.org).
+Nastavte účet v Thunderbirdu nebo v mobilní aplikaci podle svého výběru.
+mailbox.org →posteo.de →🟢
+PGP za jednu minutu
+PGP (Pretty Good Privacy) je šifrování založené na klíčích: máte veřejný klíč, který rozdáváte, a soukromý klíč, který držíte v tajnosti. Kdokoli s vaším veřejným klíčem vám může poslat zprávu, kterou můžete dešifrovat jen vy. Je základem šifrovaného e-mailu nezávislého na poskytovateli. Proton Mail jej zpracovává automaticky; pro ruční použití funguje OpenPGP přes Thunderbird (vestavěné od verze v78).
+ČÁST 04 · 🟢
+Prohlížeč a vyhledávání
+Chrome je reklamní sledovací nástroj. Google Search profiluje každý dotaz. Nahraďte obojí.
+Mullvad Browser
+🟡🔴 Pokročilí / expertiOchrana proti otisku prohlížeče🇸🇪 · open-source
+K čemu slouží
+Prohlížeč z Tor Browseru, ale bez sítě Tor: používejte jej s VPN pro počítač, který se obtížně sleduje.
+Proč na tom záleží
+Je vytvořený ve spolupráci s Tor Project a navržený tak, aby všichni jeho uživatelé měli stejný digitální otisk. Výsledek: namísto toho, abyste byli jedineční a tedy sledovatelní, splynete s davem. Je to nejlepší volba pro soukromí na počítači.
+Pro koho a kdy
+Pro ty, kdo chtějí jít dál než jen k blokování reklam, zejména pro pseudonymní účty a vystavené profily.
+Instalace a použití
+Stáhněte si jej z mullvad.net/browser (Windows, macOS, Linux).
+Používejte jej beze změn a nepřizpůsobujte si ho: každé přidané rozšíření nebo nastavení vás znovu učiní identifikovatelnými.
+Pro skrytí IP adresy jej používejte společně s VPN.
+mullvad.net/browser →🟡🔴
+Firefox (zabezpečený)
+🟢 ZačátečníciNáhrada za Chrome🌍 · open-source
+K čemu slouží
+Referenční svobodný prohlížeč pro každodenní používání s respektem k soukromí.
+Proč na tom záleží
+Na rozdíl od Chromu (reklamního sledovacího nástroje Googlu) Firefox vytváří nadace, která nemá zájem vás profilovat. S několika úpravami (návodem arkenfox) a rozšířením uBlock Origin se stane velmi spolehlivým.
+Pro koho a kdy
+Pro každého jako hlavní prohlížeč pro každodenní použití.
+Instalace a použití
+Nainstalujte Firefox z mozilla.org/firefox.
+Přidejte rozšíření uBlock Origin (blokování reklam a sledovačů).
+V nastavení soukromí zvolte „Přísná“, vypněte telemetrii a nastavte mazání cookies při zavření. Chcete-li jít dál, použijte návod arkenfox.
+mozilla.org/firefox →🟢
+Brave
+🟢 ZačátečníciVe výchozím nastavení vše blokuje🌍 · open-source
+K čemu slouží
+Prohlížeč založený na Chromiu, který ve výchozím nastavení blokuje reklamy a sledovače, navíc se soukromým oknem připojeným k Toru.
+Proč na tom záleží
+Je to nejjednodušší možnost pro někoho, kdo přechází z Chromu: stejný pocit při používání, ale bez sledování. Nativně blokuje reklamy na YouTube, nabízí šifrované videohovory (Brave Talk, založený na Jitsi) a přístup k Toru jedním kliknutím, praktický pro návštěvu zablokovaných webů.
+Pro koho a kdy
+Začátečníci, kteří chtějí bezbolestně přejít z Chromu. (Pokud vás funkce kryptoměn a reklamních odměn nezajímají, ignorujte je.)
+Instalace a použití
+Nainstalujte Brave z brave.com.
+Nastavte „Shields“ na „agresivní“ a pokud nechcete reklamy, vypněte Brave Rewards.
+Pro Tor: nabídka > „Nové soukromé okno s Tor“ a pak počkejte na „Tor připojen“.
+brave.com →🟢
+uBlock Origin
+🟢 ZačátečníciRozšíření🌍 · open-source
+K čemu slouží
+Rozšíření prohlížeče, které blokuje reklamy, sledovače a špionážní skripty. Krok s největším přínosem za deset sekund.
+Proč na tom záleží
+Online reklama je hlavním nástrojem sledování a profilování. Její blokování omezí většinu sledování, zrychlí stránky a sníží riziko malwaru.
+Pro koho a kdy
+Pro každého, ve Firefoxu i prohlížečích založených na Chromiu.
+Instalace a použití
+Otevřete obchod s rozšířeními ve svém prohlížeči a vyhledejte „uBlock Origin“ (původní verzi od Raymonda Hilla).
+Nainstalujte jej. Funguje ihned, bez nutnosti nastavení.
+ublockorigin.com →🟢
+DuckDuckGo · Brave Search · SearXNG
+🟢🟡 VyhledávačeNáhrada za Google Search
+K čemu slouží
+Vyhledávače, které na rozdíl od Googlu neprofilují každý dotaz.
+Proč na tom záleží
+DuckDuckGo a Brave Search neuchovávají historii spojenou s vaší identitou. Startpage poskytuje výsledky Googlu bez sledování. SearXNG jde ještě dál: jde o metavyhledávač, který lze provozovat na vlastním serveru, tedy suverenitu až po vyhledávací řádek.
+Pro koho a kdy
+Pro každého. SearXNG je určen pro ty, kdo chtějí provozovat vlastní vyhledávač.
+Instalace a použití
+V nastavení prohlížeče změňte výchozí vyhledávač na DuckDuckGo, Brave Search nebo Startpage.
+Pro SearXNG: použijte veřejnou instanci (adresář na searx.space), nebo provozujte vlastní (viz část 10).
+duckduckgo.com →search.brave.com →searx.space →🟢🟡
+ČÁST 05 · SÍŤ · DNS · 🟡
+Šifrované DNS a Cloudflare
+DNS je adresář, který převádí název webu (example.com) na strojovou adresu. Háček je v tom, že tento adresář ve výchozím nastavení provozuje váš poskytovatel internetu, takže vidí každý web, který navštívíte, i když stránka používá HTTPS. Šifrováním DNS tento seznam svému ISP vezmete zpět. Je to nenápadné nastavení, ale jedno z nejúčinnějších.
+Quad9
+🟢 ZačátečníkBlokování malwaru🇨🇭 nezisková organizace
+K čemu slouží
+Šifrovaný švýcarský DNS resolver provozovaný neziskovou organizací, který také blokuje známé škodlivé domény.
+Proč na tom záleží
+Švýcarská jurisdikce, žádné uchovávání vaší IP adresy, ochrana před phishingem a malwarem. Výborná volba typu „nastavit a zapomenout“.
+Pro koho a kdy
+Pro každého, zejména pro ty, kteří chtějí jednoduchost a dobrou jurisdikci.
+Instalace a použití
+V Androidu: Nastavení > Síť > Soukromý DNS > zadejte dns.quad9.net.
+Na iPhonu/Macu: nainstalujte DoH profil z quad9.net. Na PC: nastavte DNS-over-HTTPS v prohlížeči nebo systému.
+quad9.net →🟢🟡
+Mullvad DNS · NextDNS
+🟡 PokročilýFiltrování sítě
+K čemu slouží
+Dva šifrované resolvery, které zároveň blokují reklamy a trackery pro celé zařízení.
+Proč na tom záleží
+Mullvad DNS (Švédsko, bez logování) je zdarma a nabízí blokovací seznamy. NextDNS je vysoce přizpůsobitelný, s přehledem a profily pro jednotlivá zařízení, ale sídlí v USA a ve výchozím nastavení zaznamenává logy (v nastavení to vypněte).
+Pro koho a kdy
+Pro ty, kteří chtějí blokování reklam v celém systému bez instalace rozšíření do každého prohlížeče.
+Instalace a použití
+Mullvad DNS: použijte adresu uvedenou na mullvad.net/help/dns jako své soukromé DNS (stejný postup jako u Quad9).
+NextDNS: vytvořte profil na nextdns.io, vypněte logování a poté konfiguraci použijte na svých zařízeních.
+mullvad.net/dns →nextdns.io →🟡
+Cloudflare 1.1.1.1 (s výhradou)
+🟢 ZačátečníkRychlé, ale centralizované🇺🇸
+K čemu slouží
+Šifrované DNS Cloudflare 1.1.1.1 a aplikace WARP: rychlé, zdarma a skutečné zlepšení oproti resolveru vašeho ISP.
+Proč na tom záleží
+Je užitečné a má auditovaný závazek neuchovávat logy. Buďte však realističtí: Cloudflare už stojí před obrovskou částí webu (jako technický prostředník může vidět nešifrovaný provoz k těmto webům). Směrování DNS tam také znamená soustředění ještě větší části vaší digitální stopy u jedné americké společnosti podléhající americkému právu.
+Pro koho a kdy
+Vhodné pro každodenní použití a blokování malwaru (1.1.1.1 for Families). Pro citlivé použití se mu vyhněte nebo služby diverzifikujte: místo toho preferujte Quad9 nebo Mullvad DNS.
+1.1.1.1 →🟢
+Pi-hole · AdGuard Home
+🔴 PokročilýBlokování v celé síti🌍 · open-source
+K čemu slouží
+Blokovač reklam a trackerů, který chrání celou vaši síť najednou, nainstalovaný na malém počítači, jako je Raspberry Pi.
+Proč na tom záleží
+Zatímco uBlock Origin chrání jeden prohlížeč, Pi-hole filtruje každé zařízení v domácnosti, včetně těch, kde nelze nainstalovat rozšíření: telefony, chytré televize, připojená zařízení. Reklamy a trackery jsou blokovány na úrovni DNS ještě předtím, než se vůbec načtou. AdGuard Home je alternativa s modernějším rozhraním.
+Pro koho a kdy
+Pro domácnosti, které chtějí najednou vyčistit všechna svá zařízení a mají (nebo chtějí) Raspberry Pi či malý server.
+Instalace a použití
+Na Raspberry Pi (nebo v kontejneru) spusťte oficiální instalátor Pi-hole.
+V nastavení routeru nastavte adresu Pi-hole jako DNS server.
+Odteď se každé zařízení ve vaší síti filtruje automaticky.
+pi-hole.net →adguard home →🔴
+ČÁST 06 · 🟢
+VPN: pravda
+VPN je užitečná, ale prodává se s mnoha lžemi. Zde je, co skutečně chrání.
+Co VPN NEDĚLÁ
+VPN vás nechrání před skenováním na straně klienta v rámci Chat Control: to čte vaše zprávy na vašem zařízení, před šifrováním, a tedy před VPN. Není to ani plášť neviditelnosti: váš OS a aplikace vidí více než váš poskytovatel VPN.
+V čem je VPN dobrá
+Skryje vaši aktivitu před vaším ISP a maskuje vaši IP adresu (a tím i polohu) před weby, které navštěvujete. Je užitečná proti sledování sítě, geolokaci a cenzuře. Je to jeden dílek skládačky, ne řešení.
+Mullvad VPN
+🟢🟡🔴 Všechny úrovněBez účtu · hotovost/Monero🇸🇪 · open-source
+K čemu slouží
+VPN, která maskuje vaši IP adresu a šifruje váš provoz až k jejím serverům, aniž by kdy požadovala jediný osobní údaj.
+Proč na tom záleží
+Je to zlatý standard soukromí. Žádný e-mail, žádné jméno: při registraci dostanete prosté číslo účtu. Auditovaná politika bez logování, jediná poctivá cena (5 € měsíčně, žádné úrovně, žádné falešné sliby) a platba v hotovosti nebo Moneru. To je přesně to, na čem záleží v den, kdy se stát pokusí odříznout přístup k VPN: účet, který nelze spojit s vaší identitou, a platba, kterou banky nemohou zablokovat.
+Pro koho a kdy
+Pro každého, od občana obcházejícího kontrolu identity až po vysoce rizikový profil. Je to VPN, kterou doporučit jako první.
+Instalace a použití
+Přejděte na mullvad.net. Pokud je web ve vaší zemi zablokovaný, otevřete jej přes Tor Browser nebo jeho adresu .onion. Klikněte na „Generate account number“: nebude vyžadován e-mail ani jméno. Toto číslo si uložte do správce hesel a nikdy ho nesdílejte, je to váš jediný přístupový klíč.
+Vyberte délku předplatného a způsob platby. Cena je jednotná. Máte tři možnosti: platební karta (nejjednodušší, pokud není blokovaná), hotovost zaslaná poštou nebo kryptoměna.
+Anonymní platba kryptoměnou: klikněte na „Create a one-time payment address.“ Mullvad zobrazí adresu (Bitcoin nebo Monero) a přesnou částku. Tuto částku odešlete ze své peněženky. Pro maximální anonymitu upřednostněte Monero (soukromé už ve výchozím nastavení); Bitcoin je jednodušší, ale dohledatelný. Informace o nákupu kryptoměn najdete v části 09. Na potvrzení počítejte přibližně 30 minut.
+Stáhněte si aplikaci z mullvad.net/download (pokud je web filtrován, přes Tor) a nainstalujte ji. Na mobilu použijte App Store, Google Play nebo oficiální APK, pokud byla aplikace z vašeho obchodu stažena.
+Spusťte aplikaci, zadejte číslo účtu a poté se připojte k serveru mimo vaši zemi, ideálně mimo EU (Švýcarsko, USA…). Zapněte „kill switch“ (který odpojí internet při výpadku VPN) a DNS od Mullvadu.
+mullvad.net →🟢🟡🔴
+Proton VPN
+🟢 ZačátečníkPoctivá bezplatná úroveň🇨🇭 · open-source
+K čemu slouží
+VPN z ekosystému Proton se skutečně bezplatnou úrovní (vzácné a poctivé).
+Proč na tom záleží
+Sídlí ve Švýcarsku, je auditovaná a open-source. Její bezplatná úroveň nemá reklamy, neprodává data ani nemá datový limit (omezený je pouze počet zemí). Je ideálním vstupním bodem pro začátečníka, zejména pokud již používáte Proton Mail.
+Pro koho a kdy
+Začátečníci a každý, kdo již používá ekosystém Proton a chce jeden účet pro vše.
+Instalace a použití
+Přejděte na protonvpn.com a přihlaste se svým účtem Proton (nebo si jej vytvořte).
+Nainstalujte aplikaci (Windows, macOS, Linux, Android, iOS).
+Použijte „Quick Connect“ nebo vyberte zemi, poté zapněte kill switch a NetShield (blokování reklam a trackerů).
+protonvpn.com →🟢
+iv
+IVPN
+🟡🔴 Středně pokročilý / pokročilýBez e-mailu · bez logování🇬🇮 · open-source
+K čemu slouží
+Malý, mimořádně důsledný a transparentní poskytovatel VPN, fungující na stejném modelu jako Mullvad.
+Proč na tom záleží
+Auditovaná politika bez logování, žádný povinný e-mail, platba kryptoměnou nebo hotovostí. Nabízí dokonce možnosti ochrany proti sledování (blokování trackerů na úrovni sítě) a registraci bez jakéhokoli identifikátoru.
+Pro koho a kdy
+Solidní alternativa k Mullvadu pro pseudonymní a vysoce rizikové profily, které chtějí diverzifikovat.
+Instalace a použití
+Na ivpn.net si vygenerujte účet (vytvoří se pro vás ID, bez e-mailu).
+Zaplaťte kryptoměnou nebo hotovostí, stejně jako u Mullvadu.
+Nainstalujte aplikaci, připojte se mimo EU, zapněte kill switch a protokol WireGuard.
+ivpn.net →🟡🔴
+Tailscale · Headscale · WireGuard
+🔴 PokročilýSoukromý přístup k vašemu serveru🌍 · open-source
+K čemu slouží
+Soukromá šifrovaná síť propojující vaše zařízení s vaším serverem, aniž by jej kdy vystavila veřejnému internetu.
+Proč na tom záleží
+Namísto otevírání portů (a následných útoků) Tailscale vytváří tunel WireGuard pouze mezi vašimi autorizovanými zařízeními: váš server nemá žádnou veřejnou útočnou plochu. Headscale je verze hostovaná svépomocí, takže nezávisíte na žádné třetí straně. Samotný WireGuard poskytuje úplnou kontrolu za cenu ručního nastavení.
+Pro koho a kdy
+Každý, kdo provozuje vlastní služby. Je to bezpečný způsob, jak se zvenčí dostat k vašemu Nextcloudu nebo fotografiím.
+Instalace a použití
+Nainstalujte Tailscale na server i telefon/PC a připojte je ke stejnému účtu.
+Vaše zařízení se okamžitě uvidí v soukromé síti; ke svému serveru se dostanete na jeho adrese Tailscale.
+Pro nulovou závislost nahraďte koordinační server vlastním Headscale.
+tailscale.com →headscale.net →🔴
+ČÁST 07 · CENZURA · DIGITÁLNÍ IDENTITA · 🟡
+Cenzura a kontroly identity
+Stejná záminka („ochrana nezletilých“) se používá k vynucení kontrol identity pro přístup k internetu. Jde o plánovaný konec online anonymity, a tedy o formu cenzury. Zde je současný stav a poté, jak se tomu legálně vyhnout.
+Kde jsme (2025–2026)
+Francie. Zákon SREN (květen 2024) svěřuje regulátorovi Arcom ověřování věku; od dubna 2025 jej musí dotčené weby zavést. Nařízení ukládající kontroly věku potvrdila Conseil d’État dne 15. července 2025 a návrh zákona zakazující sociální sítě osobám mladším 15 let schválila Assemblée dne 26. ledna 2026, což znamená ověřování věku, a tedy identity, všech.
+Spojené království. Od 25. července 2025 vyžaduje Online Safety Act „vysoce účinné“ ověřování věku (občanský průkaz, platební karta, odhad z obličeje). Okamžitý výsledek: registrace k VPN během několika hodin vzrostly o více než 1 400 %. House of Lords dokonce na začátku roku 2026 projednávala věkový limit pro používání samotných VPN.
+EU. Komise představila aplikaci pro ověřování věku (duben 2025), pilotně nasazenou v pěti zemích, navrženou k propojení s evropskou peněženkou digitální identity (EUDI Wallet, eIDAS 2), kterou musí každý stát nabídnout do konce roku 2026. EFF a EDRi varují: důkaz „zero-knowledge“ je pouze volitelný a vzniká tak infrastruktura online identity, která dalece přesahuje ochranu dětí.
+Jak se tomu legálně vyhnout
+Protiopatření stojí na jedné myšlence: získat IP adresu v zemi, která tyto kontroly nevyžaduje, a opatřit si nástroje anonymně, i kdyby jednou došlo k jejich blokování.
+VPN mimo danou zemi. Připojte se k serveru mimo zemi, která filtruje (ideálně mimo EU a „14 Eyes“), s auditovanou politikou neuchovávání záznamů. Tím obnovíte přístup k sítím vyžadujícím doklad identity.
+Anonymní platba. Za VPN plaťte kryptoměnou nebo hotově (Mullvad, IVPN, Proton to přijímají). Zásadní: pokud by někdy došlo k „zákazu“ VPN, zpracovatelé plateb by mohli odmítat karty; hotovost a kryptoměny by byly jedinými zbývajícími možnostmi.
+Tor pro získání blokované VPN. Pokud se web poskytovatele z vaší země stane nedostupným, použijte Tor Browser (nebo adresu .onion) ke stažení klienta. Po instalaci je VPN pro každodenní používání mnohem rychlejší.
+Změňte zemi svého obchodu. Účet Apple/Google nastavený na jinou zemi vám vrátí aplikace stažené z místního obchodu.
+Zákony se mění, ověřte si to
+Obcházení geografického omezení je ve většině evropských zemí legální, ale situace se rychle mění: Utah (USA) kriminalizoval obcházení pomocí VPN a britská House of Lords zvažuje omezení VPN. Než se na jakoukoli metodu spolehnete, ověřte si zákony ve své zemi. Tento průvodce je o ochraně soukromí, nikoli o skrývání trestné činnosti.
+ČÁST 08 · PŘEVEZMĚTE ZPĚT KONTROLU · 🟡
+Odejít od Googlu
+Google je jediný účet, který zná váš e-mail, kalendář, soubory, pohyb i vyhledávání. Nahraďte celou sadu služeb.
+Google
+Proton
+Ostatní
+Gmail
+Proton Mail
+Tuta, mailbox.org
+Google Drive
+Proton Drive
+Nextcloud, Cryptomator
+Google Calendar
+Proton Calendar
+Tuta Calendar
+Google Password
+Proton Pass
+Bitwarden, KeePassXC
+Google One VPN
+Proton VPN
+Mullvad, IVPN
+Přitažlivost Protonu (švýcarská nezisková nadace, open-source): jeden účet nahradí celý Google, s koncovým šifrováním a jurisdikcí mimo „Five Eyes“. Můžete přecházet postupně, službu po službě. Pokud nechcete znovu centralizovat vše u jednoho poskytovatele, každý řádek nabízí nezávislou alternativu.
+ČÁST 09 · 🟡
+Šifrované úložiště
+Proton Drive
+🟢 ZačátečníkNahrazuje Google Drive / iCloud🇨🇭 · E2EE
+K čemu slouží
+Koncově šifrovaný cloud pro vaše soubory a fotografie, součást Proton.
+Proč na tom záleží
+Na rozdíl od Google Drive nebo iCloud Proton nemůže číst vaše soubory: jsou zašifrovány ještě před opuštěním vašeho zařízení. Švýcarská jurisdikce, stejný účet jako pro Proton Mail.
+Pro koho a kdy
+Pro každého jako jednoduchá přímá náhrada cloudu od Google nebo Apple.
+Instalace a použití
+Povolte Proton Drive ve svém účtu Proton a nainstalujte aplikaci.
+Zapněte automatické zálohování fotografií a poté vypněte zálohování od Google/Apple.
+proton.me/drive →🟢🟡
+Cryptomator
+🟡 PokročilýŠifrování před nahráním🇩🇪 · open-source
+K čemu slouží
+Trezor, který šifruje vaše soubory předtím, než je nahrajete do jakéhokoli cloudu, včetně Google Drive nebo Dropbox.
+Proč na tom záleží
+Ideální řešení, pokud musíte zůstat u stávajícího cloudu: zachováte si pohodlnou službu, ale poskytovatel uvidí jen zašifrovaný nesmysl. Klíč máte pouze vy.
+Pro koho a kdy
+Pro ty, kdo zatím nemohou opustit běžný cloud, ale chtějí své soubory chránit hned.
+Instalace a použití
+Nainstalujte Cryptomator (na počítač i mobil) z cryptomator.org.
+V synchronizované složce svého cloudu vytvořte „trezor“ a zvolte silné heslo.
+Vložte soubory do trezoru: zašifrují se a poté se automaticky synchronizují.
+cryptomator.org →🟡🔴
+Nextcloud
+🔴 ExpertVlastní cloud🌍 · open-source
+K čemu slouží
+Váš vlastní cloud (soubory, kalendář, kontakty, poznámky) hostovaný na vašem serveru.
+Proč na tom záleží
+Nejvyšší míra kontroly: vaše data nikdy neopustí váš hardware. Podrobnosti najdete v části 10 (Self-hosting).
+Pro koho a kdy
+Pro ty, kdo si provozují vlastní služby. Celou kartu najdete v části 10.
+→ Část 10
+nextcloud.com →🔴
+ČÁST 10 · 🟡
+Správce hesel
+Jedno silné, jedinečné heslo pro každou službu: základ všeho, co následuje. Zahoďte zápisník, přestaňte používat stejná hesla opakovaně.
+Bitwarden
+🟢 ZačátečníkNejlepší pro začátek🌍 · open-source
+K čemu slouží
+Trezor na hesla, který si vaše hesla pamatuje, vytváří je a vyplňuje za vás na všech vašich zařízeních.
+Proč na tom záleží
+Zdarma, auditovaný, multiplatformní a s koncovým šifrováním. Stačí si pamatovat jediné silné heslo. Dokonce jej můžete provozovat sami (přes Vaultwarden), takže nejste na nikom závislí.
+Pro koho a kdy
+Pro každého. Je základem veškerého zabezpečení: jedno silné, jedinečné heslo pro každou službu.
+Instalace a použití
+Vytvořte si účet na bitwarden.com a zvolte si dlouhé hlavní heslo (větu). Nikdy ho nezapomeňte: nelze ho obnovit.
+Nainstalujte rozšíření do prohlížeče a mobilní aplikaci.
+Při přihlašování nechte Bitwarden uložit vaše stará hesla a poté je nahraďte vygenerovanými.
+bitwarden.com →🟢🟡🔴
+KeePassXC
+🔴 Pokročilý100% lokální🌍 · open-source
+K čemu slouží
+Lokální trezor: šifrovaný soubor, který máte pouze vy, bez cloudu a bez účtu.
+Proč na tom záleží
+Nic neopustí vaše zařízení, pokud se nerozhodnete soubor synchronizovat sami (například přes Cryptomator). Je to volba puristů, zcela bez prostředníka.
+Pro koho a kdy
+Pro pokročilé uživatele, kteří chtějí plnou kontrolu a nulovou závislost na internetu.
+Instalace a použití
+Nainstalujte KeePassXC (na počítač) a kompatibilní mobilní aplikaci (KeePassDX na Androidu, Strongbox na iOS).
+Vytvořte soubor databáze chráněný hlavním heslem.
+Chcete-li jej mít na všech zařízeních, synchronizujte tento soubor přes šifrovaný cloud.
+keepassxc.org →🔴
+Pp
+Proton Pass
+🟢 ZačátečníkS e-mailovými aliasy🇨🇭 · open-source
+K čemu slouží
+Správce hesel z ekosystému Proton s integrovanými jednorázovými e-mailovými aliasy.
+Proč na tom záleží
+Ideální, pokud už Proton používáte: jeden účet pro e-mail, cloud i hesla. Jeho e-mailové aliasy vám ušetří nutnost všude uvádět vaši skutečnou adresu.
+Pro koho a kdy
+Pro ty, kteří chtějí mít s Protonem vše na jednom místě.
+proton.me/pass →🟢🟡
+ČÁST 11 · BEZPEČNOST · 2FA · 🟡
+Dvoufaktorové ověřování a hardwarové klíče
+Heslo, i silné, může uniknout. Dvoufaktorové ověřování (2FA) při přihlášení přidává druhý důkaz: i když vám někdo heslo ukradne, účet zůstane uzamčený. Je nezbytné pro vaše citlivé účty (e-mail, správce hesel, sociální sítě).
+Vyhněte se 2FA přes SMS
+Kód zaslaný SMS je slabým článkem: je zranitelný vůči „SIM-swapu“ (útočník si nechá vaše číslo převést) i vůči odposlechu v telefonní síti (SS7). Studie odhadují, že většina pokusů o SIM-swap je úspěšná. SMS používejte jen jako poslední možnost, nikdy ne jako hlavní ochranu.
+YubiKey · Nitrokey
+🟡🔴 Středně pokročilí / PokročilíHardwarový klíč FIDO2
+K čemu slouží
+Malý fyzický klíč (USB, často s NFC), který jediným dotykem potvrdí vaši identitu.
+Proč na tom záleží
+Jde o nejsilnější 2FA: odolává phishingu, protože klíč před odpovědí ověří skutečnou adresu webu. Nitrokey je alternativou s plně otevřeným hardwarem a firmwarem. Falešný web vás nemůže oklamat.
+Pro koho a kdy
+Pro ty, kdo chtějí maximální zabezpečení klíčových účtů. Kupte dva (jeden hlavní, jeden záložní).
+Instalace a použití
+Pořiďte si dva klíče z yubico.com nebo nitrokey.com.
+V nastavení zabezpečení každého účtu (e-mail, správce hesel…) přidejte „bezpečnostní klíč“ nebo „passkey“. Zaregistrujte oba klíče.
+Záložní klíč uchovávejte na bezpečném, odděleném místě.
+yubico.com →nitrokey.com →🟡🔴
+Aegis · Ente Auth
+🟢 ZačátečníciKódy TOTP🌍 · open-source
+K čemu slouží
+Aplikace, které generují šestimístné kódy měnící se každých 30 sekund a nahrazují Google Authenticator.
+Proč na tom záleží
+Aegis (Android) uchovává vaše kódy v místním šifrovaném trezoru bez cloudu. Ente Auth přidává koncově šifrovanou synchronizaci mezi zařízeními a prošel auditem. Je mnohem bezpečnější než SMS a zdarma.
+Pro koho a kdy
+Pro každého: jde o výchozí úroveň 2FA, kterou byste měli přijmout, před hardwarovými klíči.
+Instalace a použití
+Nainstalujte Aegis (F-Droid) nebo Ente Auth (všechny platformy).
+U každého účtu zapněte 2FA pomocí „aplikace pro ověřování“ a naskenujte zobrazený QR kód.
+Zapište si záložní kódy na papír a vytvořte šifrovanou zálohu svého trezoru.
+getaegis.app →ente.io/auth →🟢🟡
+ČÁST 12 · 🟡
+Decentralizované sociální sítě
+Instagram, X a Facebook patří společnostem, které vás profilují a mohou vás přes noc cenzurovat nebo smazat. „Fediverse“ nabízí sítě vlastněné svými uživateli.
+Mastodon
+🟢 ZačátečníkNahrazuje X / Twitter🌍 · open-source
+K čemu slouží
+Alternativa k X/Twitteru: sociální síť tvořená tisíci nezávislých serverů, které spolu komunikují (tzv. „fediverse“).
+Proč na tom záleží
+Žádný jediný vlastník, žádný algoritmus rozhodující za vás, žádný svévolný zákaz od jedné společnosti. Příspěvky jsou chronologicky řazené, bez reklam a manipulace.
+Pro koho a kdy
+Pro každého. Ideální pro informační účty, které chtějí být přítomné na místě, jež jim žádná společnost nemůže odříznout.
+Instalace a použití
+Na joinmastodon.org vyberte server (nebo „instanci“), který vám vyhovuje, a poté si vytvořte účet.
+Nainstalujte si aplikaci (oficiální, nebo Ivory, Tusky…) a sledujte účty: uvidíte celý fediverse bez ohledu na to, na jakém jsou serveru.
+joinmastodon.org →🟢🟡
+No
+Nostr
+🟡🔴Necenzurovatelné🌍 · otevřený protokol
+K čemu slouží
+Nejde o aplikaci, ale o protokol: sociální síť, kde je vaše identita jednoduchý pár klíčů, podobně jako u Bitcoinu.
+Proč na tom záleží
+Žádný e-mail, žádné heslo, žádný účet, který může kdokoli smazat. Vaše příspěvky putují přes decentralizované relaye a své publikum skutečně vlastníte: nikdo vám nemůže natrvalo zakázat přístup. Můžete dokonce přijímat bitcoinové spropitné („zaps“) a kdykoli změnit aplikaci, aniž byste přišli o své sledující.
+Pro koho a kdy
+Informační účty a tvůrci, kteří se obávají cenzury platforem a chtějí mít skutečně vlastní prostor.
+Instalace a použití
+Nainstalujte si klienta: Damus (iPhone), Amethyst nebo Primal (Android), případně webovou verzi.
+Aplikace vygeneruje váš pár klíčů. Zálohujte si soukromý klíč (nsec) jako seed frázi k Bitcoinu: na papír, nikdy jej nesdílejte.
+Vytvořte si profil, sledujte lidi a povolte zaps, abyste mohli přijímat saty.
+nostr.com →🟡🔴
+Matrix / Element
+🟡🔴Nahrazuje Discord / Slack🌍 · federované · E2EE
+K čemu slouží
+Komunitní chat ve stylu Discordu nebo Slacku, ale federovaný a s možností end-to-end šifrování. Element je aplikace, Matrix síť.
+Proč na tom záleží
+Můžete hostovat vlastní server (Synapse) a mít svá data pod kontrolou. Ideální pro kolektiv, redakci nebo spolek, který chce vlastní nezávislý prostor.
+Pro koho a kdy
+Komunity a skupiny. Viz upozornění ohledně metadat níže.
+Instalace a použití
+Nainstalujte Element (element.io) a vytvořte si účet na veřejném serveru nebo na vlastním (část 10).
+Připojte se k místnostem nebo je vytvořte a pro soukromé konverzace zapněte end-to-end šifrování.
+element.io →🟡🔴
+Pixelfed · PeerTube · Lemmy
+🟡Insta · YouTube · Reddit🌍 · open-source
+K čemu slouží
+Federovaní příbuzní Instagramu (Pixelfed), YouTube (PeerTube) a Redditu (Lemmy).
+Proč na tom záleží
+Stejná logika jako u Mastodonu: žádný jediný vlastník, žádný reklamní algoritmus, žádné sledování. Zveřejňujete fotografie, videa nebo diskuse, aniž byste krmili stroj na profilování.
+Pro koho a kdy
+Pro ty, kdo chtějí opustit Instagram, YouTube nebo Reddit, aniž by se vzdali daného formátu.
+pixelfed.org →peertube →lemmy →🟡
+Upozornění ohledně metadat
+Matrix dobře šifruje obsah, ale při federaci zúčastněné servery vidí členství v místnostech a načasování zpráv. Pro vysoce citlivé použití dejte přednost SimpleX/Session nebo hostujte vlastní server.
+ČÁST 13 · 🟡
+Finanční suverenita
+I peníze jsou sledovány a lze je cenzurovat. Účty aktivistů byly zmrazeny, dary blokovány a každá platba kartou je sledována. Finanční soukromí je součástí suverenity.
+Bitcoin (vlastní správa)
+🟡🔴Odolný vůči cenzuře
+K čemu slouží
+Digitální peníze, které držíte sami, bez prostřednictví banky.
+Proč na tom záleží
+Při vlastní správě (vaše klíče v peněžence, kterou ovládáte jen vy) nemůže nikdo vaše prostředky zmrazit ani zablokovat. Jeho soukromí není dokonalé (účetní kniha je veřejná), ale vyhýbá se bankovní cenzuře, což se hodí v den, kdy je platba odmítnuta.
+Pro koho a kdy
+Pro ochranu před zmrazením účtu nebo vyloučením z bankovních služeb a pro anonymní platby za služby, jako je VPN.
+Instalace a použití
+Pořiďte si nějaké bitcoiny (na burze nebo peer-to-peer).
+Ihned je převeďte do peněženky, kterou ovládáte vy: hardwarové peněženky (Trezor, ColdCard) nebo open-source aplikace. Nenechávejte je na burze.
+Záložní frázi pro obnovení si uložte na papír, nikdy jako fotografii ani online.
+bitcoin.org →🟡🔴
+Monero (XMR)
+🔴 PokročiléVe výchozím nastavení soukromé
+K čemu slouží
+Kryptoměna zaměřená na soukromí: částky, odesílatel i příjemce jsou ve výchozím nastavení skryté.
+Proč na tom záleží
+V tomto ohledu je přesným opakem Bitcoinu: transakce jsou soukromé už z principu. Je to nejlepší způsob, jak zaplatit za službu bez zanechání stopy vedoucí k vám.
+Pro koho a kdy
+Pro ty, kdo chtějí maximální finanční soukromí. Poznámka: Monero už bylo vyřazeno z několika evropských burz, takže často potřebujete decentralizovanou směnu.
+Instalace a použití
+Nainstalujte si peněženku (oficiální na getmonero.org nebo Cake Wallet pro mobil).
+Získejte XMR prostřednictvím decentralizované směnárenské služby (například „swapem“ z jiné kryptoměny).
+Záložní frázi pro obnovení si uložte na papír.
+getmonero.org →🔴
+Zákonnost & opatrnost
+Finanční soukromí je legální. Nezaměňujte ho za daňové úniky: přiznejte vše, co přiznáno být musí. Kryptoměny jsou volatilní a podvody jsou běžné; nikdy neriskujte více, než si můžete dovolit ztratit, a než začnete jednat, nejprve se informujte.
+ČÁST 14 · SLEPÉ MÍSTO · ŠÍLENSTVÍ KOLEM AI · 🟡
+Konverzační AI
+Zatímco bojujeme za šifrování svých zpráv, stovky milionů lidí svěřují své nejniternější myšlenky ChatGPT, Gemini nebo Copilot na amerických serverech. To je slepé místo celého příběhu. Naprosté šílenství.
+To, co napíšete cloudové AI, je písemné přiznání s časovým razítkem, které se ukládá. Horší než zpráva: vyklopíte své obavy, informace o zdraví, financích, pracovní tajemství, často upřímněji než příteli. A na rozdíl od šifrovaného komunikátoru je to vše na serveru čitelné jako prostý text.
+Co říkají fakta (2025–2026)
+Spotřebitelské verze ve výchozím nastavení trénují na vašich datech. V lednu 2026 americký soudce nařídil OpenAI předložit 20 milionů konverzací ChatGPT jako důkaz: dotčení uživatelé o tom nebyli ani informováni, ani konzultováni. Smazání chatu nezaručuje, že je pryč. A při jednom úniku obsahovalo 47 000 zveřejněných konverzací e-maily, telefonní čísla a znovu identifikovatelné intimní údaje.
+Řešení: lokální AI
+Ollama · LM Studio · Jan · GPT4All
+🟡🔴Nahrazuje ChatGPT🌍 · 100% lokální
+K čemu slouží
+Software pro spuštění modelu AI přímo na vašem vlastním počítači.
+Proč na tom záleží
+Vaše otázky nikdy neopustí zařízení: žádný server, žádný účet, žádná telemetrie a funguje i offline. Kvalita závisí na vašem hardwaru, ale nic neuniká. Ollama a LM Studio jsou nejsnazší; Jan a GPT4All míří na maximální soukromí.
+Pro koho a kdy
+Každý, kdo používá AI i pro trochu osobní témata a nechce je předávat americkému serveru.
+Instalace a použití
+Pro pozvolný začátek nainstalujte LM Studio nebo Jan (grafické rozhraní jako u běžné aplikace).
+Stáhněte si model nabízený v aplikaci (například Llama nebo Mistral), který odpovídá výkonu vašeho zařízení.
+Pusťte se do chatování: vše se děje lokálně. Ollama je verze pro příkazový řádek pro techničtěji zaměřené uživatele.
+lmstudio.ai →jan.ai →ollama.com →🟡🔴
+Pp
+PocketPal AI
+🟡🔴Nahrazuje ChatGPT na mobilu📱 · 100% lokální
+K čemu slouží
+Aplikace, která spouští modely AI přímo ve vašem telefonu, zcela offline.
+Proč na tom záleží
+Vaše prompty nikdy neopustí telefon: žádný účet, žádný cloud, žádná telemetrie a funguje i v režimu letadlo. Je open source (MIT), stahuje modely GGUF (Gemma, Qwen, Phi, Llama) z Hugging Face a spouští je na CPU, GPU nebo NPU vašeho zařízení. Mobilní protějšek Ollama a LM Studio.
+Pro koho a kdy
+Každý, kdo sahá po ChatGPT v telefonu s osobními otázkami a nechce je předávat americkému serveru.
+Instalace a použití
+Nainstalujte PocketPal z App Store nebo Google Play (případně jej sestavte ze zdrojového kódu).
+Otevřete Models, vyberte model vhodný pro váš telefon a stáhněte jej.
+Načtěte ho a chatujte: vše běží offline přímo v zařízení.
+pocketpal.dev →github →🟡🔴
+Duck.ai · Lumo (Proton)
+🟢🟡Cloud zaměřený na soukromí
+K čemu slouží
+Přístup ke cloudové AI, který je ale vytvořený s ohledem na soukromí, když lokální AI není možná.
+Proč na tom záleží
+Duck.ai (DuckDuckGo) poskytuje anonymizovaný přístup k několika modelům. Lumo (Proton) šifruje výměny a netrénuje na nich. Je to mnohem lepší než spotřebitelský ChatGPT, ale stále jde o vzdálený server.
+Pro koho a kdy
+Ti, kdo chtějí pohodlí cloudu, aniž by krmili giganty. Nechte tam jen necitlivá témata.
+duck.ai →lumo →🟢🟡
+Jednoduché pravidlo
+Nikdy nevkládejte do cloudové AI nic, co byste neřekli cizímu člověku, který si to nahrává: identitu, údaje o zdraví, hesla, pracovní tajemství, přiznání. Pro cokoli citlivého používejte lokální AI.
+ČÁST 15 · NAHRAĎTE ZBYTEK · 🟡
+Každodenní sada nástrojů
+Google a Apple nejsou jen e-mail: mapy, poznámky, kalendář, fotky, videohovory – všechno je spojeno s vaší identitou. Zde je návod, jak nahradit každý dílek postupně, aniž byste přišli o pohodlí.
+Organic Maps · OsmAnd
+🟢 ZačátečníkNahrazuje Google Maps🌍 · open-source
+K čemu slouží
+Mapové a navigační aplikace postavené na OpenStreetMap, které fungují offline.
+Proč na tom záleží
+Google Maps zaznamenává každou cestu a vytváří mrazivě přesnou historii polohy. Organic Maps nic nesleduje a nezobrazuje reklamy; OsmAnd je určen pro pokročilé uživatele (turistika, vrstevnice, podrobná navigace).
+Pro koho a kdy
+Pro každého. Aktuální dopravní informace a veřejná doprava jsou méně kompletní než u Googlu, ale pro každodenní navigaci jsou vynikající.
+Instalace a použití
+Nainstalujte z F-Droidu, App Storu nebo Google Play.
+Předem si stáhněte mapy oblastí, které potřebujete, pro offline použití.
+organicmaps.app →osmand.net →🟢
+No
+Standard Notes · Joplin · CryptPad
+🟢🟡Nahrazuje Docs / Notion🌍 · open-source
+K čemu slouží
+Koncově šifrované poznámky a dokumenty jako náhrada za Google Docs, Notion nebo Evernote.
+Proč na tom záleží
+Standard Notes (od Protonu) ve výchozím nastavení šifruje vaše poznámky. Joplin pracuje s poznámkovými bloky v Markdownu s volitelným šifrováním a synchronizací podle vaší volby. CryptPad (francouzský) nabízí plně šifrovanou obdobu Google Docs v reálném čase.
+Pro koho a kdy
+Pro každého na poznámky; CryptPad pro spolupráci více lidí.
+Instalace a použití
+Standard Notes / Joplin: vytvořte si účet, nainstalujte aplikaci a zapněte šifrování (ve Standard Notes je ve výchozím nastavení zapnuté, v Joplinu jej musíte zapnout).
+CryptPad: použijte cryptpad.fr nebo jinou instanci, pro začátek není potřeba účet.
+standardnotes.com →joplinapp.org →cryptpad.org →🟢🟡
+Jitsi Meet · Element Call
+🟢🟡Nahrazuje Zoom / Meet🌍 · open-source
+K čemu slouží
+Nástroje pro videokonference bez účtu nebo náročné instalace, které nahrazují Zoom, Google Meet nebo Teams.
+Proč na tom záleží
+Jitsi Meet běží v prohlížeči, nevyžaduje účet a lze jej hostovat na vlastním serveru (je také základem Brave Talk). Element Call je koncově šifrovaný a federovaný přes Matrix. Pro jednoduchý, plně šifrovaný hovor poslouží i hovory v Signalu.
+Pro koho a kdy
+Pro každého. Na veřejném serveru Jitsi jsou hovory více účastníků šifrované při přenosu; koncové šifrování je volitelné.
+Instalace a použití
+Jitsi: přejděte na meet.jit.si, vytvořte název místnosti a sdílejte odkaz. Není třeba nic instalovat.
+Element Call: z aplikace Element (Matrix) zahajte hovor v místnosti.
+jitsi.org →element.io/element-call →🟢🟡
+Ente · Immich
+🟡🔴Nahrazuje Google Photos🌍 · open-source
+K čemu slouží
+Dva způsoby, jak uchovávat své fotky, aniž byste je předávali Googlu nebo Applu.
+Proč na tom záleží
+Ente je spravovaná služba s koncovým šifrováním, rozpoznáváním a vyhledáváním přímo v zařízení: jednoduchá a bezpečná. Immich je klon Google Photos, který hostujete sami (včetně vyhledávání obličejů a objektů), pro ty, kdo zvládnou provoz vlastního serveru.
+Pro koho a kdy
+Ente pro každého; Immich pro ty, kdo hostují sami. Poznámka: Immich není koncově šifrovaný, jeho bezpečnost závisí na vašem serveru.
+Instalace a použití
+Ente: nainstalujte aplikaci, vytvořte si účet a zapněte automatické zálohování fotek z fotoaparátu.
+Immich: nasaďte jej na svůj server (viz část 10) pomocí Dockeru a poté připojte mobilní aplikaci.
+ente.io →immich.app →🟡🔴
+SimpleLogin · addy.io
+🟢🟡E-mailové aliasy🌍 · open-source
+K čemu slouží
+Jednorázové e-mailové aliasy: jedinečná adresa pro každý web, která přeposílá zprávy do vaší skutečné schránky, aniž by ji kdy odhalila.
+Proč na tom záleží
+Přestanete všude uvádět svou skutečnou adresu. Pokud dojde k úniku dat z webu nebo vám posílá spam, zrušíte tento jediný alias a okamžitě víte, kdo vaše data unikl. SimpleLogin je integrován s Protonem; addy.io nabízí v bezplatném tarifu neomezené množství aliasů.
+Pro koho a kdy
+Pro každého, a zejména pro pseudonymní účty, které chtějí oddělit své registrace.
+Instalace a použití
+Vytvořte si účet a nainstalujte rozšíření do prohlížeče.
+Při každé registraci si místo zadávání skutečné adresy vygenerujte nový alias.
+simplelogin.io →addy.io →🟢🟡
+Šifrované zálohy
+🟡🔴Cryptomator · restic🌍 · open-source
+K čemu slouží
+Způsob zálohování telefonu a počítače, který data zašifruje předtím, než odejdou do jakéhokoli cloudu.
+Proč na tom záleží
+Zálohy iCloud/Google jsou často přístupné poskytovateli, a tedy i soudům. Cryptomator šifruje vaše soubory před jejich odesláním do jakéhokoli cloudu; restic vytváří automatické šifrované zálohy; Proton Drive je koncově šifrovaný. Na iPhonu zapněte „Advanced Data Protection“, abyste zašifrovali své zálohy na iCloudu.
+Pro koho a kdy
+Každý by měl své zálohy šifrovat. Zlaté pravidlo: dvě šifrované kopie, na dvou médiích, na dvou místech.
+Instalace a použití
+iPhone: Nastavení > vaše jméno > iCloud > Advanced Data Protection: zapněte ji.
+PC: nainstalujte Cryptomator, vytvořte trezor a před synchronizací do cloudu do něj vložte své soubory.
+cryptomator.org →restic.net →🟡🔴
+RG
+Vymažte svá data (GDPR)
+🟡Datoví zprostředkovatelé
+K čemu slouží
+Odstranění vašich osobních údajů od „datových zprostředkovatelů“, kteří je shromažďují a dále prodávají.
+Proč na tom záleží
+V Evropě vám GDPR (článek 17) poskytuje právo na výmaz: můžete bezplatně požadovat, aby společnost vaše údaje smazala, zpravidla do jednoho měsíce. Služby jako Incogni tyto žádosti za poplatek automatizují ve velkém měřítku.
+Pro koho a kdy
+Pro ty, kdo chtějí snížit svou digitální stopu. Poznámka: data se postupem času znovu objevují a toto se netýká veřejných záznamů ani sociálních sítí. Udělat to svépomocí je zdarma, ale zdlouhavé.
+Instalace a použití
+Pro ruční žádost: napište zprostředkovateli, uveďte článek 17 GDPR a požádejte o výmaz.
+Pro automatizaci: předplaťte si službu pro odstraňování dat a nechte ji posílat žádosti vaším jménem.
+cnil.fr →incogni.com →🟡
+ČÁST 16 · POKROČILÁ SEBEOBRANA · 🔴
+Vlastní hosting
+Nejvyšší úroveň suverenity: provozujte své služby sami. Vaše data jsou na vašem hardwaru, v jurisdikci, kterou si zvolíte.
+Yh
+YunoHost · Umbrel · Start9
+🔴 PokročiléServer na klíč🌍 · open-source
+K čemu slouží
+Systémy, které promění starý počítač nebo Raspberry Pi v osobní server s katalogem aplikací, jež nainstalujete několika kliknutími.
+Proč na tom záleží
+Vlastní hosting zní děsivě, ale tyto nástroje udělají většinu práce za vás. YunoHost dokonce provozuje váš vlastní e-mail a jednotné přihlašování. Umbrel nabízí obchod s více než 300 aplikacemi, oblíbený mezi lidmi zaměřenými na soukromí a Bitcoin. Start9 šifruje zálohy a každé službě ve výchozím nastavení přidělí Tor adresu.
+Pro koho a kdy
+Pro pokročilé uživatele připravené věnovat odpoledne budování vlastního cloudu. Je to nejradikálnější strukturální protiváha vůči Chat Control.
+Instalace a použití
+Pořiďte si starý počítač, Raspberry Pi nebo si pronajměte malý server (VPS) v zemi chránící soukromí.
+Nainstalujte YunoHost, Umbrel nebo Start9 podle jejich oficiálního návodu.
+Z katalogu nainstalujte Nextcloud, Matrix server, fotogalerii atd.
+Přistupujte k němu soukromě přes Tailscale (sekce VPN), místo abyste server vystavili veřejnosti.
+yunohost.org →umbrel.com →start9.com →🔴
+Nextcloud
+🔴 PokročiléNahradí celý Google🇩🇪 · open-source
+K čemu slouží
+Váš vlastní cloud: soubory, kalendář, kontakty, fotky, poznámky a společně upravované dokumenty na vašem serveru.
+Proč na tom záleží
+Je to plnohodnotná domácí náhrada za Google Drive, Calendar a Contacts. Volíte si jurisdikci a nikdo jiný nekontroluje vaše soubory. Poznámka: ve výchozím nastavení jde o soukromí typu „váš server“, nikoli o end-to-end šifrování; musíte jej udržovat aktualizovaný.
+Pro koho a kdy
+Pro ty, kdo provozují vlastní hosting. Nejsnazší cesta je nainstalovat jej přes YunoHost nebo Umbrel.
+nextcloud.com →🔴
+Matrix Synapse
+🔴 PokročiléVáš chatovací server🌍 · open-source
+K čemu slouží
+Váš vlastní Matrix chatovací server pro Element a šifrované hovory.
+Proč na tom záleží
+Provozováním serveru ovládáte také metadata (kdo s kým mluví a kdy), slabé místo federace Matrixu. Je to komunitní chat, který vlastníte jen vy.
+Pro koho a kdy
+Komunity, kolektivy a redakce, které chtějí vlastní nezávislý federovaný prostor.
+element.io/server →🔴
+www
+Vlastní web
+🟡🔴Zajistěte, aby váš hlas nešel umlčet zákazem
+K čemu slouží
+Váš vlastní web na vlastní doméně, kde váš obsah nezávisí na žádné platformě.
+Proč na tom záleží
+V den, kdy síť smaže nebo pozastaví váš účet, zmizí veškerá vaše práce. Osobní web je vaše kotva: vaše příspěvky tam zůstávají, archivované a aktuální, ať se stane cokoli. Přesně tak to dělají opatrné informační účty. Statický web (vytvořený pomocí Hugo, Astro nebo Jekyll) stačí a lze jej publikovat téměř zdarma; pro dynamický blog poslouží WordPress nebo Ghost provozovaný na vlastním serveru.
+Pro koho a kdy
+Informační účty, tvůrci, aktivisté, kdokoli, kdo publikuje a obává se cenzury platforem.
+Instalace a použití
+Kupte si doménové jméno (ideálně od registrátora respektujícího soukromí).
+Vyberte generátor statických webů (Astro, Hugo) a hostujte výstup, nebo nainstalujte WordPress/Ghost na svůj server.
+Vždy na něj odkazujte ze svých účtů na sociálních sítích: vaše publikum vás najde, i když jeden účet padne.
+astro.build →ghost.org →🟡🔴
+Otázka jurisdikce
+Vlastní hosting také znamená volbu kde vaše data jsou. Server doma nebo v zemi chránící soukromí se vyhne povinnostem skenování uloženým velkým platformám. Je to nejradikálnější strukturální protiváha vůči Chat Control.
+ČÁST 17 · 🔴
+Tor
+Síť, která odděluje, kdo jste, od toho, co děláte online.
+Tor Browser
+🔴 PokročiléAnonymita v síti🌍 · open-source
+K čemu slouží
+Síť, která odděluje, kdo jste, od toho, co děláte online, přístupná prostřednictvím Tor Browseru.
+Proč na tom záleží
+Váš provoz prochází několika šifrovanými relé po celém světě: žádné z nich nezná zároveň vaši identitu i cíl. Je to nástroj novinářů a jejich zdrojů i způsob, jak se dostat na zablokovaný web (například pro stažení cenzurované VPN).
+Pro koho a kdy
+Pro osoby s vysokým rizikem a každého, kdo musí oddělit svou aktivitu od své skutečné IP adresy. Používejte ho příležitostně, ne jako každodenní prohlížeč.
+Instalace a použití
+Stáhněte si Tor Browser z torproject.org (Windows, macOS, Linux, Android).
+Spusťte ho a klikněte na „Připojit“. Pokud je Tor ve vaší zemi blokován, zapněte „bridge“.
+Procházejte web bez maximalizace okna, bez instalace rozšíření a bez přihlašování ke svým skutečným účtům.
+torproject.org →🔴
+Omezení, ne magie
+Tor chrání přenos, ne vaše návyky: přihlaste se ke svému skutečnému účtu a odhalíte svou anonymitu. Je pomalejší a výstupní uzel vidí nešifrovaný provoz (používejte HTTPS). Pro skutečně vážnou anonymitu ho kombinujte s Tails (část 12).
+ČÁST 18 · 🔴
+Svobodné operační systémy
+Základní kámen. Pokud lze skenování na straně zařízení vynutit přímo operačním systémem, jedinou skutečnou obranou je mít tento OS pod kontrolou. Platí to pro telefon (GrapheneOS) i počítač (Linux). Nepodceňujte to: dokud zůstáváte u Windows, macOS nebo Androidu od Googlu, svůj stroj ve skutečnosti neovládáte.
+GrapheneOS
+🔴 PokročiléMobilní systém bez GoogluAndroid · Pixel · open-source
+K čemu slouží
+Android zcela bez Googlu, nainstalovaný na telefonu Pixel: mobilní suverenita.
+Proč na tom záleží
+Je to strukturální obrana par excellence proti OS nebo obchodům s aplikacemi, které by vás skenovaly. Služby Googlu ve volitelném sandboxu, síťová oprávnění pro každou aplikaci, izolované profily, automatický restart, který vymaže klíče z paměti, a PIN pod nátlakem, který telefon vymaže. Je tak respektovaný pro svou bezpečnost, že jej používají i cíle spywaru.
+Pro koho a kdy
+Lidé vystavení riziku, ale také každý občan ochotný koupit si Pixel, aby znovu převzal kontrolu nad svým telefonem.
+Instalace a použití
+Pořiďte si kompatibilní telefon Google Pixel (z bezpečnostních důvodů jde o jediný podporovaný hardware).
+Na počítači přejděte na grapheneos.org/install a postupujte podle webového instalátoru (několik kliknutí, bez nutnosti terminálu).
+Pro své aplikace nainstalujte bezplatný obchod F-Droid; sandboxovaný Google Play přidejte jen v případě potřeby.
+Nastavte dlouhou přístupovou frázi (ne čtyřmístný PIN) a naučte se používat režim „Lockdown“.
+grapheneos.org →🔴
+Linux (na desktopu)
+🟡🔴Nahrazuje Windows / macOS🌍 · zdarma
+K čemu slouží
+Svobodný operační systém pro váš počítač, který nahrazuje Windows nebo macOS. Existuje v mnoha variantách, jimž se říká „distribuce“.
+Proč na tom záleží
+Pro mnoho lidí je to slepé místo: šifrují své zprávy, ale ponechávají si Windows, který nepřetržitě posílá telemetrii Microsoftu (jeho funkce „Recall“ se pokoušela průběžně pořizovat snímky obrazovky), nebo macOS, který hlásí spouštěné aplikace. Linux vás nešpehuje, je zdarma, oživí staré počítače a konečně z vás udělá pána vašeho stroje. Je jednodušší, než napovídá jeho pověst: moderní distribuce vypadají jako Windows nebo macOS.
+Pro koho a kdy
+Přechod může zvládnout kdokoli. Pro začátek zkuste Linux Mint (nejbližší Windows) nebo Fedora; pro stabilitu Debian. Nemusíte nic mazat: nejprve si jej můžete vyzkoušet a pak nainstalovat vedle svého současného systému.
+Instalace a použití
+Nejste si jistí, kterou distribuci zvolit? Vyplňte kvíz distrochooser.de/fr, který vám doporučí tu správnou pro vaše potřeby.
+Vyzkoušejte si ji bez instalace čehokoli, přímo v prohlížeči, na distrosea.com.
+Až budete rozhodnuti, stáhněte obraz distribuce a vytvořte zaváděcí USB (pomocí Ventoy nebo Balena Etcher).
+Spusťte počítač z USB a systém si vyzkoušejte „live“, poté spusťte instalaci. Povolte nabízené šifrování disku.
+distrochooser.de/fr →distrosea.com →linuxmint.com →🟡🔴
+Tails
+🔴 PokročiléAmnézické USB🌍 · vše přes Tor
+K čemu slouží
+Systém, který se spouští z USB flash disku, směruje veškerý provoz přes Tor a po vypnutí nezanechá žádné stopy .
+Proč na tom záleží
+Po vypnutí je vše zapomenuto: je „amnézický“. Ideální pro citlivou jednorázovou práci na počítači, který není váš, aniž by po vás cokoli zůstalo.
+Pro koho a kdy
+Whistlebloweři, novináři, zdroje. Referenční nástroj pro vysoce rizikovou práci.
+Instalace a použití
+Stáhněte si Tails z tails.net a podle průvodce vytvořte USB flash disk.
+Restartujte počítač z tohoto USB. Použijte jej a pak jej vypněte: vše zmizí.
+tails.net →🔴
+Qubes OS · postmarketOS
+🔴 ExpertSegmentace🌍 · open-source
+K čemu slouží
+Dva okrajové systémy: Qubes rozděluje váš počítač do izolovaných virtuálních strojů; postmarketOS spouští Linux na starých telefonech.
+Proč na tom záleží
+Qubes izoluje každou činnost (práci, bankovnictví, rizikové prohlížení) do vlastního oddílu: kompromitace nedosáhne na zbytek. postmarketOS prodlužuje život telefonů opuštěných jejich výrobcem.
+Pro koho a kdy
+Zkušení uživatelé s velmi vysokým modelem hrozeb.
+qubes-os.org →postmarketos.org →🔴
+Zabezpečte své zařízení
+I bez změny OS můžete hodně získat: instalujte aplikace přes F-Droid (svobodný obchod) nebo Aurora Store, nahraďte služby Googlu pomocí microG, vytvořte oddělené profily, odeberte zbytečná síťová oprávnění, vypněte automatické zálohování do cloudu a reklamní ID.
+ČÁST 19 · HARDWARE · 🔴
+Telefonie a fyzické zařízení
+I ta nejlepší aplikace je k ničemu, pokud vás prozradí samotné zařízení. Zde jsou hardwarové hrozby a kroky, které je neutralizují.
+Telefonní číslo je sledovací nástroj
+Vaše číslo propojuje SIM kartu, zařízení (jeho identifikátor IMEI), polohu i identitu (ve většině zemí je k nákupu SIM vyžadován doklad totožnosti). Je to vlákno, které umožňuje vše vzájemně propojit.
+Pro citlivé kontakty používejte komunikátory bez telefonního čísla (SimpleX, Session) a vždy upřednostňujte Signal před SMS.
+Pro oddělenou identitu omezuje propojení už při nákupu SIM „pouze pro data“ nebo předplacená eSIM (ověřte si pravidla ve své zemi).
+IMSI-catchery & mobilní síť
+„IMSI-catchery“ (nebo „stingrays“) jsou falešné mobilní vysílače, které nutí telefony se k nim připojit, aby mohly zaznamenat jejich identifikátor a někdy zachytávat komunikaci, často přepnutím na slabě šifrovanou síť 2G. Současně stará chyba sítě (SS7) stále umožňuje zachytávání SMS a vzdálené určování polohy telefonu: další důvod, proč se SMS vzdát.
+V nastavení vypněte 2G (je to možné na Androidu a GrapheneOS), abyste odstranili hlavní vektor odposlechu.
+Na protestu nebo v citlivé oblasti přepněte do režimu letadlo nebo vložte telefon do Faradayova pouzdra (které blokuje veškerý signál). EFF dokonce zveřejňuje bezplatný nástroj Rayhunter pro detekci IMSI-catcherů.
+Biometrie, nebo přístupový kód?
+Prst lze vynutit, přístupový kód ne
+Váš obličej nebo prst lze přiložit ke snímači, když jste zadržováni (na hranici nebo při zatčení); heslo, které máte v hlavě, nikoli. Před rizikovou situací vynuťte návrat k zadání přístupového kódu: na iPhonu podržte boční tlačítko a tlačítko hlasitosti (obrazovka „SOS“); na Androidu/GrapheneOS použijte v nabídce vypnutí Lockdown, který deaktivuje biometrii, dokud nezadáte PIN. Zvolte dlouhou přístupovou frázi, ne čtyřmístný PIN. GrapheneOS dokonce nabízí PIN pod nátlakem, který telefon vymaže.
+Bez Microsoftu, bez Applu
+Nezapomeňte na počítač: Windows nepřetržitě odesílá telemetrii (a jeho funkce „Recall“ se pokoušela průběžně pořizovat snímky obrazovky), macOS hlásí aplikace, které spouštíte. Skutečnou cestou ven je Linux (viz část 12). Pokud to není možné, vypněte telemetrii, reklamní ID a „Recall“ a přidejte odchozí firewall (například Little Snitch na Macu).
+ČÁST 20 · 🔴
+Anonymita a OPSEC
+Pro pseudonymní účet a oznamovatele. Zde už nechráníte jen zprávu: chráníte identitu.
+Pseudonymita vs. anonymita
+Zlaté pravidlo: nikdy nepropojujte svou skutečnou identitu s veřejnou. Ne stejný e-mail, číslo, zařízení, síť, hodiny zveřejňování ani styl psaní. Jediný únik oba světy propojí.
+Účty bez identity : SimpleX a Session nevyžadují číslo; kombinujte je s jednorázovými e-mailovými aliasy. Dávejte pozor na přeprodávaná, dohledatelná „virtuální čísla“.
+Čistá metadata : zveřejněná fotografie často obsahuje datum, model zařízení a někdy i GPS souřadnice (data EXIF). Před zveřejněním je odstraňte pomocí Metadata Cleaner, mat2 nebo ExifTool; sledujte také názvy souborů a metadata dokumentů.
+Síťová antikorelace : použijte Tor/Tails k oddělení své aktivity od domácí IP adresy. Nikdy nemíchejte osobní a pseudonymní sítě. SIM karta vedená na vaše jméno prozradí vaši polohu bez ohledu na cokoli dalšího.
+Segmentace : zařízení, nebo alespoň profil, vyhrazený pro veřejnou identitu, samostatný správce hesel a nikdy žádné přihlášení napříč oběma světy.
+Předávání dokumentů jako zdroj
+SecureDrop je anonymní systém pro zasílání dokumentů, který mnoho redakcí používá k přijímání materiálů od zdrojů. Mnoho médií také zveřejňuje klíč PGP a kontakt na Signal. Nikdy nic neodesílejte z pracovního hardwaru ani z běžně používané sítě.
+Upřímně: nepřeceňujte se
+Silná anonymita vůči státnímu protivníkovi je obtížná a nespolehlivá. Tento průvodce poskytuje orientaci, ne záruky. Pokud na tom závisí životy, seznamte se s autoritativními zdroji: EFF Surveillance Self-Defense, Freedom of the Press Foundation, Privacy Guides. Pouze v přísně obranném a novinářském kontextu.
+ČÁST 21 · JAK POKRAČOVAT DÁL
+Kompletní svobodný ekosystém
+Úplně se zbavit Googlu znamená nahradit každou součást svobodnou alternativou. Společná logika (svobodný software + kontrola nad vaším zařízením + vlastní hosting) je skutečnou odpovědí na skenování na straně klienta.
+Kancelář
+LibreOffice
+OnlyOffice
+Média
+VLC
+Jellyfin
+FreeTube / NewPipe
+Audacity · OBS
+GIMP · Inkscape
+Calibre · Shotcut
+Cloud & síť
+Nextcloud
+Pi-hole
+KDE Connect
+Svobodný mobilní software
+F-Droid · Aurora
+microG
+postmarketOS
+Zabezpečení
+Bitwarden
+KeePassXC
+Wireshark
+E-mail & desktop
+Thunderbird
+FairEmail
+Vývoj & pokročilé nástroje
+Termux · git
+QEMU / KVM · Wine
+Flatpak · GNU/Linux
+ČÁST 22 · JEDNEJTE
+Migrace a digitální občanská neposlušnost
+Plán krok za krokem
+1. týden 🟢 : Nainstalujte Signal a přiveďte tam své blízké. Přejděte na Proton Mail nebo Tuta. Nastavte si správce hesel a uBlock Origin.
+2. týden 🟡 : Přesuňte soubory do šifrovaného cloudu, nahraďte Chrome/Vyhledávání Google, pořiďte si VPN, založte si účet na Mastodon.
+Poté 🔴 : Podle svého profilu: GrapheneOS, Tor/Tails, vlastní hosting, disciplína OPSEC.
+Časté chyby
+Věřit, že stačí jeden nástroj; používat své skutečné číslo pro anonymní účet; nainstalovat deset aplikací, aniž byste změnili své návyky; zapomínat, že slabým článkem je často samotné zařízení.
+ČÁST 23 · DŮKAZY
+Třicet let precedentů
+Každé generaci se říká, že sledování je nové, omezené a dočasné. S daty a zdroji: stejný scénář od roku 1993. Kliknutím na datum citujete položku.
+1993slib
+Čip Clipper
+NSA prosazuje šifrovací čip s úschovou klíče drženou vládou, „pouze pro orgány činné v trestním řízení a jen na základě povolení“. Byly prokázány nedostatky (Blaze, 1994), návrh byl masivně odmítnut a do roku 1996 opuštěn. První kryptoválka, stejný scénář jako dnes.
+EPIC · Clipper Chip →
+2001-09-05odhaleno
+ECHELON potvrzen Evropským parlamentem
+Šest dní před 11. zářím Evropský parlament na plenárním zasedání (367–159–39) přijímá zprávu svého dočasného výboru (výborem schválenou 3. července), která potvrzuje existenci globální sítě zachycující soukromou a obchodní komunikaci (USA, Spojené království, Kanada, Austrálie, Nový Zéland).
+European Parliament · A5-0264/2001 →
+2001-10-04nenápadné rozšiřování
+23 dní po 11. září
+Tajný prezidentský příkaz zahajuje domácí špehování NSA bez soudního povolení. Krize vytvoří program; program krizi přežije. Patriot Act následuje 26. října, také jako „dočasný“: jeho doložky o ukončení platnosti se prodlužují po 14 let.
+EFF · NSA Spying Timeline →
+2006-01-20odhaleno
+Místnost 641A
+Technik AT&T Mark Klein předává EFF dokumenty popisující tajnou místnost NSA v přepojovacím uzlu v San Francisku: zachycování na úrovni infrastruktury, veškerého provozu, nikoli provozu podezřelých.
+EFF · Jewel v. NSA evidence →
+2006-03-15nenápadné rozšiřování
+Směrnice EU o uchovávání údajů
+EU nařizuje uchovávání telekomunikačních metadat celé populace (6–24 měsíců), „proti závažné trestné činnosti“. Nikdo není podezřelý, všichni jsou evidováni. Přesný plán Chat Control, o dvacet let dříve.
+Directive 2006/24/EC →
+2013-06-05odhaleno
+Snowden: „shromažďovat vše“
+The Guardian zveřejňuje tajný příkaz FISA, který nutí Verizon předat metadata všech zákazníků, a následně PRISM. V březnu ředitel zpravodajských služeb Clapper Kongresu přísahal, že se to neděje; několik dní po úniku to označuje za „nejméně nepravdivou“ odpověď, kterou mohl dát.
+The Guardian · 5 June 2013 →
+2014-04-08zrušeno soudem
+SDEU ruší plošné uchovávání údajů
+Digital Rights Ireland (spojené věci C-293/12 a C-594/12): směrnice z roku 2006 je bez výhrad zrušena: nerozlišující dohled nad celou populací porušuje Listinu základních práv. Malá dobrovolnická nevládní organizace zrušila směrnici EU.
+CJEU · C-293/12 & C-594/12 →
+2016-11-29nenápadné rozšiřování
+Britská „šmírovací charta“
+Investigatory Powers Act legalizuje hromadný sběr a státní hacking a nutí poskytovatele internetového připojení uchovávat historii prohlížení všech. O tři týdny později SDEU (Tele2/Watson) opakuje, že plošné uchovávání údajů je nezákonné; Londýn v něm přesto pokračuje.
+legislation.gov.uk →
+2018-12-06nenápadné rozšiřování
+Austrálie proti matematice
+Assistance and Access Act umožňuje státu tajně nařídit firmě přepracovat její produkty („oznámení o technické schopnosti“). Kritici varují, že to de facto oslabuje šifrování, přestože zákon nominálně zakazuje „systémové slabiny“. Tón udal premiér: „zákony Austrálie mají přednost před zákony matematiky“.
+legislation.gov.au · C2018A00148 →
+2020-02-11odhaleno
+Crypto AG: výrobce trezorů si ponechal klíče
+The Washington Post odhaluje (s oporou o vlastní interní historii CIA), že CIA a BND od roku 1970 tajně vlastnily Crypto AG, švýcarského dodavatele šifrování pro 120 vlád. V 80. letech přes ni procházelo 40 % diplomatických depeší, které NSA dešifrovala. Ponaučení: „důvěryhodná“ zadní vrátka jsou zadní vrátka.
+Washington Post · Operation Rubicon →
+2020-10-06zrušeno soudem
+La Quadrature du Net před SDEU
+Soud potvrzuje zákaz plošného uchovávání údajů vůči Francii a Belgii (spojené věci C-511/18, C-512/18 a C-520/18) a téhož dne vůči Spojenému království ve věci Privacy International (C-623/17), zároveň však vymezuje okna pro „národní bezpečnost“. Dvojí ponaučení: žaloby fungují a každá výjimka se stane dalším pravidlem. Komise nikdy nezahájila řízení pro porušení práva proti státům, které údaje přesto uchovávají.
+CJEU · C-511/18, C-512/18 & C-520/18 →
+2021-07-14slib
+Chat Control 1.0, „dočasný“
+Nařízení 2021/1232 umožňuje „dobrovolné“ skenování soukromých zpráv jako výjimku z ePrivacy. Konec platnosti byl slíben na 3. srpna 2024. Nařízení 2024/1307 jej prodlužuje do 3. dubna 2026, kdy vyprší… a pak vstane z mrtvých (viz níže).
+Regulation (EU) 2021/1232 →
+2021-07-18odhaleno
+Projekt Pegasus
+Více než 80 novinářů ze 17 redakcí v 10 zemích dokumentuje špehování novinářů, právníků, disidentů a hlav států prostřednictvím spywaru NSO. Forenzní analýzy Amnesty (posouzené Citizen Lab) dokazují zero-click infekce plně aktualizovaných iPhonů: když je cílem zařízení, šifrování nestačí. Přesně logika skenování na straně klienta.
+Amnesty · Forensic Methodology Report →
+2021-08-05zrušeno soudem
+Apple oznamuje skenování v zařízení… pak od něj ustupuje
+Apple představuje skenování fotografií CSAM v iPhonu přímo v zařízení. Výzkumníci a nevládní organizace se bouří: jde o infrastrukturu zobecnitelného dohledu. Prosinec 2022: Apple od něj upouští a později v dopise ze srpna 2023 uvede „kluzký svah nezamýšlených důsledků“. Právě tento mechanismus chce Chat Control 2.0 nařídit.
+WIRED · Apple kills CSAM scanning →
+2022-05-11nenápadné rozšiřování
+Chat Control 2.0: povinné skenování
+Komise navrhuje nařízení CSAR (COM/2022/209): „příkazy k detekci“, které mohou vynutit skenování na každé platformě, včetně těch s koncovým šifrováním. Dobrovolnost z roku 2021 se v roce 2022 stává povinností: rozšiřování rozsahu v doslovném smyslu.
+COM/2022/209 →
+2023-10-26nenápadné rozšiřování
+Online Safety Act: „špionážní doložka“
+Spojené království si uděluje pravomoc nařídit komunikátorům skenovat šifrovaný obsah (oddíl 121). Formulace „je-li to technicky proveditelné“ v zákoně není: šlo o ústupek ministra, prohlášení lorda Parkinsona ve Sněmovně lordů (6. září 2023), poté co Signal a WhatsApp pohrozily odchodem. Vláda připouští, že to není proveditelné, ale pravomoc v zákoně ponechává.
+Online Safety Act 2023 · s.121 →
+2024-04-29nenápadné rozšiřování
+„Dočasné“ opatření dostává první prodloužení
+Nařízení 2024/1307 posouvá konec platnosti Chat Control 1.0 z 3. srpna 2024 na 3. dubna 2026. Mimořádné opatření, které se samo obnovuje, už není výjimkou: je to režim.
+Regulation (EU) 2024/1307 →
+2025-07-25nenápadné rozšiřování
+Spojené království: pro používání internetu ukažte průkaz totožnosti
+Online Safety Act zavádí „vysoce účinné“ ověřování věku (doklad totožnosti, kreditní karta, odhad věku z obličeje) pro velké části webu. Proton zaznamenává, že počet hodinových registrací VPN vyskočil o více než 1 400 %; Sněmovna lordů už debatuje o omezeních VPN.
+Ofcom · age assurance →
+2025-11-13nenápadné rozšiřování
+Rada směřuje ke zrušení doložky o ukončení platnosti
+Postoj Rady pro trialog (dokument 15318/25): jednoduše odstranit doložku o ukončení platnosti „dobrovolného“ skenování a učinit je trvalým. Návrh dánského předsednictví počítal s povinným skenováním na straně klienta. V únoru 2026 evropský inspektor ochrany údajů odpovídá na prosincový návrh Komise prodloužit výjimku do roku 2028 (COM(2025) 797): podstatné zhoršení důvěrnosti, nerozlišující analýza je nepřiměřená.
+EDPS · Opinion 7/2026 →
+2026-03-26zrušeno soudem
+Parlament říká ne
+Evropský parlament odmítá prodloužení dobrovolného skenování do roku 2028 (228 pro, 311 proti, 92 se zdrželo). Důsledek: právní základ končí 3. dubna 2026. Tlak občanů a práce nevládních organizací udržely hranici. Na tři měsíce.
+European Parliament · 26 March 2026 →
+2026-04-04odhaleno
+Zákon přestává platit, skenování pokračuje
+Po skončení výjimky oznamují giganti, kteří podepsali společnou výzvu z 19. března k zakotvení režimu (Google, Meta, Microsoft, Snap, TikTok), že budou zprávy skenovat dál, ať už existuje právní základ, nebo ne. Přiznání, že „dodržování předpisů“ bylo jen kulisou.
+The Record · Big Tech vows to keep scanning →
+2026-07-02nenápadné rozšiřování
+Rada oživuje neplatný text
+Tři měsíce po skončení platnosti Rada přijímá svůj postoj k obnovení dobrovolného skenování do 3. dubna 2028 a zasílá jej Parlamentu do druhého čtení: postupu, v němž odmítnutí vyžaduje absolutní většinu (361 ze 720), nikoli většinu odevzdaných hlasů.
+Council of the EU · 2 July 2026 →
+2026-07-09zrušeno soudem
+Odmítnutí neprojde, ale E2EE je vyňato
+Zrychlené řízení prošlo 7. července (331/304/11), hlasování 9. července: 314 poslanců Evropského parlamentu hlasuje pro odmítnutí postoje Rady — prostá většina, avšak méně než požadovaných 361. Parlament ale následně přijímá pozměňovací návrhy vylučující komunikaci s koncovým šifrováním z režimu skenování (369 a 362 hlasů) a neprochází ani poslední pokus o odmítnutí pozměněného postoje (276/286/30). Pozměněný text se vrací Radě, která má přibližně tři měsíce (zhruba do 9. října 2026) na přijetí změn (dobrovolné skenování služeb bez E2EE do 3. dubna 2028), nebo na zahájení dohodovacího řízení. K 10. červenci 2026 nic neplatí: výjimka, která skončila 3. dubna, nikdy nebyla obnovena (úplné jmenovité hlasování).
+European Parliament · 9 July 2026 →
+ČÁST 24 · VÝVOJ V PŘÍMÉM PŘENOSU
+Observatoř Velkého bratra
+Chat Control je jednou z pěti front. Co prošlo, co je na stole, co bylo odloženo – region po regionu, téma po tématu.
+Region
+Vše
+EU
+Francie
+Svět
+Téma
+Vše
+Zprávy
+Identita
+Peníze
+Média
+AI a biometrie
+2024-03-13EUAI a biometriev platnosti
+Prüm II: vyhledávání podle obličeje napříč všemi policejními sbory v Evropě
+Nařízení 2024/982 přidává snímky obličejů, včetně snímků osob, které nikdy nebyly odsouzeny, do automatizované výměny policejních údajů mezi členskými státy prostřednictvím centrálního směrovače. Celoevropská schopnost biometrické identifikace, přijatá bez skutečné vnitrostátní debaty; EDRi ji označuje za riziko „překračování pravomocí státu a hromadného sledování“.
+Regulation (EU) 2024/982 · Prüm II →
+2024-05-20EUIdentitav platnosti
+eIDAS 2.0: přichází peněženka identity, prohlížeče pod státní důvěrou
+Každý členský stát musí do 24. prosince 2026 poskytnout evropskou peněženku digitální identity (EUDI Wallet); banky, telekomunikační společnosti, zdravotní služby a velmi velké platformy ji budou muset přijímat. Tatáž peněženka prokáže váš věk, otevře účet, podepíše platbu: jedna brána, tedy jeden kontrolní bod; EDPS dokumentuje rizika sledování napříč způsoby použití. A článek 45 nutí prohlížeče uznávat státem určené webové certifikáty: více než 500 výzkumníků varovalo (last-chance-for-eidas.org), že jde o infrastrukturu pro zachycování šifrovaného provozu.
+Commission · EUDI regulation →
+2024-05-21EUZprávyIdentitanavrženo
+Plán „Going Dark“: přístup policie už v návrhu
+Skupina na vysoké úrovni pro „přístup k datům“, obsazená téměř výhradně zástupci orgánů vymáhání práva, přijala 21. května 2024 42 doporučení: „zákonný přístup už v návrhu“ (přístup policie zabudovaný do produktů od rýsovacího prkna), harmonizované uchovávání metadat, povinnost identifikovat každého uživatele včetně uživatelů messengerů. V prosinci 2024 podepsalo 55 organizací občanské společnosti, společností a sdružení otevřený dopis, který výsledek označuje za „selhání mise“: plán hromadného sledování. Je to matice všeho, co následuje.
+Commission · HLG recommendations →
+2024-12-17EUMédiav platnosti
+Rumunsko: volby zrušeny, DSA rozhoduje o viditelnosti
+Dne 6. prosince rumunský Ústavní soud ruší první kolo prezidentských voleb s odkazem na nepřiznanou koordinovanou kampaň na TikToku; 17. prosince Komise zahajuje proti platformě formální řízení podle DSA (doporučovací systémy, politická reklama), které pokračuje i v roce 2026. Ať už bude výsledek jakýkoli, precedens zůstává: o tom, „kdo rozhoduje, co je během voleb viditelné“, nyní rozhodují platformy, Komise a ústavní soudy.
+Commission · DSA proceedings v. TikTok →
+2024-12-25SvětIdentitaMédiav platnosti
+Vietnam: ověřená identita, nebo mlčení
+Dekret 147 nutí platformy ověřovat identitu každého uživatele (telefonním nebo identifikačním číslem), ukládat údaje a předávat je úřadům; pouze ověřené účty mohou zveřejňovat příspěvky, komentovat nebo vysílat. Rovnice je vyjádřena jasně: žádná ověřená identita, žádný veřejný projev.
+The Guardian · Dec 2024 →
+2025-02-21SvětZprávyv platnosti
+Londýn požaduje zadní vrátka, Apple stahuje své šifrování
+Ministerstvo vnitra tajným příkazem (Technical Capability Notice podle Investigatory Powers Act) požaduje přístup k šifrovaným datům iCloudu, přičemž soudní podání potvrzují celosvětový rozsah. Apple reaguje stažením Advanced Data Protection (end-to-end šifrovaného iCloudu) pro všechny uživatele ve Spojeném království, místo aby vytvořil klíč. Pod tlakem USA Londýn v létě požadavek „stahuje“… pak však začátkem září 2025 vydává nový příkaz, zveřejněný 1. října, zúžený na data britských uživatelů. V polovině roku 2026 britští uživatelé stále žijí bez E2EE pro své zálohy.
+EFF · Deeplinks · Oct 2025 →
+2025-03-20FrancieZprávyzamítnuto
+Francie: zadní vrátka zákona Narcotrafic neprošla
+Článek 8 ter zákona Narcotrafic by nutil šifrované messengery poskytnout zpravodajským službám přístup ke korespondenci: mechanismus „duchovního účastníka“. Po vypuštění ve výboru bylo jeho znovuzařazení v noci 20. března 2025 zamítnuto poměrem 119 hlasů ku 24 mezistranickou koalicí, proti vůli ministra vnitra. Národní parlament může říci ne; vláda se však nevzdala: požadavek na přístup se vrací ve vlnách, zde a poté v Bruselu.
+La Quadrature du Net · March 2025 →
+2025-04-01EUZprávynavrženo
+„ProtectEU“: prolomení šifrování se stává oficiální politikou
+Strategie vnitřní bezpečnosti Komise (COM(2025) 148) oznamuje plán pro „zákonný a účinný přístup k datům“ a „technologický plán“ pro šifrování spolu s posíleným Europolem. Rozptýlené požadavky policie se stávají víceletým politickým programem Unie: přístup k šifrované komunikaci, písemně.
+COM(2025) 148 · ProtectEU →
+2025-04-18SvětAI a biometrieIdentitav platnosti
+ICE kupuje od Palantiru „ImmigrationOS“
+30 milionů dolarů za platformu, která křížově porovnává federální databáze a poskytuje „téměř okamžitý přehled“ o osobách určených k vyhoštění. Cílené sledování celé populace se stává běžně dostupným softwarovým produktem provozovaným soukromou společností.
+WIRED · April 2025 →
+2025-05SvětZprávyIdentitapozastaveno
+I Švýcarsko: vyhláška, která by vyhnala Proton ze země
+Revidovaná vyhláška o sledování (VÜPF) by rozšířila povinnosti identifikace uživatelů a uchovávání údajů (IP záznamy po dobu 6 měsíců) na každou službu s více než 5 000 uživateli. CEO Protonu slibuje, že pokud projde, společnost zemi opustí („byli bychom méně důvěrní než Google“) a zmrazuje švýcarské investice; protestuje také Threema. Začátkem roku 2026 je projekt zablokován: v konzultaci čelí téměř jednomyslnému odporu a parlament požaduje přepracování. Historické útočiště důvěrnosti se pouhou vyhláškou pokusilo o to, o čem EU debatuje v Chat Control.
+Statewatch · Feb 2026 →
+2025-06-18SvětMédiaIdentitav platnosti
+Vízum do USA: veřejné sociální sítě, nebo nic
+Ministerstvo zahraničí vyžaduje po žadatelích o studentská víza, aby nastavili své sociální profily jako veřejné (depeše z 18. června 2025), a prověřuje jakoukoli „nepřátelskost“ vůči Spojeným státům; formulář DS-160 už od roku 2019 vyžadoval pětiletou historii uživatelských jmen. Dne 15. prosince se opatření rozšířilo na H-1B, poté v březnu 2026 na více než 14 kategorií víz. Vstup je podmíněn ideologickou kontrolou online projevu: celosvětová pobídka k autocenzuře.
+US State Department · June 2025 →
+2025-06-24EUZprávyAI a biometrienavrženo
+Plán: státní dešifrování naplánované do roku 2030
+Komise zveřejňuje harmonogram pro „zákonný přístup k datům“ (COM(2025) 349): nová pravidla uchovávání údajů, přeshraniční odposlechy do roku 2027, analýzu zabavených dat pomocí AI do roku 2028 a „schopnost dešifrování nové generace“ pro Europol od roku 2030. EU v průběhu pěti let plánuje právní a technické stavební kameny pro čtení toho, co je dnes nečitelné. EFF to shrnuje: „tento plán činí všechny méně bezpečnými“.
+Commission · 24 June 2025 →
+2025-07-14EUIdentitapřijato
+Ověřování věku: pilotní aplikace v pěti zemích
+Komise zveřejňuje své pokyny DSA k „článku 28“ a plán ověřování věku („mini-peněženku“), pilotně zaváděný s Dánskem, Francií, Řeckem, Itálií a Španělskem, který má do konce roku 2026 splynout s EUDI Wallet. I když údajně „chrání soukromí“, tato logika zavádí kontrolu identity u vstupu na internet: prokazovat atribut osobního stavu pro zobrazení legálního obsahu se stává běžným úkonem.
+Commission · blueprint · July 2025 →
+2025-07-15FrancieIdentitav platnosti
+Francie: Conseil d’État obnovuje kontrolu věku
+Podle zákona SREN a rámce Arcom („dvojitá anonymita“) musí stránky pro dospělé ověřovat věk návštěvníků. Aylo (Pornhub) na protest odpojuje přístup z Francie; správní soud v červnu dekret pozastavuje, Conseil d’État toto pozastavení 15. července ruší: povinnost platí a stránky se znovu blokují. První plnohodnotné nasazení „občanského průkazu pro vstup na internet“, kde je nástrojem vynucení dodržování blokování.
+Conseil d’État · 15 July 2025 →
+2025-07-15SvětIdentitav platnosti
+Čína: národní internetová identita centralizovaná u policie
+Zavedení „identity kyberprostoru“: jediného identifikátoru vydávaného společně Ministerstvem veřejné bezpečnosti a Cyberspace Administration of China, založeného na rozpoznávání obličeje a národním občanském průkazu, používaného pro přihlašování k online službám, účinného od 15. července 2025. Oficiálně dobrovolného, nad rámec registrace skutečným jménem, která je již všude povinná. Když je online identifikace centralizována státem, anonymita zaniká už svou konstrukcí a přístup k internetu se stává odvolatelným privilegiem. Jde o dokončený model toho, co západní kontroly věku a peněženky pouze načrtávají.
+South China Morning Post · July 2025 →
+2025-08-08EUMédiaZprávyv platnosti
+EMFA: ochrana novinářů proděravěná výjimkami
+Evropský akt o svobodě médií se stává plně použitelným. Jeho článek 4 v zásadě zakazuje spyware proti novinářům… pak jej však výjimečně povoluje pro seznam závažných trestných činů; během jednání Rada pod vedením Francie prosazovala plošnou výjimku pro „národní bezpečnost“, kterou RSF odsoudila. První evropský text určený k ochraně novinářů před státním špehováním kodifikuje v prostoru svých výjimek podmínky, za kterých toto špehování zůstává legální.
+Regulation (EU) 2024/1083 · EMFA →
+2025-09-01SvětZprávyIdentitav platnosti
+Rusko: státní messenger předinstalovaný vyhláškou
+Každý chytrý telefon prodávaný v Rusku musí obsahovat MAX, messenger vytvořený společností VK a označený za „národní aplikaci“; státní zaměstnanci a učitelé jsou nuceni jej používat. Nezávislé analýzy popisují rozsáhlé sledování a integraci se systémem odposlechů FSB. Konečný bod logiky proti šifrování: messenger čitelný pro služby, vnucený přímo prostřednictvím distribučního kanálu hardwaru.
+Reuters · Aug 2025 →
+2025-09-01SvětMédiav platnosti
+Rusko: vyhledávání se stává přestupkem
+„Úmyslné“ vyhledávání online obsahu klasifikovaného jako „extremistický“ (seznam s více než 5 000 položkami včetně opozice) se stává pokutovatelným, a to i přes VPN, a propagace nástrojů k obcházení blokací je zakázána. Historický práh: stát už netrestá to, co říkáte, ale to, co se snažíte zjistit. Logický konec kontroly individuálního používání.
+Reuters · July 2025 →
+2025-09-09EUZprávyv jednání
+500 vědců: „technicky neproveditelné“
+Více než 500 kryptografů a výzkumníků z 34 zemí (do října zhruba 800 ze 37 zemí) podepisuje stanovisko proti dánskému návrhu CSAR: spolehlivá detekce je v tomto měřítku nemožná, obcházení je pro zločince triviální a jakékoli skenování na straně klienta „ze své podstaty oslabuje“ end-to-end šifrování. Data německé spolkové kriminální policie (BKA) ukazují totéž samostatně: z 205 728 hlášení NCMEC přijatých v roce 2024 nebylo 99 375 (48,3 %) „trestně relevantních“. Vědecká shoda je jednoznačná. A projekt pokračuje.
+Open letter · Sept 2025 →
+2025-09-26SvětIdentitav jednání
+„BritCard“: digitální identita jako podmínka k práci
+Starmerova vláda oznamuje digitální identitu („BritCard“ je její neoficiální přezdívka, nikoli oficiální název), která se má do konce volebního období stát povinnou pro kontroly práva pracovat, ve jménu boje proti nelegální migraci. Petice během zhruba dvou dnů překračuje jeden milion podpisů (od té doby více než 2,9 milionu); vláda drží kurz (návrh zákona figuruje v květnovém projevu krále z roku 2026). Podmínění práva pracovat státním identifikátorem zavádí centrální kontrolní bod do ekonomického života každého člověka.
+gov.uk · Sept 2025 →
+2025-10-12EUZprávyzamítnuto
+Berlín zastavuje povinné skenování
+Prezidentka Signalu Meredith Whittaker veřejně uvádí, že by messenger raději opustil evropský trh, než aby oslabil své šifrování; skupina CDU/CSU přirovnává skenování bez podezření k napařování a otevírání pošty každého člověka. Bod je stažen z programu Rady SVV dne 14. října: blokující menšina obstála. Poměr sil se může obrátit, projekt však nikdy neumírá: přepracovaný jako „dobrovolný“ se vrací o šest týdnů později.
+EU Perspectives · Oct 2025 →
+2025-10-12EUAI a biometrieIdentitav platnosti
+EES: obličej a prsty se stávají pasem
+Systém vstupu/výstupu začíná fungovat: otisky prstů a snímek obličeje každého cestujícího ze země mimo EU se shromažďují v centralizované databázi a nahrazují razítko do pasu (úplné zavedení 10. dubna 2026); dalším krokem je ETIAS, placené povolení založené na těchto databázích. EU přechází k hranici jako databázi: tělo se stává výchozím cestovním identifikátorem ukládaným v systémech navržených k vzájemnému propojení.
+Commission · EES →
+2025-10-25SvětZprávypřijato
+Úmluva OSN o kyberkriminalitě: sledování vyvážené smlouvou
+Úmluva, vyjednaná z iniciativy Ruska a přijatá na konci roku 2024, shromažďuje v Hanoji 72 signatářů: 71 států a EU. EFF a Human Rights Watch varují: široké definice, povinná vzájemná pomoc při shromažďování elektronických důkazů včetně odposlechů v reálném čase pro „závažné trestné činy“ definované právem žádající země, s nepovinnými zárukami. Legalizovaný celosvětový kanál, jímž mohou standardy nejrepresivnějšího režimu putovat dál.
+UN · UNODC · Oct 2025 →
+2025-10-30EUPenízev jednání
+Digitální euro: architektura se buduje před zárukami
+ECB uzavírá svou „přípravnou fázi“ a zahajuje další: pilotní cvičení v polovině roku 2027, možné první vydání v roce 2029, zatímco nařízení dosud nebylo přijato. Euroskupina se v září dohodla na správě a postupu pro stanovení limitů držby. Digitální měna centrální banky je infrastruktura, kde je každá transakce přirozeně zaznamenatelná; buduje se, zatímco její právní limity jsou stále nenapsané.
+ECB · 30 Oct 2025 →
+2025-12-10SvětIdentitaAI a biometrieMédiav platnosti
+Austrálie: 4,7 milionu účtů vypnuto za měsíc
+Světová premiéra: od 10. prosince 2025 mají osoby mladší 16 let zakázán přístup k deseti platformám určeným regulátorem eSafety, které musí odhadovat věk (behaviorální odvozování, selfie skeny obličeje, doklady totožnosti), jinak jim hrozí pokuty ve výši 49,5 milionu A$. V polovině ledna 2026 premiér oznamuje 4,7 milionu deaktivovaných, odstraněných nebo omezených účtů. Chcete-li vyloučit nezletilé, musíte odhadovat věk každého: biometrie se stává mýtnou branou sociálního webu a vlády po celém světě sledují tuto laboratoř.
+Australian PM · Jan 2026 →
+2025-12-17FrancieAI a biometriev platnosti
+Algoritmické kamerové sledování: „experiment“ z olympiády míří do sedmého roku
+Algoritmické kamerové sledování, povolené „experimentálně“ olympijským zákonem z roku 2023 (s platností do března 2025), je prodlouženo do konce roku 2027 se souhlasem Ústavní rady. Do května 2026 už Senát schvaluje pokračování („zákon Ripost“): prodloužení do konce roku 2030 a rozšíření do všech veřejně přístupných prostor. Klasická ráčna: výjimka se prodlužuje, rozsah se rozšiřuje, hodnocení může počkat.
+Le Monde · 18 Dec 2025 →
+2026-01-12EUMédiaZprávyodhaleno
+Pegasus v Polsku: obviněný nalézá azyl… uvnitř EU
+Bývalý ministr spravedlnosti Zbigniew Ziobro, který čelí 26 obviněním včetně financování Pegasu z fondu na pomoc obětem a jeho používání proti oponentům, uvádí, že po zbavení imunity získal politický azyl v Maďarsku; v květnu 2026 poté utíká do Spojených států. Soudní vyrovnání se státním politickým špehováním naráží na bezprecedentní slepou uličku: členský stát EU poskytuje útočiště údajnému viníkovi a odpovědnost končí na vnitřní hranici.
+Le Monde · 12 Jan 2026 →
+2026-02-12SvětZprávyv platnosti
+Rusko: WhatsApp odpojen pro 100 milionů uživatelů
+Celá sekvence trvala šest měsíců: v srpnu 2025 jsou hovory přes WhatsApp a Telegram zpomalovány (platformy „odmítají sdílet data s úřady“); v prosinci se zpomalování rozšiřuje; v únoru 2026 je WhatsApp plně zablokován, což potvrzuje Kreml. Poučení je jasné: požadujte data, přiškrťte službu, která je odmítne vydat, a pak ji odpojte. Odmítnutí prolomit šifrování se trestá vyloučením ze země.
+Reuters · Feb 2026 →
+2026-02-26EUMédiaZprávyodhaleno
+Predator v Řecku: dodavatelé odsouzeni, kupující nevystopovatelní
+Aténský soud odsuzuje čtyři vedoucí pracovníky spojené s Intellexou (zakladatele Tala Diliana a dále Hamoua, Bitziose a Lavranose) za nezákonný přístup k soukromé komunikaci ve skandálu Predator (přibližně 87 cílů: novináři, ministři, vojenští důstojníci; počet uváděný The Record a ICIJ). První trestní odsouzení obchodníků se spywarem v EU. Žádný politický představitel však odsouzen není: kdo odposlechy nařídil, zůstává oficiálně nevystopovatelný.
+Amnesty International · Feb 2026 →
+2026-05FrancieZprávyMédiav jednání
+Černé skříňky: zpravodajské služby chtějí úplné URL
+Poslanci rozšiřují „černé skříňky“ (algoritmickou analýzu metadat vytvořenou v roce 2015 proti terorismu, od té doby trvalou) na organizovaný zločin a poprvé i na úplné URL navštívených stránek. Ústavní rada podobný systém v roce 2025 zrušila; vláda to zkouší znovu, v upravené podobě. Úplné URL prozrazuje, co čtete, nejen s kým komunikujete: jde o kvalitativní skok směrem k automatizované kontrole čtenářských návyků, na základě správního, nikoli soudního povolení.
+Le Monde · 7 May 2026 →
+2026-05-19EUAI a biometriev platnosti
+Palantir v Evropě: dodavatel se mění, otázka ne
+V polovině května 2026 německá domácí zpravodajská služba (BfV) opouští Palantir a přechází k francouzské společnosti ChapsVision. Stejnou cestu následně volí francouzská DGSI, která v listopadu 2025 prodloužila smlouvu s Palantirem do roku 2028: 16. června 2026 Sébastien Lecornu oznamuje přechod na ChapsVision v průběhu roku 2027. Policie v Bavorsku a Hesensku mezitím nadále používá Gotham (v Severním Porýní-Vestfálsku do října 2026), napadený u Ústavního soudu. Veřejná debata se posunula od otázky „mají policejní spisy spojovat AI?“ k otázce „který dodavatel to má dělat?“: suverenita nahradila proporcionalitu a samotná hromadná analýza už není zpochybňována.
+Le Monde · 19 May 2026 →
+2026-06-12SvětZprávyv jednání
+FISA 702 končí, sběr dat přesto pokračuje
+Oddíl 702, tedy sběr komunikace procházející poskytovateli v USA bez soudního příkazu, měl skončit v dubnu 2026. Po dvou krátkých prodlouženích oprávnění v polovině června zaniká, protože Kongres je zablokován ve sporu o povinnost soudního příkazu pro vyhledávání FBI týkající se Američanů. Stávající certifikace však zůstávají platné do března 2027: stroj běží další rok bez obnoveného právního základu. „Dočasná“ sledovací pravomoc se nikdy zcela nevypne.
+Brennan Center · 2026 →
+2026-06-23EUPenízev jednání
+Digitální euro: „neprogramovatelné“, přesto podmíněné
+Hospodářský a měnový výbor Parlamentu přijímá svou pozici (43 hlasů ku 14, jedno zdržení se): kurz je nastaven na spuštění do roku 2029. Vlastní FAQ ECB přísahá, že digitální euro „nebude programovatelnými penězi“, zatímco „podmíněné platby“ představuje jako volitelné služby; podle postoje poslanců by limit držby stanovila později Komise na doporučení ECB a každé dva roky by jej přezkoumávala. Rozdíl mezi slibem a platformou spočívá na politickém rozhodnutí, nikoli na technické nemožnosti: infrastruktura podmíněnosti a sledovatelnosti bude existovat od prvního dne.
+European Parliament · 23 June 2026 →
+2026-06-24EUZprávyPenízeAI a biometrienavrženo
+Europol: rozpočet zvýšen na 3 miliardy eur, mandát pro šifrování
+Komise navrhuje největší reformu Europolu za 25 let: rozpočet se zvyšuje z 1,9 miliardy eur na 3 miliardy eur, přibude 900 zaměstnanců a mandát se rozšíří na šifrovanou komunikaci, kryptoaktiva a podvody s pomocí AI; vznikne „centrum technologií a inovací“, jehož práce na šifrování navazuje na plán ProtectEU, jenž počítá se schopností Europolu dešifrovat data do roku 2030; a automatizovaný „evropský prostor policejních dat“. Ozbrojené křídlo ProtectEU: nadnárodní agentura, která, jak již varoval jeden poslanec EP, „nesmí vést k hromadnému sledování“.
+Commission · 24 June 2026 →
+2026-07EUMédiaZprávyodhaleno
+Pegasus v Parlamentu: hlídač byl sledován
+Citizen Lab odhaluje, že poslanec EP Stelios Kouloglou, náhradní člen výboru PEGA, tedy samotného orgánu, který vyšetřoval Pegasus a zneužívání spywaru v Evropě, byl během svého působení ve výboru napaden Pegasem (infekce datované 21. října 2022 a 6.–7. března 2023), s možným přístupem k důvěrným jednáním. Citizen Lab výslovně odmítá útok připsat konkrétnímu aktérovi; koalice nevládních organizací požaduje reakci EU. Špehování orgánu pověřeného dohledem nad spywarem je krajním převrácením demokratické kontroly a nikdo není označen za odpovědného.
+Citizen Lab · July 2026 →
+ČÁST 25 · NEJSTE SAMI
+Spojenecké iniciativy
+Organizace, které proti tomu bojují u soudů a v parlamentech, a projekty, jež shromažďují důkazy.
+Kampaně a advokacie
+Fight Chat Controlfightchatcontrol.eu
+Občansky vedená platforma (anonymní kolektiv): nástroj pro kontaktování poslanců EP, sledování postojů podle členských států, srovnání 1.0 a 2.0. Znovu spuštěna pro každé hlasování.
+Stop Scanning Me · EDRistopscanningme.eu
+Koalice více než 60 organizací: petice s více než 200 000 podpisy, otevřený dopis rozšířený z 300 na 450 vědců, společný dopis 133 nevládních organizací.
+Patrick Breyer · chatcontrol.eupatrick-breyer.de
+Bývalý pirátský poslanec EP, který vytvořil pojem „Chat Control“. Referenční kronika tohoto spisu, hlasování po hlasování, dokument po dokumentu, od roku 2020.
+EDRiedri.org
+Evropská síť pro digitální práva (více než 50 nevládních organizací). Právní analýzy, zastupování zájmů v Bruselu, koordinace kampaní.
+La Quadrature du Netlaquadrature.net
+Od roku 2008: soudní spory před SDEU (rozhodnutí z roku 2020 o uchovávání dat), kampaň Technopolice, analýza francouzských zákonů o sledování.
+noybnoyb.eu
+NGO Maxe Schremse: systematické soudní spory podle GDPR, které zrušily dvě dohody EU–USA o předávání dat (Schrems I a II).
+EFFeff.org
+Třicet let soudních sporů a nástrojů (Jewel v. NSA, Certbot, Privacy Badger, Rayhunter) a příručka Surveillance Self-Defense.
+Signal Foundationsignal.org
+Zavázala se raději opustit EU, než zavést skenování. Meta/WhatsApp (říjen 2025) a Threema („všechny možnosti“) následovaly s odporem.
+Dokumentační projekty
+EFF · NSA Spying Timelinensa-timeline.eff.org
+Chronologie amerického sledování z let 1791–2015, založená na důkazním materiálu ve věci Jewel v. NSA: každá položka je datovaná a opatřená zdrojem. Model doložených faktů, z něhož vychází naše sekce Precedenty.
+Atlas of Surveillanceatlasofsurveillance.org
+Více než 14 900 zdokumentovaných nasazení policií ve více než 6 000 jurisdikcích USA (drony, rozpoznávání obličejů, IMSI catchery…), sestavených více než 1 000 studenty a dobrovolníky. Geografické, nikoli chronologické uspořádání.
+Technopolicetechnopolice.fr
+Kampaň La Quadrature z roku 2019, dokumentující „Safe City“ město po městě, společnost po společnosti: záznamy o zakázkách, participativní fórum, kanál pro úniky.
+OONIooni.org
+Největší otevřený soubor dat o internetové cenzuře: miliony měření od roku 2012, více než 200 zemí, data pod licencí CC a veřejné API. Cenzura prokázaná v reálném čase.
+Digital Violence · Forensic Architectureforensic-architecture.org
+Interaktivní mapa ekosystému Pegasus/NSO: vývozní licence, infekce a fyzické důsledky pro cílené osoby.
+Surveillance Watchsurveillancewatch.io
+Interaktivní mapa odvětví špionážního softwaru: kdo jej vyvíjí, kdo ho financuje, kdo ho kupuje.
+NetBlocksnetblocks.org
+Observatoř vypínání a blokování internetu v reálném čase, země po zemi, incident po incidentu.
+Big Brother Awardsbigbrotherawards.de
+Od roku 2000 každoroční „ocenění“ pro nejhorší narušitele soukromí (edice v několika zemích): kronika prostřednictvím příkladů, rok co rok.
+ČÁST 26 · ARZENÁL
+Adresář open-source nástrojů
+66 nástrojů svobodného softwaru ve 14 kategoriích. Každá položka je open source: ověřitelný kód, žádná nutná důvěra v dobrou vůli.
+Zprávy
+SignalAGPL-3.0
+Nahrazuje WhatsApp. E2EE ve výchozím nastavení, nezisková nadace.
+SimpleX ChatAGPL-3.0
+Vůbec žádný identifikátor: ani servery nemohou vědět, kdo s kým mluví.
+SessionGPL-3.0
+Bez telefonního čísla, onion routing.
+Element · MatrixAGPL-3.0
+Nahrazuje Discord/Slack. Federované, možnost vlastního hostování.
+BriarGPL-3.0
+P2P bez internetu (Bluetooth/Tor): protesty, výpadky.
+MollyGPL-3.0
+Zabezpečený Signal pro Android (plně FOSS varianta).
+E-mail
+ThunderbirdMPL-2.0
+Referenční svobodný poštovní klient s integrovaným OpenPGP.
+Proton Mail (apps)GPL-3.0
+Open-source aplikace švýcarské šifrované služby.
+Tuta (apps)GPL-3.0
+Svobodné aplikace, postkvantové šifrování, jurisdikce EU.
+Prohlížení a vyhledávání
+FirefoxMPL-2.0
+Nahrazuje Chrome. Nezávislé jádro.
+Tor BrowserMPL-2.0
+Síťová anonymita, ochrana proti fingerprintingu.
+Mullvad BrowserMPL-2.0
+Prohlížeč projektu Tor bez sítě Tor.
+BraveMPL-2.0
+Chromium, který ve výchozím nastavení blokuje reklamy a trackery.
+uBlock OriginGPL-3.0
+TEN blokátor reklam a trackerů.
+SearXNGAGPL-3.0
+Metavyhledávač s možností vlastního hostování.
+VPN a síť
+WireGuardGPL-2.0
+Moderní VPN protokol, na kterém všichni staví.
+Mullvad VPN (app)GPL-3.0
+Klient VPN bez účtu (přijímá hotovost/Monero).
+Proton VPN (apps)GPL-3.0
+Svobodní klienti, poctivý bezplatný tarif.
+TorBSD-3-Clause
+Síť, která odděluje to, kým jste, od toho, co děláte.
+TailscaleBSD-3-Clause
+Soukromá síť WireGuard mezi vašimi zařízeními.
+HeadscaleBSD-3-Clause
+Koordinační server Tailscale na vašem hardwaru.
+DNS
+Pi-holeEUPL-1.2
+Blokuje reklamy a trackery v celé síti.
+AdGuard HomeGPL-3.0
+Alternativa k Pi-hole s moderním uživatelským rozhraním.
+Hesla a 2FA
+BitwardenGPL-3.0
+Multiplatformní správce hesel.
+VaultwardenAGPL-3.0
+Lehký Bitwarden server pro vlastní hostování.
+KeePassXCGPL-2.0/3.0
+100% lokální trezor, bez cloudu.
+AegisGPL-3.0
+2FA kódy (TOTP) v lokálním šifrovaném trezoru (Android).
+Ente AuthAGPL-3.0
+2FA se synchronizací šifrovanou end-to-end.
+Úložiště, fotografie a zálohy
+NextcloudAGPL-3.0
+Nahrazuje celou sadu Google u vás doma.
+CryptomatorGPL-3.0
+Šifruje vaše soubory PŘED jakýmkoli cloudem.
+SyncthingMPL-2.0
+Synchronizace mezi zařízeními, bez serveru.
+resticBSD-2-Clause
+Šifrované, deduplikované, automatické zálohy.
+ImmichAGPL-3.0
+Google Photos s vlastním hostováním (obličeje, vyhledávání).
+Ente PhotosAGPL-3.0
+Fotky s E2EE, rozpoznávání přímo v zařízení.
+Každodenní nástroje
+LibreOfficeMPL-2.0
+Svobodný kancelářský balík.
+OnlyOfficeAGPL-3.0
+Kancelářský balík pro spolupráci s možností vlastního hostování.
+JoplinAGPL-3.0
+Poznámky v Markdownu, volitelné šifrování a synchronizace.
+Standard NotesAGPL-3.0
+Poznámky šifrované ve výchozím nastavení.
+CryptPadAGPL-3.0
+Kolaborativní Google Docs, plně šifrované.
+Organic MapsApache-2.0
+Offline mapy bez sledování (OpenStreetMap).
+OsmAndGPL-3.0
+Mapy pro pokročilé uživatele (turistika, vrstevnice).
+Jitsi MeetApache-2.0
+Videohovory bez účtu, možnost vlastního hostování.
+Sociální sítě
+MastodonAGPL-3.0
+Nahrazuje X/Twitter. Federované, bez vnuceného algoritmu.
+PixelfedAGPL-3.0
+Instagram fediverza.
+PeerTubeAGPL-3.0
+Federovaný YouTube.
+LemmyAGPL-3.0
+Federovaný Reddit.
+Damus (Nostr)GPL-3.0
+Klient Nostr: vaše identita je pár klíčů.
+Lokální a agentní AI
+OllamaMIT
+Spouštějte LLM lokálně jediným příkazem.
+llama.cppMIT
+Lokální inferenční engine, který to všechno umožnil.
+JanAGPL-3.0
+100% lokální alternativa k ChatGPT s jednoduchým rozhraním.
+GPT4AllMIT
+Lokální LLM zaměřené na soukromí, přívětivé pro CPU.
+PocketPal AIMIT
+Spouštějte LLM offline v telefonu (iOS/Android), bez účtu.
+Operační systémy
+GrapheneOSMIT
+Android bez Googlu se zvýšeným zabezpečením (Pixel).
+TailsGPL-3.0
+Amnestický OS na USB, vše přes Tor.
+Qubes OSGPL-2.0
+Oddělení prostředí pomocí izolovaných VM.
+F-DroidGPL-3.0
+100% svobodný obchod s aplikacemi.
+postmarketOSGPL-3.0
+Linux na opuštěných telefonech.
+Vlastní hosting
+YunoHostAGPL-3.0
+Osobní server na klíč (včetně e-mailu).
+StartOS (Start9)MIT
+Suverénní server, Tor ve výchozím nastavení.
+Synapse (Matrix)AGPL-3.0
+Váš federovaný chatovací server.
+Finance
+Bitcoin CoreMIT
+Peníze, které držíte sami.
+MoneroBSD-3-Clause
+Soukromé transakce ve výchozím nastavení.
+OPSEC a whistleblowing
+SecureDropAGPL-3.0
+Anonymní schránka pro dokumenty pro redakce.
+OnionShareGPL-3.0
+Sdílejte soubory přes Tor bez prostředníka.
+Rayhunter (EFF)GPL-3.0
+Detektor IMSI-catcherů.
+mat2LGPL-3.0
+Před zveřejněním odstraňuje metadata.
+ExifToolArtistic/GPL
+Čte a maže EXIF metadata.
+ČÁST 27 · PLÁN
+Kontrolní seznam pro migraci
+Čtrnáct kroků, od desetiminutových úspěchů po víkendové projekty. Zaškrtnutí se ukládají pouze v tomto prohlížeči. Nic neopouští vaše zařízení.
+0 / 14 kroků dokončeno
+Nainstalujte Signal a převeďte tam své tři nejčastější kontakty.rychlé vítězství
+Založte si Proton Mail nebo Tuta, importujte poštu a nastavte přeposílání z Gmailu.rychlé vítězství
+Nainstalujte Bitwarden s dlouhým hlavním heslem (frází).rychlé vítězství
+Přidejte uBlock Origin do svého prohlížeče (deset sekund).rychlé vítězství
+Nahraďte Chrome a Google Search (Firefox/Brave + DuckDuckGo).rychlé vítězství
+Zapněte 2FA (Aegis / Ente Auth, nikdy SMS) u e-mailu a správce hesel.zabere chvilku
+Přesuňte své soubory do šifrovaného cloudu (Proton Drive / Cryptomator).zabere chvilku
+Pořiďte si VPN (Mullvad), ideálně placenou anonymně.zabere chvilku
+Zašifrujte své DNS (Quad9 / Mullvad DNS) v telefonu i počítači.zabere chvilku
+Založte si účet na Mastodonu a ukotvěte svou přítomnost mimo platformy.zabere chvilku
+Vyzkoušejte Linux (distrosea.com), pak ho nainstalujte (na začátek Mint).pokročilé
+Přejděte s telefonem na GrapheneOS (je potřeba Pixel) nebo Android zabezpečte.pokročilé
+Provozujte sami první službu (YunoHost / Umbrel + Tailscale).pokročilé
+Osvojte si zásady OPSEC, pokud publikujete pod pseudonymem.pokročilé
+Manifest
+Změna nástrojů je aktem osobní odpovědnosti, který patří každému z nás: tak odmítáte nelegitimní hromadné sledování.
+Šifrování znamená chránit svůj soukromý život. Vlastní hosting znamená vymanit se ze sledování Big Tech. Převzít zpět kontrolu nad svými nástroji znamená stát se neovladatelnými a suverénními.
+Boj je politický. Podpořte organizace, které se mu stavějí, například iniciativu fightchatcontrol.eu, a napište svým zástupcům. Právě to málem vedlo k pádu Chat Control.
+Jelikož však řešení nejspíš nepřijde ani od volebních uren, ani od Evropského parlamentu, je na každém z nás, aby si vybojoval svobodu a chránil soukromí všemi nástroji, které internet nabízí.
+Předejte dál
+Sdílet tohoto průvodce
+Kopírovat odkaz
+Tisk / PDF
+Zdroje
+Privacy Guides EFF · Surveillance Self-Defense Freedom of the Press Foundation Fight Chat Control
+Zdroje · právní předpisy
+Parlament · pozměňovací návrhy z 9. července 2026 (E2EE vyloučeno) Oficiální výsledky jmenovitého hlasování · 9. července 2026 Rada EU · pozice v prvním čtení z 2. července 2026 Parlament · zamítnutí z 26. března 2026 EDPS · stanovisko ze 16. února 2026 (PDF) Nařízení (EU) 2021/1232 Chat Control 1.0 vs 2.0 Proton · skenování na straně klienta Společná výzva technologických gigantů (19. března 2026) Big Tech slibuje pokračovat ve skenování
+Jednejte
+European Digital Rights (EDRi) Stop Scanning Me (EDRi) Fight Chat Control Signal · blog
+Open source na GitHubu⭳ Stáhnout průvodce (1 soubor)
+Nula trackerů, nula cookies, nula externích požadavků. Vše (písma, ikony, styly) je vloženo přímo. Ověřte si to: otevřete síťový inspektor a stránku znovu načtěte. Nic neodchází třetí straně.
+Tento průvodce je informační dokument o ochraně soukromí a obraně šifrování. Nedoporučuje žádnou nezákonnou činnost. Vždy sledujte legislativní novinky: situace se rychle mění.Informace naposledy aktualizovány: 10. července 2026.exitchatcontrol.org
+by Aurealibe

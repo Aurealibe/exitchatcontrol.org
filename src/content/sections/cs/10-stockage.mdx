@@ -1,0 +1,79 @@
+---
+id: 'stockage'
+part: 6
+order: 10
+title: 'Šifrované úložiště'
+---
+
+<p class="part-num">
+  ČÁST 09 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Šifrované úložiště
+
+<ToolCard tool="t-protondrive">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Nahrazuje Google Drive / iCloud</span>
+    <span class="tool-tag">🇨🇭 · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    Koncově šifrovaný cloud pro vaše soubory a fotografie, součást Proton.
+  </Fragment>
+  <Fragment slot="why">
+    Na rozdíl od Google Drive nebo iCloud Proton nemůže číst vaše soubory: jsou zašifrovány ještě
+    před opuštěním vašeho zařízení. Švýcarská jurisdikce, stejný účet jako pro Proton Mail.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého jako jednoduchá přímá náhrada cloudu od Google nebo Apple.
+  </Fragment>
+  <ol slot="install">
+    <li>Povolte Proton Drive ve svém účtu Proton a nainstalujte aplikaci.</li>
+    <li>Zapněte automatické zálohování fotografií a poté vypněte zálohování od Google/Apple.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cryptomator">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Pokročilý</span>
+    <span class="tool-tag">Šifrování před nahráním</span>
+    <span class="tool-tag">🇩🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Trezor, který šifruje vaše soubory <b>předtím</b>, než je nahrajete do jakéhokoli cloudu, včetně
+    Google Drive nebo Dropbox.
+  </Fragment>
+  <Fragment slot="why">
+    Ideální řešení, pokud musíte zůstat u stávajícího cloudu: zachováte si pohodlnou službu, ale
+    poskytovatel uvidí jen zašifrovaný nesmysl. Klíč máte pouze vy.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo zatím nemohou opustit běžný cloud, ale chtějí své soubory chránit hned.
+  </Fragment>
+  <ol slot="install">
+    <li>Nainstalujte Cryptomator (na počítač i mobil) z cryptomator.org.</li>
+    <li>V synchronizované složce svého cloudu vytvořte „trezor“ a zvolte silné heslo.</li>
+    <li>Vložte soubory do trezoru: zašifrují se a poté se automaticky synchronizují.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nc-storage">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Vlastní cloud</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Váš vlastní cloud (soubory, kalendář, kontakty, poznámky) hostovaný na vašem serveru.
+  </Fragment>
+  <Fragment slot="why">
+    Nejvyšší míra kontroly: vaše data nikdy neopustí váš hardware. Podrobnosti najdete v části 10
+    (Self-hosting).
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo si provozují vlastní služby. Celou kartu najdete v části 10.
+  </Fragment>
+  <a slot="links" class="tool-link" href="#selfhost">
+    → Část 10
+  </a>
+</ToolCard>

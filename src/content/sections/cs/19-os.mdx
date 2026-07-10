@@ -1,0 +1,141 @@
+---
+id: 'os'
+part: 12
+order: 19
+title: 'Svobodné operační systémy'
+---
+
+<p class="part-num">
+  ČÁST 18 · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Svobodné operační systémy
+
+Základní kámen. Pokud lze skenování na straně zařízení vynutit přímo operačním systémem, jedinou skutečnou obranou je mít tento OS pod kontrolou. Platí to pro telefon (GrapheneOS) i počítač (Linux). Nepodceňujte to: dokud zůstáváte u Windows, macOS nebo Androidu od Googlu, svůj stroj ve skutečnosti neovládáte.
+
+<ToolCard tool="t-grapheneos">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilé</span>
+    <span class="tool-tag">Mobilní systém bez Googlu</span>
+    <span class="tool-tag">Android · Pixel · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Android zcela bez Googlu, nainstalovaný na telefonu Pixel: mobilní suverenita.
+  </Fragment>
+  <Fragment slot="why">
+    Je to strukturální obrana par excellence proti OS nebo obchodům s aplikacemi, které by vás
+    skenovaly. Služby Googlu ve volitelném sandboxu, <b>síťová oprávnění pro každou aplikaci</b>,
+    izolované profily, automatický restart, který vymaže klíče z paměti, a PIN pod nátlakem, který
+    telefon vymaže. Je tak respektovaný pro svou bezpečnost, že jej používají i cíle spywaru.
+  </Fragment>
+  <Fragment slot="who">
+    Lidé vystavení riziku, ale také každý občan ochotný koupit si Pixel, aby znovu převzal kontrolu
+    nad svým telefonem.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Pořiďte si kompatibilní telefon <b>Google Pixel</b> (z bezpečnostních důvodů jde o jediný
+      podporovaný hardware).
+    </li>
+    <li>
+      Na počítači přejděte na <b>grapheneos.org/install</b> a postupujte podle webového instalátoru
+      (několik kliknutí, bez nutnosti terminálu).
+    </li>
+    <li>
+      Pro své aplikace nainstalujte bezplatný obchod F-Droid; sandboxovaný Google Play přidejte jen
+      v případě potřeby.
+    </li>
+    <li>
+      Nastavte dlouhou přístupovou frázi (ne čtyřmístný PIN) a naučte se používat režim „Lockdown“.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-linux">
+  <Fragment slot="name">Linux (na desktopu)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Nahrazuje Windows / macOS</span>
+    <span class="tool-tag">🌍 · zdarma</span>
+  </Fragment>
+  <Fragment slot="what">
+    Svobodný operační systém pro váš počítač, který nahrazuje Windows nebo macOS. Existuje v mnoha
+    variantách, jimž se říká „distribuce“.
+  </Fragment>
+  <Fragment slot="why">
+    Pro mnoho lidí je to slepé místo: šifrují své zprávy, ale ponechávají si Windows, který
+    nepřetržitě posílá telemetrii Microsoftu (jeho funkce „Recall“ se pokoušela průběžně pořizovat
+    snímky obrazovky), nebo macOS, který hlásí spouštěné aplikace. Linux vás nešpehuje, je zdarma,
+    oživí staré počítače a konečně z vás udělá pána vašeho stroje. Je jednodušší, než napovídá jeho
+    pověst: moderní distribuce vypadají jako Windows nebo macOS.
+  </Fragment>
+  <Fragment slot="who">
+    Přechod může zvládnout kdokoli. Pro začátek zkuste <b>Linux Mint</b> (nejbližší Windows) nebo{' '}
+    <b>Fedora</b>; pro stabilitu <b>Debian</b>. Nemusíte nic mazat: nejprve si jej můžete vyzkoušet
+    a pak nainstalovat vedle svého současného systému.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nejste si jistí, kterou distribuci zvolit? Vyplňte kvíz <b>distrochooser.de/fr</b>, který vám
+      doporučí tu správnou pro vaše potřeby.
+    </li>
+    <li>
+      Vyzkoušejte si ji <b>bez instalace čehokoli</b>, přímo v prohlížeči, na <b>distrosea.com</b>.
+    </li>
+    <li>
+      Až budete rozhodnuti, stáhněte obraz distribuce a vytvořte zaváděcí USB (pomocí Ventoy nebo
+      Balena Etcher).
+    </li>
+    <li>
+      Spusťte počítač z USB a systém si vyzkoušejte „live“, poté spusťte instalaci. Povolte nabízené
+      šifrování disku.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tails">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilé</span>
+    <span class="tool-tag">Amnézické USB</span>
+    <span class="tool-tag">🌍 · vše přes Tor</span>
+  </Fragment>
+  <Fragment slot="what">
+    Systém, který se spouští z USB flash disku, směruje veškerý provoz přes Tor a po vypnutí
+    nezanechá <b>žádné stopy</b> .
+  </Fragment>
+  <Fragment slot="why">
+    Po vypnutí je vše zapomenuto: je „amnézický“. Ideální pro citlivou jednorázovou práci na
+    počítači, který není váš, aniž by po vás cokoli zůstalo.
+  </Fragment>
+  <Fragment slot="who">
+    Whistlebloweři, novináři, zdroje. Referenční nástroj pro vysoce rizikovou práci.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Stáhněte si Tails z <b>tails.net</b> a podle průvodce vytvořte USB flash disk.
+    </li>
+    <li>Restartujte počítač z tohoto USB. Použijte jej a pak jej vypněte: vše zmizí.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-qubes">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Segmentace</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Dva okrajové systémy: Qubes rozděluje váš počítač do izolovaných virtuálních strojů;
+    postmarketOS spouští Linux na starých telefonech.
+  </Fragment>
+  <Fragment slot="why">
+    Qubes izoluje každou činnost (práci, bankovnictví, rizikové prohlížení) do vlastního oddílu:
+    kompromitace nedosáhne na zbytek. postmarketOS prodlužuje život telefonů opuštěných jejich
+    výrobcem.
+  </Fragment>
+  <Fragment slot="who">Zkušení uživatelé s velmi vysokým modelem hrozeb.</Fragment>
+</ToolCard>
+
+#### Zabezpečte své zařízení
+
+I bez změny OS můžete hodně získat: instalujte aplikace přes **F-Droid** (svobodný obchod) nebo **Aurora Store**, nahraďte služby Googlu pomocí **microG**, vytvořte oddělené profily, odeberte zbytečná síťová oprávnění, vypněte automatické zálohování do cloudu a reklamní ID.

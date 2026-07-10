@@ -1,0 +1,119 @@
+---
+id: 'ia'
+part: 9
+order: 15
+title: 'Konverzační AI'
+---
+
+<p class="part-num">
+  ČÁST 14 · SLEPÉ MÍSTO · ŠÍLENSTVÍ KOLEM AI · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Konverzační AI
+
+Zatímco bojujeme za šifrování svých zpráv, stovky milionů lidí svěřují své nejniternější myšlenky ChatGPT, Gemini nebo Copilot na amerických serverech. To je slepé místo celého příběhu. Naprosté šílenství.
+
+To, co napíšete cloudové AI, je **písemné přiznání s časovým razítkem, které se ukládá**. Horší než zpráva: vyklopíte své obavy, informace o zdraví, financích, pracovní tajemství, často upřímněji než příteli. A na rozdíl od šifrovaného komunikátoru je to vše na serveru čitelné jako prostý text.
+
+<div class="box warn">
+  <span class="lab">Co říkají fakta (2025–2026)</span>
+  <p>
+    Spotřebitelské verze <strong>ve výchozím nastavení trénují na vašich datech</strong>. V lednu
+    2026 americký soudce nařídil OpenAI předložit <strong>20 milionů konverzací ChatGPT</strong>{' '}
+    jako důkaz: dotčení uživatelé o tom nebyli ani informováni, ani konzultováni. Smazání chatu{' '}
+    <strong>nezaručuje</strong>, že je pryč. A při jednom úniku obsahovalo 47 000 zveřejněných
+    konverzací e-maily, telefonní čísla a znovu identifikovatelné intimní údaje.
+  </p>
+</div>
+
+#### Řešení: lokální AI
+
+<ToolCard tool="t-localai">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Nahrazuje ChatGPT</span>
+    <span class="tool-tag">🌍 · 100% lokální</span>
+  </Fragment>
+  <Fragment slot="what">Software pro spuštění modelu AI přímo na vašem vlastním počítači.</Fragment>
+  <Fragment slot="why">
+    Vaše otázky nikdy neopustí zařízení: žádný server, žádný účet, žádná telemetrie a funguje i
+    offline. Kvalita závisí na vašem hardwaru, ale nic neuniká. <b>Ollama</b> a <b>LM Studio</b>{' '}
+    jsou nejsnazší; <b>Jan</b> a <b>GPT4All</b> míří na maximální soukromí.
+  </Fragment>
+  <Fragment slot="who">
+    Každý, kdo používá AI i pro trochu osobní témata a nechce je předávat americkému serveru.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Pro pozvolný začátek nainstalujte <b>LM Studio</b> nebo <b>Jan</b> (grafické rozhraní jako u
+      běžné aplikace).
+    </li>
+    <li>
+      Stáhněte si model nabízený v aplikaci (například Llama nebo Mistral), který odpovídá výkonu
+      vašeho zařízení.
+    </li>
+    <li>
+      Pusťte se do chatování: vše se děje lokálně. Ollama je verze pro příkazový řádek pro
+      techničtěji zaměřené uživatele.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-pocketpal">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Nahrazuje ChatGPT na mobilu</span>
+    <span class="tool-tag">📱 · 100% lokální</span>
+  </Fragment>
+  <Fragment slot="what">
+    Aplikace, která spouští modely AI přímo ve vašem telefonu, zcela offline.
+  </Fragment>
+  <Fragment slot="why">
+    Vaše prompty nikdy neopustí telefon: žádný účet, žádný cloud, žádná telemetrie a funguje i v
+    režimu letadlo. Je open source (MIT), stahuje modely <b>GGUF</b> (Gemma, Qwen, Phi, Llama) z
+    Hugging Face a spouští je na CPU, GPU nebo NPU vašeho zařízení. Mobilní protějšek Ollama a LM
+    Studio.
+  </Fragment>
+  <Fragment slot="who">
+    Každý, kdo sahá po ChatGPT v telefonu s osobními otázkami a nechce je předávat americkému
+    serveru.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte <b>PocketPal</b> z App Store nebo Google Play (případně jej sestavte ze
+      zdrojového kódu).
+    </li>
+    <li>
+      Otevřete <b>Models</b>, vyberte model vhodný pro váš telefon a stáhněte jej.
+    </li>
+    <li>Načtěte ho a chatujte: vše běží offline přímo v zařízení.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cloudai">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Cloud zaměřený na soukromí</span>
+  </Fragment>
+  <Fragment slot="what">
+    Přístup ke cloudové AI, který je ale vytvořený s ohledem na soukromí, když lokální AI není
+    možná.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Duck.ai</b> (DuckDuckGo) poskytuje anonymizovaný přístup k několika modelům. <b>Lumo</b>
+    (Proton) šifruje výměny a netrénuje na nich. Je to mnohem lepší než spotřebitelský ChatGPT, ale
+    stále jde o vzdálený server.
+  </Fragment>
+  <Fragment slot="who">
+    Ti, kdo chtějí pohodlí cloudu, aniž by krmili giganty. Nechte tam jen necitlivá témata.
+  </Fragment>
+</ToolCard>
+
+<div class="box honest">
+  <span class="lab">Jednoduché pravidlo</span>
+  <p>
+    Nikdy nevkládejte do cloudové AI nic, co byste neřekli cizímu člověku, který si to nahrává:
+    identitu, údaje o zdraví, hesla, pracovní tajemství, přiznání. Pro cokoli citlivého používejte
+    lokální AI.
+  </p>
+</div>

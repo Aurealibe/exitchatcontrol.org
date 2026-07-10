@@ -1,0 +1,46 @@
+---
+id: 'telephonie'
+part: 12
+order: 20
+title: 'Telefonie a fyzické zařízení'
+---
+
+<p class="part-num">
+  ČÁST 19 · HARDWARE · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Telefonie a fyzické zařízení
+
+I ta nejlepší aplikace je k ničemu, pokud vás prozradí samotné zařízení. Zde jsou hardwarové hrozby a kroky, které je neutralizují.
+
+#### Telefonní číslo je sledovací nástroj
+
+Vaše číslo propojuje SIM kartu, zařízení (jeho identifikátor IMEI), polohu i identitu (ve většině zemí je k nákupu SIM vyžadován doklad totožnosti). Je to vlákno, které umožňuje vše vzájemně propojit.
+
+- Pro citlivé kontakty používejte komunikátory **bez telefonního čísla** (SimpleX, Session) a vždy upřednostňujte Signal před SMS.
+- Pro oddělenou identitu omezuje propojení už při nákupu SIM „pouze pro data“ nebo předplacená eSIM (ověřte si pravidla ve své zemi).
+
+#### IMSI-catchery &amp; mobilní síť
+
+„IMSI-catchery“ (nebo „stingrays“) jsou falešné mobilní vysílače, které nutí telefony se k nim připojit, aby mohly zaznamenat jejich identifikátor a někdy zachytávat komunikaci, často přepnutím na slabě šifrovanou síť 2G. Současně stará chyba sítě (SS7) stále umožňuje zachytávání SMS a vzdálené určování polohy telefonu: další důvod, proč se SMS vzdát.
+
+- V nastavení **vypněte 2G** (je to možné na Androidu a GrapheneOS), abyste odstranili hlavní vektor odposlechu.
+- Na protestu nebo v citlivé oblasti přepněte do **režimu letadlo** nebo vložte telefon do **Faradayova pouzdra** (které blokuje veškerý signál). EFF dokonce zveřejňuje bezplatný nástroj Rayhunter pro detekci IMSI-catcherů.
+
+#### Biometrie, nebo přístupový kód?
+
+<div class="box warn">
+  <span class="lab">Prst lze vynutit, přístupový kód ne</span>
+  <p>
+    Váš obličej nebo prst lze přiložit ke snímači, když jste zadržováni (na hranici nebo při
+    zatčení); heslo, které máte v hlavě, nikoli. Před rizikovou situací vynuťte návrat k zadání
+    přístupového kódu: na iPhonu podržte boční tlačítko a tlačítko hlasitosti (obrazovka „SOS“); na
+    Androidu/GrapheneOS použijte v nabídce vypnutí <b>Lockdown</b>, který deaktivuje biometrii,
+    dokud nezadáte PIN. Zvolte dlouhou přístupovou frázi, ne čtyřmístný PIN. GrapheneOS dokonce
+    nabízí <b>PIN pod nátlakem</b>, který telefon vymaže.
+  </p>
+</div>
+
+#### Bez Microsoftu, bez Applu
+
+Nezapomeňte na počítač: Windows nepřetržitě odesílá telemetrii (a jeho funkce „Recall“ se pokoušela průběžně pořizovat snímky obrazovky), macOS hlásí aplikace, které spouštíte. Skutečnou cestou ven je Linux (viz část 12). Pokud to není možné, vypněte telemetrii, reklamní ID a „Recall“ a přidejte odchozí firewall (například Little Snitch na Macu).

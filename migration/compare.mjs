@@ -17,12 +17,20 @@
 //
 // Usage: node migration/compare.mjs   (after extract + build + extract --built)
 
-import { readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const INV = join(dirname(fileURLToPath(import.meta.url)), 'inventory')
-const LANGS = ['en', 'fr', 'nl']
+const BASE_LANGS = ['en', 'fr', 'nl']
+// Czech was added after the one-off legacy extraction, so compare it only if
+// both inventories have explicitly been produced.
+const OPTIONAL_LANGS = ['cs']
+const optionalLangs = OPTIONAL_LANGS.filter(
+  (lang) =>
+    existsSync(join(INV, `legacy-${lang}.txt`)) && existsSync(join(INV, `built-${lang}.txt`)),
+)
+const LANGS = [...BASE_LANGS, ...optionalLangs]
 
 const LABELS = {
   en: new Set(["What it's for", 'Why it matters', 'For whom & when', 'Install & use']),
@@ -33,6 +41,7 @@ const LABELS = {
     'Voor wie & wanneer',
     'Installeren & gebruiken',
   ]),
+  cs: new Set(['K čemu slouží', 'Proč na tom záleží', 'Pro koho a kdy', 'Instalace a použití']),
 }
 
 // The six cell lines per language of the two deferred #menace table rows.
@@ -61,11 +70,20 @@ const EXCLUDED = {
     'Aangenomen op 9 juli 2026',
     'In onderhandeling, 5e trialoog mislukt op 29 juni',
   ],
+  cs: [
+    'Doba trvání',
+    'Dočasné, prodlouženo do 3. dubna 2028',
+    'Trvalé',
+    'Stav (červenec 2026)',
+    'Přijato 9. července 2026',
+    'V jednání, 5. trialog selhal 29. června',
+  ],
 }
 
 const unquote = (s) => s.replace(/[“”]/g, '"').replace(/[‘’]/g, "'")
-const START = /^(PART|PARTIE|DEEL|MEMO) 00 · |^(PART|PARTIE|DEEL) 00 · /
-const END = /(become ungovernable|devenir ingouvernable|onbestuurbaar worden)/i
+const START = /^(PART|PARTIE|DEEL|ČÁST|MEMO) 00 · |^(PART|PARTIE|DEEL|ČÁST) 00 · /
+const END =
+  /(become ungovernable|devenir ingouvernable|onbestuurbaar worden|neovladateln|stát se neovladateln)/i
 
 function narrativeWindow(lines, file) {
   const start = lines.findIndex((l) => START.test(l))
@@ -88,10 +106,10 @@ let failed = false
 for (const lang of LANGS) {
   const legacyAll = readFileSync(join(INV, `legacy-${lang}.txt`), 'utf8')
     .trimEnd()
-    .split('\n')
+    .split(/\r?\n/)
   const builtAll = readFileSync(join(INV, `built-${lang}.txt`), 'utf8')
     .trimEnd()
-    .split('\n')
+    .split(/\r?\n/)
   const legacy = narrativeWindow(legacyAll, `legacy-${lang}.txt`)
   const built = narrativeWindow(builtAll, `built-${lang}.txt`)
 

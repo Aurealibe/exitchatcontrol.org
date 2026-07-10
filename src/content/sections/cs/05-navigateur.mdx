@@ -1,0 +1,153 @@
+---
+id: 'navigateur'
+part: 3
+order: 5
+title: 'Prohlížeč a vyhledávání'
+---
+
+<p class="part-num">
+  ČÁST 04 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Prohlížeč a vyhledávání
+
+Chrome je reklamní sledovací nástroj. Google Search profiluje každý dotaz. Nahraďte obojí.
+
+<ToolCard tool="t-mullvadbrowser">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Pokročilí / experti</span>
+    <span class="tool-tag">Ochrana proti otisku prohlížeče</span>
+    <span class="tool-tag">🇸🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Prohlížeč z Tor Browseru, ale bez sítě Tor: používejte jej s VPN pro počítač, který se obtížně
+    sleduje.
+  </Fragment>
+  <Fragment slot="why">
+    Je vytvořený ve spolupráci s Tor Project a navržený tak, aby všichni jeho uživatelé měli{' '}
+    <b>stejný digitální otisk</b>. Výsledek: namísto toho, abyste byli jedineční a tedy
+    sledovatelní, splynete s davem. Je to nejlepší volba pro soukromí na počítači.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo chtějí jít dál než jen k blokování reklam, zejména pro pseudonymní účty a vystavené
+    profily.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Stáhněte si jej z <b>mullvad.net/browser</b> (Windows, macOS, Linux).
+    </li>
+    <li>
+      Používejte jej beze změn a nepřizpůsobujte si ho: každé přidané rozšíření nebo nastavení vás
+      znovu učiní identifikovatelnými.
+    </li>
+    <li>Pro skrytí IP adresy jej používejte společně s VPN.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-firefox">
+  <Fragment slot="name">Firefox (zabezpečený)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečníci</span>
+    <span class="tool-tag">Náhrada za Chrome</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Referenční svobodný prohlížeč pro každodenní používání s respektem k soukromí.
+  </Fragment>
+  <Fragment slot="why">
+    Na rozdíl od Chromu (reklamního sledovacího nástroje Googlu) Firefox vytváří nadace, která nemá
+    zájem vás profilovat. S několika úpravami (návodem <em>arkenfox</em>) a rozšířením uBlock Origin
+    se stane velmi spolehlivým.
+  </Fragment>
+  <Fragment slot="who">Pro každého jako hlavní prohlížeč pro každodenní použití.</Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte Firefox z <b>mozilla.org/firefox</b>.
+    </li>
+    <li>
+      Přidejte rozšíření <b>uBlock Origin</b> (blokování reklam a sledovačů).
+    </li>
+    <li>
+      V nastavení soukromí zvolte „Přísná“, vypněte telemetrii a nastavte mazání cookies při
+      zavření. Chcete-li jít dál, použijte návod arkenfox.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-brave">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečníci</span>
+    <span class="tool-tag">Ve výchozím nastavení vše blokuje</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Prohlížeč založený na Chromiu, který ve výchozím nastavení blokuje reklamy a sledovače, navíc se
+    soukromým oknem připojeným k Toru.
+  </Fragment>
+  <Fragment slot="why">
+    Je to nejjednodušší možnost pro někoho, kdo přechází z Chromu: stejný pocit při používání, ale
+    bez sledování. Nativně blokuje reklamy na YouTube, nabízí šifrované videohovory (Brave Talk,
+    založený na Jitsi) a přístup k Toru jedním kliknutím, praktický pro návštěvu zablokovaných webů.
+  </Fragment>
+  <Fragment slot="who">
+    Začátečníci, kteří chtějí bezbolestně přejít z Chromu. (Pokud vás funkce kryptoměn a reklamních
+    odměn nezajímají, ignorujte je.)
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte Brave z <b>brave.com</b>.
+    </li>
+    <li>Nastavte „Shields“ na „agresivní“ a pokud nechcete reklamy, vypněte Brave Rewards.</li>
+    <li>Pro Tor: nabídka &gt; „Nové soukromé okno s Tor“ a pak počkejte na „Tor připojen“.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-ublock">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečníci</span>
+    <span class="tool-tag">Rozšíření</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Rozšíření prohlížeče, které blokuje reklamy, sledovače a špionážní skripty. Krok s největším
+    přínosem za deset sekund.
+  </Fragment>
+  <Fragment slot="why">
+    Online reklama je hlavním nástrojem sledování a profilování. Její blokování omezí většinu
+    sledování, zrychlí stránky a sníží riziko malwaru.
+  </Fragment>
+  <Fragment slot="who">Pro každého, ve Firefoxu i prohlížečích založených na Chromiu.</Fragment>
+  <ol slot="install">
+    <li>
+      Otevřete obchod s rozšířeními ve svém prohlížeči a vyhledejte „uBlock Origin“ (původní verzi
+      od Raymonda Hilla).
+    </li>
+    <li>Nainstalujte jej. Funguje ihned, bez nutnosti nastavení.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-search">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡 Vyhledávače</span>
+    <span class="tool-tag">Náhrada za Google Search</span>
+  </Fragment>
+  <Fragment slot="what">Vyhledávače, které na rozdíl od Googlu neprofilují každý dotaz.</Fragment>
+  <Fragment slot="why">
+    DuckDuckGo a Brave Search neuchovávají historii spojenou s vaší identitou. Startpage poskytuje
+    výsledky Googlu bez sledování. SearXNG jde ještě dál: jde o{' '}
+    <b>metavyhledávač, který lze provozovat na vlastním serveru</b>, tedy suverenitu až po
+    vyhledávací řádek.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého. SearXNG je určen pro ty, kdo chtějí provozovat vlastní vyhledávač.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      V nastavení prohlížeče změňte výchozí vyhledávač na DuckDuckGo, Brave Search nebo Startpage.
+    </li>
+    <li>
+      Pro SearXNG: použijte veřejnou instanci (adresář na searx.space), nebo provozujte vlastní (viz
+      část 10).
+    </li>
+  </ol>
+</ToolCard>
