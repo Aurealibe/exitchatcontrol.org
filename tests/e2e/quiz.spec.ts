@@ -57,4 +57,33 @@ test('answering every question reveals a 100/100 sovereign score', async ({
   await expect(page.locator('[data-quiz-recs] > *')).toHaveCount(3)
   // the live progress counter tracks answers (regression: it once stuck at 0)
   await expect(page.locator('[data-quiz-progress-text]')).toContainText('12 / 12')
+  // the reader's band is highlighted in the scoring ladder, and at the top
+  // band the nudge line switches to the "top band reached" message
+  await expect(page.locator('[data-band-id="sovereign"]')).toHaveClass(/quiz-band--current/)
+  const next = page.locator('[data-quiz-next]')
+  await expect(next).not.toBeEmpty()
+  await expect(next).not.toContainText('{')
+})
+
+test('all-weakest answers land in the lowest band with a next-band nudge', async ({
+  page,
+  javaScriptEnabled,
+}) => {
+  test.skip(javaScriptEnabled === false, 'scoring is a JS enhancement')
+  await page.goto('/quiz')
+  const questions = page.locator('[data-quiz-question]')
+  const count = await questions.count()
+  for (let i = 0; i < count; i += 1) {
+    // the weakest option is first in every question and worth zero points
+    await questions.nth(i).locator('input[type="radio"]').first().check()
+  }
+  await expect(page.locator('[data-quiz-result]')).toBeVisible()
+  await expect(page.locator('[data-quiz-score]')).toHaveText('0')
+  await expect(page.locator('[data-band-id="exposed"]')).toHaveClass(/quiz-band--current/)
+  // the next band ("awakening") starts at 25, so the nudge names that gap
+  await expect(page.locator('[data-quiz-next]')).toContainText('25')
+  // restarting clears the ladder highlight along with the panel
+  await page.locator('[data-quiz-restart]').click()
+  await expect(page.locator('[data-quiz-result]')).toBeHidden()
+  await expect(page.locator('.quiz-band--current')).toHaveCount(0)
 })

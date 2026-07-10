@@ -157,7 +157,7 @@
     "eyebrow": "Évaluer sa résistance à la censure",
     "title": "Quiz de résistance",
     "lede": "Une boussole, pas un classement : répondez à douze questions rapides pour repérer les points faibles de votre pile — sans jugement — puis suivez des pistes concrètes issues du guide.",
-    "privacyNote": "Le score est calculé localement dans votre navigateur. Rien n'est envoyé, rien n'est enregistré.",
+    "privacyNote": "Le score est calculé localement dans votre navigateur. Rien n'est envoyé nulle part ; vos réponses restent sur votre appareil.",
     "start": "Commencer le quiz",
     "readGuide": "Lire le guide complet",
     "progress": "{done} / {total} répondues",
@@ -173,6 +173,8 @@
     "share": "Partager",
     "shareX": "Publier sur X",
     "shareText": "Mon score de résistance à la censure : {score}/100 — {band}. Évaluez le vôtre :",
+    "nextBand": "Encore {points} pour atteindre « {band} ».",
+    "topBand": "Palier maximal atteint — reste à garder la discipline.",
     "bandsHeading": "Ce que le score signifie",
     "categoriesHeading": "Les douze domaines, et où progresser"
   }

@@ -157,7 +157,7 @@
     "eyebrow": "Estimate your censorship resistance",
     "title": "Resistance quiz",
     "lede": "A compass, not a scoreboard: answer twelve quick questions to spot the weak points in your setup — no shame — then follow concrete fixes from the guide.",
-    "privacyNote": "The score is calculated locally in your browser. Nothing is sent, nothing is stored.",
+    "privacyNote": "The score is calculated locally in your browser. Nothing is sent anywhere; your answers stay on your device.",
     "start": "Start the quiz",
     "readGuide": "Read the full guide",
     "progress": "{done} / {total} answered",
@@ -173,6 +173,8 @@
     "share": "Share",
     "shareX": "Post on X",
     "shareText": "My censorship-resistance score: {score}/100 — {band}. Check yours:",
+    "nextBand": "Only {points} more to reach “{band}”.",
+    "topBand": "Top band reached — now it’s about keeping the discipline.",
     "bandsHeading": "What the score means",
     "categoriesHeading": "The twelve areas, and where to improve"
   }
