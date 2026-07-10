@@ -1,6 +1,6 @@
 # Exit Chat Control
 
-A free, bilingual (EN / FR) guide to escape **Chat Control** and take back control of your digital privacy: encrypted messaging, email, VPN, DNS, 2FA, Linux, GrapheneOS, self-hosting, and more. Every tool is presented with **what it does**, **who it's for**, and **how to install it**.
+A free, trilingual (EN / FR / NL) guide to escape **Chat Control** and take back control of your digital privacy: encrypted messaging, email, VPN, DNS, 2FA, Linux, GrapheneOS, self-hosting, and more. Every tool is presented with **what it does**, **who it's for**, and **how to install it**.
 
 🔗 **Live site: https://exitchatcontrol.org**
 
