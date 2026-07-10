@@ -75,3 +75,12 @@
   Sœurs : tree clean mais previews toujours up + arcs récents ≤15 min →
   PAS encore éteintes, phase F différée. Lanes restantes : B (prose),
   C (perf/poids), E-solde (axe re-run + offline file:// re-test).
+- it.3 (03:2x, déclenchée opérateur) — sœur en PLEIN VOL (cascade rebrand :
+  index/404/og.png regen/webmanifest/i18n/print + CONTRIBUTING.md neuf).
+  **Lane B close** : drift.tsx mécaniquement propre (0 espace de tête ·
+  0 double espace · dates triées) + relecture des 35 titres FR : tenus,
+  zéro slop, rien à corriger. **Lane C close** : budgets VERTS — JS shippé
+  ≈679 KB <800 (axe exclu) · CSS 48 KB · prerender 640 KB · offline 694 KB ·
+  dossier.css 170 l. Aucune action. E-solde (battery+axe+offline file://)
+  FUSIONNÉE dans la phase F (la sœur churn dist/ en continu — un run
+  frais n'aurait pas de valeur avant extinction). Reste : F uniquement.
