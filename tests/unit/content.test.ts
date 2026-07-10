@@ -83,8 +83,8 @@ describe('precedents timeline (events)', () => {
 describe('big brother observatory', () => {
   const drift = loadDataset('observatory', 'en')
 
-  it('has 40 entries, chronologically sorted', () => {
-    expect(drift).toHaveLength(40)
+  it('has 41 entries, chronologically sorted', () => {
+    expect(drift).toHaveLength(41)
     const dates = drift.map((e) => e.date)
     expect(dates).toEqual([...dates].sort())
   })
