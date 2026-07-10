@@ -1,9 +1,9 @@
-/* Post-build: packs each locale's page into ONE self-contained HTML file —
-   stylesheets and scripts inlined, favicon as a data URI — so the guide can
-   be mirrored, e-mailed, or carried on a USB stick and opened from file://.
-   No parallel implementation: the artifact IS the built page, inlined.
-   Outputs dist/exitchatcontrol-offline[.<locale>].html (contract shared
-   with Footer.astro). */
+/* Post-build: packs each locale's guide — and its quiz — into self-contained
+   HTML files (stylesheets and scripts inlined, favicon as a data URI) so the
+   site can be mirrored, e-mailed, or carried on a USB stick and opened from
+   file://. No parallel implementation: each artifact IS the built page,
+   inlined. Outputs dist/exitchatcontrol-offline[.<locale>].html (contract
+   shared with Footer.astro) and dist/exitchatcontrol-quiz-offline[.<locale>].html. */
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
@@ -17,11 +17,25 @@ if (!DEFAULT) throw new Error('[build-offline] cannot read defaultLocale from sr
 const LOCALES = readdirSync('src/i18n')
   .filter((f) => /^[a-z]{2}\.json$/.test(f))
   .map((f) => f.slice(0, 2))
-  .map((code) => ({
-    code,
-    page: code === DEFAULT ? 'index.html' : `${code}/index.html`,
-    out: `exitchatcontrol-offline${code === DEFAULT ? '' : `.${code}`}.html`,
-  }))
+  .map((code) => {
+    const prefix = code === DEFAULT ? '' : `/${code}`
+    const suffix = code === DEFAULT ? '' : `.${code}`
+    return {
+      code,
+      pages: [
+        {
+          route: `${prefix}/`,
+          page: `${prefix}/index.html`.slice(1),
+          out: `exitchatcontrol-offline${suffix}.html`,
+        },
+        {
+          route: `${prefix}/quiz`,
+          page: `${prefix}/quiz/index.html`.slice(1),
+          out: `exitchatcontrol-quiz-offline${suffix}.html`,
+        },
+      ],
+    }
+  })
 
 const faviconDataUri = `data:image/png;base64,${readFileSync('public/favicon.png').toString('base64')}`
 
@@ -48,14 +62,30 @@ function inlineAssets(html) {
   return html
 }
 
-for (const { code, page, out } of LOCALES) {
-  let html = inlineAssets(readFileSync(join(DIST, page), 'utf8'))
-  // language switcher + brand link → sibling offline artifacts, so the
-  // whole multilingual set works side-by-side from file://
-  for (const sibling of LOCALES) {
-    const route = sibling.code === DEFAULT ? '/' : `/${sibling.code}/`
-    html = html.replaceAll(`href="${route}"`, `href="./${sibling.out}"`)
+// Internal routes → sibling artifacts, with anchors carried over, so the
+// whole multilingual guide+quiz set navigates side-by-side from file://
+// (language switcher, brand link, quiz nav, the quiz's deep links into the
+// guide). A page's links to its own route collapse to in-page anchors.
+// Root-absolute hrefs must never survive: from file:// they point at the
+// reader's filesystem (tests/unit/offline-links.test.ts enforces this).
+const ROUTES = LOCALES.flatMap((l) => l.pages)
+
+function relinkRoutes(html, self) {
+  for (const { route, out } of ROUTES) {
+    const re = new RegExp(`href="${route.replaceAll('/', '\\/')}(#[^"]*)?"`, 'g')
+    html = html.replace(re, (_, hash = '') =>
+      out === self && hash ? `href="${hash}"` : `href="./${out}${hash}"`,
+    )
   }
-  writeFileSync(join(DIST, out), html)
-  console.log(`[build-offline] ${out} (${code}) — ${(html.length / 1024).toFixed(0)} KB`)
+  // the footer's own download link becomes a working relative link
+  return html.replaceAll('href="/exitchatcontrol-', 'href="./exitchatcontrol-')
+}
+
+for (const { code, pages } of LOCALES) {
+  for (const { page, out } of pages) {
+    let html = inlineAssets(readFileSync(join(DIST, page), 'utf8'))
+    html = relinkRoutes(html, out)
+    writeFileSync(join(DIST, out), html)
+    console.log(`[build-offline] ${out} (${code}) — ${(html.length / 1024).toFixed(0)} KB`)
+  }
 }
