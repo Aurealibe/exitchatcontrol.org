@@ -352,6 +352,17 @@
     }
   },
   {
+    "id": "uk-under16-ban",
+    "date": "2026-06-15",
+    "region": "uk",
+    "themes": ["identity", "media"],
+    "status": "propose",
+    "src": {
+      "label": "GOV.UK · DSIT, 15 June 2026",
+      "href": "https://www.gov.uk/government/news/social-media-to-be-banned-for-under-16s-in-landmark-government-move-to-givekids-their-childhood-back"
+    }
+  },
+  {
     "id": "euro-numerique-econ",
     "date": "2026-06-23",
     "region": "eu",
