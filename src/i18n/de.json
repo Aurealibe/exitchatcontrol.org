@@ -183,6 +183,8 @@
     "scorecardStamp": "Nur lokal · Ohne Tracker",
     "scorecardCta": "Quiz starten →",
     "scorecardFile": "ecc-score-{score}.png",
+    "nextBand": "Nur noch {points} Punkte bis „{band}“.",
+    "topBand": "Höchste Stufe erreicht – jetzt gilt es, die Disziplin zu halten.",
     "bandsHeading": "Was die Punktzahl bedeutet",
     "categoriesHeading": "Die zwölf Bereiche – und wo du dich verbessern kannst"
   }

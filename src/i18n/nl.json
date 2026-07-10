@@ -157,7 +157,7 @@
     "eyebrow": "Schat uw weerstand tegen censuur in",
     "title": "Weerstandsquiz",
     "lede": "Een kompas, geen ranglijst: beantwoord twaalf snelle vragen om de zwakke plekken in uw setup te vinden — zonder oordeel — en volg dan concrete oplossingen uit de gids.",
-    "privacyNote": "De score wordt lokaal in uw browser berekend. Er wordt niets verzonden en niets opgeslagen.",
+    "privacyNote": "De score wordt lokaal in uw browser berekend. Er wordt niets verzonden; uw antwoorden blijven op uw apparaat.",
     "start": "Start de quiz",
     "readGuide": "Lees de volledige gids",
     "progress": "{done} / {total} beantwoord",
@@ -183,6 +183,8 @@
     "scorecardStamp": "Alleen lokaal · Geen tracker",
     "scorecardCta": "Doe de quiz →",
     "scorecardFile": "ecc-score-{score}.png",
+    "nextBand": "Nog {points} tot “{band}”.",
+    "topBand": "Hoogste niveau bereikt — nu komt het aan op discipline.",
     "bandsHeading": "Wat de score betekent",
     "categoriesHeading": "De twaalf gebieden, en waar te verbeteren"
   }

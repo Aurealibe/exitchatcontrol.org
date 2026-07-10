@@ -780,9 +780,49 @@
     border-radius: inherit;
     transition: width 0.25s ease;
   }
+  /* score gauge — the arc length is driven by --quiz-gauge (0–100), set by
+     the quiz script via the CSSOM, the same CSP-clean trick as the bars.
+     263.9 = the circumference of the r=42 circle. */
+  .quiz-gauge {
+    position: relative;
+    inline-size: 7.5rem;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+  }
+  .quiz-gauge svg {
+    inline-size: 100%;
+    block-size: 100%;
+    transform: rotate(-90deg);
+  }
+  .quiz-gauge__track,
+  .quiz-gauge__arc {
+    fill: none;
+    stroke-width: 8;
+  }
+  .quiz-gauge__track {
+    stroke: var(--surface-2);
+  }
+  .quiz-gauge__arc {
+    stroke: var(--accent);
+    stroke-dasharray: calc(var(--quiz-gauge, 0) / 100 * 263.9) 263.9;
+    transition: stroke-dasharray 0.6s ease;
+  }
+  .quiz-gauge__value {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }
+  /* the band the reader landed in, inside the scoring ladder */
+  [data-quiz-band-key] .quiz-band--current {
+    border-color: var(--accent);
+    box-shadow: inset 3px 0 0 var(--accent);
+  }
   @media (prefers-reduced-motion: reduce) {
     .quiz-progress__fill,
-    .quiz-bar__fill {
+    .quiz-bar__fill,
+    .quiz-gauge__arc {
       transition: none;
     }
   }
