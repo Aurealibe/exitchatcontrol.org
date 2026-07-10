@@ -122,6 +122,14 @@ const vanilla = `
       else wire.setAttribute('data-off', '')
     }).observe(wire)
   }
+  on('.bb-wire-toggle', function (el) {
+    if (!wire) return
+    var paused = wire.hasAttribute('data-paused')
+    if (paused) wire.removeAttribute('data-paused')
+    else wire.setAttribute('data-paused', '')
+    el.setAttribute('aria-pressed', String(!paused))
+    el.textContent = paused ? '∥' : '▶'
+  })
   var CANON = 'https://exitchatcontrol.org/'
   function copyLink(btn) {
     try {
