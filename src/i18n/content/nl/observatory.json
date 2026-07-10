@@ -136,8 +136,24 @@
     "title": "Europol: budget naar 3 miljard euro, een mandaat over versleuteling",
     "body": "De Commissie stelt de grootste hervorming van Europol in 25 jaar voor: budget van €1,9 mld naar €3 mld, 900 extra personeelsleden, een mandaat uitgebreid naar versleutelde communicatie, cryptoactiva en AI-ondersteunde fraude; een \"technology and innovation hub\" waarvan het versleutelingswerk de ProtectEU-routekaart volgt (die tegen 2030 een ontsleutelingscapaciteit voor Europol inplant); een geautomatiseerde \"Europese politiedataruimte\". De gewapende arm van ProtectEU: een supranationaal agentschap waarvan één europarlementariër nu al waarschuwt dat het \"niet tot massasurveillance mag leiden\"."
   },
+  "ai-act-omnibus-delay": {
+    "title": "Hoogrisico-AI: de waarborgen wachten tot 2027",
+    "body": "De Raad bezegelt de “Omnibus VII”: de AI Act-verplichtingen voor hoogrisicosystemen van bijlage III — biometrie, politie, migratie, werk — die op 2 augustus 2026 zouden gelden, schuiven op naar 2 december 2027 (op zichzelf staande systemen) en 2 augustus 2028 (ingebedde), in naam van “vereenvoudiging”. Dezelfde tekst verbiedt AI-gegenereerde seksuele deepfakes en CSAM — maar de waarborgen rond surveillance-AI wachten."
+  },
   "pega-kouloglou": {
     "title": "Pegasus in het Parlement: de waakhond werd zelf bewaakt",
     "body": "Citizen Lab onthult dat europarlementariër Stelios Kouloglou, plaatsvervangend lid van de PEGA-commissie (nota bene het orgaan dat Pegasus en spywaremisbruik in Europa onderzocht), met Pegasus werd gehackt terwijl hij er zitting in had (infecties gedateerd op 21 oktober 2022 en 6–7 maart 2023), met mogelijke toegang tot vertrouwelijke beraadslagingen. Citizen Lab weigert uitdrukkelijk de aanval te attribueren; een coalitie van ngo's eist een Europese reactie. Het orgaan bespioneren dat toezicht moet houden op spyware is de ultieme omkering van democratische controle, en niemand wordt verantwoordelijk genoemd."
+  },
+  "scotus-texas-app-store": {
+    "title": "Texas: de appstore controleert ieders leeftijd, en het Hooggerechtshof laat het toe",
+    "body": "Het Hooggerechtshof weigert (docket 25A1390, CCIA v. Paxton) de Texaanse App Store Accountability Act te schorsen: Apple en Google moeten de leeftijd van elke appstore-gebruiker in Texas verifiëren en ouderlijke toestemming eisen voor minderjarigen, terwijl de First Amendment-zaak ten gronde wordt uitgevochten. Identiteitscontrole bewaakt niet langer de deur van één site: ze bewaakt de hele appstore."
+  },
+  "euro-numerique-mandat": {
+    "title": "Digitale euro: het Parlement bevestigt zijn mandaat, trilogen van start",
+    "body": "De plenaire vergadering bevestigt het onderhandelingsmandaat (416 voor, 169 tegen): de trilogen met de Raad beginnen op 13 juli. Het mandaat claimt waarborgen — bescherming van contant geld, transactieverificatie zonder persoonsgegevens bloot te leggen — en laat het bezitplafond aan de Commissie op aanbeveling van de ECB. De beslissende stap naar traceerbaar geld is gezet; de waarborgen moeten nog worden onderhandeld."
+  },
+  "ofcom-fapello": {
+    "title": "VK: de eerste zware boetes voor ontbrekende leeftijdscontroles",
+    "body": "Ofcom legt de exploitant van fapello.com £630.000 op: £600.000 voor het ontbreken van de “zeer doeltreffende” leeftijdsverificatie die de Online Safety Act vereist, £30.000 voor het negeren van een juridisch bindend informatieverzoek. De identiteitscontrole-infrastructuur is geen principe meer: ze is nu bestraffend, site per site."
   }
 }

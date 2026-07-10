@@ -374,6 +374,17 @@
     }
   },
   {
+    "id": "ai-act-omnibus-delay",
+    "date": "2026-06-29",
+    "region": "eu",
+    "themes": ["aibio"],
+    "status": "adopte",
+    "src": {
+      "label": "Council · Omnibus VII, 29 June 2026",
+      "href": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/"
+    }
+  },
+  {
     "id": "pega-kouloglou",
     "date": "2026-07",
     "region": "eu",
@@ -382,6 +393,39 @@
     "src": {
       "label": "Citizen Lab · July 2026",
       "href": "https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/"
+    }
+  },
+  {
+    "id": "scotus-texas-app-store",
+    "date": "2026-07-06",
+    "region": "us",
+    "themes": ["identity"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "SCOTUS · docket 25A1390",
+      "href": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/25a1390.html"
+    }
+  },
+  {
+    "id": "euro-numerique-mandat",
+    "date": "2026-07-09",
+    "region": "eu",
+    "themes": ["money"],
+    "status": "negociation",
+    "src": {
+      "label": "European Parliament · 9 July 2026",
+      "href": "https://www.europarl.europa.eu/news/en/press-room/20260708IPR46377/digital-euro-meps-ready-to-start-negotiations"
+    }
+  },
+  {
+    "id": "ofcom-fapello",
+    "date": "2026-07-09",
+    "region": "uk",
+    "themes": ["identity"],
+    "status": "en_vigueur",
+    "src": {
+      "label": "Ofcom · 9 July 2026",
+      "href": "https://www.ofcom.org.uk/online-safety/protecting-children/ofcom-fines-porn-company-630000-for-age-check-failings"
     }
   }
 ]

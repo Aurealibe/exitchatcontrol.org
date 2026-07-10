@@ -135,8 +135,24 @@
     "title": "Europol : budget porté à 3 milliards, mandat sur le chiffrement",
     "body": "La Commission propose la plus grande réforme d’Europol en 25 ans : budget de 1,9 à 3 milliards d’euros, 900 agents de plus, mandat étendu aux communications chiffrées, à la crypto et à la fraude assistée par IA ; un « hub technologie et innovation » dont les travaux sur le chiffrement suivent la feuille de route ProtectEU (qui programme une capacité de décryptage pour Europol d’ici 2030) ; « espace européen des données policières » à partage automatisé. Le bras armé de ProtectEU : une agence supranationale dont une eurodéputée prévient déjà qu’elle « ne doit pas mener à une surveillance de masse »."
   },
+  "ai-act-omnibus-delay": {
+    "title": "IA à haut risque : les garde-fous attendront 2027",
+    "body": "Le Conseil entérine l'« Omnibus VII » : les obligations de l'AI Act pour les systèmes à haut risque de l'annexe III — biométrie, police, migration, emploi — qui devaient s'appliquer le 2 août 2026 sont repoussées au 2 décembre 2027 (systèmes autonomes) et au 2 août 2028 (systèmes embarqués), au nom de la « simplification ». Le même texte interdit les deepfakes sexuels et le CSAM générés par IA — mais les garde-fous sur l'IA de surveillance, eux, attendront."
+  },
   "pega-kouloglou": {
     "title": "Pegasus au Parlement : le contrôleur était surveillé",
     "body": "Le Citizen Lab révèle que l’eurodéputé Stelios Kouloglou, membre suppléant de la commission PEGA (celle-là même qui enquêtait sur Pegasus et les abus de spyware en Europe), a été piraté par Pegasus pendant qu’il y siégeait (infections datées du 21 octobre 2022 et des 6-7 mars 2023), avec accès possible aux délibérations confidentielles. Le Citizen Lab décline explicitement toute attribution ; une coalition d’ONG exige une réaction de l’UE. Espionner l’organe chargé de contrôler le spyware est l’inversion ultime du contrôle démocratique, et personne n’est désigné responsable."
+  },
+  "scotus-texas-app-store": {
+    "title": "Texas : l'app store vérifie l'âge de tout le monde, la Cour suprême laisse faire",
+    "body": "La Cour suprême refuse (dossier 25A1390, CCIA v. Paxton) de suspendre l'App Store Accountability Act texan : Apple et Google doivent vérifier l'âge de tous les utilisateurs d'app store au Texas et exiger un consentement parental pour les mineurs, pendant que la contestation au titre du Premier amendement se plaide au fond. La vérification d'identité ne garde plus la porte d'un site : elle garde la porte du magasin d'applications tout entier."
+  },
+  "euro-numerique-mandat": {
+    "title": "Euro numérique : le Parlement confirme son mandat, trilogues lancés",
+    "body": "La plénière confirme le mandat de négociation (416 pour, 169 contre) : les trilogues avec le Conseil s'ouvrent le 13 juillet. Le mandat revendique des garde-fous — protections du cash, vérification des transactions sans exposer les données personnelles — et laisse le plafond de détention à la Commission sur recommandation de la BCE. L'étape décisive vers la monnaie traçable est franchie ; les garde-fous, eux, restent à négocier."
+  },
+  "ofcom-fapello": {
+    "title": "Royaume-Uni : premières grosses amendes pour absence de contrôle d'âge",
+    "body": "L'Ofcom inflige 630 000 £ à l'exploitant de fapello.com : 600 000 £ pour absence de la vérification d'âge « hautement efficace » exigée par l'Online Safety Act, 30 000 £ pour non-réponse à une demande d'information contraignante. L'infrastructure de contrôle d'identité n'est plus un principe : elle est désormais punitive, site par site."
   }
 }
