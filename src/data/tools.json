@@ -620,6 +620,25 @@
     "profiles": ["🟡", "🔴"]
   },
   {
+    "id": "t-pocketpal",
+    "name": "PocketPal AI",
+    "url": "https://pocketpal.dev",
+    "links": [
+      {
+        "label": "pocketpal.dev",
+        "href": "https://pocketpal.dev"
+      },
+      {
+        "label": "github",
+        "href": "https://github.com/a-ghorbani/pocketpal-ai"
+      }
+    ],
+    "monogram": "Pp",
+    "color": "#6b4eff",
+    "level": null,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
     "id": "t-cloudai",
     "name": "Duck.ai · Lumo (Proton)",
     "url": "https://duck.ai",

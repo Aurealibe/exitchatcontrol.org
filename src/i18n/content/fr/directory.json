@@ -52,6 +52,7 @@
   "llama-cpp": { "body": "Le moteur d’inférence local qui a tout rendu possible." },
   "jan": { "body": "ChatGPT-like 100 % local, interface simple." },
   "gpt4all": { "body": "LLM locaux orientés vie privée, sur CPU." },
+  "pocketpal": { "body": "Des LLM hors ligne sur votre téléphone (iOS/Android), sans compte." },
   "grapheneos": { "body": "Android dégooglisé et durci (Pixel)." },
   "tails": { "body": "OS amnésique sur clé USB, tout via Tor." },
   "qubes-os": { "body": "Cloisonnement par machines virtuelles étanches." },

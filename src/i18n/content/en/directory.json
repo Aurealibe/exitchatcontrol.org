@@ -50,6 +50,7 @@
   "llama-cpp": { "body": "The local inference engine that made it all possible." },
   "jan": { "body": "100% local ChatGPT-like, simple UI." },
   "gpt4all": { "body": "Privacy-minded local LLMs, CPU-friendly." },
+  "pocketpal": { "body": "Run LLMs offline on your phone (iOS/Android), no account." },
   "grapheneos": { "body": "De-Googled, hardened Android (Pixel)." },
   "tails": { "body": "Amnesic USB OS, everything through Tor." },
   "qubes-os": { "body": "Compartmentalisation via sealed VMs." },

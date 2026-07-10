@@ -398,6 +398,13 @@
     "license": "MIT"
   },
   {
+    "id": "pocketpal",
+    "category": "ia-locale-agentique",
+    "name": "PocketPal AI",
+    "url": "https://pocketpal.dev",
+    "license": "MIT"
+  },
+  {
     "id": "grapheneos",
     "category": "os-mobile",
     "name": "GrapheneOS",

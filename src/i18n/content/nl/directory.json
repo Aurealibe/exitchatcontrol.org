@@ -153,6 +153,9 @@
   "gpt4all": {
     "body": "Privacygerichte lokale LLM's, CPU-vriendelijk."
   },
+  "pocketpal": {
+    "body": "Draai LLM's offline op je telefoon (iOS/Android), zonder account."
+  },
   "grapheneos": {
     "body": "Ontgoogeld, gehard Android (Pixel)."
   },
