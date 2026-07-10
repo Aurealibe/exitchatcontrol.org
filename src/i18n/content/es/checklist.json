@@ -1,0 +1,18 @@
+{
+  "do-signal": { "body": "**Instala Signal** y trae a tus tres contactos más frecuentes." },
+  "do-email": { "body": "**Abre un Proton Mail o Tuta**, importa tus datos, configura el reenvío desde Gmail." },
+  "do-pass": { "body": "**Instala Bitwarden** con una contraseña maestra larga (una frase)." },
+  "do-ublock": { "body": "**Agrega uBlock Origin** a tu navegador (diez segundos)." },
+  "do-browser": { "body": "**Reemplaza Chrome y Google Search** (Firefox/Brave + DuckDuckGo)." },
+  "do-twofa": {
+    "body": "**Activa el 2FA** (Aegis / Ente Auth, nunca SMS) en tu correo y gestor de contraseñas."
+  },
+  "do-cloud": { "body": "**Muda tus archivos** a una nube cifrada (Proton Drive / Cryptomator)." },
+  "do-vpn": { "body": "**Consigue una VPN** (Mullvad), idealmente pagada de forma anónima." },
+  "do-dns": { "body": "**Cifra tu DNS** (Quad9 / Mullvad DNS) en el teléfono y la computadora." },
+  "do-social": { "body": "**Abre tu cuenta de Mastodon** y ancla tu presencia fuera de las grandes plataformas." },
+  "do-linux": { "body": "**Prueba Linux** (distrosea.com), luego instálalo (Mint para empezar)." },
+  "do-graphene": { "body": "**Pasa el teléfono a GrapheneOS** (necesitas un Pixel) o refuerza tu Android." },
+  "do-selfhost": { "body": "**Autoaloja** un primer servicio (YunoHost / Umbrel + Tailscale)." },
+  "do-opsec": { "body": "**Adopta disciplina de OPSEC** si publicas de forma seudónima." }
+}

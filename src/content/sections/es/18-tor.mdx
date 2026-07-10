@@ -1,0 +1,53 @@
+---
+id: 'tor'
+part: 11
+order: 18
+title: 'Tor'
+---
+
+<p class="part-num">
+  PARTE 17 · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Tor
+
+La red que separa quién eres de lo que haces en línea.
+
+<ToolCard tool="t-tor">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Anonimato de red</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una red que separa quién eres de lo que haces en línea, accesible a través de Tor Browser.
+  </Fragment>
+  <Fragment slot="why">
+    Tu tráfico rebota a través de varios repetidores cifrados por todo el mundo: ninguno conoce a la vez tu
+    identidad y tu destino. Es la herramienta de periodistas y fuentes, y la manera de llegar a un sitio
+    bloqueado (por ejemplo, para descargar una VPN censurada).
+  </Fragment>
+  <Fragment slot="who">
+    Perfiles de alto riesgo, y cualquiera que necesite desvincular su actividad de su IP real. Úsalo de
+    forma ocasional, no como navegador de todos los días.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Descarga Tor Browser desde <b>torproject.org</b> (Windows, macOS, Linux, Android).
+    </li>
+    <li>Ábrelo y haz clic en "Conectar". Si Tor está bloqueado en tu país, activa un "puente" (bridge).</li>
+    <li>
+      Navega sin maximizar la ventana, sin instalar extensiones y{' '}
+      <b>sin iniciar sesión en tus cuentas reales</b>.
+    </li>
+  </ol>
+</ToolCard>
+
+<div class="box warn">
+  <span class="lab">Límites, no magia</span>
+  <p>
+    Tor protege el transporte, no tus hábitos: inicia sesión en tu cuenta real y te desanonimizas a ti
+    mismo. Es más lento, y el nodo de salida ve el tráfico sin cifrar (usa HTTPS). Para un anonimato serio,
+    combínalo con Tails (sección 12).
+  </p>
+</div>

@@ -1,0 +1,77 @@
+---
+id: 'stockage'
+part: 6
+order: 10
+title: 'Almacenamiento cifrado'
+---
+
+<p class="part-num">
+  PARTE 09 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Almacenamiento cifrado
+
+<ToolCard tool="t-protondrive">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Reemplaza a Google Drive / iCloud</span>
+    <span class="tool-tag">🇨🇭 · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una nube cifrada de extremo a extremo para tus archivos y fotos, parte de Proton.
+  </Fragment>
+  <Fragment slot="why">
+    A diferencia de Google Drive o iCloud, Proton no puede leer tus archivos: se cifran antes de salir de
+    tu dispositivo. Jurisdicción suiza, misma cuenta que Proton Mail.
+  </Fragment>
+  <Fragment slot="who">
+    Para todos, como reemplazo simple y directo de la nube de Google o de Apple.
+  </Fragment>
+  <ol slot="install">
+    <li>Activa Proton Drive en tu cuenta de Proton e instala la app.</li>
+    <li>Activa la copia de seguridad automática de fotos, y luego desactiva la de Google/Apple.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cryptomator">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Cifra antes de subir</span>
+    <span class="tool-tag">🇩🇪 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una bóveda que cifra tus archivos <b>antes</b> de subirlos a cualquier nube, incluso Google Drive o
+    Dropbox.
+  </Fragment>
+  <Fragment slot="why">
+    El truco perfecto si debes mantener una nube existente: conservas el servicio cómodo de siempre, pero
+    el proveedor solo ve datos cifrados sin sentido. Solo tú tienes la clave.
+  </Fragment>
+  <Fragment slot="who">
+    Para quienes todavía no pueden dejar una nube popular, pero quieren proteger sus archivos ahora mismo.
+  </Fragment>
+  <ol slot="install">
+    <li>Instala Cryptomator (escritorio y móvil) desde cryptomator.org.</li>
+    <li>Crea una "bóveda" en la carpeta sincronizada de tu nube y elige una contraseña fuerte.</li>
+    <li>Pon tus archivos en la bóveda: se cifran y luego se sincronizan automáticamente.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nc-storage">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Tu propia nube</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Tu propia nube (archivos, calendario, contactos, notas) alojada en tu propio servidor.
+  </Fragment>
+  <Fragment slot="why">
+    El grado máximo de control: tus datos nunca salen de tu propio hardware. Detallado en la sección 10
+    (Autoalojamiento).
+  </Fragment>
+  <Fragment slot="who">Para quienes se autoalojan. Mira la ficha completa en la sección 10.</Fragment>
+  <a slot="links" class="tool-link" href="#selfhost">
+    → Sección 10
+  </a>
+</ToolCard>

@@ -1,0 +1,123 @@
+---
+id: 'dns'
+part: 3
+order: 6
+title: 'DNS cifrado y Cloudflare'
+---
+
+<p class="part-num">
+  PARTE 05 · RED · DNS · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## DNS cifrado y Cloudflare
+
+El DNS es el directorio que convierte el nombre de un sitio (example.com) en una dirección de máquina. El problema: por defecto, tu proveedor de internet gestiona ese directorio, así que ve **cada sitio que visitas**, incluso cuando la página es HTTPS. Cifrar tu DNS le quita esa lista a tu ISP. Es un ajuste discreto, pero uno de los más efectivos.
+
+<ToolCard tool="t-quad9">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Bloqueo de malware</span>
+    <span class="tool-tag">🇨🇭 sin fines de lucro</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un resolver DNS cifrado, suizo y sin fines de lucro que además bloquea dominios maliciosos
+    conocidos.
+  </Fragment>
+  <Fragment slot="why">
+    Jurisdicción suiza, sin retención de tu dirección IP, protección contra phishing y malware. Una
+    excelente opción para "configurar y olvidarse".
+  </Fragment>
+  <Fragment slot="who">
+    Todos, especialmente quienes buscan simplicidad y una buena jurisdicción.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      En Android: Configuración &gt; Red &gt; <b>DNS privado</b> &gt; ingresa <b>dns.quad9.net</b>.
+    </li>
+    <li>
+      En iPhone/Mac: instala el perfil DoH desde quad9.net. En PC: configura DNS-over-HTTPS en el
+      navegador o el sistema.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-mullvaddns">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Filtrado de red</span>
+  </Fragment>
+  <Fragment slot="what">
+    Dos resolvers cifrados que además bloquean anuncios y rastreadores para todo el dispositivo.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Mullvad DNS</b> (Suecia, sin registros) es gratuito y ofrece listas de bloqueo. <b>NextDNS</b> es
+    muy personalizable, con un panel y perfiles por dispositivo, pero tiene base en EE. UU. y
+    registra por defecto (desactívalo en la configuración).
+  </Fragment>
+  <Fragment slot="who">
+    Quienes quieren bloqueo de anuncios en todo el sistema sin instalar una extensión por
+    navegador.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Mullvad DNS: usa la dirección indicada en mullvad.net/help/dns como tu DNS privado (mismo
+      método que Quad9).
+    </li>
+    <li>
+      NextDNS: crea un perfil en nextdns.io, <b>desactiva el registro</b>, y luego aplica la
+      configuración a tus dispositivos.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cloudflare">
+  <Fragment slot="name">Cloudflare 1.1.1.1 (con matices)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Rápido pero centralizado</span>
+    <span class="tool-tag">🇺🇸</span>
+  </Fragment>
+  <Fragment slot="what">
+    El DNS cifrado 1.1.1.1 de Cloudflare y su app WARP: rápido, gratuito y una mejora real respecto
+    al resolver de tu ISP.
+  </Fragment>
+  <Fragment slot="why">
+    Es útil, con un compromiso auditado de no guardar registros. Pero hay que ser realistas:
+    Cloudflare ya se sitúa delante de una enorme parte de la web (como intermediario técnico,
+    puede ver el tráfico sin cifrar hacia esos sitios). Enrutar también tu DNS ahí significa
+    <b>concentrar todavía más tu huella</b>{' '}
+    en una sola empresa estadounidense bajo la ley de EE. UU.
+  </Fragment>
+  <Fragment slot="who">
+    Está bien para el uso cotidiano y el bloqueo de malware (1.1.1.1 for Families). Evítalo o
+    diversifica para usos sensibles: prefiere Quad9 o Mullvad DNS en su lugar.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-pihole">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Bloqueo de toda la red</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un bloqueador de anuncios y rastreadores que protege <b>toda tu red a la vez</b>, instalado en
+    una pequeña computadora como una Raspberry Pi.
+  </Fragment>
+  <Fragment slot="why">
+    Mientras que uBlock Origin protege un solo navegador, Pi-hole filtra <b>todos los
+    dispositivos</b> del hogar, incluidos aquellos donde no puedes instalar una extensión:
+    teléfonos, smart TVs, objetos conectados. Los anuncios y rastreadores se bloquean a nivel de
+    DNS, antes incluso de cargarse. <b>AdGuard Home</b> es una alternativa con una interfaz más
+    moderna.
+  </Fragment>
+  <Fragment slot="who">
+    Hogares que quieren limpiar todos sus dispositivos a la vez, y que tienen (o quieren tener) una
+    Raspberry Pi o un pequeño servidor.
+  </Fragment>
+  <ol slot="install">
+    <li>En una Raspberry Pi (o un contenedor), ejecuta el instalador oficial de Pi-hole.</li>
+    <li>En la configuración de tu router, establece la dirección de Pi-hole como servidor DNS.</li>
+    <li>A partir de ese momento, todos los dispositivos de tu red quedan filtrados automáticamente.</li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,157 @@
+---
+id: 'selfhost'
+part: 10
+order: 17
+title: 'Autoalojamiento (self-hosting)'
+---
+
+<p class="part-num">
+  PARTE 16 · AUTODEFENSA AVANZADA · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Autoalojamiento
+
+El nivel máximo de soberanía: aloja tú mismo tus servicios. Tus datos viven en tu propio hardware, bajo la jurisdicción que elijas.
+
+<ToolCard tool="t-yunohost">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Servidor llave en mano</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Sistemas que convierten una PC vieja o una Raspberry Pi en un servidor personal, con un catálogo de
+    apps que instalas en pocos clics.
+  </Fragment>
+  <Fragment slot="why">
+    Autoalojar suena aterrador, pero estas herramientas hacen el trabajo pesado. <b>YunoHost</b> incluso
+    gestiona tu propio correo y el inicio de sesión único. <b>Umbrel</b> ofrece una tienda con más de 300
+    apps, popular entre la gente de privacidad y Bitcoin. <b>Start9</b> cifra las copias de seguridad y le
+    da a cada servicio una dirección Tor por defecto.
+  </Fragment>
+  <Fragment slot="who">
+    Perfiles avanzados dispuestos a pasar una tarde construyendo su propia nube. Es la contramedida
+    estructural más radical frente a Chat Control.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Consigue una computadora vieja, una Raspberry Pi, o alquila un servidor pequeño (VPS) en un país
+      protector.
+    </li>
+    <li>Instala YunoHost, Umbrel o Start9 siguiendo su guía oficial.</li>
+    <li>Desde el catálogo, instala Nextcloud, un servidor Matrix, una galería de fotos, etc.</li>
+    <li>
+      Accede en privado con Tailscale (tarjeta de abajo) en lugar de exponer el servidor al público.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nextcloud">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Reemplaza todo Google</span>
+    <span class="tool-tag">🇩🇪 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Tu propia nube: archivos, calendario, contactos, fotos, notas y documentos colaborativos, en tu
+    servidor.
+  </Fragment>
+  <Fragment slot="why">
+    Es el reemplazo completo de Google Drive, Calendar y Contacts, pero en casa. Tú eliges la jurisdicción
+    y nadie más controla tus archivos. Nota: es la privacidad de "tu propio servidor", no cifrado de
+    extremo a extremo por defecto; tienes que mantenerlo actualizado.
+  </Fragment>
+  <Fragment slot="who">
+    Para quienes se autoalojan. El camino más fácil es instalarlo mediante YunoHost o Umbrel.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-synapse">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Tu servidor de chat</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Tu propio servidor de chat Matrix, que da soporte a Element y a las llamadas cifradas.
+  </Fragment>
+  <Fragment slot="why">
+    Al alojar el servidor, también controlas los <b>metadatos</b> (quién habla con quién, cuándo), el punto
+    débil de Matrix en la federación. Es un chat comunitario del que solo tú eres dueño.
+  </Fragment>
+  <Fragment slot="who">
+    Comunidades, colectivos, redacciones que quieren su propio espacio federado e independiente.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-tailscale">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Acceso privado a tu servidor</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una red privada cifrada que conecta tus dispositivos con tu servidor, sin exponerlo nunca en internet
+    público.
+  </Fragment>
+  <Fragment slot="why">
+    En lugar de abrir puertos (y exponerte a ataques), <b>Tailscale</b> construye un túnel WireGuard solo
+    entre tus dispositivos autorizados: tu servidor no tiene superficie de ataque pública. <b>Headscale</b>{' '}
+    es la versión autoalojada, así que no dependes de ningún tercero. <b>WireGuard</b> por sí solo te da
+    control total, a costa de una configuración manual.
+  </Fragment>
+  <Fragment slot="who">
+    Para todo el que se autoaloja. Es la manera segura de acceder a tu Nextcloud o tus fotos desde fuera.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Instala Tailscale en tu servidor y en tu teléfono/PC, y conéctalos a la misma cuenta.
+    </li>
+    <li>
+      Tus dispositivos se ven entre sí al instante en una red privada; accede a tu servidor por su
+      dirección de Tailscale.
+    </li>
+    <li>Para no depender de nada externo, reemplaza el servidor de coordinación con Headscale autoalojado.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-website">
+  <Fragment slot="name">Tu propio sitio web</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">A prueba de baneos</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un sitio propio, con tu propio nombre de dominio, donde tu contenido no depende de ninguna plataforma.
+  </Fragment>
+  <Fragment slot="why">
+    El día que una red elimine o suspenda tu cuenta, todo tu trabajo desaparece. Un sitio personal es tu
+    ancla: tus publicaciones quedan ahí, archivadas y actualizadas, pase lo que pase. Es exactamente lo que
+    hacen las cuentas informativas precavidas. Un sitio estático (hecho con Hugo, Astro o Jekyll) alcanza y
+    se publica casi gratis; para un blog dinámico, un WordPress o Ghost autoalojado cumple la función.
+  </Fragment>
+  <Fragment slot="who">
+    Cuentas informativas, creadores, activistas, cualquiera que publique y tema la censura de las
+    plataformas.
+  </Fragment>
+  <ol slot="install">
+    <li>Compra un nombre de dominio (idealmente con un registrador respetuoso de la privacidad).</li>
+    <li>
+      Elige un generador de sitios estáticos (Astro, Hugo) y aloja el resultado, o instala WordPress/Ghost
+      en tu servidor.
+    </li>
+    <li>
+      Enlázalo siempre desde tus cuentas sociales: así tu audiencia te encuentra incluso si una cuenta
+      cae.
+    </li>
+  </ol>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">La cuestión de la jurisdicción</span>
+  <p>
+    Autoalojar también significa elegir <em>dónde</em> viven tus datos. Un servidor en casa o en un país
+    protector escapa a las obligaciones de escaneo impuestas a las grandes plataformas. Es la contramedida
+    estructural más radical frente a Chat Control.
+  </p>
+</div>

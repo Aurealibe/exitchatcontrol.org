@@ -1,0 +1,50 @@
+{
+  "fight-chat-control": {
+    "role": "Plataforma ciudadana (colectivo anónimo): herramienta de contacto con eurodiputados, seguimiento de la posición de cada Estado miembro, comparación 1.0 vs 2.0. Se relanza en cada votación."
+  },
+  "stop-scanning-me": {
+    "role": "Coalición de más de 60 organizaciones: petición con más de 200.000 firmas, carta abierta que pasó de 300 a 450 científicos, carta conjunta de 133 ONG."
+  },
+  "patrick-breyer": {
+    "role": "El exeurodiputado Pirata que acuñó el término \"Chat Control\". La crónica de referencia del expediente, voto por voto, documento por documento, desde 2020."
+  },
+  "edri": {
+    "role": "La red europea de derechos digitales (más de 50 ONG). Análisis jurídico, incidencia en Bruselas, coordinación de campañas."
+  },
+  "la-quadrature-du-net": {
+    "role": "Desde 2008: litigios ante el TJUE (la sentencia de 2020 sobre retención de datos), la campaña Technopolice, análisis de las leyes de vigilancia francesas."
+  },
+  "noyb": {
+    "role": "La ONG de Max Schrems: litigios sistemáticos por el RGPD que tumbaron dos acuerdos de transferencia de datos UE-EE. UU. (Schrems I y II)."
+  },
+  "eff": {
+    "role": "Treinta años de litigios y herramientas (Jewel contra la NSA, Certbot, Privacy Badger, Rayhunter) y la guía Surveillance Self-Defense."
+  },
+  "signal-foundation": {
+    "role": "Se comprometió a abandonar la UE antes que instalar el escaneo. Meta/WhatsApp (oct. 2025) y Threema (\"todas las opciones\") siguieron con su oposición."
+  },
+  "eff-nsa-timeline": {
+    "role": "Cronología de la vigilancia estadounidense 1791-2015, construida sobre las pruebas del caso Jewel contra la NSA: cada entrada con fecha y fuente. El modelo de pruebas del que toma prestado nuestra sección de Precedentes."
+  },
+  "atlas-of-surveillance": {
+    "role": "Más de 14.900 despliegues policiales documentados en más de 6.000 jurisdicciones de EE. UU. (drones, reconocimiento facial, IMSI-catchers...), compilados por más de 1.000 estudiantes y voluntarios. Geográfico más que cronológico."
+  },
+  "technopolice": {
+    "role": "La campaña de 2019 de La Quadrature que documenta la \"Ciudad Segura\" ciudad por ciudad, empresa por empresa: registros de compras públicas, foro participativo, canal de filtraciones."
+  },
+  "ooni": {
+    "role": "El mayor conjunto de datos abiertos sobre censura en internet: millones de mediciones desde 2012, más de 200 países, datos con licencia CC y una API pública. La censura, probada en tiempo real."
+  },
+  "digital-violence": {
+    "role": "El mapa interactivo del ecosistema Pegasus/NSO: licencias de exportación, infecciones y las consecuencias físicas para las personas señaladas."
+  },
+  "surveillance-watch": {
+    "role": "Mapa interactivo de la industria del spyware: quién lo construye, quién lo financia, quién lo compra."
+  },
+  "netblocks": {
+    "role": "Observatorio en tiempo real de los cortes y bloqueos de internet, país por país, incidente por incidente."
+  },
+  "big-brother-awards": {
+    "role": "Desde el año 2000, el \"premio\" anual a los peores enemigos de la privacidad (con ediciones en varios países): una crónica por el ejemplo, año tras año."
+  }
+}

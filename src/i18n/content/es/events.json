@@ -1,0 +1,94 @@
+{
+  "clipper-chip": {
+    "title": "El Clipper Chip",
+    "body": "La NSA impulsa un chip de cifrado con custodia de claves en manos del gobierno, \"solo para las fuerzas del orden, bajo orden judicial\". Se demuestran sus fallos ([Blaze, 1994](https://dl.acm.org/doi/pdf/10.1145/191177.191193)), rechazo masivo: abandonado en 1996. La primera guerra cripto, el mismo guion que hoy."
+  },
+  "echelon": {
+    "title": "ECHELON, confirmado por el Parlamento Europeo",
+    "body": "Seis días antes del 11-S, el Parlamento Europeo adopta en pleno (367-159-39) el informe de su comité temporal (aprobado en comisión el 3 de julio) que confirma la existencia de una red global que intercepta comunicaciones privadas y comerciales (EE. UU., Reino Unido, Canadá, Australia, Nueva Zelanda)."
+  },
+  "nsa-warrantless": {
+    "title": "23 días después del 11-S",
+    "body": "Una orden presidencial secreta pone en marcha el espionaje doméstico de la NSA sin orden judicial. La crisis crea el programa; el programa sobrevive a la crisis. La Patriot Act llega el 26 de octubre, también \"temporal\": sus cláusulas de caducidad se renuevan durante 14 años."
+  },
+  "room-641a": {
+    "title": "La Sala 641A",
+    "body": "El técnico de AT&T Mark Klein entrega a la EFF los documentos que describen la sala secreta de la NSA en el centro de conmutación de San Francisco: interceptación a nivel de infraestructura, sobre todo el tráfico, no sobre sospechosos."
+  },
+  "retention-directive": {
+    "title": "Directiva de Retención de Datos de la UE",
+    "body": "La UE exige la retención de los metadatos de telecomunicaciones de toda la población (6 a 24 meses), \"contra la delincuencia grave\". Nadie es sospechoso, todos están fichados. El plano exacto de Chat Control, veinte años antes."
+  },
+  "snowden": {
+    "title": "Snowden: \"recopilarlo todo\"",
+    "body": "The Guardian publica la orden secreta de la FISA que obliga a Verizon a entregar los metadatos de todos sus clientes, y luego PRISM. En marzo, el director de inteligencia Clapper había jurado ante el Congreso que eso no sucedía; días después de la filtración, la llama la [respuesta \"menos falsa\"](https://www.washingtonpost.com/blogs/fact-checker/post/james-clappers-least-untruthful-statement-to-the-senate/2013/06/11/e50677a8-d2d8-11e2-a73e-826d299ff459_blog.html) que pudo dar."
+  },
+  "digital-rights-ireland": {
+    "title": "El TJUE anula la retención indiscriminada",
+    "body": "Digital Rights Ireland (asuntos acumulados C-293/12 y C-594/12): la directiva de 2006 queda anulada por completo: la vigilancia indiscriminada de toda la población viola la Carta de los Derechos Fundamentales. Una pequeña ONG de voluntarios tumbó una directiva de la UE."
+  },
+  "snoopers-charter": {
+    "title": "La \"Snooper's Charter\" del Reino Unido",
+    "body": "La Investigatory Powers Act legaliza la recopilación masiva y el hackeo estatal, y obliga a los ISP a conservar el historial de navegación de todos. Tres semanas después, el TJUE (Tele2/Watson) reitera que la retención indiscriminada es ilegal; Londres la mantiene de todos modos."
+  },
+  "australia-aaa": {
+    "title": "Australia contra las matemáticas",
+    "body": "La Assistance and Access Act permite al Estado ordenar en secreto a una empresa que rediseñe sus productos (\"avisos de capacidad técnica\"). Los críticos advierten que esto debilita el cifrado en la práctica, aunque la ley prohíba nominalmente las \"debilidades sistémicas\". El primer ministro ya había marcado el tono: \"las leyes de Australia prevalecen sobre las leyes de las matemáticas\"."
+  },
+  "crypto-ag": {
+    "title": "Crypto AG: el fabricante de cajas fuertes se quedó con las llaves",
+    "body": "The Washington Post revela (respaldado por la propia historia interna de la CIA) que la CIA y el BND eran dueños secretos de Crypto AG, el proveedor suizo de cifrado de 120 gobiernos, desde 1970. En la década de 1980, el 40% de los cables diplomáticos que la NSA descifraba pasaban por ahí. Moraleja: una puerta trasera \"de confianza\" sigue siendo una puerta trasera."
+  },
+  "lqdn-cjeu": {
+    "title": "La Quadrature du Net ante el TJUE",
+    "body": "El Tribunal confirma la prohibición de la retención indiscriminada contra Francia y Bélgica (asuntos acumulados C-511/18, C-512/18 y C-520/18), y contra el Reino Unido el mismo día en Privacy International (C-623/17), aunque abre resquicios de \"seguridad nacional\". Doble lección: las demandas judiciales funcionan, y cada excepción se convierte en la siguiente norma. La Comisión nunca ha abierto un procedimiento de infracción contra los Estados que retienen datos de todos modos."
+  },
+  "chatcontrol-1": {
+    "title": "Chat Control 1.0, \"temporal\"",
+    "body": "El Reglamento 2021/1232 permite el escaneo \"voluntario\" de mensajes privados, como excepción a la ePrivacy. Caducidad prometida para el 3 de agosto de 2024. El Reglamento 2024/1307 la prorroga hasta el 3 de abril de 2026, fecha en la que caduca... y luego resucita (ver más abajo)."
+  },
+  "pegasus-project": {
+    "title": "El Proyecto Pegasus",
+    "body": "Más de 80 periodistas de 17 redacciones en 10 países documentan el espionaje a periodistas, abogados, disidentes y jefes de Estado mediante el spyware de NSO. El análisis forense de Amnistía (revisado por pares por Citizen Lab) demuestra infecciones \"zero-click\" en iPhones totalmente actualizados: cuando el dispositivo es el objetivo, el cifrado no basta. Exactamente la lógica del escaneo del lado del cliente."
+  },
+  "apple-csam": {
+    "title": "Apple anuncia el escaneo en el dispositivo... y luego da marcha atrás",
+    "body": "Apple presenta el escaneo de fotos CSAM en el propio dispositivo para el iPhone. Investigadores y ONG se rebelan: es la infraestructura de una vigilancia generalizable. Diciembre de 2022: Apple lo abandona y más tarde invocará, en una [carta de agosto de 2023](https://appleinsider.com/articles/23/08/31/apple-provides-detailed-reasoning-behind-abandoning-iphone-csam-detection), una \"pendiente resbaladiza de consecuencias no deseadas\". Exactamente el mecanismo que Chat Control 2.0 quiere imponer."
+  },
+  "chatcontrol-2": {
+    "title": "Chat Control 2.0: escaneo obligatorio",
+    "body": "La Comisión propone el reglamento CSAR (COM/2022/209): \"órdenes de detección\" que pueden imponer el escaneo en cualquier plataforma, incluidas las cifradas de extremo a extremo. Lo voluntario de 2021 se vuelve obligatorio en 2022: ampliación de alcance en el sentido literal."
+  },
+  "osa-spy-clause": {
+    "title": "Online Safety Act: la \"cláusula espía\"",
+    "body": "El Reino Unido se otorga la facultad de ordenar a las mensajerías escanear contenido cifrado (sección 121). La frase \"cuando sea técnicamente viable\" no está en la ley: fue la concesión del ministro, la [declaración de Lord Parkinson ante la Cámara de los Lores](https://techcrunch.com/2023/09/06/osb-encryption-scanning-feasibility/) (6 de septiembre de 2023), después de que Signal y WhatsApp amenazaran con marcharse. El gobierno admite que no es viable, pero mantiene la facultad en la norma."
+  },
+  "first-extension": {
+    "title": "Lo \"temporal\" consigue su primera prórroga",
+    "body": "El Reglamento 2024/1307 aplaza la caducidad de Chat Control 1.0 del 3 de agosto de 2024 al 3 de abril de 2026. Una medida de emergencia que se renueva a sí misma deja de ser una excepción: es un régimen."
+  },
+  "uk-age-checks": {
+    "title": "Reino Unido: muestra tu identificación para usar internet",
+    "body": "La Online Safety Act activa la verificación de edad \"altamente efectiva\" (identificación, tarjeta de crédito, estimación facial) para gran parte de la web. Proton mide un salto de [más del 1.400%](https://www.techradar.com/vpn/vpn-privacy-security/vpn-demand-skyrockets-in-the-uk-as-age-verification-checks-are-enforced) en los registros horarios de VPN; la Cámara de los Lores ya debate límites a las VPN."
+  },
+  "council-sunset-delete": {
+    "title": "El Consejo se mueve para eliminar la cláusula de caducidad",
+    "body": "La posición del Consejo en el trílogo (doc. 15318/25): eliminar sin más la cláusula de caducidad del escaneo \"voluntario\", haciéndolo permanente. El borrador de la presidencia danesa contemplaba el escaneo obligatorio del lado del cliente. En febrero de 2026, el EDPS responde a la propuesta de la Comisión de diciembre de extender la excepción hasta 2028 (COM(2025) 797): degradación sustancial de la confidencialidad, análisis indiscriminado y desproporcionado."
+  },
+  "ep-says-no": {
+    "title": "El Parlamento dice no",
+    "body": "El Parlamento Europeo rechaza extender el escaneo voluntario hasta 2028 (228 a favor, 311 en contra, 92 abstenciones). Consecuencia: la base legal caduca el 3 de abril de 2026. La presión ciudadana y el trabajo de las ONG resistieron. Durante tres meses."
+  },
+  "scanning-continues": {
+    "title": "La ley caduca, el escaneo continúa",
+    "body": "Con la excepción caducada, los gigantes que firmaron el llamamiento conjunto del 19 de marzo para consolidar el régimen (Google, Meta, Microsoft, Snap, TikTok) anuncian que seguirán escaneando mensajes, con o sin base legal. La admisión de que el \"cumplimiento\" era pura escenografía."
+  },
+  "council-resurrects": {
+    "title": "El Consejo resucita el texto caducado",
+    "body": "Tres meses después de la caducidad, el Consejo adopta su posición para restablecer el escaneo voluntario hasta el 3 de abril de 2028, enviada al Parlamento en segunda lectura: el procedimiento donde el rechazo necesita mayoría absoluta (361 de 720), no una mayoría de los votos emitidos."
+  },
+  "ep-e2ee-carveout": {
+    "title": "El rechazo fracasa, pero el E2EE queda excluido",
+    "body": "Procedimiento de urgencia aprobado el 7 de julio (331/304/11), votación el día 9: 314 eurodiputados votan por rechazar la posición del Consejo: mayoría simple, por debajo de los 361 necesarios. Pero el Parlamento adopta a continuación las enmiendas que excluyen las comunicaciones cifradas de extremo a extremo del régimen de escaneo (369 y 362 votos), y un último intento de rechazar la posición enmendada también fracasa (276/286/30). El texto enmendado vuelve al Consejo, que dispone de unos tres meses (hasta aproximadamente el 9 de octubre de 2026) para aceptar las enmiendas (escaneo voluntario de los servicios no E2EE hasta el 3 de abril de 2028) o abrir la conciliación. A 10 de julio de 2026, nada está en vigor: la excepción que caducó el 3 de abril nunca fue revivida ([votaciones completas](https://howtheyvote.eu/votes/195775))."
+  }
+}

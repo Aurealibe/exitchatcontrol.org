@@ -1,0 +1,153 @@
+{
+  "site": {
+    "title": "Exit Chat Control · Hazte ingobernable",
+    "description": "Una guía de campo práctica para escapar de Chat Control y recuperar tu privacidad digital: mensajería cifrada, correo, VPN, DNS, contraseñas, Linux, GrapheneOS, autoalojamiento. Gratis, de código abierto, sin rastreo."
+  },
+  "nav": {
+    "skip": "Saltar al contenido",
+    "toc": "Índice",
+    "language": "Idioma",
+    "theme": "Tema",
+    "themeToggle": "Alternar modo oscuro",
+    "toTop": "Volver arriba"
+  },
+  "banner": {
+    "reviewNote": "Sección traducida automáticamente, revisión pendiente."
+  },
+  "hero": {
+    "stamp": "Vigilancia masiva · UE · 2026",
+    "eyebrow": "Un manual de campo para la soberanía digital",
+    "lede": "Chat Control quiere escanear tus mensajes privados. Así es como recuperas el control de tus conversaciones, tus datos y tus herramientas, paso a paso, desde el principiante hasta el denunciante.",
+    "p1": "Ciudadano",
+    "p2": "Cuenta seudónima",
+    "p3": "Denunciante"
+  },
+  "status": {
+    "label": "Última hora · 9 de julio de 2026",
+    "headline": "El Parlamento Europeo dejó pasar Chat Control.",
+    "body": "La moción de rechazo fracasó: 314 eurodiputados votaron en contra del texto, 276 a favor, 17 abstenciones. Hacían falta 361 votos para bloquearlo. La mayoría quería el rechazo; el procedimiento lo enterró. Se arrancó una muralla: los mensajeros cifrados de extremo a extremo quedan excluidos del escaneo (enmiendas adoptadas con 369 y 362 votos). El texto está ahora sobre la mesa del Consejo: basta una firma antes de octubre, y el escaneo \"voluntario\" de tus mensajes queda autorizado hasta el 3 de abril de 2028. En paralelo, Chat Control 2.0 (CSAR), el escaneo obligatorio incluso para mensajeros cifrados, vuelve a negociarse en septiembre. La amenaza no pasó: se está instalando.",
+    "cta": "La ventana para reequiparte es ahora, mientras la decisión todavía es tuya.",
+    "sourceEp": "Comunicado del PE, 9 de julio de 2026",
+    "sourceVotes": "resultados oficiales de la votación nominal"
+  },
+  "noscript": {
+    "notice": "JavaScript está desactivado: buen instinto. Toda la guía funciona sin él: solo el cambio de tema, los filtros y la checklist necesitan scripts."
+  },
+  "footer": {
+    "resources": "Recursos",
+    "sourcesLaw": "Fuentes · la ley",
+    "act": "Actúa",
+    "github": "Código abierto en GitHub",
+    "download": "Descarga la guía (1 archivo)",
+    "proofline": "Cero rastreadores, cero cookies, cero peticiones externas. Todo (fuentes, iconos, estilos) está incrustado. Compruébalo: abre el inspector de red y recarga la página. Nada sale hacia terceros.",
+    "disclaimer": "Esta guía es un documento informativo sobre protección de la privacidad y defensa del cifrado. No aconseja ninguna actividad ilegal. Consulta siempre la actualidad legislativa: la situación cambia rápido.",
+    "factsUpdated": "Datos actualizados por última vez: 10 de julio de 2026.",
+    "links": {
+      "council0207": "Consejo de la UE · posición en primera lectura del 2 de julio de 2026",
+      "ep2603": "Parlamento · rechazo del 26 de marzo de 2026",
+      "ep0907": "Parlamento · enmiendas del 9 de julio de 2026 (E2EE excluido)",
+      "rollcalls": "Resultados oficiales de la votación nominal · 9 de julio de 2026",
+      "edps": "EDPS · dictamen del 16 de febrero de 2026 (PDF)",
+      "reg1232": "Reglamento (UE) 2021/1232",
+      "ccOverview": "Chat Control 1.0 frente a 2.0",
+      "protonCss": "Proton · el escaneo del lado del cliente",
+      "jointAppeal": "Llamamiento conjunto de las grandes tecnológicas (19 de marzo de 2026)",
+      "bigTechScan": "Big Tech promete seguir escaneando"
+    }
+  },
+  "sections2": {
+    "precedents": {
+      "eyebrow": "PARTE 23 · LAS PRUEBAS",
+      "title": "Treinta años de precedentes",
+      "intro": "A cada generación le dicen que la vigilancia es nueva, limitada y temporal. Con fecha y fuente: el mismo guion desde 1993. Haz clic en una fecha para citar una entrada.",
+      "kinds": {
+        "promise": "la promesa",
+        "creep": "la deriva",
+        "struck": "anulado",
+        "revealed": "revelado"
+      }
+    },
+    "observatory": {
+      "eyebrow": "PARTE 24 · LA DERIVA, EN VIVO",
+      "title": "El observatorio del Gran Hermano",
+      "intro": "Chat Control es un frente entre cinco. Lo que se aprobó, lo que está sobre la mesa, lo que se frenó, región por región, tema por tema.",
+      "filterRegion": "Región",
+      "filterTheme": "Tema",
+      "all": "Todos",
+      "regions": {
+        "eu": "UE",
+        "fr": "Francia",
+        "world": "Mundo"
+      },
+      "themes": {
+        "messaging": "Mensajería",
+        "identity": "Identidad",
+        "money": "Dinero",
+        "media": "Medios",
+        "aibio": "IA y biometría"
+      },
+      "statuses": {
+        "en_vigueur": "en vigor",
+        "adopte": "adoptado",
+        "negociation": "en negociación",
+        "propose": "propuesto",
+        "rejete": "rechazado",
+        "suspendu": "suspendido",
+        "revele": "revelado"
+      }
+    },
+    "allies": {
+      "eyebrow": "PARTE 25 · NO ESTÁS SOLO",
+      "title": "Iniciativas aliadas",
+      "intro": "Las organizaciones que dan esta pelea en tribunales y parlamentos, y los proyectos que guardan las pruebas.",
+      "campaigns": "Campañas y activismo",
+      "chroniclers": "Proyectos de documentación"
+    },
+    "directory": {
+      "eyebrow": "PARTE 26 · EL ARSENAL",
+      "title": "Directorio de código abierto",
+      "intro": "66 herramientas de software libre en 14 categorías. Cada entrada es de código abierto: código verificable, sin necesidad de confiar a ciegas.",
+      "categories": {
+        "messagerie": "Mensajería",
+        "email": "Correo",
+        "navigation": "Navegación y búsqueda",
+        "vpn-reseau": "VPN y red",
+        "dns": "DNS",
+        "mots-de-passe": "Contraseñas y 2FA",
+        "stockage-photos": "Almacenamiento, fotos y copias de seguridad",
+        "quotidien": "Herramientas cotidianas",
+        "social": "Redes sociales",
+        "ia-locale-agentique": "IA local y agéntica",
+        "os-mobile": "Sistemas operativos",
+        "selfhost": "Autoalojamiento",
+        "finance": "Finanzas",
+        "opsec": "OPSEC y denuncia"
+      }
+    },
+    "checklist": {
+      "eyebrow": "PARTE 27 · EL PLAN",
+      "title": "Checklist de migración",
+      "intro": "Catorce pasos, desde victorias de diez minutos hasta proyectos de fin de semana. Las marcas se guardan solo en este navegador. Nada sale de tu dispositivo.",
+      "progress": "{done} / {total} pasos completados",
+      "levels": {
+        "green": "victoria rápida",
+        "yellow": "lleva un rato",
+        "red": "avanzado"
+      }
+    }
+  },
+  "manifesto": {
+    "label": "Manifiesto",
+    "p1": "Cambiar de herramientas es un acto de responsabilidad individual, que nos corresponde a cada uno: así es como se rechaza una vigilancia masiva ilegítima.",
+    "p2": "Cifrar es <strong>proteger tu vida privada</strong>. Autoalojar es <strong>sacarte de la vigilancia de las grandes tecnológicas</strong>. Recuperar el control de tus herramientas es <mark>hacerte ingobernable y soberano</mark>.",
+    "p3": "La lucha es política. Apoya a las organizaciones que se oponen, como la iniciativa {link}, y escribe a tus representantes. Eso fue lo que casi tumba Chat Control.",
+    "p4": "Pero como la solución probablemente no vaya a venir ni de las urnas ni del Parlamento Europeo, nos toca a cada uno ganar nuestra libertad y proteger nuestra privacidad con todas las herramientas que ofrece Internet."
+  },
+  "share": {
+    "label": "Compártelo",
+    "share": "Compartir esta guía",
+    "copy": "Copiar el enlace",
+    "copied": "Enlace copiado ✓",
+    "print": "Imprimir / PDF"
+  }
+}

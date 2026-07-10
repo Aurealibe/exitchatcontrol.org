@@ -1,0 +1,196 @@
+---
+id: 'boiteaoutils'
+part: 9
+order: 16
+title: 'La caja de herramientas del día a día'
+---
+
+<p class="part-num">
+  PARTE 15 · REEMPLAZA EL RESTO · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## La caja de herramientas del día a día
+
+Google y Apple no son solo correo: mapas, notas, calendario, fotos, videollamadas, todo está atado a tu identidad. Aquí tienes cómo reemplazar cada pieza, una por una, sin perder comodidad.
+
+<ToolCard tool="t-maps">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Reemplaza a Google Maps</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Apps de mapas y navegación, basadas en OpenStreetMap, que funcionan sin conexión.
+  </Fragment>
+  <Fragment slot="why">
+    Google Maps registra cada viaje y construye un historial de ubicaciones espeluznantemente preciso.{' '}
+    <b>Organic Maps</b> no rastrea nada y no muestra anuncios; <b>OsmAnd</b> apunta a usuarios avanzados (senderismo,
+    curvas de nivel, navegación detallada).
+  </Fragment>
+  <Fragment slot="who">
+    Para todos. El tráfico en vivo y el transporte público son menos completos que en Google, pero la navegación
+    cotidiana es excelente.
+  </Fragment>
+  <ol slot="install">
+    <li>Instálala desde F-Droid, la App Store o Google Play.</li>
+    <li>Descarga por adelantado los mapas de las regiones que necesites para usarlos sin conexión.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-notes">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Reemplaza a Docs / Notion</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Notas y documentos cifrados de extremo a extremo, para reemplazar Google Docs, Notion o Evernote.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Standard Notes</b> (de Proton) cifra tus notas por defecto. <b>Joplin</b> gestiona cuadernos en Markdown
+    con cifrado opcional y la sincronización que elijas. <b>CryptPad</b> (francés) ofrece un equivalente a
+    Google Docs en tiempo real y totalmente cifrado.
+  </Fragment>
+  <Fragment slot="who">Para todos, en el caso de las notas; CryptPad para la colaboración entre varias personas.</Fragment>
+  <ol slot="install">
+    <li>
+      Standard Notes / Joplin: crea una cuenta, instala la app y activa el cifrado (viene activado por defecto
+      en Standard Notes; hay que activarlo en Joplin).
+    </li>
+    <li>CryptPad: usa cryptpad.fr u otra instancia, no necesitas cuenta para empezar.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-visio">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Reemplaza a Zoom / Meet</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Herramientas de videoconferencia sin cuenta ni instalaciones pesadas, para reemplazar Zoom, Google Meet o
+    Teams.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Jitsi Meet</b> funciona en el navegador, sin cuenta, y se puede autoalojar (también es la base de
+    Brave Talk). <b>Element Call</b> está cifrado de extremo a extremo y federado a través de Matrix. Para
+    una llamada simple y totalmente cifrada, las llamadas de <b>Signal</b> también sirven.
+  </Fragment>
+  <Fragment slot="who">
+    Para todos. En un servidor público de Jitsi, las llamadas grupales tienen cifrado en tránsito; el
+    cifrado de extremo a extremo es opcional.
+  </Fragment>
+  <ol slot="install">
+    <li>Jitsi: entra en meet.jit.si, crea un nombre de sala y comparte el enlace. No hay nada que instalar.</li>
+    <li>Element Call: desde la app de Element (Matrix), inicia una llamada en una sala.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-photos">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Reemplaza a Google Photos</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Dos formas de conservar tus fotos sin entregárselas a Google o Apple.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Ente</b> es un servicio gestionado y cifrado de extremo a extremo, con reconocimiento y búsqueda en
+    el propio dispositivo: simple y seguro. <b>Immich</b> es un clon de Google Photos que <b>alojas tú
+    mismo</b> (incluye búsqueda de rostros y objetos), para quienes se sientan cómodos administrando un
+    servidor.
+  </Fragment>
+  <Fragment slot="who">
+    Ente para todos; Immich para quienes se autoalojan. Nota: Immich no tiene cifrado de extremo a extremo,
+    su seguridad depende de tu servidor.
+  </Fragment>
+  <ol slot="install">
+    <li>Ente: instala la app, crea una cuenta y activa la copia de seguridad automática de tu carrete.</li>
+    <li>
+      Immich: despliégalo en tu servidor (ver sección 10) mediante Docker, y luego conecta la app móvil.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-alias">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Alias de correo</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Alias de correo desechables: una dirección única por sitio que reenvía a tu bandeja real sin revelarla
+    nunca.
+  </Fragment>
+  <Fragment slot="why">
+    Dejas de dar tu dirección real en todas partes. Si un sitio sufre una filtración o te llena de spam,
+    cortas ese alias en particular y sabes al instante quién filtró tus datos. <b>SimpleLogin</b> está
+    integrado con Proton; <b>addy.io</b> ofrece alias ilimitados en su plan gratuito.
+  </Fragment>
+  <Fragment slot="who">
+    Para todos, y especialmente para las cuentas seudónimas que quieren compartimentar sus registros.
+  </Fragment>
+  <ol slot="install">
+    <li>Crea una cuenta e instala la extensión del navegador.</li>
+    <li>En cada registro, genera un alias nuevo en lugar de escribir tu dirección real.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-backups">
+  <Fragment slot="name">Copias de seguridad cifradas</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una forma de hacer copias de seguridad de tu teléfono y computadora, cifrando los datos <b>antes</b> de
+    que salgan hacia cualquier nube.
+  </Fragment>
+  <Fragment slot="why">
+    Las copias de seguridad de iCloud/Google suelen ser accesibles para el proveedor, y por lo tanto para
+    los tribunales.{' '}
+    <b>Cryptomator</b> cifra tus archivos antes de enviarlos a cualquier nube; <b>restic</b> hace copias de
+    seguridad cifradas automáticas; <b>Proton Drive</b> tiene cifrado de extremo a extremo. En iPhone, activa
+    "Protección de datos avanzada" para cifrar tus copias de seguridad de iCloud.
+  </Fragment>
+  <Fragment slot="who">
+    Todos deberían cifrar sus copias de seguridad. Regla de oro: dos copias cifradas, en dos soportes, en dos
+    lugares.
+  </Fragment>
+  <ol slot="install">
+    <li>iPhone: Ajustes &gt; tu nombre &gt; iCloud &gt; Protección de datos avanzada: actívala.</li>
+    <li>
+      PC: instala Cryptomator, crea una bóveda y pon ahí tus archivos antes de sincronizarlos con la nube.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-databrokers">
+  <Fragment slot="name">Borra tus datos (RGPD)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡</span>
+    <span class="tool-tag">Intermediarios de datos</span>
+  </Fragment>
+  <Fragment slot="what">
+    Conseguir que se elimine tu información personal de los "intermediarios de datos" que la recopilan y
+    revenden.
+  </Fragment>
+  <Fragment slot="why">
+    En Europa, el RGPD (Artículo 17) te otorga un <b>derecho al olvido</b>: puedes exigir, de forma gratuita,
+    que una empresa elimine tus datos, en principio en el plazo de un mes. Servicios como <b>Incogni</b>{' '}
+    automatizan estas solicitudes a gran escala, mediante una tarifa.
+  </Fragment>
+  <Fragment slot="who">
+    Para quienes quieren reducir su exposición. Nota: los datos vuelven a aparecer con el tiempo, y esto no
+    afecta a los registros públicos ni a las redes sociales. Hacerlo tú mismo es gratis, pero tedioso.
+  </Fragment>
+  <ol slot="install">
+    <li>Para una solicitud manual: escribe al intermediario citando el Artículo 17 del RGPD y pide la eliminación.</li>
+    <li>
+      Para automatizarlo: suscríbete a un servicio de eliminación y deja que envíe las solicitudes en tu
+      nombre.
+    </li>
+  </ol>
+</ToolCard>

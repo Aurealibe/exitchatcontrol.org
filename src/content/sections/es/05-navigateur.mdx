@@ -1,0 +1,149 @@
+---
+id: 'navigateur'
+part: 3
+order: 5
+title: 'Navegador y buscador'
+---
+
+<p class="part-num">
+  PARTE 04 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Navegador y buscador
+
+Chrome es un rastreador publicitario. Google Search perfila cada búsqueda. Reemplaza ambos.
+
+<ToolCard tool="t-mullvadbrowser">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Avanzado</span>
+    <span class="tool-tag">Anti-fingerprinting</span>
+    <span class="tool-tag">🇸🇪 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    El navegador de Tor Browser, pero sin la red Tor: úsalo con tu VPN para tener un escritorio
+    difícil de rastrear.
+  </Fragment>
+  <Fragment slot="why">
+    Construido con el Tor Project, está diseñado para que todos sus usuarios presenten la{' '}
+    <b>misma huella digital</b>. El resultado: en lugar de ser único y por lo tanto rastreable, te
+    mezclas con la multitud. Es la mejor opción de privacidad en escritorio.
+  </Fragment>
+  <Fragment slot="who">
+    Quienes quieren ir más allá del simple bloqueo de anuncios, especialmente cuentas seudónimas y
+    perfiles expuestos.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Descárgalo desde <b>mullvad.net/browser</b> (Windows, macOS, Linux).
+    </li>
+    <li>
+      Úsalo tal cual, sin personalizarlo: cada extensión o ajuste que agregues vuelve a hacerte
+      identificable.
+    </li>
+    <li>Combínalo con tu VPN para también enmascarar tu dirección IP.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-firefox">
+  <Fragment slot="name">Firefox (reforzado)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Reemplaza a Chrome</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">El navegador libre de referencia para el uso diario respetuoso de la privacidad.</Fragment>
+  <Fragment slot="why">
+    A diferencia de Chrome (un rastreador publicitario de Google), Firefox está construido por una
+    fundación sin interés en perfilarte. Con algunos ajustes (la guía <em>arkenfox</em>) y la
+    extensión uBlock Origin, se vuelve muy sólido.
+  </Fragment>
+  <Fragment slot="who">Todos, como navegador principal del día a día.</Fragment>
+  <ol slot="install">
+    <li>
+      Instala Firefox desde <b>mozilla.org/firefox</b>.
+    </li>
+    <li>
+      Agrega la extensión <b>uBlock Origin</b> (bloqueo de anuncios y rastreadores).
+    </li>
+    <li>
+      En la configuración de privacidad, elige "Estricta", desactiva la telemetría y borra las
+      cookies al cerrar. Para ir más allá, aplica la guía arkenfox.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-brave">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Bloquea todo por defecto</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un navegador basado en Chromium que bloquea anuncios y rastreadores por defecto, con una
+    ventana privada extra conectada a Tor.
+  </Fragment>
+  <Fragment slot="why">
+    Es la opción más simple para quien viene de Chrome: la misma sensación, pero sin el rastreo.
+    Bloquea los anuncios de YouTube de forma nativa, ofrece video cifrado (Brave Talk, basado en
+    Jitsi) y acceso a Tor con un clic, útil para llegar a un sitio bloqueado.
+  </Fragment>
+  <Fragment slot="who">
+    Principiantes que quieren un cambio sin dolor desde Chrome. (Ignora las funciones de
+    cripto/anuncios recompensados si no te interesan.)
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Instala Brave desde <b>brave.com</b>.
+    </li>
+    <li>Configura "Shields" en "agresivo" y desactiva Brave Rewards si no quieres anuncios.</li>
+    <li>Para Tor: menú &gt; "Nueva ventana privada con Tor", y espera a que aparezca "Tor conectado".</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-ublock">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Extensión</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    La extensión de navegador que bloquea anuncios, rastreadores y scripts espía. La medida con
+    mayor retorno, en diez segundos.
+  </Fragment>
+  <Fragment slot="why">
+    La publicidad en línea es el principal vector de vigilancia y perfilado. Bloquearla elimina la
+    mayor parte del rastreo, acelera las páginas y reduce el riesgo de malware.
+  </Fragment>
+  <Fragment slot="who">Todos, tanto en Firefox como en navegadores basados en Chromium.</Fragment>
+  <ol slot="install">
+    <li>
+      Abre la tienda de extensiones de tu navegador y busca "uBlock Origin" (el original, de
+      Raymond Hill).
+    </li>
+    <li>Instálala. Funciona de inmediato, sin necesidad de configuración.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-search">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡 Buscadores</span>
+    <span class="tool-tag">Reemplaza a Google Search</span>
+  </Fragment>
+  <Fragment slot="what">Buscadores que no perfilan cada búsqueda, a diferencia de Google.</Fragment>
+  <Fragment slot="why">
+    DuckDuckGo y Brave Search no guardan historial vinculado a tu identidad. Startpage ofrece
+    resultados de Google sin el rastreo. SearXNG va más allá: un motor de metabúsqueda
+    <b>autoalojable</b>, soberanía hasta en tu barra de búsqueda.
+  </Fragment>
+  <Fragment slot="who">Todos. SearXNG está pensado para quienes quieren alojar su propio motor.</Fragment>
+  <ol slot="install">
+    <li>
+      En la configuración de tu navegador, cambia el motor predeterminado a DuckDuckGo, Brave
+      Search o Startpage.
+    </li>
+    <li>
+      Para SearXNG: usa una instancia pública (directorio en searx.space) o aloja la tuya propia
+      (ver sección 10).
+    </li>
+  </ol>
+</ToolCard>
