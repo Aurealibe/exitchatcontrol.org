@@ -107,7 +107,7 @@ check('dist/en/index.html shipped', existsSync(enPath))
 if (existsSync(enPath)) {
   const en = readFileSync(enPath, 'utf8')
   check('en: html defaults to english', en.includes('<html lang="en" data-lang="en">'))
-  check('en: english title', en.includes('<title>Becoming Ungovernable'))
+  check('en: english title', en.includes('<title>Exit Chat Control · Becoming ungovernable'))
   check('en: canonical /en/', en.includes('href="https://exitchatcontrol.org/en/"'))
   check('en: still fully bilingual DOM', en.includes('data-l="fr"') && en.includes('data-l="en"'))
   check('en: og locale swapped', en.includes('content="en_GB"'))

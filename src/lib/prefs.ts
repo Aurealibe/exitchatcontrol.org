@@ -25,8 +25,8 @@ export function currentLang(): Lang {
 }
 
 const TITLES: Record<Lang, string> = {
-  fr: 'Devenir Ingouvernable — Échapper à Chat Control',
-  en: 'Becoming Ungovernable — Escape Chat Control',
+  fr: 'Exit Chat Control · Devenir ingouvernable',
+  en: 'Exit Chat Control · Becoming ungovernable',
 }
 
 export function setLang(l: Lang) {

@@ -1,12 +1,13 @@
-# exitchatcontrol
+# Exit Chat Control
 
 [![ci](https://github.com/Aurealibe/exitchatcontrol/actions/workflows/ci.yml/badge.svg)](https://github.com/Aurealibe/exitchatcontrol/actions/workflows/ci.yml)
 [![link-rot](https://github.com/Aurealibe/exitchatcontrol/actions/workflows/link-rot.yml/badge.svg)](https://github.com/Aurealibe/exitchatcontrol/actions/workflows/link-rot.yml)
 
-Guide bilingue (FR / EN) pour échapper à **Chat Control** et reprendre sa souveraineté
-numérique : messagerie chiffrée, e-mail, VPN, DNS, 2FA, Linux, GrapheneOS,
-auto-hébergement. Chaque outil : « à quoi ça sert », « pourquoi », « pour qui »,
-« comment l'installer ». Et pour comprendre contre quoi on se protège :
+Guide bilingue (FR / EN — néerlandais en cours de portage, voir Langues) pour
+échapper à **Chat Control** et reprendre sa souveraineté numérique : messagerie
+chiffrée, e-mail, VPN, DNS, 2FA, Linux, GrapheneOS, auto-hébergement. Chaque
+outil : « à quoi ça sert », « pourquoi », « pour qui », « comment l'installer ».
+Et pour comprendre contre quoi on se protège :
 
 - la **chronologie des précédents** — 25 ans de dérives sourcées (1993 → 2026),
   chaque entrée datée + un document primaire ;
@@ -22,6 +23,26 @@ auto-hébergement. Chaque outil : « à quoi ça sert », « pourquoi », « pou
 **Zéro traqueur, zéro cookie, zéro requête externe** — polices système, icônes
 embarquées au build. Ouvrez l'inspecteur réseau et vérifiez.
 
+🔗 **Site : https://exitchatcontrol.org**
+
+## What is this? (EN)
+
+On 9 July 2026, the European Parliament let "Chat Control" through, opening the
+door to the scanning of private messages across the EU. This project is a
+practical, no-nonsense answer: a fast, prerendered page referencing
+privacy-respecting tools anyone can use to opt out of mass surveillance, from
+the everyday citizen to the whistleblower. English landing: **`/en/`**.
+
+## Langues · Languages
+
+- **Français** — original, défaut.
+- **English** — complet, avec sa page d'atterrissage `/en/`.
+- **Nederlands** — une traduction complète a été contribuée par
+  [@thomasboom](https://github.com/thomasboom) sur l'ancienne version
+  mono-fichier (merci / bedankt!). Elle est en cours de portage vers le modèle
+  de contenu structuré (`src/content/`, feuilles `<T>`) ; en attendant, le
+  texte NL reste accessible via `git show 471bbbc:index.html`. Rien n'est perdu.
+
 ## Stack
 
 Vite + React 19 + Tailwind v4 (`@tailwindcss/vite`) + `vite-plugin-react-ssg` :
@@ -31,6 +52,10 @@ tout le guide est **prérendu en HTML statique** (lisible JS coupé — Tor Brow
 dans deux couches : `src/styles/tokens.css` (les tokens + composants) et
 `src/styles/dossier.css` (le grain, la couverture, LE FIL — compositor-only,
 `prefers-reduced-motion` respecté partout).
+
+L'esprit « un fichier qu'on ouvre » de la v1 est conservé — en plus fort :
+chaque build produit **`dist/exitchatcontrol-offline.html`**, le guide entier
+en UN fichier interactif sans React (langue, thème, filtres, checklist, FIL).
 
 ```bash
 pnpm install
@@ -65,7 +90,22 @@ avec Caddy). Chaque build produit aussi :
   interactif sans React (langue, thème, filtres, checklist, FIL) — mirrorable,
   envoyable, archivable.
 
-Domaine : https://exitchatcontrol.org
+## Contributing
+
+Contributions are very welcome — corrections, translations and new tool entries.
+To be accepted, an app must meet **three simple rules** (upstream policy):
+
+1. **It has traction** — an established, actively maintained project with a real
+   user base, not an obscure or abandoned tool.
+2. **It is open source** — for the directory, the license is verified against
+   the repository (source-available doesn't qualify).
+3. **It is privacy-respecting.**
+
+**How to contribute:** tool entries live in typed data files under
+`src/content/` (`directory.tsx` for the directory, section files for the full
+cards) — `pnpm test` tells you if an entry is malformed. Not comfortable with
+code? Open an Issue with the app's name, link, and why it qualifies.
+Cited sources must be primary and are link-checked weekly.
 
 ## Licence
 

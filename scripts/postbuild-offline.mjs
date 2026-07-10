@@ -64,8 +64,8 @@ const vanilla = `
     root.setAttribute('data-lang', l)
     root.setAttribute('lang', l)
     document.title = l === 'en'
-      ? 'Becoming Ungovernable — Escape Chat Control'
-      : 'Devenir Ingouvernable — Échapper à Chat Control'
+      ? 'Exit Chat Control · Becoming ungovernable'
+      : 'Exit Chat Control · Devenir ingouvernable'
     pressed('.lang-fr', function () { return l === 'fr' })
     pressed('.lang-en', function () { return l === 'en' })
     try { localStorage.setItem('lang', l) } catch (e) {}

@@ -22,7 +22,7 @@ if (!htmlTagRe.test(html)) {
 html = html.replace(htmlTagRe, '<html lang="fr" data-lang="fr">')
 writeFileSync(join(dist, 'index.html'), html)
 
-const TITLE_EN = 'Becoming Ungovernable — Escape Chat Control'
+const TITLE_EN = 'Exit Chat Control · Becoming ungovernable'
 const DESC_EN =
   'Chat Control wants to scan your private messages. A bilingual (FR/EN) field manual to take back control: encrypted messaging, email, VPN, Linux, GrapheneOS, self-hosting — step by step, from citizen to whistleblower.'
 

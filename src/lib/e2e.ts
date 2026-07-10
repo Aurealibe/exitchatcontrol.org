@@ -26,7 +26,7 @@ export function runE2E() {
   // 1 · language toggle drives the html contract + the document title
   ok('click-en', click('.lang-en'))
   ok('lang-attr-en', root.getAttribute('data-lang') === 'en', root.getAttribute('data-lang') ?? 'null')
-  ok('title-en', document.title.includes('Ungovernable'), document.title)
+  ok('title-en', document.title.includes('ungovernable'), document.title)
   ok('aria-pressed-en', document.querySelector('.lang-en')?.getAttribute('aria-pressed') === 'true')
 
   // 2 · profile filter hides non-matching tool cards (computed style, not class)
