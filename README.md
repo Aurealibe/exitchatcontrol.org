@@ -1,16 +1,3 @@
-# Exit Chat Control (exitchatcontrol.org) magyar nyelven is
-
-A nyelvi lokalizáció elsősorban a meglévő json (./src/i18n könyvtárban) és az mdx fájlok (./src/content/sections) használatával és azokból újak létrehozásával valósult meg angol (en fájlok/könyvtárak/részek) forrásból.
-
-Maga a fordítás és a lektorálás a Google Gemini nagy nyelvi model (LLM) használatával készült - figyelembevéve a magyar nyelvben érvényes szabályokat (pl. macskakaparás helyett az idézőjel használatát, elkerülni a gondolatjelet és más idegen nyelvből származó karaktereket magán a végterméken) továbbá kikerülve az ún. AI slop tartalom kiengedését, a nyelvi implementáláshoz szükséges módosítások - hogy valóban meg is jelenjen a magyar tartalom - a Kimi K2.7 Pro-val valósult meg. Gondosan ellenőrízve lett az eredmény
-További módosításokért kérem böngészd az eredeti alkotó(k) Github repositorját.
-
-Az eddigi módosítások pull requestelve lettek az eredeti alkotó(k) felé.
-
-Jelenlegi fordítás és ez a fork a 2026 július 10-ei állapotot tükrözi. Bármilyen eredeti tartalom az eredeti alkotó(k) munkáját tükrözi.
-
-🔗 **Live hungarian site: https://exitchatcontrol.hu**
-
 ## Eredeti leírás
 
 # Exit Chat Control
