@@ -2,7 +2,10 @@
 
 Motiváció a lokalizációval:
 egy beszélgetőtárs a sok közül megmutatta nekem az eredeti exitchatcontrol.org-ot mikor a francián, angolon és holland nyelven kívül (magyarul sem) nem volt más nyelven elérhető, mióta elkészült a magyar lokalizáció a német is elérhetővé vált a hivatalos oldalon de a magyar még vár magára.
-Hazai politikai szempontból: a jelenlegi kormánypárt (TISZA) EP képviselőinek nagy többsége is támogatja a Chat Control 1.0 bevezetését, ezért mindenáron a választópolgárokat és az állampolgárokat számára FONTOS informálni a valós történésekről és a döntések következményeiről, a Chat Controlról szóló (reddit megathread-en belül) további információkat  és beszélgetéseket itt lehet keresni: https://redlib.catsarch.com/r/hungary/comments/1uro7bs/chat_control_megathread/
+
+Hazai politikai szempontból: a jelenlegi kormánypárt (TISZA) EP képviselőinek nagy többsége is támogatja a Chat Control 1.0 bevezetését, ezért mindenáron a választópolgárokat és az állampolgárokat FONTOS informálni a valós történésekről és a döntések következményeiről, a Chat Controlról szóló (reddit megathread-en belül) további információkat  és beszélgetéseket itt lehet megkeresni (redlib proxyn keresztül): https://redlib.catsarch.com/r/hungary/comments/1uro7bs/chat_control_megathread/ - bár ez a magyar diskurzus közvetlenül nem kapcsolódik teljesen a projekthez. 
+
+Ha van javaslatod, azt írd meg az eredeti exitchatcontrol.org Git-en és meg lehet ott beszélni miket érdemes hozzáadni magához a nyílt forráskódú weboldalhoz és ehhez a kezdeményezéshez. 
 
 A nyelvi lokalizáció elsősorban a meglévő json (./src/i18n könyvtárban) és az mdx fájlok (./src/content/sections) használatával és azokból újak létrehozásával valósult meg angol (en fájlok/könyvtárak/részek) forrásból.
 
