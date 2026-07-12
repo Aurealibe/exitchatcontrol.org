@@ -173,6 +173,16 @@
     "share": "Share",
     "shareX": "Post on X",
     "shareText": "My censorship-resistance score: {score}/100 — {band}. Check yours:",
+    "scorecardHeading": "Shareable scorecard",
+    "scorecardHint": "Generated on your device. Download the image to attach it on X, Mastodon, or anywhere else — the link preview stays generic by design (your score never leaves this browser).",
+    "downloadScorecard": "Download scorecard",
+    "copyScorecard": "Copy scorecard image",
+    "scorecardCopied": "Image copied ✓",
+    "scorecardBrand": "Exit Chat Control",
+    "scorecardTitle": "Censorship-resistance score",
+    "scorecardStamp": "Local only · No tracker",
+    "scorecardCta": "Take the quiz →",
+    "scorecardFile": "ecc-score-{score}.png",
     "bandsHeading": "What the score means",
     "categoriesHeading": "The twelve areas, and where to improve"
   }

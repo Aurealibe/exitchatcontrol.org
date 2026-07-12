@@ -786,4 +786,19 @@
       transition: none;
     }
   }
+
+  /* ─── quiz shareable scorecard preview ─── */
+  .quiz-scorecard__frame {
+    border: 1px solid var(--rule);
+    border-radius: var(--radius-dossier);
+    background: var(--surface-2);
+    overflow: hidden;
+    max-width: 36rem;
+  }
+  .quiz-scorecard__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
 }
