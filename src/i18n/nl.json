@@ -173,6 +173,16 @@
     "share": "Delen",
     "shareX": "Plaats op X",
     "shareText": "Mijn score voor weerstand tegen censuur: {score}/100 — {band}. Test de uwe:",
+    "scorecardHeading": "Deelbare scorekaart",
+    "scorecardHint": "Op uw apparaat gemaakt. Download de afbeelding om die op X, Mastodon of elders te plakken — de linkvoorvertoning blijft expres generiek (uw score verlaat deze browser nooit).",
+    "downloadScorecard": "Scorekaart downloaden",
+    "copyScorecard": "Scorekaartafbeelding kopiëren",
+    "scorecardCopied": "Afbeelding gekopieerd ✓",
+    "scorecardBrand": "Exit Chat Control",
+    "scorecardTitle": "Score weerstand tegen censuur",
+    "scorecardStamp": "Alleen lokaal · Geen tracker",
+    "scorecardCta": "Doe de quiz →",
+    "scorecardFile": "ecc-score-{score}.png",
     "bandsHeading": "Wat de score betekent",
     "categoriesHeading": "De twaalf gebieden, en waar te verbeteren"
   }

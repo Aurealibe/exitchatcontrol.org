@@ -99,6 +99,12 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
   <section
     data-quiz-result
     data-share-tpl={t('quiz.shareText')}
+    data-card-brand={t('quiz.scorecardBrand')}
+    data-card-title={t('quiz.scorecardTitle')}
+    data-card-stamp={t('quiz.scorecardStamp')}
+    data-card-cta={t('quiz.scorecardCta')}
+    data-card-file={t('quiz.scorecardFile')}
+    data-card-outof={t('quiz.outOf')}
     tabindex="-1"
     aria-live="polite"
     class="rounded-dossier border border-rule border-l-4 border-l-accent bg-surface my-8 p-5"
@@ -117,7 +123,39 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
     <h3 class="mt-6 mb-2 font-mono text-sm uppercase">{t('quiz.recHeading')}</h3>
     <div data-quiz-recs class="grid gap-2 sm:grid-cols-3"></div>
 
+    <div class="quiz-scorecard mt-6 border-t border-rule pt-4">
+      <h3 class="mt-0 mb-1 font-mono text-sm uppercase">{t('quiz.scorecardHeading')}</h3>
+      <p class="text-dim mb-3 text-sm">{t('quiz.scorecardHint')}</p>
+      <figure class="quiz-scorecard__frame m-0">
+        <canvas data-quiz-scorecard-canvas width="1200" height="630" hidden></canvas>
+        <img
+          data-quiz-scorecard-preview
+          alt={t('quiz.scorecardHeading')}
+          class="quiz-scorecard__img"
+          width="1200"
+          height="630"
+          hidden
+        />
+      </figure>
+    </div>
+
     <div class="mt-5 flex flex-wrap gap-2 border-t border-rule pt-4">
+      <button
+        type="button"
+        data-quiz-share="download"
+        class="rounded-dossier border border-accent bg-accent text-on-accent cursor-pointer px-3 py-1.5 font-mono text-xs"
+      >
+        {t('quiz.downloadScorecard')}
+      </button>
+      <button
+        type="button"
+        data-quiz-share="copy-image"
+        data-copied={t('quiz.scorecardCopied')}
+        class="rounded-dossier border border-rule bg-surface-2 text-ink cursor-pointer px-3 py-1.5 font-mono text-xs hover:border-accent"
+        hidden
+      >
+        {t('quiz.copyScorecard')}
+      </button>
       <button
         type="button"
         data-quiz-share="copy"
@@ -334,6 +372,248 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
     return tpl.replace('{score}', String(score)).replace('{band}', band)
   }
 
+  // Scorecard PNG is drawn entirely in-browser (canvas). Nothing is uploaded:
+  // the image never leaves the device unless the reader downloads or shares it.
+  // Fixed dark dossier palette so social posts look consistent regardless of
+  // the reader's theme. Dimensions match common OG cards (1200×630).
+  type CardLabels = {
+    brand: string
+    title: string
+    stamp: string
+    cta: string
+    outOf: string
+    fileTpl: string
+  }
+
+  const cardLabels = (): CardLabels => {
+    const panel = one<HTMLElement>('[data-quiz-result]')
+    return {
+      brand: panel?.dataset.cardBrand ?? 'Exit Chat Control',
+      title: panel?.dataset.cardTitle ?? 'Censorship-resistance score',
+      stamp: panel?.dataset.cardStamp ?? 'Local only · No tracker',
+      cta: panel?.dataset.cardCta ?? 'Take the quiz →',
+      outOf: panel?.dataset.cardOutof ?? '/ 100',
+      fileTpl: panel?.dataset.cardFile ?? 'ecc-score-{score}.png',
+    }
+  }
+
+  const scoreAccent = (score: number): string => {
+    if (score >= 90) return '#7bb083'
+    if (score >= 75) return '#e6b23f'
+    if (score >= 50) return '#f2c455'
+    if (score >= 25) return '#e0705f'
+    return '#e0705f'
+  }
+
+  const roundRect = (
+    ctx: CanvasRenderingContext2D,
+    x: number,
+    y: number,
+    w: number,
+    h: number,
+    r: number,
+  ) => {
+    const rr = Math.min(r, w / 2, h / 2)
+    ctx.beginPath()
+    ctx.moveTo(x + rr, y)
+    ctx.arcTo(x + w, y, x + w, y + h, rr)
+    ctx.arcTo(x + w, y + h, x, y + h, rr)
+    ctx.arcTo(x, y + h, x, y, rr)
+    ctx.arcTo(x, y, x + w, y, rr)
+    ctx.closePath()
+  }
+
+  const truncate = (ctx: CanvasRenderingContext2D, text: string, maxW: number): string => {
+    if (ctx.measureText(text).width <= maxW) return text
+    let t = text
+    while (t.length > 1 && ctx.measureText(`${t}…`).width > maxW) t = t.slice(0, -1)
+    return `${t}…`
+  }
+
+  const hostLabel = (): string => {
+    try {
+      const u = new URL(shareUrl())
+      return u.host + (u.pathname === '/' ? '/quiz' : u.pathname.replace(/\/$/, ''))
+    } catch {
+      return 'exitchatcontrol.org/quiz'
+    }
+  }
+
+  let scorecardBlob: Blob | null = null
+  let scorecardDataUrl = ''
+
+  const clearScorecard = () => {
+    scorecardBlob = null
+    scorecardDataUrl = ''
+  }
+
+  const drawScorecard = (score: number, bandTitle: string, cats: Cat[]): Promise<void> => {
+    const canvas = one<HTMLCanvasElement>('[data-quiz-scorecard-canvas]')
+    const preview = one<HTMLImageElement>('[data-quiz-scorecard-preview]')
+    if (!canvas || !preview) return Promise.resolve()
+
+    const W = 1200
+    const H = 630
+    canvas.width = W
+    canvas.height = H
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return Promise.resolve()
+
+    const labels = cardLabels()
+    const accent = scoreAccent(score)
+    const mono = 'ui-monospace, "SF Mono", Menlo, Consolas, monospace'
+    const serif = 'Georgia, "Iowan Old Style", Palatino, "Times New Roman", serif'
+
+    // Desk background
+    ctx.fillStyle = '#0a0c10'
+    ctx.fillRect(0, 0, W, H)
+
+    // Dossier sheet
+    const pad = 36
+    roundRect(ctx, pad, pad, W - pad * 2, H - pad * 2, 6)
+    ctx.fillStyle = '#171a20'
+    ctx.fill()
+    ctx.strokeStyle = '#3d434f'
+    ctx.lineWidth = 2
+    ctx.stroke()
+
+    // Left accent rule
+    ctx.fillStyle = accent
+    ctx.fillRect(pad, pad, 6, H - pad * 2)
+
+    const left = pad + 48
+    const top = pad + 40
+
+    // Brand + title
+    ctx.fillStyle = '#e6b23f'
+    ctx.font = `600 18px ${mono}`
+    ctx.fillText(labels.brand.toUpperCase(), left, top)
+
+    ctx.fillStyle = '#9a9585'
+    ctx.font = `400 20px ${serif}`
+    ctx.fillText(truncate(ctx, labels.title, 520), left, top + 36)
+
+    // Big score
+    ctx.fillStyle = '#e6e2d6'
+    ctx.font = `700 148px ${mono}`
+    ctx.fillText(String(score), left, top + 200)
+    const scoreW = ctx.measureText(String(score)).width
+    ctx.fillStyle = '#9a9585'
+    ctx.font = `600 36px ${mono}`
+    ctx.fillText(labels.outOf.replace(/\s+/g, ' ').trim(), left + scoreW + 12, top + 200)
+
+    // Band stamp
+    const stamp = bandTitle.toUpperCase()
+    ctx.font = `700 22px ${mono}`
+    const stampW = Math.max(ctx.measureText(stamp).width + 36, 120)
+    const stampX = left
+    const stampY = top + 240
+    roundRect(ctx, stampX, stampY, stampW, 42, 4)
+    ctx.strokeStyle = accent
+    ctx.lineWidth = 3
+    ctx.stroke()
+    ctx.fillStyle = accent
+    ctx.fillText(stamp, stampX + 18, stampY + 28)
+
+    // Privacy stamp (rotated, bottom-left area)
+    ctx.save()
+    ctx.translate(left + 8, H - pad - 70)
+    ctx.rotate((-7 * Math.PI) / 180)
+    ctx.font = `700 16px ${mono}`
+    const pStamp = labels.stamp.toUpperCase()
+    const pW = ctx.measureText(pStamp).width + 28
+    roundRect(ctx, 0, 0, pW, 34, 3)
+    ctx.strokeStyle = '#e0705f'
+    ctx.lineWidth = 2.5
+    ctx.stroke()
+    ctx.fillStyle = '#e0705f'
+    ctx.fillText(pStamp, 14, 22)
+    ctx.restore()
+
+    // Right column: category bars
+    const colX = 560
+    const colW = W - pad - 48 - colX
+    const rows = cats.length
+    const rowH = Math.min(36, Math.floor(420 / Math.max(rows, 1)))
+    let y = top + 8
+
+    ctx.fillStyle = '#9a9585'
+    ctx.font = `600 14px ${mono}`
+    ctx.fillText('BY AREA', colX, y)
+    y += 28
+
+    for (const c of cats) {
+      const ratio = c.max > 0 && c.points != null ? c.points / c.max : 0
+      ctx.font = `500 13px ${mono}`
+      const label = truncate(ctx, catLabel(c.cat).toUpperCase(), colW * 0.42)
+      ctx.fillStyle = '#9a9585'
+      ctx.fillText(label, colX, y + 12)
+
+      const barX = colX + colW * 0.44
+      const barW = colW * 0.38
+      const barH = 10
+      roundRect(ctx, barX, y + 4, barW, barH, 5)
+      ctx.fillStyle = '#1e222a'
+      ctx.fill()
+      if (ratio > 0) {
+        roundRect(ctx, barX, y + 4, Math.max(barW * ratio, 6), barH, 5)
+        ctx.fillStyle = accent
+        ctx.fill()
+      }
+
+      ctx.fillStyle = '#e6e2d6'
+      ctx.font = `600 13px ${mono}`
+      const val = `${c.points ?? 0}/${c.max}`
+      ctx.fillText(val, barX + barW + 10, y + 13)
+      y += rowH
+    }
+
+    // Footer URL + CTA
+    ctx.fillStyle = '#e6b23f'
+    ctx.font = `600 22px ${mono}`
+    ctx.fillText(hostLabel(), left, H - pad - 28)
+
+    ctx.fillStyle = '#9a9585'
+    ctx.font = `400 18px ${serif}`
+    const cta = labels.cta
+    const ctaW = ctx.measureText(cta).width
+    ctx.fillText(cta, W - pad - 48 - ctaW, H - pad - 28)
+
+    // data: URL for preview + download (allowed by img-src CSP); Blob for
+    // Web Share files when the platform supports it.
+    clearScorecard()
+    scorecardDataUrl = canvas.toDataURL('image/png')
+    preview.src = scorecardDataUrl
+    preview.hidden = false
+
+    return new Promise((resolve) => {
+      canvas.toBlob(
+        (blob) => {
+          scorecardBlob = blob
+          resolve()
+        },
+        'image/png',
+        1,
+      )
+    })
+  }
+
+  const scorecardFileName = (score: number): string => {
+    const tpl = cardLabels().fileTpl
+    return tpl.replace('{score}', String(score)).replace(/[^\w.\-]+/g, '_')
+  }
+
+  const downloadScorecard = (score: number) => {
+    if (!scorecardDataUrl) return
+    const a = document.createElement('a')
+    a.href = scorecardDataUrl
+    a.download = scorecardFileName(score)
+    a.rel = 'noopener'
+    document.body.appendChild(a)
+    a.click()
+    a.remove()
+  }
+
   const showResult = (cats: Cat[]) => {
     const totalPoints = cats.reduce((s, c) => s + (c.points ?? 0), 0)
     const maxPoints = cats.reduce((s, c) => s + c.max, 0)
@@ -349,6 +629,7 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
 
     buildBars(cats)
     buildRecs(cats)
+    void drawScorecard(score, band.title, cats)
 
     const msg = shareMessage(score, band.title)
     const x = one<HTMLAnchorElement>('.quiz-x-share')
@@ -365,6 +646,12 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
   const hideResult = () => {
     const panel = one<HTMLElement>('[data-quiz-result]')
     if (panel) panel.hidden = true
+    const preview = one<HTMLImageElement>('[data-quiz-scorecard-preview]')
+    if (preview) {
+      preview.hidden = true
+      preview.removeAttribute('src')
+    }
+    clearScorecard()
   }
 
   const update = () => {
@@ -395,6 +682,11 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
     if (!root) return
     const native = one<HTMLButtonElement>('[data-quiz-share="native"]')
     if (native) native.hidden = typeof navigator.share !== 'function'
+    const copyImage = one<HTMLButtonElement>('[data-quiz-share="copy-image"]')
+    if (copyImage)
+      copyImage.hidden = !(
+        typeof ClipboardItem === 'function' && typeof navigator.clipboard?.write === 'function'
+      )
 
     const saved = readSaved()
     for (const fs of qa<HTMLFieldSetElement>('[data-quiz-question]', root)) {
@@ -440,12 +732,47 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
     const btn = target.closest<HTMLButtonElement>('[data-quiz-share]')
     if (!btn) return
     const action = btn.dataset.quizShare
-    const score = one<HTMLElement>('[data-quiz-score]')?.textContent ?? ''
+    const score = Number(one<HTMLElement>('[data-quiz-score]')?.textContent ?? '0')
     const band = one<HTMLElement>('[data-quiz-band]')?.textContent ?? ''
-    const message = shareMessage(Number(score), band)
+    const message = shareMessage(score, band)
+    if (action === 'download') {
+      downloadScorecard(score)
+      return
+    }
+    if (action === 'copy-image') {
+      if (!scorecardBlob) return
+      try {
+        await navigator.clipboard.write([
+          new ClipboardItem({ [scorecardBlob.type]: scorecardBlob }),
+        ])
+        if (!btn.dataset.label) btn.dataset.label = btn.textContent ?? ''
+        btn.textContent = btn.dataset.copied ?? btn.dataset.label
+        window.setTimeout(() => {
+          btn.textContent = btn.dataset.label ?? ''
+        }, 2000)
+      } catch {
+        /* clipboard unavailable or permission denied */
+      }
+      return
+    }
     if (action === 'native') {
       try {
-        await navigator.share({ title: document.title, text: message, url: shareUrl() })
+        const payload: ShareData = {
+          title: document.title,
+          text: message,
+          url: shareUrl(),
+        }
+        if (scorecardBlob) {
+          const file = new File([scorecardBlob], scorecardFileName(score), {
+            type: 'image/png',
+          })
+          const withFiles: ShareData = { ...payload, files: [file] }
+          if (typeof navigator.canShare === 'function' && navigator.canShare(withFiles)) {
+            await navigator.share(withFiles)
+            return
+          }
+        }
+        await navigator.share(payload)
       } catch {
         /* dismissed or unsupported */
       }

@@ -173,6 +173,16 @@
     "share": "Teilen",
     "shareX": "Beitrag auf X",
     "shareText": "Meine Widerstandsfähigkeit gegen Zensur: {score}/100 – {band}. Prüfe deine:",
+    "scorecardHeading": "Teilbare Scorecard",
+    "scorecardHint": "Auf deinem Gerät erzeugt. Lade das Bild herunter, um es auf X, Mastodon oder anderswo anzuhängen — die Linkvorschau bleibt absichtlich generisch (dein Score verlässt diesen Browser nie).",
+    "downloadScorecard": "Scorecard herunterladen",
+    "copyScorecard": "Scorecard-Bild kopieren",
+    "scorecardCopied": "Bild kopiert ✓",
+    "scorecardBrand": "Exit Chat Control",
+    "scorecardTitle": "Widerstandsfähigkeit gegen Zensur",
+    "scorecardStamp": "Nur lokal · Ohne Tracker",
+    "scorecardCta": "Quiz starten →",
+    "scorecardFile": "ecc-score-{score}.png",
     "bandsHeading": "Was die Punktzahl bedeutet",
     "categoriesHeading": "Die zwölf Bereiche – und wo du dich verbessern kannst"
   }
