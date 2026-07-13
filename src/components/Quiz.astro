@@ -600,7 +600,7 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
 
   const scorecardFileName = (score: number): string => {
     const tpl = cardLabels().fileTpl
-    return tpl.replace('{score}', String(score)).replace(/[^\w.\-]+/g, '_')
+    return tpl.replace('{score}', String(score)).replace(/[^\w.-]+/g, '_')
   }
 
   const downloadScorecard = (score: number) => {
