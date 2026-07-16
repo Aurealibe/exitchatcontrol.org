@@ -1,0 +1,101 @@
+---
+import Base from '../layouts/Base.astro'
+import { defaultLocale } from '../i18n/config'
+
+const title = 'Legal Notice | Exit Chat Control'
+const description =
+  'Legal information about the publisher, hosting, privacy, and non-commercial purpose of Exit Chat Control.'
+---
+
+<Base
+  locale={defaultLocale}
+  path="legal-notice"
+  title={title}
+  description={description}
+  localized={false}
+>
+  <main id="content" class="mx-auto max-w-3xl px-4 py-8">
+    <header class="my-8 border-b border-rule pb-6">
+      <p class="eyebrow mt-0">Legal information</p>
+      <h1 class="my-2 text-4xl uppercase sm:text-5xl">Legal Notice</h1>
+      <p class="text-dim mb-0 font-mono text-xs">
+        Last updated: <time datetime="2026-07-16">July 16, 2026</time>
+      </p>
+    </header>
+
+    <section aria-labelledby="publisher">
+      <h2 id="publisher">Site publisher</h2>
+      <p>
+        <strong>Exit Chat Control</strong> is published by <strong>Aurealibe</strong>, acting as a
+        private individual.
+      </p>
+      <p>
+        Publication director: <strong>Aurealibe</strong><br />
+        Website: <a href="/">exitchatcontrol.org</a>
+      </p>
+    </section>
+
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">Purpose and status</h2>
+      <p>
+        This website is an independent information guide about privacy protection and
+        privacy-respecting digital tools. It has no commercial activity: it does not sell products
+        or services and contains no advertising, sponsorship, or affiliate links.
+      </p>
+      <p>
+        Its content is provided for general information only and does not constitute legal,
+        financial, security, or other professional advice.
+      </p>
+    </section>
+
+    <section aria-labelledby="hosting">
+      <h2 id="hosting">Hosting provider</h2>
+      <p>
+        The website is hosted by <strong>Hostinger International Ltd.</strong>, a private limited
+        company registered in Cyprus, whose registered office is at 61 Lordou Vironos Street, 6023
+        Larnaca, Cyprus.
+      </p>
+    </section>
+
+    <section aria-labelledby="privacy">
+      <h2 id="privacy">Personal data and cookies</h2>
+      <p>
+        The site publisher does not collect or process any personal data. The website has no user
+        accounts, contact forms, comments, newsletters, analytics, advertising, or tracking tools,
+        and it does not use cookies.
+      </p>
+      <p>
+        Theme and language preferences, checklist progress, and quiz answers may be stored locally
+        in your browser. This information is not transmitted to the site publisher.
+      </p>
+      <p>
+        As with any hosted website, the hosting provider may process limited technical logs, such as
+        IP addresses and request metadata, when necessary to deliver and secure its hosting service.
+        Any such processing is governed by the hosting provider's own terms and policies.
+      </p>
+    </section>
+
+    <section aria-labelledby="rights">
+      <h2 id="rights">Intellectual property</h2>
+      <p>
+        Unless otherwise indicated, the original project materials are made available under the MIT
+        License. Third-party names, logos, trademarks, and quoted materials remain the property of
+        their respective owners.
+      </p>
+    </section>
+
+    <section aria-labelledby="liability">
+      <h2 id="liability">Liability</h2>
+      <p>
+        Reasonable care is taken to keep the information accurate and current, but no guarantee is
+        made as to its completeness, accuracy, or continued availability. Readers remain responsible
+        for verifying information and deciding whether any recommendation is appropriate for their
+        own circumstances.
+      </p>
+      <p>
+        External websites are operated by third parties. The publisher has no control over, and
+        accepts no responsibility for, their content, availability, or privacy practices.
+      </p>
+    </section>
+  </main>
+</Base>

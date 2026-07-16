@@ -11,10 +11,17 @@ interface Props {
   // Subpage slug appended after the locale prefix ('' = home). Drives the
   // canonical + hreflang URLs so /quiz and /fr/quiz point at themselves.
   path?: string
+  title?: string
+  description?: string
+  // English-only pages keep their canonical URL without advertising
+  // non-existent translations through hreflang links.
+  localized?: boolean
 }
 
-const { locale, path = '' } = Astro.props
+const { locale, path = '', localized = true } = Astro.props
 const t = useT(locale)
+const title = Astro.props.title ?? t('site.title')
+const description = Astro.props.description ?? t('site.description')
 const site = Astro.site!
 
 const localeRoot = (l: Locale) => `${localePath(l)}/`.replace('//', '/')
@@ -22,7 +29,7 @@ const localeHref = (l: Locale) =>
   new URL(path ? `${localeRoot(l)}${path}` : localeRoot(l), site).href
 
 const canonical = new URL(localeHref(locale))
-const alternates = locales.map((l) => ({ hreflang: l, href: localeHref(l) }))
+const alternates = localized ? locales.map((l) => ({ hreflang: l, href: localeHref(l) })) : []
 const xDefaultHref = new URL(path ? `/${path}` : '/', site).href
 ---
 
@@ -31,18 +38,18 @@ const xDefaultHref = new URL(path ? `/${path}` : '/', site).href
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{t('site.title')}</title>
-    <meta name="description" content={t('site.description')} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
     <link rel="canonical" href={canonical.href} />
     {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
-    <link rel="alternate" hreflang="x-default" href={xDefaultHref} />
+    {localized && <link rel="alternate" hreflang="x-default" href={xDefaultHref} />}
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Exit Chat Control" />
-    <meta property="og:title" content={t('site.title')} />
-    <meta property="og:description" content={t('site.description')} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical.href} />
     <meta property="og:image" content={new URL('/og.png', site).href} />
     <meta property="og:locale" content={locale} />
