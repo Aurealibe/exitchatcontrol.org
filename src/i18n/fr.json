@@ -173,6 +173,16 @@
     "share": "Partager",
     "shareX": "Publier sur X",
     "shareText": "Mon score de résistance à la censure : {score}/100 — {band}. Évaluez le vôtre :",
+    "scorecardHeading": "Carte de score partageable",
+    "scorecardHint": "Générée sur votre appareil. Téléchargez l'image pour la joindre sur X, Mastodon ou ailleurs — l'aperçu du lien reste générique par conception (votre score ne quitte jamais ce navigateur).",
+    "downloadScorecard": "Télécharger la carte",
+    "copyScorecard": "Copier l'image de la carte",
+    "scorecardCopied": "Image copiée ✓",
+    "scorecardBrand": "Exit Chat Control",
+    "scorecardTitle": "Score de résistance à la censure",
+    "scorecardStamp": "Local uniquement · Sans traqueur",
+    "scorecardCta": "Faire le quiz →",
+    "scorecardFile": "ecc-score-{score}.png",
     "bandsHeading": "Ce que le score signifie",
     "categoriesHeading": "Les douze domaines, et où progresser"
   }
