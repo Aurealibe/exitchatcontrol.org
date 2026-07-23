@@ -18,6 +18,9 @@
   "molly": {
     "body": "Geharde Signal voor Android (volledig FOSS-variant)."
   },
+  "delta-chat": {
+    "body": "Chatten via e-mail: elk adres werkt, geen aparte server, Autocrypt-versleuteling."
+  },
   "thunderbird": {
     "body": "Dé vrije referentie-mailclient, OpenPGP ingebouwd."
   },
