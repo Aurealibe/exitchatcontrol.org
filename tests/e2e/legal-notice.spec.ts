@@ -11,7 +11,7 @@ test('the legal notice is an English-only static page', async ({ page }) => {
   await expect(page.getByText('does not collect or process any personal data')).toBeVisible()
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     'href',
-    'https://exitchatcontrol.org/legal-notice',
+    'https://exitchatcontrol.org/legal-notice/',
   )
   await expect(page.locator('link[rel="alternate"][hreflang]')).toHaveCount(0)
 })

@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Exit Chat Control · Werde unregierbar",
-    "description": "Ein praktischer Leitfaden, um der Chatkontrolle zu entkommen und deine digitale Privatsphäre zurückzugewinnen: verschlüsselte Messenger, E-Mail, VPN, DNS, Passwörter, Linux, GrapheneOS und Self-Hosting. Kostenlos, Open Source, ohne Tracking."
+    "description": "Praxisleitfaden gegen die Chatkontrolle: verschlüsselte Messenger, E-Mail, VPN, Passwörter, Linux, GrapheneOS. Kostenlos, quelloffen, ohne Tracking."
   },
   "nav": {
     "skip": "Zum Inhalt springen",
@@ -187,5 +187,11 @@
     "topBand": "Höchste Stufe erreicht – jetzt gilt es, die Disziplin zu halten.",
     "bandsHeading": "Was die Punktzahl bedeutet",
     "categoriesHeading": "Die zwölf Bereiche – und wo du dich verbessern kannst"
+  },
+  "seo": {
+    "quizTitle": "Widerstandsquiz: Teste deine digitale Privatsphäre · Exit Chat Control",
+    "quizDescription": "Zwölf kurze Fragen zeigen die Schwachstellen deines Datenschutzes, dazu konkrete Lösungen aus dem Leitfaden. Alles bleibt in deinem Browser.",
+    "notFoundTitle": "Seite nicht gefunden · Exit Chat Control",
+    "ogImageAlt": "Exit Chat Control, Praxisleitfaden für digitale Privatsphäre"
   }
 }

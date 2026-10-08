@@ -90,6 +90,8 @@ for (const { code, pages } of LOCALES) {
   for (const { page, out } of pages) {
     let html = inlineAssets(readFileSync(join(DIST, page), 'utf8'))
     html = relinkRoutes(html, out)
+    // downloadable copies duplicate the live pages: keep them out of search
+    html = html.replace('<head>', '<head><meta name="robots" content="noindex">')
     writeFileSync(join(DIST, out), html)
     console.log(`[build-offline] ${out} (${code}) — ${(html.length / 1024).toFixed(0)} KB`)
   }

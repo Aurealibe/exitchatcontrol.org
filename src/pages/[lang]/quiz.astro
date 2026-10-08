@@ -1,15 +1,16 @@
 ---
 import Base from '../../layouts/Base.astro'
 import Quiz from '../../components/Quiz.astro'
-import { translatedLocales, type Locale } from '../../i18n/config'
+import { translatedLocales, useT, type Locale } from '../../i18n/config'
 
 export function getStaticPaths() {
   return translatedLocales.map((lang) => ({ params: { lang } }))
 }
 
 const locale = Astro.params.lang as Locale
+const t = useT(locale)
 ---
 
-<Base locale={locale} path="quiz">
+<Base locale={locale} path="quiz" title={t('seo.quizTitle')} description={t('seo.quizDescription')}>
   <Quiz locale={locale} />
 </Base>

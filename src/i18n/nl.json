@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Exit Chat Control · Word Onbestuurbaar",
-    "description": "Praktische veldgids om aan Chat Control te ontsnappen en je digitale privacy terug te winnen: versleutelde berichten, e-mail, VPN, DNS, wachtwoorden, Linux, GrapheneOS, self-hosting. Gratis, open source, zonder tracking."
+    "description": "Praktische gids tegen Chat Control en voor uw privacy: versleutelde berichten, e-mail, vpn, wachtwoorden, Linux, GrapheneOS. Gratis en open source."
   },
   "nav": {
     "skip": "Naar de inhoud",
@@ -187,5 +187,11 @@
     "topBand": "Hoogste niveau bereikt — nu komt het aan op discipline.",
     "bandsHeading": "Wat de score betekent",
     "categoriesHeading": "De twaalf gebieden, en waar te verbeteren"
+  },
+  "seo": {
+    "quizTitle": "Weerbaarheidsquiz: test uw digitale privacy · Exit Chat Control",
+    "quizDescription": "Twaalf snelle vragen om de zwakke plekken in uw privacy te vinden, met concrete oplossingen uit de gids. Alles blijft in uw browser.",
+    "notFoundTitle": "Pagina niet gevonden · Exit Chat Control",
+    "ogImageAlt": "Exit Chat Control, praktische gids voor digitale privacy"
   }
 }

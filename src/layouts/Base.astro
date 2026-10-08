@@ -3,6 +3,7 @@ import { ClientRouter } from 'astro:transitions'
 import Footer from '../components/Footer.astro'
 import TopBar from '../components/TopBar.astro'
 import { localePath, locales, useT, type Locale } from '../i18n/config'
+import { ogLocales } from '../i18n/locales'
 import '../styles/global.css'
 import '../styles/components.css'
 
@@ -16,21 +17,49 @@ interface Props {
   // English-only pages keep their canonical URL without advertising
   // non-existent translations through hreflang links.
   localized?: boolean
+  // Pages that must stay out of search results (404).
+  noindex?: boolean
 }
 
-const { locale, path = '', localized = true } = Astro.props
+const { locale, path = '', localized = true, noindex = false } = Astro.props
 const t = useT(locale)
 const title = Astro.props.title ?? t('site.title')
 const description = Astro.props.description ?? t('site.description')
 const site = Astro.site!
 
 const localeRoot = (l: Locale) => `${localePath(l)}/`.replace('//', '/')
+// Trailing slash on subpages too, matching the sitemap and the served
+// directory index (/quiz/), so canonical and sitemap never disagree.
 const localeHref = (l: Locale) =>
-  new URL(path ? `${localeRoot(l)}${path}` : localeRoot(l), site).href
+  new URL(path ? `${localeRoot(l)}${path}/` : localeRoot(l), site).href
 
 const canonical = new URL(localeHref(locale))
 const alternates = localized ? locales.map((l) => ({ hreflang: l, href: localeHref(l) })) : []
-const xDefaultHref = new URL(path ? `/${path}` : '/', site).href
+const xDefaultHref = new URL(path ? `/${path}/` : '/', site).href
+const ogImage = new URL('/og.png', site).href
+// Structured data: a data block, not a script — the CSP doesn't apply to it.
+const jsonLd = JSON.stringify([
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Exit Chat Control',
+    url: new URL('/', site).href,
+    inLanguage: locales,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': path ? 'WebPage' : 'TechArticle',
+    headline: title,
+    description,
+    url: canonical.href,
+    inLanguage: locale,
+    image: ogImage,
+    dateModified: new Date().toISOString().slice(0, 10),
+    isAccessibleForFree: true,
+    license: 'https://opensource.org/licenses/MIT',
+    publisher: { '@type': 'Organization', name: 'Exit Chat Control', url: new URL('/', site).href },
+  },
+])
 ---
 
 <!doctype html>
@@ -40,9 +69,13 @@ const xDefaultHref = new URL(path ? `/${path}` : '/', site).href
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical.href} />
-    {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
-    {localized && <link rel="alternate" hreflang="x-default" href={xDefaultHref} />}
+    {noindex && <meta name="robots" content="noindex" />}
+    {!noindex && <link rel="canonical" href={canonical.href} />}
+    {
+      !noindex &&
+        alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)
+    }
+    {!noindex && localized && <link rel="alternate" hreflang="x-default" href={xDefaultHref} />}
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
     <link rel="manifest" href="/site.webmanifest" />
@@ -51,9 +84,22 @@ const xDefaultHref = new URL(path ? `/${path}` : '/', site).href
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical.href} />
-    <meta property="og:image" content={new URL('/og.png', site).href} />
-    <meta property="og:locale" content={locale} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={t('seo.ogImageAlt')} />
+    <meta property="og:locale" content={ogLocales[locale]} />
+    {
+      localized &&
+        locales
+          .filter((l) => l !== locale)
+          .map((l) => <meta property="og:locale:alternate" content={ogLocales[l]} />)
+    }
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    {!noindex && <script type="application/ld+json" set:html={jsonLd} />}
     <ClientRouter />
     <script is:inline>
       /* Boot script — kept tiny and dependency-free; its sha256 hash is

@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Exit Chat Control · Become Ungovernable",
-    "description": "A practical field guide to escape Chat Control and reclaim your digital privacy: encrypted messaging, email, VPN, DNS, passwords, Linux, GrapheneOS, self-hosting. Free, open source, no tracking."
+    "description": "Field guide to escape Chat Control and protect your privacy: encrypted messaging, e-mail, VPN, passwords, Linux, GrapheneOS. Free, open source, no tracking."
   },
   "nav": {
     "skip": "Skip to content",
@@ -187,5 +187,11 @@
     "topBand": "Top band reached — now it’s about keeping the discipline.",
     "bandsHeading": "What the score means",
     "categoriesHeading": "The twelve areas, and where to improve"
+  },
+  "seo": {
+    "quizTitle": "Resistance quiz: test your digital privacy · Exit Chat Control",
+    "quizDescription": "Twelve quick questions to find the weak points in your privacy setup, then concrete fixes from the guide. Runs in your browser, nothing is sent.",
+    "notFoundTitle": "Page not found · Exit Chat Control",
+    "ogImageAlt": "Exit Chat Control, field guide to digital privacy"
   }
 }

@@ -1,9 +1,9 @@
 ---
 import Base from '../layouts/Base.astro'
-import { defaultLocale, localeNames, localePath, locales } from '../i18n/config'
+import { defaultLocale, localeNames, localePath, locales, useT } from '../i18n/config'
 ---
 
-<Base locale={defaultLocale}>
+<Base locale={defaultLocale} title={useT(defaultLocale)('seo.notFoundTitle')} noindex>
   <main id="content" class="wrap py-16 text-center">
     <p class="eyebrow">404</p>
     <h1 class="text-2xl">This page does not exist.</h1>

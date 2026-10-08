@@ -19,3 +19,11 @@ export const localeFlags: Record<Locale, string> = {
   nl: '🇳🇱',
   de: '🇩🇪',
 }
+
+// Open Graph locale codes (language_TERRITORY), for og:locale tags.
+export const ogLocales: Record<Locale, string> = {
+  en: 'en_GB',
+  fr: 'fr_FR',
+  nl: 'nl_NL',
+  de: 'de_DE',
+}

@@ -1,9 +1,16 @@
 ---
 import Base from '../layouts/Base.astro'
 import Quiz from '../components/Quiz.astro'
-import { defaultLocale } from '../i18n/config'
+import { defaultLocale, useT } from '../i18n/config'
+
+const t = useT(defaultLocale)
 ---
 
-<Base locale={defaultLocale} path="quiz">
+<Base
+  locale={defaultLocale}
+  path="quiz"
+  title={t('seo.quizTitle')}
+  description={t('seo.quizDescription')}
+>
   <Quiz locale={defaultLocale} />
 </Base>
