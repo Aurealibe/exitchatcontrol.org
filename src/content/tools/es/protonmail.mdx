@@ -1,0 +1,36 @@
+---
+tool: 't-protonmail'
+---
+
+<ToolCard tool="t-protonmail" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Reemplaza Gmail</span>
+    <span class="tool-tag">🇨🇭 · código abierto · OpenPGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una bandeja de entrada cifrada que reemplaza Gmail u Outlook, y la cuenta pivote para todo el
+    ecosistema Proton.
+  </Fragment>
+  <Fragment slot="why">
+    Basado en Suiza, fuera de la jurisdicción "Five Eyes". Compatible con OpenPGP: cifrado
+    automático entre cuentas Proton y hacia otros servicios PGP.
+  </Fragment>
+  <Fragment slot="who">
+    Todos. Es el mejor punto de partida para abandonar Google (ver sección 05 para el resto de la
+    suite).
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Crea una cuenta en <b>proton.me</b> (la capa gratuita es suficiente para empezar).
+    </li>
+    <li>
+      Importa tus mensajes antiguos y contactos con <b>Easy Switch</b> (integrado).
+    </li>
+    <li>Configura el reenvío desde Gmail y dile a tus contactos tu nueva dirección.</li>
+    <li>
+      Instala la app móvil, activa la <b>autenticación de dos factores</b>, y usa Proton Bridge si
+      quieres Thunderbird.
+    </li>
+  </ol>
+</ToolCard>

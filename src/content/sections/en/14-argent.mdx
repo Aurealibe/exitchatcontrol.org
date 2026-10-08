@@ -13,91 +13,11 @@ title: 'Financial sovereignty'
 
 Money is surveilled and censorable too. Activists' accounts have been frozen, donations blocked, and every card payment is tracked. Financial privacy is part of sovereignty.
 
-<ToolCard tool="t-bitcoin">
-  <Fragment slot="name">Bitcoin (self-custody)</Fragment>
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Censorship-resistant</span>
-  </Fragment>
-  <Fragment slot="what">A digital money you hold yourself, without going through a bank.</Fragment>
-  <Fragment slot="why">
-    In <b>self-custody</b> (your keys in a wallet only you control), no one can freeze or block your
-    funds. Its privacy isn't perfect (the ledger is public), but it escapes banking censorship,
-    useful the day a payment is refused.
-  </Fragment>
-  <Fragment slot="who">
-    Guarding against account freezes or de-banking, and paying anonymously for a service like a VPN.
-  </Fragment>
-  <ol slot="install">
-    <li>Get some bitcoin (an exchange, or peer-to-peer).</li>
-    <li>
-      Move them right away to a wallet <b>you</b> control: a hardware wallet (Trezor, ColdCard) or
-      an open-source app. Don't leave them on the exchange.
-    </li>
-    <li>Back up your recovery phrase on paper, never as a photo or online.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-bitcoin" />
 
-<ToolCard tool="t-monero">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Advanced</span>
-    <span class="tool-tag">Private by default</span>
-  </Fragment>
-  <Fragment slot="what">
-    The privacy cryptocurrency: amounts, sender and recipient are hidden by default.
-  </Fragment>
-  <Fragment slot="why">
-    It's the exact opposite of Bitcoin here: transactions are private by design. It's the best way
-    to pay for a service without leaving a trail back to you.
-  </Fragment>
-  <Fragment slot="who">
-    Those who want maximum financial privacy. Note: Monero is already delisted from several European
-    exchanges, so you often need a decentralised swap.
-  </Fragment>
-  <ol slot="install">
-    <li>Install a wallet (the official one at getmonero.org, or Cake Wallet on mobile).</li>
-    <li>
-      Get XMR through a decentralised exchange service (for example a "swap" from another crypto).
-    </li>
-    <li>Back up your recovery phrase on paper.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-monero" />
 
-<ToolCard tool="t-wasabi">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Advanced</span>
-    <span class="tool-tag">CoinJoin</span>
-    <span class="tool-tag">🌍 · open-source</span>
-  </Fragment>
-  <Fragment slot="what">
-    A free Bitcoin wallet with built-in <b>CoinJoin</b>: your coins are combined with other users'
-    coins in a joint transaction, which breaks the visible on-chain link between origin and
-    destination.
-  </Fragment>
-  <Fragment slot="why">
-    The Bitcoin ledger is public: without care, every payment can be linked to earlier ones.
-    CoinJoin restores part of that privacy without handing your funds to anyone, and the wallet runs
-    over Tor.
-  </Fragment>
-  <Fragment slot="who">
-    Experienced Bitcoin users. Since the original coordinator shut down in June 2024, you must pick
-    an independent coordinator, which charges fees.
-  </Fragment>
-  <div class="box warn" slot="extra">
-    <span class="lab">Mixed funds and platforms</span>
-    <p>
-      Regulated platforms may refuse or freeze funds that went through a CoinJoin. Keep a record of
-      the legitimate origin of your funds.
-    </p>
-  </div>
-  <ol slot="install">
-    <li>
-      Download Wasabi from <b>wasabiwallet.io</b> and verify the signature.
-    </li>
-    <li>In the settings, choose an independent coordinator.</li>
-    <li>Turn on automatic CoinJoin, and never mix mixed and unmixed coins in the same payment.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-wasabi" />
 
 <div class="box honest">
   <span class="lab">On-chain privacy: what the law says</span>

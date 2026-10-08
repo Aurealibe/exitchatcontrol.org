@@ -1,0 +1,27 @@
+---
+tool: 't-mailbox'
+---
+
+<ToolCard tool="t-mailbox" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Etický klasický e-mail</span>
+    <span class="tool-tag">🇩🇪 · UE · PGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Dva etičtí evropskí poskytovatelé e-mailu s nízkou cenou a podporou PGP na straně serveru.
+  </Fragment>
+  <Fragment slot="why">
+    Dbají na soukromí a ekologii a jsou postaveni na otevřených standardech (IMAP, PGP). Fungují s
+    jakýmkoli e-mailovým klientem.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo chtějí „klasickou“ schránku (čtenou v Thunderbirdu), ale etickou, místo uzavřené
+    šifrované aplikace.
+  </Fragment>
+  <ol slot="install">
+    <li>Vytvořte si účet (placený, přibližně 1 až 3 € měsíčně).</li>
+    <li>Povolte šifrování PGP na straně serveru (funkce „Guard“ na mailbox.org).</li>
+    <li>Nastavte účet v Thunderbirdu nebo v mobilní aplikaci podle svého výběru.</li>
+  </ol>
+</ToolCard>

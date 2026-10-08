@@ -1,0 +1,39 @@
+---
+tool: 't-briar'
+---
+
+<ToolCard tool="t-briar" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Offline / P2P</span>
+    <span class="tool-tag">Android · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy peer-to-peer (egyenrangú) üzenetküldő, amely <b>internet nélkül is működik</b>:
+    Bluetooth-on, Wi-Fi Direct-en vagy Tor-on keresztül.
+  </Fragment>
+  <Fragment slot="why">
+    Nincs szerver, így nincs mit lekapcsolni vagy lefoglalni. Túlél internet-leállásokat és hálózati
+    cenzúrát.
+  </Fragment>
+  <Fragment slot="who">
+    Tüntetések, katasztrófák, elszigetelt területek, áramszünetek. Csak Androidra, és mindkét félnek
+    rendelkeznie kell az alkalmazással.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a <b>briarproject.org</b> oldalról vagy az F-Droidból (nincs iOS verzió).
+    </li>
+    <li>
+      Hozz létre egy <b>helyi</b> fiókot (becenév + jelszó), amelyet kizárólag a telefon tárol.
+    </li>
+    <li>
+      Adj hozzá egy közeli kapcsolatot a QR-kódja beolvasásával, vagy távolról egy link
+      segítségével.
+    </li>
+    <li>
+      Amikor a hálózat nem működik, kapcsold be a Bluetooth-t: az üzenetek eszközről eszközre
+      ugranak.
+    </li>
+  </ol>
+</ToolCard>

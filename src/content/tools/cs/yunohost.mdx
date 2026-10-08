@@ -1,0 +1,37 @@
+---
+tool: 't-yunohost'
+---
+
+<ToolCard tool="t-yunohost" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Server na klíč</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Systémy, které promění starý počítač nebo Raspberry Pi v osobní server s katalogem aplikací, jež
+    nainstalujete několika kliknutími.
+  </Fragment>
+  <Fragment slot="why">
+    Vlastní hosting zní děsivě, ale tyto nástroje udělají většinu práce za vás. <b>YunoHost</b>
+    dokonce provozuje váš vlastní e-mail a jednotné přihlašování. <b>Umbrel</b> nabízí obchod s více
+    než 300 aplikacemi, oblíbený mezi lidmi zaměřenými na soukromí a Bitcoin. <b>Start9</b> šifruje
+    zálohy a každé službě ve výchozím nastavení přidělí Tor adresu.
+  </Fragment>
+  <Fragment slot="who">
+    Pro pokročilé uživatele připravené věnovat odpoledne budování vlastního cloudu. Je to
+    nejradikálnější strukturální protiváha vůči Chat Control.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Pořiďte si starý počítač, Raspberry Pi nebo si pronajměte malý server (VPS) v zemi chránící
+      soukromí.
+    </li>
+    <li>Nainstalujte YunoHost, Umbrel nebo Start9 podle jejich oficiálního návodu.</li>
+    <li>Z katalogu nainstalujte Nextcloud, Matrix server, fotogalerii atd.</li>
+    <li>
+      Přistupujte k němu soukromě přes Tailscale (sekce VPN), místo abyste server vystavili
+      veřejnosti.
+    </li>
+  </ol>
+</ToolCard>

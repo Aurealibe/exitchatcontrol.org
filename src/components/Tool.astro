@@ -1,0 +1,24 @@
+---
+// Embeds one tool card (src/content/tools/<locale>/<file>.mdx) in a guide
+// section. Sections write <Tool id="t-signal" />; the card prose lives in the
+// tools collection so the product page can render the very same card.
+import { getCollection, render } from 'astro:content'
+import { defaultLocale, type Locale } from '../i18n/config'
+import ToolCard from './ToolCard.astro'
+
+interface Props {
+  id: string
+  variant?: 'inline' | 'page'
+}
+
+const { id, variant = 'inline' } = Astro.props
+const locale = (Astro.currentLocale ?? defaultLocale) as Locale
+const [entry] = await getCollection(
+  'tools',
+  (e) => e.data.tool === id && e.id.startsWith(`${locale}/`),
+)
+if (!entry) throw new Error(`Tool: no card for "${id}" in locale "${locale}"`)
+const { Content } = await render(entry)
+---
+
+<Content components={{ ToolCard }} variant={variant} />

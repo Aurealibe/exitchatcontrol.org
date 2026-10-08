@@ -1,0 +1,40 @@
+---
+tool: 't-nym'
+---
+
+<ToolCard tool="t-nym" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Středně pokročilý / pokročilý</span>
+    <span class="tool-tag">Mixnet</span>
+    <span class="tool-tag">🇨🇭 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    VPN se dvěma režimy: rychlým (2 servery, WireGuard) a <b>anonymním</b>, který vede provoz přes{' '}
+    <b>mixnet</b> z 5 uzlů smíchaný s krycím provozem.
+  </Fragment>
+  <Fragment slot="why">
+    Mixnet zastírá metadata (kdo s kým a kdy komunikuje), a to i před pozorovatelem, který sleduje
+    celou síť – to klasická VPN nedělá. Decentralizovaná síť serverů, open-source aplikace (GPL)
+    auditované firmou Cure53. Platbu lze od používání oddělit pomocí anonymních kreditů „zk-nym“.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo chtějí proti analýze provozu víc než klasickou VPN a přijmou výrazně pomalejší
+    anonymní režim, nevhodný pro streamování a stahování. Placené předplatné se zkušební verzí
+    zdarma.
+  </Fragment>
+  <div class="box" slot="extra">
+    <span class="lab">Dobré vědět</span>
+    <p>
+      Síť Nym odměňuje provozovatele uzlů tokenem (NYM). K používání VPN žádný vlastnit nemusíte.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Nainstalujte NymVPN z <b>nym.com</b> (počítač i mobil).
+    </li>
+    <li>
+      Pro zprávy a citlivé prohlížení používejte <b>anonymní</b> režim, pro ostatní <b>rychlý</b>.
+    </li>
+    <li>Aby vaše identita nebyla spojena s používáním, plaťte kryptoměnou nebo kredity zk-nym.</li>
+  </ol>
+</ToolCard>

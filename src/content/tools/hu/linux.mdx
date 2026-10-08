@@ -1,0 +1,47 @@
+---
+tool: 't-linux'
+---
+
+<ToolCard tool="t-linux" variant={props.variant}>
+  <Fragment slot="name">Linux (asztali gépen)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">A Windows / macOS kiváltója</span>
+    <span class="tool-tag">🌍 · szabad</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy szabad operációs rendszer a számítógépedre, a Windows vagy a macOS leváltására. Sokféle
+    ízben (változatban) létezik, ezeket „disztribúcióknak” nevezik.
+  </Fragment>
+  <Fragment slot="why">
+    Sok ember számára ez a vakfolt: titkosítják az üzeneteiket, de megtartanak egy Windowst, amely
+    megállás nélkül telemetriát sugároz a Microsoftnak (amelynek a „Recall” funkciója megpróbált
+    folyamatosan képernyőfotókat készíteni a képernyőről), vagy egy macOS-t, amely jelentést küld az
+    elindított alkalmazásokról. A Linux nem kémkedik utánad, ingyenes, életre kelti a régi
+    számítógépeket, és végre a géped urává tesz. Könnyebb használni, mint amilyen a hírneve: a
+    modern disztribúciók úgy néznek ki, mint a Windows vagy a macOS.
+  </Fragment>
+  <Fragment slot="who">
+    Bárki meglépheti a váltást. Kezdésnek a <b>Linux Mint</b> (ez áll a legközelebb a Windowshoz)
+    vagy a <b>Fedora</b>; a stabilitáshoz pedig a <b>Debian</b> ajánlott. Nem kell letörölnöd
+    semmit: először tesztelheted, majd telepítheted a jelenlegi rendszered mellé.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nem vagy biztos benne, hogy melyik disztribúciót válaszd? Töltsd ki a <b>distrochooser.de</b>{' '}
+      kvízét, amely a te igényeidhez megfelelőhöz irányít.
+    </li>
+    <li>
+      Próbáld ki <b>anélkül, hogy bármit telepítenél</b>, közvetlenül a böngésződben, a{' '}
+      <b>distrosea.com</b> oldalon.
+    </li>
+    <li>
+      Ha meggyőzött, töltsd le a disztribúció lemezképét, és hozz létre egy bootolható USB-t (a
+      Ventoy vagy a Balena Etcher segítségével).
+    </li>
+    <li>
+      Bootolj az USB-ről, hogy kipróbáld a rendszert „élőben”, majd futtasd a telepítést.
+      Engedélyezd a felkínált lemeztitkosítást.
+    </li>
+  </ol>
+</ToolCard>

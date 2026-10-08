@@ -1,0 +1,33 @@
+---
+tool: 't-tuta'
+---
+
+<ToolCard tool="t-tuta" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Reemplaza Gmail</span>
+    <span class="tool-tag">🇩🇪 · código abierto · post-cuántico</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un servicio de correo alemán, totalmente de código abierto y libre de cualquier servicio de
+    Google.
+  </Fragment>
+  <Fragment slot="why">
+    También cifra <b>la línea de asunto y algunos metadatos</b>, con cifrado resistente a
+    post-cuántico. Jurisdicción UE.
+  </Fragment>
+  <Fragment slot="who">
+    Aquellos que quieren máximo cifrado de metadatos y software totalmente libre. No usa PGP: para
+    escribir cifrado a externos, proteges el mensaje con contraseña.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Crea una cuenta en <b>tuta.com</b> e instala la app (disponible en F-Droid).
+    </li>
+    <li>
+      Para escribir cifrado a un no usuario: haz clic en el candado y establece una contraseña,
+      compartida con tu corresponsal a través de otro canal.
+    </li>
+    <li>Activa la autenticación de dos factores.</li>
+  </ol>
+</ToolCard>

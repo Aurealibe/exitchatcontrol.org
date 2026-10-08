@@ -1,0 +1,40 @@
+---
+tool: 't-tailscale'
+---
+
+<ToolCard tool="t-tailscale" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Privát hozzáférés a szerveredhez</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy privát titkosított hálózat, amely összeköti az eszközeidet a szerverreddel, anélkül, hogy
+    valaha is kitenéd azt a nyilvános internetre.
+  </Fragment>
+  <Fragment slot="why">
+    Portok megnyitása (és a támadások elszenvedése) helyett a <b>Tailscale</b> felépít egy WireGuard
+    alagutat kizárólag az engedélyezett eszközeid között: a szerverednek nincs nyilvános támadási
+    felülete. A <b>Headscale</b> a saját szerveren futtatható változat, így nem függsz harmadik
+    féltől. Önmagában a <b>WireGuard</b> is teljes irányítást biztosít, de manuális beállítást
+    igényel.
+  </Fragment>
+  <Fragment slot="who">
+    Minden self-hoster számára. Ez a biztonságos módja annak, hogy elérd a Nextcloudodat vagy a
+    fotóidat kívülről.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a Tailscale-t a szerveredre és a telefonodra/számítógépedre, majd csatlakoztasd őket
+      ugyanahhoz a fiókhoz.
+    </li>
+    <li>
+      Az eszközeid azonnal látják egymást egy privát hálózaton; a szerveredet a Tailscale címén
+      tudod elérni.
+    </li>
+    <li>
+      A zéró függőség érdekében cseréld le a koordinációs szervert egy saját üzemeltetésű
+      Headscale-re.
+    </li>
+  </ol>
+</ToolCard>

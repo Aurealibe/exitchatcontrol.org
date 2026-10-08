@@ -1,0 +1,27 @@
+---
+tool: 't-mailbox'
+---
+
+<ToolCard tool="t-mailbox" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Etikus klasszikus mail</span>
+    <span class="tool-tag">🇩🇪 · EU · PGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Két etikus, alacsony költségű európai e-mail szolgáltató, szerveroldali PGP támogatással.
+  </Fragment>
+  <Fragment slot="why">
+    Adatvédelem- és környezettudatosak, nyílt szabványokra épülnek (IMAP, PGP). Bármilyen e-mail
+    klienssel működnek.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik egy „klasszikus” postafiókot szeretnének (amit Thunderbirdben olvasnak), de
+    etikusan működtetve, nem pedig egy zárt titkosított alkalmazás formájában.
+  </Fragment>
+  <ol slot="install">
+    <li>Hozz létre egy fiókot (fizetős, körülbelül 1-3 euró havonta).</li>
+    <li>Engedélyezd a szerveroldali PGP titkosítást (a „Guard” funkció a mailbox.org-on).</li>
+    <li>Állítsd be a fiókot Thunderbirdben vagy az általad választott mobilalkalmazásban.</li>
+  </ol>
+</ToolCard>

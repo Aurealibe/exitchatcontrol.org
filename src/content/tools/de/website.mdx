@@ -1,0 +1,36 @@
+---
+tool: 't-website'
+---
+
+<ToolCard tool="t-website" variant={props.variant}>
+  <Fragment slot="name">Deine eigene Website</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Deine Stimme vor Sperren schützen</span>
+  </Fragment>
+  <Fragment slot="what">
+    Eine eigene Website unter deiner eigenen Domain, deren Inhalte von keiner Plattform abhängen.
+  </Fragment>
+  <Fragment slot="why">
+    Löscht oder sperrt ein Netzwerk dein Konto, verschwindet deine gesamte Arbeit. Eine persönliche
+    Website ist dein Anker: Deine Beiträge bleiben dort archiviert und aktuell, was auch geschieht.
+    Genau so handeln vorsichtige Informationskanäle. Eine statische Website (mit Hugo, Astro oder
+    Jekyll) genügt und lässt sich nahezu kostenlos veröffentlichen; für einen dynamischen Blog
+    eignen sich selbst gehostetes WordPress oder Ghost.
+  </Fragment>
+  <Fragment slot="who">
+    Für Informationskanäle, Kreative, Aktivisten und alle, die veröffentlichen und Plattformzensur
+    fürchten.
+  </Fragment>
+  <ol slot="install">
+    <li>Kaufe eine Domain (idealerweise bei einem datenschutzfreundlichen Registrar).</li>
+    <li>
+      Wähle einen Generator für statische Websites (Astro, Hugo) und hoste die Ausgabe oder
+      installiere WordPress/Ghost auf deinem Server.
+    </li>
+    <li>
+      Verweise von deinen sozialen Konten stets darauf: Dein Publikum findet dich auch dann, wenn
+      ein Konto ausfällt.
+    </li>
+  </ol>
+</ToolCard>

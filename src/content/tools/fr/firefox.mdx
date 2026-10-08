@@ -1,0 +1,33 @@
+---
+tool: 't-firefox'
+---
+
+<ToolCard tool="t-firefox" variant={props.variant}>
+  <Fragment slot="name">Firefox (durci)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Remplace Chrome</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Le navigateur libre de référence pour un usage quotidien respectueux de la vie privée.
+  </Fragment>
+  <Fragment slot="why">
+    Contrairement à Chrome (un mouchard publicitaire de Google), Firefox est développé par une
+    fondation et n'a pas d'intérêt à vous profiler. Avec quelques réglages (le guide{' '}
+    <em>arkenfox</em>) et l'extension uBlock Origin, il devient très solide.
+  </Fragment>
+  <Fragment slot="who">Tout le monde, comme navigateur principal au quotidien.</Fragment>
+  <ol slot="install">
+    <li>
+      Installez Firefox depuis <b>mozilla.org/firefox</b>.
+    </li>
+    <li>
+      Ajoutez l'extension <b>uBlock Origin</b> (blocage des pubs et traqueurs).
+    </li>
+    <li>
+      Dans les réglages de vie privée, choisissez « Stricte », désactivez la télémétrie, et videz
+      les cookies à la fermeture. Pour aller plus loin, appliquez le guide arkenfox.
+    </li>
+  </ol>
+</ToolCard>

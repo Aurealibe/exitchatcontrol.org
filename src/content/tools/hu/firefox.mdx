@@ -1,0 +1,33 @@
+---
+tool: 't-firefox'
+---
+
+<ToolCard tool="t-firefox" variant={props.variant}>
+  <Fragment slot="name">Firefox (megerősített)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">A Chrome kiváltója</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    A referencia szabad böngésző az adatvédelem-tisztelő mindennapi használathoz.
+  </Fragment>
+  <Fragment slot="why">
+    A Chrome-hoz (egy Google reklám-követő) képest a Firefoxot egy alapítvány készíti, amelynek nem
+    érdeke a profilozásod. Néhány finomhangolással (az <em>arkenfox</em> útmutató) és az uBlock
+    Origin bővítménnyel nagyon megbízhatóvá válik.
+  </Fragment>
+  <Fragment slot="who">Mindenki, mint fő napi böngésző.</Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a Firefoxot a <b>mozilla.org/firefox</b> oldalról.
+    </li>
+    <li>
+      Add hozzá az <b>uBlock Origin</b> bővítményt (reklám- és nyomkövető-blokkolás).
+    </li>
+    <li>
+      Az adatvédelmi beállításokban válaszd a „Szigorú” lehetőséget, tiltsd le a telemetriát, és
+      töröld a sütiket bezáráskor. További lépésekhez alkalmazd az arkenfox útmutatót.
+    </li>
+  </ol>
+</ToolCard>

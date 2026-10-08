@@ -1,0 +1,28 @@
+---
+tool: 't-monero'
+---
+
+<ToolCard tool="t-monero" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">Private by default</span>
+  </Fragment>
+  <Fragment slot="what">
+    The privacy cryptocurrency: amounts, sender and recipient are hidden by default.
+  </Fragment>
+  <Fragment slot="why">
+    It's the exact opposite of Bitcoin here: transactions are private by design. It's the best way
+    to pay for a service without leaving a trail back to you.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want maximum financial privacy. Note: Monero is already delisted from several European
+    exchanges, so you often need a decentralised swap.
+  </Fragment>
+  <ol slot="install">
+    <li>Install a wallet (the official one at getmonero.org, or Cake Wallet on mobile).</li>
+    <li>
+      Get XMR through a decentralised exchange service (for example a "swap" from another crypto).
+    </li>
+    <li>Back up your recovery phrase on paper.</li>
+  </ol>
+</ToolCard>

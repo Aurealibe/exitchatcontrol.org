@@ -1,0 +1,32 @@
+---
+tool: 't-backups'
+---
+
+<ToolCard tool="t-backups" variant={props.variant}>
+  <Fragment slot="name">Encrypted backups</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A way to back up your phone and computer, encrypting the data <b>before</b> it leaves for any
+    cloud.
+  </Fragment>
+  <Fragment slot="why">
+    iCloud/Google backups are often accessible to the provider, and thus to courts.{' '}
+    <b>Cryptomator</b> encrypts your files before sending them to any cloud; <b>restic</b> makes
+    automatic encrypted backups; <b>Proton Drive</b> is end-to-end encrypted. On iPhone, enable
+    "Advanced Data Protection" to encrypt your iCloud backups.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone should encrypt their backups. Golden rule: two encrypted copies, on two media, in two
+    places.
+  </Fragment>
+  <ol slot="install">
+    <li>iPhone: Settings &gt; your name &gt; iCloud &gt; Advanced Data Protection: turn it on.</li>
+    <li>
+      PC: install Cryptomator, create a vault, put your files in it before syncing to the cloud.
+    </li>
+  </ol>
+</ToolCard>

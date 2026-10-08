@@ -1,0 +1,35 @@
+---
+tool: 't-simplex'
+---
+
+<ToolCard tool="t-simplex" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Gevorderd</span>
+    <span class="tool-tag">Zonder identificatie</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een versleutelde berichtendienst zonder account, nummer of identificatie. U maakt verbinding
+    door een link of QR-code te delen.
+  </Fragment>
+  <Fragment slot="why">
+    Per ontwerp weten zelfs de servers niet wie met wie praat. Het is op dit moment de sterkste
+    optie tegen metadata-correlatie.
+  </Fragment>
+  <Fragment slot="who">
+    Pseudoniem-accounts, gevoelige contacten, hoog risico. Iets jonger dan Signal, met wat ruwe
+    kantjes.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installeer vanaf <b>simplex.chat</b> (F-Droid, Google Play, App Store of APK).
+    </li>
+    <li>
+      Kies een <b>lokale</b> weergavenaam (nooit uw echte naam: die blijft op uw apparaat).
+    </li>
+    <li>
+      Deel om een contact toe te voegen een <b>eenmalige uitnodigingslink</b> of QR-code.
+    </li>
+    <li>Schakel de toegangscode in, en (voor gevorderden) configureer uw eigen SMP-servers.</li>
+  </ol>
+</ToolCard>

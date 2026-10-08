@@ -1,0 +1,33 @@
+---
+tool: 't-firefox'
+---
+
+<ToolCard tool="t-firefox" variant={props.variant}>
+  <Fragment slot="name">Firefox (endurecido)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Reemplaza Chrome</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    El navegador libre de referencia para uso diario que respeta la privacidad.
+  </Fragment>
+  <Fragment slot="why">
+    A diferencia de Chrome (un rastreador publicitario de Google), Firefox está construido por una
+    fundación sin interés en perfilarte. Con algunos ajustes (la guía <em>arkenfox</em>) y la
+    extensión uBlock Origin, se vuelve muy sólido.
+  </Fragment>
+  <Fragment slot="who">Todos, como navegador principal diario.</Fragment>
+  <ol slot="install">
+    <li>
+      Instala Firefox desde <b>mozilla.org/firefox</b>.
+    </li>
+    <li>
+      Añade la extensión <b>uBlock Origin</b> (bloqueo de anuncios y rastreadores).
+    </li>
+    <li>
+      En ajustes de privacidad, elige "Estricto", desactiva la telemetría, y borra las cookies al
+      cerrar. Para ir más lejos, aplica la guía arkenfox.
+    </li>
+  </ol>
+</ToolCard>

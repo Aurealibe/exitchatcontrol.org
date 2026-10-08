@@ -1,0 +1,37 @@
+---
+tool: 't-simplex'
+---
+
+<ToolCard tool="t-simplex" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Középhaladó</span>
+    <span class="tool-tag">Nincs azonosító</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy titkosított üzenetküldő fiók, szám és azonosító nélkül. Egy link vagy QR-kód megosztásával
+    csatlakozol.
+  </Fragment>
+  <Fragment slot="why">
+    Kialakításából adódóan még a szerverek sem tudhatják, ki kivel beszél. Jelenleg ez a legerősebb
+    opció a metaadatok összekapcsolása ellen.
+  </Fragment>
+  <Fragment slot="who">
+    Álnéves fiókok, érzékeny kapcsolatok, magas kockázat. Kicsit fiatalabb, mint a Signal, néhány
+    gyerekbetegséggel.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a <b>simplex.chat</b> oldalról (F-Droid, Google Play, App Store vagy APK).
+    </li>
+    <li>
+      Válassz egy <b>helyi</b> megjelenített nevet (soha ne a valódi nevedet: ez az eszközödön
+      marad).
+    </li>
+    <li>
+      Egy kapcsolat hozzáadásához ossz meg egy <b>egyszer használatos meghívó linket</b> vagy egy
+      QR-kódot.
+    </li>
+    <li>Kapcsold be a jelkódos zárat, és (haladóknak) konfiguráld a saját SMP szervereidet.</li>
+  </ol>
+</ToolCard>

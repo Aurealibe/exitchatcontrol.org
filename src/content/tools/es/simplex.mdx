@@ -1,0 +1,38 @@
+---
+tool: 't-simplex'
+---
+
+<ToolCard tool="t-simplex" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Sin identificador</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una mensajería cifrada sin cuenta, sin número y sin identificador. Te conectas compartiendo un
+    enlace o código QR.
+  </Fragment>
+  <Fragment slot="why">
+    Por diseño, ni siquiera los servidores pueden saber quién habla con quién. Es actualmente la
+    opción más fuerte contra la correlación de metadatos.
+  </Fragment>
+  <Fragment slot="who">
+    Cuentas anónimas, contactos sensibles, alto riesgo. Un poco más joven que Signal, todavía con
+    algunas asperezas.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Instala desde <b>simplex.chat</b> (F-Droid, Google Play, App Store o APK).
+    </li>
+    <li>
+      Elige un nombre para mostrar <b>local</b> (nunca tu nombre real: se queda en tu dispositivo).
+    </li>
+    <li>
+      Para añadir un contacto, comparte un <b>enlace de invitación de un solo uso</b> o un código
+      QR.
+    </li>
+    <li>
+      Activa el bloqueo por código de acceso, y (avanzado) configura tus propios servidores SMP.
+    </li>
+  </ol>
+</ToolCard>

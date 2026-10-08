@@ -1,0 +1,32 @@
+---
+tool: 't-visio'
+---
+
+<ToolCard tool="t-visio" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">A Zoom / Meet kiváltója</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Videokonferencia-eszközök fiók vagy nehézkes telepítés nélkül, a Zoom, a Google Meet vagy a
+    Teams leváltására.
+  </Fragment>
+  <Fragment slot="why">
+    A <b>Jitsi Meet</b> a böngészőben fut, nem kér fiókot, és saját szerveren is futtatható (ez a
+    Brave Talk alapja is). Az <b>Element Call</b> végponttól végpontig titkosított és a Matrixon
+    keresztül föderált. Egy egyszerű, teljesen titkosított híváshoz a <b>Signal</b> hívások is
+    tökéletesen megfelelnek.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek. Egy nyilvános Jitsi szerveren a többszemélyes hívások szállítás közben
+    titkosítottak; a végponttól végpontig terjedő titkosítás opcionális.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Jitsi: lépj a meet.jit.si oldalra, hozz létre egy szobanevet, és oszd meg a linket. Semmit sem
+      kell telepíteni.
+    </li>
+    <li>Element Call: az Element (Matrix) alkalmazásból indíts egy hívást valamelyik szobában.</li>
+  </ol>
+</ToolCard>

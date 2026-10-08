@@ -1,0 +1,41 @@
+---
+tool: 't-wasabi'
+---
+
+<ToolCard tool="t-wasabi" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">CoinJoin</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Szabad Bitcoin-tárca beépített <b>CoinJoinnal</b>: az érméid más felhasználók érméivel egy közös
+    tranzakcióba kerülnek, ami megszakítja a láncon látható kapcsolatot a forrás és a cél között.
+  </Fragment>
+  <Fragment slot="why">
+    A Bitcoin főkönyve nyilvános: óvatosság nélkül minden fizetés összeköthető a korábbiakkal. A
+    CoinJoin visszaadja a magánszféra egy részét anélkül, hogy bárkire rábíznád a pénzed, és a tárca
+    Toron keresztül működik.
+  </Fragment>
+  <Fragment slot="who">
+    Tapasztalt Bitcoin-felhasználóknak. Az eredeti koordinátor 2024. júniusi leállása óta független
+    koordinátort kell választani, amely díjat számít fel.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Kevert pénz és platformok</span>
+    <p>
+      A szabályozott platformok elutasíthatják vagy zárolhatják a CoinJoinon átment pénzt. Őrizd meg
+      a pénzed jogszerű eredetének igazolását.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Töltsd le a Wasabit a <b>wasabiwallet.io</b> oldalról, és ellenőrizd az aláírást.
+    </li>
+    <li>A beállításokban válassz független koordinátort.</li>
+    <li>
+      Kapcsold be az automatikus CoinJoint, és soha ne keverd a kevert és a nem kevert érméket
+      ugyanabban a fizetésben.
+    </li>
+  </ol>
+</ToolCard>

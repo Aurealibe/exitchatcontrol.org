@@ -1,0 +1,29 @@
+---
+tool: 't-visio'
+---
+
+<ToolCard tool="t-visio" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Reemplaza Zoom / Meet</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Herramientas de videoconferencia sin cuenta ni instalación pesada, para reemplazar Zoom, Google
+    Meet o Teams.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Jitsi Meet</b> se ejecuta en el navegador, sin cuenta, y puede autoalojarse (también es la
+    base de Brave Talk). <b>Element Call</b> está cifrado de extremo a extremo y federado vía
+    Matrix. Para una llamada simple, totalmente cifrada, las llamadas de <b>Signal</b> también hacen
+    el trabajo.
+  </Fragment>
+  <Fragment slot="who">
+    Todos. En un servidor Jitsi público, las llamadas multiparte están cifradas en transporte; el
+    cifrado de extremo a extremo es opcional.
+  </Fragment>
+  <ol slot="install">
+    <li>Jitsi: ve a meet.jit.si, crea un nombre de sala, comparte el enlace. Nada que instalar.</li>
+    <li>Element Call: desde la app Element (Matrix), inicia una llamada en una sala.</li>
+  </ol>
+</ToolCard>

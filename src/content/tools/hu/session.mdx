@@ -1,0 +1,32 @@
+---
+tool: 't-session'
+---
+
+<ToolCard tool="t-session" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Középhaladó</span>
+    <span class="tool-tag">Nincs telefon</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Signal-szintű titkosítás, de telefonszám nélkül és hagyma-útválasztással.
+  </Fragment>
+  <Fragment slot="why">
+    A személyazonosságod egy véletlenszerű „Session ID”. A forgalom egy decentralizált hálózaton
+    (Lokinet) halad keresztül, amely radikálisan csökkenti a metaadatokat.
+  </Fragment>
+  <Fragment slot="who">
+    Amikor egy telefonszám kockázatot jelent. Kisebb ökoszisztéma, érdemes a fontos beszélgetésekre
+    fenntartani.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a <b>getsession.org</b> oldalról (minden platformra elérhető).
+    </li>
+    <li>
+      A „Fiók létrehozása” generálja a Session ID-dat és egy <b>helyreállítási mondatot</b>.
+    </li>
+    <li>Írd fel a helyreállítási mondatot papírra: ez az egyetlen kulcs a fiókodhoz.</li>
+    <li>Oszd meg a Session ID-dat (vagy a QR-kódodat) a kapcsolataiddal.</li>
+  </ol>
+</ToolCard>

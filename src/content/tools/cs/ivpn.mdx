@@ -1,0 +1,31 @@
+---
+tool: 't-ivpn'
+---
+
+<ToolCard tool="t-ivpn" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Středně pokročilý / pokročilý</span>
+    <span class="tool-tag">Bez e-mailu · bez logování</span>
+    <span class="tool-tag">🇬🇮 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Malý, mimořádně důsledný a transparentní poskytovatel VPN, fungující na stejném modelu jako
+    Mullvad.
+  </Fragment>
+  <Fragment slot="why">
+    Auditovaná politika bez logování, žádný povinný e-mail, platba kryptoměnou nebo hotovostí.
+    Nabízí dokonce možnosti ochrany proti sledování (blokování trackerů na úrovni sítě) a registraci
+    bez jakéhokoli identifikátoru.
+  </Fragment>
+  <Fragment slot="who">
+    Solidní alternativa k Mullvadu pro pseudonymní a vysoce rizikové profily, které chtějí
+    diverzifikovat.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Na <b>ivpn.net</b> si vygenerujte účet (vytvoří se pro vás ID, bez e-mailu).
+    </li>
+    <li>Zaplaťte kryptoměnou nebo hotovostí, stejně jako u Mullvadu.</li>
+    <li>Nainstalujte aplikaci, připojte se mimo EU, zapněte kill switch a protokol WireGuard.</li>
+  </ol>
+</ToolCard>

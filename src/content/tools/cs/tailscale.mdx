@@ -1,0 +1,34 @@
+---
+tool: 't-tailscale'
+---
+
+<ToolCard tool="t-tailscale" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Soukromý přístup k vašemu serveru</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Soukromá šifrovaná síť propojující vaše zařízení s vaším serverem, aniž by jej kdy vystavila
+    veřejnému internetu.
+  </Fragment>
+  <Fragment slot="why">
+    Namísto otevírání portů (a následných útoků) <b>Tailscale</b> vytváří tunel WireGuard pouze mezi
+    vašimi autorizovanými zařízeními: váš server nemá žádnou veřejnou útočnou plochu.
+    <b>Headscale</b> je verze hostovaná svépomocí, takže nezávisíte na žádné třetí straně. Samotný{' '}
+    <b>WireGuard</b>
+    poskytuje úplnou kontrolu za cenu ručního nastavení.
+  </Fragment>
+  <Fragment slot="who">
+    Každý, kdo provozuje vlastní služby. Je to bezpečný způsob, jak se zvenčí dostat k vašemu
+    Nextcloudu nebo fotografiím.
+  </Fragment>
+  <ol slot="install">
+    <li>Nainstalujte Tailscale na server i telefon/PC a připojte je ke stejnému účtu.</li>
+    <li>
+      Vaše zařízení se okamžitě uvidí v soukromé síti; ke svému serveru se dostanete na jeho adrese
+      Tailscale.
+    </li>
+    <li>Pro nulovou závislost nahraďte koordinační server vlastním Headscale.</li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,36 @@
+---
+tool: 't-nostr'
+---
+
+<ToolCard tool="t-nostr" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Necenzurovatelné</span>
+    <span class="tool-tag">🌍 · otevřený protokol</span>
+  </Fragment>
+  <Fragment slot="what">
+    Nejde o aplikaci, ale o protokol: sociální síť, kde je vaše identita jednoduchý pár klíčů,
+    podobně jako u Bitcoinu.
+  </Fragment>
+  <Fragment slot="why">
+    Žádný e-mail, žádné heslo, žádný účet, který může kdokoli smazat. Vaše příspěvky putují přes
+    decentralizované relaye a své publikum skutečně vlastníte: nikdo vám nemůže natrvalo zakázat
+    přístup. Můžete dokonce přijímat bitcoinové spropitné („zaps“) a kdykoli změnit aplikaci, aniž
+    byste přišli o své sledující.
+  </Fragment>
+  <Fragment slot="who">
+    Informační účty a tvůrci, kteří se obávají cenzury platforem a chtějí mít skutečně vlastní
+    prostor.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte si klienta: Damus (iPhone), Amethyst nebo Primal (Android), případně webovou
+      verzi.
+    </li>
+    <li>
+      Aplikace vygeneruje váš pár klíčů. <b>Zálohujte si soukromý klíč (nsec)</b> jako seed frázi k
+      Bitcoinu: na papír, nikdy jej nesdílejte.
+    </li>
+    <li>Vytvořte si profil, sledujte lidi a povolte zaps, abyste mohli přijímat saty.</li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,23 @@
+---
+tool: 't-qubes'
+---
+
+<ToolCard tool="t-qubes" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Szakértő</span>
+    <span class="tool-tag">Elkülönítés</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Két rétegrendszer: a Qubes elkülöníti a PC-det zárt virtuális gépekbe; a postmarketOS pedig
+    Linuxot futtat régi telefonokon.
+  </Fragment>
+  <Fragment slot="why">
+    A Qubes minden tevékenységet (munka, bankolás, kockázatos böngészés) egy saját rekeszbe különít
+    el: a kompromittálódás (feltörés) nem éri el a többit. A postmarketOS meghosszabbítja azoknak a
+    telefonoknak az élettartamát, amelyeket a gyártójuk már elhagyott.
+  </Fragment>
+  <Fragment slot="who">
+    Szakértő felhasználóknak, akiknek nagyon magas a fenyegetettségi modelljük.
+  </Fragment>
+</ToolCard>

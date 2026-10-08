@@ -1,0 +1,32 @@
+---
+tool: 't-element'
+---
+
+<ToolCard tool="t-element" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">A Discord / Slack kiváltója</span>
+    <span class="tool-tag">🌍 · föderált · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    Közösségi chat a Discord vagy a Slack szellemében, de föderáltan és végponttól végpontig
+    titkosítható formában. Az Element az alkalmazás, a Matrix pedig a hálózat.
+  </Fragment>
+  <Fragment slot="why">
+    Üzemeltetheted a saját szerveredet (Synapse), és te irányíthatod az adataidat. Tökéletes egy
+    kollektívának, szerkesztőségnek vagy egyesületnek, amely saját, független teret szeretne.
+  </Fragment>
+  <Fragment slot="who">
+    Közösségeknek és csoportoknak. Lásd a metaadatokra vonatkozó figyelmeztetést alább.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd az Elementet (element.io), és hozz létre egy fiókot egy nyilvános szerveren, vagy a
+      sajátodon (10. szakasz).
+    </li>
+    <li>
+      Csatlakozz szobákhoz, vagy hozz létre újakat, és engedélyezd a végponttól végpontig terjedő
+      titkosítást a privát beszélgetésekhez.
+    </li>
+  </ol>
+</ToolCard>

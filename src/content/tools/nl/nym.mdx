@@ -1,0 +1,45 @@
+---
+tool: 't-nym'
+---
+
+<ToolCard tool="t-nym" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Gevorderd / Expert</span>
+    <span class="tool-tag">Mixnet</span>
+    <span class="tool-tag">🇨🇭 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een vpn met twee modi: een snelle modus (2 servers, WireGuard) en een <b>anonieme</b> modus die
+    het verkeer door een <b>mixnet</b> van 5 knooppunten stuurt, vermengd met dekverkeer.
+  </Fragment>
+  <Fragment slot="why">
+    Het mixnet vervaagt metadata (wie met wie communiceert, en wanneer), zelfs tegenover een
+    waarnemer die het hele netwerk bekijkt, wat een klassieke vpn niet doet. Gedecentraliseerd
+    servernetwerk, open-source apps (GPL), geaudit door Cure53. Betaling kan via anonieme
+    ‘zk-nym’-tegoeden los van het gebruik blijven.
+  </Fragment>
+  <Fragment slot="who">
+    Wie verder wil gaan dan een klassieke vpn tegen verkeersanalyse, en een veel tragere anonieme
+    modus aanvaardt die niet geschikt is voor streaming en downloads. Betaald abonnement, met gratis
+    proefperiode.
+  </Fragment>
+  <div class="box" slot="extra">
+    <span class="lab">Goed om te weten</span>
+    <p>
+      Het Nym-netwerk betaalt knooppuntbeheerders met een token (NYM). U hoeft er geen te bezitten
+      om de vpn te gebruiken.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Installeer NymVPN via <b>nym.com</b> (computer en mobiel).
+    </li>
+    <li>
+      Gebruik de <b>anonieme</b> modus voor berichten en gevoelig surfen, de <b>snelle</b> modus
+      voor de rest.
+    </li>
+    <li>
+      Om uw identiteit los te houden van uw gebruik, betaal met cryptomunten of met zk-nym-tegoeden.
+    </li>
+  </ol>
+</ToolCard>

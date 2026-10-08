@@ -1,0 +1,36 @@
+---
+tool: 't-backups'
+---
+
+<ToolCard tool="t-backups" variant={props.variant}>
+  <Fragment slot="name">Verschlüsselte Sicherungen</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · Open Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Eine Möglichkeit, Smartphone und Computer zu sichern und die Daten zu verschlüsseln,{' '}
+    <b>bevor</b> sie eine Cloud erreichen.
+  </Fragment>
+  <Fragment slot="why">
+    Auf iCloud-/Google-Sicherungen kann häufig der Anbieter und damit auch ein Gericht zugreifen.{' '}
+    <b>Cryptomator</b> verschlüsselt Dateien vor dem Upload in eine beliebige Cloud; <b>restic</b>{' '}
+    erstellt automatische verschlüsselte Sicherungen; <b>Proton Drive</b> ist
+    Ende-zu-Ende-verschlüsselt. Aktiviere auf dem iPhone den „Erweiterten Datenschutz“, um
+    iCloud-Sicherungen zu verschlüsseln.
+  </Fragment>
+  <Fragment slot="who">
+    Alle sollten ihre Sicherungen verschlüsseln. Goldene Regel: zwei verschlüsselte Kopien auf zwei
+    Medien an zwei Orten.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      iPhone: Einstellungen &gt; dein Name &gt; iCloud &gt; Erweiterter Datenschutz: aktivieren.
+    </li>
+    <li>
+      PC: Installiere Cryptomator, erstelle einen Tresor und lege deine Dateien vor der
+      Cloud-Synchronisierung darin ab.
+    </li>
+  </ol>
+</ToolCard>

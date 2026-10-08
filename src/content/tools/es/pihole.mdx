@@ -1,0 +1,30 @@
+---
+tool: 't-pihole'
+---
+
+<ToolCard tool="t-pihole" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Bloqueo de toda la red</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un bloqueador de anuncios y rastreadores que protege <b>toda tu red a la vez</b>, instalado en
+    un pequeño ordenador como una Raspberry Pi.
+  </Fragment>
+  <Fragment slot="why">
+    Donde uBlock Origin protege un navegador, Pi-hole filtra <b>cada dispositivo</b> en el hogar,
+    incluidos aquellos donde no puedes instalar una extensión: móviles, smart TVs, objetos
+    conectados. Los anuncios y rastreadores se bloquean a nivel DNS, antes de que siquiera carguen.{' '}
+    <b>AdGuard Home</b> es una alternativa con una interfaz más moderna.
+  </Fragment>
+  <Fragment slot="who">
+    Hogares que quieren limpiar todos sus dispositivos a la vez, y que tienen (o quieren) una
+    Raspberry Pi o pequeño servidor.
+  </Fragment>
+  <ol slot="install">
+    <li>En una Raspberry Pi (o un contenedor), ejecuta el instalador oficial de Pi-hole.</li>
+    <li>En los ajustes de tu router, establece la dirección del Pi-hole como el servidor DNS.</li>
+    <li>Desde ahora, cada dispositivo en tu red está filtrado automáticamente.</li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,36 @@
+---
+tool: 't-brave'
+---
+
+<ToolCard tool="t-brave" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Alapértelmezetten mindent blokkol</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy Chromium-alapú böngésző, amely alapértelmezetten blokkolja a reklámokat és a nyomkövetőket,
+    plusz egy Tor-hoz kapcsolódó privát ablak.
+  </Fragment>
+  <Fragment slot="why">
+    Ez a legegyszerűbb választás a Chrome-ról érkezőknek: ugyanaz az érzés, de követés nélkül.
+    Natívan blokkolja a YouTube-reklámokat, titkosított videóhívást kínál (Brave Talk, Jitsi
+    alapokon), és egy kattintásos Tor-hozzáférést, ami hasznos egy blokkolt oldal eléréséhez.
+  </Fragment>
+  <Fragment slot="who">
+    Kezdők, akik fájdalommentesen akarnak váltani a Chrome-ról. (Hagyd figyelmen kívül a
+    kripto/jutalmazott reklám funkciókat, ha nem érdekelnek.)
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a Brave-et a <b>brave.com</b> oldalról.
+    </li>
+    <li>
+      Állítsd a „Shields” beállítást „agresszív”-re, és kapcsold ki a Brave Rewards-ot, ha nem
+      szeretnél reklámokat.
+    </li>
+    <li>
+      Tor-hoz: menü &gt; „Új privát ablak Torral”, majd várj, amíg „Tor connected” nem jelenik meg.
+    </li>
+  </ol>
+</ToolCard>

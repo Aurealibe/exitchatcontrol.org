@@ -13,114 +13,13 @@ title: 'Self-Hosting'
 
 Die höchste Stufe der Souveränität: Betreibe deine Dienste selbst. Deine Daten liegen auf deiner Hardware und unterliegen der von dir gewählten Rechtsordnung.
 
-<ToolCard tool="t-yunohost">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Fortgeschritten</span>
-    <span class="tool-tag">Schlüsselfertiger Server</span>
-    <span class="tool-tag">🌍 · Open Source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Systeme, die einen alten PC oder Raspberry Pi in einen persönlichen Server verwandeln, auf dem
-    du Apps mit wenigen Klicks installierst.
-  </Fragment>
-  <Fragment slot="why">
-    Self-Hosting klingt beängstigend, doch diese Werkzeuge erledigen die schwere Arbeit.{' '}
-    <b>YunoHost</b> betreibt sogar deinen eigenen E-Mail-Dienst und Single Sign-on. <b>Umbrel</b>{' '}
-    bietet einen bei Datenschutz- und Bitcoin-Interessierten beliebten Store mit über 300 Apps.{' '}
-    <b>Start9</b> verschlüsselt Sicherungen und weist jedem Dienst standardmäßig eine Tor-Adresse
-    zu.
-  </Fragment>
-  <Fragment slot="who">
-    Für Fortgeschrittene, die einen Nachmittag in ihre eigene Cloud investieren möchten. Es ist die
-    radikalste strukturelle Antwort auf die Chatkontrolle.
-  </Fragment>
-  <ol slot="install">
-    <li>
-      Nutze einen alten Computer oder Raspberry Pi oder miete einen kleinen Server (VPS) in einem
-      Land mit starken Schutzrechten.
-    </li>
-    <li>Installiere YunoHost, Umbrel oder Start9 anhand der offiziellen Anleitung.</li>
-    <li>Installiere aus dem Katalog Nextcloud, einen Matrix-Server, eine Fotogalerie usw.</li>
-    <li>
-      Greife privat über Tailscale (Abschnitt VPN) darauf zu, statt den Server öffentlich erreichbar
-      zu machen.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-yunohost" />
 
-<ToolCard tool="t-nextcloud">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Fortgeschritten</span>
-    <span class="tool-tag">Ersetzt alle Google-Dienste</span>
-    <span class="tool-tag">🇩🇪 · Open Source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Deine eigene Cloud für Dateien, Kalender, Kontakte, Fotos, Notizen und gemeinsame Dokumente auf
-    deinem Server.
-  </Fragment>
-  <Fragment slot="why">
-    Der vollständige Ersatz für Google Drive, Calendar und Contacts bei dir zu Hause. Du wählst die
-    Rechtsordnung und niemand sonst kontrolliert deine Dateien. Beachte: Standardmäßig ist das
-    Privatsphäre durch „deinen Server“, keine Ende-zu-Ende-Verschlüsselung; du musst ihn aktuell
-    halten.
-  </Fragment>
-  <Fragment slot="who">
-    Für Self-Hoster. Am einfachsten ist die Installation über YunoHost oder Umbrel.
-  </Fragment>
-</ToolCard>
+<Tool id="t-nextcloud" />
 
-<ToolCard tool="t-synapse">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Fortgeschritten</span>
-    <span class="tool-tag">Dein Chatserver</span>
-    <span class="tool-tag">🌍 · Open Source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Dein eigener Matrix-Chatserver als Grundlage für Element und verschlüsselte Anrufe.
-  </Fragment>
-  <Fragment slot="why">
-    Wenn du den Server betreibst, kontrollierst du auch die <b>Metadaten</b> (wer wann mit wem
-    spricht) – die Schwachstelle von Matrix im föderierten Betrieb. Ein Community-Chat, der allein
-    dir gehört.
-  </Fragment>
-  <Fragment slot="who">
-    Für Communities, Kollektive und Redaktionen, die ihren eigenen unabhängigen, föderierten Raum
-    wollen.
-  </Fragment>
-</ToolCard>
+<Tool id="t-synapse" />
 
-<ToolCard tool="t-website">
-  <Fragment slot="name">Deine eigene Website</Fragment>
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Deine Stimme vor Sperren schützen</span>
-  </Fragment>
-  <Fragment slot="what">
-    Eine eigene Website unter deiner eigenen Domain, deren Inhalte von keiner Plattform abhängen.
-  </Fragment>
-  <Fragment slot="why">
-    Löscht oder sperrt ein Netzwerk dein Konto, verschwindet deine gesamte Arbeit. Eine persönliche
-    Website ist dein Anker: Deine Beiträge bleiben dort archiviert und aktuell, was auch geschieht.
-    Genau so handeln vorsichtige Informationskanäle. Eine statische Website (mit Hugo, Astro oder
-    Jekyll) genügt und lässt sich nahezu kostenlos veröffentlichen; für einen dynamischen Blog
-    eignen sich selbst gehostetes WordPress oder Ghost.
-  </Fragment>
-  <Fragment slot="who">
-    Für Informationskanäle, Kreative, Aktivisten und alle, die veröffentlichen und Plattformzensur
-    fürchten.
-  </Fragment>
-  <ol slot="install">
-    <li>Kaufe eine Domain (idealerweise bei einem datenschutzfreundlichen Registrar).</li>
-    <li>
-      Wähle einen Generator für statische Websites (Astro, Hugo) und hoste die Ausgabe oder
-      installiere WordPress/Ghost auf deinem Server.
-    </li>
-    <li>
-      Verweise von deinen sozialen Konten stets darauf: Dein Publikum findet dich auch dann, wenn
-      ein Konto ausfällt.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-website" />
 
 <div class="box">
   <span class="lab">Die Frage der Rechtsordnung</span>

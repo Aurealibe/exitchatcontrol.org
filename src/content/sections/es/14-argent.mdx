@@ -13,96 +13,11 @@ title: 'Soberanía financiera'
 
 El dinero también está vigilado y es censurable. Se han congelado cuentas de activistas, se han bloqueado donaciones, y cada pago con tarjeta se rastrea. La privacidad financiera es parte de la soberanía.
 
-<ToolCard tool="t-bitcoin">
-  <Fragment slot="name">Bitcoin (autocustodia)</Fragment>
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Resistente a la censura</span>
-  </Fragment>
-  <Fragment slot="what">Dinero digital que posees tú mismo, sin pasar por un banco.</Fragment>
-  <Fragment slot="why">
-    En <b>autocustodia</b> (tus claves en una cartera que solo tú controlas), nadie puede congelar o
-    bloquear tus fondos. Su privacidad no es perfecta (el libro mayor es público), pero escapa a la
-    censura bancaria, útil el día que se rechace un pago.
-  </Fragment>
-  <Fragment slot="who">
-    Protegerse contra congelaciones de cuentas o expulsión bancaria, y pagar anónimamente por un
-    servicio como una VPN.
-  </Fragment>
-  <ol slot="install">
-    <li>Consigue algo de bitcoin (un exchange, o peer-to-peer).</li>
-    <li>
-      Muévelos inmediatamente a una cartera que <b>tú</b> controles: una cartera hardware (Trezor,
-      ColdCard) o una app de código abierto. No los dejes en el exchange.
-    </li>
-    <li>Haz copia de seguridad de tu frase de recuperación en papel, nunca como foto u online.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-bitcoin" />
 
-<ToolCard tool="t-monero">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Avanzado</span>
-    <span class="tool-tag">Privado por defecto</span>
-  </Fragment>
-  <Fragment slot="what">
-    La criptomoneda de privacidad: cantidades, emisor y receptor están ocultos por defecto.
-  </Fragment>
-  <Fragment slot="why">
-    Es lo opuesto a Bitcoin aquí: las transacciones son privadas por diseño. Es la mejor manera de
-    pagar por un servicio sin dejar rastro de vuelta a ti.
-  </Fragment>
-  <Fragment slot="who">
-    Aquellos que quieren máxima privacidad financiera. Nota: Monero ya está excluido de varios
-    exchanges europeos, así que a menudo necesitas un swap descentralizado.
-  </Fragment>
-  <ol slot="install">
-    <li>Instala una cartera (la oficial en getmonero.org, o Cake Wallet en móvil).</li>
-    <li>
-      Consigue XMR a través de un servicio de exchange descentralizado (por ejemplo un "swap" desde
-      otra cripto).
-    </li>
-    <li>Haz copia de seguridad de tu frase de recuperación en papel.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-monero" />
 
-<ToolCard tool="t-wasabi">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Avanzado</span>
-    <span class="tool-tag">CoinJoin</span>
-    <span class="tool-tag">🌍 · código abierto</span>
-  </Fragment>
-  <Fragment slot="what">
-    Un monedero de Bitcoin libre con <b>CoinJoin</b> integrado: tus monedas se agrupan con las de
-    otros usuarios en una transacción común, lo que rompe el vínculo visible en la cadena entre
-    origen y destino.
-  </Fragment>
-  <Fragment slot="why">
-    El registro de Bitcoin es público: sin precauciones, cada pago puede vincularse a los
-    anteriores. El CoinJoin recupera parte de esa privacidad sin confiar tus fondos a nadie, y el
-    monedero funciona a través de Tor.
-  </Fragment>
-  <Fragment slot="who">
-    Usuarios de Bitcoin con experiencia. Desde el cierre del coordinador original en junio de 2024,
-    hay que elegir un coordinador independiente, que cobra comisiones.
-  </Fragment>
-  <div class="box warn" slot="extra">
-    <span class="lab">Fondos mezclados y plataformas</span>
-    <p>
-      Las plataformas reguladas pueden rechazar o bloquear fondos que hayan pasado por un CoinJoin.
-      Conserva una prueba del origen legítimo de tus fondos.
-    </p>
-  </div>
-  <ol slot="install">
-    <li>
-      Descarga Wasabi desde <b>wasabiwallet.io</b> y verifica la firma.
-    </li>
-    <li>En los ajustes, elige un coordinador independiente.</li>
-    <li>
-      Activa el CoinJoin automático y no combines nunca monedas mezcladas y sin mezclar en un mismo
-      pago.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-wasabi" />
 
 <div class="box honest">
   <span class="lab">Privacidad en la cadena: lo que dice la ley</span>

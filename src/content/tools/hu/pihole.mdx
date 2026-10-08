@@ -1,0 +1,31 @@
+---
+tool: 't-pihole'
+---
+
+<ToolCard tool="t-pihole" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Teljes hálózatot lefedő blokkolás</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy reklám- és nyomkövető-blokkoló, amely <b>az egész hálózatodat védi egyszerre</b>, és egy kis
+    számítógépre (például egy Raspberry Pi-re) telepíthető.
+  </Fragment>
+  <Fragment slot="why">
+    Amíg a uBlock Origin egyetlen böngészőt véd, a Pi-hole szűri az otthoni <b>minden eszközt</b>,
+    beleértve azokat is, ahová nem tudsz bővítményt telepíteni: telefonok, okostévék,
+    csatlakoztatott eszközök (IoT). A reklámokat és nyomkövetőket már a DNS szintjén blokkolja, még
+    mielőtt egyáltalán betöltődnének. Az <b>AdGuard Home</b> egy alternatíva modernebb
+    kezelőfelülettel.
+  </Fragment>
+  <Fragment slot="who">
+    Háztartásoknak, amelyek minden eszközüket egyszerre szeretnék megtisztítani, és rendelkeznek
+    (vagy szeretnének rendelkezni) egy Raspberry Pi-vel vagy kisméretű szerverrel.
+  </Fragment>
+  <ol slot="install">
+    <li>Egy Raspberry Pi-n (vagy egy konténerben) futtasd a Pi-hole hivatalos telepítőjét.</li>
+    <li>A routered beállításaiban add meg a Pi-hole címét, mint elsődleges DNS-szervert.</li>
+    <li>Ettől a pillanattól kezdve a hálózatod minden eszköze automatikusan szűrve lesz.</li>
+  </ol>
+</ToolCard>

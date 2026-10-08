@@ -1,0 +1,34 @@
+---
+tool: 't-website'
+---
+
+<ToolCard tool="t-website" variant={props.variant}>
+  <Fragment slot="name">Your own website</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Ban-proof your voice</span>
+  </Fragment>
+  <Fragment slot="what">
+    A site of your own, on your own domain name, where your content depends on no platform.
+  </Fragment>
+  <Fragment slot="why">
+    The day a network deletes or suspends your account, all your work vanishes. A personal site is
+    your anchor: your posts stay there, archived and up to date, whatever happens. It's exactly what
+    cautious information accounts do. A static site (built with Hugo, Astro or Jekyll) is enough and
+    publishes almost for free; for a dynamic blog, a self-hosted WordPress or Ghost does the job.
+  </Fragment>
+  <Fragment slot="who">
+    Information accounts, creators, activists, anyone who publishes and fears platform censorship.
+  </Fragment>
+  <ol slot="install">
+    <li>Buy a domain name (ideally from a privacy-respecting registrar).</li>
+    <li>
+      Choose a static-site generator (Astro, Hugo) and host the output, or install WordPress/Ghost
+      on your server.
+    </li>
+    <li>
+      Always point to it from your social accounts: your audience finds you even if one account
+      falls.
+    </li>
+  </ol>
+</ToolCard>

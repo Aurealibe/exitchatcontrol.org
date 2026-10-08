@@ -1,0 +1,33 @@
+---
+tool: 't-tor'
+---
+
+<ToolCard tool="t-tor" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">Network anonymity</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A network that separates who you are from what you do online, accessible via the Tor Browser.
+  </Fragment>
+  <Fragment slot="why">
+    Your traffic bounces through several encrypted relays worldwide: none knows both your identity
+    and your destination. It's the tool of journalists and sources, and the way to reach a blocked
+    site (for example to download a censored VPN).
+  </Fragment>
+  <Fragment slot="who">
+    High-risk profiles, and anyone who must decouple their activity from their real IP. Use it
+    occasionally, not as an everyday browser.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Download the Tor Browser from <b>torproject.org</b> (Windows, macOS, Linux, Android).
+    </li>
+    <li>Launch it and click "Connect." If Tor is blocked in your country, enable a "bridge."</li>
+    <li>
+      Browse without maximising the window, without installing extensions, and{' '}
+      <b>without logging into your real accounts</b>.
+    </li>
+  </ol>
+</ToolCard>

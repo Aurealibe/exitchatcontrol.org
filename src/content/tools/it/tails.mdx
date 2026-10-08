@@ -1,0 +1,28 @@
+---
+tool: 't-tails'
+---
+
+<ToolCard tool="t-tails" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzato</span>
+    <span class="tool-tag">USB amnesica</span>
+    <span class="tool-tag">🌍 · tutto via Tor</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un sistema che si avvia da una chiavetta USB, fa passare tutto il traffico attraverso Tor e non
+    lascia <b>nessuna traccia</b> allo spegnimento.
+  </Fragment>
+  <Fragment slot="why">
+    Allo spegnimento, tutto viene dimenticato: è "amnesico". Ideale per un lavoro sensibile e
+    occasionale su un computer che non è tuo, senza lasciare nulla dietro di sé.
+  </Fragment>
+  <Fragment slot="who">
+    Whistleblower, giornalisti, fonti. Lo strumento di riferimento per il lavoro ad alto rischio.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Scarica Tails da <b>tails.net</b> e segui la procedura guidata per creare la chiavetta USB.
+    </li>
+    <li>Riavvia il computer da quella chiavetta. Usala, poi spegni: tutto sparisce.</li>
+  </ol>
+</ToolCard>

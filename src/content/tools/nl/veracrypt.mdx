@@ -1,0 +1,45 @@
+---
+tool: 't-veracrypt'
+---
+
+<ToolCard tool="t-veracrypt" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Gemiddeld</span>
+    <span class="tool-tag">Vervangt BitLocker</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    De referentie voor <b>lokale</b> versleuteling: een hele schijf, een partitie, een USB-stick, of
+    een versleutelde container (een bestand dat als schijf wordt geopend).
+  </Fragment>
+  <Fragment slot="why">
+    Niets verlaat uw computer: geen account, geen cloud, geen herstelsleutel bij een leverancier.
+    Vrij, geaudit, opvolger van TrueCrypt. Het is de lokale tegenhanger van Cryptomator, dat voor de
+    cloud bedoeld is.
+  </Fragment>
+  <Fragment slot="who">
+    Op Windows, ter vervanging van BitLocker; overal, voor een versleutelde container of externe
+    schijf. Op Linux en macOS volstaat de ingebouwde versleuteling (LUKS, FileVault) voor de
+    systeemschijf.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Systeemversleuteling en Secure Boot</span>
+    <p>
+      Microsoft trekt in 2026 de UEFI-certificaatautoriteit van 2011 in die de oude bootloader
+      ondertekende. Versleutelt u de systeemschijf, gebruik dan versie 1.26.29 of nieuwer, met
+      bootloaders die voor zowel de autoriteit van 2011 als die van 2023 zijn ondertekend.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Download VeraCrypt via <b>veracrypt.jp</b> en controleer de PGP-handtekening of checksum van
+      het bestand.
+    </li>
+    <li>
+      Maak een volume met de standaardinstellingen (AES, SHA-512); Argon2id is beschikbaar sinds
+      versie 1.26.29.
+    </li>
+    <li>Kies een lange wachtwoordzin (meerdere willekeurige woorden), nooit hergebruikt.</li>
+    <li>Gevorderd: maak een verborgen volume binnen het volume voor geloofwaardige ontkenning.</li>
+  </ol>
+</ToolCard>

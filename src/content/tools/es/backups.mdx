@@ -1,0 +1,34 @@
+---
+tool: 't-backups'
+---
+
+<ToolCard tool="t-backups" variant={props.variant}>
+  <Fragment slot="name">Copias de seguridad cifradas</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una forma de hacer copia de seguridad de tu teléfono y ordenador, cifrando los datos{' '}
+    <b>antes</b> de que salgan hacia cualquier nube.
+  </Fragment>
+  <Fragment slot="why">
+    Las copias de seguridad de iCloud/Google son a menudo accesibles para el proveedor, y por tanto
+    para tribunales. <b>Cryptomator</b> cifra tus archivos antes de enviarlos a cualquier nube;{' '}
+    <b>restic</b> hace copias de seguridad cifradas automáticas; <b>Proton Drive</b> está cifrado de
+    extremo a extremo. En iPhone, activa "Protección Avanzada de Datos" para cifrar tus copias de
+    seguridad de iCloud.
+  </Fragment>
+  <Fragment slot="who">
+    Todos deberían cifrar sus copias de seguridad. Regla de oro: dos copias cifradas, en dos medios,
+    en dos lugares.
+  </Fragment>
+  <ol slot="install">
+    <li>iPhone: Ajustes &gt; tu nombre &gt; iCloud &gt; Protección Avanzada de Datos: actívala.</li>
+    <li>
+      PC: instala Cryptomator, crea una bóveda, pon tus archivos en ella antes de sincronizar a la
+      nube.
+    </li>
+  </ol>
+</ToolCard>

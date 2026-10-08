@@ -1,0 +1,29 @@
+---
+tool: 't-databrokers'
+---
+
+<ToolCard tool="t-databrokers" variant={props.variant}>
+  <Fragment slot="name">Erase your data (GDPR)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡</span>
+    <span class="tool-tag">Data brokers</span>
+  </Fragment>
+  <Fragment slot="what">
+    Getting your personal information removed from the "data brokers" that collect and resell it.
+  </Fragment>
+  <Fragment slot="why">
+    In Europe, the GDPR (Article 17) gives you a <b>right to erasure</b>: you can demand, for free,
+    that a company delete your data, in principle within a month. Services like <b>Incogni</b>{' '}
+    automate these requests at scale, for a fee.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want to reduce their exposure. Note: data reappears over time, and this doesn't touch
+    public records or social media. Doing it yourself is free but tedious.
+  </Fragment>
+  <ol slot="install">
+    <li>For a manual request: write to the broker citing GDPR Article 17 and ask for deletion.</li>
+    <li>
+      To automate: subscribe to a removal service and let it send the requests on your behalf.
+    </li>
+  </ol>
+</ToolCard>

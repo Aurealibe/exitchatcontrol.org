@@ -1,0 +1,42 @@
+---
+tool: 't-grapheneos'
+---
+
+<ToolCard tool="t-grapheneos" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Mobile dégooglisé</span>
+    <span class="tool-tag">Android · Pixel · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un Android entièrement dégooglisé, installé sur un téléphone Pixel : la souveraineté sur mobile.
+  </Fragment>
+  <Fragment slot="why">
+    C'est la défense structurelle par excellence contre un OS ou un magasin d'applications qui
+    voudrait vous scanner. Services Google en bac à sable optionnel,{' '}
+    <b>permissions réseau par application</b>, profils cloisonnés, redémarrage automatique qui purge
+    les clés de la mémoire, code PIN de contrainte qui efface le téléphone. Réputé pour sa sécurité
+    au point d'être utilisé par des cibles de logiciels espions.
+  </Fragment>
+  <Fragment slot="who">
+    Profils exposés, mais aussi tout citoyen prêt à acheter un Pixel pour reprendre le contrôle de
+    son téléphone.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Procurez-vous un téléphone <b>Google Pixel</b> compatible (c'est le seul matériel supporté,
+      pour des raisons de sécurité).
+    </li>
+    <li>
+      Sur un ordinateur, allez sur <b>grapheneos.org/install</b> et suivez l'installeur web
+      (quelques clics, aucun terminal requis).
+    </li>
+    <li>
+      Pour vos applications, installez le magasin libre F-Droid ; ajoutez Google Play en bac à sable
+      seulement si nécessaire.
+    </li>
+    <li>
+      Réglez un long mot de passe (pas un code à 4 chiffres) et découvrez le mode « Lockdown ».
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,34 @@
+---
+tool: 't-tailscale'
+---
+
+<ToolCard tool="t-tailscale" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">Private access to your server</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A private encrypted network linking your devices to your server, without ever exposing it on the
+    public internet.
+  </Fragment>
+  <Fragment slot="why">
+    Instead of opening ports (and getting attacked), <b>Tailscale</b> builds a WireGuard tunnel
+    between your authorised devices only: your server has no public attack surface. <b>Headscale</b>{' '}
+    is the self-hosted version, so you depend on no third party. <b>WireGuard</b> alone gives full
+    control, at the cost of manual setup.
+  </Fragment>
+  <Fragment slot="who">
+    Every self-hoster. It's the safe way to reach your Nextcloud or photos from outside.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Install Tailscale on your server and on your phone/PC, connect them to the same account.
+    </li>
+    <li>
+      Your devices instantly see each other on a private network; reach your server at its Tailscale
+      address.
+    </li>
+    <li>For zero dependency, replace the coordination server with self-hosted Headscale.</li>
+  </ol>
+</ToolCard>

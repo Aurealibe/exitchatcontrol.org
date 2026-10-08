@@ -1,0 +1,47 @@
+---
+tool: 't-linux'
+---
+
+<ToolCard tool="t-linux" variant={props.variant}>
+  <Fragment slot="name">Linux (sur ordinateur)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Remplace Windows / macOS</span>
+    <span class="tool-tag">🌍 · libre &amp; gratuit</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un système d'exploitation libre et gratuit pour votre ordinateur, en remplacement de Windows ou
+    de macOS. Il en existe de nombreuses variantes, appelées « distributions ».
+  </Fragment>
+  <Fragment slot="why">
+    C'est le point aveugle de beaucoup de gens : ils chiffrent leurs messages mais gardent un
+    Windows qui transmet en continu de la télémétrie à Microsoft (et dont la fonction « Recall » a
+    voulu photographier l'écran en permanence), ou un macOS qui signale les applications que vous
+    lancez. Linux, lui, ne vous espionne pas, il est gratuit, il ressuscite les vieux ordinateurs et
+    il vous rend enfin maître de votre machine. C'est plus facile que sa réputation : les
+    distributions modernes ressemblent à Windows ou macOS.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde peut franchir le pas. Pour débuter, <b>Linux Mint</b> (le plus proche de Windows)
+    ou <b>Fedora</b> ; <b>Debian</b> pour la stabilité. Pas besoin de tout casser : on peut d'abord
+    tester, puis installer à côté de son système actuel.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Pas sûr de la distribution ? Répondez au questionnaire <b>distrochooser.de/fr</b>, qui vous
+      oriente selon vos besoins.
+    </li>
+    <li>
+      Testez-la <b>sans rien installer</b> directement dans votre navigateur sur{' '}
+      <b>distrosea.com</b>.
+    </li>
+    <li>
+      Une fois convaincu, téléchargez l'image de la distribution et créez une clé USB de démarrage
+      (avec Ventoy ou Balena Etcher).
+    </li>
+    <li>
+      Démarrez sur la clé pour essayer le système « en live », puis lancez l'installation. Activez
+      le chiffrement du disque proposé.
+    </li>
+  </ol>
+</ToolCard>

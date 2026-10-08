@@ -1,0 +1,35 @@
+---
+tool: 't-bitwarden'
+---
+
+<ToolCard tool="t-bitwarden" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Le meilleur pour débuter</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un coffre-fort à mots de passe qui les mémorise, les génère et les remplit pour vous, sur tous
+    vos appareils.
+  </Fragment>
+  <Fragment slot="why">
+    Gratuit, audité, multiplateforme, et chiffré de bout en bout. Vous n'avez plus qu'un seul mot de
+    passe fort à retenir. Il est même <b>auto-hébergeable</b> (via Vaultwarden) pour ne dépendre de
+    personne.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde. C'est le point de départ de toute la sécurité : un mot de passe unique et fort
+    par service.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Créez un compte sur bitwarden.com et choisissez un mot de passe maître <b>long</b> (une
+      phrase). Ne l'oubliez jamais : il n'est pas récupérable.
+    </li>
+    <li>Installez l'extension de navigateur et l'application mobile.</li>
+    <li>
+      Au fil de vos connexions, laissez Bitwarden enregistrer puis remplacer vos anciens mots de
+      passe par des mots de passe générés.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,32 @@
+---
+tool: 't-mullvaddns'
+---
+
+<ToolCard tool="t-mullvaddns" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Středně pokročilý</span>
+    <span class="tool-tag">Filtrování sítě</span>
+  </Fragment>
+  <Fragment slot="what">
+    Dva šifrované resolvery, které zároveň blokují reklamy a trackery pro celé zařízení.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Mullvad DNS</b> (Švédsko, bez logování) je zdarma a nabízí blokovací seznamy. <b>NextDNS</b>{' '}
+    je vysoce přizpůsobitelný, s přehledem a profily pro jednotlivá zařízení, ale sídlí v USA a ve
+    výchozím nastavení zaznamenává logy (v nastavení to vypněte).
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kteří chtějí blokování reklam v celém systému bez instalace rozšíření do každého
+    prohlížeče.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Mullvad DNS: použijte adresu uvedenou na mullvad.net/help/dns jako své soukromé DNS (stejný
+      postup jako u Quad9).
+    </li>
+    <li>
+      NextDNS: vytvořte profil na nextdns.io, <b>vypněte logování</b> a poté konfiguraci použijte na
+      svých zařízeních.
+    </li>
+  </ol>
+</ToolCard>

@@ -13,98 +13,11 @@ title: 'Financiële soevereiniteit'
 
 Ook geld wordt in de gaten gehouden en kan worden gecensureerd. Accounts van activisten zijn bevroren, donaties geblokkeerd, en elke kaartbetaling wordt gevolgd. Financiële privacy maakt deel uit van soevereiniteit.
 
-<ToolCard tool="t-bitcoin">
-  <Fragment slot="name">Bitcoin (zelfbewaring)</Fragment>
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Censuurbestendig</span>
-  </Fragment>
-  <Fragment slot="what">
-    Een digitaal geld dat u zelf bewaart, zonder via een bank te gaan.
-  </Fragment>
-  <Fragment slot="why">
-    Bij <b>zelfbewaring</b> (uw sleutels in een portemonnee die alleen u beheert) kan niemand uw
-    tegoeden bevriezen of blokkeren. De privacy is niet perfect (het grootboek is openbaar), maar
-    het ontsnapt aan bankcensuur, handig op de dag dat een betaling wordt geweigerd.
-  </Fragment>
-  <Fragment slot="who">
-    Zich beschermen tegen het bevriezen van accounts of de-banking, en anoniem betalen voor een
-    dienst zoals een VPN.
-  </Fragment>
-  <ol slot="install">
-    <li>Schaf bitcoins aan (via een exchange, of peer-to-peer).</li>
-    <li>
-      Verplaats ze meteen naar een portemonnee die <b>u</b> beheert: een hardwareportemonnee
-      (Trezor, ColdCard) of een open-source-app. Laat ze niet op de exchange staan.
-    </li>
-    <li>Maak een back-up van uw herstelzin op papier, nooit als foto of online.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-bitcoin" />
 
-<ToolCard tool="t-monero">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Expert</span>
-    <span class="tool-tag">Standaard privé</span>
-  </Fragment>
-  <Fragment slot="what">
-    De privacycryptocurrency: bedragen, afzender en ontvanger zijn standaard verborgen.
-  </Fragment>
-  <Fragment slot="why">
-    Het is op dit punt het exacte tegenovergestelde van Bitcoin: transacties zijn privé per ontwerp.
-    Het is de beste manier om een dienst te betalen zonder een spoor naar u achter te laten.
-  </Fragment>
-  <Fragment slot="who">
-    Wie maximale financiële privacy wil. Let op: Monero is al van verschillende Europese exchanges
-    gehaald, dus u heeft vaak een gedecentraliseerde swap nodig.
-  </Fragment>
-  <ol slot="install">
-    <li>Installeer een portemonnee (de officiële op getmonero.org, of Cake Wallet op mobiel).</li>
-    <li>
-      Verkrijg XMR via een gedecentraliseerde exchange-dienst (bijvoorbeeld een "swap" vanuit een
-      andere crypto).
-    </li>
-    <li>Maak een back-up van uw herstelzin op papier.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-monero" />
 
-<ToolCard tool="t-wasabi">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Expert</span>
-    <span class="tool-tag">CoinJoin</span>
-    <span class="tool-tag">🌍 · open-source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Een vrije Bitcoin-wallet met ingebouwde <b>CoinJoin</b>: uw munten worden met die van andere
-    gebruikers in één gezamenlijke transactie samengevoegd, wat de zichtbare koppeling op de
-    blockchain tussen herkomst en bestemming verbreekt.
-  </Fragment>
-  <Fragment slot="why">
-    Het Bitcoin-register is openbaar: zonder voorzorg kan elke betaling aan eerdere worden
-    gekoppeld. CoinJoin herstelt een deel van die privacy zonder uw geld aan iemand toe te
-    vertrouwen, en de wallet werkt via Tor.
-  </Fragment>
-  <Fragment slot="who">
-    Ervaren Bitcoin-gebruikers. Sinds de oorspronkelijke coördinator in juni 2024 stopte, moet u een
-    onafhankelijke coördinator kiezen, die kosten rekent.
-  </Fragment>
-  <div class="box warn" slot="extra">
-    <span class="lab">Gemengde fondsen en platforms</span>
-    <p>
-      Gereguleerde platforms kunnen fondsen die via CoinJoin gingen weigeren of blokkeren. Bewaar
-      een bewijs van de legitieme herkomst van uw geld.
-    </p>
-  </div>
-  <ol slot="install">
-    <li>
-      Download Wasabi via <b>wasabiwallet.io</b> en controleer de handtekening.
-    </li>
-    <li>Kies in de instellingen een onafhankelijke coördinator.</li>
-    <li>
-      Zet automatische CoinJoin aan en combineer nooit gemengde en ongemengde munten in dezelfde
-      betaling.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-wasabi" />
 
 <div class="box honest">
   <span class="lab">Privacy op de blockchain: wat de wet zegt</span>

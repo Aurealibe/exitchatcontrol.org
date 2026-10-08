@@ -1,0 +1,34 @@
+---
+tool: 't-bitwarden'
+---
+
+<ToolCard tool="t-bitwarden" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Mejor para empezar</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una bóveda de contraseñas que recuerda, genera y rellena tus contraseñas por ti, en todos tus
+    dispositivos.
+  </Fragment>
+  <Fragment slot="why">
+    Gratuito, auditado, multiplataforma, y cifrado de extremo a extremo. Solo necesitas recordar una
+    contraseña fuerte. Incluso es <b>autoalojable</b> (vía Vaultwarden) así que no dependes de
+    nadie.
+  </Fragment>
+  <Fragment slot="who">
+    Todos. Es la base de toda seguridad: una contraseña fuerte y única por servicio.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Crea una cuenta en bitwarden.com y elige una contraseña maestra <b>larga</b> (una frase).
+      Nunca la olvides: no puede recuperarse.
+    </li>
+    <li>Instala la extensión de navegador y la app móvil.</li>
+    <li>
+      A medida que inicias sesión, deja que Bitwarden guarde y luego reemplace tus contraseñas
+      antiguas con unas generadas.
+    </li>
+  </ol>
+</ToolCard>

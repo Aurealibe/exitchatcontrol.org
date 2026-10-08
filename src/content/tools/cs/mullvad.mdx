@@ -1,0 +1,55 @@
+---
+tool: 't-mullvad'
+---
+
+<ToolCard tool="t-mullvad" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡🔴 Všechny úrovně</span>
+    <span class="tool-tag">Bez účtu · hotovost/Monero</span>
+    <span class="tool-tag">🇸🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    VPN, která maskuje vaši IP adresu a šifruje váš provoz až k jejím serverům, aniž by kdy
+    požadovala jediný osobní údaj.
+  </Fragment>
+  <Fragment slot="why">
+    Je to zlatý standard soukromí. Žádný e-mail, žádné jméno: při registraci dostanete prosté číslo
+    účtu. Auditovaná politika bez logování, jediná poctivá cena (5 € měsíčně, žádné úrovně, žádné
+    falešné sliby) a platba v hotovosti nebo Moneru. To je přesně to, na čem záleží v den, kdy se
+    stát pokusí odříznout přístup k VPN: účet, který nelze spojit s vaší identitou, a platba, kterou
+    banky nemohou zablokovat.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého, od občana obcházejícího kontrolu identity až po vysoce rizikový profil. Je to VPN,
+    kterou doporučit jako první.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Přejděte na <b>mullvad.net</b>. Pokud je web ve vaší zemi zablokovaný, otevřete jej přes Tor
+      Browser nebo jeho adresu <b>.onion</b>. Klikněte na „Generate account number“: nebude
+      vyžadován e-mail ani jméno. Toto číslo si uložte do správce hesel a nikdy ho nesdílejte, je to
+      váš jediný přístupový klíč.
+    </li>
+    <li>
+      Vyberte délku předplatného a způsob platby. Cena je jednotná. Máte tři možnosti: platební
+      karta (nejjednodušší, pokud není blokovaná), hotovost zaslaná poštou nebo kryptoměna.
+    </li>
+    <li>
+      <b>Anonymní platba kryptoměnou:</b> klikněte na „Create a one-time payment address.“ Mullvad
+      zobrazí adresu (Bitcoin nebo Monero) a přesnou částku. Tuto částku odešlete ze své peněženky.
+      Pro maximální anonymitu upřednostněte <b>Monero</b> (soukromé už ve výchozím nastavení);
+      Bitcoin je jednodušší, ale dohledatelný. Informace o nákupu kryptoměn najdete v části 09. Na
+      potvrzení počítejte přibližně 30 minut.
+    </li>
+    <li>
+      Stáhněte si aplikaci z <b>mullvad.net/download</b> (pokud je web filtrován, přes Tor) a
+      nainstalujte ji. Na mobilu použijte App Store, Google Play nebo oficiální APK, pokud byla
+      aplikace z vašeho obchodu stažena.
+    </li>
+    <li>
+      Spusťte aplikaci, zadejte číslo účtu a poté se připojte k serveru <b>mimo vaši zemi</b>,
+      ideálně mimo EU (Švýcarsko, USA…). Zapněte „kill switch“ (který odpojí internet při výpadku
+      VPN) a DNS od Mullvadu.
+    </li>
+  </ol>
+</ToolCard>

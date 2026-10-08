@@ -1,0 +1,33 @@
+---
+tool: 't-bitchat'
+---
+
+<ToolCard tool="t-bitchat" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzato</span>
+    <span class="tool-tag">Mesh Bluetooth</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    L'app di messaggistica mesh di Jack Dorsey: i telefoni vicini inoltrano i messaggi di salto in
+    salto, senza internet, server né account.
+  </Fragment>
+  <Fragment slot="why">
+    Crittografia end-to-end (AES-256-GCM) e una "modalità panico" che cancella tutto con tre tocchi
+    sul logo.
+  </Fragment>
+  <Fragment slot="who">Manifestazioni e blackout, insieme a Briar. Da usare con cautela.</Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Attenzione: non verificato</span>
+    <p>
+      Il suo stesso repository avverte che "non ha ricevuto una revisione di sicurezza esterna".
+      Ottimo per la resilienza, ma non scommetterci ancora delle vite.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Installalo dall'App Store (iOS) o dall'APK/GitHub (Android).</li>
+    <li>Apri l'app e scegli un nickname. Nessun account da creare.</li>
+    <li>I dispositivi vicini si rilevano automaticamente via Bluetooth.</li>
+    <li>In caso di pericolo, tocca tre volte il logo per cancellare tutto (modalità panico).</li>
+  </ol>
+</ToolCard>

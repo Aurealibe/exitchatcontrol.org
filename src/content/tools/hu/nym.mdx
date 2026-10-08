@@ -1,0 +1,46 @@
+---
+tool: 't-nym'
+---
+
+<ToolCard tool="t-nym" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Közép. / Haladó</span>
+    <span class="tool-tag">Mixnet</span>
+    <span class="tool-tag">🇨🇭 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Kétüzemmódú VPN: egy gyors mód (2 szerver, WireGuard) és egy <b>névtelen</b> mód, amely a
+    forgalmat egy 5 csomópontból álló <b>mixneten</b> vezeti át, álcázó forgalommal keverve.
+  </Fragment>
+  <Fragment slot="why">
+    A mixnet elmossa a metaadatokat (ki kivel és mikor kommunikál), még a teljes hálózatot figyelő
+    megfigyelővel szemben is, amire egy hagyományos VPN nem képes. Decentralizált szerverhálózat,
+    nyílt forráskódú (GPL) alkalmazások, a Cure53 auditálta. A fizetés anonim „zk-nym” kreditekkel
+    elválasztható a használattól.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik a forgalomelemzés ellen többet akarnak egy hagyományos VPN-nél, és elfogadják a
+    jóval lassabb névtelen módot, amely streamingre és letöltésre nem alkalmas. Fizetős előfizetés,
+    ingyenes próbaidővel.
+  </Fragment>
+  <div class="box" slot="extra">
+    <span class="lab">Jó tudni</span>
+    <p>
+      A Nym-hálózat tokennel (NYM) fizeti a csomópontok üzemeltetőit. A VPN használatához nem kell
+      ilyennel rendelkezned.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Telepítsd a NymVPN-t a <b>nym.com</b> oldalról (számítógépre és mobilra).
+    </li>
+    <li>
+      Üzenetküldéshez és érzékeny böngészéshez a <b>névtelen</b>, minden máshoz a <b>gyors</b> módot
+      használd.
+    </li>
+    <li>
+      Hogy a személyazonosságod ne kapcsolódjon a használathoz, fizess kriptovalutával vagy zk-nym
+      kreditekkel.
+    </li>
+  </ol>
+</ToolCard>

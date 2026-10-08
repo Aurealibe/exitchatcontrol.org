@@ -1,0 +1,31 @@
+---
+tool: 't-keepassxc'
+---
+
+<ToolCard tool="t-keepassxc" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">100% local</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una bóveda <b>local</b>: un archivo cifrado que solo tú posees, sin nube y sin cuenta.
+  </Fragment>
+  <Fragment slot="why">
+    Nada sale de tu dispositivo, a menos que elijas sincronizar el archivo tú mismo (por ejemplo vía
+    Cryptomator). Es la elección del purista, sin intermediario alguno.
+  </Fragment>
+  <Fragment slot="who">
+    Perfiles avanzados que quieren control total y cero dependencia online.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Instala KeePassXC (escritorio) y una app móvil compatible (KeePassDX en Android, Strongbox en
+      iOS).
+    </li>
+    <li>Crea un archivo de base de datos protegido por una contraseña maestra.</li>
+    <li>
+      Para tenerlo en todos los dispositivos, sincroniza ese archivo a través de una nube cifrada.
+    </li>
+  </ol>
+</ToolCard>

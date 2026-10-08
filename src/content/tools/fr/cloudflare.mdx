@@ -1,0 +1,27 @@
+---
+tool: 't-cloudflare'
+---
+
+<ToolCard tool="t-cloudflare" variant={props.variant}>
+  <Fragment slot="name">Cloudflare 1.1.1.1 (à nuancer)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Rapide mais centralisé</span>
+    <span class="tool-tag">🇺🇸</span>
+  </Fragment>
+  <Fragment slot="what">
+    Le DNS chiffré 1.1.1.1 et l'application WARP de Cloudflare : rapides, gratuits, et un vrai
+    progrès face au résolveur de votre FAI.
+  </Fragment>
+  <Fragment slot="why">
+    C'est utile, avec un engagement de non-journalisation audité. Mais soyez lucide : Cloudflare se
+    trouve déjà devant une immense partie du web (comme intermédiaire technique, il peut voir le
+    trafic en clair vers ces sites). Y router aussi votre DNS revient à{' '}
+    <b>concentrer encore plus de vos traces</b> chez une seule entreprise américaine soumise au
+    droit américain.
+  </Fragment>
+  <Fragment slot="who">
+    Bon pour un usage courant et le blocage des maliciels (1.1.1.1 for Families). À éviter ou à
+    diversifier pour un usage sensible : préférez alors Quad9 ou Mullvad DNS.
+  </Fragment>
+</ToolCard>

@@ -13,105 +13,13 @@ title: 'Self-hosting'
 
 The ultimate level of sovereignty: host your services yourself. Your data lives on your hardware, under the jurisdiction you choose.
 
-<ToolCard tool="t-yunohost">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Advanced</span>
-    <span class="tool-tag">Turnkey server</span>
-    <span class="tool-tag">🌍 · open-source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Systems that turn an old PC or a Raspberry Pi into a personal server, with an app catalogue you
-    install in a few clicks.
-  </Fragment>
-  <Fragment slot="why">
-    Self-hosting sounds scary, but these tools do the heavy lifting. <b>YunoHost</b> even runs your
-    own email and single sign-on. <b>Umbrel</b> offers a 300+ app store, popular with privacy and
-    Bitcoin folks. <b>Start9</b> encrypts backups and gives every service a Tor address by default.
-  </Fragment>
-  <Fragment slot="who">
-    Advanced profiles ready to spend an afternoon building their own cloud. It's the most radical
-    structural counter to Chat Control.
-  </Fragment>
-  <ol slot="install">
-    <li>
-      Get an old computer, a Raspberry Pi, or rent a small server (VPS) in a protective country.
-    </li>
-    <li>Install YunoHost, Umbrel or Start9 following their official guide.</li>
-    <li>From the catalogue, install Nextcloud, a Matrix server, a photo gallery, etc.</li>
-    <li>
-      Reach it privately with Tailscale (VPN section) rather than exposing the server to the public.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-yunohost" />
 
-<ToolCard tool="t-nextcloud">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Advanced</span>
-    <span class="tool-tag">Replaces all of Google</span>
-    <span class="tool-tag">🇩🇪 · open-source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Your own cloud: files, calendar, contacts, photos, notes and collaborative documents, on your
-    server.
-  </Fragment>
-  <Fragment slot="why">
-    It's the full replacement for Google Drive, Calendar and Contacts, but at home. You choose the
-    jurisdiction and no one else controls your files. Note: it's "your server" privacy, not
-    end-to-end encryption by default; you must keep it updated.
-  </Fragment>
-  <Fragment slot="who">
-    Self-hosters. The easiest path is to install it via YunoHost or Umbrel.
-  </Fragment>
-</ToolCard>
+<Tool id="t-nextcloud" />
 
-<ToolCard tool="t-synapse">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Advanced</span>
-    <span class="tool-tag">Your chat server</span>
-    <span class="tool-tag">🌍 · open-source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Your own Matrix chat server, powering Element and encrypted calls.
-  </Fragment>
-  <Fragment slot="why">
-    By hosting the server, you also control the <b>metadata</b> (who talks to whom, when), Matrix's
-    weak point in federation. It's community chat that you alone own.
-  </Fragment>
-  <Fragment slot="who">
-    Communities, collectives, newsrooms that want their own independent federated space.
-  </Fragment>
-</ToolCard>
+<Tool id="t-synapse" />
 
-<ToolCard tool="t-website">
-  <Fragment slot="name">Your own website</Fragment>
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Ban-proof your voice</span>
-  </Fragment>
-  <Fragment slot="what">
-    A site of your own, on your own domain name, where your content depends on no platform.
-  </Fragment>
-  <Fragment slot="why">
-    The day a network deletes or suspends your account, all your work vanishes. A personal site is
-    your anchor: your posts stay there, archived and up to date, whatever happens. It's exactly what
-    cautious information accounts do. A static site (built with Hugo, Astro or Jekyll) is enough and
-    publishes almost for free; for a dynamic blog, a self-hosted WordPress or Ghost does the job.
-  </Fragment>
-  <Fragment slot="who">
-    Information accounts, creators, activists, anyone who publishes and fears platform censorship.
-  </Fragment>
-  <ol slot="install">
-    <li>Buy a domain name (ideally from a privacy-respecting registrar).</li>
-    <li>
-      Choose a static-site generator (Astro, Hugo) and host the output, or install WordPress/Ghost
-      on your server.
-    </li>
-    <li>
-      Always point to it from your social accounts: your audience finds you even if one account
-      falls.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-website" />
 
 <div class="box">
   <span class="lab">The jurisdiction point</span>

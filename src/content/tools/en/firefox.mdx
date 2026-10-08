@@ -1,0 +1,31 @@
+---
+tool: 't-firefox'
+---
+
+<ToolCard tool="t-firefox" variant={props.variant}>
+  <Fragment slot="name">Firefox (hardened)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Replaces Chrome</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">The reference free browser for privacy-respecting daily use.</Fragment>
+  <Fragment slot="why">
+    Unlike Chrome (a Google advertising tracker), Firefox is built by a foundation with no interest
+    in profiling you. With a few tweaks (the <em>arkenfox</em> guide) and the uBlock Origin
+    extension, it becomes very solid.
+  </Fragment>
+  <Fragment slot="who">Everyone, as a main daily browser.</Fragment>
+  <ol slot="install">
+    <li>
+      Install Firefox from <b>mozilla.org/firefox</b>.
+    </li>
+    <li>
+      Add the <b>uBlock Origin</b> extension (ad and tracker blocking).
+    </li>
+    <li>
+      In privacy settings, choose "Strict," disable telemetry, and clear cookies on close. To go
+      further, apply the arkenfox guide.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,41 @@
+---
+tool: 't-meshtastic'
+---
+
+<ToolCard tool="t-meshtastic" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Rádio bez sítě</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Textové zprávy přenášené <b>rádiem LoRa</b> ze zařízení na zařízení, bez mobilní sítě a
+    internetu. Telefon se k zařízení připojuje přes Bluetooth.
+  </Fragment>
+  <Fragment slot="why">
+    Žádný operátor, žádný server: není co vypnout ani k čemu nutit. Dosah několik kilometrů a síť
+    typu mesh, která zprávy přeposílá.
+  </Fragment>
+  <Fragment slot="who">
+    Turistika, místa bez signálu, výpadky a krize. Potřebujete hardware (jedno rádiové zařízení na
+    osobu) a musíte se smířit s krátkými a pomalými zprávami.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Omezení, která je třeba znát</span>
+    <p>
+      Výchozí kanál si může přečíst kdokoli. Přímé zprávy jsou šifrované (firmware 2.5 a novější),
+      rádiová metadata však zůstávají viditelná. Meshtastic nekomunikuje s konkurenčním projektem
+      MeshCore.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Kupte podporované zařízení (seznam na <b>meshtastic.org</b>) a nainstalujte aplikaci.
+    </li>
+    <li>Zvolte rádiový region své země: povolené frekvence a doba vysílání se liší.</li>
+    <li>
+      Vytvořte soukromý kanál s náhodným klíčem: výchozí veřejný kanál používá klíč, který zná
+      každý.
+    </li>
+  </ol>
+</ToolCard>

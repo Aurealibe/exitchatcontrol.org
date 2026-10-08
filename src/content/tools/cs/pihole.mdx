@@ -1,0 +1,30 @@
+---
+tool: 't-pihole'
+---
+
+<ToolCard tool="t-pihole" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Blokování v celé síti</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Blokovač reklam a trackerů, který chrání <b>celou vaši síť najednou</b>, nainstalovaný na malém
+    počítači, jako je Raspberry Pi.
+  </Fragment>
+  <Fragment slot="why">
+    Zatímco uBlock Origin chrání jeden prohlížeč, Pi-hole filtruje <b>každé zařízení</b> v
+    domácnosti, včetně těch, kde nelze nainstalovat rozšíření: telefony, chytré televize, připojená
+    zařízení. Reklamy a trackery jsou blokovány na úrovni DNS ještě předtím, než se vůbec načtou.{' '}
+    <b>AdGuard Home</b> je alternativa s modernějším rozhraním.
+  </Fragment>
+  <Fragment slot="who">
+    Pro domácnosti, které chtějí najednou vyčistit všechna svá zařízení a mají (nebo chtějí)
+    Raspberry Pi či malý server.
+  </Fragment>
+  <ol slot="install">
+    <li>Na Raspberry Pi (nebo v kontejneru) spusťte oficiální instalátor Pi-hole.</li>
+    <li>V nastavení routeru nastavte adresu Pi-hole jako DNS server.</li>
+    <li>Odteď se každé zařízení ve vaší síti filtruje automaticky.</li>
+  </ol>
+</ToolCard>

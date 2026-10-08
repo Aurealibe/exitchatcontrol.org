@@ -1,0 +1,35 @@
+---
+tool: 't-bitchat'
+---
+
+<ToolCard tool="t-bitchat" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Mesh Bluetooth</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    La messagerie mesh de Jack Dorsey : les téléphones proches se relaient les messages de proche en
+    proche, sans internet ni serveur ni compte.
+  </Fragment>
+  <Fragment slot="why">
+    Chiffrement de bout en bout (AES-256-GCM) et un « mode panique » qui efface tout en trois
+    tapotements sur le logo.
+  </Fragment>
+  <Fragment slot="who">
+    Manifestations et blackout, en complément de Briar. À utiliser avec prudence.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Prudence : non audité</span>
+    <p>
+      Son propre dépôt avertit qu'il « n'a pas reçu de revue de sécurité externe ». Génial pour la
+      résilience, mais n'en faites pas dépendre des vies pour l'instant.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Installez depuis l'App Store (iOS) ou l'APK/GitHub (Android).</li>
+    <li>Ouvrez l'application et choisissez un pseudo. Aucun compte à créer.</li>
+    <li>Les appareils proches se découvrent automatiquement en Bluetooth.</li>
+    <li>En cas de danger, triple-tapez le logo pour tout effacer (mode panique).</li>
+  </ol>
+</ToolCard>

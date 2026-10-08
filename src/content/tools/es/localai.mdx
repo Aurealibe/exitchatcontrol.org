@@ -1,0 +1,37 @@
+---
+tool: 't-localai'
+---
+
+<ToolCard tool="t-localai" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Reemplaza ChatGPT</span>
+    <span class="tool-tag">🌍 · 100% local</span>
+  </Fragment>
+  <Fragment slot="what">
+    Software para ejecutar un modelo de IA directamente en tu propio ordenador.
+  </Fragment>
+  <Fragment slot="why">
+    Tus preguntas nunca salen del dispositivo: sin servidor, sin cuenta, sin telemetría, y funciona
+    offline. La calidad depende de tu hardware, pero nada se filtra. <b>Ollama</b> y{' '}
+    <b>LM Studio</b> son los más fáciles; <b>Jan</b> y <b>GPT4All</b> apuntan a máxima privacidad.
+  </Fragment>
+  <Fragment slot="who">
+    Cualquiera que use IA para temas aunque sea ligeramente personales y no quiera entregarlos a un
+    servidor estadounidense.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Para empezar suavemente, instala <b>LM Studio</b> o <b>Jan</b> (una interfaz gráfica, como una
+      app normal).
+    </li>
+    <li>
+      Descarga un modelo ofrecido en la app (por ejemplo Llama o Mistral), adaptado a la potencia de
+      tu máquina.
+    </li>
+    <li>
+      Chatea: todo ocurre localmente. Ollama es la versión de línea de comandos para los más
+      técnicos.
+    </li>
+  </ol>
+</ToolCard>

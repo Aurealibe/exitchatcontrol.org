@@ -1,0 +1,32 @@
+---
+tool: 't-aegis'
+---
+
+<ToolCard tool="t-aegis" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Kódy TOTP</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Aplikace, které generují šestimístné kódy měnící se každých 30 sekund a nahrazují Google
+    Authenticator.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Aegis</b> (Android) uchovává vaše kódy v místním šifrovaném trezoru bez cloudu.{' '}
+    <b>Ente Auth</b> přidává koncově šifrovanou synchronizaci mezi zařízeními a prošel auditem. Je
+    mnohem bezpečnější než SMS a zdarma.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého: jde o výchozí úroveň 2FA, kterou byste měli přijmout, před hardwarovými klíči.
+  </Fragment>
+  <ol slot="install">
+    <li>Nainstalujte Aegis (F-Droid) nebo Ente Auth (všechny platformy).</li>
+    <li>
+      U každého účtu zapněte 2FA pomocí „aplikace pro ověřování“ a naskenujte zobrazený QR kód.
+    </li>
+    <li>
+      Zapište si <b>záložní kódy</b> na papír a vytvořte šifrovanou zálohu svého trezoru.
+    </li>
+  </ol>
+</ToolCard>

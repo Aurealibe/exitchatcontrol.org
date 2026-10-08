@@ -1,0 +1,30 @@
+---
+tool: 't-yubikey'
+---
+
+<ToolCard tool="t-yubikey" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Středně pokročilý / pokročilý</span>
+    <span class="tool-tag">Hardwarový klíč FIDO2</span>
+  </Fragment>
+  <Fragment slot="what">
+    Malý fyzický klíč (USB, často s NFC), který jediným dotykem potvrdí vaši identitu.
+  </Fragment>
+  <Fragment slot="why">
+    Jde o nejsilnější 2FA: odolává phishingu, protože klíč před odpovědí ověří skutečnou adresu
+    webu. <b>Nitrokey</b> je alternativou s plně otevřeným hardwarem a firmwarem. Falešný web vás
+    nemůže oklamat.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo chtějí maximální zabezpečení klíčových účtů. Kupte <b>dva</b> (jeden hlavní, jeden
+    záložní).
+  </Fragment>
+  <ol slot="install">
+    <li>Pořiďte si dva klíče z yubico.com nebo nitrokey.com.</li>
+    <li>
+      V nastavení zabezpečení každého účtu (e-mail, správce hesel…) přidejte „bezpečnostní klíč“
+      nebo „passkey“. Zaregistrujte oba klíče.
+    </li>
+    <li>Záložní klíč uchovávejte na bezpečném, odděleném místě.</li>
+  </ol>
+</ToolCard>

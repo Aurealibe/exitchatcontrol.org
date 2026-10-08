@@ -1,0 +1,31 @@
+---
+tool: 't-search'
+---
+
+<ToolCard tool="t-search" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡 Zoekmachines</span>
+    <span class="tool-tag">Vervangt Google Search</span>
+  </Fragment>
+  <Fragment slot="what">
+    Zoekmachines die elke zoekopdracht niet profileren, in tegenstelling tot Google.
+  </Fragment>
+  <Fragment slot="why">
+    DuckDuckGo en Brave Search bewaren geen geschiedenis die aan uw identiteit is gekoppeld.
+    Startpage levert Google-resultaten zonder de tracking. SearXNG gaat verder: een{' '}
+    <b>zelf-hostbare</b> metazoekmachine, soevereiniteit tot in uw zoekbalk.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen. SearXNG is bedoeld voor wie zijn eigen engine wil hosten.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Wijzig in uw browserinstellingen de standaardzoekmachine in DuckDuckGo, Brave Search of
+      Startpage.
+    </li>
+    <li>
+      Voor SearXNG: gebruik een publieke instance (gids op searx.space) of host uw eigen (zie sectie
+      10).
+    </li>
+  </ol>
+</ToolCard>

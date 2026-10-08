@@ -1,0 +1,34 @@
+---
+tool: 't-pocketpal'
+---
+
+<ToolCard tool="t-pocketpal" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Nahrazuje ChatGPT na mobilu</span>
+    <span class="tool-tag">📱 · 100% lokální</span>
+  </Fragment>
+  <Fragment slot="what">
+    Aplikace, která spouští modely AI přímo ve vašem telefonu, zcela offline.
+  </Fragment>
+  <Fragment slot="why">
+    Vaše prompty nikdy neopustí telefon: žádný účet, žádný cloud, žádná telemetrie a funguje i v
+    režimu letadlo. Je open source (MIT), stahuje modely <b>GGUF</b> (Gemma, Qwen, Phi, Llama) z
+    Hugging Face a spouští je na CPU, GPU nebo NPU vašeho zařízení. Mobilní protějšek Ollama a LM
+    Studio.
+  </Fragment>
+  <Fragment slot="who">
+    Každý, kdo sahá po ChatGPT v telefonu s osobními otázkami a nechce je předávat americkému
+    serveru.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte <b>PocketPal</b> z App Store nebo Google Play (případně jej sestavte ze
+      zdrojového kódu).
+    </li>
+    <li>
+      Otevřete <b>Models</b>, vyberte model vhodný pro váš telefon a stáhněte jej.
+    </li>
+    <li>Načtěte ho a chatujte: vše běží offline přímo v zařízení.</li>
+  </ol>
+</ToolCard>

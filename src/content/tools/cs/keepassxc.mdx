@@ -1,0 +1,31 @@
+---
+tool: 't-keepassxc'
+---
+
+<ToolCard tool="t-keepassxc" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">100% lokální</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    <b>Lokální</b> trezor: šifrovaný soubor, který máte pouze vy, bez cloudu a bez účtu.
+  </Fragment>
+  <Fragment slot="why">
+    Nic neopustí vaše zařízení, pokud se nerozhodnete soubor synchronizovat sami (například přes
+    Cryptomator). Je to volba puristů, zcela bez prostředníka.
+  </Fragment>
+  <Fragment slot="who">
+    Pro pokročilé uživatele, kteří chtějí plnou kontrolu a nulovou závislost na internetu.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte KeePassXC (na počítač) a kompatibilní mobilní aplikaci (KeePassDX na Androidu,
+      Strongbox na iOS).
+    </li>
+    <li>Vytvořte soubor databáze chráněný hlavním heslem.</li>
+    <li>
+      Chcete-li jej mít na všech zařízeních, synchronizujte tento soubor přes šifrovaný cloud.
+    </li>
+  </ol>
+</ToolCard>

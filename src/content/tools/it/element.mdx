@@ -1,0 +1,30 @@
+---
+tool: 't-element'
+---
+
+<ToolCard tool="t-element" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Sostituisce Discord / Slack</span>
+    <span class="tool-tag">🌍 · federato · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    Chat di comunità, nello spirito di Discord o Slack, ma federata e cifrabile end-to-end. Element
+    è l'app, Matrix la rete.
+  </Fragment>
+  <Fragment slot="why">
+    Puoi ospitare il tuo server (Synapse) e controllare i tuoi dati. Perfetto per un collettivo, una
+    redazione o un'associazione che vuole un proprio spazio indipendente.
+  </Fragment>
+  <Fragment slot="who">Comunità e gruppi. Vedi l'avvertenza sui metadati più sotto.</Fragment>
+  <ol slot="install">
+    <li>
+      Installa Element (element.io) e crea un account su un server pubblico, oppure sul tuo (sezione
+      10).
+    </li>
+    <li>
+      Unisciti a delle stanze o creane, e attiva la crittografia end-to-end per le conversazioni
+      private.
+    </li>
+  </ol>
+</ToolCard>

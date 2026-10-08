@@ -1,0 +1,32 @@
+---
+tool: 't-cryptomator'
+---
+
+<ToolCard tool="t-cryptomator" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Cifra prima del caricamento</span>
+    <span class="tool-tag">🇩🇪 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una cassaforte che cifra i tuoi file <b>prima</b> di caricarli su qualsiasi cloud, anche Google
+    Drive o Dropbox.
+  </Fragment>
+  <Fragment slot="why">
+    Il trucco perfetto se devi tenere un cloud esistente: conservi il servizio comodo, ma il
+    fornitore vede solo dati cifrati incomprensibili. Solo tu hai la chiave.
+  </Fragment>
+  <Fragment slot="who">
+    Chi non può ancora lasciare un cloud mainstream, ma vuole proteggere i propri file da subito.
+  </Fragment>
+  <ol slot="install">
+    <li>Installa Cryptomator (desktop e mobile) da cryptomator.org.</li>
+    <li>
+      Crea una "cassaforte" nella cartella sincronizzata del tuo cloud e scegli una password
+      robusta.
+    </li>
+    <li>
+      Metti i tuoi file nella cassaforte: vengono cifrati e poi sincronizzati automaticamente.
+    </li>
+  </ol>
+</ToolCard>

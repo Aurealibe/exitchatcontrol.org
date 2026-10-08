@@ -1,0 +1,57 @@
+---
+tool: 't-mullvad'
+---
+
+<ToolCard tool="t-mullvad" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡🔴 Minden szint</span>
+    <span class="tool-tag">Nincs fiók · készpénz/Monero</span>
+    <span class="tool-tag">🇸🇪 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy VPN, amely elmaszkolja az IP-címedet és titkosítja a forgalmadat egészen a szervereiig,
+    anélkül, hogy valaha is kérne tőled egyetlen személyes adatot is.
+  </Fragment>
+  <Fragment slot="why">
+    Ez az adatvédelem aranystandardja. Nincs e-mail cím, nincs név: a regisztrációnál kapsz egy sima
+    fiókszámot. Auditált naplózásmentes szabályzat, egyetlen, tisztességes ár (5 euró/hó, nincsenek
+    szintek, nincsenek hamis ígéretek), és fizetés készpénzzel vagy Moneróval. Pontosan ez számít
+    azon a napon, amikor egy állam megpróbálja elvágni a VPN-hozzáférést: egy fiók, amely nem
+    köthető a személyazonosságodhoz, és egy fizetés, amelyet a bankok nem tudnak blokkolni.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenki számára, a polgártól, aki megkerüli az igazolvány-ellenőrzést, a magas kockázatú
+    profilokig. Ezt a VPN-t érdemes elsőként ajánlani.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Menj a <b>mullvad.net</b> oldalra. Ha az oldal blokkolva van az országodban, nyisd meg a Tor
+      Böngészővel vagy az <b>.onion</b> címén. Kattints a „Generate account number” (Fiókszám
+      generálása) gombra: se e-mail, se név nem kell. Mentsd el ezt a számot a jelszókezelődbe, és
+      soha ne oszd meg senkivel, ez az egyetlen hozzáférési kulcsod.
+    </li>
+    <li>
+      Válaszd ki az időtartamot és a fizetési módot. Az ár fix. Három útvonal: bankkártya (a
+      legegyszerűbb, ha nincs blokkolva), postán küldött készpénz, vagy kriptovaluta.
+    </li>
+    <li>
+      <b>Anonim kriptós fizetés:</b> kattints a „Create a one-time payment address” (Egyszeri
+      fizetési cím létrehozása) gombra. A Mullvad mutat egy címet (Bitcoin vagy Monero) és egy
+      pontos összeget. Küldd el ezt az összeget a tárcádból. A maximális anonimitáshoz részesítsd
+      előnyben a <b>Monerót</b> (alapértelmezetten privát); a Bitcoin egyszerűbb, de nyomon
+      követhető. A kriptovaluta vásárlásához lásd a 09. szakaszt. Hagyj kb. 30 percet a
+      megerősítésre.
+    </li>
+    <li>
+      Töltsd le az alkalmazást a <b>mullvad.net/download</b> oldalról (a Toron keresztül, ha az
+      oldal szűrve van) és telepítsd fel. Mobilon használd az App Store-t, a Google Play-t, vagy a
+      hivatalos APK-t, ha az alkalmazást levették a helyi áruházból.
+    </li>
+    <li>
+      Indítsd el az alkalmazást, írd be a fiókszámodat, majd csatlakozz egy, az{' '}
+      <b>országodon kívüli</b> szerverhez, ideálisan az EU-n kívülre (Svájc, USA...). Engedélyezd a
+      „kill switch” funkciót (ami megszakítja az internetet, ha a VPN megszakad) és a Mullvad
+      DNS-ét.
+    </li>
+  </ol>
+</ToolCard>

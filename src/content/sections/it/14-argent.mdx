@@ -13,99 +13,11 @@ title: 'Sovranità finanziaria'
 
 Anche il denaro è sorvegliato e censurabile. Conti di attivisti sono stati congelati, donazioni bloccate, e ogni pagamento con carta viene tracciato. La privacy finanziaria fa parte della sovranità.
 
-<ToolCard tool="t-bitcoin">
-  <Fragment slot="name">Bitcoin (autocustodia)</Fragment>
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Resistente alla censura</span>
-  </Fragment>
-  <Fragment slot="what">
-    Una moneta digitale che detieni tu stesso, senza passare da una banca.
-  </Fragment>
-  <Fragment slot="why">
-    In <b>autocustodia</b> (le tue chiavi in un wallet che controlli solo tu), nessuno può congelare
-    o bloccare i tuoi fondi. La sua privacy non è perfetta (il registro è pubblico), ma sfugge alla
-    censura bancaria, utile il giorno in cui un pagamento viene rifiutato.
-  </Fragment>
-  <Fragment slot="who">
-    Per proteggersi da congelamenti dei conti o chiusure bancarie, e per pagare in modo anonimo un
-    servizio come una VPN.
-  </Fragment>
-  <ol slot="install">
-    <li>Procurati dei bitcoin (un exchange, oppure peer-to-peer).</li>
-    <li>
-      Trasferiscili subito su un wallet che controlli <b>tu</b>: un hardware wallet (Trezor,
-      ColdCard) o un'app open source. Non lasciarli sull'exchange.
-    </li>
-    <li>Conserva la tua frase di recupero su carta, mai in foto o online.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-bitcoin" />
 
-<ToolCard tool="t-monero">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Avanzato</span>
-    <span class="tool-tag">Privato per impostazione predefinita</span>
-  </Fragment>
-  <Fragment slot="what">
-    La criptovaluta della privacy: importi, mittente e destinatario sono nascosti per impostazione
-    predefinita.
-  </Fragment>
-  <Fragment slot="why">
-    Qui è l'esatto opposto di Bitcoin: le transazioni sono private per progettazione. È il modo
-    migliore per pagare un servizio senza lasciare una traccia che porti a te.
-  </Fragment>
-  <Fragment slot="who">
-    Chi vuole la massima privacy finanziaria. Nota: Monero è già stato rimosso da diversi exchange
-    europei, quindi spesso serve uno swap decentralizzato.
-  </Fragment>
-  <ol slot="install">
-    <li>Installa un wallet (quello ufficiale su getmonero.org, oppure Cake Wallet su mobile).</li>
-    <li>
-      Procurati XMR tramite un servizio di scambio decentralizzato (per esempio uno "swap" da
-      un'altra criptovaluta).
-    </li>
-    <li>Conserva la tua frase di recupero su carta.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-monero" />
 
-<ToolCard tool="t-wasabi">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Avanzato</span>
-    <span class="tool-tag">CoinJoin</span>
-    <span class="tool-tag">🌍 · open source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Un portafoglio Bitcoin libero con <b>CoinJoin</b> integrato: le tue monete vengono riunite con
-    quelle di altri utenti in una transazione comune, che spezza il legame visibile sulla blockchain
-    tra origine e destinazione.
-  </Fragment>
-  <Fragment slot="why">
-    Il registro di Bitcoin è pubblico: senza precauzioni, ogni pagamento può essere collegato ai
-    precedenti. Il CoinJoin ripristina parte di questa riservatezza senza affidare i tuoi fondi a
-    nessuno, e il portafoglio passa per Tor.
-  </Fragment>
-  <Fragment slot="who">
-    Utenti Bitcoin esperti. Dalla chiusura del coordinatore originale nel giugno 2024, occorre
-    scegliere un coordinatore indipendente, che applica commissioni.
-  </Fragment>
-  <div class="box warn" slot="extra">
-    <span class="lab">Fondi mescolati e piattaforme</span>
-    <p>
-      Le piattaforme regolamentate possono rifiutare o bloccare i fondi passati per un CoinJoin.
-      Conserva una prova dell'origine legittima dei tuoi fondi.
-    </p>
-  </div>
-  <ol slot="install">
-    <li>
-      Scarica Wasabi da <b>wasabiwallet.io</b> e verifica la firma.
-    </li>
-    <li>Nelle impostazioni, scegli un coordinatore indipendente.</li>
-    <li>
-      Attiva il CoinJoin automatico e non mescolare mai monete mescolate e non mescolate nello
-      stesso pagamento.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-wasabi" />
 
 <div class="box honest">
   <span class="lab">Privacy sulla blockchain: cosa dice la legge</span>

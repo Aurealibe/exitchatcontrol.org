@@ -1,0 +1,34 @@
+---
+tool: 't-cryptomator'
+---
+
+<ToolCard tool="t-cryptomator" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Középhaladó</span>
+    <span class="tool-tag">Titkosítás feltöltés előtt</span>
+    <span class="tool-tag">🇩🇪 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy trezor, amely titkosítja a fájljaidat, <b>mielőtt</b> feltöltenéd őket bármilyen felhőbe,
+    akár a Google Drive-ra vagy a Dropboxra is.
+  </Fragment>
+  <Fragment slot="why">
+    A tökéletes trükk, ha mindenképpen meg kell tartanod egy meglévő felhőszolgáltatást: megtartod a
+    kényelmes szolgáltatást, de a szolgáltató csak titkosított halandzsát lát. A kulcs kizárólag
+    nálad van.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik még nem tudnak elhagyni egy mainstream felhőszolgáltatást, de már most szeretnék
+    megvédeni a fájljaikat.
+  </Fragment>
+  <ol slot="install">
+    <li>Telepítsd a Cryptomatort (asztali és mobil) a cryptomator.org oldalról.</li>
+    <li>
+      Hozz létre egy „trezort” a felhőd szinkronizált mappájában, és válassz egy erős jelszót.
+    </li>
+    <li>
+      Helyezd a fájljaidat a trezorba: azok automatikusan titkosítva lesznek, majd
+      szinkronizálódnak.
+    </li>
+  </ol>
+</ToolCard>

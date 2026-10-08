@@ -1,0 +1,35 @@
+---
+tool: 't-aegis'
+---
+
+<ToolCard tool="t-aegis" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">TOTP kódok</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Alkalmazások, amelyek a 30 másodpercenként változó hatjegyű kódokat generálják, a Google
+    Authenticator kiváltására.
+  </Fragment>
+  <Fragment slot="why">
+    Az <b>Aegis</b> (Android) egy helyi titkosított trezorban tartja a kódjaidat, felhő nélkül. Az{' '}
+    <b>Ente Auth</b> eszközök közötti, végponttól végpontig titkosított szinkronizációt is kínál, és
+    auditáláson is átesett. Sokkal biztonságosabb az SMS-nél, és ingyenes.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek: ez az alapértelmezett 2FA szint, amelyet be kell vezetni, még a hardveres kulcsok
+    előtt.
+  </Fragment>
+  <ol slot="install">
+    <li>Telepítsd az Aegist (F-Droid) vagy az Ente Auth-ot (minden platformra).</li>
+    <li>
+      Minden fiókban engedélyezd a „hitelesítő alkalmazás” alapú 2FA-t, és szkenneld be a megjelenő
+      QR-kódot.
+    </li>
+    <li>
+      Írd fel papírra a <b>biztonsági másolati kódokat</b>, és készíts egy titkosított biztonsági
+      másolatot a trezorodról.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,32 @@
+---
+tool: 't-session'
+---
+
+<ToolCard tool="t-session" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Senza telefono</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una crittografia al livello di Signal, ma senza numero di telefono e con instradamento onion.
+  </Fragment>
+  <Fragment slot="why">
+    La tua identità è un "Session ID" casuale. Il traffico passa per una rete decentralizzata
+    (Lokinet) che riduce drasticamente i metadati.
+  </Fragment>
+  <Fragment slot="who">
+    Quando un numero di telefono è un rischio. Ecosistema più piccolo, da riservare alle
+    conversazioni che contano.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installalo da <b>getsession.org</b> (tutte le piattaforme).
+    </li>
+    <li>
+      "Crea account" genera il tuo Session ID e una <b>frase di recupero</b>.
+    </li>
+    <li>Scrivi la frase di recupero su carta: è l'unica chiave del tuo account.</li>
+    <li>Condividi il tuo Session ID (o QR) con i tuoi contatti.</li>
+  </ol>
+</ToolCard>

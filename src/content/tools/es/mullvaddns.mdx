@@ -1,0 +1,32 @@
+---
+tool: 't-mullvaddns'
+---
+
+<ToolCard tool="t-mullvaddns" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Filtrado de red</span>
+  </Fragment>
+  <Fragment slot="what">
+    Dos resolutores cifrados que también bloquean anuncios y rastreadores para todo el dispositivo.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Mullvad DNS</b> (Suecia, sin registros) es gratuito y ofrece listas de bloqueo.{' '}
+    <b>NextDNS</b> es altamente personalizable, con un panel y perfiles por dispositivo, pero está
+    basado en EE.UU. y registra por defecto (desactívalo en ajustes).
+  </Fragment>
+  <Fragment slot="who">
+    Aquellos que quieren bloqueo de anuncios a nivel de sistema sin instalar una extensión por
+    navegador.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Mullvad DNS: usa la dirección mostrada en mullvad.net/help/dns como tu DNS privado (mismo
+      método que Quad9).
+    </li>
+    <li>
+      NextDNS: crea un perfil en nextdns.io, <b>desactiva el registro</b>, luego aplica la
+      configuración a tus dispositivos.
+    </li>
+  </ol>
+</ToolCard>

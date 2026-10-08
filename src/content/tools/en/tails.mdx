@@ -1,0 +1,28 @@
+---
+tool: 't-tails'
+---
+
+<ToolCard tool="t-tails" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">Amnesic USB</span>
+    <span class="tool-tag">🌍 · all via Tor</span>
+  </Fragment>
+  <Fragment slot="what">
+    A system that boots from a USB stick, routes all traffic through Tor and leaves <b>no trace</b>{' '}
+    when shut down.
+  </Fragment>
+  <Fragment slot="why">
+    On shutdown, everything is forgotten: it's "amnesic." Ideal for sensitive, one-off work on a
+    computer that isn't yours, leaving nothing behind.
+  </Fragment>
+  <Fragment slot="who">
+    Whistleblowers, journalists, sources. The reference tool for high-risk work.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Download Tails from <b>tails.net</b> and follow the wizard to create the USB stick.
+    </li>
+    <li>Reboot the computer from that USB. Use it, then shut down: everything vanishes.</li>
+  </ol>
+</ToolCard>

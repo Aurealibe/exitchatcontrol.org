@@ -1,0 +1,33 @@
+---
+tool: 't-cryptomator'
+---
+
+<ToolCard tool="t-cryptomator" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermédiaire</span>
+    <span class="tool-tag">Chiffre avant l'envoi</span>
+    <span class="tool-tag">🇩🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un coffre qui chiffre vos fichiers <b>avant</b> de les envoyer sur n'importe quel cloud, même
+    Google Drive ou Dropbox.
+  </Fragment>
+  <Fragment slot="why">
+    L'astuce parfaite si vous devez garder un cloud existant : vous conservez le service pratique,
+    mais le fournisseur ne voit plus que du charabia chiffré. Vous gardez seul la clé.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui ne peuvent pas quitter un cloud grand public tout de suite, mais veulent protéger leurs
+    fichiers dès maintenant.
+  </Fragment>
+  <ol slot="install">
+    <li>Installez Cryptomator (PC et mobile) depuis cryptomator.org.</li>
+    <li>
+      Créez un « coffre » dans le dossier synchronisé de votre cloud, choisissez un mot de passe
+      fort.
+    </li>
+    <li>
+      Placez vos fichiers dans le coffre : ils sont chiffrés puis synchronisés automatiquement.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,38 @@
+---
+tool: 't-yunohost'
+---
+
+<ToolCard tool="t-yunohost" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Kulcsrakész szerver</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Rendszerek, amelyek egy régi PC-t vagy egy Raspberry Pi-t személyes szerverré alakítanak, egy
+    olyan alkalmazáskatalógussal, amelyből néhány kattintással telepíthetsz.
+  </Fragment>
+  <Fragment slot="why">
+    A saját szerver üzemeltetése ijesztőnek hangzik, de ezek az eszközök elvégzik a nehezét. A{' '}
+    <b>YunoHost</b> még a saját e-mailjeidet és az egyszeri bejelentkezést is futtatja. Az{' '}
+    <b>Umbrel</b> egy több mint 300 alkalmazást tartalmazó áruházzal rendelkezik, és nagyon népszerű
+    az adatvédelmet és a Bitcoint kedvelők körében. A <b>Start9</b> titkosítja a biztonsági
+    mentéseket, és alapértelmezés szerint minden szolgáltatáshoz ad egy Tor-címet.
+  </Fragment>
+  <Fragment slot="who">
+    Haladó profiloknak, akik készek rászánni egy délutánt a saját felhőjük felépítésére. Ez a
+    legradikálisabb strukturális válasz a Chat Controlra.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Szerezz egy régi számítógépet, egy Raspberry Pi-t, vagy bérelj egy kis szervert (VPS) egy
+      biztonságos országban.
+    </li>
+    <li>Telepítsd a YunoHostot, az Umbrelt vagy a Start9-et a hivatalos útmutatójuk alapján.</li>
+    <li>A katalógusból telepítsd a Nextcloudot, egy Matrix szervert, egy fotógalériát stb.</li>
+    <li>
+      Érd el privát módon a Tailscale-lel (lásd a VPN szakaszt), ahelyett, hogy kitennéd a szervert
+      a nyilvános internetre.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,44 @@
+---
+tool: 't-meshtastic'
+---
+
+<ToolCard tool="t-meshtastic" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Radio hors réseau</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Des messages texte qui passent par <b>radio LoRa</b>, de boîtier en boîtier, sans réseau mobile
+    ni internet. Le téléphone se connecte au boîtier en Bluetooth.
+  </Fragment>
+  <Fragment slot="why">
+    Aucun opérateur, aucun serveur : rien à couper ni à contraindre. Portée de plusieurs kilomètres,
+    réseau maillé qui relaie les messages.
+  </Fragment>
+  <Fragment slot="who">
+    Randonnée, zones blanches, coupures et situations de crise. Il faut du matériel (un boîtier
+    radio par personne) et accepter des messages courts et lents.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Limites à connaître</span>
+    <p>
+      Le canal par défaut est lisible par tous. Les messages directs sont chiffrés (firmware 2.5 et
+      plus), mais les métadonnées radio restent visibles. Meshtastic ne communique pas avec
+      MeshCore, un projet concurrent.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Achetez un boîtier compatible (liste sur <b>meshtastic.org</b>) et installez l'application.
+    </li>
+    <li>
+      Choisissez la région radio de votre pays : les fréquences et durées d'émission autorisées
+      varient.
+    </li>
+    <li>
+      Créez un canal privé avec une clé aléatoire : le canal public par défaut utilise une clé
+      connue de tous.
+    </li>
+  </ol>
+</ToolCard>

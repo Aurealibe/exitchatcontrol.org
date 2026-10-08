@@ -1,0 +1,35 @@
+---
+tool: 't-simplex'
+---
+
+<ToolCard tool="t-simplex" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermediate</span>
+    <span class="tool-tag">No identifier</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    An encrypted messenger with no account, no number and no identifier. You connect by sharing a
+    link or QR code.
+  </Fragment>
+  <Fragment slot="why">
+    By design, even the servers can't know who talks to whom. It's currently the strongest option
+    against metadata correlation.
+  </Fragment>
+  <Fragment slot="who">
+    Pseudonymous accounts, sensitive contacts, high-risk. A bit younger than Signal, with a few
+    rough edges.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Install from <b>simplex.chat</b> (F-Droid, Google Play, App Store or APK).
+    </li>
+    <li>
+      Pick a <b>local</b> display name (never your real name: it stays on your device).
+    </li>
+    <li>
+      To add a contact, share a <b>one-time invitation link</b> or a QR code.
+    </li>
+    <li>Turn on the passcode lock, and (advanced) configure your own SMP servers.</li>
+  </ol>
+</ToolCard>

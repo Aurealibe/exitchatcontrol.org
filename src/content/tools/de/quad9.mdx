@@ -1,0 +1,32 @@
+---
+tool: 't-quad9'
+---
+
+<ToolCard tool="t-quad9" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Einsteiger</span>
+    <span class="tool-tag">Blockiert Schadsoftware</span>
+    <span class="tool-tag">🇨🇭 gemeinnützig</span>
+  </Fragment>
+  <Fragment slot="what">
+    Ein verschlüsselter, gemeinnütziger DNS-Resolver aus der Schweiz, der außerdem bekannte
+    schädliche Domains blockiert.
+  </Fragment>
+  <Fragment slot="why">
+    Schweizer Recht, keine Speicherung deiner IP-Adresse sowie Schutz vor Phishing und
+    Schadsoftware. Eine ausgezeichnete Lösung nach dem Prinzip „einrichten und vergessen“.
+  </Fragment>
+  <Fragment slot="who">
+    Für alle, besonders wenn du eine einfache Lösung in einer guten Rechtsordnung suchst.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Unter Android: Einstellungen &gt; Netzwerk &gt; <b>Privates DNS</b> &gt; <b>dns.quad9.net</b>{' '}
+      eingeben.
+    </li>
+    <li>
+      Auf iPhone/Mac: Installiere das DoH-Profil von quad9.net. Auf dem PC: Aktiviere DNS-over-HTTPS
+      im Browser oder im System.
+    </li>
+  </ol>
+</ToolCard>

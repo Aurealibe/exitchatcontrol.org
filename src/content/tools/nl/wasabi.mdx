@@ -1,0 +1,42 @@
+---
+tool: 't-wasabi'
+---
+
+<ToolCard tool="t-wasabi" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">CoinJoin</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een vrije Bitcoin-wallet met ingebouwde <b>CoinJoin</b>: uw munten worden met die van andere
+    gebruikers in één gezamenlijke transactie samengevoegd, wat de zichtbare koppeling op de
+    blockchain tussen herkomst en bestemming verbreekt.
+  </Fragment>
+  <Fragment slot="why">
+    Het Bitcoin-register is openbaar: zonder voorzorg kan elke betaling aan eerdere worden
+    gekoppeld. CoinJoin herstelt een deel van die privacy zonder uw geld aan iemand toe te
+    vertrouwen, en de wallet werkt via Tor.
+  </Fragment>
+  <Fragment slot="who">
+    Ervaren Bitcoin-gebruikers. Sinds de oorspronkelijke coördinator in juni 2024 stopte, moet u een
+    onafhankelijke coördinator kiezen, die kosten rekent.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Gemengde fondsen en platforms</span>
+    <p>
+      Gereguleerde platforms kunnen fondsen die via CoinJoin gingen weigeren of blokkeren. Bewaar
+      een bewijs van de legitieme herkomst van uw geld.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Download Wasabi via <b>wasabiwallet.io</b> en controleer de handtekening.
+    </li>
+    <li>Kies in de instellingen een onafhankelijke coördinator.</li>
+    <li>
+      Zet automatische CoinJoin aan en combineer nooit gemengde en ongemengde munten in dezelfde
+      betaling.
+    </li>
+  </ol>
+</ToolCard>

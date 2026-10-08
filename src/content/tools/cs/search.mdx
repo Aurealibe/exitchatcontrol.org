@@ -1,0 +1,29 @@
+---
+tool: 't-search'
+---
+
+<ToolCard tool="t-search" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡 Vyhledávače</span>
+    <span class="tool-tag">Náhrada za Google Search</span>
+  </Fragment>
+  <Fragment slot="what">Vyhledávače, které na rozdíl od Googlu neprofilují každý dotaz.</Fragment>
+  <Fragment slot="why">
+    DuckDuckGo a Brave Search neuchovávají historii spojenou s vaší identitou. Startpage poskytuje
+    výsledky Googlu bez sledování. SearXNG jde ještě dál: jde o{' '}
+    <b>metavyhledávač, který lze provozovat na vlastním serveru</b>, tedy suverenitu až po
+    vyhledávací řádek.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého. SearXNG je určen pro ty, kdo chtějí provozovat vlastní vyhledávač.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      V nastavení prohlížeče změňte výchozí vyhledávač na DuckDuckGo, Brave Search nebo Startpage.
+    </li>
+    <li>
+      Pro SearXNG: použijte veřejnou instanci (adresář na searx.space), nebo provozujte vlastní (viz
+      část 10).
+    </li>
+  </ol>
+</ToolCard>

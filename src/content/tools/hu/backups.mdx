@@ -1,0 +1,34 @@
+---
+tool: 't-backups'
+---
+
+<ToolCard tool="t-backups" variant={props.variant}>
+  <Fragment slot="name">Titkosított biztonsági mentések</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy módszer a telefonod és a számítógéped biztonsági mentésére, amely titkosítja az adatokat,{' '}
+    <b>mielőtt</b> azok bármilyen felhőbe elindulnának.
+  </Fragment>
+  <Fragment slot="why">
+    Az iCloud/Google biztonsági mentésekhez a szolgáltató - és ezáltal a bíróságok is - gyakran
+    hozzáfér. A <b>Cryptomator</b> titkosítja a fájljaidat, mielőtt elküldené őket bármilyen
+    felhőbe; a <b>restic</b> automatikus, titkosított biztonsági mentéseket készít; a{' '}
+    <b>Proton Drive</b> végponttól végpontig titkosított. iPhone-on engedélyezd a „Fejlett
+    adatvédelmet” az iCloud biztonsági mentéseid titkosításához.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek titkosítania kellene a biztonsági mentéseit. Aranyszabály: két titkosított másolat,
+    két különböző hordozón, két különböző helyen.
+  </Fragment>
+  <ol slot="install">
+    <li>iPhone: Beállítások &gt; a neved &gt; iCloud &gt; Fejlett adatvédelem: kapcsold be.</li>
+    <li>
+      PC: telepítsd a Cryptomatort, hozz létre egy trezort, és tedd bele a fájljaidat a felhőbe
+      történő szinkronizálás előtt.
+    </li>
+  </ol>
+</ToolCard>

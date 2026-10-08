@@ -1,0 +1,32 @@
+---
+tool: 't-quad9'
+---
+
+<ToolCard tool="t-quad9" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Blocco dei malware</span>
+    <span class="tool-tag">🇨🇭 senza scopo di lucro</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un resolver DNS cifrato, svizzero e senza scopo di lucro, che blocca anche i domini malevoli
+    noti.
+  </Fragment>
+  <Fragment slot="why">
+    Giurisdizione svizzera, nessuna conservazione del tuo indirizzo IP, protezione contro phishing e
+    malware. Un'ottima scelta "imposta e dimentica".
+  </Fragment>
+  <Fragment slot="who">
+    Tutti, in particolare chi vuole semplicità e una buona giurisdizione.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Su Android: Impostazioni &gt; Rete &gt; <b>DNS privato</b> &gt; inserisci <b>dns.quad9.net</b>
+      .
+    </li>
+    <li>
+      Su iPhone/Mac: installa il profilo DoH da quad9.net. Su PC: imposta il DNS-over-HTTPS nel
+      browser o nel sistema.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,43 @@
+---
+tool: 't-veracrypt'
+---
+
+<ToolCard tool="t-veracrypt" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Sostituisce BitLocker</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Il riferimento per la cifratura <b>locale</b>: un disco intero, una partizione, una chiavetta
+    USB o un contenitore cifrato (un file che si monta come un'unità).
+  </Fragment>
+  <Fragment slot="why">
+    Nulla lascia il tuo computer: nessun account, nessun cloud, nessuna chiave di recupero inviata a
+    un produttore. Gratuito, verificato, successore di TrueCrypt. È il corrispettivo locale di
+    Cryptomator, che è pensato per il cloud.
+  </Fragment>
+  <Fragment slot="who">
+    Su Windows, per sostituire BitLocker; ovunque, per un contenitore cifrato o un disco esterno. Su
+    Linux e macOS, la cifratura integrata (LUKS, FileVault) basta per il disco di sistema.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Cifratura di sistema e Secure Boot</span>
+    <p>
+      Nel 2026 Microsoft revoca l'autorità di certificazione UEFI del 2011 che firmava il vecchio
+      bootloader. Se cifri il disco di sistema, usa la versione 1.26.29 o successiva, che include
+      bootloader firmati sia per l'autorità del 2011 sia per quella del 2023.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Scarica VeraCrypt da <b>veracrypt.jp</b> e verifica la firma PGP o il checksum del file.
+    </li>
+    <li>
+      Crea un volume con le impostazioni predefinite (AES, SHA-512); Argon2id è disponibile dalla
+      versione 1.26.29.
+    </li>
+    <li>Scegli una passphrase lunga (diverse parole casuali), mai riutilizzata.</li>
+    <li>Avanzato: crea un volume nascosto all'interno del volume per la negabilità plausibile.</li>
+  </ol>
+</ToolCard>

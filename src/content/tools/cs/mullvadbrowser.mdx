@@ -1,0 +1,34 @@
+---
+tool: 't-mullvadbrowser'
+---
+
+<ToolCard tool="t-mullvadbrowser" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Středně pokročilý / pokročilý</span>
+    <span class="tool-tag">Ochrana proti otisku prohlížeče</span>
+    <span class="tool-tag">🇸🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Prohlížeč z Tor Browseru, ale bez sítě Tor: používejte jej s VPN pro počítač, který se obtížně
+    sleduje.
+  </Fragment>
+  <Fragment slot="why">
+    Je vytvořený ve spolupráci s Tor Project a navržený tak, aby všichni jeho uživatelé měli{' '}
+    <b>stejný digitální otisk</b>. Výsledek: namísto toho, abyste byli jedineční a tedy
+    sledovatelní, splynete s davem. Je to nejlepší volba pro soukromí na počítači.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo chtějí jít dál než jen k blokování reklam, zejména pro pseudonymní účty a vystavené
+    profily.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Stáhněte si jej z <b>mullvad.net/browser</b> (Windows, macOS, Linux).
+    </li>
+    <li>
+      Používejte jej beze změn a nepřizpůsobujte si ho: každé přidané rozšíření nebo nastavení vás
+      znovu učiní identifikovatelnými.
+    </li>
+    <li>Pro skrytí IP adresy jej používejte společně s VPN.</li>
+  </ol>
+</ToolCard>

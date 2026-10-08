@@ -1,0 +1,34 @@
+---
+tool: 't-mullvadbrowser'
+---
+
+<ToolCard tool="t-mullvadbrowser" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Avancé</span>
+    <span class="tool-tag">Anti-empreinte</span>
+    <span class="tool-tag">🇸🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Le navigateur du Tor Browser, mais sans le réseau Tor : à utiliser avec votre VPN pour un
+    ordinateur difficile à pister.
+  </Fragment>
+  <Fragment slot="why">
+    Développé avec le Tor Project, il est conçu pour que tous ses utilisateurs présentent la{' '}
+    <b>même empreinte numérique</b>. Résultat : au lieu d'être unique et donc traçable, vous vous
+    fondez dans la masse. C'est le meilleur choix de vie privée sur ordinateur.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui veulent aller au-delà du simple blocage de pub, notamment les comptes pseudonymes et
+    les profils exposés.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Téléchargez-le sur <b>mullvad.net/browser</b> (Windows, macOS, Linux).
+    </li>
+    <li>
+      Utilisez-le tel quel, sans le personnaliser : chaque extension ou réglage ajouté vous rend à
+      nouveau identifiable.
+    </li>
+    <li>Associez-le à votre VPN pour masquer aussi votre adresse IP.</li>
+  </ol>
+</ToolCard>

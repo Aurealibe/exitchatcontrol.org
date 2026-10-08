@@ -1,0 +1,28 @@
+---
+tool: 't-tails'
+---
+
+<ToolCard tool="t-tails" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Clé USB amnésique</span>
+    <span class="tool-tag">🌍 · tout via Tor</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un système qui démarre depuis une clé USB, fait passer tout le trafic par Tor et ne laisse{' '}
+    <b>aucune trace</b> à l'extinction.
+  </Fragment>
+  <Fragment slot="why">
+    À l'arrêt, tout est oublié : c'est « amnésique ». Idéal pour un travail sensible et ponctuel sur
+    un ordinateur qui n'est pas le vôtre, sans rien y laisser.
+  </Fragment>
+  <Fragment slot="who">
+    Lanceurs d'alerte, journalistes, sources. L'outil de référence pour les missions à haut risque.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Téléchargez Tails sur <b>tails.net</b> et suivez l'assistant pour créer la clé USB.
+    </li>
+    <li>Redémarrez l'ordinateur sur cette clé. Utilisez-le, puis éteignez : tout disparaît.</li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,30 @@
+---
+tool: 't-aegis'
+---
+
+<ToolCard tool="t-aegis" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">TOTP-codes</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Apps die elke 30 seconden de zescijferige codes genereren, ter vervanging van Google
+    Authenticator.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Aegis</b> (Android) bewaart uw codes in een lokale versleutelde kluis, geen cloud.{' '}
+    <b>Ente Auth</b> voegt end-to-end versleutelde synchronisatie tussen apparaten toe, en is
+    geauditeerd. Veel veiliger dan sms, en gratis.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen: dit is het standaard 2FA-niveau om aan te nemen, vóór hardwaretokens.
+  </Fragment>
+  <ol slot="install">
+    <li>Installeer Aegis (F-Droid) of Ente Auth (alle platforms).</li>
+    <li>Schakel op elk account 2FA via een "authenticator-app" in en scan de getoonde QR-code.</li>
+    <li>
+      Noteer de <b>back-upcodes</b> op papier en maak een versleutelde back-up van uw kluis.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,45 @@
+---
+tool: 't-linux'
+---
+
+<ToolCard tool="t-linux" variant={props.variant}>
+  <Fragment slot="name">Linux (on desktop)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Replaces Windows / macOS</span>
+    <span class="tool-tag">🌍 · free</span>
+  </Fragment>
+  <Fragment slot="what">
+    A free operating system for your computer, replacing Windows or macOS. It comes in many
+    flavours, called "distributions."
+  </Fragment>
+  <Fragment slot="why">
+    It's many people's blind spot: they encrypt their messages but keep a Windows that streams
+    telemetry to Microsoft nonstop (whose "Recall" feature tried to screenshot the screen
+    continuously), or a macOS that reports the apps you launch. Linux doesn't spy on you, it's free,
+    it revives old computers, and it finally makes you master of your machine. It's easier than its
+    reputation: modern distributions look like Windows or macOS.
+  </Fragment>
+  <Fragment slot="who">
+    Anyone can make the switch. To start, <b>Linux Mint</b> (closest to Windows) or <b>Fedora</b>;{' '}
+    <b>Debian</b> for stability. No need to wipe anything: you can test first, then install
+    alongside your current system.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Not sure which distribution? Answer the <b>distrochooser.de/fr</b> quiz, which points you to
+      the right one for your needs.
+    </li>
+    <li>
+      Try it <b>without installing anything</b>, right in your browser, at <b>distrosea.com</b>.
+    </li>
+    <li>
+      Once convinced, download the distribution's image and create a bootable USB (with Ventoy or
+      Balena Etcher).
+    </li>
+    <li>
+      Boot from the USB to try the system "live," then run the install. Enable the disk encryption
+      it offers.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,31 @@
+---
+tool: 't-molly'
+---
+
+<ToolCard tool="t-molly" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Geharde Signal</span>
+    <span class="tool-tag">Android · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een geharde versie van Signal voor Android, compatibel met hetzelfde netwerk.
+  </Fragment>
+  <Fragment slot="why">
+    Database in rust versleuteld, automatische vergrendeling, en een "FOSS"-variant volledig zonder
+    Google-diensten.
+  </Fragment>
+  <Fragment slot="who">
+    Gevorderde gebruikers, vooral op GrapheneOS, met een hoog dreigingsmodel. Alleen Android.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Voeg de Molly-repo toe in F-Droid, of haal de APK van <b>molly.im</b>.
+    </li>
+    <li>
+      Kies <b>Molly-FOSS</b> als u geen Google-afhankelijkheden wilt.
+    </li>
+    <li>Registreer met uw nummer (hetzelfde netwerk als Signal).</li>
+    <li>Stel een databasewachtwoord en automatische vergrendeling in.</li>
+  </ol>
+</ToolCard>

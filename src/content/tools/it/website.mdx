@@ -1,0 +1,37 @@
+---
+tool: 't-website'
+---
+
+<ToolCard tool="t-website" variant={props.variant}>
+  <Fragment slot="name">Il tuo sito web</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Metti la tua voce al riparo dai ban</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un sito tutto tuo, sul tuo nome di dominio, dove i tuoi contenuti non dipendono da nessuna
+    piattaforma.
+  </Fragment>
+  <Fragment slot="why">
+    Il giorno in cui un social cancella o sospende il tuo account, tutto il tuo lavoro sparisce. Un
+    sito personale è la tua àncora: i tuoi post restano lì, archiviati e aggiornati, qualunque cosa
+    accada. È esattamente ciò che fanno gli account di informazione prudenti. Un sito statico
+    (costruito con Hugo, Astro o Jekyll) è sufficiente e si pubblica quasi gratis; per un blog
+    dinamico, un WordPress o un Ghost in self-hosting fa il suo lavoro.
+  </Fragment>
+  <Fragment slot="who">
+    Account di informazione, creator, attivisti, chiunque pubblichi e tema la censura delle
+    piattaforme.
+  </Fragment>
+  <ol slot="install">
+    <li>Acquista un nome di dominio (idealmente da un registrar rispettoso della privacy).</li>
+    <li>
+      Scegli un generatore di siti statici (Astro, Hugo) e pubblica il risultato, oppure installa
+      WordPress/Ghost sul tuo server.
+    </li>
+    <li>
+      Rimanda sempre al sito dai tuoi account social: il tuo pubblico ti ritrova anche se un account
+      cade.
+    </li>
+  </ol>
+</ToolCard>

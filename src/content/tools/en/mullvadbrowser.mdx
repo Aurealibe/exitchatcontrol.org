@@ -1,0 +1,34 @@
+---
+tool: 't-mullvadbrowser'
+---
+
+<ToolCard tool="t-mullvadbrowser" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Advanced</span>
+    <span class="tool-tag">Anti-fingerprint</span>
+    <span class="tool-tag">🇸🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    The Tor Browser's browser, but without the Tor network: use it with your VPN for a hard-to-track
+    desktop.
+  </Fragment>
+  <Fragment slot="why">
+    Built with the Tor Project, it's designed so all its users present the{' '}
+    <b>same digital fingerprint</b>. The result: instead of being unique and thus trackable, you
+    blend into the crowd. It's the best privacy choice on desktop.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want to go beyond simple ad-blocking, especially pseudonymous accounts and exposed
+    profiles.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Download it from <b>mullvad.net/browser</b> (Windows, macOS, Linux).
+    </li>
+    <li>
+      Use it as-is, without customising: every added extension or setting makes you identifiable
+      again.
+    </li>
+    <li>Pair it with your VPN to also mask your IP address.</li>
+  </ol>
+</ToolCard>

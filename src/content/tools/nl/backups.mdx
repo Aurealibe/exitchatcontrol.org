@@ -1,0 +1,37 @@
+---
+tool: 't-backups'
+---
+
+<ToolCard tool="t-backups" variant={props.variant}>
+  <Fragment slot="name">Versleutelde back-ups</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een manier om een back-up te maken van uw telefoon en computer, waarbij de gegevens <b>vóór</b>{' '}
+    vertrek naar de cloud worden versleuteld.
+  </Fragment>
+  <Fragment slot="why">
+    iCloud/Google-back-ups zijn vaak toegankelijk voor de provider, en dus voor rechtbanken.{' '}
+    <b>Cryptomator</b> versleutelt uw bestanden vóór ze naar een cloud worden gestuurd;{' '}
+    <b>restic</b> maakt automatische versleutelde back-ups; <b>Proton Drive</b> is end-to-end
+    versleuteld. Schakel op de iPhone "Geavanceerde gegevensbescherming" in om uw iCloud-back-ups te
+    versleutelen.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen zou zijn back-ups moeten versleutelen. Gouden regel: twee versleutelde kopieën, op twee
+    media, op twee locaties.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      iPhone: Instellingen &gt; uw naam &gt; iCloud &gt; Geavanceerde gegevensbescherming: schakel
+      in.
+    </li>
+    <li>
+      PC: installeer Cryptomator, maak een kluis aan, plaats er uw bestanden in vóór synchronisatie
+      met de cloud.
+    </li>
+  </ol>
+</ToolCard>

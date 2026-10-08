@@ -1,0 +1,35 @@
+---
+tool: 't-bitwarden'
+---
+
+<ToolCard tool="t-bitwarden" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Einsteiger</span>
+    <span class="tool-tag">Ideal für den Einstieg</span>
+    <span class="tool-tag">🌍 · Open Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Ein Passworttresor, der deine Passwörter auf all deinen Geräten speichert, erzeugt und für dich
+    einträgt.
+  </Fragment>
+  <Fragment slot="why">
+    Kostenlos, geprüft, plattformübergreifend und Ende-zu-Ende-verschlüsselt. Du musst dir nur ein
+    einziges starkes Passwort merken. Du kannst ihn sogar <b>selbst hosten</b> (mit Vaultwarden) und
+    bist so von niemandem abhängig.
+  </Fragment>
+  <Fragment slot="who">
+    Für alle. Er ist die Grundlage jeder Sicherheitsstrategie: ein starkes, einzigartiges Passwort
+    für jeden Dienst.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Erstelle auf bitwarden.com ein Konto und wähle ein <b>langes</b> Master-Passwort (eine
+      Passphrase). Vergiss es niemals: Es kann nicht wiederhergestellt werden.
+    </li>
+    <li>Installiere die Browser-Erweiterung und die mobile App.</li>
+    <li>
+      Lass Bitwarden beim Anmelden deine Zugangsdaten speichern und ersetze anschließend deine alten
+      Passwörter durch automatisch erzeugte.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,31 @@
+---
+tool: 't-bitcoin'
+---
+
+<ToolCard tool="t-bitcoin" variant={props.variant}>
+  <Fragment slot="name">Bitcoin (zelfbewaring)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Censuurbestendig</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een digitaal geld dat u zelf bewaart, zonder via een bank te gaan.
+  </Fragment>
+  <Fragment slot="why">
+    Bij <b>zelfbewaring</b> (uw sleutels in een portemonnee die alleen u beheert) kan niemand uw
+    tegoeden bevriezen of blokkeren. De privacy is niet perfect (het grootboek is openbaar), maar
+    het ontsnapt aan bankcensuur, handig op de dag dat een betaling wordt geweigerd.
+  </Fragment>
+  <Fragment slot="who">
+    Zich beschermen tegen het bevriezen van accounts of de-banking, en anoniem betalen voor een
+    dienst zoals een VPN.
+  </Fragment>
+  <ol slot="install">
+    <li>Schaf bitcoins aan (via een exchange, of peer-to-peer).</li>
+    <li>
+      Verplaats ze meteen naar een portemonnee die <b>u</b> beheert: een hardwareportemonnee
+      (Trezor, ColdCard) of een open-source-app. Laat ze niet op de exchange staan.
+    </li>
+    <li>Maak een back-up van uw herstelzin op papier, nooit als foto of online.</li>
+  </ol>
+</ToolCard>

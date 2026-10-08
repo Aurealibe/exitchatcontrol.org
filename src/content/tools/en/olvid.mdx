@@ -1,0 +1,33 @@
+---
+tool: 't-olvid'
+---
+
+<ToolCard tool="t-olvid" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">No phone number</span>
+    <span class="tool-tag">🇫🇷 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A French messenger that works <b>without any personal data</b>: no phone number, no e-mail, no
+    address book.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end encryption, published app source code (AGPL), certified by the French cybersecurity
+    agency ANSSI (CSPN). Used by the French government for its communications.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone, especially those who prefer a European publisher and servers. Contacts are added in
+    person or by invitation.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Install Olvid from <b>olvid.io</b>, the App Store or Google Play. The basic version is free.
+    </li>
+    <li>Pick a display name: no sign-up is required.</li>
+    <li>
+      Add a contact by scanning their QR code, or by exchanging an invitation and then a 4-digit
+      code.
+    </li>
+  </ol>
+</ToolCard>

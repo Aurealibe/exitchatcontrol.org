@@ -1,0 +1,35 @@
+---
+tool: 't-olvid'
+---
+
+<ToolCard tool="t-olvid" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Nincs telefonszám</span>
+    <span class="tool-tag">🇫🇷 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy francia üzenetküldő, amely <b>semmilyen személyes adat nélkül</b> működik: nincs
+    telefonszám, nincs e-mail, nincs címjegyzék.
+  </Fragment>
+  <Fragment slot="why">
+    Végponttól végpontig terjedő titkosítás, nyilvános alkalmazás-forráskód (AGPL), a francia
+    kiberbiztonsági ügynökség, az ANSSI tanúsítványával (CSPN). A francia kormány is ezt használja a
+    kommunikációjához.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek, különösen azoknak, akik európai kiadót és szervereket részesítenek előnyben. A
+    kapcsolatokat személyesen vagy meghívóval lehet hozzáadni.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd az Olvidot az <b>olvid.io</b> oldalról, az App Store-ból vagy a Google Playből. Az
+      alapverzió ingyenes.
+    </li>
+    <li>Válassz egy megjelenített nevet: nincs szükség regisztrációra.</li>
+    <li>
+      Adj hozzá egy kapcsolatot a QR-kódja beolvasásával, vagy egy meghívó, majd egy 4 számjegyű kód
+      cseréjével.
+    </li>
+  </ol>
+</ToolCard>

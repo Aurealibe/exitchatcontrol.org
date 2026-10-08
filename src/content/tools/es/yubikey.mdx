@@ -1,0 +1,30 @@
+---
+tool: 't-yubikey'
+---
+
+<ToolCard tool="t-yubikey" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Avanzado</span>
+    <span class="tool-tag">Llave física FIDO2</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una pequeña llave física (USB, a menudo con NFC) que prueba tu identidad con un solo toque.
+  </Fragment>
+  <Fragment slot="why">
+    Es el 2FA más fuerte: resiste el phishing, porque la llave verifica la dirección real del sitio
+    antes de responder. <b>Nitrokey</b> es la alternativa completamente de hardware abierto,
+    firmware abierto. Un sitio falso no puede engañarte.
+  </Fragment>
+  <Fragment slot="who">
+    Aquellos que quieren máxima seguridad en cuentas clave. Compra <b>dos</b> (una principal, una de
+    respaldo).
+  </Fragment>
+  <ol slot="install">
+    <li>Consigue dos llaves de yubico.com o nitrokey.com.</li>
+    <li>
+      En los ajustes de seguridad de cada cuenta (correo, gestor de contraseñas…), añade una "llave
+      de seguridad" o "passkey." Registra ambas llaves.
+    </li>
+    <li>Guarda la llave de respaldo en un lugar seguro y separado.</li>
+  </ol>
+</ToolCard>

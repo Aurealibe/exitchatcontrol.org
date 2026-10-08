@@ -1,0 +1,31 @@
+---
+tool: 't-search'
+---
+
+<ToolCard tool="t-search" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡 Keresőmotorok</span>
+    <span class="tool-tag">A Google Search kiváltója</span>
+  </Fragment>
+  <Fragment slot="what">
+    Keresőmotorok, amelyek nem profiloznak minden keresést, ellentétben a Google-lal.
+  </Fragment>
+  <Fragment slot="why">
+    A DuckDuckGo és a Brave Search nem tárolnak a személyazonosségedhez kötött előzményeket. A
+    Startpage Google-eredményeket szolgál ki követés nélkül. A SearXNG pedig tovább megy: egy{' '}
+    <b>saját szerveren futtatható</b> metakereső, a szuverenitás egészen a keresősávig.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenki. A SearXNG azoknak való, akik saját keresőmotort akarnak üzemeltetni.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      A böngésződ beállításaiban váltsd az alapértelmezett keresőt DuckDuckGo-ra, Brave Search-re
+      vagy Startpage-re.
+    </li>
+    <li>
+      SearXNG-hoz: használj egy nyilvános példányt (a searx.space oldalon találod az indexet), vagy
+      üzemeltess sajátot (lásd a 10. szakasz).
+    </li>
+  </ol>
+</ToolCard>

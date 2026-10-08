@@ -1,0 +1,29 @@
+---
+tool: 't-bitcoin'
+---
+
+<ToolCard tool="t-bitcoin" variant={props.variant}>
+  <Fragment slot="name">Bitcoin (autocustodia)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Resistente a la censura</span>
+  </Fragment>
+  <Fragment slot="what">Dinero digital que posees tú mismo, sin pasar por un banco.</Fragment>
+  <Fragment slot="why">
+    En <b>autocustodia</b> (tus claves en una cartera que solo tú controlas), nadie puede congelar o
+    bloquear tus fondos. Su privacidad no es perfecta (el libro mayor es público), pero escapa a la
+    censura bancaria, útil el día que se rechace un pago.
+  </Fragment>
+  <Fragment slot="who">
+    Protegerse contra congelaciones de cuentas o expulsión bancaria, y pagar anónimamente por un
+    servicio como una VPN.
+  </Fragment>
+  <ol slot="install">
+    <li>Consigue algo de bitcoin (un exchange, o peer-to-peer).</li>
+    <li>
+      Muévelos inmediatamente a una cartera que <b>tú</b> controles: una cartera hardware (Trezor,
+      ColdCard) o una app de código abierto. No los dejes en el exchange.
+    </li>
+    <li>Haz copia de seguridad de tu frase de recuperación en papel, nunca como foto u online.</li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,31 @@
+---
+tool: 't-yubikey'
+---
+
+<ToolCard tool="t-yubikey" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Avancé</span>
+    <span class="tool-tag">Clé matérielle FIDO2</span>
+  </Fragment>
+  <Fragment slot="what">
+    Une petite clé physique (format USB, souvent avec NFC) qui prouve votre identité d'un simple
+    contact du doigt.
+  </Fragment>
+  <Fragment slot="why">
+    C'est la 2FA la plus solide : elle résiste à l'hameçonnage, car la clé vérifie l'adresse réelle
+    du site avant de répondre. <b>Nitrokey</b> est l'alternative à matériel et micrologiciel
+    entièrement ouverts. Un faux site ne peut pas vous piéger.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui veulent le maximum de sécurité sur leurs comptes clés. Achetez-en <b>deux</b> (une
+    principale, une de secours).
+  </Fragment>
+  <ol slot="install">
+    <li>Procurez-vous deux clés sur yubico.com ou nitrokey.com.</li>
+    <li>
+      Dans les réglages de sécurité de chaque compte (e-mail, gestionnaire de mots de passe…),
+      ajoutez une « clé de sécurité » ou « passkey ». Enregistrez vos deux clés.
+    </li>
+    <li>Gardez la clé de secours dans un lieu sûr, séparé.</li>
+  </ol>
+</ToolCard>

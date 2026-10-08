@@ -1,0 +1,33 @@
+---
+tool: 't-keepassxc'
+---
+
+<ToolCard tool="t-keepassxc" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Experten</span>
+    <span class="tool-tag">100 % lokal</span>
+    <span class="tool-tag">🌍 · Open Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Ein <b>lokaler</b> Tresor: eine verschlüsselte Datei, die nur du besitzt – ohne Cloud und ohne
+    Konto.
+  </Fragment>
+  <Fragment slot="why">
+    Nichts verlässt dein Gerät, sofern du die Datei nicht selbst synchronisierst (zum Beispiel über
+    Cryptomator). Die puristische Wahl ganz ohne Vermittler.
+  </Fragment>
+  <Fragment slot="who">
+    Für Fortgeschrittene, die vollständige Kontrolle und keinerlei Online-Abhängigkeit möchten.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installiere KeePassXC (Desktop) und eine kompatible mobile App (KeePassDX unter Android,
+      Strongbox unter iOS).
+    </li>
+    <li>Erstelle eine Datenbankdatei, die durch ein Master-Passwort geschützt ist.</li>
+    <li>
+      Synchronisiere diese Datei über eine verschlüsselte Cloud, damit sie auf allen Geräten
+      verfügbar ist.
+    </li>
+  </ol>
+</ToolCard>

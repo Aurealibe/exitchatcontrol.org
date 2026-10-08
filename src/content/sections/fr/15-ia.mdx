@@ -29,92 +29,11 @@ Ce que vous tapez dans une IA cloud est une **confession écrite, horodatée et 
 
 #### La parade : l'IA locale
 
-<ToolCard tool="t-localai">
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Remplace ChatGPT</span>
-    <span class="tool-tag">🌍 · 100% local</span>
-  </Fragment>
-  <Fragment slot="what">
-    Des logiciels pour faire tourner un modèle d'intelligence artificielle directement sur votre
-    ordinateur.
-  </Fragment>
-  <Fragment slot="why">
-    Vos questions ne quittent jamais l'appareil : aucun serveur, aucun compte, aucune télémétrie, et
-    ça marche hors ligne. La qualité dépend de votre matériel, mais rien ne fuit. <b>Ollama</b> et{' '}
-    <b>LM Studio</b> sont les plus simples ; <b>Jan</b> et <b>GPT4All</b> visent la vie privée
-    maximale.
-  </Fragment>
-  <Fragment slot="who">
-    Tous ceux qui utilisent l'IA pour des sujets un tant soit peu personnels et ne veulent pas les
-    confier à un serveur américain.
-  </Fragment>
-  <ol slot="install">
-    <li>
-      Pour débuter en douceur, installez <b>LM Studio</b> ou <b>Jan</b> (interface graphique, comme
-      une application classique).
-    </li>
-    <li>
-      Téléchargez un modèle proposé dans l'application (par exemple Llama ou Mistral), adapté à la
-      puissance de votre machine.
-    </li>
-    <li>
-      Discutez : tout se passe en local. Ollama est la version en ligne de commande pour les plus
-      techniques.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-localai" />
 
-<ToolCard tool="t-pocketpal">
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Remplace ChatGPT sur mobile</span>
-    <span class="tool-tag">📱 · 100% local</span>
-  </Fragment>
-  <Fragment slot="what">
-    Une application pour faire tourner des modèles d'IA directement sur votre téléphone, entièrement
-    hors ligne.
-  </Fragment>
-  <Fragment slot="why">
-    Vos requêtes ne quittent jamais le téléphone : aucun compte, aucun cloud, aucune télémétrie, et
-    ça marche en mode avion. Open source (MIT), l'appli télécharge des modèles <b>GGUF</b> (Gemma,
-    Qwen, Phi, Llama) depuis Hugging Face et les exécute sur le CPU, le GPU ou le NPU de l'appareil.
-    Le pendant mobile d'Ollama et LM Studio.
-  </Fragment>
-  <Fragment slot="who">
-    Tous ceux qui dégainent ChatGPT sur leur téléphone pour des questions personnelles et ne veulent
-    pas les confier à un serveur américain.
-  </Fragment>
-  <ol slot="install">
-    <li>
-      Installez <b>PocketPal</b> depuis l'App Store ou Google Play (ou compilez les sources).
-    </li>
-    <li>
-      Ouvrez <b>Models</b>, choisissez un modèle adapté à votre téléphone et téléchargez-le.
-    </li>
-    <li>Chargez-le et discutez : tout tourne hors ligne, sur l'appareil.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-pocketpal" />
 
-<ToolCard tool="t-cloudai">
-  <Fragment slot="tags">
-    <span class="tool-tag">🟢🟡</span>
-    <span class="tool-tag">Cloud orienté vie privée</span>
-  </Fragment>
-  <Fragment slot="what">
-    Des accès à l'IA dans le cloud, mais conçus pour la vie privée, quand une IA locale n'est pas
-    possible.
-  </Fragment>
-  <Fragment slot="why">
-    <b>Duck.ai</b> (DuckDuckGo) donne un accès anonymisé à plusieurs modèles. <b>Lumo</b> (Proton)
-    chiffre les échanges et ne s'en sert pas pour entraîner. Bien mieux que ChatGPT grand public,
-    mais cela reste un serveur distant.
-  </Fragment>
-  <Fragment slot="who">
-    Ceux qui veulent la commodité du cloud sans nourrir les géants. Gardez-y les sujets non
-    sensibles.
-  </Fragment>
-</ToolCard>
+<Tool id="t-cloudai" />
 
 <div class="box honest">
   <span class="lab">La règle simple</span>

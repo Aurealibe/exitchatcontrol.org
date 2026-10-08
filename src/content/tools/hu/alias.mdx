@@ -1,0 +1,30 @@
+---
+tool: 't-alias'
+---
+
+<ToolCard tool="t-alias" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">E-mail álnevek (aliasok)</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Eldobható e-mail álnevek: oldalanként egy egyedi cím, amely továbbítja a leveleket a valódi
+    postafiókodba anélkül, hogy valaha is felfedné azt.
+  </Fragment>
+  <Fragment slot="why">
+    Többé nem adod meg mindenhol a valódi címedet. Ha egy oldalt feltörnek, vagy spamet küld,
+    egyszerűen lekapcsolod azt az egy álnevet, és azonnal tudni fogod, hogy ki szivárogtatta ki az
+    adataidat. A <b>SimpleLogin</b> integrálva van a Protonba; az <b>addy.io</b> korlátlan álnevet
+    kínál az ingyenes csomagjában.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek, és különösen az álnéves fiókoknak, akik szeretnék elkülöníteni a regisztrációikat.
+  </Fragment>
+  <ol slot="install">
+    <li>Hozz létre egy fiókot, telepítsd a böngészőbővítményt.</li>
+    <li>
+      Minden regisztrációnál generálj egy új álnevet ahelyett, hogy begépelnéd a valódi címedet.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,35 @@
+---
+tool: 't-pocketpal'
+---
+
+<ToolCard tool="t-pocketpal" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">A ChatGPT kiváltója mobilon</span>
+    <span class="tool-tag">📱 · 100%-ban helyi</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy alkalmazás, amely AI modelleket futtat közvetlenül a telefonodon, teljesen offline.
+  </Fragment>
+  <Fragment slot="why">
+    A parancsaid soha nem hagyják el a telefont: nincs fiók, nincs felhő, nincs telemetria, és
+    repülőgépes módban is működik. Nyílt forráskódú (MIT licenc), <b>GGUF</b> modelleket (Gemma,
+    Qwen, Phi, Llama) tölt le a Hugging Face-ről, és az eszközöd CPU-ján, GPU-ján vagy NPU-ján
+    futtatja őket. Az Ollama és az LM Studio mobilos megfelelője.
+  </Fragment>
+  <Fragment slot="who">
+    Bárkinek, aki a telefonján nyúl a ChatGPT-hez személyes kérdésekkel, és nem akarja azokat átadni
+    egy amerikai szervernek.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a <b>PocketPal</b>-t az App Store-ból vagy a Google Play-ből (vagy fordítsd le
+      forráskódból).
+    </li>
+    <li>
+      Nyisd meg a <b>Modelleket</b>, válassz egyet, amelyik illeszkedik a telefonodhoz, és töltsd
+      le.
+    </li>
+    <li>Töltsd be és csevegj: minden offline fut, az eszközön.</li>
+  </ol>
+</ToolCard>

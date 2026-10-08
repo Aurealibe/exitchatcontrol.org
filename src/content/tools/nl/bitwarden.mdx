@@ -1,0 +1,34 @@
+---
+tool: 't-bitwarden'
+---
+
+<ToolCard tool="t-bitwarden" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Beste om mee te starten</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een wachtwoordkluis die uw wachtwoorden onthoudt, genereert en voor u invult, op al uw
+    apparaten.
+  </Fragment>
+  <Fragment slot="why">
+    Gratis, geauditeerd, platformonafhankelijk en end-to-end versleuteld. U hoeft nog maar één sterk
+    wachtwoord te onthouden. Hij is zelfs <b>zelf-hostbaar</b> (via Vaultwarden), zodat u van
+    niemand afhankelijk bent.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen. Het is de basis van alle beveiliging: één sterk, uniek wachtwoord per dienst.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Maak een account aan op bitwarden.com en kies een <b>lang</b> hoofdwachtwoord (een
+      wachtwoordzin). Vergeet het nooit: het kan niet worden hersteld.
+    </li>
+    <li>Installeer de browserextensie en de mobiele app.</li>
+    <li>
+      Laat Bitwarden terwijl u inlogt uw oude wachtwoorden opslaan en ze vervangen door gegenereerde
+      wachtwoorden.
+    </li>
+  </ol>
+</ToolCard>

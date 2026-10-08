@@ -1,0 +1,45 @@
+---
+tool: 't-meshtastic'
+---
+
+<ToolCard tool="t-meshtastic" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Hálózatfüggetlen rádió</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    <b>LoRa-rádión</b> továbbított szöveges üzenetek, eszközről eszközre, mobilhálózat és internet
+    nélkül. A telefonod Bluetooth-on kapcsolódik az eszközhöz.
+  </Fragment>
+  <Fragment slot="why">
+    Nincs szolgáltató, nincs szerver: nincs mit lekapcsolni vagy kényszeríteni. Több kilométeres
+    hatótáv, és egy háló, amely továbbítja az üzeneteket.
+  </Fragment>
+  <Fragment slot="who">
+    Túrázás, lefedetlen területek, kimaradások és válsághelyzetek. Hardver kell hozzá (személyenként
+    egy rádiós eszköz), és el kell fogadni a rövid, lassú üzeneteket.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Korlátok, amelyeket ismerni kell</span>
+    <p>
+      Az alapértelmezett csatornát bárki olvashatja. A közvetlen üzenetek titkosítottak (2.5-ös és
+      újabb firmware), de a rádiós metaadatok láthatók maradnak. A Meshtastic nem kommunikál a
+      MeshCore-ral, egy konkurens projekttel.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Vásárolj egy támogatott eszközt (lista a <b>meshtastic.org</b> oldalon), és telepítsd az
+      alkalmazást.
+    </li>
+    <li>
+      Válaszd ki az országod rádiós régióját: az engedélyezett frekvenciák és adási idő országonként
+      eltér.
+    </li>
+    <li>
+      Hozz létre egy privát csatornát véletlenszerű kulccsal: az alapértelmezett nyilvános csatorna
+      olyan kulcsot használ, amelyet mindenki ismer.
+    </li>
+  </ol>
+</ToolCard>

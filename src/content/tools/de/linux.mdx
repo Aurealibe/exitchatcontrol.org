@@ -1,0 +1,47 @@
+---
+tool: 't-linux'
+---
+
+<ToolCard tool="t-linux" variant={props.variant}>
+  <Fragment slot="name">Linux (auf dem Desktop)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Ersetzt Windows / macOS</span>
+    <span class="tool-tag">🌍 · frei</span>
+  </Fragment>
+  <Fragment slot="what">
+    Ein freies Betriebssystem für deinen Computer, das Windows oder macOS ersetzt. Linux gibt es in
+    vielen Varianten, den sogenannten Distributionen.
+  </Fragment>
+  <Fragment slot="why">
+    Hier liegt für viele ein blinder Fleck: Sie verschlüsseln ihre Nachrichten, behalten aber
+    Windows, das fortlaufend Telemetriedaten an Microsoft sendet und mit „Recall“ sogar regelmäßige
+    Bildschirmaufnahmen einführen wollte – oder macOS, das meldet, welche Apps du startest. Linux
+    spioniert dich nicht aus, ist kostenlos, belebt ältere Computer neu und gibt dir die Kontrolle
+    über dein Gerät zurück. Es ist einfacher als sein Ruf: Moderne Distributionen sehen Windows oder
+    macOS sehr ähnlich.
+  </Fragment>
+  <Fragment slot="who">
+    Der Umstieg ist für alle machbar. Für den Einstieg eignen sich <b>Linux Mint</b> (Windows am
+    ähnlichsten) oder <b>Fedora</b>; <b>Debian</b> steht für Stabilität. Du musst nicht sofort etwas
+    löschen: Teste Linux zunächst und installiere es später neben deinem bisherigen System.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Du weißt nicht, welche Distribution zu dir passt? Beantworte den Fragebogen auf{' '}
+      <b>distrochooser.de</b>.
+    </li>
+    <li>
+      Teste verschiedene Systeme <b>ohne Installation</b> direkt im Browser auf <b>distrosea.com</b>
+      .
+    </li>
+    <li>
+      Lade anschließend das Abbild der gewählten Distribution herunter und erstelle mit Ventoy oder
+      Balena Etcher einen startfähigen USB-Stick.
+    </li>
+    <li>
+      Starte den Computer vom USB-Stick, probiere das Live-System aus und führe dann die
+      Installation durch. Aktiviere dabei die angebotene Festplattenverschlüsselung.
+    </li>
+  </ol>
+</ToolCard>

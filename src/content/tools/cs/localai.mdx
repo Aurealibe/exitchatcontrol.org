@@ -1,0 +1,34 @@
+---
+tool: 't-localai'
+---
+
+<ToolCard tool="t-localai" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Nahrazuje ChatGPT</span>
+    <span class="tool-tag">🌍 · 100% lokální</span>
+  </Fragment>
+  <Fragment slot="what">Software pro spuštění modelu AI přímo na vašem vlastním počítači.</Fragment>
+  <Fragment slot="why">
+    Vaše otázky nikdy neopustí zařízení: žádný server, žádný účet, žádná telemetrie a funguje i
+    offline. Kvalita závisí na vašem hardwaru, ale nic neuniká. <b>Ollama</b> a <b>LM Studio</b>{' '}
+    jsou nejsnazší; <b>Jan</b> a <b>GPT4All</b> míří na maximální soukromí.
+  </Fragment>
+  <Fragment slot="who">
+    Každý, kdo používá AI i pro trochu osobní témata a nechce je předávat americkému serveru.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Pro pozvolný začátek nainstalujte <b>LM Studio</b> nebo <b>Jan</b> (grafické rozhraní jako u
+      běžné aplikace).
+    </li>
+    <li>
+      Stáhněte si model nabízený v aplikaci (například Llama nebo Mistral), který odpovídá výkonu
+      vašeho zařízení.
+    </li>
+    <li>
+      Pusťte se do chatování: vše se děje lokálně. Ollama je verze pro příkazový řádek pro
+      techničtěji zaměřené uživatele.
+    </li>
+  </ol>
+</ToolCard>

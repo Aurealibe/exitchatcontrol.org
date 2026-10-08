@@ -1,0 +1,36 @@
+---
+tool: 't-website'
+---
+
+<ToolCard tool="t-website" variant={props.variant}>
+  <Fragment slot="name">A saját weboldalad</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Tedd kitilthatatlanná a hangodat</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy saját oldal, a saját domainneveden, ahol a tartalmad egyetlen platformtól sem függ.
+  </Fragment>
+  <Fragment slot="why">
+    Azon a napon, amikor egy hálózat törli vagy felfüggeszti a fiókodat, minden munkád elenyészik.
+    Egy személyes oldal a horgonyod: a bejegyzéseid ott maradnak, archiválva és naprakészen,
+    történjen bármi. Pontosan ezt csinálják az óvatos információs fiókok. Egy statikus oldal (amely
+    Hugóval, Astróval vagy Jekyll-lel készült) elegendő, és szinte ingyenesen publikálható; egy
+    dinamikus bloghoz egy saját üzemeltetésű WordPress vagy Ghost tökéletesen megfelel.
+  </Fragment>
+  <Fragment slot="who">
+    Információs fiókoknak, tartalomgyártóknak, aktivistáknak, és bárkinek, aki publikál, és tart a
+    platform-cenzúrától.
+  </Fragment>
+  <ol slot="install">
+    <li>Vásárolj egy domainnevet (ideális esetben egy adatvédelem-tudatos regisztrátortól).</li>
+    <li>
+      Válassz egy statikusoldal-generátort (Astro, Hugo), és hosztold az eredményt, vagy telepíts
+      WordPresst/Ghostot a szerveredre.
+    </li>
+    <li>
+      A közösségi fiókjaidból mindig mutass (linkelj) erre az oldalra: a közönséged így akkor is
+      megtalál, ha valamelyik fiókod elesik.
+    </li>
+  </ol>
+</ToolCard>

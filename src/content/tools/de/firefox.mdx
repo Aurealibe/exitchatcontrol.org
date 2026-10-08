@@ -1,0 +1,34 @@
+---
+tool: 't-firefox'
+---
+
+<ToolCard tool="t-firefox" variant={props.variant}>
+  <Fragment slot="name">Firefox (gehärtet)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Anfänger</span>
+    <span class="tool-tag">Ersetzt Chrome</span>
+    <span class="tool-tag">🌍 · Open-Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Der kostenlose Referenzbrowser für den täglichen Gebrauch, der die Privatsphäre respektiert.
+  </Fragment>
+  <Fragment slot="why">
+    Anders als Chrome, ein Werbe-Tracker von Google, wird Firefox von einer Organisation entwickelt,
+    deren Geschäftsmodell nicht auf deiner Profilierung beruht. Mit einigen Anpassungen nach der{' '}
+    <em>arkenfox</em>-Anleitung und der Erweiterung uBlock Origin bietet er einen sehr soliden
+    Schutz.
+  </Fragment>
+  <Fragment slot="who">Alle, als Browser für den täglichen Gebrauch.</Fragment>
+  <ol slot="install">
+    <li>
+      Installiere Firefox über <b>mozilla.org/firefox</b>.
+    </li>
+    <li>
+      Füge die Erweiterung <b>uBlock Origin</b> hinzu, die Werbung und Tracker blockiert.
+    </li>
+    <li>
+      Wähle in den Datenschutzeinstellungen „Streng“, deaktiviere die Telemetrie und lasse Cookies
+      beim Schließen löschen. Für weitergehenden Schutz kannst du die Arkenfox-Anleitung anwenden.
+    </li>
+  </ol>
+</ToolCard>

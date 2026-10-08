@@ -1,0 +1,32 @@
+---
+tool: 't-tails'
+---
+
+<ToolCard tool="t-tails" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Amnezikus USB</span>
+    <span class="tool-tag">🌍 · minden a Toron keresztül</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy rendszer, amely egy USB-pendrive-ról bootol, minden forgalmat a Toron keresztül irányít, és
+    a kikapcsoláskor <b>semmilyen nyomot</b> nem hagy.
+  </Fragment>
+  <Fragment slot="why">
+    Kikapcsoláskor mindent elfelejt: ez azt jelenti, hogy „amnezikus”. Ideális érzékeny, egyszeri
+    munkákhoz egy olyan számítógépen, ami nem a tiéd, úgy, hogy semmit sem hagysz hátra.
+  </Fragment>
+  <Fragment slot="who">
+    Kiszivárogtatóknak, újságíróknak, forrásoknak. A referenciaként szolgáló eszköz magas kockázatú
+    munkákhoz.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Töltsd le a Tails-t a <b>tails.net</b> oldalról, és kövesd a varázslót az USB-pendrive
+      létrehozásához.
+    </li>
+    <li>
+      Indítsd újra a számítógépet erről az USB-ről. Használd, majd állítsd le: minden nyom eltűnik.
+    </li>
+  </ol>
+</ToolCard>

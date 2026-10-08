@@ -1,0 +1,39 @@
+---
+tool: 't-nostr'
+---
+
+<ToolCard tool="t-nostr" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cenzúrázhatatlan</span>
+    <span class="tool-tag">🌍 · nyílt protokoll</span>
+  </Fragment>
+  <Fragment slot="what">
+    Nem egy alkalmazás, hanem egy protokoll: egy közösségi hálózat, ahol a személyazonosságod egy
+    egyszerű kulcspár, akárcsak a Bitcoinnál.
+  </Fragment>
+  <Fragment slot="why">
+    Nincs e-mail, nincs jelszó, nincs fiók, amit bárki is törölhetne. A posztjaid decentralizált
+    közvetítőkön keresztül utaznak, és te valóban birtoklod a közönségedet: senki sem tud végleg
+    kitiltani. Akár Bitcoin-borravalókat („zaps”) is fogadhatsz, és bármikor válthatsz alkalmazást
+    anélkül, hogy elveszítenéd a követőidet.
+  </Fragment>
+  <Fragment slot="who">
+    Információs fiókoknak és tartalomgyártóknak, akik tartanak a platform-cenzúrától, és egy igazán
+    saját jelenlétre vágynak.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepíts egy klienst: Damus (iPhone), Amethyst vagy Primal (Android), vagy egy webes verziót.
+    </li>
+    <li>
+      Az alkalmazás generálja a kulcspárodat.{' '}
+      <b>Készíts biztonsági másolatot a privát kulcsodról (nsec)</b> akárcsak egy Bitcoin
+      seed-kifejezésről: papíron, és soha ne oszd meg senkivel.
+    </li>
+    <li>
+      Hozd létre a profilodat, kövess embereket, engedélyezd a zappolást („zaps”), hogy satoshikat
+      („sats”) kaphass.
+    </li>
+  </ol>
+</ToolCard>

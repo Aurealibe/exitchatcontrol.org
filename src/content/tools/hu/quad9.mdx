@@ -1,0 +1,32 @@
+---
+tool: 't-quad9'
+---
+
+<ToolCard tool="t-quad9" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Kártékony programok blokkolása</span>
+    <span class="tool-tag">🇨🇭 nonprofit</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy titkosított, svájci, nonprofit DNS-feloldó, amely blokkolja az ismert rosszindulatú
+    domaineket is.
+  </Fragment>
+  <Fragment slot="why">
+    Svájci joghatóság, nem őrzik meg az IP-címedet, védelem az adathalászat és a malware-ek ellen.
+    Egy kiváló „állítsd be és felejtsd el” választás.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek, különösen azoknak, akik egyszerűséget és jó joghatóságot keresnek.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Androidon: Beállítások &gt; Hálózat (vagy Kapcsolatok) &gt; <b>Privát DNS</b> &gt; írd be:{' '}
+      <b>dns.quad9.net</b>.
+    </li>
+    <li>
+      iPhone-on/Mac-en: telepítsd a DoH profilt a quad9.net oldalról. PC-n: állítsd be a
+      DNS-over-HTTPS-t a böngészőben vagy a rendszerben.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,32 @@
+---
+tool: 't-bitchat'
+---
+
+<ToolCard tool="t-bitchat" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Bluetooth mesh</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Mesh messenger Jacka Dorseyho: blízké telefony přeposílají zprávy po krocích, bez internetu,
+    serveru i účtu.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end šifrování (AES-256-GCM) a „panic mode“, který třemi klepnutími na logo smaže vše.
+  </Fragment>
+  <Fragment slot="who">Pro protesty a výpadky proudu, vedle Briaru. Používejte opatrně.</Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Pozor: bez auditu</span>
+    <p>
+      Vlastní repozitář upozorňuje, že aplikace „has not received external security review“. Je
+      skvělá pro odolnost, ale zatím na ni nesázejte životy.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Nainstalujte z App Store (iOS) nebo APK/GitHubu (Android).</li>
+    <li>Otevřete aplikaci a zvolte přezdívku. Není třeba vytvářet účet.</li>
+    <li>Blízká zařízení se automaticky najdou přes Bluetooth.</li>
+    <li>V nebezpečí třikrát klepněte na logo a vše smažte (panic mode).</li>
+  </ol>
+</ToolCard>

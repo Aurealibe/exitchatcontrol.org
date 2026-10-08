@@ -1,0 +1,32 @@
+---
+tool: 't-session'
+---
+
+<ToolCard tool="t-session" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Středně pokročilý</span>
+    <span class="tool-tag">Bez telefonu</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Šifrování na úrovni Signalu, ale bez telefonního čísla a s onion routingem.
+  </Fragment>
+  <Fragment slot="why">
+    Vaší identitou je náhodné „Session ID“. Provoz prochází decentralizovanou sítí (Lokinet), která
+    výrazně omezuje metadata.
+  </Fragment>
+  <Fragment slot="who">
+    Když je telefonní číslo přítěží. Menší ekosystém, nejlépe si ho nechte pro konverzace, na
+    kterých záleží.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte z <b>getsession.org</b> (všechny platformy).
+    </li>
+    <li>
+      „Create account“ vygeneruje vaše Session ID a <b>obnovovací frázi</b>.
+    </li>
+    <li>Obnovovací frázi si napište na papír: je to jediný klíč k vašemu účtu.</li>
+    <li>Sdílejte své Session ID (nebo QR) s kontakty.</li>
+  </ol>
+</ToolCard>

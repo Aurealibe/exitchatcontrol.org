@@ -1,0 +1,35 @@
+---
+tool: 't-backups'
+---
+
+<ToolCard tool="t-backups" variant={props.variant}>
+  <Fragment slot="name">Backup cifrati</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un modo per fare il backup del telefono e del computer, cifrando i dati <b>prima</b> che partano
+    verso un qualsiasi cloud.
+  </Fragment>
+  <Fragment slot="why">
+    I backup iCloud/Google sono spesso accessibili al fornitore, e quindi ai tribunali.{' '}
+    <b>Cryptomator</b> cifra i tuoi file prima di inviarli a qualsiasi cloud; <b>restic</b> esegue
+    backup cifrati automatici; <b>Proton Drive</b> è cifrato end-to-end. Su iPhone, attiva
+    "Protezione avanzata dei dati" per cifrare i tuoi backup iCloud.
+  </Fragment>
+  <Fragment slot="who">
+    Tutti dovrebbero cifrare i propri backup. Regola d'oro: due copie cifrate, su due supporti, in
+    due luoghi diversi.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      iPhone: Impostazioni &gt; il tuo nome &gt; iCloud &gt; Protezione avanzata dei dati: attivala.
+    </li>
+    <li>
+      PC: installa Cryptomator, crea una cassaforte e mettici i tuoi file prima di sincronizzarli
+      con il cloud.
+    </li>
+  </ol>
+</ToolCard>

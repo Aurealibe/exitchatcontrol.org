@@ -1,0 +1,55 @@
+---
+tool: 't-mullvad'
+---
+
+<ToolCard tool="t-mullvad" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡🔴 Tutti i livelli</span>
+    <span class="tool-tag">Nessun account · contanti/Monero</span>
+    <span class="tool-tag">🇸🇪 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una VPN che maschera il tuo indirizzo IP e cifra il tuo traffico fino ai suoi server, senza mai
+    chiederti una sola informazione personale.
+  </Fragment>
+  <Fragment slot="why">
+    È il punto di riferimento per la privacy. Niente e-mail, niente nome: all'iscrizione ricevi un
+    semplice numero di account. Politica no-log verificata, un unico prezzo onesto (5 € al mese,
+    nessun piano, nessuna falsa promessa) e pagamento in contanti o in Monero. È esattamente ciò che
+    conta il giorno in cui uno Stato prova a bloccare l'accesso alle VPN: un account che non può
+    essere collegato alla tua identità e un pagamento che le banche non possono bloccare.
+  </Fragment>
+  <Fragment slot="who">
+    Tutti, dal cittadino che aggira una verifica d'identità al profilo ad alto rischio. È la VPN da
+    consigliare per prima.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Vai su <b>mullvad.net</b>. Se il sito è bloccato nel tuo paese, aprilo tramite Tor Browser o
+      il suo indirizzo <b>.onion</b>. Clicca su "Genera numero di account": non vengono chiesti
+      e-mail né nome. Salva questo numero nel tuo gestore di password e non condividerlo mai, è la
+      tua unica chiave di accesso.
+    </li>
+    <li>
+      Scegli la durata e il metodo di pagamento. Il prezzo è fisso. Tre strade: carta di credito (la
+      più semplice se non è bloccata), contanti spediti per posta, o criptovaluta.
+    </li>
+    <li>
+      <b>Pagamento anonimo in cripto:</b> clicca su "Crea un indirizzo di pagamento monouso".
+      Mullvad mostra un indirizzo (Bitcoin o Monero) e un importo esatto. Invia quell'importo dal
+      tuo wallet. Per il massimo anonimato, preferisci <b>Monero</b> (privato per impostazione
+      predefinita); Bitcoin è più semplice ma tracciabile. Vedi la sezione 09 per acquistare
+      criptovalute. Calcola circa 30 minuti per la conferma.
+    </li>
+    <li>
+      Scarica l'app da <b>mullvad.net/download</b> (tramite Tor se il sito è filtrato) e installala.
+      Su mobile, usa l'App Store, Google Play o l'APK ufficiale se l'app è stata rimossa dal tuo
+      store.
+    </li>
+    <li>
+      Avvia l'app, inserisci il tuo numero di account, poi connettiti a un server{' '}
+      <b>fuori dal tuo paese</b>, idealmente fuori dall'UE (Svizzera, Stati Uniti…). Attiva il "kill
+      switch" (che interrompe internet se la VPN cade) e il DNS di Mullvad.
+    </li>
+  </ol>
+</ToolCard>

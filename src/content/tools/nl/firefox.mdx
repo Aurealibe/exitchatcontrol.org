@@ -1,0 +1,33 @@
+---
+tool: 't-firefox'
+---
+
+<ToolCard tool="t-firefox" variant={props.variant}>
+  <Fragment slot="name">Firefox (gehard)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Vervangt Chrome</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    De referentie-vrije browser voor privacyvriendelijk dagelijks gebruik.
+  </Fragment>
+  <Fragment slot="why">
+    In tegenstelling tot Chrome (een reclametracker van Google) wordt Firefox ontwikkeld door een
+    stichting die er geen belang bij heeft u te profileren. Met enkele aanpassingen (de{' '}
+    <em>arkenfox</em>-gids) en de extensie uBlock Origin wordt hij heel solide.
+  </Fragment>
+  <Fragment slot="who">Iedereen, als dagelijkse hoofd browser.</Fragment>
+  <ol slot="install">
+    <li>
+      Installeer Firefox vanaf <b>mozilla.org/firefox</b>.
+    </li>
+    <li>
+      Voeg de extensie <b>uBlock Origin</b> toe (blokkeert advertenties en trackers).
+    </li>
+    <li>
+      Kies bij privacy-instellingen "Streng", schakel telemetrie uit en wis cookies bij het
+      afsluiten. Voor wie verder wil: pas de arkenfox-gids toe.
+    </li>
+  </ol>
+</ToolCard>

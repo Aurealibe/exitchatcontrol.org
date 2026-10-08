@@ -1,0 +1,29 @@
+---
+tool: 't-quad9'
+---
+
+<ToolCard tool="t-quad9" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Anti-malware</span>
+    <span class="tool-tag">🇨🇭 non-profit</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een versleutelde, Zwitserse, non-profit DNS-resolver die ook bekende kwaadaardige domeinen
+    blokkeert.
+  </Fragment>
+  <Fragment slot="why">
+    Zwitserse jurisdictie, geen bewaring van uw IP-adres, bescherming tegen phishing en malware. Een
+    uitstekende "instellen en vergeten"-keuze.
+  </Fragment>
+  <Fragment slot="who">Iedereen, vooral wie eenvoud en een goede jurisdictie wil.</Fragment>
+  <ol slot="install">
+    <li>
+      Op Android: Instellingen &gt; Netwerk &gt; <b>Privé-DNS</b> &gt; voer <b>dns.quad9.net</b> in.
+    </li>
+    <li>
+      Op iPhone/Mac: installeer het DoH-profiel van quad9.net. Op pc: stel DNS-over-HTTPS in de
+      browser of het systeem in.
+    </li>
+  </ol>
+</ToolCard>

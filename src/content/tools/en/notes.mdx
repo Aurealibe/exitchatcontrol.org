@@ -1,0 +1,27 @@
+---
+tool: 't-notes'
+---
+
+<ToolCard tool="t-notes" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Replaces Docs / Notion</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    End-to-end encrypted notes and documents, to replace Google Docs, Notion or Evernote.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Standard Notes</b> (by Proton) encrypts your notes by default. <b>Joplin</b> handles Markdown
+    notebooks with optional encryption and the sync of your choice. <b>CryptPad</b> (French) offers
+    a real-time, fully encrypted Google Docs equivalent.
+  </Fragment>
+  <Fragment slot="who">Everyone for notes; CryptPad for multi-person collaboration.</Fragment>
+  <ol slot="install">
+    <li>
+      Standard Notes / Joplin: create an account, install the app, and enable encryption (on by
+      default in Standard Notes, to switch on in Joplin).
+    </li>
+    <li>CryptPad: use cryptpad.fr or another instance, no account needed to start.</li>
+  </ol>
+</ToolCard>

@@ -13,110 +13,13 @@ title: 'Self-hosting'
 
 Il livello massimo di sovranità: ospitare tu stesso i tuoi servizi. I tuoi dati vivono sul tuo hardware, sotto la giurisdizione che scegli tu.
 
-<ToolCard tool="t-yunohost">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Avanzato</span>
-    <span class="tool-tag">Server chiavi in mano</span>
-    <span class="tool-tag">🌍 · open source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Sistemi che trasformano un vecchio PC o un Raspberry Pi in un server personale, con un catalogo
-    di app da installare in pochi clic.
-  </Fragment>
-  <Fragment slot="why">
-    Il self-hosting fa paura, ma questi strumenti fanno il lavoro pesante. <b>YunoHost</b> gestisce
-    perfino la tua email e il single sign-on. <b>Umbrel</b> offre uno store con oltre 300 app,
-    apprezzato da chi si occupa di privacy e Bitcoin. <b>Start9</b> cifra i backup e assegna a ogni
-    servizio un indirizzo Tor per impostazione predefinita.
-  </Fragment>
-  <Fragment slot="who">
-    Profili avanzati pronti a dedicare un pomeriggio a costruire il proprio cloud. È la contromossa
-    strutturale più radicale a Chat Control.
-  </Fragment>
-  <ol slot="install">
-    <li>
-      Procurati un vecchio computer, un Raspberry Pi, oppure noleggia un piccolo server (VPS) in un
-      paese che tutela la privacy.
-    </li>
-    <li>Installa YunoHost, Umbrel o Start9 seguendo la loro guida ufficiale.</li>
-    <li>Dal catalogo, installa Nextcloud, un server Matrix, una galleria fotografica, ecc.</li>
-    <li>
-      Accedici in modo privato con Tailscale (sezione VPN) invece di esporre il server al pubblico.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-yunohost" />
 
-<ToolCard tool="t-nextcloud">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Avanzato</span>
-    <span class="tool-tag">Sostituisce tutto Google</span>
-    <span class="tool-tag">🇩🇪 · open source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Il tuo cloud personale: file, calendario, contatti, foto, note e documenti collaborativi, sul
-    tuo server.
-  </Fragment>
-  <Fragment slot="why">
-    È il sostituto completo di Google Drive, Calendar e Contatti, ma a casa tua. Scegli tu la
-    giurisdizione e nessun altro controlla i tuoi file. Nota: è una privacy "da server tuo", non una
-    crittografia end-to-end predefinita; devi tenerlo aggiornato.
-  </Fragment>
-  <Fragment slot="who">
-    Chi fa self-hosting. La strada più semplice è installarlo tramite YunoHost o Umbrel.
-  </Fragment>
-</ToolCard>
+<Tool id="t-nextcloud" />
 
-<ToolCard tool="t-synapse">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Avanzato</span>
-    <span class="tool-tag">Il tuo server di chat</span>
-    <span class="tool-tag">🌍 · open source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Il tuo server di chat Matrix, che fa funzionare Element e le chiamate cifrate.
-  </Fragment>
-  <Fragment slot="why">
-    Ospitando il server, controlli anche i <b>metadati</b> (chi parla con chi, e quando), il punto
-    debole di Matrix nella federazione. È una chat di comunità che appartiene solo a te.
-  </Fragment>
-  <Fragment slot="who">
-    Comunità, collettivi, redazioni che vogliono un proprio spazio federato indipendente.
-  </Fragment>
-</ToolCard>
+<Tool id="t-synapse" />
 
-<ToolCard tool="t-website">
-  <Fragment slot="name">Il tuo sito web</Fragment>
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Metti la tua voce al riparo dai ban</span>
-  </Fragment>
-  <Fragment slot="what">
-    Un sito tutto tuo, sul tuo nome di dominio, dove i tuoi contenuti non dipendono da nessuna
-    piattaforma.
-  </Fragment>
-  <Fragment slot="why">
-    Il giorno in cui un social cancella o sospende il tuo account, tutto il tuo lavoro sparisce. Un
-    sito personale è la tua àncora: i tuoi post restano lì, archiviati e aggiornati, qualunque cosa
-    accada. È esattamente ciò che fanno gli account di informazione prudenti. Un sito statico
-    (costruito con Hugo, Astro o Jekyll) è sufficiente e si pubblica quasi gratis; per un blog
-    dinamico, un WordPress o un Ghost in self-hosting fa il suo lavoro.
-  </Fragment>
-  <Fragment slot="who">
-    Account di informazione, creator, attivisti, chiunque pubblichi e tema la censura delle
-    piattaforme.
-  </Fragment>
-  <ol slot="install">
-    <li>Acquista un nome di dominio (idealmente da un registrar rispettoso della privacy).</li>
-    <li>
-      Scegli un generatore di siti statici (Astro, Hugo) e pubblica il risultato, oppure installa
-      WordPress/Ghost sul tuo server.
-    </li>
-    <li>
-      Rimanda sempre al sito dai tuoi account social: il tuo pubblico ti ritrova anche se un account
-      cade.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-website" />
 
 <div class="box">
   <span class="lab">La questione della giurisdizione</span>

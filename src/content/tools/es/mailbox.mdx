@@ -1,0 +1,28 @@
+---
+tool: 't-mailbox'
+---
+
+<ToolCard tool="t-mailbox" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Correo clásico ético</span>
+    <span class="tool-tag">🇩🇪 · UE · PGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Dos proveedores de correo europeos éticos y de bajo coste, con soporte PGP del lado del
+    servidor.
+  </Fragment>
+  <Fragment slot="why">
+    Conscientes de la privacidad y el medio ambiente, construidos sobre estándares abiertos (IMAP,
+    PGP). Funcionan con cualquier cliente de correo.
+  </Fragment>
+  <Fragment slot="who">
+    Aquellos que quieren un buzón "clásico" (leer en Thunderbird) pero ético, en lugar de una app
+    cifrada cerrada.
+  </Fragment>
+  <ol slot="install">
+    <li>Crea una cuenta (de pago, aproximadamente 1-3 € al mes).</li>
+    <li>Activa el cifrado PGP del lado del servidor (la función "Guard" en mailbox.org).</li>
+    <li>Configura la cuenta en Thunderbird o la app móvil de tu elección.</li>
+  </ol>
+</ToolCard>

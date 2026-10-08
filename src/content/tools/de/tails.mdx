@@ -1,0 +1,32 @@
+---
+tool: 't-tails'
+---
+
+<ToolCard tool="t-tails" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Fortgeschritten</span>
+    <span class="tool-tag">Amnesisches USB-System</span>
+    <span class="tool-tag">🌍 · alles über Tor</span>
+  </Fragment>
+  <Fragment slot="what">
+    Ein System, das von einem USB-Stick startet, den gesamten Datenverkehr über Tor leitet und nach
+    dem Herunterfahren <b>keine Spuren</b> hinterlässt.
+  </Fragment>
+  <Fragment slot="why">
+    Beim Herunterfahren wird alles vergessen – daher „amnesisch“. Ideal für einmalige sensible
+    Arbeiten auf einem fremden Computer, ohne dort etwas zu hinterlassen.
+  </Fragment>
+  <Fragment slot="who">
+    Whistleblower, Journalisten und Quellen. Das Standardwerkzeug für besonders riskante Aufgaben.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Lade Tails von <b>tails.net</b> herunter und folge dem Assistenten, um den USB-Stick zu
+      erstellen.
+    </li>
+    <li>
+      Starte den Computer von diesem USB-Stick. Arbeite damit und fahre ihn anschließend herunter:
+      Alles verschwindet.
+    </li>
+  </ol>
+</ToolCard>

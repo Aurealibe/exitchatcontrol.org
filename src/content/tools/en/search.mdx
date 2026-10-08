@@ -1,0 +1,26 @@
+---
+tool: 't-search'
+---
+
+<ToolCard tool="t-search" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡 Search engines</span>
+    <span class="tool-tag">Replaces Google Search</span>
+  </Fragment>
+  <Fragment slot="what">Search engines that don't profile every query, unlike Google.</Fragment>
+  <Fragment slot="why">
+    DuckDuckGo and Brave Search keep no history tied to your identity. Startpage serves Google
+    results without the tracking. SearXNG goes further: a <b>self-hostable</b> metasearch engine,
+    sovereignty down to your search bar.
+  </Fragment>
+  <Fragment slot="who">Everyone. SearXNG targets those who want to host their own engine.</Fragment>
+  <ol slot="install">
+    <li>
+      In your browser settings, change the default engine to DuckDuckGo, Brave Search or Startpage.
+    </li>
+    <li>
+      For SearXNG: use a public instance (directory at searx.space) or host your own (see section
+      10).
+    </li>
+  </ol>
+</ToolCard>

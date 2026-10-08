@@ -1,0 +1,35 @@
+---
+tool: 't-bitcoin'
+---
+
+<ToolCard tool="t-bitcoin" variant={props.variant}>
+  <Fragment slot="name">Bitcoin (saját kezelés / self-custody)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cenzúra-ellenálló</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy digitális pénz, amit te magad birtokolsz, anélkül, hogy egy bankon keresztülmenne.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Saját kezelésben</b> (a kulcsaid egy olyan tárcában vannak, amit csak te irányítasz) senki
+    sem tudja befagyasztani vagy blokkolni a pénzedet. Az adatvédelme nem tökéletes (a főkönyv /
+    ledger nyilvános), de mentes a banki cenzúrától, ami jól jön azon a napon, amikor egy fizetést
+    visszautasítanak.
+  </Fragment>
+  <Fragment slot="who">
+    Védekezés a számlabefagyasztások vagy a banki kizárás ellen, és szolgáltatások (pl. VPN) anonim
+    fizetéséhez.
+  </Fragment>
+  <ol slot="install">
+    <li>Szerezz be némi bitcoint (egy kriptotőzsdén vagy peer-to-peer módon).</li>
+    <li>
+      Azonnal utald át őket egy <b>általad</b> irányított tárcába: egy hardvertárcába (Trezor,
+      ColdCard) vagy egy nyílt forráskódú alkalmazásba. Ne hagyd őket a tőzsdén.
+    </li>
+    <li>
+      Készíts biztonsági másolatot a helyreállítási kifejezésről papíron, soha ne fotóként vagy
+      online.
+    </li>
+  </ol>
+</ToolCard>

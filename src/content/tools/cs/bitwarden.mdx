@@ -1,0 +1,33 @@
+---
+tool: 't-bitwarden'
+---
+
+<ToolCard tool="t-bitwarden" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Nejlepší pro začátek</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Trezor na hesla, který si vaše hesla pamatuje, vytváří je a vyplňuje za vás na všech vašich
+    zařízeních.
+  </Fragment>
+  <Fragment slot="why">
+    Zdarma, auditovaný, multiplatformní a s koncovým šifrováním. Stačí si pamatovat jediné silné
+    heslo. Dokonce jej můžete <b>provozovat sami</b> (přes Vaultwarden), takže nejste na nikom
+    závislí.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého. Je základem veškerého zabezpečení: jedno silné, jedinečné heslo pro každou službu.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Vytvořte si účet na bitwarden.com a zvolte si <b>dlouhé</b> hlavní heslo (větu). Nikdy ho
+      nezapomeňte: nelze ho obnovit.
+    </li>
+    <li>Nainstalujte rozšíření do prohlížeče a mobilní aplikaci.</li>
+    <li>
+      Při přihlašování nechte Bitwarden uložit vaše stará hesla a poté je nahraďte vygenerovanými.
+    </li>
+  </ol>
+</ToolCard>

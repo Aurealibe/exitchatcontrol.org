@@ -1,0 +1,32 @@
+---
+tool: 't-tailscale'
+---
+
+<ToolCard tool="t-tailscale" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Acceso privado a tu servidor</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una red privada cifrada que vincula tus dispositivos a tu servidor, sin jamás exponerlo en
+    internet pública.
+  </Fragment>
+  <Fragment slot="why">
+    En lugar de abrir puertos (y ser atacado), <b>Tailscale</b> construye un túnel WireGuard solo
+    entre tus dispositivos autorizados: tu servidor no tiene superficie de ataque pública.{' '}
+    <b>Headscale</b> es la versión autoalojada, así que no dependes de ningún tercero.{' '}
+    <b>WireGuard</b> solo da control total, al coste de configuración manual.
+  </Fragment>
+  <Fragment slot="who">
+    Cada autoalojador. Es la forma segura de alcanzar tu Nextcloud o fotos desde fuera.
+  </Fragment>
+  <ol slot="install">
+    <li>Instala Tailscale en tu servidor y en tu móvil/PC, conéctalos a la misma cuenta.</li>
+    <li>
+      Tus dispositivos se ven instantáneamente entre sí en una red privada; alcanza tu servidor en
+      su dirección Tailscale.
+    </li>
+    <li>Para cero dependencia, reemplaza el servidor de coordinación con Headscale autoalojado.</li>
+  </ol>
+</ToolCard>

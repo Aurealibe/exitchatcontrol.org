@@ -1,0 +1,36 @@
+---
+tool: 't-yunohost'
+---
+
+<ToolCard tool="t-yunohost" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzato</span>
+    <span class="tool-tag">Server chiavi in mano</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Sistemi che trasformano un vecchio PC o un Raspberry Pi in un server personale, con un catalogo
+    di app da installare in pochi clic.
+  </Fragment>
+  <Fragment slot="why">
+    Il self-hosting fa paura, ma questi strumenti fanno il lavoro pesante. <b>YunoHost</b> gestisce
+    perfino la tua email e il single sign-on. <b>Umbrel</b> offre uno store con oltre 300 app,
+    apprezzato da chi si occupa di privacy e Bitcoin. <b>Start9</b> cifra i backup e assegna a ogni
+    servizio un indirizzo Tor per impostazione predefinita.
+  </Fragment>
+  <Fragment slot="who">
+    Profili avanzati pronti a dedicare un pomeriggio a costruire il proprio cloud. È la contromossa
+    strutturale più radicale a Chat Control.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Procurati un vecchio computer, un Raspberry Pi, oppure noleggia un piccolo server (VPS) in un
+      paese che tutela la privacy.
+    </li>
+    <li>Installa YunoHost, Umbrel o Start9 seguendo la loro guida ufficiale.</li>
+    <li>Dal catalogo, installa Nextcloud, un server Matrix, una galleria fotografica, ecc.</li>
+    <li>
+      Accedici in modo privato con Tailscale (sezione VPN) invece di esporre il server al pubblico.
+    </li>
+  </ol>
+</ToolCard>

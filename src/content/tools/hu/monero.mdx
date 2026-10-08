@@ -1,0 +1,31 @@
+---
+tool: 't-monero'
+---
+
+<ToolCard tool="t-monero" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Alapértelmezetten privát</span>
+  </Fragment>
+  <Fragment slot="what">
+    A privát kriptovaluta: az összegek, a feladó és a címzett alapértelmezés szerint rejtve vannak.
+  </Fragment>
+  <Fragment slot="why">
+    Itt pontosan a Bitcoin ellentétéről van szó: a tranzakciók tervezésükből fakadóan privátak. Ez a
+    legjobb módja annak, hogy fizess egy szolgáltatásért anélkül, hogy hozzád vezető nyomot hagynál.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik maximális pénzügyi adatvédelmet szeretnének. Megjegyzés: A Monerót már több
+    európai tőzsdéről is kivezették, így gyakran decentralizált váltóra van szükség.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepíts egy tárcát (a hivatalosat a getmonero.org oldalról, vagy a Cake Walletet mobilon).
+    </li>
+    <li>
+      Szerezz XMR-t egy decentralizált váltó szolgáltatáson keresztül (például egy másik kriptóból
+      való „váltással”).
+    </li>
+    <li>Készíts biztonsági másolatot a helyreállítási kifejezésedről papíron.</li>
+  </ol>
+</ToolCard>

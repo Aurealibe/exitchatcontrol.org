@@ -13,96 +13,11 @@ title: 'Finanční suverenita'
 
 I peníze jsou sledovány a lze je cenzurovat. Účty aktivistů byly zmrazeny, dary blokovány a každá platba kartou je sledována. Finanční soukromí je součástí suverenity.
 
-<ToolCard tool="t-bitcoin">
-  <Fragment slot="name">Bitcoin (vlastní správa)</Fragment>
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Odolný vůči cenzuře</span>
-  </Fragment>
-  <Fragment slot="what">Digitální peníze, které držíte sami, bez prostřednictví banky.</Fragment>
-  <Fragment slot="why">
-    Při <b>vlastní správě</b> (vaše klíče v peněžence, kterou ovládáte jen vy) nemůže nikdo vaše
-    prostředky zmrazit ani zablokovat. Jeho soukromí není dokonalé (účetní kniha je veřejná), ale
-    vyhýbá se bankovní cenzuře, což se hodí v den, kdy je platba odmítnuta.
-  </Fragment>
-  <Fragment slot="who">
-    Pro ochranu před zmrazením účtu nebo vyloučením z bankovních služeb a pro anonymní platby za
-    služby, jako je VPN.
-  </Fragment>
-  <ol slot="install">
-    <li>Pořiďte si nějaké bitcoiny (na burze nebo peer-to-peer).</li>
-    <li>
-      Ihned je převeďte do peněženky, kterou ovládáte <b>vy</b>: hardwarové peněženky (Trezor,
-      ColdCard) nebo open-source aplikace. Nenechávejte je na burze.
-    </li>
-    <li>Záložní frázi pro obnovení si uložte na papír, nikdy jako fotografii ani online.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-bitcoin" />
 
-<ToolCard tool="t-monero">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Pokročilý</span>
-    <span class="tool-tag">Ve výchozím nastavení soukromé</span>
-  </Fragment>
-  <Fragment slot="what">
-    Kryptoměna zaměřená na soukromí: částky, odesílatel i příjemce jsou ve výchozím nastavení
-    skryté.
-  </Fragment>
-  <Fragment slot="why">
-    V tomto ohledu je přesným opakem Bitcoinu: transakce jsou soukromé už z principu. Je to nejlepší
-    způsob, jak zaplatit za službu bez zanechání stopy vedoucí k vám.
-  </Fragment>
-  <Fragment slot="who">
-    Pro ty, kdo chtějí maximální finanční soukromí. Poznámka: Monero už bylo vyřazeno z několika
-    evropských burz, takže často potřebujete decentralizovanou směnu.
-  </Fragment>
-  <ol slot="install">
-    <li>Nainstalujte si peněženku (oficiální na getmonero.org nebo Cake Wallet pro mobil).</li>
-    <li>
-      Získejte XMR prostřednictvím decentralizované směnárenské služby (například „swapem“ z jiné
-      kryptoměny).
-    </li>
-    <li>Záložní frázi pro obnovení si uložte na papír.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-monero" />
 
-<ToolCard tool="t-wasabi">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Pokročilý</span>
-    <span class="tool-tag">CoinJoin</span>
-    <span class="tool-tag">🌍 · open source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Svobodná bitcoinová peněženka s vestavěným <b>CoinJoinem</b>: vaše mince se spojí s mincemi
-    dalších uživatelů do společné transakce, což přeruší viditelnou vazbu mezi původem a cílem v
-    blockchainu.
-  </Fragment>
-  <Fragment slot="why">
-    Bitcoinová účetní kniha je veřejná: bez opatrnosti lze každou platbu propojit s předchozími.
-    CoinJoin obnoví část soukromí, aniž byste své prostředky někomu svěřili, a peněženka běží přes
-    Tor.
-  </Fragment>
-  <Fragment slot="who">
-    Zkušení uživatelé bitcoinu. Od ukončení původního koordinátora v červnu 2024 je nutné zvolit
-    nezávislého koordinátora, který si účtuje poplatky.
-  </Fragment>
-  <div class="box warn" slot="extra">
-    <span class="lab">Smíchané prostředky a platformy</span>
-    <p>
-      Regulované platformy mohou prostředky, které prošly CoinJoinem, odmítnout nebo zablokovat.
-      Uchovejte si doklad o legitimním původu svých prostředků.
-    </p>
-  </div>
-  <ol slot="install">
-    <li>
-      Stáhněte Wasabi z <b>wasabiwallet.io</b> a ověřte podpis.
-    </li>
-    <li>V nastavení zvolte nezávislého koordinátora.</li>
-    <li>
-      Zapněte automatický CoinJoin a nikdy nekombinujte smíchané a nesmíchané mince v jedné platbě.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-wasabi" />
 
 <div class="box honest">
   <span class="lab">Soukromí na blockchainu: co říká právo</span>

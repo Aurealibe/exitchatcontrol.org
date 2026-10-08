@@ -1,0 +1,28 @@
+---
+tool: 't-tails'
+---
+
+<ToolCard tool="t-tails" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">USB amnésico</span>
+    <span class="tool-tag">🌍 · todo vía Tor</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un sistema que arranca desde una memoria USB, enruta todo el tráfico a través de Tor y no deja{' '}
+    <b>ningún rastro</b> al apagarse.
+  </Fragment>
+  <Fragment slot="why">
+    Al apagar, todo se olvida: es "amnésico". Ideal para trabajo sensible puntual en un ordenador
+    que no es tuyo, sin dejar nada atrás.
+  </Fragment>
+  <Fragment slot="who">
+    Filtradores, periodistas, fuentes. La herramienta de referencia para trabajo de alto riesgo.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Descarga Tails desde <b>tails.net</b> y sigue el asistente para crear la memoria USB.
+    </li>
+    <li>Reinicia el ordenador desde ese USB. Úsalo, luego apaga: todo desaparece.</li>
+  </ol>
+</ToolCard>

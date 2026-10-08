@@ -1,0 +1,33 @@
+---
+tool: 't-bitchat'
+---
+
+<ToolCard tool="t-bitchat" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Erweitert</span>
+    <span class="tool-tag">Bluetooth Mesh</span>
+    <span class="tool-tag">🌍 · Open-Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Jack Dorseys Mesh-Messenger: Telefone in der Nähe leiten Nachrichten sprunghaft weiter, ohne
+    Internet und Server oder Konto.
+  </Fragment>
+  <Fragment slot="why">
+    Ende-zu-Ende-Verschlüsselung (AES-256-GCM) und ein „Panikmodus“, der mit drei Fingertipps alles
+    löscht das Logo.
+  </Fragment>
+  <Fragment slot="who">Proteste und Stromausfälle, neben Briar. Mit Vorsicht verwenden.</Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Vorsicht: ungeprüft</span>
+    <p>
+      Das eigene Repo warnt davor, dass es „keine externe Sicherheitsüberprüfung erhalten hat“.
+      Großartig für die Widerstandsfähigkeit, aber Setze noch kein Leben darauf ein.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Installiere die App über den App Store (iOS) oder als APK über GitHub (Android).</li>
+    <li>Öffne die App und wähle einen Spitznamen. Du musst kein Konto erstellen.</li>
+    <li>In der Nähe befindliche Geräte werden automatisch über Bluetooth erkannt.</li>
+    <li>Bei Gefahr dreimal auf das Logo tippen, um alles zu löschen (Panikmodus).</li>
+  </ol>
+</ToolCard>

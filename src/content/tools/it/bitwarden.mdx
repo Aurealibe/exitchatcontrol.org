@@ -1,0 +1,34 @@
+---
+tool: 't-bitwarden'
+---
+
+<ToolCard tool="t-bitwarden" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Il migliore per iniziare</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una cassaforte di password che ricorda, genera e compila le tue password al posto tuo, su tutti
+    i tuoi dispositivi.
+  </Fragment>
+  <Fragment slot="why">
+    Gratuito, verificato, multipiattaforma e cifrato end-to-end. Devi ricordare una sola password
+    robusta. Puoi persino <b>ospitarlo tu stesso</b> (tramite Vaultwarden) per non dipendere da
+    nessuno.
+  </Fragment>
+  <Fragment slot="who">
+    Tutti. È la base di ogni sicurezza: una password robusta e unica per ogni servizio.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Crea un account su bitwarden.com e scegli una master password <b>lunga</b> (una frase). Non
+      dimenticarla mai: non può essere recuperata.
+    </li>
+    <li>Installa l'estensione del browser e l'app mobile.</li>
+    <li>
+      Man mano che accedi, lascia che Bitwarden salvi e poi sostituisca le tue vecchie password con
+      password generate.
+    </li>
+  </ol>
+</ToolCard>

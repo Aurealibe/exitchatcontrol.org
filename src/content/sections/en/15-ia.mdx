@@ -28,83 +28,11 @@ What you type into a cloud AI is a **written, timestamped, stored confession**. 
 
 #### The counter: local AI
 
-<ToolCard tool="t-localai">
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Replaces ChatGPT</span>
-    <span class="tool-tag">🌍 · 100% local</span>
-  </Fragment>
-  <Fragment slot="what">Software to run an AI model directly on your own computer.</Fragment>
-  <Fragment slot="why">
-    Your questions never leave the device: no server, no account, no telemetry, and it works
-    offline. Quality depends on your hardware, but nothing leaks. <b>Ollama</b> and <b>LM Studio</b>{' '}
-    are the easiest; <b>Jan</b> and <b>GPT4All</b> aim for maximum privacy.
-  </Fragment>
-  <Fragment slot="who">
-    Anyone who uses AI for even slightly personal topics and doesn't want to hand them to a US
-    server.
-  </Fragment>
-  <ol slot="install">
-    <li>
-      For a gentle start, install <b>LM Studio</b> or <b>Jan</b> (a graphical interface, like a
-      normal app).
-    </li>
-    <li>
-      Download a model offered in the app (for example Llama or Mistral), matched to your machine's
-      power.
-    </li>
-    <li>
-      Chat away: everything happens locally. Ollama is the command-line version for the more
-      technical.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-localai" />
 
-<ToolCard tool="t-pocketpal">
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Replaces ChatGPT on mobile</span>
-    <span class="tool-tag">📱 · 100% local</span>
-  </Fragment>
-  <Fragment slot="what">An app that runs AI models directly on your phone, fully offline.</Fragment>
-  <Fragment slot="why">
-    Your prompts never leave the phone: no account, no cloud, no telemetry, and it works in airplane
-    mode. Open source (MIT), it downloads <b>GGUF</b> models (Gemma, Qwen, Phi, Llama) from Hugging
-    Face and runs them on your device's CPU, GPU or NPU. The mobile counterpart to Ollama and LM
-    Studio.
-  </Fragment>
-  <Fragment slot="who">
-    Anyone who reaches for ChatGPT on their phone for personal questions and doesn't want to hand
-    them to a US server.
-  </Fragment>
-  <ol slot="install">
-    <li>
-      Install <b>PocketPal</b> from the App Store or Google Play (or build it from source).
-    </li>
-    <li>
-      Open <b>Models</b>, pick one that fits your phone, and download it.
-    </li>
-    <li>Load it and chat: everything runs offline, on the device.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-pocketpal" />
 
-<ToolCard tool="t-cloudai">
-  <Fragment slot="tags">
-    <span class="tool-tag">🟢🟡</span>
-    <span class="tool-tag">Privacy-minded cloud</span>
-  </Fragment>
-  <Fragment slot="what">
-    Cloud AI access, but built for privacy, when a local AI isn't possible.
-  </Fragment>
-  <Fragment slot="why">
-    <b>Duck.ai</b> (DuckDuckGo) gives anonymised access to several models. <b>Lumo</b> (Proton)
-    encrypts exchanges and doesn't train on them. Far better than consumer ChatGPT, but it's still a
-    remote server.
-  </Fragment>
-  <Fragment slot="who">
-    Those who want cloud convenience without feeding the giants. Keep non-sensitive topics there.
-  </Fragment>
-</ToolCard>
+<Tool id="t-cloudai" />
 
 <div class="box honest">
   <span class="lab">The simple rule</span>

@@ -1,0 +1,31 @@
+---
+tool: 't-yubikey'
+---
+
+<ToolCard tool="t-yubikey" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Közép. / Haladó</span>
+    <span class="tool-tag">FIDO2 hardveres kulcs</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy kisméretű fizikai kulcs (USB, gyakran NFC-vel), amely egyetlen érintéssel bizonyítja a
+    személyazonosságodat.
+  </Fragment>
+  <Fragment slot="why">
+    Ez a legerősebb 2FA: ellenáll az adathalászatnak, mert a kulcs a válaszadás előtt ellenőrzi az
+    oldal valódi címét. A <b>Nitrokey</b> egy teljesen nyílt hardverű és firmware-ű alternatíva. Egy
+    hamis oldal nem tud átverni.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik maximális biztonságot szeretnének a legfontosabb fiókjaiknál. Vegyél <b>kettőt</b>{' '}
+    (egy főt, egy tartalékot).
+  </Fragment>
+  <ol slot="install">
+    <li>Szerezz be két kulcsot a yubico.com vagy a nitrokey.com oldalról.</li>
+    <li>
+      Minden fiók biztonsági beállításaiban (e-mail, jelszókezelő...) adj hozzá egy „biztonsági
+      kulcsot” vagy „azonosítókulcsot”. Regisztráld mindkét kulcsot.
+    </li>
+    <li>A tartalék kulcsot tartsd biztonságos, külön helyen.</li>
+  </ol>
+</ToolCard>

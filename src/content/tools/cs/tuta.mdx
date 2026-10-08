@@ -1,0 +1,32 @@
+---
+tool: 't-tuta'
+---
+
+<ToolCard tool="t-tuta" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Nahrazuje Gmail</span>
+    <span class="tool-tag">🇩🇪 · open-source · postkvantové</span>
+  </Fragment>
+  <Fragment slot="what">
+    Německá e-mailová služba, plně open-source a bez jakékoli služby Googlu.
+  </Fragment>
+  <Fragment slot="why">
+    Šifruje také <b>předmět zprávy a některá metadata</b>, a to šifrováním odolným vůči kvantovým
+    počítačům. Jurisdikce EU.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo chtějí maximální šifrování metadat a plně svobodný software. Nepoužívá PGP: pro
+    šifrované psaní lidem mimo službu zprávu chráníte heslem.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Vytvořte si účet na <b>tuta.com</b> a nainstalujte aplikaci (je dostupná na F-Droid).
+    </li>
+    <li>
+      Chcete-li šifrovaně psát člověku, který službu nepoužívá: klikněte na zámek a nastavte heslo,
+      které svému protějšku sdělíte jiným kanálem.
+    </li>
+    <li>Zapněte dvoufaktorové ověřování.</li>
+  </ol>
+</ToolCard>

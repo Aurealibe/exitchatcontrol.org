@@ -1,0 +1,42 @@
+---
+tool: 't-wasabi'
+---
+
+<ToolCard tool="t-wasabi" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">CoinJoin</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un monedero de Bitcoin libre con <b>CoinJoin</b> integrado: tus monedas se agrupan con las de
+    otros usuarios en una transacción común, lo que rompe el vínculo visible en la cadena entre
+    origen y destino.
+  </Fragment>
+  <Fragment slot="why">
+    El registro de Bitcoin es público: sin precauciones, cada pago puede vincularse a los
+    anteriores. El CoinJoin recupera parte de esa privacidad sin confiar tus fondos a nadie, y el
+    monedero funciona a través de Tor.
+  </Fragment>
+  <Fragment slot="who">
+    Usuarios de Bitcoin con experiencia. Desde el cierre del coordinador original en junio de 2024,
+    hay que elegir un coordinador independiente, que cobra comisiones.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Fondos mezclados y plataformas</span>
+    <p>
+      Las plataformas reguladas pueden rechazar o bloquear fondos que hayan pasado por un CoinJoin.
+      Conserva una prueba del origen legítimo de tus fondos.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Descarga Wasabi desde <b>wasabiwallet.io</b> y verifica la firma.
+    </li>
+    <li>En los ajustes, elige un coordinador independiente.</li>
+    <li>
+      Activa el CoinJoin automático y no combines nunca monedas mezcladas y sin mezclar en un mismo
+      pago.
+    </li>
+  </ol>
+</ToolCard>

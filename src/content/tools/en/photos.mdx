@@ -1,0 +1,29 @@
+---
+tool: 't-photos'
+---
+
+<ToolCard tool="t-photos" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Replaces Google Photos</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Two ways to keep your photos without handing them to Google or Apple.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Ente</b> is a managed, end-to-end encrypted service, with on-device recognition and search:
+    simple and safe. <b>Immich</b> is a Google Photos clone you <b>host yourself</b> (face and
+    object search included), for those comfortable running a server.
+  </Fragment>
+  <Fragment slot="who">
+    Ente for everyone; Immich for self-hosters. Note: Immich is not end-to-end encrypted, its
+    security depends on your server.
+  </Fragment>
+  <ol slot="install">
+    <li>Ente: install the app, create an account, turn on automatic backup of your camera roll.</li>
+    <li>
+      Immich: deploy it on your server (see section 10) via Docker, then connect the mobile app.
+    </li>
+  </ol>
+</ToolCard>

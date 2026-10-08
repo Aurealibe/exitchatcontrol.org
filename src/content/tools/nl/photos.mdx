@@ -1,0 +1,30 @@
+---
+tool: 't-photos'
+---
+
+<ToolCard tool="t-photos" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Vervangt Google Photos</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Twee manieren om uw foto's te bewaren zonder ze aan Google of Apple toe te vertrouwen.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Ente</b> is een beheerde, end-to-end versleutelde dienst, met herkenning en zoeken op het
+    apparaat: eenvoudig en veilig. <b>Immich</b> is een Google Photos-kloon die u <b>zelf host</b>{' '}
+    (inclusief gezichts- en objectherkenning), voor wie een server kan beheren.
+  </Fragment>
+  <Fragment slot="who">
+    Ente voor iedereen; Immich voor zelf-hosters. Let op: Immich is niet end-to-end versleuteld, de
+    beveiliging hangt af van uw server.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Ente: installeer de app, maak een account aan en schakel automatische back-up van uw fotorol
+      in.
+    </li>
+    <li>Immich: zet het via Docker op uw server (zie sectie 10) en koppel de mobiele app.</li>
+  </ol>
+</ToolCard>

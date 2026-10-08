@@ -1,0 +1,34 @@
+---
+tool: 't-photos'
+---
+
+<ToolCard tool="t-photos" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">A Google Fotók kiváltója</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Két módszer a fotóid megőrzésére anélkül, hogy átadnád őket a Google-nek vagy az Apple-nek.
+  </Fragment>
+  <Fragment slot="why">
+    Az <b>Ente</b> egy menedzselt, végponttól végpontig titkosított szolgáltatás, eszközön belüli
+    felismeréssel és kereséssel: egyszerű és biztonságos. Az <b>Immich</b> egy Google Fotók klón,
+    amelyet <b>te magad üzemeltetsz</b> (arc- és tárgykeresést is tartalmazva), azoknak, akik
+    kényelmesen elboldogulnak egy szerver futtatásával.
+  </Fragment>
+  <Fragment slot="who">
+    Ente mindenkinek; az Immich a self-hostereknek (saját szervert üzemeltetőknek). Megjegyzés: Az
+    Immich nem végponttól végpontig titkosított, a biztonsága a szerveredtől függ.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Ente: telepítsd az alkalmazást, hozz létre egy fiókot, és kapcsold be a kameratekercs
+      automatikus biztonsági mentését.
+    </li>
+    <li>
+      Immich: telepítsd a szerveredre (lásd a 10. szakaszt) Docker segítségével, majd csatlakoztasd
+      a mobilalkalmazást.
+    </li>
+  </ol>
+</ToolCard>

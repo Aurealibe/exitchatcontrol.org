@@ -1,0 +1,28 @@
+---
+tool: 't-cryptomator'
+---
+
+<ToolCard tool="t-cryptomator" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Cifra antes de subir</span>
+    <span class="tool-tag">🇩🇪 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una bóveda que cifra tus archivos <b>antes</b> de subirlos a cualquier nube, incluso Google
+    Drive o Dropbox.
+  </Fragment>
+  <Fragment slot="why">
+    El truco perfecto si debes mantener una nube existente: conservas el servicio conveniente, pero
+    el proveedor solo ve galimatías cifrado. Tú solo tienes la llave.
+  </Fragment>
+  <Fragment slot="who">
+    Aquellos que no pueden abandonar una nube mainstream aún, pero quieren proteger sus archivos
+    ahora mismo.
+  </Fragment>
+  <ol slot="install">
+    <li>Instala Cryptomator (escritorio y móvil) desde cryptomator.org.</li>
+    <li>Crea una "bóveda" en la carpeta sincronizada de tu nube, elige una contraseña fuerte.</li>
+    <li>Pon tus archivos en la bóveda: se cifran luego se sincronizan automáticamente.</li>
+  </ol>
+</ToolCard>

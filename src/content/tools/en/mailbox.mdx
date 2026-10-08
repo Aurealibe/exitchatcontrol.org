@@ -1,0 +1,26 @@
+---
+tool: 't-mailbox'
+---
+
+<ToolCard tool="t-mailbox" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Ethical classic mail</span>
+    <span class="tool-tag">🇩🇪 · UE · PGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Two ethical, low-cost European email providers, with server-side PGP support.
+  </Fragment>
+  <Fragment slot="why">
+    Privacy- and eco-conscious, built on open standards (IMAP, PGP). They work with any mail client.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want a "classic" mailbox (read in Thunderbird) but ethical, rather than a closed
+    encrypted app.
+  </Fragment>
+  <ol slot="install">
+    <li>Create an account (paid, roughly €1 to €3 per month).</li>
+    <li>Enable server-side PGP encryption (the "Guard" feature at mailbox.org).</li>
+    <li>Set the account up in Thunderbird or the mobile app of your choice.</li>
+  </ol>
+</ToolCard>

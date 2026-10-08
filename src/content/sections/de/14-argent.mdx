@@ -13,102 +13,11 @@ title: 'Finanzielle Souveränität'
 
 Auch Geld wird überwacht und kann zensiert werden. Konten von Aktivisten wurden eingefroren, Spenden blockiert und jede Kartenzahlung wird nachverfolgt. Finanzielle Privatsphäre gehört zur Souveränität.
 
-<ToolCard tool="t-bitcoin">
-  <Fragment slot="name">Bitcoin (Eigenverwahrung)</Fragment>
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴</span>
-    <span class="tool-tag">Zensurresistent</span>
-  </Fragment>
-  <Fragment slot="what">
-    Digitales Geld, das du selbst verwahrst, ohne eine Bank einzuschalten.
-  </Fragment>
-  <Fragment slot="why">
-    Bei der <b>Eigenverwahrung</b> (deine Schlüssel liegen in einer Wallet, die nur du
-    kontrollierst) kann niemand dein Guthaben einfrieren oder blockieren. Die Privatsphäre ist nicht
-    vollkommen (das Hauptbuch ist öffentlich), doch Bitcoin entzieht sich der Zensur durch Banken –
-    nützlich, wenn eine Zahlung abgelehnt wird.
-  </Fragment>
-  <Fragment slot="who">
-    Zum Schutz vor Kontosperrungen oder dem Ausschluss aus dem Bankensystem und für anonyme
-    Zahlungen bei Diensten wie einem VPN.
-  </Fragment>
-  <ol slot="install">
-    <li>Besorge dir Bitcoin (über eine Börse oder direkt von anderen Personen).</li>
-    <li>
-      Übertrage sie sofort in eine Wallet, die <b>du</b> kontrollierst: eine Hardware-Wallet
-      (Trezor, ColdCard) oder eine Open-Source-App. Lasse sie nicht auf der Börse liegen.
-    </li>
-    <li>Sichere deine Wiederherstellungsphrase auf Papier, niemals als Foto oder online.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-bitcoin" />
 
-<ToolCard tool="t-monero">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Fortgeschritten</span>
-    <span class="tool-tag">Standardmäßig privat</span>
-  </Fragment>
-  <Fragment slot="what">
-    Die Kryptowährung für Privatsphäre: Betrag, Absender und Empfänger sind standardmäßig verborgen.
-  </Fragment>
-  <Fragment slot="why">
-    In dieser Hinsicht ist Monero das genaue Gegenteil von Bitcoin: Transaktionen sind von Grund auf
-    privat. Damit lassen sich Dienste am besten bezahlen, ohne eine zu dir zurückführende Spur zu
-    hinterlassen.
-  </Fragment>
-  <Fragment slot="who">
-    Für alle, die größtmögliche finanzielle Privatsphäre wollen. Beachte: Monero wurde bereits von
-    mehreren europäischen Börsen entfernt, daher benötigst du häufig einen dezentralen Tauschdienst.
-  </Fragment>
-  <ol slot="install">
-    <li>
-      Installiere eine Wallet (die offizielle von getmonero.org oder Cake Wallet auf Mobilgeräten).
-    </li>
-    <li>
-      Besorge dir XMR über einen dezentralen Tauschdienst (etwa durch einen „Swap“ aus einer anderen
-      Kryptowährung).
-    </li>
-    <li>Sichere deine Wiederherstellungsphrase auf Papier.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-monero" />
 
-<ToolCard tool="t-wasabi">
-  <Fragment slot="tags">
-    <span class="tool-tag">🔴 Experten</span>
-    <span class="tool-tag">CoinJoin</span>
-    <span class="tool-tag">🌍 · Open Source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Eine freie Bitcoin-Wallet mit eingebautem <b>CoinJoin</b>: Deine Coins werden mit denen anderer
-    Nutzer in einer gemeinsamen Transaktion zusammengeführt, was die sichtbare Verbindung zwischen
-    Herkunft und Ziel auf der Blockchain kappt.
-  </Fragment>
-  <Fragment slot="why">
-    Das Bitcoin-Register ist öffentlich: Ohne Vorsicht lässt sich jede Zahlung mit früheren
-    verknüpfen. CoinJoin stellt einen Teil dieser Privatsphäre wieder her, ohne dass du dein Geld
-    jemandem anvertraust, und die Wallet läuft über Tor.
-  </Fragment>
-  <Fragment slot="who">
-    Erfahrene Bitcoin-Nutzer. Seit der ursprüngliche Koordinator im Juni 2024 eingestellt wurde,
-    musst du einen unabhängigen Koordinator wählen, der Gebühren verlangt.
-  </Fragment>
-  <div class="box warn" slot="extra">
-    <span class="lab">Gemischte Mittel und Plattformen</span>
-    <p>
-      Regulierte Plattformen können Mittel, die durch einen CoinJoin gingen, ablehnen oder sperren.
-      Bewahre einen Nachweis über die legitime Herkunft deiner Mittel auf.
-    </p>
-  </div>
-  <ol slot="install">
-    <li>
-      Lade Wasabi über <b>wasabiwallet.io</b> herunter und prüfe die Signatur.
-    </li>
-    <li>Wähle in den Einstellungen einen unabhängigen Koordinator.</li>
-    <li>
-      Aktiviere automatisches CoinJoin und kombiniere nie gemischte und ungemischte Coins in
-      derselben Zahlung.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-wasabi" />
 
 <div class="box honest">
   <span class="lab">Privatsphäre auf der Blockchain: was das Recht sagt</span>

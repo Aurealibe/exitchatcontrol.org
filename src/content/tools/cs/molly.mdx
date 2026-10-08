@@ -1,0 +1,31 @@
+---
+tool: 't-molly'
+---
+
+<ToolCard tool="t-molly" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Zabezpečený Signal</span>
+    <span class="tool-tag">Android · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Zabezpečená verze Signalu pro Android, kompatibilní se stejnou sítí.
+  </Fragment>
+  <Fragment slot="why">
+    Databáze šifrovaná v klidovém stavu, automatické zamykání a varianta „FOSS“ zcela bez služeb
+    Googlu.
+  </Fragment>
+  <Fragment slot="who">
+    Pokročilí uživatelé, zejména na GrapheneOS, s vysokým modelem hrozeb. Pouze pro Android.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Přidejte repozitář Molly do F-Droidu nebo stáhněte APK z <b>molly.im</b>.
+    </li>
+    <li>
+      Pokud chcete nulovou závislost na Googlu, zvolte <b>Molly-FOSS</b>.
+    </li>
+    <li>Zaregistrujte se pomocí svého čísla (stejná síť jako Signal).</li>
+    <li>Nastavte heslo databáze a automatické zamykání.</li>
+  </ol>
+</ToolCard>

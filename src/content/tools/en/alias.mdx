@@ -1,0 +1,27 @@
+---
+tool: 't-alias'
+---
+
+<ToolCard tool="t-alias" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Email aliases</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Disposable email aliases: a unique address per site, forwarding to your real inbox without ever
+    revealing it.
+  </Fragment>
+  <Fragment slot="why">
+    You stop giving out your real address everywhere. If a site is breached or spams you, you cut
+    that one alias, and you instantly know who leaked your data. <b>SimpleLogin</b> is integrated
+    with Proton; <b>addy.io</b> offers unlimited aliases on the free tier.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone, and especially pseudonymous accounts that want to compartmentalise their signups.
+  </Fragment>
+  <ol slot="install">
+    <li>Create an account, install the browser extension.</li>
+    <li>At each signup, generate a new alias instead of typing your real address.</li>
+  </ol>
+</ToolCard>

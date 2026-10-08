@@ -1,0 +1,32 @@
+---
+tool: 't-session'
+---
+
+<ToolCard tool="t-session" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Gevorderd</span>
+    <span class="tool-tag">Zonder nummer</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Versleuteling op Signal-niveau, maar zonder telefoonnummer en met onion-routing.
+  </Fragment>
+  <Fragment slot="why">
+    Uw identiteit is een willekeurige "Session ID". Het verkeer gaat via een gedecentraliseerd
+    netwerk (Lokinet) dat metadata sterk vermindert.
+  </Fragment>
+  <Fragment slot="who">
+    Wanneer een telefoonnummer een risico is. Kleiner ecosysteem, het beste voor gesprekken die
+    ertoe doen.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installeer vanaf <b>getsession.org</b> (alle platforms).
+    </li>
+    <li>
+      "Create account" genereert uw Session ID en een <b>herstelzin</b>.
+    </li>
+    <li>Noteer de herstelzin op papier: het is de enige sleutel tot uw account.</li>
+    <li>Deel uw Session ID (of QR) met uw contacten.</li>
+  </ol>
+</ToolCard>

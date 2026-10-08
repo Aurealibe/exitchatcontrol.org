@@ -1,0 +1,34 @@
+---
+tool: 't-ivpn'
+---
+
+<ToolCard tool="t-ivpn" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Közép. / Haladó</span>
+    <span class="tool-tag">Nincs e-mail · naplózásmentes</span>
+    <span class="tool-tag">🇬🇮 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy kicsi, különösen szigorú és átlátható VPN szolgáltató, ugyanazon a modellen, mint a Mullvad.
+  </Fragment>
+  <Fragment slot="why">
+    Auditált naplózásmentes irányelv, nincs kötelező e-mail cím, fizetés kriptóban vagy készpénzzel.
+    Ráadásul kínál nyomonkövetés-elleni opciókat (hálózati szintű nyomkövető-blokkolás) és a
+    regisztrációhoz semmilyen azonosítóra nincs szükség.
+  </Fragment>
+  <Fragment slot="who">
+    Szolid alternatíva a Mullvad mellett az álnéves és magas kockázatú profiloknak, akik
+    diverzifikálni szeretnének.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Az <b>ivpn.net</b> oldalon generálj egy fiókot (egy azonosítót/ID-t generálnak neked, e-mail
+      cím nem kell).
+    </li>
+    <li>Fizess kriptóval vagy készpénzzel, akárcsak a Mullvadnál.</li>
+    <li>
+      Telepítsd az alkalmazást, csatlakozz az EU-n kívülre, engedélyezd a kill switch-et és a
+      WireGuard protokollt.
+    </li>
+  </ol>
+</ToolCard>

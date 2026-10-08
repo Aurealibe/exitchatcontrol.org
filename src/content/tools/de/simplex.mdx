@@ -1,0 +1,36 @@
+---
+tool: 't-simplex'
+---
+
+<ToolCard tool="t-simplex" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Mittelstufe</span>
+    <span class="tool-tag">Keine Kennung</span>
+    <span class="tool-tag">🌍 · Open-Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Ein verschlüsselter Messenger ohne Konto, Telefonnummer oder feste Kennung. Du stellst eine
+    Verbindung her, indem du einen Link oder QR-Code teilst.
+  </Fragment>
+  <Fragment slot="why">
+    Selbst die Server können konstruktionsbedingt nicht wissen, wer mit wem spricht. Es ist derzeit
+    die stärkste Option gegen Metadatenkorrelation.
+  </Fragment>
+  <Fragment slot="who">
+    Pseudonyme Konten, sensible Kontakte und hohe Risiken. Das Projekt ist jünger als Signal und an
+    manchen Stellen noch etwas unausgereift.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installiere die App über <b>simplex.chat</b> (F-Droid, Google Play, App Store oder APK).
+    </li>
+    <li>
+      Wähle einen <b>lokalen</b> Anzeigenamen – niemals deinen echten Namen. Er bleibt auf deinem
+      Gerät.
+    </li>
+    <li>
+      Teile zum Hinzufügen eines Kontakts einen <b>einmaligen Einladungslink</b> oder einen QR-Code.
+    </li>
+    <li>Aktiviere die Codesperre und richte bei Bedarf eigene SMP-Server ein.</li>
+  </ol>
+</ToolCard>

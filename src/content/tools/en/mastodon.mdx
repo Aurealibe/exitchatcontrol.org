@@ -1,0 +1,31 @@
+---
+tool: 't-mastodon'
+---
+
+<ToolCard tool="t-mastodon" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Replaces X / Twitter</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    The X/Twitter alternative: a social network made of thousands of independent servers that talk
+    to each other (the "fediverse").
+  </Fragment>
+  <Fragment slot="why">
+    No single owner, no algorithm deciding for you, no arbitrary ban by one company. The feed is
+    chronological, with no ads or manipulation.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone. Ideal for information accounts that want a presence no company can cut off.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      On joinmastodon.org, choose a server (or "instance") that suits you, then create an account.
+    </li>
+    <li>
+      Install an app (the official one, or Ivory, Tusky…) and follow accounts: you see the whole
+      fediverse, whatever their server.
+    </li>
+  </ol>
+</ToolCard>

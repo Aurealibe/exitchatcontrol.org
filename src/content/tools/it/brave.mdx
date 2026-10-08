@@ -1,0 +1,31 @@
+---
+tool: 't-brave'
+---
+
+<ToolCard tool="t-brave" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Blocca tutto per impostazione predefinita</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un browser basato su Chromium che blocca pubblicità e tracker per impostazione predefinita, con
+    in più una finestra privata collegata a Tor.
+  </Fragment>
+  <Fragment slot="why">
+    È l'opzione più semplice per chi arriva da Chrome: stessa sensazione, ma senza il tracciamento.
+    Blocca nativamente le pubblicità di YouTube, offre videochiamate cifrate (Brave Talk, basato su
+    Jitsi) e l'accesso a Tor con un clic, comodo per raggiungere un sito bloccato.
+  </Fragment>
+  <Fragment slot="who">
+    I principianti che vogliono passare da Chrome senza fatica. (Ignora le funzioni
+    crypto/pubblicità ricompensate se non ti interessano.)
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installa Brave da <b>brave.com</b>.
+    </li>
+    <li>Imposta gli "Shields" su "aggressivo" e disattiva Brave Rewards se non vuoi pubblicità.</li>
+    <li>Per Tor: menu &gt; "Nuova finestra privata con Tor", poi attendi "Tor connesso".</li>
+  </ol>
+</ToolCard>

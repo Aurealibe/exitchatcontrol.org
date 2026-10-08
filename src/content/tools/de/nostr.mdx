@@ -1,0 +1,35 @@
+---
+tool: 't-nostr'
+---
+
+<ToolCard tool="t-nostr" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Nicht zensierbar</span>
+    <span class="tool-tag">🌍 · offenes Protokoll</span>
+  </Fragment>
+  <Fragment slot="what">
+    Keine App, sondern ein Protokoll: ein soziales Netzwerk, in dem deine Identität wie bei Bitcoin
+    aus einem einfachen Schlüsselpaar besteht.
+  </Fragment>
+  <Fragment slot="why">
+    Keine E-Mail, kein Passwort und kein Konto, das jemand löschen kann. Deine Beiträge wandern über
+    dezentrale Relays und dein Publikum gehört wirklich dir: Niemand kann dich dauerhaft sperren. Du
+    kannst sogar Bitcoin-Trinkgelder („Zaps“) erhalten und jederzeit die App wechseln, ohne Follower
+    zu verlieren.
+  </Fragment>
+  <Fragment slot="who">
+    Für Informationskanäle und Kreative, die Plattformzensur fürchten und eine wirklich eigene
+    Präsenz wollen.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installiere einen Client: Damus (iPhone), Amethyst oder Primal (Android) oder eine Webversion.
+    </li>
+    <li>
+      Die App erzeugt dein Schlüsselpaar. <b>Sichere deinen privaten Schlüssel (nsec)</b> wie eine
+      Bitcoin-Seed-Phrase: auf Papier und teile ihn niemals.
+    </li>
+    <li>Erstelle dein Profil, folge anderen und aktiviere Zaps, um Sats zu erhalten.</li>
+  </ol>
+</ToolCard>

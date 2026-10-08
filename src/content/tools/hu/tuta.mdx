@@ -1,0 +1,35 @@
+---
+tool: 't-tuta'
+---
+
+<ToolCard tool="t-tuta" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">A Gmail kiváltója</span>
+    <span class="tool-tag">🇩🇪 · nyílt forráskódú · poszt-kvantum</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy német e-mail szolgáltatás, teljesen nyílt forráskódú és mentes minden
+    Google-szolgáltatástól.
+  </Fragment>
+  <Fragment slot="why">
+    Titkosítja a <b>tárgyat és néhány metaadatot</b> is, poszt-kvantum-rezisztens (jövőálló)
+    titkosítással. EU-s joghatóság.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik maximálisan titkosított metaadatokat és teljesen szabad szoftvert szeretnének. Nem
+    használ PGP-t: ahhoz, hogy titkosítva írj külsősöknek, jelszóval kell védened az üzenetet.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Hozz létre egy fiókot a <b>tuta.com</b> oldalon, és telepítsd az alkalmazást (elérhető
+      F-Droidon).
+    </li>
+    <li>
+      Ha titkosított üzenetet akarsz küldeni olyasvalakinek, aki nem használja a szolgáltatást:
+      kattints a lakatra, és állíts be egy jelszót, amit egy másik csatornán osztasz meg a
+      partnereddel.
+    </li>
+    <li>Kapcsold be a kétlépcsős azonosítást.</li>
+  </ol>
+</ToolCard>

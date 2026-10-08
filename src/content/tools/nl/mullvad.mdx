@@ -1,0 +1,54 @@
+---
+tool: 't-mullvad'
+---
+
+<ToolCard tool="t-mullvad" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡🔴 Alle niveaus</span>
+    <span class="tool-tag">Zonder account · cash/Monero</span>
+    <span class="tool-tag">🇸🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een VPN die uw IP-adres maskeert en uw verkeer versleutelt tot aan zijn servers, zonder ooit ook
+    maar één stukje persoonlijke informatie te vragen.
+  </Fragment>
+  <Fragment slot="why">
+    Het is de gouden standaard voor privacy. Geen e-mail, geen naam: bij inschrijving krijgt u een
+    eenvoudig accountnummer. Geauditeerd no-log-beleid, één eerlijke prijs (€5 per maand, geen
+    niveaus, geen valse beloften), en betaling mogelijk in cash of Monero. Dat is precies wat ertoe
+    doet op de dag dat een staat de VPN-toegang probeert af te snijden: een account dat niet aan uw
+    identiteit te koppelen is, en een betaling die banken niet kunnen blokkeren.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen, van de burger die een identiteitscontrole wil omzeilen tot het hoogrisicoprofiel. Dit
+    is de VPN om als eerste aan te bevelen.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Ga naar <b>mullvad.net</b>. Als de site in uw land geblokkeerd is, open hem dan via de Tor
+      Browser of het <b>.onion</b>-adres. Klik op "Generate account number": er wordt niet om een
+      e-mail of naam gevraagd. Bewaar dit nummer in uw wachtwoordmanager en deel het nooit, het is
+      uw enige toegangssleutel.
+    </li>
+    <li>
+      Kies de looptijd en de betaalmethode. De prijs staat vast. Drie wegen: bankkaart (het
+      eenvoudigst indien niet geblokkeerd), per post verzonden contanten, of cryptocurrency.
+    </li>
+    <li>
+      <b>Anonieme cryptobetaling:</b> klik op "Create a one-time payment address". Mullvad toont een
+      adres (Bitcoin of Monero) en een exact bedrag. Stuur dat bedrag vanuit uw portemonnee. Voor
+      maximale anonimiteit kiest u <b>Monero</b> (standaard privé); Bitcoin is eenvoudiger maar
+      traceerbaar. Zie sectie 09 om crypto te kopen. Reken op circa 30 minuten bevestiging.
+    </li>
+    <li>
+      Download de app van <b>mullvad.net/download</b> (via Tor als de site wordt gefilterd) en
+      installeer hem. Op mobiel: App Store, Google Play, of de officiële APK als de app uit uw store
+      is verwijderd.
+    </li>
+    <li>
+      Start de app, voer uw accountnummer in en maak verbinding met een server <b>buiten uw land</b>
+      , idealiter buiten de Europese Unie (Zwitserland, VS…). Schakel de "kill switch" in (die het
+      internet afsluit als de VPN wegvalt) en de DNS van Mullvad.
+    </li>
+  </ol>
+</ToolCard>

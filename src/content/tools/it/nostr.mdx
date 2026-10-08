@@ -1,0 +1,35 @@
+---
+tool: 't-nostr'
+---
+
+<ToolCard tool="t-nostr" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Incensurabile</span>
+    <span class="tool-tag">🌍 · protocollo aperto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Non un'app ma un protocollo: un social network in cui la tua identità è una semplice coppia di
+    chiavi, come in Bitcoin.
+  </Fragment>
+  <Fragment slot="why">
+    Niente email, niente password, nessun account che qualcuno possa cancellare. I tuoi post
+    viaggiano attraverso relay decentralizzati e il tuo pubblico è davvero tuo: nessuno può bannarti
+    per sempre. Puoi persino ricevere mance in Bitcoin ("zap") e cambiare app quando vuoi senza
+    perdere i tuoi follower.
+  </Fragment>
+  <Fragment slot="who">
+    Account di informazione e creator che temono la censura delle piattaforme e vogliono una
+    presenza davvero propria.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installa un client: Damus (iPhone), Amethyst o Primal (Android), oppure una versione web.
+    </li>
+    <li>
+      L'app genera la tua coppia di chiavi. <b>Fai un backup della tua chiave privata (nsec)</b>{' '}
+      come una seed phrase Bitcoin: su carta, mai condivisa.
+    </li>
+    <li>Crea il tuo profilo, segui delle persone, attiva gli zap per ricevere sats.</li>
+  </ol>
+</ToolCard>

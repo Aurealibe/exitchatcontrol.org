@@ -1,0 +1,29 @@
+---
+tool: 't-yubikey'
+---
+
+<ToolCard tool="t-yubikey" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Gevorderd / Expert</span>
+    <span class="tool-tag">FIDO2-hardwaretoken</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een kleine fysieke sleutel (USB, vaak met NFC) die uw identiteit bewijst met één aanraking.
+  </Fragment>
+  <Fragment slot="why">
+    Dit is de sterkste 2FA: hij is phishing-bestendig, omdat de sleutel het echte adres van de site
+    controleert voordat hij antwoordt. <b>Nitrokey</b> is het volledig open alternatief qua hardware
+    en firmware. Een nepsite kan u niet misleiden.
+  </Fragment>
+  <Fragment slot="who">
+    Wie maximale beveiliging op sleutelaccounts wil. Koop er <b>twee</b> (één hoofd, één back-up).
+  </Fragment>
+  <ol slot="install">
+    <li>Schaf twee sleutels aan via yubico.com of nitrokey.com.</li>
+    <li>
+      Voeg in de beveiligingsinstellingen van elk account (e-mail, wachtwoordmanager…) een
+      "beveiligingssleutel" of "passkey" toe. Registreer beide sleutels.
+    </li>
+    <li>Bewaar de back-upsleutel op een veilige, afzonderlijke plek.</li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,33 @@
+---
+tool: 't-mullvaddns'
+---
+
+<ToolCard tool="t-mullvaddns" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Fortgeschritten</span>
+    <span class="tool-tag">Netzwerkfilterung</span>
+  </Fragment>
+  <Fragment slot="what">
+    Zwei verschlüsselte Resolver, die außerdem Werbung und Tracker auf dem gesamten Gerät
+    blockieren.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Mullvad DNS</b> (Schweden, keine Protokollierung) ist kostenlos und bietet Blocklisten.{' '}
+    <b>NextDNS</b> lässt sich mit einem Dashboard und gerätespezifischen Profilen stark anpassen,
+    sitzt jedoch in den USA und protokolliert standardmäßig (deaktiviere das in den Einstellungen).
+  </Fragment>
+  <Fragment slot="who">
+    Wenn du systemweit Werbung blockieren möchtest, ohne in jedem Browser eine Erweiterung zu
+    installieren.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Mullvad DNS: Verwende die unter mullvad.net/help/dns angezeigte Adresse als privates DNS (wie
+      bei Quad9).
+    </li>
+    <li>
+      NextDNS: Erstelle auf nextdns.io ein Profil, <b>deaktiviere die Protokollierung</b> und wende
+      die Konfiguration anschließend auf deine Geräte an.
+    </li>
+  </ol>
+</ToolCard>

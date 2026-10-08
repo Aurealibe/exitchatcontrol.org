@@ -1,0 +1,46 @@
+---
+tool: 't-nym'
+---
+
+<ToolCard tool="t-nym" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Advanced</span>
+    <span class="tool-tag">Mixnet</span>
+    <span class="tool-tag">🇨🇭 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A VPN with two modes: a fast mode (2 servers, WireGuard) and an <b>anonymous</b> mode that
+    routes traffic through a 5-node <b>mixnet</b>, mixed with cover traffic.
+  </Fragment>
+  <Fragment slot="why">
+    The mixnet blurs metadata (who talks to whom, and when), even against an observer watching the
+    whole network, which a classic VPN does not do. Decentralised server network, open-source apps
+    (GPL), audited by Cure53. Payment can be unlinked from usage through anonymous "zk-nym"
+    credentials.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want to go beyond a classic VPN against traffic analysis, and accept an anonymous mode
+    that is much slower and unsuited to streaming and downloads. Paid subscription, with a free
+    trial.
+  </Fragment>
+  <div class="box" slot="extra">
+    <span class="lab">Good to know</span>
+    <p>
+      The Nym network pays node operators with a token (NYM). You don't need to hold any to use the
+      VPN.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Install NymVPN from <b>nym.com</b> (desktop and mobile).
+    </li>
+    <li>
+      Use the <b>anonymous</b> mode for messaging and sensitive browsing, the <b>fast</b> mode for
+      the rest.
+    </li>
+    <li>
+      To keep your identity unlinked from your usage, pay in cryptocurrency or with zk-nym
+      credentials.
+    </li>
+  </ol>
+</ToolCard>

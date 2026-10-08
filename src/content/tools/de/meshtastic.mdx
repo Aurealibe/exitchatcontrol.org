@@ -1,0 +1,43 @@
+---
+tool: 't-meshtastic'
+---
+
+<ToolCard tool="t-meshtastic" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Fortgeschritten</span>
+    <span class="tool-tag">Funk ohne Netz</span>
+    <span class="tool-tag">🌍 · Open Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Textnachrichten über <b>LoRa-Funk</b>, von Gerät zu Gerät, ohne Mobilfunknetz oder Internet.
+    Dein Smartphone verbindet sich per Bluetooth mit dem Gerät.
+  </Fragment>
+  <Fragment slot="why">
+    Kein Betreiber, kein Server: nichts abzuschalten oder zu erzwingen. Mehrere Kilometer
+    Reichweite, und ein Mesh, das Nachrichten weiterleitet.
+  </Fragment>
+  <Fragment slot="who">
+    Wandern, Funklöcher, Ausfälle und Krisen. Du brauchst Hardware (ein Funkgerät pro Person) und
+    musst kurze, langsame Nachrichten akzeptieren.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Grenzen</span>
+    <p>
+      Der Standardkanal ist für alle lesbar. Direktnachrichten sind verschlüsselt (ab Firmware 2.5),
+      Funk-Metadaten bleiben aber sichtbar. Meshtastic ist nicht mit MeshCore kompatibel, einem
+      konkurrierenden Projekt.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Kaufe ein unterstütztes Gerät (Liste auf <b>meshtastic.org</b>) und installiere die App.
+    </li>
+    <li>
+      Wähle die Funkregion deines Landes: Erlaubte Frequenzen und Sendezeiten unterscheiden sich.
+    </li>
+    <li>
+      Lege einen privaten Kanal mit zufälligem Schlüssel an: Der öffentliche Standardkanal nutzt
+      einen allgemein bekannten Schlüssel.
+    </li>
+  </ol>
+</ToolCard>

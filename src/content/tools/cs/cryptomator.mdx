@@ -1,0 +1,27 @@
+---
+tool: 't-cryptomator'
+---
+
+<ToolCard tool="t-cryptomator" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Středně pokročilý</span>
+    <span class="tool-tag">Šifrování před nahráním</span>
+    <span class="tool-tag">🇩🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Trezor, který šifruje vaše soubory <b>předtím</b>, než je nahrajete do jakéhokoli cloudu, včetně
+    Google Drive nebo Dropbox.
+  </Fragment>
+  <Fragment slot="why">
+    Ideální řešení, pokud musíte zůstat u stávajícího cloudu: zachováte si pohodlnou službu, ale
+    poskytovatel uvidí jen zašifrovaný nesmysl. Klíč máte pouze vy.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo zatím nemohou opustit běžný cloud, ale chtějí své soubory chránit hned.
+  </Fragment>
+  <ol slot="install">
+    <li>Nainstalujte Cryptomator (na počítač i mobil) z cryptomator.org.</li>
+    <li>V synchronizované složce svého cloudu vytvořte „trezor“ a zvolte silné heslo.</li>
+    <li>Vložte soubory do trezoru: zašifrují se a poté se automaticky synchronizují.</li>
+  </ol>
+</ToolCard>

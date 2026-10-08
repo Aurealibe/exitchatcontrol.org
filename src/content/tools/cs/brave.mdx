@@ -1,0 +1,31 @@
+---
+tool: 't-brave'
+---
+
+<ToolCard tool="t-brave" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Ve výchozím nastavení vše blokuje</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Prohlížeč založený na Chromiu, který ve výchozím nastavení blokuje reklamy a sledovače, navíc se
+    soukromým oknem připojeným k Toru.
+  </Fragment>
+  <Fragment slot="why">
+    Je to nejjednodušší možnost pro někoho, kdo přechází z Chromu: stejný pocit při používání, ale
+    bez sledování. Nativně blokuje reklamy na YouTube, nabízí šifrované videohovory (Brave Talk,
+    založený na Jitsi) a přístup k Toru jedním kliknutím, praktický pro návštěvu zablokovaných webů.
+  </Fragment>
+  <Fragment slot="who">
+    Začátečníci, kteří chtějí bezbolestně přejít z Chromu. (Pokud vás funkce kryptoměn a reklamních
+    odměn nezajímají, ignorujte je.)
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte Brave z <b>brave.com</b>.
+    </li>
+    <li>Nastavte „Shields“ na „agresivní“ a pokud nechcete reklamy, vypněte Brave Rewards.</li>
+    <li>Pro Tor: nabídka &gt; „Nové soukromé okno s Tor“ a pak počkejte na „Tor připojen“.</li>
+  </ol>
+</ToolCard>

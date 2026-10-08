@@ -1,0 +1,32 @@
+---
+tool: 't-keepassxc'
+---
+
+<ToolCard tool="t-keepassxc" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">100% lokaal</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een <b>lokale</b> kluis: een versleuteld bestand dat alleen u bezit, zonder cloud en zonder
+    account.
+  </Fragment>
+  <Fragment slot="why">
+    Niets verlaat uw apparaat, tenzij u er zelf voor kiest het bestand te synchroniseren
+    (bijvoorbeeld via Cryptomator). De keuze van de purist, zonder enige tussenpersoon.
+  </Fragment>
+  <Fragment slot="who">
+    Gevorderde profielen die volledige controle willen en nul online-afhankelijkheid.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installeer KeePassXC (desktop) en een compatibele mobiele app (KeePassDX op Android, Strongbox
+      op iOS).
+    </li>
+    <li>Maak een databasebestand dat met een hoofdwachtwoord is beveiligd.</li>
+    <li>
+      Om het op alle apparaten te hebben, synchroniseert u dit bestand via een versleutelde cloud.
+    </li>
+  </ol>
+</ToolCard>

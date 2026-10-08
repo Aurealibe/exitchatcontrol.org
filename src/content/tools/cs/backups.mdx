@@ -1,0 +1,35 @@
+---
+tool: 't-backups'
+---
+
+<ToolCard tool="t-backups" variant={props.variant}>
+  <Fragment slot="name">Šifrované zálohy</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Způsob zálohování telefonu a počítače, který data zašifruje <b>předtím</b>, než odejdou do
+    jakéhokoli cloudu.
+  </Fragment>
+  <Fragment slot="why">
+    Zálohy iCloud/Google jsou často přístupné poskytovateli, a tedy i soudům. <b>Cryptomator</b>{' '}
+    šifruje vaše soubory před jejich odesláním do jakéhokoli cloudu; <b>restic</b> vytváří
+    automatické šifrované zálohy; <b>Proton Drive</b> je koncově šifrovaný. Na iPhonu zapněte
+    „Advanced Data Protection“, abyste zašifrovali své zálohy na iCloudu.
+  </Fragment>
+  <Fragment slot="who">
+    Každý by měl své zálohy šifrovat. Zlaté pravidlo: dvě šifrované kopie, na dvou médiích, na dvou
+    místech.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      iPhone: Nastavení &gt; vaše jméno &gt; iCloud &gt; Advanced Data Protection: zapněte ji.
+    </li>
+    <li>
+      PC: nainstalujte Cryptomator, vytvořte trezor a před synchronizací do cloudu do něj vložte své
+      soubory.
+    </li>
+  </ol>
+</ToolCard>

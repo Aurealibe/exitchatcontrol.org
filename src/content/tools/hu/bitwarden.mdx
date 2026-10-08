@@ -1,0 +1,34 @@
+---
+tool: 't-bitwarden'
+---
+
+<ToolCard tool="t-bitwarden" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">A legjobb a kezdéshez</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy jelszótrezor, amely megjegyzi, generálja és kitölti helyetted a jelszavaidat az összes
+    eszközödön.
+  </Fragment>
+  <Fragment slot="why">
+    Ingyenes, auditált, keresztplatformos és végponttól végpontig titkosított. Csak egyetlen erős
+    jelszót kell megjegyezned. Akár <b>saját szerveren is futtatható</b> (a Vaultwarden révén), így
+    senkitől sem függsz.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek. Ez minden biztonság alapja: szolgáltatásonként egy erős, egyedi jelszó.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Hozz létre egy fiókot a bitwarden.com oldalon, és válassz egy <b>hosszú</b> mesterjelszót (egy
+      jelmondatot). Soha ne felejtsd el: nem lehet helyreállítani.
+    </li>
+    <li>Telepítsd a böngészőbővítményt és a mobilalkalmazást.</li>
+    <li>
+      Bejelentkezéskor hagyd, hogy a Bitwarden elmentse, majd cseréld le a régi jelszavaidat
+      generáltakra.
+    </li>
+  </ol>
+</ToolCard>

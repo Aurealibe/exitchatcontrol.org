@@ -1,0 +1,27 @@
+---
+tool: 't-cryptomator'
+---
+
+<ToolCard tool="t-cryptomator" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermediate</span>
+    <span class="tool-tag">Encrypt before upload</span>
+    <span class="tool-tag">🇩🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A vault that encrypts your files <b>before</b> uploading them to any cloud, even Google Drive or
+    Dropbox.
+  </Fragment>
+  <Fragment slot="why">
+    The perfect trick if you must keep an existing cloud: you keep the convenient service, but the
+    provider only sees encrypted gibberish. You alone hold the key.
+  </Fragment>
+  <Fragment slot="who">
+    Those who can't leave a mainstream cloud yet, but want to protect their files right now.
+  </Fragment>
+  <ol slot="install">
+    <li>Install Cryptomator (desktop and mobile) from cryptomator.org.</li>
+    <li>Create a "vault" in your cloud's synced folder, choose a strong password.</li>
+    <li>Put your files in the vault: they're encrypted then synced automatically.</li>
+  </ol>
+</ToolCard>

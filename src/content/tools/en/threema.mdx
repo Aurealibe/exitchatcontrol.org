@@ -1,0 +1,31 @@
+---
+tool: 't-threema'
+---
+
+<ToolCard tool="t-threema" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermediate</span>
+    <span class="tool-tag">No phone number</span>
+    <span class="tool-tag">🇨🇭 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A full-featured Swiss messenger (messages, calls, groups) where you are identified by a random{' '}
+    <b>Threema ID</b>, with no phone number or e-mail.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end encryption, open-source (AGPL) and audited apps, a company under Swiss law. Paid
+    once, it does not live off your data.
+  </Fragment>
+  <Fragment slot="who">
+    Anyone who wants an alternative to Signal without handing over a phone number, and is fine
+    paying for the app.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Buy and install Threema from <b>threema.com</b>, the App Store or Google Play (a licence also
+      exists for the F-Droid build).
+    </li>
+    <li>Write down your Threema ID and create a password-protected backup.</li>
+    <li>Add contacts by scanning their QR code: they get the highest verification level.</li>
+  </ol>
+</ToolCard>

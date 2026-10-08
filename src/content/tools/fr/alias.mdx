@@ -1,0 +1,29 @@
+---
+tool: 't-alias'
+---
+
+<ToolCard tool="t-alias" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Alias e-mail</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Des alias e-mail jetables : une adresse unique par site, qui redirige vers votre vraie boîte
+    sans jamais la révéler.
+  </Fragment>
+  <Fragment slot="why">
+    Vous ne donnez plus votre vraie adresse partout. Si un site est piraté ou vous spamme, vous
+    coupez l'alias correspondant, et vous savez immédiatement qui a fait fuiter vos données.{' '}
+    <b>SimpleLogin</b> est intégré à Proton ; <b>addy.io</b> propose des alias illimités dès l'offre
+    gratuite.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde, et particulièrement les comptes pseudonymes qui veulent cloisonner leurs
+    inscriptions.
+  </Fragment>
+  <ol slot="install">
+    <li>Créez un compte, installez l'extension de navigateur.</li>
+    <li>À chaque inscription, générez un nouvel alias au lieu de saisir votre vraie adresse.</li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,32 @@
+---
+tool: 't-tuta'
+---
+
+<ToolCard tool="t-tuta" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Remplace Gmail</span>
+    <span class="tool-tag">🇩🇪 · open-source · post-quantique</span>
+  </Fragment>
+  <Fragment slot="what">
+    Une messagerie e-mail allemande, entièrement open-source et sans aucun service Google.
+  </Fragment>
+  <Fragment slot="why">
+    Elle chiffre aussi <b>l'objet et une partie des métadonnées</b>, avec un chiffrement résistant à
+    l'informatique quantique. Juridiction UE.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui veulent le maximum de métadonnées chiffrées et du 100 % libre. Elle n'utilise pas PGP :
+    pour écrire chiffré à l'extérieur, on protège le message par mot de passe.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Créez un compte sur <b>tuta.com</b> et installez l'application (disponible sur F-Droid).
+    </li>
+    <li>
+      Pour écrire à un non-utilisateur de façon chiffrée : cliquez sur le cadenas et définissez un
+      mot de passe, transmis à votre correspondant par un autre canal.
+    </li>
+    <li>Activez la double authentification.</li>
+  </ol>
+</ToolCard>

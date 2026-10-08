@@ -1,0 +1,31 @@
+---
+tool: 't-quad9'
+---
+
+<ToolCard tool="t-quad9" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Anti-maliciel</span>
+    <span class="tool-tag">🇨🇭 à but non lucratif</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un résolveur DNS chiffré, suisse et à but non lucratif, qui bloque en plus les domaines
+    malveillants connus.
+  </Fragment>
+  <Fragment slot="why">
+    Juridiction suisse, pas de conservation de votre adresse IP, protection contre l'hameçonnage et
+    les logiciels malveillants. Un excellent réglage « installer et oublier ».
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde, en particulier ceux qui veulent la simplicité et une bonne juridiction.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Sur Android : Réglages &gt; Réseau &gt; <b>DNS privé</b> &gt; saisissez <b>dns.quad9.net</b>.
+    </li>
+    <li>
+      Sur iPhone/Mac : installez le profil DoH depuis quad9.net. Sur PC : configurez le
+      DNS-over-HTTPS dans le navigateur ou le système.
+    </li>
+  </ol>
+</ToolCard>

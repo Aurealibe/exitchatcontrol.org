@@ -1,0 +1,36 @@
+---
+tool: 't-backups'
+---
+
+<ToolCard tool="t-backups" variant={props.variant}>
+  <Fragment slot="name">Sauvegardes chiffrées</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    De quoi sauvegarder votre téléphone et votre ordinateur en chiffrant les données <b>avant</b>{' '}
+    qu'elles ne partent dans un cloud.
+  </Fragment>
+  <Fragment slot="why">
+    Les sauvegardes iCloud/Google sont souvent accessibles au fournisseur, donc à la justice.{' '}
+    <b>Cryptomator</b> chiffre vos fichiers avant de les envoyer sur n'importe quel cloud ;{' '}
+    <b>restic</b> fait des sauvegardes chiffrées automatiques ; <b>Proton Drive</b> est chiffré de
+    bout en bout. Sur iPhone, activez la « Protection avancée des données » pour chiffrer vos
+    sauvegardes iCloud.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde devrait chiffrer ses sauvegardes. Règle d'or : deux copies chiffrées, sur deux
+    supports, en deux lieux.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      iPhone : Réglages &gt; votre nom &gt; iCloud &gt; Protection avancée des données : activez-la.
+    </li>
+    <li>
+      PC : installez Cryptomator, créez un coffre, placez-y vos fichiers avant de synchroniser vers
+      le cloud.
+    </li>
+  </ol>
+</ToolCard>

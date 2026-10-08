@@ -1,0 +1,33 @@
+---
+tool: 't-briar'
+---
+
+<ToolCard tool="t-briar" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Offline / P2P</span>
+    <span class="tool-tag">Android · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una mensajería peer-to-peer que funciona <b>sin internet</b>: por Bluetooth, Wi-Fi Direct o Tor.
+  </Fragment>
+  <Fragment slot="why">
+    Sin servidor, así que nada que apagar o incautar. Sobrevive a apagones de internet y censura de
+    red.
+  </Fragment>
+  <Fragment slot="who">
+    Protestas, desastres, zonas remotas, apagones. Solo Android, y ambas personas necesitan la app.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Instala desde <b>briarproject.org</b> o F-Droid (no hay iOS).
+    </li>
+    <li>
+      Crea una cuenta <b>local</b> (apodo + contraseña), almacenada solo en el móvil.
+    </li>
+    <li>Añade un contacto cercano escaneando su código QR, o remotamente vía un enlace.</li>
+    <li>
+      Cuando la red esté caída, activa Bluetooth: los mensajes saltan de dispositivo a dispositivo.
+    </li>
+  </ol>
+</ToolCard>

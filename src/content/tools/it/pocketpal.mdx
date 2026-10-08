@@ -1,0 +1,34 @@
+---
+tool: 't-pocketpal'
+---
+
+<ToolCard tool="t-pocketpal" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Sostituisce ChatGPT su mobile</span>
+    <span class="tool-tag">📱 · 100% locale</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un'app che esegue modelli di IA direttamente sul tuo telefono, completamente offline.
+  </Fragment>
+  <Fragment slot="why">
+    I tuoi prompt non lasciano mai il telefono: nessun account, nessun cloud, nessuna telemetria, e
+    funziona in modalità aereo. Open source (MIT), scarica modelli <b>GGUF</b> (Gemma, Qwen, Phi,
+    Llama) da Hugging Face e li esegue sulla CPU, GPU o NPU del tuo dispositivo. L'equivalente
+    mobile di Ollama e LM Studio.
+  </Fragment>
+  <Fragment slot="who">
+    Chiunque apra ChatGPT sul telefono per domande personali e non voglia consegnarle a un server
+    americano.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installa <b>PocketPal</b> dall'App Store o da Google Play (oppure compilalo dal codice
+      sorgente).
+    </li>
+    <li>
+      Apri <b>Models</b>, scegline uno adatto al tuo telefono e scaricalo.
+    </li>
+    <li>Caricalo e chatta: tutto gira offline, sul dispositivo.</li>
+  </ol>
+</ToolCard>

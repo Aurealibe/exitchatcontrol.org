@@ -1,0 +1,33 @@
+---
+tool: 't-bitchat'
+---
+
+<ToolCard tool="t-bitchat" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">Bluetooth mesh</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Jack Dorsey's mesh messenger: nearby phones relay messages hop by hop, with no internet, server
+    or account.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end encryption (AES-256-GCM) and a "panic mode" that wipes everything with three taps on
+    the logo.
+  </Fragment>
+  <Fragment slot="who">Protests and blackouts, alongside Briar. Use with caution.</Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Caution: unaudited</span>
+    <p>
+      Its own repo warns it "has not received external security review." Great for resilience, but
+      don't stake lives on it yet.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Install from the App Store (iOS) or the APK/GitHub (Android).</li>
+    <li>Open the app and pick a nickname. No account to create.</li>
+    <li>Nearby devices auto-discover over Bluetooth.</li>
+    <li>In danger, triple-tap the logo to wipe everything (panic mode).</li>
+  </ol>
+</ToolCard>

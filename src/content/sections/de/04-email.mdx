@@ -13,95 +13,11 @@ title: 'Verschlüsselte E-Mail und PGP'
 
 Gmail analysiert deine E-Mails und unterliegt in den USA der „Five Eyes“-Jurisdiktion. Gmail oder Outlook zu verlassen bringt mit wenig Aufwand deutlich mehr Privatsphäre.
 
-<ToolCard tool="t-protonmail">
-  <Fragment slot="tags">
-    <span class="tool-tag">🟢 Anfänger</span>
-    <span class="tool-tag">Ersetzt Gmail</span>
-    <span class="tool-tag">🇨🇭 · Open-Source · OpenPGP</span>
-  </Fragment>
-  <Fragment slot="what">
-    Ein verschlüsseltes Postfach als Ersatz für Gmail oder Outlook und das zentrale Konto für das
-    gesamte Proton-Ökosystem.
-  </Fragment>
-  <Fragment slot="why">
-    Sitz in der Schweiz, außerhalb der „Five Eyes“-Jurisdiktion. OpenPGP-kompatibel: automatische
-    Verschlüsselung zwischen Proton-Konten und anderen PGP-Diensten.
-  </Fragment>
-  <Fragment slot="who">
-    Alle. Dies ist der beste Ausgangspunkt für den Ausstieg aus Google; den Rest der Suite findest
-    du in Abschnitt 05.
-  </Fragment>
-  <ol slot="install">
-    <li>
-      Erstelle ein Konto bei <b>proton.me</b>. Der kostenlose Tarif reicht für den Einstieg.
-    </li>
-    <li>
-      Importiere deine bisherigen Nachrichten und Kontakte mit dem integrierten <b>Easy Switch</b>.
-    </li>
-    <li>
-      Richte eine Weiterleitung von Gmail ein und teile deinen Kontakten deine neue Adresse mit.
-    </li>
-    <li>
-      Installiere die mobile App, aktiviere die <b>Zwei-Faktor-Authentifizierung</b> und nutze bei
-      Bedarf Proton Bridge mit Thunderbird.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-protonmail" />
 
-<ToolCard tool="t-tuta">
-  <Fragment slot="tags">
-    <span class="tool-tag">🟢 Anfänger</span>
-    <span class="tool-tag">Ersetzt Gmail</span>
-    <span class="tool-tag">🇩🇪 · Open Source · Post-Quanten</span>
-  </Fragment>
-  <Fragment slot="what">
-    Ein deutscher E-Mail-Dienst, vollständig Open Source und frei von jeglichen Google-Diensten.
-  </Fragment>
-  <Fragment slot="why">
-    Tuta verschlüsselt auch die Betreffzeile und einige Metadaten und verwendet dafür eine
-    quantencomputerresistente Verschlüsselung. Der Dienst unterliegt EU-Recht.
-  </Fragment>
-  <Fragment slot="who">
-    Für alle, die möglichst viele Metadaten verschlüsseln und ausschließlich freie Software nutzen
-    möchten. Tuta verwendet kein PGP: Nachrichten an externe Empfänger schützt du mit einem
-    Passwort.
-  </Fragment>
-  <ol slot="install">
-    <li>
-      Erstelle ein Konto bei <b>tuta.com</b> und installiere die App, die auch über F-Droid
-      erhältlich ist.
-    </li>
-    <li>
-      Um verschlüsselt an jemanden ohne Tuta-Konto zu schreiben, klicke auf das Schloss und lege ein
-      Passwort fest. Teile es der Person über einen anderen Kanal mit.
-    </li>
-    <li>Aktiviere die Zwei-Faktor-Authentifizierung.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-tuta" />
 
-<ToolCard tool="t-mailbox">
-  <Fragment slot="tags">
-    <span class="tool-tag">🟢 Anfänger</span>
-    <span class="tool-tag">Ethische klassische Post</span>
-    <span class="tool-tag">🇩🇪 · EU · PGP</span>
-  </Fragment>
-  <Fragment slot="what">
-    Zwei ethische, kostengünstige europäische E-Mail-Anbieter mit serverseitiger PGP-Unterstützung.
-  </Fragment>
-  <Fragment slot="why">
-    Datenschutz- und umweltbewusst, auf offenen Standards wie IMAP und PGP basierend. Die Dienste
-    funktionieren mit jedem E-Mail-Programm.
-  </Fragment>
-  <Fragment slot="who">
-    Für alle, die ein klassisches, etwa mit Thunderbird nutzbares Postfach bei einem
-    verantwortungsvollen Anbieter einer geschlossenen verschlüsselten App vorziehen.
-  </Fragment>
-  <ol slot="install">
-    <li>Erstelle ein Konto. Die Angebote kosten etwa 1 bis 3 € pro Monat.</li>
-    <li>Aktiviere die serverseitige PGP-Verschlüsselung, bei mailbox.org die Funktion „Guard“.</li>
-    <li>Richte das Konto in Thunderbird oder einer mobilen App deiner Wahl ein.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-mailbox" />
 
 #### PGP in einer Minute
 

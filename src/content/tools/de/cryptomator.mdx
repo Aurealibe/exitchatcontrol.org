@@ -1,0 +1,35 @@
+---
+tool: 't-cryptomator'
+---
+
+<ToolCard tool="t-cryptomator" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Mittelstufe</span>
+    <span class="tool-tag">Vor dem Hochladen verschlüsseln</span>
+    <span class="tool-tag">🇩🇪 · Open Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Ein Tresor, der deine Dateien <b>vor</b> dem Hochladen in eine beliebige Cloud verschlüsselt –
+    selbst bei Google Drive oder Dropbox.
+  </Fragment>
+  <Fragment slot="why">
+    Die ideale Lösung, wenn du einen vorhandenen Cloudanbieter weiterverwenden musst: Der Dienst
+    bleibt bequem, sieht aber nur unleserliche verschlüsselte Daten. Den Schlüssel besitzt allein
+    du.
+  </Fragment>
+  <Fragment slot="who">
+    Für alle, die eine herkömmliche Cloud noch nicht verlassen können, ihre Dateien aber sofort
+    schützen möchten.
+  </Fragment>
+  <ol slot="install">
+    <li>Installiere Cryptomator für Desktop und Mobilgeräte von cryptomator.org.</li>
+    <li>
+      Erstelle einen „Tresor“ im synchronisierten Ordner deiner Cloud und wähle ein starkes
+      Passwort.
+    </li>
+    <li>
+      Lege deine Dateien im Tresor ab: Sie werden verschlüsselt und anschließend automatisch
+      synchronisiert.
+    </li>
+  </ol>
+</ToolCard>

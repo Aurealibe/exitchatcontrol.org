@@ -1,0 +1,32 @@
+---
+tool: 't-keepassxc'
+---
+
+<ToolCard tool="t-keepassxc" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">100%-ban helyi</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy <b>helyi</b> trezor: egy titkosított fájl, amely csak nálad van, felhő és fiók nélkül.
+  </Fragment>
+  <Fragment slot="why">
+    Semmi sem hagyja el az eszközödet, hacsak nem döntesz úgy, hogy magad szinkronizálod a fájlt
+    (például a Cryptomator segítségével). Ez a puristák választása, mindenféle közvetítő nélkül.
+  </Fragment>
+  <Fragment slot="who">
+    Haladó profiloknak, akik teljes irányítást és nulla online függőséget szeretnének.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a KeePassXC-t (asztali gépre) és egy kompatibilis mobilalkalmazást (KeePassDX
+      Androidra, Strongbox iOS-re).
+    </li>
+    <li>Hozz létre egy adatbázisfájlt, amelyet egy mesterjelszó véd.</li>
+    <li>
+      Ahhoz, hogy minden eszközödön elérhető legyen, szinkronizáld ezt a fájlt egy titkosított
+      felhőn keresztül.
+    </li>
+  </ol>
+</ToolCard>

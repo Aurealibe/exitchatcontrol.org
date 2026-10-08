@@ -1,0 +1,47 @@
+---
+tool: 't-veracrypt'
+---
+
+<ToolCard tool="t-veracrypt" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Középhaladó</span>
+    <span class="tool-tag">A BitLocker kiváltója</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    A <b>helyi</b> titkosítás alapeszköze: egy teljes lemez, egy partíció, egy USB-kulcs vagy egy
+    titkosított konténer (egy fájl, amely meghajtóként csatolható).
+  </Fragment>
+  <Fragment slot="why">
+    Semmi sem hagyja el a gépedet: nincs fiók, nincs felhő, nem kerül helyreállítási kulcs egy
+    gyártóhoz. Ingyenes, auditált, a TrueCrypt utódja. A Cryptomator helyi megfelelője, amely a
+    felhőhöz készült.
+  </Fragment>
+  <Fragment slot="who">
+    Windowson a BitLocker kiváltására; mindenhol titkosított konténerhez vagy külső meghajtóhoz.
+    Linuxon és macOS-en a beépített titkosítás (LUKS, FileVault) elég a rendszerlemezhez.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Rendszertitkosítás és Secure Boot</span>
+    <p>
+      2026-ban a Microsoft visszavonja azt a 2011-es UEFI hitelesítésszolgáltatót, amely a régi
+      rendszerbetöltőt aláírta. Ha a rendszerlemezt titkosítod, használd az 1.26.29-es vagy újabb
+      verziót, amely a 2011-es és a 2023-as hitelesítésszolgáltató által is aláírt
+      rendszerbetöltőket tartalmaz.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Töltsd le a VeraCryptet a <b>veracrypt.jp</b> oldalról, és ellenőrizd a fájl PGP-aláírását
+      vagy ellenőrzőösszegét.
+    </li>
+    <li>
+      Hozz létre egy kötetet az alapértelmezett beállításokkal (AES, SHA-512); az Argon2id az
+      1.26.29-es verzió óta elérhető.
+    </li>
+    <li>Válassz egy hosszú jelmondatot (több véletlenszerű szó), és soha ne használd újra.</li>
+    <li>
+      Haladóknak: hozz létre egy rejtett kötetet a köteten belül a hihető letagadhatóság érdekében.
+    </li>
+  </ol>
+</ToolCard>

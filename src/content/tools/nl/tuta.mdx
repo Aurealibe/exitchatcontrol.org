@@ -1,0 +1,32 @@
+---
+tool: 't-tuta'
+---
+
+<ToolCard tool="t-tuta" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Vervangt Gmail</span>
+    <span class="tool-tag">🇩🇪 · open-source · post-quantum</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een Duitse e-mailservice, volledig open-source en vrij van elke Google-dienst.
+  </Fragment>
+  <Fragment slot="why">
+    Het versleutelt ook <b>het onderwerp en een deel van de metadata</b>, met
+    post-quantum-bestendige versleuteling. EU-jurisdictie.
+  </Fragment>
+  <Fragment slot="who">
+    Wie maximale versleutelde metadata en 100% vrije software wil. Het gebruikt geen PGP: om
+    versleuteld naar externen te schrijven, beveiligt u het bericht met een wachtwoord.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Maak een account aan op <b>tuta.com</b> en installeer de app (beschikbaar op F-Droid).
+    </li>
+    <li>
+      Om versleuteld te schrijven naar een niet-gebruiker: klik op het slot en stel een wachtwoord
+      in, dat u via een ander kanaal aan uw correspondent doorgeeft.
+    </li>
+    <li>Schakel tweestapsverificatie in.</li>
+  </ol>
+</ToolCard>

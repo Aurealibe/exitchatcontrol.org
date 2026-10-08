@@ -1,0 +1,45 @@
+---
+tool: 't-linux'
+---
+
+<ToolCard tool="t-linux" variant={props.variant}>
+  <Fragment slot="name">Linux (en escritorio)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Reemplaza Windows / macOS</span>
+    <span class="tool-tag">🌍 · libre</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un sistema operativo libre para tu ordenador, reemplazando Windows o macOS. Viene en muchos
+    sabores, llamados "distribuciones".
+  </Fragment>
+  <Fragment slot="why">
+    Es el punto ciego de mucha gente: cifran sus mensajes pero mantienen un Windows que envía
+    telemetría a Microsoft sin parar (cuya función "Recall" intentó hacer capturas de pantalla
+    continuamente), o un macOS que reporta las apps que lanzas. Linux no te espía, es gratis, revive
+    ordenadores viejos, y por fin te hace maestro de tu máquina. Es más fácil que su reputación: las
+    distribuciones modernas se parecen a Windows o macOS.
+  </Fragment>
+  <Fragment slot="who">
+    Cualquiera puede hacer el cambio. Para empezar, <b>Linux Mint</b> (más cercano a Windows) o{' '}
+    <b>Fedora</b>; <b>Debian</b> para estabilidad. No necesitas borrar nada: puedes probar primero,
+    luego instalar junto a tu sistema actual.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      ¿No estás seguro de qué distribución? Responde el cuestionario <b>distrochooser.de/fr</b>, que
+      te apunta a la correcta para tus necesidades.
+    </li>
+    <li>
+      Pruébala <b>sin instalar nada</b>, directamente en tu navegador, en <b>distrosea.com</b>.
+    </li>
+    <li>
+      Una vez convencido, descarga la imagen de la distribución y crea un USB arrancable (con Ventoy
+      o Balena Etcher).
+    </li>
+    <li>
+      Arranca desde el USB para probar el sistema "en vivo", luego ejecuta la instalación. Activa el
+      cifrado de disco que ofrece.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,31 @@
+---
+tool: 't-search'
+---
+
+<ToolCard tool="t-search" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡 Moteurs</span>
+    <span class="tool-tag">Remplace Google Search</span>
+  </Fragment>
+  <Fragment slot="what">
+    Des moteurs de recherche qui ne profilent pas chaque requête, contrairement à Google.
+  </Fragment>
+  <Fragment slot="why">
+    DuckDuckGo et Brave Search ne conservent pas d'historique lié à votre identité. Startpage vous
+    sert des résultats Google sans le pistage. SearXNG va plus loin : c'est un métamoteur{' '}
+    <b>auto-hébergeable</b>, la souveraineté jusque dans la barre de recherche.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde. SearXNG vise ceux qui veulent héberger leur propre moteur.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Dans les réglages de votre navigateur, changez le moteur par défaut pour DuckDuckGo, Brave
+      Search ou Startpage.
+    </li>
+    <li>
+      Pour SearXNG : utilisez une instance publique (annuaire sur searx.space) ou hébergez la vôtre
+      (voir section 10).
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,29 @@
+---
+tool: 't-yubikey'
+---
+
+<ToolCard tool="t-yubikey" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Advanced</span>
+    <span class="tool-tag">FIDO2 hardware key</span>
+  </Fragment>
+  <Fragment slot="what">
+    A small physical key (USB, often with NFC) that proves your identity with a single touch.
+  </Fragment>
+  <Fragment slot="why">
+    It's the strongest 2FA: it resists phishing, because the key checks the site's real address
+    before responding. <b>Nitrokey</b> is the fully open-hardware, open-firmware alternative. A fake
+    site can't trick you.
+  </Fragment>
+  <Fragment slot="who">
+    Those who want maximum security on key accounts. Buy <b>two</b> (one main, one backup).
+  </Fragment>
+  <ol slot="install">
+    <li>Get two keys from yubico.com or nitrokey.com.</li>
+    <li>
+      In each account's security settings (email, password manager…), add a "security key" or
+      "passkey." Enrol both keys.
+    </li>
+    <li>Keep the backup key in a safe, separate place.</li>
+  </ol>
+</ToolCard>

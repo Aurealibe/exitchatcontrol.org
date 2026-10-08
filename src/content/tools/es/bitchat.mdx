@@ -1,0 +1,33 @@
+---
+tool: 't-bitchat'
+---
+
+<ToolCard tool="t-bitchat" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Malla Bluetooth</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    La mensajería de malla de Jack Dorsey: los móviles cercanos retransmiten mensajes salto a salto,
+    sin internet, servidor ni cuenta.
+  </Fragment>
+  <Fragment slot="why">
+    Cifrado de extremo a extremo (AES-256-GCM) y un "modo pánico" que borra todo con tres toques en
+    el logo.
+  </Fragment>
+  <Fragment slot="who">Protestas y apagones, junto a Briar. Usa con precaución.</Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Precaución: no auditado</span>
+    <p>
+      Su propio repositorio advierte que "no ha recibido revisión de seguridad externa". Genial para
+      resiliencia, pero no apuestes vidas en ello aún.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Instala desde el App Store (iOS) o el APK/GitHub (Android).</li>
+    <li>Abre la app y elige un apodo. No hay cuenta que crear.</li>
+    <li>Los dispositivos cercanos se autodescubren por Bluetooth.</li>
+    <li>En peligro, triple-toca el logo para borrar todo (modo pánico).</li>
+  </ol>
+</ToolCard>

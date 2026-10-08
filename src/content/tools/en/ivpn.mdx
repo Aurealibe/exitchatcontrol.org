@@ -1,0 +1,30 @@
+---
+tool: 't-ivpn'
+---
+
+<ToolCard tool="t-ivpn" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Advanced</span>
+    <span class="tool-tag">No email · no-log</span>
+    <span class="tool-tag">🇬🇮 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A small, especially rigorous and transparent VPN provider, on the same model as Mullvad.
+  </Fragment>
+  <Fragment slot="why">
+    Audited no-log policy, no mandatory email, payment in crypto or cash. It even offers
+    anti-tracking options (network-level tracker blocking) and signup with no identifier at all.
+  </Fragment>
+  <Fragment slot="who">
+    A solid alternative to Mullvad, for pseudonymous and high-risk profiles who want to diversify.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      At <b>ivpn.net</b>, generate an account (an ID is created for you, no email).
+    </li>
+    <li>Pay in crypto or cash, as with Mullvad.</li>
+    <li>
+      Install the app, connect outside the EU, enable the kill switch and the WireGuard protocol.
+    </li>
+  </ol>
+</ToolCard>

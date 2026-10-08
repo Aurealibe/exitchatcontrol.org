@@ -1,0 +1,35 @@
+---
+tool: 't-bitchat'
+---
+
+<ToolCard tool="t-bitchat" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Bluetooth mesh</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Jack Dorsey hálós (mesh) üzenetküldője: a közeli telefonok ugrásról ugrásra továbbítják az
+    üzeneteket, internet, szerver vagy fiók nélkül.
+  </Fragment>
+  <Fragment slot="why">
+    Végponttól végpontig terjedő titkosítás (AES-256-GCM) és egy „pánik mód”, amely mindent töröl a
+    logó háromszori megérintésével.
+  </Fragment>
+  <Fragment slot="who">
+    Tüntetések és áramszünetek idejére, a Briar mellett. Óvatosan használandó.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Figyelem: nem auditált</span>
+    <p>
+      A saját tárolója (repója) is figyelmeztet, hogy „nem kapott külső biztonsági
+      felülvizsgálatot”. Kiváló a rugalmas ellenálláshoz, de még ne kockáztass vele életeket.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Telepítsd az App Store-ból (iOS) vagy az APK/GitHub segítségével (Android).</li>
+    <li>Nyisd meg az alkalmazást, és válassz egy becenevet. Nem kell fiókot létrehozni.</li>
+    <li>A közeli eszközök automatikusan felfedezik egymást Bluetooth-on keresztül.</li>
+    <li>Veszély esetén érintsd meg háromszor a logót, hogy mindent törölj (pánik mód).</li>
+  </ol>
+</ToolCard>

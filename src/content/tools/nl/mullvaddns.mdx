@@ -1,0 +1,31 @@
+---
+tool: 't-mullvaddns'
+---
+
+<ToolCard tool="t-mullvaddns" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Gevorderd</span>
+    <span class="tool-tag">Netwerkfiltering</span>
+  </Fragment>
+  <Fragment slot="what">
+    Twee versleutelde resolvers die ook advertenties en trackers blokkeren voor het hele apparaat.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Mullvad DNS</b> (Zweden, no-log) is gratis en biedt blokkeerlijsten. <b>NextDNS</b> is zeer
+    aanpasbaar, met een dashboard en profielen per apparaat, maar is in de VS gevestigd en logt
+    standaard (schakel dit uit in de instellingen).
+  </Fragment>
+  <Fragment slot="who">
+    Wie systeembrede advertentieblokkering wil zonder per browser een extensie te installeren.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Mullvad DNS: gebruik het adres op mullvad.net/help/dns als uw privé-DNS (dezelfde methode als
+      Quad9).
+    </li>
+    <li>
+      NextDNS: maak een profiel op nextdns.io, <b>schakel logging uit</b> en pas de configuratie toe
+      op uw apparaten.
+    </li>
+  </ol>
+</ToolCard>

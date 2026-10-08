@@ -1,0 +1,27 @@
+---
+tool: 't-notes'
+---
+
+<ToolCard tool="t-notes" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Nahrazuje Docs / Notion</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Koncově šifrované poznámky a dokumenty jako náhrada za Google Docs, Notion nebo Evernote.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Standard Notes</b> (od Protonu) ve výchozím nastavení šifruje vaše poznámky. <b>Joplin</b>{' '}
+    pracuje s poznámkovými bloky v Markdownu s volitelným šifrováním a synchronizací podle vaší
+    volby. <b>CryptPad</b> (francouzský) nabízí plně šifrovanou obdobu Google Docs v reálném čase.
+  </Fragment>
+  <Fragment slot="who">Pro každého na poznámky; CryptPad pro spolupráci více lidí.</Fragment>
+  <ol slot="install">
+    <li>
+      Standard Notes / Joplin: vytvořte si účet, nainstalujte aplikaci a zapněte šifrování (ve
+      Standard Notes je ve výchozím nastavení zapnuté, v Joplinu jej musíte zapnout).
+    </li>
+    <li>CryptPad: použijte cryptpad.fr nebo jinou instanci, pro začátek není potřeba účet.</li>
+  </ol>
+</ToolCard>

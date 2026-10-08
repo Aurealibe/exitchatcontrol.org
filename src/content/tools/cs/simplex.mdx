@@ -1,0 +1,34 @@
+---
+tool: 't-simplex'
+---
+
+<ToolCard tool="t-simplex" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Středně pokročilý</span>
+    <span class="tool-tag">Bez identifikátoru</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Šifrovaný messenger bez účtu, čísla i identifikátoru. Propojíte se sdílením odkazu nebo QR kódu.
+  </Fragment>
+  <Fragment slot="why">
+    Už z principu ani servery nemohou vědět, kdo s kým mluví. V současnosti jde o nejsilnější volbu
+    proti korelaci metadat.
+  </Fragment>
+  <Fragment slot="who">
+    Pseudonymní účty, citlivé kontakty, vysoké riziko. Je o něco mladší než Signal a má několik
+    nedotažených míst.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte z <b>simplex.chat</b> (F-Droid, Google Play, App Store nebo APK).
+    </li>
+    <li>
+      Zvolte <b>místní</b> zobrazované jméno (nikdy své skutečné jméno: zůstává ve vašem zařízení).
+    </li>
+    <li>
+      Chcete-li přidat kontakt, sdílejte <b>jednorázový zvací odkaz</b> nebo QR kód.
+    </li>
+    <li>Zapněte zámek přístupovým kódem a (pro pokročilé) nakonfigurujte vlastní servery SMP.</li>
+  </ol>
+</ToolCard>

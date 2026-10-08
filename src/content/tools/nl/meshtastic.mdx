@@ -1,0 +1,41 @@
+---
+tool: 't-meshtastic'
+---
+
+<ToolCard tool="t-meshtastic" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Gevorderd</span>
+    <span class="tool-tag">Radio zonder netwerk</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Tekstberichten via <b>LoRa-radio</b>, van apparaat naar apparaat, zonder mobiel netwerk of
+    internet. Uw telefoon verbindt via Bluetooth met het apparaat.
+  </Fragment>
+  <Fragment slot="why">
+    Geen operator, geen server: niets af te sluiten of af te dwingen. Bereik van enkele kilometers,
+    en een mesh die berichten doorgeeft.
+  </Fragment>
+  <Fragment slot="who">
+    Wandelen, gebieden zonder dekking, storingen en crisissituaties. U hebt hardware nodig (één
+    radioapparaat per persoon) en korte, trage berichten.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Beperkingen</span>
+    <p>
+      Het standaardkanaal is door iedereen leesbaar. Directe berichten zijn versleuteld (firmware
+      2.5 en later), maar radiometadata blijven zichtbaar. Meshtastic werkt niet samen met MeshCore,
+      een concurrerend project.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Koop een ondersteund apparaat (lijst op <b>meshtastic.org</b>) en installeer de app.
+    </li>
+    <li>Kies de radioregio van uw land: toegestane frequenties en zendtijd verschillen.</li>
+    <li>
+      Maak een privékanaal met een willekeurige sleutel: het standaard openbare kanaal gebruikt een
+      sleutel die iedereen kent.
+    </li>
+  </ol>
+</ToolCard>

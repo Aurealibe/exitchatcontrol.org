@@ -1,0 +1,32 @@
+---
+tool: 't-nostr'
+---
+
+<ToolCard tool="t-nostr" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Un-censorable</span>
+    <span class="tool-tag">🌍 · open protocol</span>
+  </Fragment>
+  <Fragment slot="what">
+    Not an app but a protocol: a social network where your identity is a simple key pair, like
+    Bitcoin.
+  </Fragment>
+  <Fragment slot="why">
+    No email, no password, no account anyone can delete. Your posts travel across decentralised
+    relays and you truly own your audience: no one can ban you for good. You can even receive
+    Bitcoin tips ("zaps") and switch apps anytime without losing your followers.
+  </Fragment>
+  <Fragment slot="who">
+    Information accounts and creators who fear platform censorship and want a presence truly their
+    own.
+  </Fragment>
+  <ol slot="install">
+    <li>Install a client: Damus (iPhone), Amethyst or Primal (Android), or a web version.</li>
+    <li>
+      The app generates your key pair. <b>Back up your private key (nsec)</b> like a Bitcoin seed
+      phrase: on paper, never shared.
+    </li>
+    <li>Create your profile, follow people, enable zaps to receive sats.</li>
+  </ol>
+</ToolCard>

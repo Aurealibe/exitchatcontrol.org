@@ -1,0 +1,36 @@
+---
+tool: 't-localai'
+---
+
+<ToolCard tool="t-localai" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Ersetzt ChatGPT</span>
+    <span class="tool-tag">🌍 · 100 % lokal</span>
+  </Fragment>
+  <Fragment slot="what">Software, mit der ein KI-Modell direkt auf deinem Computer läuft.</Fragment>
+  <Fragment slot="why">
+    Deine Fragen verlassen das Gerät nie: kein Server, kein Konto, keine Telemetrie; auch offline
+    nutzbar. Die Qualität hängt von deiner Hardware ab, aber nichts fließt ab. <b>Ollama</b> und
+    <b>LM Studio</b> sind am einfachsten; <b>Jan</b> und <b>GPT4All</b> zielen auf größtmögliche
+    Privatsphäre.
+  </Fragment>
+  <Fragment slot="who">
+    Für alle, die KI auch nur für leicht persönliche Themen nutzen und diese keinem US-Server
+    anvertrauen wollen.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installiere für einen einfachen Einstieg <b>LM Studio</b> oder <b>Jan</b> (grafische
+      Oberflächen wie normale Apps).
+    </li>
+    <li>
+      Lade ein in der App angebotenes, zur Leistung deines Rechners passendes Modell herunter, etwa
+      Llama oder Mistral.
+    </li>
+    <li>
+      Jetzt kannst du chatten: Alles geschieht lokal. Ollama ist die Kommandozeilenvariante für
+      technisch Versierte.
+    </li>
+  </ol>
+</ToolCard>

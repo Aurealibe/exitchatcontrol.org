@@ -1,0 +1,31 @@
+---
+tool: 't-quad9'
+---
+
+<ToolCard tool="t-quad9" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Blokování malwaru</span>
+    <span class="tool-tag">🇨🇭 nezisková organizace</span>
+  </Fragment>
+  <Fragment slot="what">
+    Šifrovaný švýcarský DNS resolver provozovaný neziskovou organizací, který také blokuje známé
+    škodlivé domény.
+  </Fragment>
+  <Fragment slot="why">
+    Švýcarská jurisdikce, žádné uchovávání vaší IP adresy, ochrana před phishingem a malwarem.
+    Výborná volba typu „nastavit a zapomenout“.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého, zejména pro ty, kteří chtějí jednoduchost a dobrou jurisdikci.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      V Androidu: Nastavení &gt; Síť &gt; <b>Soukromý DNS</b> &gt; zadejte <b>dns.quad9.net</b>.
+    </li>
+    <li>
+      Na iPhonu/Macu: nainstalujte DoH profil z quad9.net. Na PC: nastavte DNS-over-HTTPS v
+      prohlížeči nebo systému.
+    </li>
+  </ol>
+</ToolCard>

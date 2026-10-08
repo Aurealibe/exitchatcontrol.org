@@ -1,0 +1,32 @@
+---
+tool: 't-visio'
+---
+
+<ToolCard tool="t-visio" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Ersetzt Zoom / Meet</span>
+    <span class="tool-tag">🌍 · Open Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Videokonferenz-Werkzeuge ohne Konto oder aufwendige Installation als Ersatz für Zoom, Google
+    Meet oder Teams.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Jitsi Meet</b> läuft ohne Konto im Browser und kann selbst gehostet werden (es bildet auch
+    die Grundlage von Brave Talk). <b>Element Call</b> ist Ende-zu-Ende-verschlüsselt und über
+    Matrix föderiert. Für einfache, vollständig verschlüsselte Gespräche eignen sich auch{' '}
+    <b>Signal</b>-Anrufe.
+  </Fragment>
+  <Fragment slot="who">
+    Für alle. Auf einem öffentlichen Jitsi-Server sind Gruppenanrufe transportverschlüsselt;
+    Ende-zu-Ende-Verschlüsselung ist optional.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Jitsi: Öffne meet.jit.si, erstelle einen Raumnamen und teile den Link. Keine Installation
+      nötig.
+    </li>
+    <li>Element Call: Starte in der Element-(Matrix-)App einen Anruf in einem Raum.</li>
+  </ol>
+</ToolCard>

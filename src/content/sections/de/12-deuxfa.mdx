@@ -23,61 +23,6 @@ Ein Passwort kann selbst dann in falsche Hände geraten, wenn es stark ist. Die 
   </p>
 </div>
 
-<ToolCard tool="t-yubikey">
-  <Fragment slot="tags">
-    <span class="tool-tag">🟡🔴 Mittel / Fortgeschritten</span>
-    <span class="tool-tag">FIDO2-Hardware-Schlüssel</span>
-  </Fragment>
-  <Fragment slot="what">
-    Ein kleiner physischer Schlüssel (USB, häufig mit NFC), der deine Identität mit einer Berührung
-    nachweist.
-  </Fragment>
-  <Fragment slot="why">
-    Das ist die stärkste Form von 2FA: Sie schützt vor Phishing, weil der Schlüssel vor seiner
-    Antwort die tatsächliche Adresse der Website prüft. <b>Nitrokey</b> ist die vollständig offene
-    Alternative mit Open-Source-Hardware und -Firmware. Eine gefälschte Website kann dich nicht
-    täuschen.
-  </Fragment>
-  <Fragment slot="who">
-    Für alle, die wichtige Konten bestmöglich schützen wollen. Kaufe <b>zwei</b> Schlüssel (einen
-    für den Alltag und einen als Reserve).
-  </Fragment>
-  <ol slot="install">
-    <li>Besorge dir zwei Schlüssel bei yubico.com oder nitrokey.com.</li>
-    <li>
-      Füge in den Sicherheitseinstellungen jedes Kontos (E-Mail, Passwortmanager …) einen
-      „Sicherheitsschlüssel“ oder „Passkey“ hinzu. Registriere beide Schlüssel.
-    </li>
-    <li>Bewahre den Reserveschlüssel an einem sicheren, getrennten Ort auf.</li>
-  </ol>
-</ToolCard>
+<Tool id="t-yubikey" />
 
-<ToolCard tool="t-aegis">
-  <Fragment slot="tags">
-    <span class="tool-tag">🟢 Einsteiger</span>
-    <span class="tool-tag">TOTP-Codes</span>
-    <span class="tool-tag">🌍 · Open Source</span>
-  </Fragment>
-  <Fragment slot="what">
-    Apps, die alle 30 Sekunden wechselnde sechsstellige Codes erzeugen und Google Authenticator
-    ersetzen.
-  </Fragment>
-  <Fragment slot="why">
-    <b>Aegis</b> (Android) speichert deine Codes in einem lokal verschlüsselten Tresor, ohne Cloud.
-    <b>Ente Auth</b> bietet zusätzlich Ende-zu-Ende-verschlüsselte Synchronisierung zwischen Geräten
-    und wurde auditiert. Deutlich sicherer als SMS und kostenlos.
-  </Fragment>
-  <Fragment slot="who">
-    Für alle: Hardware-Schlüssel sind noch stärker, doch dies ist die 2FA-Grundausstattung.
-  </Fragment>
-  <ol slot="install">
-    <li>Installiere Aegis (F-Droid) oder Ente Auth (alle Plattformen).</li>
-    <li>
-      Aktiviere bei jedem Konto 2FA per „Authentifizierungs-App“ und scanne den angezeigten QR-Code.
-    </li>
-    <li>
-      Schreibe die <b>Wiederherstellungscodes</b> auf Papier und erstelle eine verschlüsselte
-      Sicherung deines Tresors.
-    </li>
-  </ol>
-</ToolCard>
+<Tool id="t-aegis" />

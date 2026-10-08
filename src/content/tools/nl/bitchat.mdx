@@ -1,0 +1,35 @@
+---
+tool: 't-bitchat'
+---
+
+<ToolCard tool="t-bitchat" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">Bluetooth-mesh</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    De mesh-berichtendienst van Jack Dorsey: nabijgelegen telefoons geven berichten van apparaat
+    naar apparaat door, zonder internet, server of account.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end-encryptie (AES-256-GCM) en een "paniekmodus" die alles wist met drie tikken op het
+    logo.
+  </Fragment>
+  <Fragment slot="who">
+    Betogingen en black-outs, als aanvulling op Briar. Met voorzichtigheid te gebruiken.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Voorzichtig: niet geauditeerd</span>
+    <p>
+      De eigen repository waarschuwt dat het "geen externe beveiligingsreview heeft ontvangen".
+      Geweldig voor veerkracht, maar zet er voorlopig geen levens op het spel.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Installeer via de App Store (iOS) of de APK/GitHub (Android).</li>
+    <li>Open de app en kies een bijnaam. Geen account aan te maken.</li>
+    <li>Nabijgelegen apparaten vinden elkaar automatisch via Bluetooth.</li>
+    <li>Tik in gevaar driemaal op het logo om alles te wissen (paniekmodus).</li>
+  </ol>
+</ToolCard>

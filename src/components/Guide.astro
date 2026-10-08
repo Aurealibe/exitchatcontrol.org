@@ -2,7 +2,7 @@
 // Composition root: renders every migrated guide section for one locale.
 // Sections live in src/content/sections/<locale>/NN-<slug>.mdx; each keeps
 // its LEGACY anchor id on the <section> wrapper so old deep links resolve.
-// ToolCard is injected into the MDX scope via the components prop.
+// Tool (one card from the tools collection) is injected into the MDX scope.
 import { getCollection, render } from 'astro:content'
 import { useT, type Locale } from '../i18n/config'
 import Allies from './Allies.astro'
@@ -14,7 +14,7 @@ import Observatory from './Observatory.astro'
 import ShareRow from './ShareRow.astro'
 import StatusBanner from './StatusBanner.astro'
 import Timeline from './Timeline.astro'
-import ToolCard from './ToolCard.astro'
+import Tool from './Tool.astro'
 
 interface Props {
   locale: Locale
@@ -71,7 +71,7 @@ const tocEntries = [
   {
     sections.map(({ data, Content }) => (
       <section id={data.id}>
-        <Content components={{ ToolCard }} />
+        <Content components={{ Tool }} />
       </section>
     ))
   }

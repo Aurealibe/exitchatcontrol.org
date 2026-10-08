@@ -1,0 +1,28 @@
+---
+tool: 't-tails'
+---
+
+<ToolCard tool="t-tails" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Amnézické USB</span>
+    <span class="tool-tag">🌍 · vše přes Tor</span>
+  </Fragment>
+  <Fragment slot="what">
+    Systém, který se spouští z USB flash disku, směruje veškerý provoz přes Tor a po vypnutí
+    nezanechá <b>žádné stopy</b> .
+  </Fragment>
+  <Fragment slot="why">
+    Po vypnutí je vše zapomenuto: je „amnézický“. Ideální pro citlivou jednorázovou práci na
+    počítači, který není váš, aniž by po vás cokoli zůstalo.
+  </Fragment>
+  <Fragment slot="who">
+    Whistlebloweři, novináři, zdroje. Referenční nástroj pro vysoce rizikovou práci.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Stáhněte si Tails z <b>tails.net</b> a podle průvodce vytvořte USB flash disk.
+    </li>
+    <li>Restartujte počítač z tohoto USB. Použijte jej a pak jej vypněte: vše zmizí.</li>
+  </ol>
+</ToolCard>

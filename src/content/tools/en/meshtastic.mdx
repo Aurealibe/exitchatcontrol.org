@@ -1,0 +1,41 @@
+---
+tool: 't-meshtastic'
+---
+
+<ToolCard tool="t-meshtastic" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">Off-grid radio</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Text messages carried by <b>LoRa radio</b>, from device to device, with no mobile network or
+    internet. Your phone connects to the device over Bluetooth.
+  </Fragment>
+  <Fragment slot="why">
+    No operator, no server: nothing to cut off or compel. Several kilometres of range, and a mesh
+    that relays messages.
+  </Fragment>
+  <Fragment slot="who">
+    Hiking, dead zones, outages and crises. You need hardware (one radio device per person) and must
+    accept short, slow messages.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Limits to know</span>
+    <p>
+      The default channel can be read by anyone. Direct messages are encrypted (firmware 2.5 and
+      later), but radio metadata stays visible. Meshtastic does not talk to MeshCore, a competing
+      project.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Buy a supported device (list on <b>meshtastic.org</b>) and install the app.
+    </li>
+    <li>Select your country's radio region: allowed frequencies and transmit time vary.</li>
+    <li>
+      Create a private channel with a random key: the default public channel uses a key everyone
+      knows.
+    </li>
+  </ol>
+</ToolCard>

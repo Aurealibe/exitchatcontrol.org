@@ -1,0 +1,33 @@
+---
+tool: 't-mullvaddns'
+---
+
+<ToolCard tool="t-mullvaddns" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Középhaladó</span>
+    <span class="tool-tag">Hálózati szűrés</span>
+  </Fragment>
+  <Fragment slot="what">
+    Két titkosított feloldó, amelyek ráadásul blokkolják a reklámokat és a nyomkövetőket az egész
+    eszközön.
+  </Fragment>
+  <Fragment slot="why">
+    A <b>Mullvad DNS</b> (Svédország, no-log/naplózásmentes) ingyenes és blokklistákat is kínál. A{' '}
+    <b>NextDNS</b> nagymértékben testreszabható, egy vezérlőpulttal és eszközönkénti profilokkal, de
+    amerikai székhelyű és alapértelmezés szerint naplózik (ez a beállításoknál kikapcsolható).
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik rendszerszintű reklámblokkolást szeretnének a böngésző-bővítmények telepítése
+    nélkül.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Mullvad DNS: használd a mullvad.net/help/dns oldalon található címet privát DNS-ként
+      (ugyanúgy, mint a Quad9 esetében).
+    </li>
+    <li>
+      NextDNS: hozz létre egy profilt a nextdns.io oldalon, <b>tiltsd le a naplózást</b>, majd
+      alkalmazd a konfigurációt az eszközeidre.
+    </li>
+  </ol>
+</ToolCard>

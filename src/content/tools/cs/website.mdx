@@ -1,0 +1,35 @@
+---
+tool: 't-website'
+---
+
+<ToolCard tool="t-website" variant={props.variant}>
+  <Fragment slot="name">Vlastní web</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Zajistěte, aby váš hlas nešel umlčet zákazem</span>
+  </Fragment>
+  <Fragment slot="what">
+    Váš vlastní web na vlastní doméně, kde váš obsah nezávisí na žádné platformě.
+  </Fragment>
+  <Fragment slot="why">
+    V den, kdy síť smaže nebo pozastaví váš účet, zmizí veškerá vaše práce. Osobní web je vaše
+    kotva: vaše příspěvky tam zůstávají, archivované a aktuální, ať se stane cokoli. Přesně tak to
+    dělají opatrné informační účty. Statický web (vytvořený pomocí Hugo, Astro nebo Jekyll) stačí a
+    lze jej publikovat téměř zdarma; pro dynamický blog poslouží WordPress nebo Ghost provozovaný na
+    vlastním serveru.
+  </Fragment>
+  <Fragment slot="who">
+    Informační účty, tvůrci, aktivisté, kdokoli, kdo publikuje a obává se cenzury platforem.
+  </Fragment>
+  <ol slot="install">
+    <li>Kupte si doménové jméno (ideálně od registrátora respektujícího soukromí).</li>
+    <li>
+      Vyberte generátor statických webů (Astro, Hugo) a hostujte výstup, nebo nainstalujte
+      WordPress/Ghost na svůj server.
+    </li>
+    <li>
+      Vždy na něj odkazujte ze svých účtů na sociálních sítích: vaše publikum vás najde, i když
+      jeden účet padne.
+    </li>
+  </ol>
+</ToolCard>

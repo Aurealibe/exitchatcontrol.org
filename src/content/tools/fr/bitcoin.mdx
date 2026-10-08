@@ -1,0 +1,31 @@
+---
+tool: 't-bitcoin'
+---
+
+<ToolCard tool="t-bitcoin" variant={props.variant}>
+  <Fragment slot="name">Bitcoin (auto-conservation)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Résistant à la censure</span>
+  </Fragment>
+  <Fragment slot="what">
+    Une monnaie numérique que vous détenez vous-même, sans passer par une banque.
+  </Fragment>
+  <Fragment slot="why">
+    En <b>auto-conservation</b> (vos clés dans un portefeuille que vous seul contrôlez), personne ne
+    peut geler ni bloquer vos fonds. Sa confidentialité n'est pas parfaite (le registre est public),
+    mais il échappe à la censure bancaire, utile le jour où un paiement est refusé.
+  </Fragment>
+  <Fragment slot="who">
+    Se prémunir contre le gel de compte ou la dé-bancarisation, et payer anonymement un service
+    comme un VPN.
+  </Fragment>
+  <ol slot="install">
+    <li>Procurez-vous des bitcoins (plateforme d'échange, ou entre particuliers).</li>
+    <li>
+      Transférez-les aussitôt vers un portefeuille que <b>vous</b> contrôlez : un portefeuille
+      matériel (Trezor, ColdCard) ou une application libre. Ne les laissez pas sur la plateforme.
+    </li>
+    <li>Sauvegardez votre phrase de récupération sur papier, jamais en photo ni en ligne.</li>
+  </ol>
+</ToolCard>

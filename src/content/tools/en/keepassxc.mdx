@@ -1,0 +1,29 @@
+---
+tool: 't-keepassxc'
+---
+
+<ToolCard tool="t-keepassxc" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">100% local</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A <b>local</b> vault: an encrypted file only you hold, with no cloud and no account.
+  </Fragment>
+  <Fragment slot="why">
+    Nothing leaves your device, unless you choose to sync the file yourself (for example via
+    Cryptomator). It's the purist's choice, with no middleman at all.
+  </Fragment>
+  <Fragment slot="who">
+    Advanced profiles who want full control and zero online dependency.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Install KeePassXC (desktop) and a compatible mobile app (KeePassDX on Android, Strongbox on
+      iOS).
+    </li>
+    <li>Create a database file protected by a master password.</li>
+    <li>To have it on all devices, sync that file through an encrypted cloud.</li>
+  </ol>
+</ToolCard>

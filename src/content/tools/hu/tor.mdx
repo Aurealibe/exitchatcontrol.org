@@ -1,0 +1,37 @@
+---
+tool: 't-tor'
+---
+
+<ToolCard tool="t-tor" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Hálózati anonimitás</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy hálózat, amely elválasztja azt, aki vagy, attól, amit az interneten csinálsz, és a Tor
+    Böngészőn keresztül érhető el.
+  </Fragment>
+  <Fragment slot="why">
+    A forgalmad több titkosított csomóponton keresztül ugrál világszerte: egyik sem ismeri egyszerre
+    a személyazonosságodat és a célállomásodat. Ez az újságírók és a források eszköze, és a módja
+    egy blokkolt oldal elérésének (például egy cenzúrázott VPN letöltéséhez).
+  </Fragment>
+  <Fragment slot="who">
+    Magas kockázatú profiloknak, és bárkinek, akinek le kell választania a tevékenységét a valódi
+    IP-címéről. Alkalmanként használd, ne mindennapi böngészőként.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Töltsd le a Tor Böngészőt a <b>torproject.org</b> oldalról (Windows, macOS, Linux, Android).
+    </li>
+    <li>
+      Indítsd el, és kattints a „Csatlakozás” gombra. Ha a Tor blokkolva van az országodban,
+      engedélyezz egy „hidat”.
+    </li>
+    <li>
+      Böngéssz anélkül, hogy maximalizálnád az ablakot, anélkül, hogy bővítményeket telepítenél, és{' '}
+      <b>anélkül, hogy bejelentkeznél a valódi fiókjaidba</b>.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,43 @@
+---
+tool: 't-veracrypt'
+---
+
+<ToolCard tool="t-veracrypt" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermediate</span>
+    <span class="tool-tag">Replaces BitLocker</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    The reference for <b>local</b> encryption: a whole disk, a partition, a USB stick, or an
+    encrypted container (a file that mounts like a drive).
+  </Fragment>
+  <Fragment slot="why">
+    Nothing leaves your machine: no account, no cloud, no recovery key sent to a vendor. Free,
+    audited, the successor of TrueCrypt. It is the local counterpart of Cryptomator, which is
+    designed for the cloud.
+  </Fragment>
+  <Fragment slot="who">
+    On Windows, to replace BitLocker; everywhere, for an encrypted container or external drive. On
+    Linux and macOS, the built-in encryption (LUKS, FileVault) is enough for the system disk.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">System encryption and Secure Boot</span>
+    <p>
+      In 2026 Microsoft is revoking the 2011 UEFI certificate authority that signed the old
+      bootloader. If you encrypt the system disk, use version 1.26.29 or later, which ships
+      bootloaders signed for both the 2011 and 2023 authorities.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Download VeraCrypt from <b>veracrypt.jp</b> and check the file's PGP signature or checksum.
+    </li>
+    <li>
+      Create a volume with the default settings (AES, SHA-512); Argon2id is offered since version
+      1.26.29.
+    </li>
+    <li>Choose a long passphrase (several random words), never reused.</li>
+    <li>Advanced: create a hidden volume inside the volume for plausible deniability.</li>
+  </ol>
+</ToolCard>

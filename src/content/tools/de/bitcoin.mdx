@@ -1,0 +1,32 @@
+---
+tool: 't-bitcoin'
+---
+
+<ToolCard tool="t-bitcoin" variant={props.variant}>
+  <Fragment slot="name">Bitcoin (Eigenverwahrung)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Zensurresistent</span>
+  </Fragment>
+  <Fragment slot="what">
+    Digitales Geld, das du selbst verwahrst, ohne eine Bank einzuschalten.
+  </Fragment>
+  <Fragment slot="why">
+    Bei der <b>Eigenverwahrung</b> (deine Schlüssel liegen in einer Wallet, die nur du
+    kontrollierst) kann niemand dein Guthaben einfrieren oder blockieren. Die Privatsphäre ist nicht
+    vollkommen (das Hauptbuch ist öffentlich), doch Bitcoin entzieht sich der Zensur durch Banken –
+    nützlich, wenn eine Zahlung abgelehnt wird.
+  </Fragment>
+  <Fragment slot="who">
+    Zum Schutz vor Kontosperrungen oder dem Ausschluss aus dem Bankensystem und für anonyme
+    Zahlungen bei Diensten wie einem VPN.
+  </Fragment>
+  <ol slot="install">
+    <li>Besorge dir Bitcoin (über eine Börse oder direkt von anderen Personen).</li>
+    <li>
+      Übertrage sie sofort in eine Wallet, die <b>du</b> kontrollierst: eine Hardware-Wallet
+      (Trezor, ColdCard) oder eine Open-Source-App. Lasse sie nicht auf der Börse liegen.
+    </li>
+    <li>Sichere deine Wiederherstellungsphrase auf Papier, niemals als Foto oder online.</li>
+  </ol>
+</ToolCard>

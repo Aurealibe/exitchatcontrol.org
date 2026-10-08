@@ -1,0 +1,30 @@
+---
+tool: 't-keepassxc'
+---
+
+<ToolCard tool="t-keepassxc" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">100% local</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un coffre-fort <b>local</b> : un fichier chiffré que vous seul détenez, sans aucun cloud ni
+    compte.
+  </Fragment>
+  <Fragment slot="why">
+    Rien ne quitte votre appareil, sauf si vous décidez de synchroniser le fichier vous-même (par
+    exemple via Cryptomator). C'est le choix des puristes qui ne veulent aucun intermédiaire.
+  </Fragment>
+  <Fragment slot="who">
+    Les profils avancés qui veulent le contrôle total et zéro dépendance en ligne.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installez KeePassXC (PC) et une application compatible sur mobile (KeePassDX sur Android,
+      Strongbox sur iOS).
+    </li>
+    <li>Créez un fichier de base de données protégé par un mot de passe maître.</li>
+    <li>Pour l'avoir sur tous vos appareils, synchronisez ce fichier via un cloud chiffré.</li>
+  </ol>
+</ToolCard>

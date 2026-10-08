@@ -1,0 +1,31 @@
+---
+tool: 't-molly'
+---
+
+<ToolCard tool="t-molly" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Megerősített Signal</span>
+    <span class="tool-tag">Android · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy megerősített Signal verzió Androidra, kompatibilis ugyanazzal a hálózattal.
+  </Fragment>
+  <Fragment slot="why">
+    Nyugalmi állapotban is titkosított adatbázis, automatikus zárolás, és egy „FOSS” változat, amely
+    teljesen mentes a Google szolgáltatásaitól.
+  </Fragment>
+  <Fragment slot="who">
+    Haladó felhasználóknak, különösen GrapheneOS-en, magas fenyegetettségi modellel. Csak Androidra.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Add hozzá a Molly tárolóját az F-Droidhoz, vagy töltsd le az APK-t a <b>molly.im</b> oldalról.
+    </li>
+    <li>
+      Válaszd a <b>Molly-FOSS</b>-t, ha zéró Google-függőséget szeretnél.
+    </li>
+    <li>Regisztrálj a számoddal (ugyanaz a hálózat, mint a Signal).</li>
+    <li>Állíts be egy adatbázis-jelszót és automatikus zárolást.</li>
+  </ol>
+</ToolCard>

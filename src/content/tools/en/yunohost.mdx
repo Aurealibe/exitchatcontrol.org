@@ -1,0 +1,34 @@
+---
+tool: 't-yunohost'
+---
+
+<ToolCard tool="t-yunohost" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">Turnkey server</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Systems that turn an old PC or a Raspberry Pi into a personal server, with an app catalogue you
+    install in a few clicks.
+  </Fragment>
+  <Fragment slot="why">
+    Self-hosting sounds scary, but these tools do the heavy lifting. <b>YunoHost</b> even runs your
+    own email and single sign-on. <b>Umbrel</b> offers a 300+ app store, popular with privacy and
+    Bitcoin folks. <b>Start9</b> encrypts backups and gives every service a Tor address by default.
+  </Fragment>
+  <Fragment slot="who">
+    Advanced profiles ready to spend an afternoon building their own cloud. It's the most radical
+    structural counter to Chat Control.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Get an old computer, a Raspberry Pi, or rent a small server (VPS) in a protective country.
+    </li>
+    <li>Install YunoHost, Umbrel or Start9 following their official guide.</li>
+    <li>From the catalogue, install Nextcloud, a Matrix server, a photo gallery, etc.</li>
+    <li>
+      Reach it privately with Tailscale (VPN section) rather than exposing the server to the public.
+    </li>
+  </ol>
+</ToolCard>

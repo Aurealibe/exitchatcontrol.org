@@ -1,0 +1,36 @@
+---
+tool: 't-protonmail'
+---
+
+<ToolCard tool="t-protonmail" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">A Gmail kiváltója</span>
+    <span class="tool-tag">🇨🇭 · nyílt forráskódú · OpenPGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy titkosított postafiók, amely kiváltja a Gmailt vagy az Outlookot, és a központi fiók a
+    teljes Proton ökoszisztémához.
+  </Fragment>
+  <Fragment slot="why">
+    Svájci székhelyű, a „Five Eyes” joghatóságán kívül esik. OpenPGP-kompatibilis: automatikus
+    titkosítás a Proton fiókok között és más PGP szolgáltatások felé.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenki számára. Ez a legjobb kiindulópont a Google elhagyására (lásd a 05. szakaszt a
+    programcsomag többi részéhez).
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Hozz létre egy fiókot a <b>proton.me</b> oldalon (az ingyenes csomag is elég a kezdéshez).
+    </li>
+    <li>
+      Importáld a régi üzeneteidet és kapcsolataidat az <b>Easy Switch</b> (beépített) segítségével.
+    </li>
+    <li>Állíts be továbbítást a Gmailből, és oszd meg az új címedet a kapcsolataiddal.</li>
+    <li>
+      Telepítsd a mobilalkalmazást, kapcsold be a <b>kétlépcsős azonosítást (2FA)</b>, és használd a
+      Proton Bridge-t, ha Thunderbirdöt szeretnél használni.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,33 @@
+---
+tool: 't-firefox'
+---
+
+<ToolCard tool="t-firefox" variant={props.variant}>
+  <Fragment slot="name">Firefox (zabezpečený)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Náhrada za Chrome</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Referenční svobodný prohlížeč pro každodenní používání s respektem k soukromí.
+  </Fragment>
+  <Fragment slot="why">
+    Na rozdíl od Chromu (reklamního sledovacího nástroje Googlu) Firefox vytváří nadace, která nemá
+    zájem vás profilovat. S několika úpravami (návodem <em>arkenfox</em>) a rozšířením uBlock Origin
+    se stane velmi spolehlivým.
+  </Fragment>
+  <Fragment slot="who">Pro každého jako hlavní prohlížeč pro každodenní použití.</Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte Firefox z <b>mozilla.org/firefox</b>.
+    </li>
+    <li>
+      Přidejte rozšíření <b>uBlock Origin</b> (blokování reklam a sledovačů).
+    </li>
+    <li>
+      V nastavení soukromí zvolte „Přísná“, vypněte telemetrii a nastavte mazání cookies při
+      zavření. Chcete-li jít dál, použijte návod arkenfox.
+    </li>
+  </ol>
+</ToolCard>

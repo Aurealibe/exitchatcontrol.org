@@ -1,0 +1,38 @@
+---
+tool: 't-yunohost'
+---
+
+<ToolCard tool="t-yunohost" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Fortgeschritten</span>
+    <span class="tool-tag">Schlüsselfertiger Server</span>
+    <span class="tool-tag">🌍 · Open Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Systeme, die einen alten PC oder Raspberry Pi in einen persönlichen Server verwandeln, auf dem
+    du Apps mit wenigen Klicks installierst.
+  </Fragment>
+  <Fragment slot="why">
+    Self-Hosting klingt beängstigend, doch diese Werkzeuge erledigen die schwere Arbeit.{' '}
+    <b>YunoHost</b> betreibt sogar deinen eigenen E-Mail-Dienst und Single Sign-on. <b>Umbrel</b>{' '}
+    bietet einen bei Datenschutz- und Bitcoin-Interessierten beliebten Store mit über 300 Apps.{' '}
+    <b>Start9</b> verschlüsselt Sicherungen und weist jedem Dienst standardmäßig eine Tor-Adresse
+    zu.
+  </Fragment>
+  <Fragment slot="who">
+    Für Fortgeschrittene, die einen Nachmittag in ihre eigene Cloud investieren möchten. Es ist die
+    radikalste strukturelle Antwort auf die Chatkontrolle.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nutze einen alten Computer oder Raspberry Pi oder miete einen kleinen Server (VPS) in einem
+      Land mit starken Schutzrechten.
+    </li>
+    <li>Installiere YunoHost, Umbrel oder Start9 anhand der offiziellen Anleitung.</li>
+    <li>Installiere aus dem Katalog Nextcloud, einen Matrix-Server, eine Fotogalerie usw.</li>
+    <li>
+      Greife privat über Tailscale (Abschnitt VPN) darauf zu, statt den Server öffentlich erreichbar
+      zu machen.
+    </li>
+  </ol>
+</ToolCard>

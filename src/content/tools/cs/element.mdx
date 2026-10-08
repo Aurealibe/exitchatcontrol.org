@@ -1,0 +1,30 @@
+---
+tool: 't-element'
+---
+
+<ToolCard tool="t-element" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Nahrazuje Discord / Slack</span>
+    <span class="tool-tag">🌍 · federované · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    Komunitní chat ve stylu Discordu nebo Slacku, ale federovaný a s možností end-to-end šifrování.
+    Element je aplikace, Matrix síť.
+  </Fragment>
+  <Fragment slot="why">
+    Můžete hostovat vlastní server (Synapse) a mít svá data pod kontrolou. Ideální pro kolektiv,
+    redakci nebo spolek, který chce vlastní nezávislý prostor.
+  </Fragment>
+  <Fragment slot="who">Komunity a skupiny. Viz upozornění ohledně metadat níže.</Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte Element (element.io) a vytvořte si účet na veřejném serveru nebo na vlastním
+      (část 10).
+    </li>
+    <li>
+      Připojte se k místnostem nebo je vytvořte a pro soukromé konverzace zapněte end-to-end
+      šifrování.
+    </li>
+  </ol>
+</ToolCard>

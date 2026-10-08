@@ -1,6 +1,8 @@
 [
   {
     "id": "t-signal",
+    "section": "messagerie",
+    "slug": "signal",
     "pricing": "free",
     "name": "Signal",
     "url": "https://signal.org",
@@ -18,6 +20,8 @@
   },
   {
     "id": "t-simplex",
+    "section": "messagerie",
+    "slug": "simplex-chat",
     "pricing": "free",
     "name": "SimpleX Chat",
     "url": "https://simplex.chat",
@@ -35,6 +39,8 @@
   },
   {
     "id": "t-session",
+    "section": "messagerie",
+    "slug": "session",
     "pricing": "free",
     "name": "Session",
     "url": "https://getsession.org",
@@ -52,6 +58,8 @@
   },
   {
     "id": "t-briar",
+    "section": "messagerie",
+    "slug": "briar",
     "pricing": "free",
     "name": "Briar",
     "url": "https://briarproject.org",
@@ -69,6 +77,8 @@
   },
   {
     "id": "t-bitchat",
+    "section": "messagerie",
+    "slug": "bitchat",
     "pricing": "free",
     "name": "Bitchat",
     "url": "https://bitchat.free",
@@ -86,6 +96,8 @@
   },
   {
     "id": "t-molly",
+    "section": "messagerie",
+    "slug": "molly",
     "pricing": "free",
     "name": "Molly",
     "url": "https://molly.im",
@@ -103,6 +115,8 @@
   },
   {
     "id": "t-protonmail",
+    "section": "email",
+    "slug": "proton-mail",
     "pricing": "freemium",
     "name": "Proton Mail",
     "url": "https://proton.me/mail",
@@ -120,6 +134,8 @@
   },
   {
     "id": "t-tuta",
+    "section": "email",
+    "slug": "tuta",
     "pricing": "freemium",
     "name": "Tuta",
     "url": "https://tuta.com",
@@ -137,6 +153,8 @@
   },
   {
     "id": "t-mailbox",
+    "section": "email",
+    "slug": "mailbox-org-posteo",
     "pricing": "paid",
     "name": "mailbox.org · Posteo",
     "url": "https://mailbox.org",
@@ -158,6 +176,8 @@
   },
   {
     "id": "t-mullvadbrowser",
+    "section": "navigateur",
+    "slug": "mullvad-browser",
     "pricing": "free",
     "name": "Mullvad Browser",
     "url": "https://mullvad.net/browser",
@@ -175,6 +195,8 @@
   },
   {
     "id": "t-firefox",
+    "section": "navigateur",
+    "slug": "firefox",
     "pricing": "free",
     "name": "Firefox (hardened)",
     "url": "https://www.mozilla.org/firefox",
@@ -192,6 +214,8 @@
   },
   {
     "id": "t-brave",
+    "section": "navigateur",
+    "slug": "brave",
     "pricing": "free",
     "name": "Brave",
     "url": "https://brave.com",
@@ -209,6 +233,8 @@
   },
   {
     "id": "t-ublock",
+    "section": "navigateur",
+    "slug": "ublock-origin",
     "pricing": "free",
     "name": "uBlock Origin",
     "url": "https://github.com/gorhill/uBlock",
@@ -226,6 +252,8 @@
   },
   {
     "id": "t-search",
+    "section": "navigateur",
+    "slug": "duckduckgo-brave-search-searxng",
     "pricing": "free",
     "name": "DuckDuckGo · Brave Search · SearXNG",
     "url": "https://duckduckgo.com",
@@ -251,6 +279,8 @@
   },
   {
     "id": "t-quad9",
+    "section": "dns",
+    "slug": "quad9",
     "pricing": "free",
     "name": "Quad9",
     "url": "https://quad9.net",
@@ -268,6 +298,8 @@
   },
   {
     "id": "t-mullvaddns",
+    "section": "dns",
+    "slug": "mullvad-dns-nextdns",
     "pricing": "freemium",
     "name": "Mullvad DNS · NextDNS",
     "url": "https://mullvad.net/help/dns-over-https-and-dns-over-tls",
@@ -289,6 +321,8 @@
   },
   {
     "id": "t-cloudflare",
+    "section": "dns",
+    "slug": "cloudflare-1-1-1-1",
     "pricing": "free",
     "name": "Cloudflare 1.1.1.1 (with nuance)",
     "url": "https://one.one.one.one",
@@ -306,6 +340,8 @@
   },
   {
     "id": "t-pihole",
+    "section": "dns",
+    "slug": "pi-hole-adguard-home",
     "pricing": "free",
     "name": "Pi-hole · AdGuard Home",
     "url": "https://pi-hole.net",
@@ -327,6 +363,8 @@
   },
   {
     "id": "t-mullvad",
+    "section": "vpn",
+    "slug": "mullvad-vpn",
     "pricing": "paid",
     "name": "Mullvad VPN",
     "url": "https://mullvad.net",
@@ -344,6 +382,8 @@
   },
   {
     "id": "t-protonvpn",
+    "section": "vpn",
+    "slug": "proton-vpn",
     "pricing": "freemium",
     "name": "Proton VPN",
     "url": "https://protonvpn.com",
@@ -361,6 +401,8 @@
   },
   {
     "id": "t-ivpn",
+    "section": "vpn",
+    "slug": "ivpn",
     "pricing": "paid",
     "name": "IVPN",
     "url": "https://www.ivpn.net",
@@ -378,6 +420,8 @@
   },
   {
     "id": "t-protondrive",
+    "section": "stockage",
+    "slug": "proton-drive",
     "pricing": "freemium",
     "name": "Proton Drive",
     "url": "https://proton.me/drive",
@@ -395,6 +439,8 @@
   },
   {
     "id": "t-cryptomator",
+    "section": "stockage",
+    "slug": "cryptomator",
     "pricing": "freemium",
     "name": "Cryptomator",
     "url": "https://cryptomator.org",
@@ -412,6 +458,8 @@
   },
   {
     "id": "t-nc-storage",
+    "section": "stockage",
+    "slug": "nextcloud",
     "pricing": "free",
     "name": "Nextcloud",
     "url": "https://nextcloud.com",
@@ -429,6 +477,8 @@
   },
   {
     "id": "t-bitwarden",
+    "section": "motsdepasse",
+    "slug": "bitwarden",
     "pricing": "freemium",
     "name": "Bitwarden",
     "url": "https://bitwarden.com",
@@ -446,6 +496,8 @@
   },
   {
     "id": "t-keepassxc",
+    "section": "motsdepasse",
+    "slug": "keepassxc",
     "pricing": "free",
     "name": "KeePassXC",
     "url": "https://keepassxc.org",
@@ -463,6 +515,8 @@
   },
   {
     "id": "t-protonpass",
+    "section": "motsdepasse",
+    "slug": "proton-pass",
     "pricing": "freemium",
     "name": "Proton Pass",
     "url": "https://proton.me/pass",
@@ -480,6 +534,8 @@
   },
   {
     "id": "t-yubikey",
+    "section": "deuxfa",
+    "slug": "yubikey-nitrokey",
     "pricing": "paid",
     "name": "YubiKey · Nitrokey",
     "url": "https://www.yubico.com",
@@ -501,6 +557,8 @@
   },
   {
     "id": "t-aegis",
+    "section": "deuxfa",
+    "slug": "aegis-ente-auth",
     "pricing": "free",
     "name": "Aegis · Ente Auth",
     "url": "https://getaegis.app",
@@ -522,6 +580,8 @@
   },
   {
     "id": "t-mastodon",
+    "section": "social",
+    "slug": "mastodon",
     "pricing": "free",
     "name": "Mastodon",
     "url": "https://joinmastodon.org",
@@ -539,6 +599,8 @@
   },
   {
     "id": "t-nostr",
+    "section": "social",
+    "slug": "nostr",
     "pricing": "free",
     "name": "Nostr",
     "url": "https://nostr.com",
@@ -556,6 +618,8 @@
   },
   {
     "id": "t-element",
+    "section": "social",
+    "slug": "matrix-element",
     "pricing": "free",
     "name": "Matrix / Element",
     "url": "https://element.io",
@@ -573,6 +637,8 @@
   },
   {
     "id": "t-fediverse",
+    "section": "social",
+    "slug": "pixelfed-peertube-lemmy",
     "pricing": "free",
     "name": "Pixelfed · PeerTube · Lemmy",
     "url": "https://pixelfed.org",
@@ -598,6 +664,8 @@
   },
   {
     "id": "t-bitcoin",
+    "section": "argent",
+    "slug": "bitcoin",
     "pricing": "free",
     "name": "Bitcoin (self-custody)",
     "url": "https://bitcoin.org",
@@ -615,6 +683,8 @@
   },
   {
     "id": "t-monero",
+    "section": "argent",
+    "slug": "monero",
     "pricing": "free",
     "name": "Monero (XMR)",
     "url": "https://www.getmonero.org",
@@ -632,6 +702,8 @@
   },
   {
     "id": "t-localai",
+    "section": "ia",
+    "slug": "ollama-lm-studio-jan-gpt4all",
     "pricing": "free",
     "name": "Ollama · LM Studio · Jan · GPT4All",
     "url": "https://lmstudio.ai",
@@ -657,6 +729,8 @@
   },
   {
     "id": "t-pocketpal",
+    "section": "ia",
+    "slug": "pocketpal-ai",
     "pricing": "free",
     "name": "PocketPal AI",
     "url": "https://pocketpal.dev",
@@ -677,6 +751,8 @@
   },
   {
     "id": "t-cloudai",
+    "section": "ia",
+    "slug": "duck-ai-lumo",
     "pricing": "freemium",
     "name": "Duck.ai · Lumo (Proton)",
     "url": "https://duck.ai",
@@ -698,6 +774,8 @@
   },
   {
     "id": "t-maps",
+    "section": "boiteaoutils",
+    "slug": "organic-maps-osmand",
     "pricing": "freemium",
     "name": "Organic Maps · OsmAnd",
     "url": "https://organicmaps.app",
@@ -719,6 +797,8 @@
   },
   {
     "id": "t-notes",
+    "section": "boiteaoutils",
+    "slug": "standard-notes-joplin-cryptpad",
     "pricing": "freemium",
     "name": "Standard Notes · Joplin · CryptPad",
     "url": "https://standardnotes.com",
@@ -744,6 +824,8 @@
   },
   {
     "id": "t-visio",
+    "section": "boiteaoutils",
+    "slug": "jitsi-meet-element-call",
     "pricing": "free",
     "name": "Jitsi Meet · Element Call",
     "url": "https://jitsi.org",
@@ -765,6 +847,8 @@
   },
   {
     "id": "t-photos",
+    "section": "boiteaoutils",
+    "slug": "ente-immich",
     "pricing": "freemium",
     "name": "Ente · Immich",
     "url": "https://ente.io",
@@ -786,6 +870,8 @@
   },
   {
     "id": "t-alias",
+    "section": "boiteaoutils",
+    "slug": "simplelogin-addy-io",
     "pricing": "freemium",
     "name": "SimpleLogin · addy.io",
     "url": "https://simplelogin.io",
@@ -807,6 +893,17 @@
   },
   {
     "id": "t-backups",
+    "section": "boiteaoutils",
+    "slug": {
+      "en": "encrypted-backups",
+      "fr": "sauvegardes-chiffrees",
+      "nl": "versleutelde-back-ups",
+      "de": "verschluesselte-backups",
+      "es": "copias-de-seguridad-cifradas",
+      "cs": "sifrovane-zalohy",
+      "hu": "titkositott-biztonsagi-mentesek",
+      "it": "backup-cifrati"
+    },
     "pricing": "free",
     "name": "Encrypted backups",
     "url": "https://cryptomator.org",
@@ -828,6 +925,17 @@
   },
   {
     "id": "t-databrokers",
+    "section": "boiteaoutils",
+    "slug": {
+      "en": "erase-your-data-gdpr",
+      "fr": "effacer-ses-donnees-rgpd",
+      "nl": "je-gegevens-wissen-avg",
+      "de": "daten-loeschen-dsgvo",
+      "es": "borrar-tus-datos-rgpd",
+      "cs": "smazani-udaju-gdpr",
+      "hu": "adatok-torlese-gdpr",
+      "it": "cancellare-i-propri-dati-gdpr"
+    },
     "pricing": "free",
     "name": "Erase your data (GDPR)",
     "url": "https://www.cnil.fr",
@@ -849,6 +957,8 @@
   },
   {
     "id": "t-yunohost",
+    "section": "selfhost",
+    "slug": "yunohost-umbrel-start9",
     "pricing": "free",
     "name": "YunoHost · Umbrel · Start9",
     "url": "https://yunohost.org",
@@ -874,6 +984,8 @@
   },
   {
     "id": "t-nextcloud",
+    "section": "selfhost",
+    "slug": "nextcloud",
     "pricing": "free",
     "name": "Nextcloud",
     "url": "https://nextcloud.com",
@@ -891,6 +1003,8 @@
   },
   {
     "id": "t-synapse",
+    "section": "selfhost",
+    "slug": "matrix-synapse",
     "pricing": "free",
     "name": "Matrix Synapse",
     "url": "https://element.io/server-suite",
@@ -908,6 +1022,8 @@
   },
   {
     "id": "t-tailscale",
+    "section": "vpn",
+    "slug": "tailscale-headscale-wireguard",
     "pricing": "freemium",
     "name": "Tailscale · Headscale · WireGuard",
     "url": "https://tailscale.com",
@@ -929,6 +1045,17 @@
   },
   {
     "id": "t-website",
+    "section": "selfhost",
+    "slug": {
+      "en": "your-own-website",
+      "fr": "votre-propre-site-web",
+      "nl": "je-eigen-website",
+      "de": "eigene-website",
+      "es": "tu-propio-sitio-web",
+      "cs": "vlastni-web",
+      "hu": "sajat-weboldal",
+      "it": "il-tuo-sito-web"
+    },
     "pricing": "free",
     "name": "Your own website",
     "url": "https://astro.build",
@@ -950,6 +1077,8 @@
   },
   {
     "id": "t-tor",
+    "section": "tor",
+    "slug": "tor-browser",
     "pricing": "free",
     "name": "Tor Browser",
     "url": "https://www.torproject.org",
@@ -967,6 +1096,8 @@
   },
   {
     "id": "t-grapheneos",
+    "section": "os",
+    "slug": "grapheneos",
     "pricing": "free",
     "name": "GrapheneOS",
     "url": "https://grapheneos.org",
@@ -984,6 +1115,8 @@
   },
   {
     "id": "t-linux",
+    "section": "os",
+    "slug": "linux",
     "pricing": "free",
     "name": "Linux (on desktop)",
     "url": "https://distrochooser.de/fr",
@@ -1009,6 +1142,8 @@
   },
   {
     "id": "t-tails",
+    "section": "os",
+    "slug": "tails",
     "pricing": "free",
     "name": "Tails",
     "url": "https://tails.net",
@@ -1026,6 +1161,8 @@
   },
   {
     "id": "t-qubes",
+    "section": "os",
+    "slug": "qubes-os-postmarketos",
     "pricing": "free",
     "name": "Qubes OS · postmarketOS",
     "url": "https://www.qubes-os.org",
@@ -1047,6 +1184,8 @@
   },
   {
     "id": "t-threema",
+    "section": "messagerie",
+    "slug": "threema",
     "pricing": "paid",
     "name": "Threema",
     "url": "https://threema.com",
@@ -1064,6 +1203,8 @@
   },
   {
     "id": "t-olvid",
+    "section": "messagerie",
+    "slug": "olvid",
     "pricing": "freemium",
     "name": "Olvid",
     "url": "https://olvid.io",
@@ -1081,6 +1222,8 @@
   },
   {
     "id": "t-deltachat",
+    "section": "messagerie",
+    "slug": "delta-chat",
     "pricing": "free",
     "name": "Delta Chat",
     "url": "https://delta.chat",
@@ -1098,6 +1241,8 @@
   },
   {
     "id": "t-meshtastic",
+    "section": "messagerie",
+    "slug": "meshtastic",
     "pricing": "free",
     "name": "Meshtastic",
     "url": "https://meshtastic.org",
@@ -1115,6 +1260,8 @@
   },
   {
     "id": "t-veracrypt",
+    "section": "stockage",
+    "slug": "veracrypt",
     "pricing": "free",
     "name": "VeraCrypt",
     "url": "https://veracrypt.jp",
@@ -1132,6 +1279,8 @@
   },
   {
     "id": "t-nym",
+    "section": "vpn",
+    "slug": "nymvpn",
     "pricing": "paid",
     "name": "NymVPN",
     "url": "https://nym.com",
@@ -1149,6 +1298,8 @@
   },
   {
     "id": "t-wasabi",
+    "section": "argent",
+    "slug": "wasabi-wallet",
     "pricing": "free",
     "name": "Wasabi Wallet",
     "url": "https://wasabiwallet.io",

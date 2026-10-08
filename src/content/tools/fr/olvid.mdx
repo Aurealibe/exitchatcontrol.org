@@ -1,0 +1,34 @@
+---
+tool: 't-olvid'
+---
+
+<ToolCard tool="t-olvid" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Sans numéro</span>
+    <span class="tool-tag">🇫🇷 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Une messagerie française qui fonctionne <b>sans aucune donnée personnelle</b> : ni numéro, ni
+    e-mail, ni carnet d'adresses.
+  </Fragment>
+  <Fragment slot="why">
+    Chiffrement de bout en bout, code des applications publié (AGPL), certifiée par l'ANSSI (CSPN).
+    Utilisée par le gouvernement français pour ses communications.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde, et notamment ceux qui préfèrent un éditeur et des serveurs européens. Les
+    contacts s'ajoutent en personne ou par invitation.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installez Olvid depuis <b>olvid.io</b>, l'App Store ou Google Play. La version de base est
+      gratuite.
+    </li>
+    <li>Choisissez un nom d'affichage : aucune inscription n'est demandée.</li>
+    <li>
+      Ajoutez un contact en scannant son QR code, ou en échangeant une invitation puis un code à 4
+      chiffres.
+    </li>
+  </ol>
+</ToolCard>

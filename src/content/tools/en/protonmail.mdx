@@ -1,0 +1,36 @@
+---
+tool: 't-protonmail'
+---
+
+<ToolCard tool="t-protonmail" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Replaces Gmail</span>
+    <span class="tool-tag">🇨🇭 · open-source · OpenPGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    An encrypted inbox that replaces Gmail or Outlook, and the pivot account for the whole Proton
+    ecosystem.
+  </Fragment>
+  <Fragment slot="why">
+    Based in Switzerland, outside "Five Eyes" jurisdiction. OpenPGP-compatible: automatic encryption
+    between Proton accounts and to other PGP services.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone. It's the best starting point to leave Google (see section 05 for the rest of the
+    suite).
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Create an account at <b>proton.me</b> (the free tier is enough to start).
+    </li>
+    <li>
+      Import your old messages and contacts with <b>Easy Switch</b> (built in).
+    </li>
+    <li>Set up forwarding from Gmail and tell your contacts your new address.</li>
+    <li>
+      Install the mobile app, turn on <b>two-factor auth</b>, and use Proton Bridge if you want
+      Thunderbird.
+    </li>
+  </ol>
+</ToolCard>

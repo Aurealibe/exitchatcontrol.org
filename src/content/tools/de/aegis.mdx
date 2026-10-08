@@ -1,0 +1,33 @@
+---
+tool: 't-aegis'
+---
+
+<ToolCard tool="t-aegis" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Einsteiger</span>
+    <span class="tool-tag">TOTP-Codes</span>
+    <span class="tool-tag">🌍 · Open Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Apps, die alle 30 Sekunden wechselnde sechsstellige Codes erzeugen und Google Authenticator
+    ersetzen.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Aegis</b> (Android) speichert deine Codes in einem lokal verschlüsselten Tresor, ohne Cloud.
+    <b>Ente Auth</b> bietet zusätzlich Ende-zu-Ende-verschlüsselte Synchronisierung zwischen Geräten
+    und wurde auditiert. Deutlich sicherer als SMS und kostenlos.
+  </Fragment>
+  <Fragment slot="who">
+    Für alle: Hardware-Schlüssel sind noch stärker, doch dies ist die 2FA-Grundausstattung.
+  </Fragment>
+  <ol slot="install">
+    <li>Installiere Aegis (F-Droid) oder Ente Auth (alle Plattformen).</li>
+    <li>
+      Aktiviere bei jedem Konto 2FA per „Authentifizierungs-App“ und scanne den angezeigten QR-Code.
+    </li>
+    <li>
+      Schreibe die <b>Wiederherstellungscodes</b> auf Papier und erstelle eine verschlüsselte
+      Sicherung deines Tresors.
+    </li>
+  </ol>
+</ToolCard>

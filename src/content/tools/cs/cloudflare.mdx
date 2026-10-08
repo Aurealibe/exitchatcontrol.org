@@ -1,0 +1,27 @@
+---
+tool: 't-cloudflare'
+---
+
+<ToolCard tool="t-cloudflare" variant={props.variant}>
+  <Fragment slot="name">Cloudflare 1.1.1.1 (s výhradou)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Rychlé, ale centralizované</span>
+    <span class="tool-tag">🇺🇸</span>
+  </Fragment>
+  <Fragment slot="what">
+    Šifrované DNS Cloudflare 1.1.1.1 a aplikace WARP: rychlé, zdarma a skutečné zlepšení oproti
+    resolveru vašeho ISP.
+  </Fragment>
+  <Fragment slot="why">
+    Je užitečné a má auditovaný závazek neuchovávat logy. Buďte však realističtí: Cloudflare už
+    stojí před obrovskou částí webu (jako technický prostředník může vidět nešifrovaný provoz k
+    těmto webům). Směrování DNS tam také znamená{' '}
+    <b>soustředění ještě větší části vaší digitální stopy</b> u jedné americké společnosti
+    podléhající americkému právu.
+  </Fragment>
+  <Fragment slot="who">
+    Vhodné pro každodenní použití a blokování malwaru (1.1.1.1 for Families). Pro citlivé použití se
+    mu vyhněte nebo služby diverzifikujte: místo toho preferujte Quad9 nebo Mullvad DNS.
+  </Fragment>
+</ToolCard>
