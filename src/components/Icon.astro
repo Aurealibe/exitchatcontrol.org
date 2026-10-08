@@ -10,20 +10,22 @@ interface Props {
 }
 
 const { slug, size = 18, class: className } = Astro.props
-const path = BRAND_ICONS[slug]
+const icon = BRAND_ICONS[slug]
 ---
 
 {
-  path && (
+  icon && (
     <svg
-      viewBox="0 0 24 24"
+      viewBox={icon.viewBox}
       width={size}
       height={size}
       fill="currentColor"
       aria-hidden="true"
       class={className}
     >
-      <path d={path} />
+      {icon.paths.map((p) => (
+        <path d={p.d} transform={p.transform} />
+      ))}
     </svg>
   )
 }

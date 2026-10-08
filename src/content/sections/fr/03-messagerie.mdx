@@ -83,6 +83,10 @@ Le premier geste, celui qui protège le plus vite : quitter WhatsApp, Messenger 
       activez le <b>verrou d'inscription</b>.
     </li>
     <li>Invitez vos proches. Sur ordinateur, liez l'application de bureau à votre téléphone.</li>
+    <li>
+      Pour les contacts importants, comparez le <b>numéro de sécurité</b> (en personne ou par un
+      autre canal) : cela écarte une interception de type « homme du milieu ».
+    </li>
   </ol>
 </ToolCard>
 
@@ -145,6 +149,99 @@ Le premier geste, celui qui protège le plus vite : quitter WhatsApp, Messenger 
     </li>
     <li>Notez la phrase de récupération sur papier : c'est la seule clé de votre compte.</li>
     <li>Partagez votre Session ID (ou QR) à vos contacts.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-threema">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermédiaire</span>
+    <span class="tool-tag">Sans numéro</span>
+    <span class="tool-tag">🇨🇭 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Une messagerie suisse complète (messages, appels, groupes) où l'on s'identifie par un{' '}
+    <b>Threema ID</b> aléatoire, sans numéro ni e-mail.
+  </Fragment>
+  <Fragment slot="why">
+    Chiffrement de bout en bout, applications open source (AGPL) et auditées, entreprise soumise au
+    droit suisse. Payée une fois, elle ne vit pas de vos données.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui veulent une alternative à Signal sans donner de numéro de téléphone et acceptent de
+    payer l'application.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Achetez et installez Threema depuis <b>threema.com</b>, l'App Store ou Google Play (licence
+      aussi disponible pour la version F-Droid).
+    </li>
+    <li>Notez votre Threema ID et créez une sauvegarde protégée par mot de passe.</li>
+    <li>
+      Ajoutez vos contacts en scannant leur QR code : ils passent au niveau de vérification maximal.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-olvid">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Débutant</span>
+    <span class="tool-tag">Sans numéro</span>
+    <span class="tool-tag">🇫🇷 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Une messagerie française qui fonctionne <b>sans aucune donnée personnelle</b> : ni numéro, ni
+    e-mail, ni carnet d'adresses.
+  </Fragment>
+  <Fragment slot="why">
+    Chiffrement de bout en bout, code des applications publié (AGPL), certifiée par l'ANSSI (CSPN).
+    Utilisée par le gouvernement français pour ses communications.
+  </Fragment>
+  <Fragment slot="who">
+    Tout le monde, et notamment ceux qui préfèrent un éditeur et des serveurs européens. Les
+    contacts s'ajoutent en personne ou par invitation.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installez Olvid depuis <b>olvid.io</b>, l'App Store ou Google Play. La version de base est
+      gratuite.
+    </li>
+    <li>Choisissez un nom d'affichage : aucune inscription n'est demandée.</li>
+    <li>
+      Ajoutez un contact en scannant son QR code, ou en échangeant une invitation puis un code à 4
+      chiffres.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-deltachat">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermédiaire</span>
+    <span class="tool-tag">Sans numéro</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Une messagerie qui s'appuie sur le réseau de l'e-mail : comptes créés en un clic sur des relais
+    « chatmail », sans numéro ni adresse personnelle.
+  </Fragment>
+  <Fragment slot="why">
+    Chiffrement de bout en bout automatique, réseau de relais décentralisé (chacun peut en héberger
+    un), applications libres et auditées.
+  </Fragment>
+  <Fragment slot="who">
+    Ceux qui veulent un réseau décentralisé, sans numéro, et la possibilité de ne dépendre d'aucun
+    fournisseur unique.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installez Delta Chat depuis <b>delta.chat</b>, F-Droid, l'App Store ou Google Play.
+    </li>
+    <li>
+      Créez un profil : un relais chatmail est proposé par défaut, aucun numéro ni e-mail n'est
+      demandé.
+    </li>
+    <li>
+      Ajoutez vos contacts par QR code ou lien d'invitation pour que le chiffrement soit vérifié.
+    </li>
   </ol>
 </ToolCard>
 
@@ -212,6 +309,47 @@ Le premier geste, celui qui protège le plus vite : quitter WhatsApp, Messenger 
   </ol>
 </ToolCard>
 
+<ToolCard tool="t-meshtastic">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avancé</span>
+    <span class="tool-tag">Radio hors réseau</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Des messages texte qui passent par <b>radio LoRa</b>, de boîtier en boîtier, sans réseau mobile
+    ni internet. Le téléphone se connecte au boîtier en Bluetooth.
+  </Fragment>
+  <Fragment slot="why">
+    Aucun opérateur, aucun serveur : rien à couper ni à contraindre. Portée de plusieurs kilomètres,
+    réseau maillé qui relaie les messages.
+  </Fragment>
+  <Fragment slot="who">
+    Randonnée, zones blanches, coupures et situations de crise. Il faut du matériel (un boîtier
+    radio par personne) et accepter des messages courts et lents.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Limites à connaître</span>
+    <p>
+      Le canal par défaut est lisible par tous. Les messages directs sont chiffrés (firmware 2.5 et
+      plus), mais les métadonnées radio restent visibles. Meshtastic ne communique pas avec
+      MeshCore, un projet concurrent.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Achetez un boîtier compatible (liste sur <b>meshtastic.org</b>) et installez l'application.
+    </li>
+    <li>
+      Choisissez la région radio de votre pays : les fréquences et durées d'émission autorisées
+      varient.
+    </li>
+    <li>
+      Créez un canal privé avec une clé aléatoire : le canal public par défaut utilise une clé
+      connue de tous.
+    </li>
+  </ol>
+</ToolCard>
+
 <ToolCard tool="t-molly">
   <Fragment slot="tags">
     <span class="tool-tag">🔴 Avancé</span>
@@ -244,9 +382,10 @@ Le premier geste, celui qui protège le plus vite : quitter WhatsApp, Messenger 
 <div class="box">
   <span class="lab">Face à Chat Control</span>
   <p>
-    Privilégiez des applications <strong>libres, hors des grandes plateformes américaines</strong>,
-    dont les équipes ont publiquement promis de quitter l'UE plutôt que d'installer un scan côté
-    client (c'est le cas de Signal). Rappel : si l'OS lui-même impose le scan, l'application n'y
-    peut rien, d'où l'importance de la section 12.
+    Privilégiez des applications <strong>libres</strong> dont les équipes se sont engagées
+    publiquement à quitter le marché européen plutôt que d'installer un scan côté client (c'est le
+    cas de Signal), ou des applications décentralisées sans fournisseur central à contraindre.
+    Rappel : si l'OS lui-même impose le scan, l'application n'y peut rien, d'où l'importance de la
+    section 12.
   </p>
 </div>

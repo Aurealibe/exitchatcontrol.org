@@ -1,0 +1,61 @@
+{
+  "_comment": "Brand marks missing from simple-icons, copied from each project's official repository or website and inlined at build time by scripts/gen-icons.mjs (no runtime request). Used only to identify the project.",
+  "icons": {
+    "veracrypt": {
+      "viewBox": "0 0 16 16",
+      "paths": [
+        {
+          "d": "m4 1.0794-4 6.9206 4 6.9206h8l4-6.9206-4-6.9206zm-1.1111 4h1.7143l2.4762 4.381 2.4762-4.381h3.4286l-0.8254 1.4603h-1.7143l-0.8254 1.4603 0.88889 1.4603h1.7143l0.88889 1.4603h-3.4286l-0.88889-1.4603-0.8254 1.4603h-1.7143l-0.88889-1.4603-1.6508-2.9206z"
+        }
+      ],
+      "source": "https://github.com/veracrypt/VeraCrypt/blob/master/src/Resources/Icons/VeraCrypt-symbolic.svg",
+      "license": "Apache-2.0 (VeraCrypt repository); VeraCrypt name and logo belong to their owners"
+    },
+    "olvid": {
+      "viewBox": "0 0 5489 5489",
+      "paths": [
+        {
+          "d": "M3686 3161c0,0 0,0 0,0 -1,3 -13,33 -18,44 -22,50 -47,97 -76,142 -234,379 -616,547 -928,623 0,0 -128,28 -185,37 -479,80 -792,3 -792,3 0,0 381,-120 543,-347 -77,-46 -147,-101 -208,-167 -89,-96 -159,-208 -209,-335 -50,-127 -75,-266 -75,-418 0,-151 25,-291 75,-420 50,-129 120,-241 209,-335 89,-95 196,-168 320,-222 124,-53 260,-80 408,-80 148,0 284,27 408,80 124,53 230,127 320,222 89,95 159,206 209,335 50,129 75,269 75,420 0,151 -25,291 -75,418zm830 -1150c-98,-227 -233,-424 -405,-591 -172,-167 -375,-298 -609,-395 -234,-96 -485,-144 -753,-144 -268,0 -519,48 -753,144 -234,96 -437,228 -609,395 -172,167 -307,364 -405,591 -98,227 -147,471 -147,732 0,261 49,506 147,733 98,227 233,424 405,591 172,167 375,298 609,395 234,96 485,144 753,144 268,0 519,-48 753,-144 234,-96 437,-228 609,-395 172,-167 307,-364 405,-591 98,-227 147,-471 147,-733 0,-261 -49,-506 -147,-732z"
+        }
+      ],
+      "source": "https://github.com/olvid-io/olvid-android/blob/main/obv_messenger/.idea/icon.svg",
+      "license": "AGPL-3.0 (Olvid repository); Olvid name and logo belong to their owners"
+    },
+    "deltachat": {
+      "viewBox": "10 8 28 32",
+      "paths": [
+        {
+          "d": "m21.689 23.636q-1.028-1.1513-2.8578-2.755-2.0148-1.7681-2.7139-2.7755-0.69902-1.028-0.69902-2.241 0-1.8092 1.6859-2.8372 1.6859-1.0485 4.3997-1.0485t4.7287 0.92518q2.0354 0.92518 2.0354 2.5494 0 0.78126-0.49343 1.2952-0.49343 0.51399-1.1513 0.51399-0.94574 0-2.2204-1.4186-1.2952-1.4392-2.1999-2.0148-0.88406-0.59622-2.0765-0.59622-1.5214 0-2.5083 0.67846-0.9663 0.67846-0.9663 1.727 0 0.98686 0.80182 1.8504t4.1325 3.1456q3.5568 2.4466 5.0165 3.8241 1.4803 1.3775 2.4055 3.3512 0.92518 1.9737 0.92518 4.1736 0 3.8652-2.7344 6.8258-2.7139 2.94-6.3529 2.94-3.3101 0-5.5922-2.3643-2.2821-2.3643-2.2821-6.3118 0-3.8035 2.5083-6.3529 2.5288-2.5494 6.209-3.0839zm0.90462 0.94574q-5.9006 0.9663-5.9006 8.1004 0 3.6802 1.4597 5.7155 1.4803 2.0354 3.4334 2.0354 2.0354 0 3.3512-1.9532 1.3158-1.9737 1.3158-5.3249 0-4.852-3.6596-8.5733z",
+          "transform": "matrix(1.1122 0 0 0.89909 0 0)"
+        }
+      ],
+      "source": "https://github.com/deltachat/deltachat-pages/blob/master/assets/logos/delta-chat.svg",
+      "license": "Delta Chat website repository; Delta Chat name and logo belong to their owners"
+    },
+    "meshtastic": {
+      "viewBox": "0 0 100 55",
+      "paths": [
+        {
+          "d": "M250.908,330.267L193.126,415.005L180.938,406.694L244.802,313.037C246.174,311.024 248.453,309.819 250.889,309.816C253.326,309.814 255.606,311.015 256.982,313.026L320.994,406.536L308.821,414.869L250.908,330.267Z",
+          "transform": "matrix(0.464647 0 0 0.464647 -51.8681 -140.384)"
+        },
+        {
+          "d": "M87.642,581.398L154.757,482.977L142.638,474.713L75.523,573.134L87.642,581.398Z",
+          "transform": "matrix(0.467292 0 0 0.467292 -32.5755 -219.277)"
+        }
+      ],
+      "source": "https://github.com/meshtastic/design/blob/master/logo/svg/Mesh_Logo_Black.svg",
+      "license": "GPL-3.0 (meshtastic/design); Meshtastic is a registered trademark of Meshtastic LLC"
+    },
+    "radicle": {
+      "viewBox": "0 0 44 44",
+      "paths": [
+        {
+          "d": "M8 0h4v4h-4zM32 0h4v4h-4zM12 4h4v4h-4zM28 4h4v4h-4zM12 8h4v4h-4zM16 8h4v4h-4zM20 8h4v4h-4zM24 8h4v4h-4zM28 8h4v4h-4zM8 12h4v4h-4zM12 12h4v4h-4zM16 12h4v4h-4zM20 12h4v4h-4zM24 12h4v4h-4zM28 12h4v4h-4zM32 12h4v4h-4zM4 16h4v4h-4zM8 16h4v4h-4zM20 16h4v4h-4zM24 16h4v4h-4zM36 16h4v4h-4zM4 20h4v4h-4zM8 20h4v4h-4zM16 20h4v4h-4zM20 20h4v4h-4zM24 20h4v4h-4zM32 20h4v4h-4zM36 20h4v4h-4zM0 24h4v4h-4zM4 24h4v4h-4zM8 24h4v4h-4zM12 24h4v4h-4zM16 24h4v4h-4zM20 24h4v4h-4zM24 24h4v4h-4zM28 24h4v4h-4zM32 24h4v4h-4zM36 24h4v4h-4zM40 24h4v4h-4zM8 28h4v4h-4zM16 28h4v4h-4zM24 28h4v4h-4zM32 28h4v4h-4zM8 32h4v4h-4zM16 32h4v4h-4zM24 32h4v4h-4zM32 32h4v4h-4zM16 36h4v4h-4zM24 36h4v4h-4zM12 40h4v4h-4zM16 40h4v4h-4zM24 40h4v4h-4zM28 40h4v4h-4z"
+        }
+      ],
+      "source": "https://radicle.dev/assets/images/radicle.svg",
+      "license": "Radicle website asset; Radicle name and logo belong to their owners"
+    }
+  }
+}

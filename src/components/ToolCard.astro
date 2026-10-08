@@ -29,7 +29,7 @@ if (!tool) {
 // Tile colors live in src/styles/brands.generated.css (generated from
 // tools.json by scripts/gen-icons.mjs) — a stylesheet, because the
 // production CSP (style-src 'self') blocks style= attributes.
-const iconPath = tool.iconSlug ? BRAND_ICONS[tool.iconSlug] : undefined
+const icon = tool.iconSlug ? BRAND_ICONS[tool.iconSlug] : undefined
 
 const locale = (Astro.currentLocale ?? defaultLocale) as Locale
 
@@ -60,15 +60,26 @@ const LABELS: Record<Locale, { what: string; why: string; who: string; install: 
   },
 }
 const labels = LABELS[locale]
+
+// Price marker (issue #47): factual, from tools.json, shown with the tags.
+const PRICING: Record<Locale, Record<string, string>> = {
+  en: { free: 'Free', freemium: 'Free + paid plan', paid: 'Paid' },
+  fr: { free: 'Gratuit', freemium: 'Gratuit + offre payante', paid: 'Payant' },
+  nl: { free: 'Gratis', freemium: 'Gratis + betaald abonnement', paid: 'Betaald' },
+  de: { free: 'Kostenlos', freemium: 'Kostenlos + Bezahlversion', paid: 'Kostenpflichtig' },
+}
+const pricing = tool.pricing ? PRICING[locale][tool.pricing] : undefined
 ---
 
 <article class="tool-card" id={tool.id} data-level={tool.level ?? undefined}>
   <header class="tool-head">
     <span class="tool-logo" aria-hidden="true">
       {
-        iconPath ? (
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d={iconPath} />
+        icon ? (
+          <svg viewBox={icon.viewBox} fill="currentColor">
+            {icon.paths.map((p) => (
+              <path d={p.d} transform={p.transform} />
+            ))}
           </svg>
         ) : (
           tool.monogram
@@ -78,9 +89,10 @@ const labels = LABELS[locale]
     <div class="tool-heading">
       <h3 class="tool-name">{Astro.slots.has('name') ? <slot name="name" /> : tool.name}</h3>
       {
-        Astro.slots.has('tags') && (
+        (Astro.slots.has('tags') || pricing) && (
           <div class="tool-tags">
             <slot name="tags" />
+            {pricing && <span class="tool-tag tool-tag--price">{pricing}</span>}
           </div>
         )
       }

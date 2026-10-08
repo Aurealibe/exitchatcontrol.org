@@ -133,8 +133,8 @@ describe('open-source directory', () => {
   ])
   const directory = loadDataset('directory', 'en')
 
-  it('has 68 entries: free-software license allowlist, https links', () => {
-    expect(directory).toHaveLength(68)
+  it('has 74 entries: free-software license allowlist, https links', () => {
+    expect(directory).toHaveLength(74)
     for (const e of directory) {
       expect(SPDX_ALLOWED.has(e.license), `${e.name}: license ${e.license}`).toBe(true)
       expect(e.url.startsWith('https://'), e.name).toBe(true)
@@ -179,5 +179,16 @@ describe('allied initiatives', () => {
     expect(allies.filter((a) => a.group === 'campaigns')).toHaveLength(8)
     expect(allies.filter((a) => a.group === 'chroniclers')).toHaveLength(8)
     for (const a of allies) expect(a.url.startsWith('https://'), a.name).toBe(true)
+  })
+})
+
+describe('tool cards', () => {
+  const tools = JSON.parse(
+    readFileSync(new URL('../../src/data/tools.json', import.meta.url), 'utf8'),
+  ) as { id: string; pricing?: string }[]
+
+  it('every tool states its price model (free, freemium or paid)', () => {
+    const bad = tools.filter((t) => !['free', 'freemium', 'paid'].includes(t.pricing ?? ''))
+    expect(bad.map((t) => t.id)).toEqual([])
   })
 })

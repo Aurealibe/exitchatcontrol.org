@@ -203,5 +203,17 @@
   },
   "exiftool": {
     "body": "EXIF-metadata lezen en wissen."
-  }
+  },
+  "threema": {
+    "body": "Betaalde Zwitserse berichtenapp, zonder telefoonnummer of e-mail (willekeurige ID)."
+  },
+  "olvid": {
+    "body": "Franse berichtenapp zonder telefoonnummer, gecertificeerd door ANSSI (CSPN)."
+  },
+  "meshtastic": { "body": "Off-grid berichten via LoRa-radio op kleine aparte apparaten." },
+  "veracrypt": { "body": "Lokale versleuteling van schijven, partities en containers." },
+  "forgejo": {
+    "body": "Zelf te hosten vrije Git-forge; Codeberg is de instantie van een vereniging zonder winstoogmerk."
+  },
+  "radicle": { "body": "Peer-to-peer code-forge, zonder centrale server." }
 }

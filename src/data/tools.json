@@ -1,6 +1,7 @@
 [
   {
     "id": "t-signal",
+    "pricing": "free",
     "name": "Signal",
     "url": "https://signal.org",
     "links": [
@@ -17,6 +18,7 @@
   },
   {
     "id": "t-simplex",
+    "pricing": "free",
     "name": "SimpleX Chat",
     "url": "https://simplex.chat",
     "links": [
@@ -33,6 +35,7 @@
   },
   {
     "id": "t-session",
+    "pricing": "free",
     "name": "Session",
     "url": "https://getsession.org",
     "links": [
@@ -49,6 +52,7 @@
   },
   {
     "id": "t-briar",
+    "pricing": "free",
     "name": "Briar",
     "url": "https://briarproject.org",
     "links": [
@@ -65,6 +69,7 @@
   },
   {
     "id": "t-bitchat",
+    "pricing": "free",
     "name": "Bitchat",
     "url": "https://bitchat.free",
     "links": [
@@ -81,6 +86,7 @@
   },
   {
     "id": "t-molly",
+    "pricing": "free",
     "name": "Molly",
     "url": "https://molly.im",
     "links": [
@@ -97,6 +103,7 @@
   },
   {
     "id": "t-protonmail",
+    "pricing": "freemium",
     "name": "Proton Mail",
     "url": "https://proton.me/mail",
     "links": [
@@ -113,6 +120,7 @@
   },
   {
     "id": "t-tuta",
+    "pricing": "freemium",
     "name": "Tuta",
     "url": "https://tuta.com",
     "links": [
@@ -129,6 +137,7 @@
   },
   {
     "id": "t-mailbox",
+    "pricing": "paid",
     "name": "mailbox.org · Posteo",
     "url": "https://mailbox.org",
     "links": [
@@ -149,6 +158,7 @@
   },
   {
     "id": "t-mullvadbrowser",
+    "pricing": "free",
     "name": "Mullvad Browser",
     "url": "https://mullvad.net/browser",
     "links": [
@@ -165,6 +175,7 @@
   },
   {
     "id": "t-firefox",
+    "pricing": "free",
     "name": "Firefox (hardened)",
     "url": "https://www.mozilla.org/firefox",
     "links": [
@@ -181,6 +192,7 @@
   },
   {
     "id": "t-brave",
+    "pricing": "free",
     "name": "Brave",
     "url": "https://brave.com",
     "links": [
@@ -197,6 +209,7 @@
   },
   {
     "id": "t-ublock",
+    "pricing": "free",
     "name": "uBlock Origin",
     "url": "https://github.com/gorhill/uBlock",
     "links": [
@@ -213,6 +226,7 @@
   },
   {
     "id": "t-search",
+    "pricing": "free",
     "name": "DuckDuckGo · Brave Search · SearXNG",
     "url": "https://duckduckgo.com",
     "links": [
@@ -237,6 +251,7 @@
   },
   {
     "id": "t-quad9",
+    "pricing": "free",
     "name": "Quad9",
     "url": "https://quad9.net",
     "links": [
@@ -253,6 +268,7 @@
   },
   {
     "id": "t-mullvaddns",
+    "pricing": "freemium",
     "name": "Mullvad DNS · NextDNS",
     "url": "https://mullvad.net/help/dns-over-https-and-dns-over-tls",
     "links": [
@@ -273,6 +289,7 @@
   },
   {
     "id": "t-cloudflare",
+    "pricing": "free",
     "name": "Cloudflare 1.1.1.1 (with nuance)",
     "url": "https://one.one.one.one",
     "links": [
@@ -289,6 +306,7 @@
   },
   {
     "id": "t-pihole",
+    "pricing": "free",
     "name": "Pi-hole · AdGuard Home",
     "url": "https://pi-hole.net",
     "links": [
@@ -309,6 +327,7 @@
   },
   {
     "id": "t-mullvad",
+    "pricing": "paid",
     "name": "Mullvad VPN",
     "url": "https://mullvad.net",
     "links": [
@@ -325,6 +344,7 @@
   },
   {
     "id": "t-protonvpn",
+    "pricing": "freemium",
     "name": "Proton VPN",
     "url": "https://protonvpn.com",
     "links": [
@@ -341,6 +361,7 @@
   },
   {
     "id": "t-ivpn",
+    "pricing": "paid",
     "name": "IVPN",
     "url": "https://www.ivpn.net",
     "links": [
@@ -357,6 +378,7 @@
   },
   {
     "id": "t-protondrive",
+    "pricing": "freemium",
     "name": "Proton Drive",
     "url": "https://proton.me/drive",
     "links": [
@@ -373,6 +395,7 @@
   },
   {
     "id": "t-cryptomator",
+    "pricing": "freemium",
     "name": "Cryptomator",
     "url": "https://cryptomator.org",
     "links": [
@@ -389,6 +412,7 @@
   },
   {
     "id": "t-nc-storage",
+    "pricing": "free",
     "name": "Nextcloud",
     "url": "https://nextcloud.com",
     "links": [
@@ -405,6 +429,7 @@
   },
   {
     "id": "t-bitwarden",
+    "pricing": "freemium",
     "name": "Bitwarden",
     "url": "https://bitwarden.com",
     "links": [
@@ -421,6 +446,7 @@
   },
   {
     "id": "t-keepassxc",
+    "pricing": "free",
     "name": "KeePassXC",
     "url": "https://keepassxc.org",
     "links": [
@@ -437,6 +463,7 @@
   },
   {
     "id": "t-protonpass",
+    "pricing": "freemium",
     "name": "Proton Pass",
     "url": "https://proton.me/pass",
     "links": [
@@ -453,6 +480,7 @@
   },
   {
     "id": "t-yubikey",
+    "pricing": "paid",
     "name": "YubiKey · Nitrokey",
     "url": "https://www.yubico.com",
     "links": [
@@ -473,6 +501,7 @@
   },
   {
     "id": "t-aegis",
+    "pricing": "free",
     "name": "Aegis · Ente Auth",
     "url": "https://getaegis.app",
     "links": [
@@ -493,6 +522,7 @@
   },
   {
     "id": "t-mastodon",
+    "pricing": "free",
     "name": "Mastodon",
     "url": "https://joinmastodon.org",
     "links": [
@@ -509,6 +539,7 @@
   },
   {
     "id": "t-nostr",
+    "pricing": "free",
     "name": "Nostr",
     "url": "https://nostr.com",
     "links": [
@@ -525,6 +556,7 @@
   },
   {
     "id": "t-element",
+    "pricing": "free",
     "name": "Matrix / Element",
     "url": "https://element.io",
     "links": [
@@ -541,6 +573,7 @@
   },
   {
     "id": "t-fediverse",
+    "pricing": "free",
     "name": "Pixelfed · PeerTube · Lemmy",
     "url": "https://pixelfed.org",
     "links": [
@@ -565,6 +598,7 @@
   },
   {
     "id": "t-bitcoin",
+    "pricing": "free",
     "name": "Bitcoin (self-custody)",
     "url": "https://bitcoin.org",
     "links": [
@@ -581,6 +615,7 @@
   },
   {
     "id": "t-monero",
+    "pricing": "free",
     "name": "Monero (XMR)",
     "url": "https://www.getmonero.org",
     "links": [
@@ -597,6 +632,7 @@
   },
   {
     "id": "t-localai",
+    "pricing": "free",
     "name": "Ollama · LM Studio · Jan · GPT4All",
     "url": "https://lmstudio.ai",
     "links": [
@@ -621,6 +657,7 @@
   },
   {
     "id": "t-pocketpal",
+    "pricing": "free",
     "name": "PocketPal AI",
     "url": "https://pocketpal.dev",
     "links": [
@@ -640,6 +677,7 @@
   },
   {
     "id": "t-cloudai",
+    "pricing": "freemium",
     "name": "Duck.ai · Lumo (Proton)",
     "url": "https://duck.ai",
     "links": [
@@ -660,6 +698,7 @@
   },
   {
     "id": "t-maps",
+    "pricing": "freemium",
     "name": "Organic Maps · OsmAnd",
     "url": "https://organicmaps.app",
     "links": [
@@ -680,6 +719,7 @@
   },
   {
     "id": "t-notes",
+    "pricing": "freemium",
     "name": "Standard Notes · Joplin · CryptPad",
     "url": "https://standardnotes.com",
     "links": [
@@ -704,6 +744,7 @@
   },
   {
     "id": "t-visio",
+    "pricing": "free",
     "name": "Jitsi Meet · Element Call",
     "url": "https://jitsi.org",
     "links": [
@@ -724,6 +765,7 @@
   },
   {
     "id": "t-photos",
+    "pricing": "freemium",
     "name": "Ente · Immich",
     "url": "https://ente.io",
     "links": [
@@ -744,6 +786,7 @@
   },
   {
     "id": "t-alias",
+    "pricing": "freemium",
     "name": "SimpleLogin · addy.io",
     "url": "https://simplelogin.io",
     "links": [
@@ -764,6 +807,7 @@
   },
   {
     "id": "t-backups",
+    "pricing": "free",
     "name": "Encrypted backups",
     "url": "https://cryptomator.org",
     "links": [
@@ -784,6 +828,7 @@
   },
   {
     "id": "t-databrokers",
+    "pricing": "free",
     "name": "Erase your data (GDPR)",
     "url": "https://www.cnil.fr",
     "links": [
@@ -804,6 +849,7 @@
   },
   {
     "id": "t-yunohost",
+    "pricing": "free",
     "name": "YunoHost · Umbrel · Start9",
     "url": "https://yunohost.org",
     "links": [
@@ -828,6 +874,7 @@
   },
   {
     "id": "t-nextcloud",
+    "pricing": "free",
     "name": "Nextcloud",
     "url": "https://nextcloud.com",
     "links": [
@@ -844,6 +891,7 @@
   },
   {
     "id": "t-synapse",
+    "pricing": "free",
     "name": "Matrix Synapse",
     "url": "https://element.io/server-suite",
     "links": [
@@ -860,6 +908,7 @@
   },
   {
     "id": "t-tailscale",
+    "pricing": "freemium",
     "name": "Tailscale · Headscale · WireGuard",
     "url": "https://tailscale.com",
     "links": [
@@ -880,6 +929,7 @@
   },
   {
     "id": "t-website",
+    "pricing": "free",
     "name": "Your own website",
     "url": "https://astro.build",
     "links": [
@@ -900,6 +950,7 @@
   },
   {
     "id": "t-tor",
+    "pricing": "free",
     "name": "Tor Browser",
     "url": "https://www.torproject.org",
     "links": [
@@ -916,6 +967,7 @@
   },
   {
     "id": "t-grapheneos",
+    "pricing": "free",
     "name": "GrapheneOS",
     "url": "https://grapheneos.org",
     "links": [
@@ -932,6 +984,7 @@
   },
   {
     "id": "t-linux",
+    "pricing": "free",
     "name": "Linux (on desktop)",
     "url": "https://distrochooser.de/fr",
     "links": [
@@ -956,6 +1009,7 @@
   },
   {
     "id": "t-tails",
+    "pricing": "free",
     "name": "Tails",
     "url": "https://tails.net",
     "links": [
@@ -972,6 +1026,7 @@
   },
   {
     "id": "t-qubes",
+    "pricing": "free",
     "name": "Qubes OS · postmarketOS",
     "url": "https://www.qubes-os.org",
     "links": [
@@ -989,5 +1044,90 @@
     "color": "#3874d8",
     "level": null,
     "profiles": ["🔴"]
+  },
+  {
+    "id": "t-threema",
+    "pricing": "paid",
+    "name": "Threema",
+    "url": "https://threema.com",
+    "links": [
+      {
+        "label": "threema.com",
+        "href": "https://threema.com"
+      }
+    ],
+    "iconSlug": "threema",
+    "monogram": "Th",
+    "color": "#3fe669",
+    "level": 2,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-olvid",
+    "pricing": "freemium",
+    "name": "Olvid",
+    "url": "https://olvid.io",
+    "links": [
+      {
+        "label": "olvid.io",
+        "href": "https://olvid.io"
+      }
+    ],
+    "iconSlug": "olvid",
+    "monogram": "Ol",
+    "color": "#2a5ad8",
+    "level": 1,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
+    "id": "t-deltachat",
+    "pricing": "free",
+    "name": "Delta Chat",
+    "url": "https://delta.chat",
+    "links": [
+      {
+        "label": "delta.chat",
+        "href": "https://delta.chat"
+      }
+    ],
+    "iconSlug": "deltachat",
+    "monogram": "DC",
+    "color": "#364e59",
+    "level": 2,
+    "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-meshtastic",
+    "pricing": "free",
+    "name": "Meshtastic",
+    "url": "https://meshtastic.org",
+    "links": [
+      {
+        "label": "meshtastic.org",
+        "href": "https://meshtastic.org"
+      }
+    ],
+    "iconSlug": "meshtastic",
+    "monogram": "Me",
+    "color": "#67ea94",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-veracrypt",
+    "pricing": "free",
+    "name": "VeraCrypt",
+    "url": "https://veracrypt.jp",
+    "links": [
+      {
+        "label": "veracrypt.jp",
+        "href": "https://veracrypt.jp"
+      }
+    ],
+    "iconSlug": "veracrypt",
+    "monogram": "VC",
+    "color": "#1d5fa8",
+    "level": 2,
+    "profiles": ["🟡", "🔴"]
   }
 ]

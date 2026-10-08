@@ -85,6 +85,10 @@ De eerste stap, degene die u het snelst beschermt: weg van WhatsApp, Messenger e
       schakel het <b>registratieslot</b> in.
     </li>
     <li>Nodig uw naasten uit. Koppel op de computer de desktop-app aan uw telefoon.</li>
+    <li>
+      Vergelijk voor belangrijke contacten het <b>veiligheidsnummer</b> (persoonlijk of via een
+      ander kanaal): zo sluit u een man-in-the-middle-aanval uit.
+    </li>
   </ol>
 </ToolCard>
 
@@ -146,6 +150,97 @@ De eerste stap, degene die u het snelst beschermt: weg van WhatsApp, Messenger e
     </li>
     <li>Noteer de herstelzin op papier: het is de enige sleutel tot uw account.</li>
     <li>Deel uw Session ID (of QR) met uw contacten.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-threema">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Gemiddeld</span>
+    <span class="tool-tag">Zonder nummer</span>
+    <span class="tool-tag">🇨🇭 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een volwaardige Zwitserse berichtenapp (berichten, gesprekken, groepen) waarin u wordt herkend
+    aan een willekeurige <b>Threema ID</b>, zonder telefoonnummer of e-mail.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end versleuteling, open-source (AGPL) en geaudite apps, een bedrijf onder Zwitsers recht.
+    Eenmalig betaald, dus het leeft niet van uw gegevens.
+  </Fragment>
+  <Fragment slot="who">
+    Wie een alternatief voor Signal wil zonder telefoonnummer en bereid is voor de app te betalen.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Koop en installeer Threema via <b>threema.com</b>, de App Store of Google Play (er is ook een
+      licentie voor de F-Droid-versie).
+    </li>
+    <li>Noteer uw Threema ID en maak een met wachtwoord beveiligde back-up.</li>
+    <li>
+      Voeg contacten toe door hun QR-code te scannen: zo krijgen ze het hoogste verificatieniveau.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-olvid">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Zonder nummer</span>
+    <span class="tool-tag">🇫🇷 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een Franse berichtenapp die werkt <b>zonder enig persoonsgegeven</b>: geen telefoonnummer, geen
+    e-mail, geen adresboek.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end versleuteling, gepubliceerde broncode van de apps (AGPL), gecertificeerd door het
+    Franse cyberagentschap ANSSI (CSPN). De Franse regering gebruikt het voor haar communicatie.
+  </Fragment>
+  <Fragment slot="who">
+    Iedereen, vooral wie de voorkeur geeft aan een Europese uitgever en servers. Contacten voegt u
+    persoonlijk of via een uitnodiging toe.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installeer Olvid via <b>olvid.io</b>, de App Store of Google Play. De basisversie is gratis.
+    </li>
+    <li>Kies een weergavenaam: registratie is niet nodig.</li>
+    <li>
+      Voeg een contact toe door de QR-code te scannen, of door een uitnodiging en daarna een
+      4-cijferige code uit te wisselen.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-deltachat">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Gemiddeld</span>
+    <span class="tool-tag">Zonder nummer</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Een berichtenapp die steunt op het e-mailnetwerk: profielen worden met één tik aangemaakt op
+    "chatmail"-relays, zonder telefoonnummer of persoonlijk adres.
+  </Fragment>
+  <Fragment slot="why">
+    Automatische end-to-end versleuteling, een gedecentraliseerd netwerk van relays (iedereen kan er
+    een draaien), vrije en geaudite apps.
+  </Fragment>
+  <Fragment slot="who">
+    Wie een gedecentraliseerd netwerk zonder telefoonnummer wil, en van geen enkele aanbieder
+    afhankelijk wil zijn.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installeer Delta Chat via <b>delta.chat</b>, F-Droid, de App Store of Google Play.
+    </li>
+    <li>
+      Maak een profiel aan: standaard wordt een chatmail-relay voorgesteld, zonder telefoonnummer of
+      e-mail.
+    </li>
+    <li>
+      Voeg contacten toe via QR-code of uitnodigingslink, zodat de versleuteling geverifieerd is.
+    </li>
   </ol>
 </ToolCard>
 
@@ -213,6 +308,44 @@ De eerste stap, degene die u het snelst beschermt: weg van WhatsApp, Messenger e
   </ol>
 </ToolCard>
 
+<ToolCard tool="t-meshtastic">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Gevorderd</span>
+    <span class="tool-tag">Radio zonder netwerk</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Tekstberichten via <b>LoRa-radio</b>, van apparaat naar apparaat, zonder mobiel netwerk of
+    internet. Uw telefoon verbindt via Bluetooth met het apparaat.
+  </Fragment>
+  <Fragment slot="why">
+    Geen operator, geen server: niets af te sluiten of af te dwingen. Bereik van enkele kilometers,
+    en een mesh die berichten doorgeeft.
+  </Fragment>
+  <Fragment slot="who">
+    Wandelen, gebieden zonder dekking, storingen en crisissituaties. U hebt hardware nodig (één
+    radioapparaat per persoon) en korte, trage berichten.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Beperkingen</span>
+    <p>
+      Het standaardkanaal is door iedereen leesbaar. Directe berichten zijn versleuteld (firmware
+      2.5 en later), maar radiometadata blijven zichtbaar. Meshtastic werkt niet samen met MeshCore,
+      een concurrerend project.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Koop een ondersteund apparaat (lijst op <b>meshtastic.org</b>) en installeer de app.
+    </li>
+    <li>Kies de radioregio van uw land: toegestane frequenties en zendtijd verschillen.</li>
+    <li>
+      Maak een privékanaal met een willekeurige sleutel: het standaard openbare kanaal gebruikt een
+      sleutel die iedereen kent.
+    </li>
+  </ol>
+</ToolCard>
+
 <ToolCard tool="t-molly">
   <Fragment slot="tags">
     <span class="tool-tag">🔴 Expert</span>
@@ -244,10 +377,10 @@ De eerste stap, degene die u het snelst beschermt: weg van WhatsApp, Messenger e
 <div class="box">
   <span class="lab">Tegen Chat Control</span>
   <p>
-    Geef de voorkeur aan <strong>vrije software</strong>{' '}
-    <strong>buiten de grote Amerikaanse platforms</strong>, waarvan de teams publiekelijk hebben
-    beloofd de EU te verlaten liever dan client-side scanning in te bouwen (Signal heeft dat
-    gedaan). Herinnering: als het besturingssysteem zelf scanning afdwingt, kan de app niet helpen,
-    vandaar sectie 12.
+    Geef de voorkeur aan <strong>vrije software</strong> waarvan de teams publiekelijk hebben
+    beloofd de Europese markt te verlaten liever dan client-side scanning in te bouwen (Signal heeft
+    dat gedaan), of aan gedecentraliseerde apps zonder centrale aanbieder die kan worden gedwongen.
+    Herinnering: als het besturingssysteem zelf scanning afdwingt, kan de app niet helpen, vandaar
+    sectie 12.
   </p>
 </div>

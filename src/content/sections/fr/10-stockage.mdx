@@ -63,6 +63,48 @@ title: 'Stockage chiffré'
   </ol>
 </ToolCard>
 
+<ToolCard tool="t-veracrypt">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermédiaire</span>
+    <span class="tool-tag">Remplace BitLocker</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Le chiffrement <b>local</b> de référence : un disque entier, une partition, une clé USB, ou un
+    conteneur chiffré (un fichier qui s'ouvre comme un disque).
+  </Fragment>
+  <Fragment slot="why">
+    Rien ne quitte votre machine : pas de compte, pas de cloud, pas de clé de récupération envoyée à
+    un éditeur. Libre, audité, successeur de TrueCrypt. C'est l'équivalent local de Cryptomator, qui
+    lui est pensé pour le cloud.
+  </Fragment>
+  <Fragment slot="who">
+    Sous Windows, pour remplacer BitLocker ; partout, pour un conteneur ou un disque externe
+    chiffré. Sous Linux et macOS, le chiffrement intégré (LUKS, FileVault) suffit pour le disque
+    système.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Chiffrement du système et Secure Boot</span>
+    <p>
+      Microsoft révoque en 2026 l'autorité de certification UEFI de 2011 qui signait l'ancien
+      chargeur de démarrage. Si vous chiffrez le disque système, utilisez la version 1.26.29 ou plus
+      récente, qui embarque des chargeurs signés pour les autorités de 2011 et de 2023.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Téléchargez VeraCrypt depuis <b>veracrypt.jp</b> et vérifiez la signature PGP ou la somme de
+      contrôle du fichier.
+    </li>
+    <li>
+      Créez un volume avec les réglages par défaut (AES, SHA-512) ; Argon2id est proposé depuis la
+      version 1.26.29.
+    </li>
+    <li>Choisissez une phrase de passe longue (plusieurs mots aléatoires), sans réutilisation.</li>
+    <li>Avancé : créez un volume caché à l'intérieur du volume pour un déni plausible.</li>
+  </ol>
+</ToolCard>
+
 <ToolCard tool="t-nc-storage">
   <Fragment slot="tags">
     <span class="tool-tag">🔴 Avancé</span>

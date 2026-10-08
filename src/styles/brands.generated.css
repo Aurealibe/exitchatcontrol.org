@@ -222,3 +222,23 @@
   background: #3874d8;
   color: #14161a;
 }
+#t-threema .tool-logo {
+  background: #3fe669;
+  color: #14161a;
+}
+#t-olvid .tool-logo {
+  background: #2a5ad8;
+  color: #faf7ee;
+}
+#t-deltachat .tool-logo {
+  background: #364e59;
+  color: #faf7ee;
+}
+#t-meshtastic .tool-logo {
+  background: #67ea94;
+  color: #14161a;
+}
+#t-veracrypt .tool-logo {
+  background: #1d5fa8;
+  color: #faf7ee;
+}

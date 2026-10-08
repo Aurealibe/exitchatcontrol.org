@@ -70,6 +70,51 @@ title: 'Verschlüsselter Speicher'
   </ol>
 </ToolCard>
 
+<ToolCard tool="t-veracrypt">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Mittel</span>
+    <span class="tool-tag">Ersetzt BitLocker</span>
+    <span class="tool-tag">🌍 · Open Source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Die Referenz für <b>lokale</b> Verschlüsselung: ein ganzes Laufwerk, eine Partition, ein
+    USB-Stick oder ein verschlüsselter Container (eine Datei, die wie ein Laufwerk eingebunden
+    wird).
+  </Fragment>
+  <Fragment slot="why">
+    Nichts verlässt deinen Rechner: kein Konto, keine Cloud, kein Wiederherstellungsschlüssel beim
+    Hersteller. Frei, auditiert, Nachfolger von TrueCrypt. Das lokale Gegenstück zu Cryptomator, das
+    für die Cloud gedacht ist.
+  </Fragment>
+  <Fragment slot="who">
+    Unter Windows als Ersatz für BitLocker; überall für einen verschlüsselten Container oder ein
+    externes Laufwerk. Unter Linux und macOS reicht für das Systemlaufwerk die eingebaute
+    Verschlüsselung (LUKS, FileVault).
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Systemverschlüsselung und Secure Boot</span>
+    <p>
+      Microsoft widerruft 2026 die UEFI-Zertifizierungsstelle von 2011, die den alten Bootloader
+      signiert hat. Wenn du das Systemlaufwerk verschlüsselst, nutze Version 1.26.29 oder neuer: Sie
+      bringt Bootloader mit, die für die Stellen von 2011 und 2023 signiert sind.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Lade VeraCrypt über <b>veracrypt.jp</b> herunter und prüfe die PGP-Signatur oder Prüfsumme der
+      Datei.
+    </li>
+    <li>
+      Lege ein Volume mit den Standardeinstellungen an (AES, SHA-512); Argon2id steht seit Version
+      1.26.29 zur Verfügung.
+    </li>
+    <li>Wähle eine lange Passphrase (mehrere zufällige Wörter), die du nirgends sonst nutzt.</li>
+    <li>
+      Fortgeschritten: Lege für glaubhafte Abstreitbarkeit ein verstecktes Volume im Volume an.
+    </li>
+  </ol>
+</ToolCard>
+
 <ToolCard tool="t-nc-storage">
   <Fragment slot="tags">
     <span class="tool-tag">🔴 Fortgeschritten</span>

@@ -68,5 +68,11 @@
   "onionshare": { "body": "Share files over Tor, no middleman." },
   "rayhunter": { "body": "IMSI-catcher detector." },
   "mat2": { "body": "Strips metadata before publishing." },
-  "exiftool": { "body": "Read and erase EXIF metadata." }
+  "exiftool": { "body": "Read and erase EXIF metadata." },
+  "threema": { "body": "Paid Swiss messenger, no phone number or e-mail (random ID)." },
+  "olvid": { "body": "French messenger with no phone number, certified by ANSSI (CSPN)." },
+  "meshtastic": { "body": "Off-grid LoRa radio messaging on small dedicated devices." },
+  "veracrypt": { "body": "Local encryption of disks, partitions and containers." },
+  "forgejo": { "body": "Self-hostable free Git forge; Codeberg is its non-profit instance." },
+  "radicle": { "body": "Peer-to-peer code forge, no central server." }
 }

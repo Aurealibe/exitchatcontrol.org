@@ -70,5 +70,15 @@
   "onionshare": { "body": "Partager des fichiers via Tor, sans intermédiaire." },
   "rayhunter": { "body": "Détecteur d’IMSI-catchers." },
   "mat2": { "body": "Nettoie les métadonnées avant publication." },
-  "exiftool": { "body": "Lire et effacer les métadonnées EXIF." }
+  "exiftool": { "body": "Lire et effacer les métadonnées EXIF." },
+  "threema": {
+    "body": "Messagerie suisse payante, sans numéro ni e-mail (identifiant aléatoire)."
+  },
+  "olvid": { "body": "Messagerie française sans numéro, certifiée par l'ANSSI (CSPN)." },
+  "meshtastic": { "body": "Messagerie radio LoRa hors réseau, sur petits boîtiers dédiés." },
+  "veracrypt": { "body": "Chiffrement local de disques, partitions et conteneurs." },
+  "forgejo": {
+    "body": "Forge Git libre auto-hébergeable ; Codeberg en est l'instance associative."
+  },
+  "radicle": { "body": "Forge de code pair-à-pair, sans serveur central." }
 }

@@ -46,6 +46,30 @@
     "license": "GPL-3.0"
   },
   {
+    "id": "threema",
+    "category": "messagerie",
+    "name": "Threema",
+    "url": "https://threema.com",
+    "license": "AGPL-3.0",
+    "iconSlug": "threema"
+  },
+  {
+    "id": "olvid",
+    "category": "messagerie",
+    "name": "Olvid",
+    "url": "https://olvid.io",
+    "license": "AGPL-3.0",
+    "iconSlug": "olvid"
+  },
+  {
+    "id": "meshtastic",
+    "category": "messagerie",
+    "name": "Meshtastic",
+    "url": "https://meshtastic.org",
+    "license": "GPL-3.0",
+    "iconSlug": "meshtastic"
+  },
+  {
     "id": "delta-chat",
     "category": "messagerie",
     "name": "Delta Chat",
@@ -241,6 +265,14 @@
     "url": "https://cryptomator.org",
     "license": "GPL-3.0",
     "iconSlug": "cryptomator"
+  },
+  {
+    "id": "veracrypt",
+    "category": "stockage-photos",
+    "name": "VeraCrypt",
+    "url": "https://veracrypt.jp",
+    "license": "Apache-2.0",
+    "iconSlug": "veracrypt"
   },
   {
     "id": "syncthing",
@@ -472,6 +504,22 @@
     "url": "https://element.io/server-suite",
     "license": "AGPL-3.0",
     "iconSlug": "matrix"
+  },
+  {
+    "id": "forgejo",
+    "category": "selfhost",
+    "name": "Forgejo · Codeberg",
+    "url": "https://forgejo.org",
+    "license": "GPL-3.0",
+    "iconSlug": "forgejo"
+  },
+  {
+    "id": "radicle",
+    "category": "selfhost",
+    "name": "Radicle",
+    "url": "https://radicle.xyz",
+    "license": "Apache-2.0",
+    "iconSlug": "radicle"
   },
   {
     "id": "bitcoin-core",

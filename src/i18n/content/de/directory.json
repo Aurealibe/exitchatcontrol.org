@@ -202,5 +202,15 @@
   },
   "exiftool": {
     "body": "EXIF-Metadaten lesen und löschen."
-  }
+  },
+  "threema": {
+    "body": "Kostenpflichtiger Schweizer Messenger, ohne Telefonnummer oder E-Mail (zufällige ID)."
+  },
+  "olvid": {
+    "body": "Französischer Messenger ohne Telefonnummer, von der ANSSI zertifiziert (CSPN)."
+  },
+  "meshtastic": { "body": "Netzunabhängige LoRa-Funknachrichten über kleine eigene Geräte." },
+  "veracrypt": { "body": "Lokale Verschlüsselung von Laufwerken, Partitionen und Containern." },
+  "forgejo": { "body": "Selbst hostbare freie Git-Forge; Codeberg ist die gemeinnützige Instanz." },
+  "radicle": { "body": "Peer-to-Peer-Code-Forge ohne zentralen Server." }
 }
