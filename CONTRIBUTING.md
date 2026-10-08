@@ -10,6 +10,10 @@ A tool must meet all three of the original rules:
 2. **Open source** — a public repository with an OSI-approved license.
 3. **Privacy-respecting** — no trackers, no data monetization, honest documentation.
 
+## Neutrality
+
+Privacy is for everyone, whatever their politics. Tools are judged on verifiable facts only: licence, audits, jurisdiction, logging and data practices, track record. The opinions, donations or affiliations of a project's founders or staff are not a criterion, in either direction. Requests to add, remove or flag a tool for political reasons are closed, and partisan content in a PR (including READMEs and translations) is removed before merge.
+
 ## Disclosure of affiliation (mandatory)
 
 If you are the author, maintainer, employee, investor, or otherwise affiliated with a tool, service, or website you propose to add or link, **you must say so in the PR description**. Undisclosed self-promotion — however good the surrounding work — gets the PR closed and the account reported for inauthentic activity. This has happened before; it will happen again.
