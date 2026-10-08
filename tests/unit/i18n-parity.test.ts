@@ -6,6 +6,7 @@ import de from '../../src/i18n/de.json'
 import es from '../../src/i18n/es.json'
 import cs from '../../src/i18n/cs.json'
 import hu from '../../src/i18n/hu.json'
+import itDict from '../../src/i18n/it.json'
 import { defaultLocale, locales } from '../../src/i18n/locales'
 
 // Every locale dictionary must have exactly the English key shape:
@@ -18,7 +19,7 @@ function keyPaths(node: unknown, prefix = ''): string[] {
   return [prefix]
 }
 
-const dicts: Record<string, unknown> = { en, fr, nl, de, es, cs, hu }
+const dicts: Record<string, unknown> = { en, fr, nl, de, es, cs, hu, it: itDict }
 
 describe('i18n dictionary parity', () => {
   it('declares a dictionary for every locale', () => {

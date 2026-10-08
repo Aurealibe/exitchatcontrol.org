@@ -61,6 +61,12 @@ import huDirectory from '../i18n/content/hu/directory.json'
 import huChecklist from '../i18n/content/hu/checklist.json'
 import huAllies from '../i18n/content/hu/allies.json'
 import huQuiz from '../i18n/content/hu/quiz.json'
+import itEvents from '../i18n/content/it/events.json'
+import itObservatory from '../i18n/content/it/observatory.json'
+import itDirectory from '../i18n/content/it/directory.json'
+import itChecklist from '../i18n/content/it/checklist.json'
+import itAllies from '../i18n/content/it/allies.json'
+import itQuiz from '../i18n/content/it/quiz.json'
 
 /* ─── enums (mirroring pr1's content model) ────────────────────────────── */
 
@@ -210,6 +216,7 @@ const registry: Record<DatasetName, DatasetDef> = {
       es: esEvents,
       cs: csEvents,
       hu: huEvents,
+      it: itEvents,
     },
   },
   observatory: {
@@ -224,6 +231,7 @@ const registry: Record<DatasetName, DatasetDef> = {
       es: esObservatory,
       cs: csObservatory,
       hu: huObservatory,
+      it: itObservatory,
     },
   },
   directory: {
@@ -238,6 +246,7 @@ const registry: Record<DatasetName, DatasetDef> = {
       es: esDirectory,
       cs: csDirectory,
       hu: huDirectory,
+      it: itDirectory,
     },
   },
   checklist: {
@@ -252,6 +261,7 @@ const registry: Record<DatasetName, DatasetDef> = {
       es: esChecklist,
       cs: csChecklist,
       hu: huChecklist,
+      it: itChecklist,
     },
   },
   allies: {
@@ -266,6 +276,7 @@ const registry: Record<DatasetName, DatasetDef> = {
       es: esAllies,
       cs: csAllies,
       hu: huAllies,
+      it: itAllies,
     },
   },
 }
@@ -404,6 +415,7 @@ const quizOverlays: Record<Locale, OverlayFile> = {
   es: esQuiz,
   cs: csQuiz,
   hu: huQuiz,
+  it: itQuiz,
 }
 
 /**

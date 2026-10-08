@@ -76,6 +76,12 @@ const LABELS: Record<Locale, { what: string; why: string; who: string; install: 
     who: 'Kinek és mikor',
     install: 'Telepítés és használat',
   },
+  it: {
+    what: 'A cosa serve',
+    why: 'Perché conta',
+    who: 'Per chi e quando',
+    install: 'Installare e usare',
+  },
 }
 const labels = LABELS[locale]
 
@@ -88,6 +94,7 @@ const PRICING: Record<Locale, Record<string, string>> = {
   es: { free: 'Gratis', freemium: 'Gratis + plan de pago', paid: 'De pago' },
   cs: { free: 'Zdarma', freemium: 'Zdarma + placená verze', paid: 'Placené' },
   hu: { free: 'Ingyenes', freemium: 'Ingyenes + fizetős csomag', paid: 'Fizetős' },
+  it: { free: 'Gratis', freemium: 'Gratis + piano a pagamento', paid: 'A pagamento' },
 }
 const pricing = tool.pricing ? PRICING[locale][tool.pricing] : undefined
 ---
