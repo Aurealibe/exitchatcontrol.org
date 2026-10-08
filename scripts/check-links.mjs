@@ -1,7 +1,8 @@
 /* Live-checks every citation the guide stands on — timeline, observatory,
    directory, checklist, allies, footer sources and the narrative sections.
-   404 / DNS failure / 5xx = FAIL; 403/429 (bot walls on europa.eu etc.)
-   are reported as WARN and tolerated.
+   404 / DNS failure / 5xx = FAIL; 401/402/403/429 (bot walls on
+   europa.eu, paywalls answering 402…) are reported as WARN and tolerated.
+   Timeouts are retried once before counting as broken.
    Run: node scripts/check-links.mjs */
 import { readdirSync, readFileSync, statSync } from 'node:fs'
 import { join } from 'node:path'
@@ -28,7 +29,10 @@ const corpus = ROOTS.flatMap(filesUnder)
   .join('\n')
 const urls = [
   ...new Set(
-    [...corpus.matchAll(/https:\/\/[^\s"'`<>)\\]+/g)].map((m) => m[0].replace(/[.,]$/, '')),
+    [...corpus.matchAll(/https:\/\/[^\s"'`<>)\\]+/g)]
+      .map((m) => m[0].replace(/[.,]$/, ''))
+      // code templates (e.g. share-intent URLs built in Quiz.astro) are not citations
+      .filter((u) => !u.includes('${')),
   ),
 ]
 
@@ -58,14 +62,20 @@ async function probe(url) {
 }
 
 console.log(`checking ${urls.length} cited sources…`)
-const results = await Promise.all(urls.map(async (url) => ({ url, status: await probe(url) })))
+const results = await Promise.all(
+  urls.map(async (url) => {
+    let status = await probe(url)
+    if (String(status).includes('TIMEOUT') || status === 'ERR:timeout') status = await probe(url)
+    return { url, status }
+  }),
+)
 
 for (const { url, status } of results.sort((a, b) =>
   String(a.status).localeCompare(String(b.status)),
 )) {
   if (typeof status === 'number' && status >= 200 && status < 300) {
     console.log(`  ✓ ${status} ${url}`)
-  } else if (status === 403 || status === 429 || status === 401) {
+  } else if ([401, 402, 403, 429].includes(status)) {
     warn++
     console.log(`  ~ ${status} ${url} (bot wall — verify by hand once)`)
   } else {
