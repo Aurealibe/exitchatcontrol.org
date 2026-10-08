@@ -90,6 +90,10 @@
   },
   "ep-e2ee-carveout": {
     "title": "Verwerping mislukt, maar E2EE wordt uitgesloten",
-    "body": "Urgentieprocedure aangenomen op 7 juli (331/304/11), stemming op de 9e: 314 europarlementariërs stemmen voor verwerping van het standpunt van de Raad: een gewone meerderheid, onder de vereiste 361. Maar het Parlement neemt daarna de amendementen aan die end-to-end versleutelde communicatie van het scanregime uitsluiten (369 en 362 stemmen), en ook een laatste poging om het geamendeerde standpunt te verwerpen strandt (276/286/30). De geamendeerde tekst gaat terug naar de Raad, die ongeveer drie maanden heeft (tot rond 9 oktober 2026) om de amendementen te aanvaarden (vrijwillig scannen van niet-E2EE-diensten tot 3 april 2028) of een bemiddeling te openen. Op 10 juli 2026 is er niets van kracht: de afwijking die op 3 april verstreek, is nooit hersteld ([volledige stemuitslagen](https://howtheyvote.eu/votes/195775))."
+    "body": "Urgentieprocedure aangenomen op 7 juli (331/304/11), stemming op de 9e: 314 europarlementariërs stemmen voor verwerping van het standpunt van de Raad: een gewone meerderheid, onder de vereiste 361. Maar het Parlement neemt daarna de amendementen aan die end-to-end versleutelde communicatie van het scanregime uitsluiten (369 en 362 stemmen), en ook een laatste poging om het geamendeerde standpunt te verwerpen strandt (276/286/30). De geamendeerde tekst gaat terug naar de Raad, die ongeveer drie maanden heeft (tot rond 9 oktober 2026) om de amendementen te aanvaarden (vrijwillig scannen van niet-E2EE-diensten tot 3 april 2028) of een bemiddeling te openen. De Raad aanvaardt de amendementen op 23 juli ([volledige stemuitslagen](https://howtheyvote.eu/votes/195775))."
+  },
+  "council-final-adoption": {
+    "title": "Chat Control 1.0 hersteld, versleuteling uitgezonderd",
+    "body": "De Raad aanvaardt de amendementen van het Parlement en keurt de tekst definitief goed: de uitzondering die vrijwillig scannen van berichten toestaat, geldt opnieuw tot 3 april 2028. End-to-end versleutelde communicatie (WhatsApp, Signal…) valt erbuiten. De permanente verordening (Chat Control 2.0) wordt nog onderhandeld."
   }
 }

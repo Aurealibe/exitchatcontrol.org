@@ -35,7 +35,10 @@ Bevor du die Werkzeuge wechselst, solltest du dir darüber im Klaren sein, wovor
         <td>
           Plattformen <em>dürfen</em> freiwillig scannen
         </td>
-        <td>Obligatorisch über „Erkennungsanordnungen“ und „Risikominderungsmaßnahmen“</td>
+        <td>
+          Kommissionsvorschlag: verpflichtend über „Aufdeckungsanordnungen“. Position des Rates
+          (Nov. 2025): freiwilliges Scannen dauerhaft, dazu „Risikominderungsmaßnahmen“
+        </td>
       </tr>
       <tr>
         <td>Wer</td>
@@ -47,9 +50,58 @@ Bevor du die Werkzeuge wechselst, solltest du dir darüber im Klaren sein, wovor
           <strong>Alle</strong> Plattformen, einschließlich Ende-zu-Ende-verschlüsselter Messenger
         </td>
       </tr>
+      <tr>
+        <td>Dauer</td>
+        <td>
+          Befristet: am 3. April 2026 ausgelaufen, am 23. Juli 2026 bis 3. April 2028 wieder
+          eingeführt
+        </td>
+        <td>Dauerhaft (kein Ablaufdatum vorgesehen)</td>
+      </tr>
+      <tr>
+        <td>Stand (Okt. 2026)</td>
+        <td>
+          <strong>In Kraft</strong>, Ende-zu-Ende-verschlüsselte Kommunikation ausgenommen
+        </td>
+        <td>In Verhandlung (Trilog): kein endgültiger Text, nichts in Kraft</td>
+      </tr>
     </tbody>
   </table>
 </div>
+
+### Chatkontrolle 1.0 heute: was erfasst ist und was nicht
+
+Die Übergangsverordnung lief am 3. April 2026 aus und kam dann zurück: Nach einer zweiten Lesung im Europäischen Parlament hat der Rat sie am 23. Juli 2026 endgültig angenommen (Verordnung (EU) 2026/1881), bis 3. April 2028. Sie **erlaubt** Anbietern, ohne sie dazu zu verpflichten, private Kommunikation nach Darstellungen sexuellen Kindesmissbrauchs zu durchsuchen.
+
+- **Was erfasst ist**: Kommunikationsdienste ohne Ende-zu-Ende-Verschlüsselung, deren Anbieter sich zum Scannen entscheidet, etwa Nachrichten in Messenger oder Instagram, E-Mails bei Gmail oder Outlook, Chats in Spielkonsolen und Plattformen. Google, Microsoft, Meta und Snapchat gehören zu den Unterzeichnern des Aufrufs vom 19. März 2026, diese Erkennung fortzusetzen.
+- **Was ausgenommen ist**: Ein vom Parlament beschlossener und vom Rat angenommener Änderungsantrag nimmt Kommunikation, „auf die eine Ende-zu-Ende-Verschlüsselung angewendet wird, wurde oder werden wird“, aus dem Anwendungsbereich. Standardmäßig Ende-zu-Ende-verschlüsselte Messenger wie Signal, Session, Threema, SimpleX Chat oder Olvid sind von diesem Text also nicht betroffen (siehe [verschlüsselte Messenger](#messagerie)).
+
+<div class="box warn">
+  <span class="lab">E-Mail, das schwache Glied</span>
+  <p>
+    Proton Mail und Tuta verschlüsseln Nachrichten zwischen ihren eigenen Nutzern. Eine E-Mail an
+    oder von einer Gmail- oder Outlook-Adresse kommt bei diesem Anbieter aber im Klartext an, der
+    sie auf seiner Seite scannen kann: Weder Proton noch Tuta können das verhindern.
+    PGP-Verschlüsselung funktioniert auch aus Gmail heraus; sie schützt den Inhalt, aber nicht den
+    Betreff und die Metadaten (siehe [verschlüsselte E-Mail](#email)).
+  </p>
+</div>
+
+### Chatkontrolle 2.0: was der Text vorsieht
+
+Die dauerhafte Verordnung (CSAR) wird weiterhin zwischen Kommission, Rat und Parlament verhandelt (Trilog). Der sechste Trilog am 29. September 2026 endete ohne Einigung, die technischen Gespräche gehen weiter. **Es gibt keinen endgültigen Text, und nichts ist in Kraft.**
+
+- **Die Kommission** schlug 2022 verpflichtende „Aufdeckungsanordnungen“ vor, auch für verschlüsselte Messenger.
+- **Der Rat** (Position vom 26. November 2025) hat die verpflichtenden Anordnungen gestrichen, macht das freiwillige Scannen aber dauerhaft und verlangt „Risikominderungsmaßnahmen“, zu denen Scannen gehören könnte.
+- **Das Parlament** will die Erkennung auf Verdächtige beschränken, auf richterliche Anordnung, und die Ende-zu-Ende-Verschlüsselung schützen.
+
+#### Falls clientseitiges Scannen Pflicht würde
+
+Das Folgende ist nicht in Kraft: Es sind die denkbaren Folgen, falls der endgültige Text ein Scannen auf den Geräten vorschreiben würde.
+
+1. **Messenger, die mitmachen**, würden in der EU eine Version mit einem Scanmodul vor der Verschlüsselung verteilen, getrennt von den Versionen anderswo.
+2. **Messenger, die sich weigern**, könnten den europäischen Markt verlassen, wie Signal im Oktober 2025 öffentlich angekündigt hat. Die App würde dann aus den europäischen App-Stores verschwinden: Unter iOS wäre sie schwer oder gar nicht zu bekommen; unter Android kann der Herausgeber die APK auf seiner offiziellen Website anbieten. Wären Download oder Dienst aus der EU gesperrt, käme man nur noch über ein [VPN](#vpn) oder [Tor](#tor) heran.
+3. **Scannen auf Ebene des Betriebssystems**: Träfe die Pflicht die Systeme selbst, reichte eine freie App nicht mehr. Außer Reichweite blieben nicht kooperierende Systeme, GrapheneOS auf dem Smartphone und nicht regionalisierte GNU/Linux-Distributionen auf dem Computer (siehe [freie Betriebssysteme](#os)), zusammen mit einem Messenger, der das Scannen ebenfalls ablehnt.
 
 ### Clientseitiges Scannen: das legale Abhören
 

@@ -89,6 +89,10 @@
   },
   "ep-e2ee-carveout": {
     "title": "Le rejet échoue, mais le chiffrement est exclu",
-    "body": "Procédure d’urgence votée le 7 juillet (331/304/11), vote le 9 : 314 eurodéputés votent le rejet de la position du Conseil : une majorité simple, loin des 361 voix requises. Mais le Parlement adopte ensuite les amendements excluant les communications chiffrées de bout en bout du dispositif (369 et 362 voix), et l’ultime tentative de rejeter la position amendée échoue aussi (276/286/30). Le texte amendé retourne au Conseil, qui a environ trois mois (jusqu’aux alentours du 9 octobre 2026) pour accepter les amendements (scan volontaire des services non chiffrés de bout en bout jusqu’au 3 avril 2028) ou ouvrir une conciliation. Au 10 juillet 2026, rien n’est en vigueur : la dérogation expirée le 3 avril n’a jamais été ravivée ([détail des votes](https://howtheyvote.eu/votes/195775))."
+    "body": "Procédure d’urgence votée le 7 juillet (331/304/11), vote le 9 : 314 eurodéputés votent le rejet de la position du Conseil : une majorité simple, loin des 361 voix requises. Mais le Parlement adopte ensuite les amendements excluant les communications chiffrées de bout en bout du dispositif (369 et 362 voix), et l’ultime tentative de rejeter la position amendée échoue aussi (276/286/30). Le texte amendé retourne au Conseil, qui a environ trois mois (jusqu’aux alentours du 9 octobre 2026) pour accepter les amendements (scan volontaire des services non chiffrés de bout en bout jusqu’au 3 avril 2028) ou ouvrir une conciliation. Le Conseil accepte les amendements le 23 juillet ([détail des votes](https://howtheyvote.eu/votes/195775))."
+  },
+  "council-final-adoption": {
+    "title": "Chat Control 1.0 rétabli, chiffrement exclu",
+    "body": "Le Conseil accepte les amendements du Parlement et adopte définitivement le texte : la dérogation qui autorise le scan volontaire des messages est rétablie jusqu’au 3 avril 2028. Les communications chiffrées de bout en bout (WhatsApp, Signal…) sont exclues de son champ. Le règlement permanent (Chat Control 2.0) reste en négociation."
   }
 }

@@ -196,5 +196,14 @@
       "label": "European Parliament · 9 July 2026",
       "href": "https://www.europarl.europa.eu/news/en/press-room/20260706IPR46318/"
     }
+  },
+  {
+    "id": "council-final-adoption",
+    "date": "2026-07-23",
+    "kind": "creep",
+    "src": {
+      "label": "Council of the EU · 23 July 2026",
+      "href": "https://www.consilium.europa.eu/en/press/press-releases/2026/07/23/fighting-child-sexual-abuse-online-interim-measure-protecting-children-now-reinstated/"
+    }
   }
 ]

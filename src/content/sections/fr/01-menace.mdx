@@ -35,7 +35,11 @@ Avant de changer d'outils, il faut comprendre ce contre quoi on se protège. Sin
         <td>
           Volontaire, les plateformes <em>peuvent</em> scanner
         </td>
-        <td>Obligatoire via « ordres de détection » et « mesures d'atténuation des risques »</td>
+        <td>
+          Proposition de la Commission : obligatoire via « ordres de détection ». Position du
+          Conseil (nov. 2025) : scan volontaire rendu permanent et « mesures d'atténuation des
+          risques »
+        </td>
       </tr>
       <tr>
         <td>Qui est visé</td>
@@ -48,9 +52,57 @@ Avant de changer d'outils, il faut comprendre ce contre quoi on se protège. Sin
           bout
         </td>
       </tr>
+      <tr>
+        <td>Durée</td>
+        <td>
+          Temporaire : expiré le 3 avril 2026, rétabli le 23 juillet 2026 jusqu'au 3 avril 2028
+        </td>
+        <td>Permanent (pas de date d'expiration prévue)</td>
+      </tr>
+      <tr>
+        <td>Statut (oct. 2026)</td>
+        <td>
+          <strong>En vigueur</strong>, communications chiffrées de bout en bout exclues de son champ
+        </td>
+        <td>En négociation (trilogue) : aucun texte définitif, rien en vigueur</td>
+      </tr>
     </tbody>
   </table>
 </div>
+
+### Chat Control 1.0 aujourd'hui : ce qui est couvert, ce qui ne l'est pas
+
+Le règlement provisoire a expiré le 3 avril 2026, puis a été rétabli : après une seconde lecture au Parlement européen, le Conseil l'a définitivement adopté le 23 juillet 2026 (règlement (UE) 2026/1881), jusqu'au 3 avril 2028. Il **autorise**, sans l'imposer, les fournisseurs à scanner les communications privées à la recherche de contenus pédocriminels.
+
+- **Ce qui est couvert** : les services de communication non chiffrés de bout en bout dont le fournisseur choisit de scanner, par exemple les messages de Messenger ou d'Instagram, les e-mails Gmail ou Outlook, les messageries intégrées aux consoles de jeu et aux plateformes. Google, Microsoft, Meta et Snapchat font partie des signataires de l'appel du 19 mars 2026 à poursuivre cette détection.
+- **Ce qui est exclu** : un amendement adopté par le Parlement, puis accepté par le Conseil, retire du champ les communications « auxquelles un chiffrement de bout en bout est, a été ou sera appliqué ». Les messageries chiffrées de bout en bout par défaut, comme Signal, Session, Threema, SimpleX Chat ou Olvid, ne sont donc pas concernées par ce texte (voir la [messagerie chiffrée](#messagerie)).
+
+<div class="box warn">
+  <span class="lab">L'e-mail, le maillon faible</span>
+  <p>
+    Proton Mail et Tuta chiffrent les messages entre leurs utilisateurs. Mais un e-mail échangé avec
+    une adresse Gmail ou Outlook arrive en clair chez ce fournisseur, qui peut le scanner de son
+    côté : ni Proton ni Tuta ne peuvent l'empêcher. Le chiffrement PGP fonctionne aussi depuis Gmail
+    ; il protège le contenu du message, mais pas l'objet ni les métadonnées (voir l'[e-mail
+    chiffré](#email)).
+  </p>
+</div>
+
+### Chat Control 2.0 : ce que prévoit le texte
+
+Le règlement permanent (CSAR) est toujours en négociation entre la Commission, le Conseil et le Parlement (trilogue). Le sixième trilogue, le 29 septembre 2026, s'est conclu sans accord et les discussions techniques se poursuivent. **Aucun texte définitif n'existe et rien n'est en vigueur.**
+
+- **La Commission** proposait en 2022 des « ordres de détection » obligatoires, messageries chiffrées comprises.
+- **Le Conseil** (position du 26 novembre 2025) a retiré les ordres obligatoires, mais rend le scan volontaire permanent et impose des « mesures d'atténuation des risques », dont le scan pourrait faire partie.
+- **Le Parlement** veut limiter la détection aux personnes suspectées, sur décision d'un juge, et protéger le chiffrement de bout en bout.
+
+#### Si le scan côté client devenait obligatoire
+
+Ce qui suit n'est pas en vigueur : ce sont les conséquences envisageables si le texte final imposait un scan sur les appareils.
+
+1. **Les messageries qui coopèrent** distribueraient dans l'UE une version comportant un module de scan avant chiffrement, distincte des versions proposées ailleurs.
+2. **Les messageries qui refusent** pourraient quitter le marché européen, comme Signal l'a annoncé publiquement en octobre 2025. L'application disparaîtrait alors des stores européens : sur iOS, elle deviendrait difficile, voire impossible à obtenir ; sur Android, l'éditeur peut publier l'APK sur son site officiel. Si le téléchargement ou le service étaient bloqués depuis l'UE, seuls un [VPN](#vpn) ou [Tor](#tor) permettraient d'y accéder.
+3. **Le scan au niveau du système d'exploitation** : si l'obligation visait les systèmes eux-mêmes, une application libre ne suffirait plus. Resteraient hors de portée les systèmes non coopératifs, GrapheneOS sur mobile et les distributions GNU/Linux non régionalisées sur ordinateur (voir les [systèmes libres](#os)), utilisés avec une messagerie qui refuse elle aussi le scan.
 
 ### Le scan côté client : le mouchard légal
 

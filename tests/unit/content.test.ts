@@ -57,16 +57,16 @@ describe('core + overlay integrity', () => {
 describe('precedents timeline (events)', () => {
   const events = loadDataset('events', 'en')
 
-  it('has the full 23-event arc, chronologically sorted', () => {
-    expect(events).toHaveLength(23)
+  it('has the full 24-event arc, chronologically sorted', () => {
+    expect(events).toHaveLength(24)
     const dates = events.map((e) => e.date)
     expect(dates).toEqual([...dates].sort())
   })
 
-  it('opens in the 90s crypto wars, ends on the 9 July 2026 second-reading vote', () => {
+  it('opens in the 90s crypto wars, ends on the 23 July 2026 final adoption', () => {
     expect(events[0]?.id).toBe('clipper-chip')
     expect(events[0]?.date).toBe('1993')
-    expect(events[events.length - 1]?.date).toBe('2026-07-09')
+    expect(events[events.length - 1]?.date).toBe('2026-07-23')
   })
 
   it('every event is titled, bodied and primary-sourced over https in every locale', () => {

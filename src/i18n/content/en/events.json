@@ -89,6 +89,10 @@
   },
   "ep-e2ee-carveout": {
     "title": "Rejection fails, but E2EE is carved out",
-    "body": "Urgent procedure passed on 7 July (331/304/11), vote on the 9th: 314 MEPs vote to reject the Council’s position: a simple majority, short of the 361 required. But Parliament then adopts the amendments excluding end-to-end encrypted communications from the scanning regime (369 and 362 votes), and a last attempt to reject the amended position fails too (276/286/30). The amended text returns to the Council, which has about three months (until around 9 October 2026) to accept the amendments (voluntary scanning of non-E2EE services until 3 April 2028) or open conciliation. As of 10 July 2026, nothing is in force: the derogation that expired on 3 April was never revived ([full roll calls](https://howtheyvote.eu/votes/195775))."
+    "body": "Urgent procedure passed on 7 July (331/304/11), vote on the 9th: 314 MEPs vote to reject the Council’s position: a simple majority, short of the 361 required. But Parliament then adopts the amendments excluding end-to-end encrypted communications from the scanning regime (369 and 362 votes), and a last attempt to reject the amended position fails too (276/286/30). The amended text returns to the Council, which has about three months (until around 9 October 2026) to accept the amendments (voluntary scanning of non-E2EE services until 3 April 2028) or open conciliation. The Council accepts the amendments on 23 July ([full roll calls](https://howtheyvote.eu/votes/195775))."
+  },
+  "council-final-adoption": {
+    "title": "Chat Control 1.0 reinstated, encryption excluded",
+    "body": "The Council accepts Parliament’s amendments and gives final approval: the derogation allowing voluntary scanning of messages is reinstated until 3 April 2028. End-to-end encrypted communications (WhatsApp, Signal…) are excluded from its scope. The permanent regulation (Chat Control 2.0) is still under negotiation."
   }
 }

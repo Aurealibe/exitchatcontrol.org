@@ -89,6 +89,10 @@
   },
   "ep-e2ee-carveout": {
     "title": "Die Ablehnung scheitert, doch E2EE wird ausgenommen",
-    "body": "Das Dringlichkeitsverfahren wird am 7. Juli angenommen (331/304/11), die Abstimmung folgt am 9. Juli: 314 Abgeordnete stimmen für die Ablehnung des Ratsstandpunkts – eine einfache Mehrheit, aber weniger als die erforderlichen 361. Anschließend nimmt das Parlament jedoch Änderungsanträge an, die Ende-zu-Ende-verschlüsselte Kommunikation vom Scanregime ausnehmen (369 und 362 Stimmen). Auch ein letzter Versuch, die geänderte Position abzulehnen, scheitert (276/286/30). Der geänderte Text geht zurück an den Rat. Dieser hat etwa drei Monate (bis ungefähr 9. Oktober 2026), um die Änderungen anzunehmen – freiwilliges Scannen nicht Ende-zu-Ende-verschlüsselter Dienste bis 3. April 2028 – oder ein Vermittlungsverfahren einzuleiten. Stand 10. Juli 2026 ist nichts in Kraft: Die am 3. April ausgelaufene Ausnahme wurde nie wiederbelebt ([vollständige namentliche Abstimmungen](https://howtheyvote.eu/votes/195775))."
+    "body": "Das Dringlichkeitsverfahren wird am 7. Juli angenommen (331/304/11), die Abstimmung folgt am 9. Juli: 314 Abgeordnete stimmen für die Ablehnung des Ratsstandpunkts – eine einfache Mehrheit, aber weniger als die erforderlichen 361. Anschließend nimmt das Parlament jedoch Änderungsanträge an, die Ende-zu-Ende-verschlüsselte Kommunikation vom Scanregime ausnehmen (369 und 362 Stimmen). Auch ein letzter Versuch, die geänderte Position abzulehnen, scheitert (276/286/30). Der geänderte Text geht zurück an den Rat. Dieser hat etwa drei Monate (bis ungefähr 9. Oktober 2026), um die Änderungen anzunehmen – freiwilliges Scannen nicht Ende-zu-Ende-verschlüsselter Dienste bis 3. April 2028 – oder ein Vermittlungsverfahren einzuleiten. Der Rat nimmt die Änderungen am 23. Juli an ([vollständige namentliche Abstimmungen](https://howtheyvote.eu/votes/195775))."
+  },
+  "council-final-adoption": {
+    "title": "Chat Control 1.0 wieder in Kraft, Verschlüsselung ausgenommen",
+    "body": "Der Rat nimmt die Änderungen des Parlaments an und billigt den Text endgültig: Die Ausnahmeregelung, die das freiwillige Scannen von Nachrichten erlaubt, gilt wieder bis 3. April 2028. Ende-zu-Ende-verschlüsselte Kommunikation (WhatsApp, Signal…) ist ausgenommen. Die dauerhafte Verordnung (Chat Control 2.0) wird weiter verhandelt."
   }
 }
