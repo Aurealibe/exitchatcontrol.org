@@ -127,6 +127,10 @@
     "title": "FISA 702 caduca, la recopilación continúa de todos modos",
     "body": "La Sección 702, la recopilación sin orden judicial de comunicaciones que transitan por proveedores estadounidenses, debía expirar en abril de 2026. Dos extensiones cortas después, la autoridad caduca a mediados de junio con el Congreso estancado sobre requerir una orden judicial para búsquedas del FBI de estadounidenses. Pero las certificaciones existentes permanecen válidas hasta marzo de 2027: la máquina funciona otro año sin base renovada. Un poder de vigilancia \"temporal\" nunca se apaga del todo."
   },
+  "uk-under16-ban": {
+    "title": "Reino Unido: redes sociales prohibidas a los menores de 16 años",
+    "body": "El Gobierno anuncia la prohibición de las redes sociales para los menores de 16 años (Snapchat, TikTok, YouTube, Instagram, Facebook, X; quedan excluidas las aplicaciones de mensajería como WhatsApp y Signal). Se espera que la normativa llegue al Parlamento antes de la Navidad de 2026, con una entrada en vigor prevista para la primavera de 2027. El sistema se basa en una verificación de edad «altamente eficaz», que Ofcom debe estudiar: se aplicaría a todos los usuarios de estas plataformas."
+  },
   "euro-numerique-econ": {
     "title": "Euro digital: \"no programable\", pero condicional",
     "body": "El comité ECON del Parlamento adopta su posición (43 votos a 14, una abstención): rumbo establecido para un lanzamiento en 2029. La propia FAQ del BCE jura que el euro digital \"no será dinero programable\", mientras presenta \"pagos condicionales\" como servicios opcionales; bajo la posición de los eurodiputados, el límite de tenencia sería establecido más tarde por la Comisión por recomendación del BCE, revisado cada dos años. La brecha entre la promesa y la plataforma descansa en una decisión política, no una imposibilidad técnica: la infraestructura de condicionalidad y trazabilidad existirá desde el primer día."
@@ -135,8 +139,28 @@
     "title": "Europol: presupuesto elevado a 3.000 millones de euros, un mandato sobre cifrado",
     "body": "La Comisión propone la mayor revisión de Europol en 25 años: presupuesto de 1.900 millones a 3.000 millones de euros, 900 empleados adicionales, un mandato extendido a comunicaciones cifradas, criptoactivos y fraude asistido por IA; un \"hub de tecnología e innovación\" cuyo trabajo de cifrado sigue la hoja de ruta ProtectEU (que programa una capacidad de descifrado de Europol para 2030); un \"espacio europeo de datos policiales\" automatizado. El brazo armado de ProtectEU: una agencia supranacional que un eurodiputado ya advierte \"no debe conducir a vigilancia masiva\"."
   },
+  "ai-act-omnibus-delay": {
+    "title": "Reglamento de IA: aplazadas las obligaciones de alto riesgo",
+    "body": "El Consejo da su aprobación definitiva a la simplificación del Reglamento de IA «Ómnibus VII». Las obligaciones para los sistemas de IA de alto riesgo (incluidos biometría, actuación policial, migración y empleo), previstas para el 2 de agosto de 2026, se aplicarán el 2 de diciembre de 2027 (sistemas independientes) y el 2 de agosto de 2028 (sistemas integrados en productos). El texto también prohíbe el contenido sexual no consentido generado por IA y el material de abuso sexual infantil (CSAM)."
+  },
   "pega-kouloglou": {
     "title": "Pegasus en el Parlamento: el vigilante estaba siendo vigilado",
     "body": "Citizen Lab revela que el eurodiputado Stelios Kouloglou, miembro suplente del comité PEGA, el mismo organismo que investigó Pegasus y el abuso de software espía en Europa, fue hackeado con Pegasus mientras servía en él (infecciones fechadas el 21 de octubre de 2022 y el 6-7 de marzo de 2023), con posible acceso a deliberaciones confidenciales. Citizen Lab explícitamente se niega a atribuir el ataque; una coalición de ONGs exige una respuesta de la UE. Espiar al organismo encargado de supervisar el software espía es la inversión final de la supervisión democrática, y nadie es nombrado responsable."
+  },
+  "scotus-texas-app-store": {
+    "title": "Texas: el Tribunal Supremo mantiene la verificación de edad en las tiendas de aplicaciones",
+    "body": "El Tribunal Supremo se niega a anular la suspensión del requerimiento judicial (n.º 25A1390, CCIA v. Paxton): la App Store Accountability Act de Texas se aplica. Apple y Google deben verificar la edad de los usuarios de sus tiendas de aplicaciones en Texas y obtener el consentimiento parental para los menores, mientras la impugnación basada en la Primera Enmienda continúa sobre el fondo. La orden no da motivos."
+  },
+  "ripost-vsa-supprime": {
+    "title": "RIPOST: suprimida la prórroga de la videovigilancia algorítmica",
+    "body": "La Asamblea Nacional francesa aprueba el proyecto de ley RIPOST en primera lectura (366 votos contra 182). El artículo 19, que prorrogaba hasta el 31 de diciembre de 2030 y ampliaba el experimento de videovigilancia algorítmica heredado de los Juegos Olímpicos de 2024, había sido suprimido en la Comisión de Leyes; no se restableció en el pleno."
+  },
+  "euro-numerique-mandat": {
+    "title": "Euro digital: el Parlamento confirma su mandato de negociación",
+    "body": "El pleno confirma el mandato de negociación (416 votos a favor, 169 en contra y 22 abstenciones) después de que se impugnara la votación de la comisión ECON; los diálogos tripartitos con el Consejo se abren el 13 de julio. El mandato incluye protecciones para el efectivo y controles de las transacciones sin exponer datos personales, y deja el límite de tenencia en manos de la Comisión, por recomendación del BCE."
+  },
+  "ofcom-fapello": {
+    "title": "Reino Unido: multa de 630.000 £ por no verificar la edad",
+    "body": "Ofcom multa al operador de un sitio pornográfico con 630.000 £: 600.000 £ por carecer de la verificación de edad «altamente eficaz» que exige la Online Safety Act y 30.000 £ por no responder a una solicitud de información jurídicamente vinculante. No es la primera sanción de este tipo: YoungTek Solutions fue multada con 600.000 £ en mayo de 2026."
   }
 }

@@ -32,17 +32,80 @@ Antes de cambiar de herramientas, comprende contra qué te estás protegiendo. D
       </tr>
       <tr>
         <td>Escaneo</td>
-        <td>Voluntario, las plataformas <em>pueden</em> escanear</td>
-        <td>Obligatorio mediante "órdenes de detección" y "medidas de mitigación de riesgos"</td>
+        <td>
+          Voluntario, las plataformas <em>pueden</em> escanear
+        </td>
+        <td>
+          Propuesta de la Comisión: obligatorio mediante "órdenes de detección". Posición del
+          Consejo (nov. 2025): escaneo voluntario convertido en permanente, más "medidas de
+          mitigación de riesgos"
+        </td>
       </tr>
       <tr>
         <td>Quién</td>
-        <td>Principalmente servicios estadounidenses no cifrados: Gmail, Messenger/Instagram, Skype, Snapchat, iCloud Mail, Xbox</td>
-        <td><strong>Todas</strong> las plataformas, incluidas las aplicaciones de mensajería cifradas de extremo a extremo</td>
+        <td>
+          Principalmente servicios estadounidenses no cifrados: Gmail, Messenger/Instagram, Skype,
+          Snapchat, iCloud Mail, Xbox
+        </td>
+        <td>
+          <strong>Todas</strong> las plataformas, incluidas las aplicaciones de mensajería cifradas
+          de extremo a extremo
+        </td>
+      </tr>
+      <tr>
+        <td>Duración</td>
+        <td>
+          Temporal: caducó el 3 de abril de 2026, restablecido el 23 de julio de 2026 hasta el 3 de
+          abril de 2028
+        </td>
+        <td>Permanente (sin fecha de caducidad prevista)</td>
+      </tr>
+      <tr>
+        <td>Situación (oct. 2026)</td>
+        <td>
+          <strong>En vigor</strong>, con las comunicaciones cifradas de extremo a extremo excluidas
+          de su ámbito
+        </td>
+        <td>En negociación (diálogo tripartito): sin texto definitivo, nada en vigor</td>
       </tr>
     </tbody>
   </table>
 </div>
+
+### Chat Control 1.0 hoy: qué cubre y qué no
+
+El reglamento provisional caducó el 3 de abril de 2026 y después volvió: tras una segunda lectura en el Parlamento Europeo, el Consejo le dio la aprobación definitiva el 23 de julio de 2026 (Reglamento (UE) 2026/1881), hasta el 3 de abril de 2028. **Permite**, sin obligar, que los proveedores escaneen las comunicaciones privadas en busca de material de abuso sexual infantil.
+
+- **Qué cubre**: los servicios de comunicación que no están cifrados de extremo a extremo y cuyo proveedor decide escanear, por ejemplo los mensajes de Messenger o Instagram, el correo de Gmail u Outlook, o el chat integrado en consolas y plataformas de videojuegos. Google, Microsoft, Meta y Snapchat figuran entre los firmantes del llamamiento del 19 de marzo de 2026 para mantener esta detección.
+- **Qué queda excluido**: una enmienda adoptada por el Parlamento y aceptada después por el Consejo excluye de su ámbito las comunicaciones "a las que se aplica, se ha aplicado o se aplicará cifrado de extremo a extremo". Las aplicaciones de mensajería cifradas de extremo a extremo por defecto, como Signal, Session, Threema, SimpleX Chat u Olvid, no están por tanto cubiertas por este texto (ver [mensajería cifrada](#messagerie)).
+
+Esta exclusión solo se aplica a este texto provisional. El reglamento permanente, o una versión más dura, puede dar marcha atrás: esta guía contempla ese escenario y recomienda herramientas que siguen protegiendo aunque el escaneo pasara a ser obligatorio.
+
+<div class="box warn">
+  <span class="lab">El correo electrónico, el eslabón débil</span>
+  <p>
+    Proton Mail y Tuta cifran los mensajes entre sus propios usuarios. Pero un correo intercambiado
+    con una dirección de Gmail u Outlook llega en claro a ese proveedor, que puede escanearlo por su
+    lado: ni Proton ni Tuta pueden impedirlo. El cifrado PGP también funciona desde Gmail; protege
+    el cuerpo del mensaje, pero no el asunto ni los metadatos (ver [correo cifrado](#email)).
+  </p>
+</div>
+
+### Chat Control 2.0: qué haría el texto
+
+El reglamento permanente (CSAR) sigue negociándose entre la Comisión, el Consejo y el Parlamento (diálogo tripartito). El sexto diálogo tripartito, el 29 de septiembre de 2026, terminó sin acuerdo y las conversaciones técnicas continúan. **No hay texto definitivo y nada está en vigor.**
+
+- **La Comisión** propuso en 2022 "órdenes de detección" obligatorias, incluidas las aplicaciones de mensajería cifradas.
+- **El Consejo** (posición del 26 de noviembre de 2025) abandonó las órdenes obligatorias, pero convierte en permanente el escaneo voluntario y exige "medidas de mitigación de riesgos", que podrían incluir el escaneo.
+- **El Parlamento** quiere limitar la detección a los sospechosos, por orden judicial, y proteger el cifrado de extremo a extremo.
+
+#### Si el escaneo del lado del cliente pasara a ser obligatorio
+
+Lo que sigue no está en vigor: son las consecuencias plausibles si el texto final exigiera el escaneo en los dispositivos.
+
+1. **Las aplicaciones de mensajería que cumplan** distribuirían una versión para la UE con un módulo de escaneo que se ejecuta antes del cifrado, distinta de las versiones ofrecidas en otros lugares.
+2. **Las aplicaciones de mensajería que se nieguen** podrían abandonar el mercado europeo, como Signal anunció públicamente en octubre de 2025. La app desaparecería entonces de las tiendas de aplicaciones europeas: en iOS sería difícil o imposible de obtener; en Android el editor puede ofrecer el APK en su sitio web oficial. Si la descarga o el servicio se bloquearan desde la UE, solo una [VPN](#vpn) o [Tor](#tor) permitirían acceder.
+3. **Escaneo a nivel del sistema operativo**: si la obligación se dirigiera a los propios sistemas, una app libre ya no bastaría. Quedarían fuera de alcance los sistemas que no cooperan, GrapheneOS en el móvil y las distribuciones GNU/Linux no regionales en el ordenador (ver [sistemas operativos libres](#os)), usados con una aplicación de mensajería que también rechace el escaneo.
 
 ### Escaneo del lado del cliente: la escucha legal
 
@@ -51,27 +114,29 @@ El corazón de Chat Control 2.0 es una técnica llamada **escaneo del lado del c
 <div class="box honest">
   <span class="lab">Honestidad técnica, lee dos veces</span>
   <p>
-    Contra el escaneo del lado del cliente, <strong>ni una VPN ni el cifrado de extremo a extremo son suficientes</strong>{' '}
-    si la aplicación o el sistema operativo cooperan. El escaneo ocurre en el dispositivo, antes del
-    cifrado: la VPN no tiene nada que proteger, y el cifrado entra en acción demasiado tarde. Lo que realmente
-    te protege es elegir{' '}
-    <strong>software libre/de código abierto que se niega a implementar el escaneo</strong>, <strong>jurisdicciones</strong>{' '}
-    favorables, <strong>autoalojamiento</strong>, y{' '}
-    <strong>recuperar el control de tu dispositivo</strong> (un SO sin manipular). Todo lo demás en esta
-    guía sigue de esta verdad.
+    Contra el escaneo del lado del cliente,{' '}
+    <strong>ni una VPN ni el cifrado de extremo a extremo son suficientes</strong> si la aplicación
+    o el sistema operativo cooperan. El escaneo ocurre en el dispositivo, antes del cifrado: la VPN
+    no tiene nada que proteger, y el cifrado entra en acción demasiado tarde. Lo que realmente te
+    protege es elegir{' '}
+    <strong>software libre/de código abierto que se niega a implementar el escaneo</strong>,{' '}
+    <strong>jurisdicciones</strong> favorables, <strong>autoalojamiento</strong>, y{' '}
+    <strong>recuperar el control de tu dispositivo</strong> (un SO sin manipular). Todo lo demás en
+    esta guía sigue de esta verdad.
   </p>
 </div>
 
 <div class="box warn">
   <span class="lab">Lo peor de todo: la herramienta ni siquiera funciona</span>
   <p>
-    La privacidad de todos es sacrificada por una tecnología que falla. El propio estudio del Parlamento Europeo
-    concluye que ningún sistema detecta este contenido sin una alta tasa de error (porque a través de
-    miles de millones de mensajes, incluso una tasa de falsos positivos mínima produce millones de acusaciones falsas).
-    Las cifras de la policía irlandesa lo muestran: de los informes automatizados, solo alrededor del 20% eran material real, y
-    más del 11% eran falsos positivos directos. Una investigación fundamental ("Bugs in Our Pockets," 2021) además
-    muestra que una vez instalado el escaneo del lado del cliente, es inevitablemente reutilizado (terrorismo,
-    derechos de autor, opiniones).
+    La privacidad de todos es sacrificada por una tecnología que falla. El propio estudio del
+    Parlamento Europeo concluye que ningún sistema detecta este contenido sin una alta tasa de error
+    (porque a través de miles de millones de mensajes, incluso una tasa de falsos positivos mínima
+    produce millones de acusaciones falsas). Las cifras de la policía irlandesa lo muestran: de los
+    informes automatizados, solo alrededor del 20% eran material real, y más del 11% eran falsos
+    positivos directos. Una investigación fundamental ("Bugs in Our Pockets," 2021) además muestra
+    que una vez instalado el escaneo del lado del cliente, es inevitablemente reutilizado
+    (terrorismo, derechos de autor, opiniones).
   </p>
 </div>
 
@@ -91,10 +156,11 @@ La señal: las empresas que más presionan por este escaneo son aquellas cuyo mo
 </div>
 
 <blockquote class="pull">
-  "No hacerlo sería irresponsable." El argumento de los gigantes tecnológicos para mantener vivo el escaneo de mensajes.
+  "No hacerlo sería irresponsable." El argumento de los gigantes tecnológicos para mantener vivo el
+  escaneo de mensajes.
 </blockquote>
 
-Esos mismos actores incluso anunciaron que **seguirían escaneando** mensajes después de que la base legal caducara el 4 de abril de 2026. Se pide así a los ciudadanos que confíen la inspección de sus conversaciones íntimas a las mismas empresas conocidas por cosechar y monetizar sus datos. Esta es la cara real de Chat Control: un **ataque a la privacidad** envuelto en un motivo que nadie puede rechazar.
+Esos mismos actores incluso anunciaron que **seguirían escaneando** mensajes después de que la base legal caducara el 3 de abril de 2026. Se pide así a los ciudadanos que confíen la inspección de sus conversaciones íntimas a las mismas empresas conocidas por recopilar y monetizar sus datos. Esta es la cara real de Chat Control: un **ataque a la privacidad** envuelto en un motivo que nadie puede rechazar.
 
 ### Esto no es "solo" vigilancia
 
@@ -107,15 +173,15 @@ Intentan tranquilizarte: "es solo Gmail, Instagram, Snapchat, Messenger". Eso es
 <div class="box warn">
   <span class="lab">El siguiente paso lógico: el euro digital</span>
   <p>
-    La misma lógica está a punto de alcanzar tu dinero. El euro digital del BCE se basa en una moneda{' '}
-    <strong>rastreable</strong>, prohíbe a las empresas tener ninguno, y viene con un{' '}
+    La misma lógica está a punto de alcanzar tu dinero. El euro digital del BCE se basa en una
+    moneda <strong>rastreable</strong>, prohíbe a las empresas tener ninguno, y viene con un{' '}
     <strong>límite de tenencia</strong>: el BCE ha propuesto unos 3.000 € por persona como
-    suposición de trabajo, y la posición votada en el comité del Parlamento Europeo (junio de 2026) deja el
-    límite para que lo establezca la Comisión por recomendación del BCE, revisado cada dos años. El BCE
-    jura que la moneda no será "programable", pero el límite y la rastreabilidad están muy presentes en
-    el menú. Cuando llegue, ¿dirás "relájate, es solo un límite"? Esa es la misma trampa retórica
-    que "es solo Gmail". La pregunta real nunca es qué se controla hoy, sino la infraestructura de control
-    que se está instalando para mañana.
+    suposición de trabajo, y la posición votada en el comité del Parlamento Europeo (junio de 2026)
+    deja el límite para que lo establezca la Comisión por recomendación del BCE, revisado cada dos
+    años. El BCE jura que la moneda no será "programable", pero el límite y la rastreabilidad están
+    muy presentes en el menú. Cuando llegue, ¿dirás "relájate, es solo un límite"? Esa es la misma
+    trampa retórica que "es solo Gmail". La pregunta real nunca es qué se controla hoy, sino la
+    infraestructura de control que se está instalando para mañana.
   </p>
 </div>
 
@@ -128,8 +194,8 @@ Ninguna herramienta es mágica y nadie necesita hacerlo todo. Encuentra tu perfi
     <div class="lvl lvl-1">Principiante</div>
     <h4>🟢 El ciudadano ordinario</h4>
     <p>
-      Solo quieres que tus conversaciones y vida privada dejen de ser escaneadas y monetizadas. Objetivo:
-      privacidad cotidiana, sin convertirte en experto.
+      Solo quieres que tus conversaciones y vida privada dejen de ser escaneadas y monetizadas.
+      Objetivo: privacidad cotidiana, sin convertirte en experto.
     </p>
   </div>
   <div class="profile p2">
@@ -144,8 +210,8 @@ Ninguna herramienta es mágica y nadie necesita hacerlo todo. Encuentra tu perfi
     <div class="lvl lvl-3">Avanzado</div>
     <h4>🔴 El denunciante</h4>
     <p>
-      Periodista, activista, fuente, enfrentando a un adversario poderoso (estado, empleador). Objetivo: anonimato fuerte,
-      anti-correlación, pasar documentos sin ser atrapado.
+      Periodista, activista, fuente, enfrentando a un adversario poderoso (estado, empleador).
+      Objetivo: anonimato fuerte, anti-correlación, pasar documentos sin ser atrapado.
     </p>
   </div>
 </div>

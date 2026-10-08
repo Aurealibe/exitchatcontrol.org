@@ -88,7 +88,11 @@
     "body": "Tres meses después de la caducidad, el Consejo adopta su posición de reinstaurar el escaneo voluntario hasta el 3 de abril de 2028, enviado al Parlamento en segunda lectura: el procedimiento donde el rechazo necesita una mayoría absoluta (361 de 720), no una mayoría de votos emitidos."
   },
   "ep-e2ee-carveout": {
-    "title": "El rechazo falla, pero E2EE es excluido",
-    "body": "Procedimiento urgente aprobado el 7 de julio (331/304/11), votación el 9: 314 eurodiputados votan para rechazar la posición del Consejo: una mayoría simple, por debajo de los 361 requeridos. Pero el Parlamento luego adopta las enmiendas excluyendo las comunicaciones cifradas de extremo a extremo del régimen de escaneo (369 y 362 votos), y un último intento de rechazar la posición enmendada también falla (276/286/30). El texto enmendado vuelve al Consejo, que tiene unos tres meses (hasta alrededor del 9 de octubre de 2026) para aceptar las enmiendas (escaneo voluntario de servicios no E2EE hasta el 3 de abril de 2028) o abrir conciliación. A 10 de julio de 2026, nada está en vigor: la derogación que expiró el 3 de abril nunca fue revivida ([resultados completos](https://howtheyvote.eu/votes/195775))."
+    "title": "El rechazo fracasa, pero se excluye el cifrado de extremo a extremo",
+    "body": "Procedimiento urgente aprobado el 7 de julio (331/304/11), votación el 9: 314 eurodiputados votan para rechazar la posición del Consejo: una mayoría simple, por debajo de los 361 requeridos. Pero el Parlamento luego adopta las enmiendas que excluyen las comunicaciones cifradas de extremo a extremo del régimen de escaneo (369 y 362 votos), y un último intento de rechazar la posición enmendada también fracasa (276/286/30). El texto enmendado vuelve al Consejo, que tiene unos tres meses (hasta alrededor del 9 de octubre de 2026) para aceptar las enmiendas (escaneo voluntario de servicios no E2EE hasta el 3 de abril de 2028) o abrir la conciliación. El Consejo acepta las enmiendas el 23 de julio ([resultados completos](https://howtheyvote.eu/votes/195775))."
+  },
+  "council-final-adoption": {
+    "title": "Chat Control 1.0 restablecido, cifrado excluido",
+    "body": "El Consejo acepta las enmiendas del Parlamento y da su aprobación definitiva: la derogación que permite el escaneo voluntario de mensajes se restablece hasta el 3 de abril de 2028. Las comunicaciones cifradas de extremo a extremo (WhatsApp, Signal…) quedan excluidas de su ámbito. El reglamento permanente (Chat Control 2.0) sigue en negociación."
   }
 }

@@ -21,8 +21,8 @@ title: 'Almacenamiento cifrado'
     Una nube cifrada de extremo a extremo para tus archivos y fotos, parte de Proton.
   </Fragment>
   <Fragment slot="why">
-    A diferencia de Google Drive o iCloud, Proton no puede leer tus archivos: están cifrados antes de salir
-    de tu dispositivo. Jurisdicción suiza, misma cuenta que Proton Mail.
+    A diferencia de Google Drive o iCloud, Proton no puede leer tus archivos: están cifrados antes
+    de salir de tu dispositivo. Jurisdicción suiza, misma cuenta que Proton Mail.
   </Fragment>
   <Fragment slot="who">
     Todos, como un reemplazo simple y directo de la nube de Google o Apple.
@@ -40,20 +40,65 @@ title: 'Almacenamiento cifrado'
     <span class="tool-tag">🇩🇪 · código abierto</span>
   </Fragment>
   <Fragment slot="what">
-    Una bóveda que cifra tus archivos <b>antes</b> de subirlos a cualquier nube, incluso Google Drive o
-    Dropbox.
+    Una bóveda que cifra tus archivos <b>antes</b> de subirlos a cualquier nube, incluso Google
+    Drive o Dropbox.
   </Fragment>
   <Fragment slot="why">
-    El truco perfecto si debes mantener una nube existente: conservas el servicio conveniente, pero el
-    proveedor solo ve galimatías cifrado. Tú solo tienes la llave.
+    El truco perfecto si debes mantener una nube existente: conservas el servicio conveniente, pero
+    el proveedor solo ve galimatías cifrado. Tú solo tienes la llave.
   </Fragment>
   <Fragment slot="who">
-    Aquellos que no pueden abandonar una nube mainstream aún, pero quieren proteger sus archivos ahora mismo.
+    Aquellos que no pueden abandonar una nube mainstream aún, pero quieren proteger sus archivos
+    ahora mismo.
   </Fragment>
   <ol slot="install">
     <li>Instala Cryptomator (escritorio y móvil) desde cryptomator.org.</li>
     <li>Crea una "bóveda" en la carpeta sincronizada de tu nube, elige una contraseña fuerte.</li>
     <li>Pon tus archivos en la bóveda: se cifran luego se sincronizan automáticamente.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-veracrypt">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Reemplaza BitLocker</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    La referencia del cifrado <b>local</b>: un disco entero, una partición, una memoria USB o un
+    contenedor cifrado (un archivo que se monta como una unidad).
+  </Fragment>
+  <Fragment slot="why">
+    Nada sale de tu equipo: sin cuenta, sin nube, sin clave de recuperación enviada a un fabricante.
+    Gratuito, auditado, sucesor de TrueCrypt. Es el equivalente local de Cryptomator, que está
+    pensado para la nube.
+  </Fragment>
+  <Fragment slot="who">
+    En Windows, para reemplazar BitLocker; en cualquier sistema, para un contenedor o un disco
+    externo cifrados. En Linux y macOS, el cifrado integrado (LUKS, FileVault) basta para el disco
+    del sistema.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Cifrado del sistema y Secure Boot</span>
+    <p>
+      En 2026 Microsoft revoca la autoridad de certificación UEFI de 2011 que firmaba el antiguo
+      cargador de arranque. Si cifras el disco del sistema, usa la versión 1.26.29 o posterior, que
+      incluye cargadores de arranque firmados por las autoridades de 2011 y de 2023.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Descarga VeraCrypt desde <b>veracrypt.jp</b> y comprueba la firma PGP o la suma de
+      verificación del archivo.
+    </li>
+    <li>
+      Crea un volumen con la configuración por defecto (AES, SHA-512); Argon2id está disponible
+      desde la versión 1.26.29.
+    </li>
+    <li>
+      Elige una frase de contraseña larga (varias palabras aleatorias) y no la reutilices nunca.
+    </li>
+    <li>Avanzado: crea un volumen oculto dentro del volumen para tener negación plausible.</li>
   </ol>
 </ToolCard>
 

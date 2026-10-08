@@ -16,9 +16,10 @@ Una contraseña, incluso fuerte, puede filtrarse. La autenticación de dos facto
 <div class="box warn">
   <span class="lab">Evita 2FA por SMS</span>
   <p>
-    Un código enviado por SMS es el eslabón débil: es vulnerable a "SIM-swap" (un atacante consigue que tu número
-    sea transferido) y a intercepción sobre la red telefónica (SS7). Los estudios estiman que la mayoría de intentos de SIM-swap
-    tienen éxito. Usa SMS solo como último recurso, nunca como tu protección principal.
+    Un código enviado por SMS es el eslabón débil: es vulnerable a "SIM-swap" (un atacante consigue
+    que tu número sea transferido) y a intercepción sobre la red telefónica (SS7). Los estudios
+    estiman que la mayoría de intentos de SIM-swap tienen éxito. Usa SMS solo como último recurso,
+    nunca como tu protección principal.
   </p>
 </div>
 
@@ -32,17 +33,18 @@ Una contraseña, incluso fuerte, puede filtrarse. La autenticación de dos facto
   </Fragment>
   <Fragment slot="why">
     Es el 2FA más fuerte: resiste el phishing, porque la llave verifica la dirección real del sitio
-    antes de responder. <b>Nitrokey</b> es la alternativa completamente de hardware abierto, firmware abierto. Un sitio
-    falso no puede engañarte.
+    antes de responder. <b>Nitrokey</b> es la alternativa completamente de hardware abierto,
+    firmware abierto. Un sitio falso no puede engañarte.
   </Fragment>
   <Fragment slot="who">
-    Aquellos que quieren máxima seguridad en cuentas clave. Compra <b>dos</b> (una principal, una de respaldo).
+    Aquellos que quieren máxima seguridad en cuentas clave. Compra <b>dos</b> (una principal, una de
+    respaldo).
   </Fragment>
   <ol slot="install">
     <li>Consigue dos llaves de yubico.com o nitrokey.com.</li>
     <li>
-      En los ajustes de seguridad de cada cuenta (correo, gestor de contraseñas…), añade una "llave de seguridad" o
-      "passkey." Registra ambas llaves.
+      En los ajustes de seguridad de cada cuenta (correo, gestor de contraseñas…), añade una "llave
+      de seguridad" o "passkey." Registra ambas llaves.
     </li>
     <li>Guarda la llave de respaldo en un lugar seguro y separado.</li>
   </ol>
@@ -59,9 +61,9 @@ Una contraseña, incluso fuerte, puede filtrarse. La autenticación de dos facto
     Authenticator.
   </Fragment>
   <Fragment slot="why">
-    <b>Aegis</b> (Android) guarda tus códigos en una bóveda cifrada local, sin nube. <b>Ente Auth</b>{' '}
-    añade sincronización cifrada de extremo a extremo entre dispositivos, y ha sido auditado. Mucho más seguro que SMS, y
-    gratuito.
+    <b>Aegis</b> (Android) guarda tus códigos en una bóveda cifrada local, sin nube.{' '}
+    <b>Ente Auth</b> añade sincronización cifrada de extremo a extremo entre dispositivos, y ha sido
+    auditado. Mucho más seguro que SMS, y gratuito.
   </Fragment>
   <Fragment slot="who">
     Todos: es el nivel 2FA por defecto a adoptar, antes de las llaves físicas.
@@ -70,7 +72,8 @@ Una contraseña, incluso fuerte, puede filtrarse. La autenticación de dos facto
     <li>Instala Aegis (F-Droid) o Ente Auth (todas las plataformas).</li>
     <li>En cada cuenta, activa 2FA de "app autenticadora" y escanea el código QR mostrado.</li>
     <li>
-      Anota los <b>códigos de respaldo</b> en papel y haz una copia de seguridad cifrada de tu bóveda.
+      Anota los <b>códigos de respaldo</b> en papel y haz una copia de seguridad cifrada de tu
+      bóveda.
     </li>
   </ol>
 </ToolCard>
