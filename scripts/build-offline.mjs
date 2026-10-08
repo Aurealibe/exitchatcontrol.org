@@ -78,7 +78,12 @@ function relinkRoutes(html, self) {
     )
   }
   // the footer's own download link becomes a working relative link
-  return html.replaceAll('href="/exitchatcontrol-', 'href="./exitchatcontrol-')
+  html = html.replaceAll('href="/exitchatcontrol-', 'href="./exitchatcontrol-')
+  // pages with no offline artifact (legal notice…) point at the live site
+  return html.replace(
+    /href="\/(?!\/)([^"]*)"/g,
+    'href="https://exitchatcontrol.org/$1" rel="noopener noreferrer"',
+  )
 }
 
 for (const { code, pages } of LOCALES) {
