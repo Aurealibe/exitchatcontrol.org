@@ -105,6 +105,7 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
     data-card-cta={t('quiz.scorecardCta')}
     data-card-file={t('quiz.scorecardFile')}
     data-card-outof={t('quiz.outOf')}
+    data-card-areas={t('quiz.barsHeading')}
     tabindex="-1"
     aria-live="polite"
     class="rounded-dossier border border-rule border-l-4 border-l-accent bg-surface my-8 p-5"
@@ -382,6 +383,7 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
     stamp: string
     cta: string
     outOf: string
+    areas: string
     fileTpl: string
   }
 
@@ -393,6 +395,7 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
       stamp: panel?.dataset.cardStamp ?? 'Local only · No tracker',
       cta: panel?.dataset.cardCta ?? 'Take the quiz →',
       outOf: panel?.dataset.cardOutof ?? '/ 100',
+      areas: panel?.dataset.cardAreas ?? 'Score by area',
       fileTpl: panel?.dataset.cardFile ?? 'ecc-score-{score}.png',
     }
   }
@@ -539,7 +542,7 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
 
     ctx.fillStyle = '#9a9585'
     ctx.font = `600 14px ${mono}`
-    ctx.fillText('BY AREA', colX, y)
+    ctx.fillText(labels.areas.toUpperCase(), colX, y)
     y += 28
 
     for (const c of cats) {
