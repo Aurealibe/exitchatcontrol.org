@@ -230,5 +230,6 @@
   "magic-wormhole": {
     "body": "Pošlete soubor s koncovým šifrováním pomocí krátkého jednorázového kódu (příkazový řádek)."
   },
-  "nymvpn": { "body": "VPN s režimem mixnetu přes 5 uzlů, který zastírá metadata provozu." }
+  "nymvpn": { "body": "VPN s režimem mixnetu přes 5 uzlů, který zastírá metadata provozu." },
+  "wasabi-wallet": { "body": "Bitcoinová peněženka s vestavěným CoinJoinem, přes Tor." }
 }

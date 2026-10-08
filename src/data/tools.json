@@ -1146,5 +1146,22 @@
     "color": "#14e76f",
     "level": 3,
     "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-wasabi",
+    "pricing": "free",
+    "name": "Wasabi Wallet",
+    "url": "https://wasabiwallet.io",
+    "links": [
+      {
+        "label": "wasabiwallet.io",
+        "href": "https://wasabiwallet.io"
+      }
+    ],
+    "iconSlug": null,
+    "monogram": "Wa",
+    "color": "#2f7d32",
+    "level": 3,
+    "profiles": ["🔴"]
   }
 ]

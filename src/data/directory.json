@@ -568,6 +568,13 @@
     "iconSlug": "monero"
   },
   {
+    "id": "wasabi-wallet",
+    "category": "finance",
+    "name": "Wasabi Wallet",
+    "url": "https://wasabiwallet.io",
+    "license": "MIT"
+  },
+  {
     "id": "securedrop",
     "category": "opsec",
     "name": "SecureDrop",

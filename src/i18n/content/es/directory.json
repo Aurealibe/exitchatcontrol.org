@@ -231,5 +231,8 @@
   "magic-wormhole": {
     "body": "Enviar un archivo cifrado de extremo a extremo con un código corto de un solo uso (línea de comandos)."
   },
-  "nymvpn": { "body": "VPN con un modo mixnet de 5 saltos que difumina los metadatos del tráfico." }
+  "nymvpn": {
+    "body": "VPN con un modo mixnet de 5 saltos que difumina los metadatos del tráfico."
+  },
+  "wasabi-wallet": { "body": "Monedero de Bitcoin con CoinJoin integrado, a través de Tor." }
 }

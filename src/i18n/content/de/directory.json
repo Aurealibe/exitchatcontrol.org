@@ -225,5 +225,6 @@
   },
   "nymvpn": {
     "body": "VPN mit einem Mixnet-Modus über 5 Knoten, der Verkehrsmetadaten verschleiert."
-  }
+  },
+  "wasabi-wallet": { "body": "Bitcoin-Wallet mit eingebautem CoinJoin, über Tor." }
 }

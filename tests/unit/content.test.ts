@@ -133,8 +133,8 @@ describe('open-source directory', () => {
   ])
   const directory = loadDataset('directory', 'en')
 
-  it('has 79 entries: free-software license allowlist, https links', () => {
-    expect(directory).toHaveLength(79)
+  it('has 80 entries: free-software license allowlist, https links', () => {
+    expect(directory).toHaveLength(80)
     for (const e of directory) {
       expect(SPDX_ALLOWED.has(e.license), `${e.name}: license ${e.license}`).toBe(true)
       expect(e.url.startsWith('https://'), e.name).toBe(true)

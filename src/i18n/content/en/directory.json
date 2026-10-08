@@ -83,5 +83,6 @@
   "magic-wormhole": {
     "body": "Send a file end-to-end encrypted with a short one-time code (command line)."
   },
-  "nymvpn": { "body": "VPN with a 5-hop mixnet mode that blurs traffic metadata." }
+  "nymvpn": { "body": "VPN with a 5-hop mixnet mode that blurs traffic metadata." },
+  "wasabi-wallet": { "body": "Bitcoin wallet with built-in CoinJoin, over Tor." }
 }

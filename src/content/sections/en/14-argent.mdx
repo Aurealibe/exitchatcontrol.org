@@ -63,6 +63,64 @@ Money is surveilled and censorable too. Activists' accounts have been frozen, do
   </ol>
 </ToolCard>
 
+<ToolCard tool="t-wasabi">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Advanced</span>
+    <span class="tool-tag">CoinJoin</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    A free Bitcoin wallet with built-in <b>CoinJoin</b>: your coins are combined with other users'
+    coins in a joint transaction, which breaks the visible on-chain link between origin and
+    destination.
+  </Fragment>
+  <Fragment slot="why">
+    The Bitcoin ledger is public: without care, every payment can be linked to earlier ones.
+    CoinJoin restores part of that privacy without handing your funds to anyone, and the wallet runs
+    over Tor.
+  </Fragment>
+  <Fragment slot="who">
+    Experienced Bitcoin users. Since the original coordinator shut down in June 2024, you must pick
+    an independent coordinator, which charges fees.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Mixed funds and platforms</span>
+    <p>
+      Regulated platforms may refuse or freeze funds that went through a CoinJoin. Keep a record of
+      the legitimate origin of your funds.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Download Wasabi from <b>wasabiwallet.io</b> and verify the signature.
+    </li>
+    <li>In the settings, choose an independent coordinator.</li>
+    <li>Turn on automatic CoinJoin, and never mix mixed and unmixed coins in the same payment.</li>
+  </ol>
+</ToolCard>
+
+<div class="box honest">
+  <span class="lab">On-chain privacy: what the law says</span>
+  <ul>
+    <li>
+      <b>Swaps without an intermediary</b>: since August 2026, THORChain lets you swap bitcoin
+      directly for Monero, with no account or platform. The service is new: a wrong return address
+      can lose the funds.
+    </li>
+    <li>
+      <b>Tornado Cash</b> (Ethereum): removed from US sanctions in March 2025, but its developers
+      were prosecuted, with a money-laundering conviction in the Netherlands in 2024 (appeal
+      pending) and a partial conviction in the United States in August 2025. The legal status of
+      mixers remains uncertain in Europe.
+    </li>
+    <li>
+      <b>July 2027</b>: the EU anti-money-laundering regulation (AMLR) bars regulated platforms from
+      keeping anonymous accounts and from offering privacy-enhancing cryptocurrencies such as
+      Monero. Holding in self-custody is not banned.
+    </li>
+  </ul>
+</div>
+
 <div class="box warn">
   <span class="lab">Legality &amp; caution</span>
   <p>
