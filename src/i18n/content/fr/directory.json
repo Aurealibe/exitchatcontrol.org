@@ -7,6 +7,9 @@
   "element-matrix": { "body": "Remplace Discord/Slack. Fédéré, auto-hébergeable." },
   "briar": { "body": "P2P sans internet (Bluetooth/Tor) : manifestations, blackout." },
   "molly": { "body": "Signal durci pour Android (variante 100 % FOSS)." },
+  "delta-chat": {
+    "body": "Messagerie chiffrée de bout en bout sur le réseau e-mail (relais chatmail) : aucun numéro de téléphone."
+  },
   "thunderbird": { "body": "Le client mail libre de référence, OpenPGP intégré." },
   "proton-mail": { "body": "Applications open source du service chiffré suisse." },
   "tuta": { "body": "Applications libres, chiffrement post-quantique, juridiction UE." },

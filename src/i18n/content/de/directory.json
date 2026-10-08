@@ -17,6 +17,9 @@
   "molly": {
     "body": "Gehärtetes Signal für Android (vollständig FOSS-Variante)."
   },
+  "delta-chat": {
+    "body": "Ende-zu-Ende-verschlüsselter Chat über das E-Mail-Netz (Chatmail-Relays): keine Telefonnummer nötig."
+  },
   "thunderbird": {
     "body": "Der maßgebliche freie E-Mail-Client mit integriertem OpenPGP."
   },

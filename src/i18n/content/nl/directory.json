@@ -18,6 +18,9 @@
   "molly": {
     "body": "Geharde Signal voor Android (volledig FOSS-variant)."
   },
+  "delta-chat": {
+    "body": "End-to-end versleuteld chatten via het e-mailnetwerk (chatmail-relays): geen telefoonnummer nodig."
+  },
   "thunderbird": {
     "body": "Dé vrije referentie-mailclient, OpenPGP ingebouwd."
   },

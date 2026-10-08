@@ -46,6 +46,13 @@
     "license": "GPL-3.0"
   },
   {
+    "id": "delta-chat",
+    "category": "messagerie",
+    "name": "Delta Chat",
+    "url": "https://delta.chat",
+    "license": "GPL-3.0"
+  },
+  {
     "id": "thunderbird",
     "category": "email",
     "name": "Thunderbird",

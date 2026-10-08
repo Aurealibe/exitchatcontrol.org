@@ -5,6 +5,9 @@
   "element-matrix": { "body": "Replaces Discord/Slack. Federated, self-hostable." },
   "briar": { "body": "P2P with no internet (Bluetooth/Tor): protests, blackouts." },
   "molly": { "body": "Hardened Signal for Android (fully FOSS variant)." },
+  "delta-chat": {
+    "body": "End-to-end encrypted chat over the e-mail network (chatmail relays): no phone number needed."
+  },
   "thunderbird": { "body": "The reference free mail client, OpenPGP built in." },
   "proton-mail": { "body": "Open-source apps of the Swiss encrypted service." },
   "tuta": { "body": "Free apps, post-quantum encryption, EU jurisdiction." },
