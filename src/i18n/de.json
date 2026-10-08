@@ -24,12 +24,12 @@
     "p3": "Whistleblower"
   },
   "status": {
-    "label": "Eilmeldung · 9. Juli 2026",
-    "headline": "Das Europäische Parlament hat die Chatkontrolle passieren lassen.",
-    "body": "Der Ablehnungsantrag scheiterte: 314 Abgeordnete stimmten gegen den Text, 276 dafür, 17 enthielten sich. Für eine Blockade wären 361 Stimmen nötig gewesen. Die Mehrheit wollte die Ablehnung, doch das Verfahren verhinderte sie. Ein Schutzwall wurde dennoch erkämpft: Ende-zu-Ende-verschlüsselte Messenger sind vom Scannen ausgenommen (die Änderungsanträge erhielten 369 beziehungsweise 362 Stimmen). Nun liegt der Text beim Rat: Wird er bis Oktober unterzeichnet, bleibt das „freiwillige“ Scannen deiner Nachrichten bis zum 3. April 2028 erlaubt. Parallel kehrt Chatkontrolle 2.0 (CSAR) – verpflichtendes Scannen auch verschlüsselter Messenger – im September an den Verhandlungstisch zurück. Die Gefahr ist nicht vorüber; sie wird dauerhaft verankert.",
-    "cta": "Jetzt ist das Zeitfenster für den Umstieg – solange du noch selbst entscheiden kannst.",
-    "sourceEp": "Pressemitteilung des EP, 9. Juli 2026",
-    "sourceVotes": "offizielle namentliche Ergebnisse"
+    "label": "Stand · Oktober 2026",
+    "headline": "Chatkontrolle 1.0 ist wieder in Kraft, bis 3. April 2028.",
+    "body": "Nachdem der Ablehnungsantrag im Europäischen Parlament am 9. Juli gescheitert war (314 Stimmen dafür, 361 nötig), hat der Rat den Text am 23. Juli 2026 endgültig angenommen. Anbieter dürfen private Kommunikation wieder „freiwillig“ scannen, mit Ausnahme Ende-zu-Ende-verschlüsselter Kommunikation, die per Änderungsantrag ausgenommen ist. Parallel wird Chatkontrolle 2.0 (CSAR), die dauerhafte Verordnung, weiter verhandelt: Der Trilog vom 29. September endete ohne Einigung.",
+    "cta": "Dieser Leitfaden geht davon aus, dass eine härtere Fassung folgen kann: Die hier vorgestellten Werkzeuge schützen auch in diesem Szenario.",
+    "sourceEp": "Pressemitteilung des Rates, 23. Juli 2026",
+    "sourceVotes": "offizielle namentliche Abstimmungen vom 9. Juli"
   },
   "noscript": {
     "notice": "JavaScript ist deaktiviert – guter Instinkt. Der gesamte Leitfaden funktioniert auch ohne; nur der Design-Umschalter, die Filter und die Checkliste benötigen Skripte."

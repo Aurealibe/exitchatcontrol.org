@@ -24,12 +24,12 @@
     "p3": "Lanceur d'alerte"
   },
   "status": {
-    "label": "Dernière minute · 9 juillet 2026",
-    "headline": "Le Parlement européen a laissé passer Chat Control.",
-    "body": "La motion de rejet a échoué : 314 eurodéputés pour le rejet, 276 contre, 17 abstentions. Il en fallait 361 pour bloquer le texte. La majorité voulait le rejet ; la procédure l'a enterré. Un seul rempart arraché : les messageries chiffrées de bout en bout sont exclues du scan (amendements adoptés à 369 et 362 voix). Le texte est maintenant sur le bureau du Conseil : une signature d'ici octobre, et le scan « volontaire » de vos messages est autorisé jusqu'au 3 avril 2028. En parallèle, Chat Control 2.0 (CSAR), le scan obligatoire jusque dans les messageries chiffrées, revient en négociation en septembre. La menace n'est pas passée, elle s'installe.",
-    "cta": "La fenêtre pour se rééquiper, c'est maintenant, tant que le choix vous appartient encore.",
-    "sourceEp": "Communiqué du Parlement, 9 juillet 2026",
-    "sourceVotes": "résultats officiels des votes"
+    "label": "Point de situation · octobre 2026",
+    "headline": "Chat Control 1.0 est de nouveau en vigueur, jusqu'au 3 avril 2028.",
+    "body": "Après l'échec de la motion de rejet au Parlement européen le 9 juillet (314 voix pour, 361 requises), le Conseil a définitivement adopté le texte le 23 juillet 2026. Les fournisseurs peuvent de nouveau scanner « volontairement » les communications privées, à l'exception des communications chiffrées de bout en bout, exclues par amendement. En parallèle, Chat Control 2.0 (CSAR), le règlement permanent, reste en négociation : le trilogue du 29 septembre s'est conclu sans accord.",
+    "cta": "Ce guide part du principe qu'une version plus dure peut suivre : les outils présentés ici restent protecteurs dans ce scénario.",
+    "sourceEp": "Communiqué du Conseil, 23 juillet 2026",
+    "sourceVotes": "résultats officiels des votes du 9 juillet"
   },
   "noscript": {
     "notice": "JavaScript est désactivé : bon réflexe. L'intégralité du guide fonctionne sans : seuls le thème, les filtres et la checklist utilisent des scripts."

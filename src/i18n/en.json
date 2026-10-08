@@ -24,12 +24,12 @@
     "p3": "Whistleblower"
   },
   "status": {
-    "label": "Breaking · 9 July 2026",
-    "headline": "The European Parliament let Chat Control through.",
-    "body": "The motion to reject failed: 314 MEPs voted against the text, 276 for, 17 abstentions. It took 361 to block it. The majority wanted rejection; procedure buried it. One rampart was wrenched out: end-to-end encrypted messengers are excluded from the scanning (amendments adopted with 369 and 362 votes). The text now sits on the Council's desk: one signature by October, and the \"voluntary\" scanning of your messages is authorised until 3 April 2028. In parallel, Chat Control 2.0 (CSAR), mandatory scanning even for encrypted messengers, returns to negotiation in September. The threat has not passed; it is settling in.",
-    "cta": "The window to re-equip is now, while the choice is still yours.",
-    "sourceEp": "EP press release, 9 July 2026",
-    "sourceVotes": "official roll-call results"
+    "label": "Status · October 2026",
+    "headline": "Chat Control 1.0 is back in force, until 3 April 2028.",
+    "body": "After the motion to reject failed in the European Parliament on 9 July (314 votes in favour, 361 needed), the Council gave the text final approval on 23 July 2026. Providers may again scan private communications \"voluntarily\", except end-to-end encrypted communications, which an amendment excludes. In parallel, Chat Control 2.0 (CSAR), the permanent regulation, is still under negotiation: the 29 September trilogue ended without agreement.",
+    "cta": "This guide assumes a harsher version may follow: the tools presented here stay protective in that scenario.",
+    "sourceEp": "Council press release, 23 July 2026",
+    "sourceVotes": "official roll calls of 9 July"
   },
   "noscript": {
     "notice": "JavaScript is disabled: good instinct. The entire guide works without it: only the theme toggle, filters and checklist need scripts."

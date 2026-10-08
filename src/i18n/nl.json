@@ -24,12 +24,12 @@
     "p3": "Klokkenluider"
   },
   "status": {
-    "label": "Laatste nieuws · 9 juli 2026",
-    "headline": "Het Europees Parlement liet Chat Control door.",
-    "body": "De motie tot verwerping faalde: 314 europarlementariërs stemden tegen de tekst, 276 voor, 17 onthoudingen. Er waren er 361 nodig om hem te blokkeren. De meerderheid wilde verwerpen; de procedure begroef het. Eén dam werd eruit gesleept: end-to-end versleutelde berichtendiensten zijn van het scannen uitgesloten (amendementen aangenomen met 369 en 362 stemmen). De tekst ligt nu op het bureau van de Raad: één handtekening vóór oktober, en het \"vrijwillige\" scannen van je berichten is toegestaan tot 3 april 2028. Parallel keert Chat Control 2.0 (CSAR), verplicht scannen tot in versleutelde berichtendiensten, in september terug naar de onderhandelingstafel. De dreiging is niet geweken; ze nestelt zich.",
-    "cta": "Het venster om je opnieuw uit te rusten is nú, zolang de keuze nog aan jou is.",
-    "sourceEp": "Persbericht van het Parlement, 9 juli 2026",
-    "sourceVotes": "officiële stemuitslagen"
+    "label": "Stand van zaken · oktober 2026",
+    "headline": "Chat Control 1.0 is opnieuw van kracht, tot 3 april 2028.",
+    "body": "Nadat de motie tot verwerping op 9 juli in het Europees Parlement faalde (314 stemmen voor, 361 nodig), keurde de Raad de tekst op 23 juli 2026 definitief goed. Aanbieders mogen privécommunicatie opnieuw \"vrijwillig\" scannen, behalve end-to-end versleutelde communicatie, die door een amendement is uitgesloten. Tegelijk wordt Chat Control 2.0 (CSAR), de permanente verordening, nog onderhandeld: de triloog van 29 september eindigde zonder akkoord.",
+    "cta": "Deze gids gaat ervan uit dat een strengere versie kan volgen: de tools hier blijven in dat scenario beschermen.",
+    "sourceEp": "Persbericht van de Raad, 23 juli 2026",
+    "sourceVotes": "officiële stemuitslagen van 9 juli"
   },
   "noscript": {
     "notice": "JavaScript staat uit: goed instinct. De volledige gids werkt zonder: alleen het thema, de filters en de checklist gebruiken scripts."

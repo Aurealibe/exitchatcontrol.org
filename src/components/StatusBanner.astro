@@ -1,9 +1,9 @@
 ---
 // The legislative status banner — the legacy "Dernière minute" band look
 // (full-width strip, pulsing red dot, mono warn label), carrying the
-// VERIFIED status: every claim is primary-sourced (EP press release
-// 20260706IPR46318 + official roll-calls). When the Council answers
-// (deadline ≈ 9 Oct 2026), update THIS component's i18n keys (status.*).
+// VERIFIED status: every claim is primary-sourced (Council press release
+// of 23 July 2026 + official roll-calls of 9 July). When CSAR trilogues
+// conclude, update THIS component's i18n keys (status.*).
 import { useT, type Locale } from '../i18n/config'
 import Ext from './Ext.astro'
 
@@ -24,7 +24,9 @@ const t = useT(locale)
       <p>{t('status.body')}</p>
       <p class="status-cta">{t('status.cta')}</p>
       <p class="status-sources">
-        <Ext href="https://www.europarl.europa.eu/news/en/press-room/20260706IPR46318/">
+        <Ext
+          href="https://www.consilium.europa.eu/en/press/press-releases/2026/07/23/fighting-child-sexual-abuse-online-interim-measure-protecting-children-now-reinstated/"
+        >
           {t('status.sourceEp')}
         </Ext>
         ·
