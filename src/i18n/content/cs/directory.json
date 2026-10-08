@@ -17,6 +17,9 @@
   "molly": {
     "body": "Zabezpečený Signal pro Android (plně FOSS varianta)."
   },
+  "delta-chat": {
+    "body": "End-to-end šifrovaný chat přes e-mailovou síť (relaye chatmail): telefonní číslo není potřeba."
+  },
   "thunderbird": {
     "body": "Referenční svobodný poštovní klient s integrovaným OpenPGP."
   },
@@ -199,6 +202,24 @@
   },
   "exiftool": {
     "body": "Čte a maže EXIF metadata."
+  },
+  "threema": {
+    "body": "Placený švýcarský messenger, bez telefonního čísla a e-mailu (náhodné ID)."
+  },
+  "olvid": {
+    "body": "Francouzský messenger bez telefonního čísla, certifikovaný agenturou ANSSI (CSPN)."
+  },
+  "meshtastic": {
+    "body": "Zprávy přes rádio LoRa bez sítě, na malých specializovaných zařízeních."
+  },
+  "veracrypt": {
+    "body": "Lokální šifrování disků, oddílů a kontejnerů."
+  },
+  "forgejo": {
+    "body": "Svobodná Git platforma pro vlastní hosting; Codeberg je její neziskovou instancí."
+  },
+  "radicle": {
+    "body": "Peer-to-peer platforma pro kód, bez centrálního serveru."
   },
   "_machineTranslated": "2026-07-10"
 }

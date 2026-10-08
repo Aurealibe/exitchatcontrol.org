@@ -35,7 +35,7 @@ title: 'Šifrované úložiště'
 
 <ToolCard tool="t-cryptomator">
   <Fragment slot="tags">
-    <span class="tool-tag">🟡 Pokročilý</span>
+    <span class="tool-tag">🟡 Středně pokročilý</span>
     <span class="tool-tag">Šifrování před nahráním</span>
     <span class="tool-tag">🇩🇪 · open-source</span>
   </Fragment>
@@ -57,9 +57,49 @@ title: 'Šifrované úložiště'
   </ol>
 </ToolCard>
 
+<ToolCard tool="t-veracrypt">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Středně pokročilý</span>
+    <span class="tool-tag">Nahrazuje BitLocker</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Standard pro <b>lokální</b> šifrování: celý disk, oddíl, USB flash disk nebo šifrovaný kontejner
+    (soubor, který se připojí jako jednotka).
+  </Fragment>
+  <Fragment slot="why">
+    Nic neopouští váš počítač: žádný účet, žádný cloud, žádný obnovovací klíč odeslaný výrobci.
+    Zdarma, auditovaný, nástupce TrueCryptu. Je to lokální protějšek Cryptomatoru, který je určen
+    pro cloud.
+  </Fragment>
+  <Fragment slot="who">
+    Na Windows jako náhrada BitLockeru; všude pro šifrovaný kontejner nebo externí disk. Na Linuxu a
+    macOS pro systémový disk stačí vestavěné šifrování (LUKS, FileVault).
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Šifrování systému a Secure Boot</span>
+    <p>
+      Microsoft v roce 2026 odvolává certifikační autoritu UEFI z roku 2011, která podepsala starý
+      zavaděč. Pokud šifrujete systémový disk, použijte verzi 1.26.29 nebo novější, která obsahuje
+      zavaděče podepsané pro autority z roku 2011 i 2023.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Stáhněte VeraCrypt z <b>veracrypt.jp</b> a ověřte PGP podpis nebo kontrolní součet souboru.
+    </li>
+    <li>
+      Vytvořte svazek s výchozím nastavením (AES, SHA-512); Argon2id je k dispozici od verze
+      1.26.29.
+    </li>
+    <li>Zvolte dlouhou přístupovou frázi (několik náhodných slov), nikdy ji nepoužívejte znovu.</li>
+    <li>Pro pokročilé: vytvořte uvnitř svazku skrytý svazek kvůli věrohodnému popření.</li>
+  </ol>
+</ToolCard>
+
 <ToolCard tool="t-nc-storage">
   <Fragment slot="tags">
-    <span class="tool-tag">🔴 Expert</span>
+    <span class="tool-tag">🔴 Pokročilý</span>
     <span class="tool-tag">Vlastní cloud</span>
     <span class="tool-tag">🌍 · open-source</span>
   </Fragment>

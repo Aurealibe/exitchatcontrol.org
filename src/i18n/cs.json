@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Ukončete Chat Control · Staňte se neovladatelnými",
-    "description": "Praktický terénní průvodce, jak uniknout Chat Control a znovu získat digitální soukromí: šifrované zprávy, e-mail, VPN, DNS, hesla, Linux, GrapheneOS, vlastní hosting. Zdarma, open source, bez sledování."
+    "title": "Exit Chat Control · Staňte se neovladatelnými",
+    "description": "Terénní průvodce, jak uniknout Chat Control a chránit své soukromí: šifrované zprávy, e-mail, VPN, hesla, Linux, GrapheneOS. Zdarma, open source, bez sledování."
   },
   "nav": {
     "skip": "Přejít na obsah",
@@ -24,12 +24,12 @@
     "p3": "Whistleblower"
   },
   "status": {
-    "label": "Aktuálně · 9. července 2026",
-    "headline": "Evropský parlament nechal Chat Control projít.",
-    "body": "Návrh na zamítnutí neprošel: 314 europoslanců hlasovalo proti textu, 276 pro a 17 se zdrželo. K jeho zablokování bylo potřeba 361 hlasů. Většina chtěla zamítnutí, postup ho však pohřbil. Jeden val byl prolomen: end-to-end šifrované messengery jsou ze skenování vyloučeny (pozměňovací návrhy byly přijaty 369 a 362 hlasy). Text nyní leží na stole Rady: jeden podpis do října a „dobrovolné“ skenování vašich zpráv je povoleno do 3. dubna 2028. Souběžně se v září vrací k vyjednávání Chat Control 2.0 (CSAR), povinné skenování i pro šifrované messengery. Hrozba nepominula; usazuje se.",
-    "cta": "Okno pro změnu vybavení je právě teď, dokud je volba stále na vás.",
-    "sourceEp": "Tisková zpráva EP, 9. července 2026",
-    "sourceVotes": "oficiální výsledky jmenovitého hlasování"
+    "label": "Stav · říjen 2026",
+    "headline": "Chat Control 1.0 opět platí, až do 3. dubna 2028.",
+    "body": "Poté, co 9. července v Evropském parlamentu neprošel návrh na zamítnutí (314 hlasů pro, potřeba bylo 361), Rada 23. července 2026 text definitivně schválila. Poskytovatelé mohou opět „dobrovolně“ skenovat soukromou komunikaci, s výjimkou end-to-end šifrované komunikace, kterou vylučuje pozměňovací návrh. Souběžně se stále vyjednává Chat Control 2.0 (CSAR), trvalé nařízení: trialog z 29. září skončil bez dohody.",
+    "cta": "Tento průvodce počítá s tím, že může přijít tvrdší verze: nástroje, které zde představujeme, chrání i v takovém scénáři.",
+    "sourceEp": "Tisková zpráva Rady, 23. července 2026",
+    "sourceVotes": "oficiální jmenovitá hlasování z 9. července"
   },
   "noscript": {
     "notice": "JavaScript je vypnutý: dobrý instinkt. Celý průvodce funguje i bez něj; skripty potřebují jen přepínač vzhledu, filtry a kontrolní seznam."
@@ -43,6 +43,7 @@
     "proofline": "Nula trackerů, nula cookies, nula externích požadavků. Vše (písma, ikony, styly) je vloženo přímo. Ověřte si to: otevřete síťový inspektor a stránku znovu načtěte. Nic neodchází třetí straně.",
     "disclaimer": "Tento průvodce je informační dokument o ochraně soukromí a obraně šifrování. Nedoporučuje žádnou nezákonnou činnost. Vždy sledujte legislativní novinky: situace se rychle mění.",
     "factsUpdated": "Informace naposledy aktualizovány: 10. července 2026.",
+    "support": "Podpořit projekt",
     "links": {
       "council0207": "Rada EU · pozice v prvním čtení z 2. července 2026",
       "ep2603": "Parlament · zamítnutí z 26. března 2026",
@@ -156,7 +157,7 @@
     "eyebrow": "Odhadněte svou odolnost vůči cenzuře",
     "title": "Kvíz odolnosti",
     "lede": "Kompas, ne výsledková tabulka: odpovězte na dvanáct rychlých otázek, abyste odhalili slabá místa svého nastavení – bez studu – a poté postupujte podle konkrétních řešení z průvodce.",
-    "privacyNote": "Skóre se vypočítává lokálně ve vašem prohlížeči. Nic se neodesílá ani neukládá.",
+    "privacyNote": "Skóre se vypočítává lokálně ve vašem prohlížeči. Nic se nikam neodesílá; vaše odpovědi zůstávají ve vašem zařízení.",
     "start": "Spustit kvíz",
     "readGuide": "Přečíst celý průvodce",
     "progress": "{done} / {total} zodpovězeno",
@@ -172,7 +173,25 @@
     "share": "Sdílet",
     "shareX": "Publikovat na X",
     "shareText": "Moje skóre odolnosti vůči cenzuře: {score}/100 — {band}. Zjistěte své:",
+    "scorecardHeading": "Karta skóre ke sdílení",
+    "scorecardHint": "Vygenerováno ve vašem zařízení. Stáhněte si obrázek a připojte ho na X, Mastodon nebo kamkoli jinam – náhled odkazu zůstává záměrně obecný (vaše skóre nikdy neopustí tento prohlížeč).",
+    "downloadScorecard": "Stáhnout kartu skóre",
+    "copyScorecard": "Kopírovat obrázek karty skóre",
+    "scorecardCopied": "Obrázek zkopírován ✓",
+    "scorecardBrand": "Exit Chat Control",
+    "scorecardTitle": "Skóre odolnosti vůči cenzuře",
+    "scorecardStamp": "Pouze lokálně · Bez trackerů",
+    "scorecardCta": "Vyplňte kvíz →",
+    "scorecardFile": "ecc-score-{score}.png",
+    "nextBand": "Do úrovně „{band}“ vám chybí už jen {points}.",
+    "topBand": "Dosáhli jste nejvyšší úrovně – teď jde o to udržet disciplínu.",
     "bandsHeading": "Co skóre znamená",
     "categoriesHeading": "Dvanáct oblastí a možnosti zlepšení"
+  },
+  "seo": {
+    "quizTitle": "Kvíz odolnosti: otestujte své digitální soukromí · Exit Chat Control",
+    "quizDescription": "Dvanáct rychlých otázek odhalí slabá místa ve vaší ochraně soukromí, k tomu konkrétní řešení z průvodce. Běží ve vašem prohlížeči, nic se neodesílá.",
+    "notFoundTitle": "Stránka nenalezena · Exit Chat Control",
+    "ogImageAlt": "Exit Chat Control, terénní průvodce digitálním soukromím"
   }
 }

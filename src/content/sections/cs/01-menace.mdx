@@ -27,7 +27,7 @@ Než změníte nástroje, pochopte, před čím se chráníte. Jinak si nainstal
     <tbody>
       <tr>
         <td>Text</td>
-        <td>Regulation (EU) 2021/1232, výjimka z ePrivacy</td>
+        <td>Nařízení (EU) 2021/1232, výjimka z ePrivacy</td>
         <td>Návrh COM/2022/209 (Ylva Johansson, květen 2022)</td>
       </tr>
       <tr>
@@ -35,7 +35,10 @@ Než změníte nástroje, pochopte, před čím se chráníte. Jinak si nainstal
         <td>
           Dobrovolné, platformy <em>mohou</em> skenovat
         </td>
-        <td>Povinné na základě „příkazů k odhalování“ a „opatření ke zmírnění rizik“</td>
+        <td>
+          Návrh Komise: povinné na základě „příkazů k odhalování“. Postoj Rady (listopad 2025):
+          trvalé dobrovolné skenování a navíc „opatření ke zmírnění rizik“
+        </td>
       </tr>
       <tr>
         <td>Kdo</td>
@@ -47,9 +50,58 @@ Než změníte nástroje, pochopte, před čím se chráníte. Jinak si nainstal
           <strong>Všechny</strong> platformy, včetně messengerů s koncovým šifrováním
         </td>
       </tr>
+      <tr>
+        <td>Trvání</td>
+        <td>
+          Dočasné: platnost skončila 3. dubna 2026, obnoveno 23. července 2026 do 3. dubna 2028
+        </td>
+        <td>Trvalé (bez plánovaného data skončení)</td>
+      </tr>
+      <tr>
+        <td>Stav (říjen 2026)</td>
+        <td>
+          <strong>V platnosti</strong>, end-to-end šifrovaná komunikace je z působnosti vyňata
+        </td>
+        <td>V jednání (trialog): žádný konečný text, nic neplatí</td>
+      </tr>
     </tbody>
   </table>
 </div>
+
+### Chat Control 1.0 dnes: na co se vztahuje a na co ne
+
+Prozatímní nařízení pozbylo platnosti 3. dubna 2026 a pak se vrátilo: po druhém čtení v Evropském parlamentu ho Rada 23. července 2026 definitivně schválila (nařízení (EU) 2026/1881), a to do 3. dubna 2028. Poskytovatelům **umožňuje**, nikoli ukládá, skenovat soukromou komunikaci kvůli materiálům zobrazujícím sexuální zneužívání dětí.
+
+- **Na co se vztahuje**: komunikační služby, které nejsou end-to-end šifrované a jejichž poskytovatel se rozhodne skenovat, například zprávy v Messengeru nebo na Instagramu, e-maily v Gmailu nebo Outlooku, chat zabudovaný do herních konzolí a platforem. Google, Microsoft, Meta a Snapchat patří mezi signatáře výzvy z 19. března 2026 k zachování tohoto odhalování.
+- **Co je vyňato**: pozměňovací návrh přijatý Parlamentem a následně přijatý Radou vyjímá z působnosti komunikaci, „na kterou se uplatňuje, uplatňovalo nebo bude uplatňovat end-to-end šifrování“. Messengery, které jsou ve výchozím nastavení end-to-end šifrované, jako Signal, Session, Threema, SimpleX Chat nebo Olvid, se proto na tento text nevztahují (viz [šifrované zprávy](#messagerie)).
+
+Tato výjimka platí jen pro tento prozatímní text. Trvalé nařízení nebo tvrdší verze ji může zvrátit: tento průvodce s takovým scénářem počítá a doporučuje nástroje, které chrání, i kdyby se skenování stalo povinným.
+
+<div class="box warn">
+  <span class="lab">E-mail, slabý článek</span>
+  <p>
+    Proton Mail a Tuta šifrují zprávy mezi svými vlastními uživateli. E-mail vyměněný s adresou
+    Gmail nebo Outlook však k tomuto poskytovateli dorazí nešifrovaný a ten ho může na své straně
+    skenovat: ani Proton, ani Tuta tomu nemohou zabránit. Šifrování PGP funguje i z Gmailu; chrání
+    tělo zprávy, ale ne předmět ani metadata (viz [šifrovaný e-mail](#email)).
+  </p>
+</div>
+
+### Chat Control 2.0: co by text dělal
+
+O trvalém nařízení (CSAR) stále jednají Komise, Rada a Parlament (trialog). Šestý trialog 29. září 2026 skončil bez dohody a technická jednání pokračují. **Neexistuje žádný konečný text a nic neplatí.**
+
+- **Komise** v roce 2022 navrhla povinné „příkazy k odhalování“, a to i pro šifrované messengery.
+- **Rada** (postoj z 26. listopadu 2025) od povinných příkazů ustoupila, dobrovolné skenování však činí trvalým a vyžaduje „opatření ke zmírnění rizik“, která by mohla skenování zahrnovat.
+- **Parlament** chce odhalování omezit na podezřelé, na základě soudního příkazu, a chránit end-to-end šifrování.
+
+#### Kdyby se skenování na straně klienta stalo povinným
+
+Následující neplatí: jde o pravděpodobné důsledky pro případ, že by konečný text vyžadoval skenování v zařízeních.
+
+1. **Messengery, které vyhoví**, by vydaly verzi pro EU se skenovacím modulem běžícím před šifrováním, odlišnou od verzí nabízených jinde.
+2. **Messengery, které odmítnou**, by mohly z evropského trhu odejít, jak to Signal veřejně oznámil v říjnu 2025. Aplikace by pak zmizela z evropských obchodů s aplikacemi: na iOS by bylo obtížné nebo nemožné ji získat; na Androidu může vydavatel nabízet APK na svém oficiálním webu. Pokud by bylo stažení nebo služba z EU zablokováno, dostali byste se k ní jen přes [VPN](#vpn) nebo [Tor](#tor).
+3. **Skenování na úrovni operačního systému**: pokud by se povinnost týkala samotných systémů, svobodná aplikace by už nestačila. Mimo dosah by zůstaly nespolupracující systémy, GrapheneOS v mobilu a neregionální distribuce GNU/Linuxu v počítačích (viz [svobodné operační systémy](#os)), používané s messengerem, který skenování rovněž odmítá.
 
 ### Skenování na straně klienta: legální odposlech
 
@@ -101,7 +153,7 @@ Výmluvné je, že společnosti, které na toto skenování tlačí nejvíce, js
   zpráv.
 </blockquote>
 
-Tytéž společnosti dokonce oznámily, že budou zprávy **nadále skenovat** i poté, co právní základ 4. dubna 2026 zanikl. Občané jsou tedy žádáni, aby kontrolu svých intimních rozhovorů svěřili právě společnostem známým shromažďováním a zpeněžováním jejich dat. To je skutečná tvář Chat Control: **útok na soukromí** zabalený do motivu, který nikdo nemůže odmítnout.
+Tytéž společnosti dokonce oznámily, že budou zprávy **nadále skenovat** i poté, co právní základ 3. dubna 2026 zanikl. Občané jsou tedy žádáni, aby kontrolu svých intimních rozhovorů svěřili právě společnostem známým shromažďováním a zpeněžováním jejich dat. To je skutečná tvář Chat Control: **útok na soukromí** zabalený do motivu, který nikdo nemůže odmítnout.
 
 ### Nejde „jen“ o sledování
 

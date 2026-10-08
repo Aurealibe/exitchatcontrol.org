@@ -89,7 +89,11 @@
   },
   "ep-e2ee-carveout": {
     "title": "Odmítnutí neprojde, ale E2EE je vyňato",
-    "body": "Zrychlené řízení prošlo 7. července (331/304/11), hlasování 9. července: 314 poslanců Evropského parlamentu hlasuje pro odmítnutí postoje Rady — prostá většina, avšak méně než požadovaných 361. Parlament ale následně přijímá pozměňovací návrhy vylučující komunikaci s koncovým šifrováním z režimu skenování (369 a 362 hlasů) a neprochází ani poslední pokus o odmítnutí pozměněného postoje (276/286/30). Pozměněný text se vrací Radě, která má přibližně tři měsíce (zhruba do 9. října 2026) na přijetí změn (dobrovolné skenování služeb bez E2EE do 3. dubna 2028), nebo na zahájení dohodovacího řízení. K 10. červenci 2026 nic neplatí: výjimka, která skončila 3. dubna, nikdy nebyla obnovena ([úplné jmenovité hlasování](https://howtheyvote.eu/votes/195775))."
+    "body": "Zrychlené řízení prošlo 7. července (331/304/11), hlasování 9. července: 314 poslanců Evropského parlamentu hlasuje pro odmítnutí postoje Rady — prostá většina, avšak méně než požadovaných 361. Parlament ale následně přijímá pozměňovací návrhy vylučující komunikaci s koncovým šifrováním z režimu skenování (369 a 362 hlasů) a neprochází ani poslední pokus o odmítnutí pozměněného postoje (276/286/30). Pozměněný text se vrací Radě, která má přibližně tři měsíce (zhruba do 9. října 2026) na přijetí změn (dobrovolné skenování služeb bez E2EE do 3. dubna 2028), nebo na zahájení dohodovacího řízení. Rada pozměňovací návrhy přijímá 23. července ([úplné jmenovité hlasování](https://howtheyvote.eu/votes/195775))."
+  },
+  "council-final-adoption": {
+    "title": "Chat Control 1.0 obnoven, šifrování vyňato",
+    "body": "Rada přijímá pozměňovací návrhy Parlamentu a text definitivně schvaluje: výjimka umožňující dobrovolné skenování zpráv je obnovena do 3. dubna 2028. End-to-end šifrovaná komunikace (WhatsApp, Signal…) je z její působnosti vyňata. O trvalém nařízení (Chat Control 2.0) se stále jedná."
   },
   "_machineTranslated": "2026-07-10"
 }

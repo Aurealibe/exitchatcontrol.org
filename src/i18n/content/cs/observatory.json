@@ -127,6 +127,10 @@
     "title": "FISA 702 končí, sběr dat přesto pokračuje",
     "body": "Oddíl 702, tedy sběr komunikace procházející poskytovateli v USA bez soudního příkazu, měl skončit v dubnu 2026. Po dvou krátkých prodlouženích oprávnění v polovině června zaniká, protože Kongres je zablokován ve sporu o povinnost soudního příkazu pro vyhledávání FBI týkající se Američanů. Stávající certifikace však zůstávají platné do března 2027: stroj běží další rok bez obnoveného právního základu. „Dočasná“ sledovací pravomoc se nikdy zcela nevypne."
   },
+  "uk-under16-ban": {
+    "title": "Spojené království: sociální sítě zakázány pro mladší 16 let",
+    "body": "Vláda oznamuje zákaz sociálních sítí pro mladší 16 let (Snapchat, TikTok, YouTube, Instagram, Facebook, X; komunikační aplikace jako WhatsApp a Signal jsou vyňaty). Prováděcí předpisy mají být předloženy Parlamentu do Vánoc 2026, účinnost se plánuje na jaro 2027. Systém spoléhá na „vysoce účinné“ ověřování věku, které má prověřit Ofcom: týkalo by se každého uživatele těchto platforem."
+  },
   "euro-numerique-econ": {
     "title": "Digitální euro: „neprogramovatelné“, přesto podmíněné",
     "body": "Hospodářský a měnový výbor Parlamentu přijímá svou pozici (43 hlasů ku 14, jedno zdržení se): kurz je nastaven na spuštění do roku 2029. Vlastní FAQ ECB přísahá, že digitální euro „nebude programovatelnými penězi“, zatímco „podmíněné platby“ představuje jako volitelné služby; podle postoje poslanců by limit držby stanovila později Komise na doporučení ECB a každé dva roky by jej přezkoumávala. Rozdíl mezi slibem a platformou spočívá na politickém rozhodnutí, nikoli na technické nemožnosti: infrastruktura podmíněnosti a sledovatelnosti bude existovat od prvního dne."
@@ -135,9 +139,29 @@
     "title": "Europol: rozpočet zvýšen na 3 miliardy eur, mandát pro šifrování",
     "body": "Komise navrhuje největší reformu Europolu za 25 let: rozpočet se zvyšuje z 1,9 miliardy eur na 3 miliardy eur, přibude 900 zaměstnanců a mandát se rozšíří na šifrovanou komunikaci, kryptoaktiva a podvody s pomocí AI; vznikne „centrum technologií a inovací“, jehož práce na šifrování navazuje na plán ProtectEU, jenž počítá se schopností Europolu dešifrovat data do roku 2030; a automatizovaný „evropský prostor policejních dat“. Ozbrojené křídlo ProtectEU: nadnárodní agentura, která, jak již varoval jeden poslanec EP, „nesmí vést k hromadnému sledování“."
   },
+  "ai-act-omnibus-delay": {
+    "title": "AI Act: povinnosti pro vysoce rizikové systémy odloženy",
+    "body": "Rada definitivně schvaluje zjednodušení AI Actu v rámci „Omnibusu VII“. Povinnosti pro vysoce rizikové systémy AI (mimo jiné biometrie, policie, migrace, zaměstnání), které měly platit od 2. srpna 2026, se budou uplatňovat od 2. prosince 2027 (samostatné systémy) a od 2. srpna 2028 (systémy zabudované do výrobků). Text také zakazuje sexuální obsah vytvořený pomocí AI bez souhlasu a materiály zobrazující sexuální zneužívání dětí (CSAM)."
+  },
   "pega-kouloglou": {
     "title": "Pegasus v Parlamentu: hlídač byl sledován",
     "body": "Citizen Lab odhaluje, že poslanec EP Stelios Kouloglou, náhradní člen výboru PEGA, tedy samotného orgánu, který vyšetřoval Pegasus a zneužívání spywaru v Evropě, byl během svého působení ve výboru napaden Pegasem (infekce datované 21. října 2022 a 6.–7. března 2023), s možným přístupem k důvěrným jednáním. Citizen Lab výslovně odmítá útok připsat konkrétnímu aktérovi; koalice nevládních organizací požaduje reakci EU. Špehování orgánu pověřeného dohledem nad spywarem je krajním převrácením demokratické kontroly a nikdo není označen za odpovědného."
+  },
+  "scotus-texas-app-store": {
+    "title": "Texas: Nejvyšší soud ponechává ověřování věku v obchodech s aplikacemi v platnosti",
+    "body": "Nejvyšší soud odmítá zrušit odklad soudního zákazu (č. 25A1390, CCIA v. Paxton): texaský zákon App Store Accountability Act se uplatňuje. Apple a Google musí v Texasu ověřovat věk uživatelů obchodů s aplikacemi a u nezletilých získat souhlas rodičů, zatímco ve věci samé pokračuje spor o soulad s prvním dodatkem. Usnesení neuvádí odůvodnění."
+  },
+  "ripost-vsa-supprime": {
+    "title": "RIPOST: rozšíření algoritmického kamerového dohledu vypuštěno",
+    "body": "Francouzské Národní shromáždění přijímá v prvním čtení návrh zákona RIPOST (366 hlasů proti 182). Článek 19, který prodlužoval do 31. prosince 2030 a rozšiřoval zkušební provoz algoritmického kamerového dohledu zděděný z olympijských her 2024, byl vypuštěn v právním výboru; na plénu nebyl obnoven."
+  },
+  "euro-numerique-mandat": {
+    "title": "Digitální euro: Parlament potvrzuje svůj vyjednávací mandát",
+    "body": "Plénum potvrzuje vyjednávací mandát (416 pro, 169 proti, 22 se zdrželo) poté, co bylo napadeno hlasování ve výboru ECON; trialogy s Radou začínají 13. července. Mandát zahrnuje ochranu hotovosti a kontroly transakcí bez odhalování osobních údajů a stanovení limitu držby ponechává na Komisi, na doporučení ECB."
+  },
+  "ofcom-fapello": {
+    "title": "Spojené království: pokuta 630 000 liber za chybějící ověřování věku",
+    "body": "Ofcom ukládá provozovateli pornografického webu pokutu 630 000 liber: 600 000 liber za chybějící „vysoce účinné“ ověřování věku, které vyžaduje Online Safety Act, a 30 000 liber za nezodpovězení právně závazné žádosti o informace. Nejde o první takovou sankci: společnost YoungTek Solutions dostala v květnu 2026 pokutu 600 000 liber."
   },
   "_machineTranslated": "2026-07-10"
 }

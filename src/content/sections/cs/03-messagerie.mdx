@@ -85,12 +85,16 @@ První krok, ten, který vás ochrání nejrychleji: opusťte WhatsApp, Messenge
       zapněte <b>zámek registrace</b>.
     </li>
     <li>Pozvěte své kontakty. Na počítači propojte desktopovou aplikaci s telefonem.</li>
+    <li>
+      U důležitých kontaktů porovnejte <b>bezpečnostní číslo</b> (osobně nebo jiným kanálem):
+      vyloučíte tím odposlech typu man-in-the-middle.
+    </li>
   </ol>
 </ToolCard>
 
 <ToolCard tool="t-simplex">
   <Fragment slot="tags">
-    <span class="tool-tag">🟡 Pokročilý</span>
+    <span class="tool-tag">🟡 Středně pokročilý</span>
     <span class="tool-tag">Bez identifikátoru</span>
     <span class="tool-tag">🌍 · open-source</span>
   </Fragment>
@@ -121,7 +125,7 @@ První krok, ten, který vás ochrání nejrychleji: opusťte WhatsApp, Messenge
 
 <ToolCard tool="t-session">
   <Fragment slot="tags">
-    <span class="tool-tag">🟡 Pokročilý</span>
+    <span class="tool-tag">🟡 Středně pokročilý</span>
     <span class="tool-tag">Bez telefonu</span>
     <span class="tool-tag">🌍 · open-source</span>
   </Fragment>
@@ -145,6 +149,93 @@ První krok, ten, který vás ochrání nejrychleji: opusťte WhatsApp, Messenge
     </li>
     <li>Obnovovací frázi si napište na papír: je to jediný klíč k vašemu účtu.</li>
     <li>Sdílejte své Session ID (nebo QR) s kontakty.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-threema">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Středně pokročilý</span>
+    <span class="tool-tag">Bez telefonního čísla</span>
+    <span class="tool-tag">🇨🇭 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Plnohodnotný švýcarský messenger (zprávy, hovory, skupiny), ve kterém vás identifikuje náhodné{' '}
+    <b>Threema ID</b>, bez telefonního čísla a e-mailu.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end šifrování, open-source (AGPL) a auditované aplikace, společnost podle švýcarského
+    práva. Platí se jednorázově, nežije z vašich dat.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého, kdo chce alternativu k Signalu bez poskytnutí telefonního čísla a nevadí mu za
+    aplikaci zaplatit.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Kupte a nainstalujte Threemu z <b>threema.com</b>, App Store nebo Google Play (licence
+      existuje i pro verzi z F-Droidu).
+    </li>
+    <li>Zapište si své Threema ID a vytvořte zálohu chráněnou heslem.</li>
+    <li>Kontakty přidávejte naskenováním jejich QR kódu: získají nejvyšší úroveň ověření.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-olvid">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Bez telefonního čísla</span>
+    <span class="tool-tag">🇫🇷 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Francouzský messenger, který funguje <b>bez jakýchkoli osobních údajů</b>: bez telefonního
+    čísla, e-mailu i adresáře.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end šifrování, zveřejněný zdrojový kód aplikací (AGPL), certifikace francouzské agentury
+    pro kybernetickou bezpečnost ANSSI (CSPN). Používá ho francouzská vláda pro svou komunikaci.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého, zejména pro ty, kdo dávají přednost evropskému vydavateli a serverům. Kontakty se
+    přidávají osobně nebo pozvánkou.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte Olvid z <b>olvid.io</b>, App Store nebo Google Play. Základní verze je zdarma.
+    </li>
+    <li>Zvolte si zobrazované jméno: registrace není potřeba.</li>
+    <li>
+      Kontakt přidáte naskenováním jeho QR kódu, nebo výměnou pozvánky a následně čtyřmístného kódu.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-deltachat">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Středně pokročilý</span>
+    <span class="tool-tag">Bez telefonního čísla</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Messenger postavený na e-mailové síti: profily se vytvářejí jedním klepnutím na relayích
+    „chatmail“, bez telefonního čísla a osobní adresy.
+  </Fragment>
+  <Fragment slot="why">
+    Automatické end-to-end šifrování, decentralizovaná síť relayů (provozovat ho může kdokoli),
+    svobodné a auditované aplikace.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo chtějí decentralizovanou síť bez telefonního čísla a možnost nezáviset na žádném
+    jednom poskytovateli.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte Delta Chat z <b>delta.chat</b>, F-Droidu, App Store nebo Google Play.
+    </li>
+    <li>
+      Vytvořte profil: ve výchozím nastavení se nabídne relay chatmail, telefonní číslo ani e-mail
+      nejsou potřeba.
+    </li>
+    <li>Kontakty přidávejte přes QR kód nebo zvací odkaz, aby bylo šifrování ověřené.</li>
   </ol>
 </ToolCard>
 
@@ -207,6 +298,44 @@ První krok, ten, který vás ochrání nejrychleji: opusťte WhatsApp, Messenge
   </ol>
 </ToolCard>
 
+<ToolCard tool="t-meshtastic">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Rádio bez sítě</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Textové zprávy přenášené <b>rádiem LoRa</b> ze zařízení na zařízení, bez mobilní sítě a
+    internetu. Telefon se k zařízení připojuje přes Bluetooth.
+  </Fragment>
+  <Fragment slot="why">
+    Žádný operátor, žádný server: není co vypnout ani k čemu nutit. Dosah několik kilometrů a síť
+    typu mesh, která zprávy přeposílá.
+  </Fragment>
+  <Fragment slot="who">
+    Turistika, místa bez signálu, výpadky a krize. Potřebujete hardware (jedno rádiové zařízení na
+    osobu) a musíte se smířit s krátkými a pomalými zprávami.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Omezení, která je třeba znát</span>
+    <p>
+      Výchozí kanál si může přečíst kdokoli. Přímé zprávy jsou šifrované (firmware 2.5 a novější),
+      rádiová metadata však zůstávají viditelná. Meshtastic nekomunikuje s konkurenčním projektem
+      MeshCore.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Kupte podporované zařízení (seznam na <b>meshtastic.org</b>) a nainstalujte aplikaci.
+    </li>
+    <li>Zvolte rádiový region své země: povolené frekvence a doba vysílání se liší.</li>
+    <li>
+      Vytvořte soukromý kanál s náhodným klíčem: výchozí veřejný kanál používá klíč, který zná
+      každý.
+    </li>
+  </ol>
+</ToolCard>
+
 <ToolCard tool="t-molly">
   <Fragment slot="tags">
     <span class="tool-tag">🔴 Pokročilý</span>
@@ -238,9 +367,9 @@ První krok, ten, který vás ochrání nejrychleji: opusťte WhatsApp, Messenge
 <div class="box">
   <span class="lab">Proti Chat Control</span>
   <p>
-    Upřednostňujte aplikace <strong>open-source</strong>{' '}
-    <strong>mimo velké americké platformy</strong>, jejichž týmy se veřejně zavázaly raději opustit
-    EU, než zavést skenování na straně klienta (Signal to učinil). Připomínka: pokud skenování
-    vynucuje samotný OS, aplikace vám nepomůže, proto sekce 12.
+    Upřednostňujte aplikace <strong>open-source</strong>, jejichž týmy se veřejně zavázaly raději
+    opustit evropský trh, než zavést skenování na straně klienta (Signal to učinil), nebo
+    decentralizované aplikace bez centrálního poskytovatele, kterého by bylo možné k něčemu donutit.
+    Připomínka: pokud skenování vynucuje samotný OS, aplikace vám nepomůže, proto sekce 12.
   </p>
 </div>
