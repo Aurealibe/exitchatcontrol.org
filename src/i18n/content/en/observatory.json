@@ -128,8 +128,8 @@
     "body": "Section 702, the warrantless collection of communications transiting US providers, was due to expire in April 2026. Two short extensions later, the authority lapses mid-June with Congress deadlocked over requiring a warrant for FBI searches of Americans. But existing certifications remain valid until March 2027: the machine runs another year on no renewed basis. A \"temporary\" surveillance power never quite switches off."
   },
   "uk-under16-ban": {
-    "title": "UK: social media banned for under-16s",
-    "body": "The government announces a social-media ban for under-16s: Snapchat, TikTok, YouTube, Instagram, Facebook, X (messaging apps excluded), regulations laid before Christmas 2026, in force by spring 2027. To ban minors, everyone's age must be checked — “highly effective” age assurance becomes the entry condition for social media itself, no longer just for adult sites."
+    "title": "United Kingdom: social media banned for under-16s",
+    "body": "The government announces a social media ban for under-16s (Snapchat, TikTok, YouTube, Instagram, Facebook, X; messaging apps such as WhatsApp and Signal excluded). Regulations are expected before Parliament by Christmas 2026, with entry into force planned for spring 2027. The scheme relies on “highly effective” age assurance, which Ofcom is to study: it would apply to every user of these platforms."
   },
   "euro-numerique-econ": {
     "title": "Digital euro: \"not programmable\", yet conditional",
@@ -140,27 +140,27 @@
     "body": "The Commission proposes Europol’s biggest overhaul in 25 years: budget up from €1.9bn to €3bn, 900 extra staff, a mandate extended to encrypted communications, crypto-assets and AI-assisted fraud; a \"technology and innovation hub\" whose encryption work follows the ProtectEU roadmap (which schedules a Europol decryption capability by 2030); an automated \"European police data space\". ProtectEU’s armed wing: a supranational agency one MEP already warns \"must not lead to mass surveillance\"."
   },
   "ai-act-omnibus-delay": {
-    "title": "High-risk AI: the safeguards can wait until 2027",
-    "body": "The Council seals the “Omnibus VII”: the AI Act obligations for Annex III high-risk systems — biometrics, policing, migration, employment — due to apply on 2 August 2026 are pushed back to 2 December 2027 (stand-alone systems) and 2 August 2028 (embedded ones), in the name of “simplification”. The same text bans AI-generated sexual deepfakes and CSAM — but the safeguards on surveillance AI will wait."
+    "title": "AI Act: high-risk obligations postponed",
+    "body": "The Council gives final approval to the “Omnibus VII” AI Act simplification. Obligations for high-risk AI systems (including biometrics, policing, migration, employment), due on 2 August 2026, will apply on 2 December 2027 (stand-alone systems) and 2 August 2028 (systems embedded in products). The text also bans AI-generated non-consensual sexual content and CSAM."
   },
   "pega-kouloglou": {
     "title": "Pegasus in Parliament: the watchdog was being watched",
     "body": "Citizen Lab reveals that MEP Stelios Kouloglou, a substitute member of the PEGA committee, the very body that investigated Pegasus and spyware abuse in Europe, was hacked with Pegasus while serving on it (infections dated 21 October 2022 and 6–7 March 2023), with possible access to confidential deliberations. Citizen Lab explicitly declines to attribute the attack; a coalition of NGOs demands an EU response. Spying on the body tasked with overseeing spyware is the ultimate inversion of democratic oversight, and nobody is named responsible."
   },
   "scotus-texas-app-store": {
-    "title": "Texas: the app store checks everyone's age, and the Supreme Court lets it stand",
-    "body": "The Supreme Court declines (docket 25A1390, CCIA v. Paxton) to lift the Texas App Store Accountability Act: Apple and Google must verify the age of every app-store user in Texas and require parental consent for minors, while the First Amendment challenge is litigated on the merits. Identity checks no longer guard one site's door: they guard the whole app store."
+    "title": "Texas: Supreme Court lets app-store age verification stand",
+    "body": "The Supreme Court declines to vacate the stay of the injunction (No. 25A1390, CCIA v. Paxton): Texas's App Store Accountability Act applies. Apple and Google must verify the age of app-store users in Texas and obtain parental consent for minors, while the First Amendment challenge continues on the merits. The order gives no reasons."
   },
   "ripost-vsa-supprime": {
-    "title": "RIPOST: the algorithmic-CCTV extension deleted at first reading",
-    "body": "The National Assembly adopts the RIPOST public-order bill at first reading, but Article 19 — which extended the Olympics-era algorithmic video-surveillance experiment until 31 December 2030 and widened its scope — was deleted during examination, as was Article 22 (video surveillance in police custody). The rampart holds at this stage; the parliamentary shuttle continues."
+    "title": "RIPOST: algorithmic video-surveillance extension removed",
+    "body": "The French National Assembly adopts the RIPOST bill at first reading (366 to 182). Article 19, which extended to 31 December 2030 and widened the algorithmic video-surveillance trial inherited from the 2024 Olympics, had been deleted in the Law Committee; it was not restored in plenary."
   },
   "euro-numerique-mandat": {
-    "title": "Digital euro: Parliament confirms its mandate, trilogues begin",
-    "body": "The plenary confirms the negotiating mandate (416 for, 169 against): trilogues with the Council open on 13 July. The mandate claims safeguards — cash protections, transaction verification without exposing personal data — and leaves the holding cap to the Commission on the ECB's recommendation. The decisive step toward traceable money is taken; the safeguards remain to be negotiated."
+    "title": "Digital euro: Parliament confirms its negotiating mandate",
+    "body": "The plenary confirms the negotiating mandate (416 in favour, 169 against, 22 abstentions) after the ECON committee vote was challenged; trilogues with the Council open on 13 July. The mandate includes protections for cash and transaction checks without exposing personal data, and leaves the holding limit to the Commission, on a recommendation from the ECB."
   },
   "ofcom-fapello": {
-    "title": "UK: the first heavy fines for missing age checks",
-    "body": "Ofcom fines the operator of fapello.com £630,000: £600,000 for lacking the “highly effective” age assurance the Online Safety Act requires, £30,000 for ignoring a legally binding information request. The identity-check infrastructure is no longer a principle: it is now punitive, site by site."
+    "title": "United Kingdom: £630,000 fine for missing age checks",
+    "body": "Ofcom fines the operator of a pornography site £630,000: £600,000 for lacking the “highly effective” age assurance required by the Online Safety Act, £30,000 for not answering a legally binding information request. It is not the first such penalty: YoungTek Solutions was fined £600,000 in May 2026."
   }
 }

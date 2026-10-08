@@ -414,18 +414,7 @@
     "status": "en_vigueur",
     "src": {
       "label": "SCOTUS · docket 25A1390",
-      "href": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/25a1390.html"
-    }
-  },
-  {
-    "id": "ripost-vsa-supprime",
-    "date": "2026-07-07",
-    "region": "fr",
-    "themes": ["aibio"],
-    "status": "rejete",
-    "src": {
-      "label": "Assemblée nationale · dossier RIPOST",
-      "href": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N53980"
+      "href": "https://www.supremecourt.gov/docket/docketfiles/html/public/25a1390.html"
     }
   },
   {
@@ -448,6 +437,17 @@
     "src": {
       "label": "Ofcom · 9 July 2026",
       "href": "https://www.ofcom.org.uk/online-safety/protecting-children/ofcom-fines-porn-company-630000-for-age-check-failings"
+    }
+  },
+  {
+    "id": "ripost-vsa-supprime",
+    "date": "2026-07-15",
+    "region": "fr",
+    "themes": ["aibio"],
+    "status": "rejete",
+    "src": {
+      "label": "Assemblée nationale · dossier RIPOST",
+      "href": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N53980"
     }
   }
 ]

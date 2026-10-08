@@ -138,5 +138,29 @@
   "pega-kouloglou": {
     "title": "Pegasus im Parlament: Der Wachhund wurde beobachtet",
     "body": "Citizen Lab enthüllt, dass der Europaabgeordnete Stelios Kouloglou während seiner Amtszeit mit Pegasus gehackt wurde (Infektionen vom 21. Oktober 2022 sowie 6. und 7. März 2023). Als stellvertretendes Mitglied des PEGA-Ausschusses, der den Missbrauch von Pegasus und anderer Spyware in Europa untersuchte, hatte er möglicherweise Zugang zu vertraulichen Beratungen. Citizen Lab weist den Angriff ausdrücklich keinem Urheber zu; eine Koalition von NGOs fordert eine Reaktion der EU. Das Ausspionieren eines mit der Kontrolle von Spyware beauftragten Gremiums kehrt demokratische Aufsicht ins Gegenteil – und niemand wird als verantwortlich benannt."
+  },
+  "uk-under16-ban": {
+    "title": "Vereinigtes Königreich: soziale Medien für unter 16-Jährige verboten",
+    "body": "Die Regierung kündigt ein Social-Media-Verbot für unter 16-Jährige an (Snapchat, TikTok, YouTube, Instagram, Facebook, X; Messenger wie WhatsApp und Signal ausgenommen). Die Verordnungen sollen bis Weihnachten 2026 ins Parlament, das Inkrafttreten ist für Frühjahr 2027 geplant. Das Vorhaben stützt sich auf eine „hochwirksame“ Altersprüfung, die Ofcom untersuchen soll: Sie würde alle Nutzer dieser Plattformen betreffen."
+  },
+  "ai-act-omnibus-delay": {
+    "title": "AI Act: Pflichten für Hochrisiko-KI verschoben",
+    "body": "Der Rat billigt endgültig das „Omnibus VII“ zur Vereinfachung des AI Act. Die Pflichten für Hochrisiko-KI-Systeme (u. a. Biometrie, Polizei, Migration, Beschäftigung), ursprünglich ab 2. August 2026, gelten ab 2. Dezember 2027 (eigenständige Systeme) bzw. 2. August 2028 (in Produkte eingebettete Systeme). Der Text verbietet zudem KI-generierte nicht einvernehmliche sexuelle Inhalte und CSAM."
+  },
+  "scotus-texas-app-store": {
+    "title": "Texas: Supreme Court lässt Altersprüfung in App-Stores bestehen",
+    "body": "Der Supreme Court lehnt es ab, die Aussetzung der einstweiligen Verfügung aufzuheben (Nr. 25A1390, CCIA v. Paxton): Der texanische App Store Accountability Act gilt. Apple und Google müssen das Alter von App-Store-Nutzern in Texas prüfen und für Minderjährige die Zustimmung der Eltern einholen, während die Klage nach dem Ersten Verfassungszusatz in der Hauptsache weiterläuft. Die Anordnung ist nicht begründet."
+  },
+  "ripost-vsa-supprime": {
+    "title": "RIPOST: Verlängerung der algorithmischen Videoüberwachung gestrichen",
+    "body": "Die französische Nationalversammlung nimmt den RIPOST-Gesetzentwurf in erster Lesung an (366 zu 182 Stimmen). Artikel 19, der den Versuch mit algorithmischer Videoüberwachung aus den Olympischen Spielen 2024 bis 31. Dezember 2030 verlängern und ausweiten sollte, war im Rechtsausschuss gestrichen worden; im Plenum wurde er nicht wiederhergestellt."
+  },
+  "euro-numerique-mandat": {
+    "title": "Digitaler Euro: Parlament bestätigt sein Verhandlungsmandat",
+    "body": "Das Plenum bestätigt das Verhandlungsmandat (416 dafür, 169 dagegen, 22 Enthaltungen), nachdem die Abstimmung im ECON-Ausschuss angefochten worden war; die Trilogverhandlungen mit dem Rat beginnen am 13. Juli. Das Mandat sieht Schutz für Bargeld und Transaktionsprüfungen ohne Offenlegung personenbezogener Daten vor und überlässt die Haltegrenze der Kommission, auf Empfehlung der EZB."
+  },
+  "ofcom-fapello": {
+    "title": "Vereinigtes Königreich: 630.000 £ Strafe wegen fehlender Altersprüfung",
+    "body": "Ofcom verhängt gegen den Betreiber einer Pornoseite 630.000 £: 600.000 £ wegen fehlender „hochwirksamer“ Altersprüfung nach dem Online Safety Act, 30.000 £ wegen Nichtbeantwortung eines verbindlichen Auskunftsersuchens. Es ist nicht die erste Sanktion dieser Art: YoungTek Solutions wurde im Mai 2026 mit 600.000 £ belegt."
   }
 }

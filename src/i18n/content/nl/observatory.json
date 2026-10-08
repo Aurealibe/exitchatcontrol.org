@@ -129,8 +129,8 @@
     "body": "Sectie 702, het zonder bevelschrift verzamelen van communicatie die via Amerikaanse providers loopt, zou in april 2026 verstrijken. Twee korte verlengingen later vervalt de bevoegdheid medio juni, met een Congres dat muurvast zit op de vraag of FBI-zoekopdrachten naar Amerikanen een bevelschrift vereisen. Maar de bestaande certificeringen blijven geldig tot maart 2027: de machine draait nog een jaar door zonder hernieuwde grondslag. Een \"tijdelijke\" surveillancebevoegdheid gaat nooit helemaal uit."
   },
   "uk-under16-ban": {
-    "title": "VK: sociale media verboden voor jongeren onder 16",
-    "body": "De regering kondigt een socialemediaverbod voor min-16-jarigen aan: Snapchat, TikTok, YouTube, Instagram, Facebook, X (berichtenapps uitgezonderd), regelgeving vóór Kerstmis 2026, van kracht in het voorjaar van 2027. Om minderjarigen te weren moet ieders leeftijd worden gecontroleerd — “zeer doeltreffende” leeftijdsverificatie wordt de toegangsvoorwaarde voor sociale media zelf, niet langer alleen voor adult-sites."
+    "title": "Verenigd Koninkrijk: sociale media verboden onder de 16",
+    "body": "De regering kondigt een verbod op sociale media aan voor jongeren onder de 16 (Snapchat, TikTok, YouTube, Instagram, Facebook, X; berichtenapps zoals WhatsApp en Signal uitgezonderd). De regels moeten vóór Kerstmis 2026 naar het parlement, met inwerkingtreding gepland in het voorjaar van 2027. Het systeem steunt op ‘zeer effectieve’ leeftijdsverificatie, die Ofcom moet onderzoeken: die zou gelden voor alle gebruikers van deze platforms."
   },
   "euro-numerique-econ": {
     "title": "Digitale euro: \"niet programmeerbaar\", maar wel conditioneel",
@@ -141,27 +141,27 @@
     "body": "De Commissie stelt de grootste hervorming van Europol in 25 jaar voor: budget van €1,9 mld naar €3 mld, 900 extra personeelsleden, een mandaat uitgebreid naar versleutelde communicatie, cryptoactiva en AI-ondersteunde fraude; een \"technology and innovation hub\" waarvan het versleutelingswerk de ProtectEU-routekaart volgt (die tegen 2030 een ontsleutelingscapaciteit voor Europol inplant); een geautomatiseerde \"Europese politiedataruimte\". De gewapende arm van ProtectEU: een supranationaal agentschap waarvan één europarlementariër nu al waarschuwt dat het \"niet tot massasurveillance mag leiden\"."
   },
   "ai-act-omnibus-delay": {
-    "title": "Hoogrisico-AI: de waarborgen wachten tot 2027",
-    "body": "De Raad bezegelt de “Omnibus VII”: de AI Act-verplichtingen voor hoogrisicosystemen van bijlage III — biometrie, politie, migratie, werk — die op 2 augustus 2026 zouden gelden, schuiven op naar 2 december 2027 (op zichzelf staande systemen) en 2 augustus 2028 (ingebedde), in naam van “vereenvoudiging”. Dezelfde tekst verbiedt AI-gegenereerde seksuele deepfakes en CSAM — maar de waarborgen rond surveillance-AI wachten."
+    "title": "AI Act: verplichtingen voor hoog risico uitgesteld",
+    "body": "De Raad keurt de vereenvoudiging van de AI Act (“Omnibus VII”) definitief goed. De verplichtingen voor AI-systemen met een hoog risico (onder meer biometrie, politie, migratie, werk), gepland op 2 augustus 2026, gelden vanaf 2 december 2027 (zelfstandige systemen) en 2 augustus 2028 (in producten ingebouwde systemen). De tekst verbiedt ook door AI gegenereerde niet-consensuele seksuele inhoud en CSAM."
   },
   "pega-kouloglou": {
     "title": "Pegasus in het Parlement: de waakhond werd zelf bewaakt",
     "body": "Citizen Lab onthult dat europarlementariër Stelios Kouloglou, plaatsvervangend lid van de PEGA-commissie (nota bene het orgaan dat Pegasus en spywaremisbruik in Europa onderzocht), met Pegasus werd gehackt terwijl hij er zitting in had (infecties gedateerd op 21 oktober 2022 en 6–7 maart 2023), met mogelijke toegang tot vertrouwelijke beraadslagingen. Citizen Lab weigert uitdrukkelijk de aanval te attribueren; een coalitie van ngo's eist een Europese reactie. Het orgaan bespioneren dat toezicht moet houden op spyware is de ultieme omkering van democratische controle, en niemand wordt verantwoordelijk genoemd."
   },
   "scotus-texas-app-store": {
-    "title": "Texas: de appstore controleert ieders leeftijd, en het Hooggerechtshof laat het toe",
-    "body": "Het Hooggerechtshof weigert (docket 25A1390, CCIA v. Paxton) de Texaanse App Store Accountability Act te schorsen: Apple en Google moeten de leeftijd van elke appstore-gebruiker in Texas verifiëren en ouderlijke toestemming eisen voor minderjarigen, terwijl de First Amendment-zaak ten gronde wordt uitgevochten. Identiteitscontrole bewaakt niet langer de deur van één site: ze bewaakt de hele appstore."
+    "title": "Texas: Hooggerechtshof laat leeftijdscontrole in app stores staan",
+    "body": "Het Hooggerechtshof weigert de schorsing van het bevel op te heffen (nr. 25A1390, CCIA v. Paxton): de Texaanse App Store Accountability Act is van toepassing. Apple en Google moeten de leeftijd van app-storegebruikers in Texas controleren en ouderlijke toestemming vragen voor minderjarigen, terwijl de zaak over het Eerste Amendement ten gronde doorloopt. Het bevel is niet gemotiveerd."
   },
   "ripost-vsa-supprime": {
-    "title": "RIPOST: de verlenging van algoritmische cameratoezicht geschrapt in eerste lezing",
-    "body": "De Nationale Vergadering neemt de RIPOST-wet in eerste lezing aan, maar artikel 19 — dat het experiment met algoritmisch cameratoezicht uit de Spelen van 2024 tot 31 december 2030 verlengde en verruimde — werd tijdens de behandeling geschrapt, net als artikel 22 (videobewaking in politiecellen). De borstwering houdt in dit stadium stand; de parlementaire pendel gaat verder."
+    "title": "RIPOST: verlenging van algoritmische camerabewaking geschrapt",
+    "body": "De Franse Assemblée nationale neemt het RIPOST-wetsvoorstel in eerste lezing aan (366 tegen 182). Artikel 19, dat het experiment met algoritmische camerabewaking uit de Olympische Spelen van 2024 verlengde tot 31 december 2030 en uitbreidde, was in de commissie geschrapt; het werd in de plenaire vergadering niet hersteld."
   },
   "euro-numerique-mandat": {
-    "title": "Digitale euro: het Parlement bevestigt zijn mandaat, trilogen van start",
-    "body": "De plenaire vergadering bevestigt het onderhandelingsmandaat (416 voor, 169 tegen): de trilogen met de Raad beginnen op 13 juli. Het mandaat claimt waarborgen — bescherming van contant geld, transactieverificatie zonder persoonsgegevens bloot te leggen — en laat het bezitplafond aan de Commissie op aanbeveling van de ECB. De beslissende stap naar traceerbaar geld is gezet; de waarborgen moeten nog worden onderhandeld."
+    "title": "Digitale euro: Parlement bevestigt onderhandelingsmandaat",
+    "body": "De plenaire vergadering bevestigt het onderhandelingsmandaat (416 voor, 169 tegen, 22 onthoudingen) nadat de stemming in de ECON-commissie was aangevochten; de trilogen met de Raad starten op 13 juli. Het mandaat bevat bescherming voor contant geld en transactiecontroles zonder blootstelling van persoonsgegevens, en laat de bezitslimiet over aan de Commissie, op aanbeveling van de ECB."
   },
   "ofcom-fapello": {
-    "title": "VK: de eerste zware boetes voor ontbrekende leeftijdscontroles",
-    "body": "Ofcom legt de exploitant van fapello.com £630.000 op: £600.000 voor het ontbreken van de “zeer doeltreffende” leeftijdsverificatie die de Online Safety Act vereist, £30.000 voor het negeren van een juridisch bindend informatieverzoek. De identiteitscontrole-infrastructuur is geen principe meer: ze is nu bestraffend, site per site."
+    "title": "Verenigd Koninkrijk: boete van £630.000 wegens ontbrekende leeftijdscontrole",
+    "body": "Ofcom legt de exploitant van een pornosite een boete van £630.000 op: £600.000 voor het ontbreken van de ‘zeer effectieve’ leeftijdsverificatie die de Online Safety Act eist, £30.000 voor het niet beantwoorden van een bindend informatieverzoek. Het is niet de eerste sanctie van dit soort: YoungTek Solutions kreeg in mei 2026 een boete van £600.000."
   }
 }

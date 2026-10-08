@@ -129,7 +129,7 @@
   },
   "uk-under16-ban": {
     "title": "Royaume-Uni : réseaux sociaux interdits aux moins de 16 ans",
-    "body": "Le gouvernement annonce l'interdiction des réseaux sociaux aux moins de 16 ans : Snapchat, TikTok, YouTube, Instagram, Facebook, X (messageries exclues), règlements déposés avant Noël 2026, entrée en vigueur au printemps 2027. Pour bannir les mineurs, il faudra vérifier l'âge de tout le monde — la vérification d'identité « hautement efficace » devient la condition d'accès au réseau social lui-même, pas seulement aux sites adultes."
+    "body": "Le gouvernement annonce l'interdiction des réseaux sociaux aux moins de 16 ans (Snapchat, TikTok, YouTube, Instagram, Facebook, X ; messageries comme WhatsApp et Signal exclues). Textes attendus au Parlement avant Noël 2026, entrée en vigueur prévue au printemps 2027. Le dispositif s'appuie sur une vérification d'âge « hautement efficace », dont l'Ofcom doit étudier la mise en œuvre : elle concernerait l'ensemble des utilisateurs de ces plateformes."
   },
   "euro-numerique-econ": {
     "title": "Euro numérique : « non programmable », mais conditionnel",
@@ -140,27 +140,27 @@
     "body": "La Commission propose la plus grande réforme d’Europol en 25 ans : budget de 1,9 à 3 milliards d’euros, 900 agents de plus, mandat étendu aux communications chiffrées, à la crypto et à la fraude assistée par IA ; un « hub technologie et innovation » dont les travaux sur le chiffrement suivent la feuille de route ProtectEU (qui programme une capacité de décryptage pour Europol d’ici 2030) ; « espace européen des données policières » à partage automatisé. Le bras armé de ProtectEU : une agence supranationale dont une eurodéputée prévient déjà qu’elle « ne doit pas mener à une surveillance de masse »."
   },
   "ai-act-omnibus-delay": {
-    "title": "IA à haut risque : les garde-fous attendront 2027",
-    "body": "Le Conseil entérine l'« Omnibus VII » : les obligations de l'AI Act pour les systèmes à haut risque de l'annexe III — biométrie, police, migration, emploi — qui devaient s'appliquer le 2 août 2026 sont repoussées au 2 décembre 2027 (systèmes autonomes) et au 2 août 2028 (systèmes embarqués), au nom de la « simplification ». Le même texte interdit les deepfakes sexuels et le CSAM générés par IA — mais les garde-fous sur l'IA de surveillance, eux, attendront."
+    "title": "AI Act : les obligations « haut risque » repoussées",
+    "body": "Le Conseil adopte définitivement l'« Omnibus VII » de simplification de l'AI Act. Les obligations pour les systèmes d'IA à haut risque (dont biométrie, police, migration, emploi), prévues le 2 août 2026, s'appliqueront le 2 décembre 2027 (systèmes autonomes) et le 2 août 2028 (systèmes intégrés à des produits). Le texte interdit aussi les contenus sexuels non consentis et le CSAM générés par IA."
   },
   "pega-kouloglou": {
     "title": "Pegasus au Parlement : le contrôleur était surveillé",
     "body": "Le Citizen Lab révèle que l’eurodéputé Stelios Kouloglou, membre suppléant de la commission PEGA (celle-là même qui enquêtait sur Pegasus et les abus de spyware en Europe), a été piraté par Pegasus pendant qu’il y siégeait (infections datées du 21 octobre 2022 et des 6-7 mars 2023), avec accès possible aux délibérations confidentielles. Le Citizen Lab décline explicitement toute attribution ; une coalition d’ONG exige une réaction de l’UE. Espionner l’organe chargé de contrôler le spyware est l’inversion ultime du contrôle démocratique, et personne n’est désigné responsable."
   },
   "scotus-texas-app-store": {
-    "title": "Texas : l'app store vérifie l'âge de tout le monde, la Cour suprême laisse faire",
-    "body": "La Cour suprême refuse (dossier 25A1390, CCIA v. Paxton) de suspendre l'App Store Accountability Act texan : Apple et Google doivent vérifier l'âge de tous les utilisateurs d'app store au Texas et exiger un consentement parental pour les mineurs, pendant que la contestation au titre du Premier amendement se plaide au fond. La vérification d'identité ne garde plus la porte d'un site : elle garde la porte du magasin d'applications tout entier."
+    "title": "Texas : la Cour suprême laisse s'appliquer la vérification d'âge des app stores",
+    "body": "La Cour suprême refuse de lever la suspension de l'injonction (dossier 25A1390, CCIA v. Paxton) : l'App Store Accountability Act texan s'applique. Apple et Google doivent vérifier l'âge des utilisateurs d'app store au Texas et obtenir un consentement parental pour les mineurs, pendant que la contestation au titre du Premier amendement se poursuit au fond. L'ordonnance n'est pas motivée."
   },
   "ripost-vsa-supprime": {
-    "title": "RIPOST : l'extension de la VSA supprimée en première lecture",
-    "body": "L'Assemblée adopte le projet de loi RIPOST en première lecture, mais l'article 19 — qui prolongeait jusqu'au 31 décembre 2030 et élargissait l'expérimentation de la vidéoprotection algorithmique héritée des JO 2024 — a été supprimé lors de l'examen, comme l'article 22 (vidéosurveillance en garde à vue). Le rempart tient à ce stade ; la navette parlementaire continue."
+    "title": "RIPOST : l'extension de la vidéoprotection algorithmique retirée",
+    "body": "L'Assemblée adopte le projet de loi RIPOST en première lecture (366 voix contre 182). L'article 19, qui prolongeait jusqu'au 31 décembre 2030 et élargissait l'expérimentation de la vidéoprotection algorithmique issue des JO 2024, avait été supprimé en commission des lois ; il n'a pas été rétabli en séance."
   },
   "euro-numerique-mandat": {
-    "title": "Euro numérique : le Parlement confirme son mandat, trilogues lancés",
-    "body": "La plénière confirme le mandat de négociation (416 pour, 169 contre) : les trilogues avec le Conseil s'ouvrent le 13 juillet. Le mandat revendique des garde-fous — protections du cash, vérification des transactions sans exposer les données personnelles — et laisse le plafond de détention à la Commission sur recommandation de la BCE. L'étape décisive vers la monnaie traçable est franchie ; les garde-fous, eux, restent à négocier."
+    "title": "Euro numérique : le Parlement confirme son mandat de négociation",
+    "body": "La plénière confirme le mandat de négociation (416 pour, 169 contre, 22 abstentions) après la contestation du vote de la commission ECON ; les trilogues avec le Conseil s'ouvrent le 13 juillet. Le mandat prévoit des protections pour l'argent liquide et une vérification des transactions sans exposition des données personnelles, et confie à la Commission la fixation du plafond de détention, sur recommandation de la BCE."
   },
   "ofcom-fapello": {
-    "title": "Royaume-Uni : premières grosses amendes pour absence de contrôle d'âge",
-    "body": "L'Ofcom inflige 630 000 £ à l'exploitant de fapello.com : 600 000 £ pour absence de la vérification d'âge « hautement efficace » exigée par l'Online Safety Act, 30 000 £ pour non-réponse à une demande d'information contraignante. L'infrastructure de contrôle d'identité n'est plus un principe : elle est désormais punitive, site par site."
+    "title": "Royaume-Uni : 630 000 £ d'amende pour absence de contrôle d'âge",
+    "body": "L'Ofcom inflige 630 000 £ à l'exploitant d'un site pornographique : 600 000 £ pour absence de la vérification d'âge « hautement efficace » exigée par l'Online Safety Act, 30 000 £ pour non-réponse à une demande d'information contraignante. Ce n'est pas la première sanction de ce type : YoungTek Solutions avait reçu 600 000 £ d'amende en mai 2026."
   }
 }
