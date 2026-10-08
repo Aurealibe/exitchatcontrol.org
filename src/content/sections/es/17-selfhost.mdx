@@ -1,0 +1,126 @@
+---
+id: 'selfhost'
+part: 10
+order: 17
+title: 'Autoalojamiento'
+---
+
+<p class="part-num">
+  PARTE 16 · AUTODEFENSA AVANZADA · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Autoalojamiento
+
+El nivel último de soberanía: aloja tus servicios tú mismo. Tus datos viven en tu hardware, bajo la jurisdicción que elijas.
+
+<ToolCard tool="t-yunohost">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Servidor llave en mano</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Sistemas que convierten un PC viejo o una Raspberry Pi en un servidor personal, con un catálogo de apps
+    que instalas en unos pocos clics.
+  </Fragment>
+  <Fragment slot="why">
+    El autoalojamiento suena intimidante, pero estas herramientas hacen el trabajo pesado. <b>YunoHost</b>{' '}
+    incluso ejecuta tu propio correo y single sign-on. <b>Umbrel</b> ofrece una tienda de más de 300 apps,
+    popular entre gente de privacidad y Bitcoin. <b>Start9</b> cifra copias de seguridad y da a cada
+    servicio una dirección Tor por defecto.
+  </Fragment>
+  <Fragment slot="who">
+    Perfiles avanzados listos para pasar una tarde construyendo su propia nube. Es la réplica estructural
+    más radical al Control de Chat.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Consigue un ordenador viejo, una Raspberry Pi, o alquila un pequeño servidor (VPS) en un país
+      protector.
+    </li>
+    <li>Instala YunoHost, Umbrel o Start9 siguiendo su guía oficial.</li>
+    <li>Desde el catálogo, instala Nextcloud, un servidor Matrix, una galería de fotos, etc.</li>
+    <li>
+      Accede a él de forma privada con Tailscale (sección VPN) en lugar de exponer el servidor al público.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nextcloud">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Reemplaza todo Google</span>
+    <span class="tool-tag">🇩🇪 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Tu propia nube: archivos, calendario, contactos, fotos, notas y documentos colaborativos, en tu
+    servidor.
+  </Fragment>
+  <Fragment slot="why">
+    Es el reemplazo completo de Google Drive, Calendar y Contacts, pero en casa. Tú eliges la jurisdicción
+    y nadie más controla tus archivos. Nota: es privacidad "tu servidor", no cifrado de extremo a extremo
+    por defecto; debes mantenerlo actualizado.
+  </Fragment>
+  <Fragment slot="who">
+    Autoalojadores. El camino más fácil es instalarlo vía YunoHost o Umbrel.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-synapse">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Tu servidor de chat</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Tu propio servidor Matrix de chat, alimentando Element y llamadas cifradas.
+  </Fragment>
+  <Fragment slot="why">
+    Al alojar el servidor, también controlas los <b>metadatos</b> (quién habla con quién, cuándo), el punto
+    débil de Matrix en federación. Es chat comunitario que solo tú posees.
+  </Fragment>
+  <Fragment slot="who">
+    Comunidades, colectivos, redacciones que quieren su propio espacio federado independiente.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-website">
+  <Fragment slot="name">Tu propio sitio web</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Haz tu voz a prueba de bans</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un sitio propio, en tu propio dominio, donde tu contenido no depende de ninguna plataforma.
+  </Fragment>
+  <Fragment slot="why">
+    El día que una red elimine o suspenda tu cuenta, todo tu trabajo se desvanece. Un sitio personal es tu
+    ancla: tus publicaciones permanecen ahí, archivadas y actualizadas, pase lo que pase. Es exactamente lo
+    que hacen las cuentas de información cautelosas. Un sitio estático (construido con Hugo, Astro o
+    Jekyll) es suficiente y se publica casi gratis; para un blog dinámico, un WordPress o Ghost autoalojado
+    hace el trabajo.
+  </Fragment>
+  <Fragment slot="who">
+    Cuentas de información, creadores, activistas, cualquiera que publique y tema la censura de
+    plataformas.
+  </Fragment>
+  <ol slot="install">
+    <li>Compra un nombre de dominio (idealmente de un registrador respetuoso con la privacidad).</li>
+    <li>
+      Elige un generador de sitios estáticos (Astro, Hugo) y aloja la salida, o instala WordPress/Ghost en
+      tu servidor.
+    </li>
+    <li>
+      Siempre apunta a él desde tus cuentas sociales: tu audiencia te encuentra incluso si cae una cuenta.
+    </li>
+  </ol>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">El punto de la jurisdicción</span>
+  <p>
+    El autoalojamiento también significa elegir <em>dónde</em> viven tus datos. Un servidor en casa o en un
+    país protector escapa de los deberes de escaneo impuestos a las grandes plataformas. Es la réplica
+    estructural más radical al Control de Chat.
+  </p>
+</div>

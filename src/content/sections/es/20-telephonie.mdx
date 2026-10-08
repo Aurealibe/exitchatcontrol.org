@@ -1,0 +1,46 @@
+---
+id: 'telephonie'
+part: 12
+order: 20
+title: 'Telefonía & dispositivo físico'
+---
+
+<p class="part-num">
+  PARTE 19 · HARDWARE · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Telefonía &amp; dispositivo físico
+
+La mejor app es inútil si el propio dispositivo te traiciona. Aquí están las amenazas de hardware y los movimientos que las neutralizan.
+
+#### El número de teléfono es un rastreador
+
+Tu número vincula tu tarjeta SIM, tu dispositivo (su identificador IMEI), tu ubicación y tu identidad (la mayoría de países requieren DNI para comprar una SIM). Es el hilo que permite que todo se cruce.
+
+- Usa mensajeras **sin número** (SimpleX, Session) para contactos sensibles, y siempre prefiere Signal a SMS.
+- Para una identidad separada, una SIM "solo datos" o eSIM prepaga limita el vínculo en el punto de venta (verifica las reglas de tu país).
+
+#### IMSI-catchers &amp; la red telefónica
+
+Los "IMSI-catchers" (o "stingrays") son torres celulares falsas que fuerzan a los teléfonos a conectarse para poder registrar su identificador y a veces interceptar comunicaciones, a menudo degradando a 2G débilmente cifrado. En paralelo, un fallo antiguo de red (SS7) aún permite interceptar SMS y localizar teléfonos remotamente: una razón más para abandonar SMS.
+
+- **Desactiva 2G** en ajustes (posible en Android y GrapheneOS) para cortar el vector principal de intercepción.
+- En una protesta o área sensible, cambia a **modo avión** o mete el teléfono en una **bolsa Faraday** (que bloquea toda señal). La EFF incluso publica una herramienta gratuita, Rayhunter, para detectar IMSI-catchers.
+
+#### ¿Biometría o código de acceso?
+
+<div class="box warn">
+  <span class="lab">Un dedo puede forzarse, un código no</span>
+  <p>
+    Tu cara o dedo pueden aplicarse al sensor mientras estás retenido (en una frontera, durante un arresto);
+    una contraseña en tu cabeza no. Antes de una situación arriesgada, fuerza un retorno al código de
+    acceso: en iPhone, mantén el botón lateral y un botón de volumen (la pantalla "SOS"); en
+    Android/GrapheneOS, usa <b>Lockdown</b> en el menú de apagado, que desactiva la biometría hasta que se
+    introduce el PIN. Elige una frase de contraseña larga, no un PIN de cuatro dígitos. GrapheneOS incluso
+    ofrece un <b>PIN de coacción</b> que borra el teléfono.
+  </p>
+</div>
+
+#### Des-Microsoft, des-Apple
+
+No olvides el ordenador: Windows envía telemetría sin parar (y su función "Recall" intentó hacer capturas de pantalla continuamente), macOS reporta las apps que lanzas. La salida real es Linux (ver sección 12). Sin llegar a eso, desactiva la telemetría, el ID publicitario y "Recall", y añade un firewall de salida (como Little Snitch en Mac).

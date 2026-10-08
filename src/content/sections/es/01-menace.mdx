@@ -1,0 +1,151 @@
+---
+id: 'menace'
+part: 0
+order: 1
+title: 'Comprende la amenaza'
+---
+
+<p class="part-num">PARTE 00 · EL PORQUÉ</p>
+
+## Comprende la amenaza
+
+Antes de cambiar de herramientas, comprende contra qué te estás protegiendo. De lo contrario instalas aplicaciones al azar y te sientes seguro cuando no lo estás.
+
+### Chat Control 1.0 y 2.0, claramente
+
+"Chat Control" es el apodo de dos textos de la UE que permiten (o requerirían) escanear tus mensajes privados en busca de material de abuso sexual infantil (CSAM). El objetivo declarado es legítimo; el método, el escaneo masivo de las comunicaciones de personas no sospechosas, equivale a vigilancia masiva.
+
+<div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Chat Control 1.0</th>
+        <th>Chat Control 2.0 (CSAR)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Texto</td>
+        <td>Reglamento (UE) 2021/1232, derogación ePrivacy</td>
+        <td>Propuesta COM/2022/209 (Ylva Johansson, mayo 2022)</td>
+      </tr>
+      <tr>
+        <td>Escaneo</td>
+        <td>Voluntario, las plataformas <em>pueden</em> escanear</td>
+        <td>Obligatorio mediante "órdenes de detección" y "medidas de mitigación de riesgos"</td>
+      </tr>
+      <tr>
+        <td>Quién</td>
+        <td>Principalmente servicios estadounidenses no cifrados: Gmail, Messenger/Instagram, Skype, Snapchat, iCloud Mail, Xbox</td>
+        <td><strong>Todas</strong> las plataformas, incluidas las aplicaciones de mensajería cifradas de extremo a extremo</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Escaneo del lado del cliente: la escucha legal
+
+El corazón de Chat Control 2.0 es una técnica llamada **escaneo del lado del cliente**. La idea: en lugar de romper el cifrado en tránsito, se instala software **directamente en tu móvil** para inspeccionar cada mensaje, foto o enlace **antes** de que se cifre y envíe. Signal lo resumió en una línea: es "como malware en tu dispositivo".
+
+<div class="box honest">
+  <span class="lab">Honestidad técnica, lee dos veces</span>
+  <p>
+    Contra el escaneo del lado del cliente, <strong>ni una VPN ni el cifrado de extremo a extremo son suficientes</strong>{' '}
+    si la aplicación o el sistema operativo cooperan. El escaneo ocurre en el dispositivo, antes del
+    cifrado: la VPN no tiene nada que proteger, y el cifrado entra en acción demasiado tarde. Lo que realmente
+    te protege es elegir{' '}
+    <strong>software libre/de código abierto que se niega a implementar el escaneo</strong>, <strong>jurisdicciones</strong>{' '}
+    favorables, <strong>autoalojamiento</strong>, y{' '}
+    <strong>recuperar el control de tu dispositivo</strong> (un SO sin manipular). Todo lo demás en esta
+    guía sigue de esta verdad.
+  </p>
+</div>
+
+<div class="box warn">
+  <span class="lab">Lo peor de todo: la herramienta ni siquiera funciona</span>
+  <p>
+    La privacidad de todos es sacrificada por una tecnología que falla. El propio estudio del Parlamento Europeo
+    concluye que ningún sistema detecta este contenido sin una alta tasa de error (porque a través de
+    miles de millones de mensajes, incluso una tasa de falsos positivos mínima produce millones de acusaciones falsas).
+    Las cifras de la policía irlandesa lo muestran: de los informes automatizados, solo alrededor del 20% eran material real, y
+    más del 11% eran falsos positivos directos. Una investigación fundamental ("Bugs in Our Pockets," 2021) además
+    muestra que una vez instalado el escaneo del lado del cliente, es inevitablemente reutilizado (terrorismo,
+    derechos de autor, opiniones).
+  </p>
+</div>
+
+### El pretexto: "proteger a los niños"
+
+Nadie está en contra de proteger a los menores, que es exactamente lo que lo convierte en una palanca tan efectiva. Luchar contra el abuso infantil sirve como **caballo de Troya emocional**: ¿quién se atrevería a objetar? Bajo esa bandera, se hace aceptable un principio que, por sí solo, sería rechazado rotundamente, la inspección automatizada de las comunicaciones privadas de **cientos de millones de personas no sospechosas**. Los niños son el motivo declarado; el objetivo real es el cifrado y la privacidad de todos.
+
+La señal: las empresas que más presionan por este escaneo son aquellas cuyo modelo de negocio **es** la vigilancia. El 19 de marzo de 2026, un llamamiento conjunto instó a los legisladores de la UE a afianzar la detección "voluntaria", firmado por:
+
+<div class="namewall" aria-label="Google, LinkedIn, Snapchat, Microsoft, TikTok, Meta">
+  <span>Google</span>
+  <span>LinkedIn</span>
+  <span>Snapchat</span>
+  <span>Microsoft</span>
+  <span>TikTok</span>
+  <span>Meta</span>
+</div>
+
+<blockquote class="pull">
+  "No hacerlo sería irresponsable." El argumento de los gigantes tecnológicos para mantener vivo el escaneo de mensajes.
+</blockquote>
+
+Esos mismos actores incluso anunciaron que **seguirían escaneando** mensajes después de que la base legal caducara el 4 de abril de 2026. Se pide así a los ciudadanos que confíen la inspección de sus conversaciones íntimas a las mismas empresas conocidas por cosechar y monetizar sus datos. Esta es la cara real de Chat Control: un **ataque a la privacidad** envuelto en un motivo que nadie puede rechazar.
+
+### Esto no es "solo" vigilancia
+
+Intentan tranquilizarte: "es solo Gmail, Instagram, Snapchat, Messenger". Eso es falso, y es la parte más alarmante. Tres cambios se esconden detrás de ese menosprecio.
+
+1. **No es focalización, es red de arrastre.** Esto no vigila sospechosos: instala recopilación sistemática de las comunicaciones de poblaciones enteras. Vigilancia a escala estatal, continuamente.
+2. **Ya no es solo lectura, es el poder de bloquear.** El software que inspecciona un mensaje antes de enviarse también puede **negarse a enviarlo**. El escaneo del lado del cliente construye la infraestructura de censura previa: bloquear el discurso antes de que siquiera llegue a su destinatario.
+3. **Una vez existe la infraestructura, se reutiliza.** Un sistema construido "para los niños" se convierte en una herramienta de control de propósito general. El motivo cambia; la máquina permanece.
+
+<div class="box warn">
+  <span class="lab">El siguiente paso lógico: el euro digital</span>
+  <p>
+    La misma lógica está a punto de alcanzar tu dinero. El euro digital del BCE se basa en una moneda{' '}
+    <strong>rastreable</strong>, prohíbe a las empresas tener ninguno, y viene con un{' '}
+    <strong>límite de tenencia</strong>: el BCE ha propuesto unos 3.000 € por persona como
+    suposición de trabajo, y la posición votada en el comité del Parlamento Europeo (junio de 2026) deja el
+    límite para que lo establezca la Comisión por recomendación del BCE, revisado cada dos años. El BCE
+    jura que la moneda no será "programable", pero el límite y la rastreabilidad están muy presentes en
+    el menú. Cuando llegue, ¿dirás "relájate, es solo un límite"? Esa es la misma trampa retórica
+    que "es solo Gmail". La pregunta real nunca es qué se controla hoy, sino la infraestructura de control
+    que se está instalando para mañana.
+  </p>
+</div>
+
+### ¿Qué perfil eres?
+
+Ninguna herramienta es mágica y nadie necesita hacerlo todo. Encuentra tu perfil: cada sección te dice hasta dónde llegar.
+
+<div class="profiles">
+  <div class="profile p1">
+    <div class="lvl lvl-1">Principiante</div>
+    <h4>🟢 El ciudadano ordinario</h4>
+    <p>
+      Solo quieres que tus conversaciones y vida privada dejen de ser escaneadas y monetizadas. Objetivo:
+      privacidad cotidiana, sin convertirte en experto.
+    </p>
+  </div>
+  <div class="profile p2">
+    <div class="lvl lvl-2">Intermedio</div>
+    <h4>🟡 La cuenta anónima</h4>
+    <p>
+      Cuenta de información, página activista, creador: temes ser desanonimizado, doxeado o perder
+      tu cuenta. Objetivo: separar tu identidad real de tu identidad pública.
+    </p>
+  </div>
+  <div class="profile p3">
+    <div class="lvl lvl-3">Avanzado</div>
+    <h4>🔴 El denunciante</h4>
+    <p>
+      Periodista, activista, fuente, enfrentando a un adversario poderoso (estado, empleador). Objetivo: anonimato fuerte,
+      anti-correlación, pasar documentos sin ser atrapado.
+    </p>
+  </div>
+</div>

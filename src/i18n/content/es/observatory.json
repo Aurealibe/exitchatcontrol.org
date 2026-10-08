@@ -1,0 +1,142 @@
+{
+  "prum-2": {
+    "title": "Prüm II: búsqueda facial en todas las fuerzas policiales de Europa",
+    "body": "El Reglamento 2024/982 añade imágenes faciales, incluidas de sospechosos nunca condenados, al intercambio automatizado de datos policiales entre estados miembros, a través de un router central. Una capacidad de identificación biométrica paneuropea, adoptada sin debate nacional real; EDRi lo llama un riesgo de \"extralimitación estatal y vigilancia masiva\"."
+  },
+  "eidas-wallet": {
+    "title": "eIDAS 2.0: llega la cartera de identidad, navegadores bajo confianza estatal",
+    "body": "Cada estado miembro debe proporcionar una cartera de identidad digital europea (EUDI Wallet) antes del 24 de diciembre de 2026; bancos, telecomunicaciones, servicios de salud y plataformas muy grandes tendrán que aceptarla. La misma cartera probará tu edad, abrirá la cuenta, firmará el pago: una puerta de entrada, por lo tanto un punto de control; el EDPS documenta riesgos de seguimiento de uso cruzado. Y el artículo 45 obliga a los navegadores a reconocer certificados web designados por el estado: más de 500 investigadores advirtieron ([last-chance-for-eidas.org](https://last-chance-for-eidas.org/)) que esta es la infraestructura de intercepción de tráfico cifrado."
+  },
+  "going-dark": {
+    "title": "El plan \"Going Dark\": acceso policial por diseño",
+    "body": "El Grupo de Alto Nivel sobre \"acceso a datos\", integrado casi en su totalidad por representantes de las fuerzas del orden, adopta 42 recomendaciones el 21 de mayo de 2024: \"acceso legal por diseño\" (acceso policial incorporado en productos desde el tablero de dibujo), retención armonizada de metadatos, deber de identificar a cada usuario, mensajería incluida. En diciembre de 2024, 55 organizaciones de la sociedad civil, empresas y asociaciones firman una carta abierta calificando el resultado como [\"fracaso de la misión\"](https://edri.org/our-work/high-level-group-going-dark-outcome-a-mission-failure/): un modelo para la vigilancia masiva. Es la matriz de todo lo que sigue."
+  },
+  "roumanie-tiktok": {
+    "title": "Rumanía: elección anulada, la DSA arbitra lo visible",
+    "body": "El 6 de diciembre, el Tribunal Constitucional de Rumanía anula la primera vuelta de las elecciones presidenciales, citando una campaña coordinada no declarada en TikTok; el 17 de diciembre la Comisión abre procedimientos formales DSA contra la plataforma (sistemas de recomendación, publicidad política), aún en curso en 2026. Sea cual sea el resultado, el precedente queda: \"quién decide qué es visible durante una elección\" ahora se resuelve entre plataformas, la Comisión y tribunales constitucionales."
+  },
+  "vietnam-decret-147": {
+    "title": "Vietnam: identidad verificada o silencio",
+    "body": "El Decreto 147 obliga a las plataformas a verificar la identidad de cada usuario (teléfono o número de DNI), almacenar los datos y entregarlos a las autoridades; solo las cuentas verificadas pueden publicar, comentar o transmitir. La ecuación se plantea claramente: sin identidad verificada, sin discurso público."
+  },
+  "uk-apple-adp": {
+    "title": "Londres exige una puerta trasera, Apple retira su cifrado",
+    "body": "Por orden secreta (un Aviso de Capacidad Técnica bajo la Ley de Poderes de Investigación), el Ministerio del Interior exige acceso a datos cifrados de iCloud, con alcance mundial confirmado por presentaciones judiciales. Apple responde retirando Advanced Data Protection (iCloud cifrado de extremo a extremo) de todos los usuarios del Reino Unido en lugar de construir la llave. Bajo presión estadounidense Londres \"retira\" la demanda en verano... luego emite una orden nueva a principios de septiembre de 2025, revelada el 1 de octubre, reenfocada a datos de usuarios británicos. A mediados de 2026, los usuarios del Reino Unido aún viven sin E2EE en sus copias de seguridad."
+  },
+  "fr-narcotrafic-8ter": {
+    "title": "Francia: cae la puerta trasera Narcotráfico",
+    "body": "El artículo 8 ter de la ley de Narcotráfico habría obligado a las aplicaciones de mensajería cifrada a dar acceso a los servicios de inteligencia a la correspondencia: el mecanismo del \"participante fantasma\". Eliminado en comisión, su restablecimiento es [rechazado 119 votos a 24](https://lcp.fr/actualites/narcotrafic-l-assemblee-refuse-l-acces-aux-messageries-chiffrees-contre-l-avis-de-bruno) por una coalición multipartidista la noche del 20 de marzo de 2025, contra los deseos del ministro del interior. Un parlamento nacional puede decir no; el gobierno no se ha rendido: la demanda de acceso vuelve en ciclos, aquí y luego en Bruselas."
+  },
+  "protecteu": {
+    "title": "\"ProtectEU\": romper el cifrado se convierte en política oficial",
+    "body": "La estrategia de seguridad interna de la Comisión (COM(2025) 148) anuncia una hoja de ruta para \"acceso legal y efectivo a datos\" y una \"Hoja de Ruta Tecnológica\" sobre cifrado, más un Europol reforzado. Las demandas policiales dispersas se convierten en un programa político plurianual de la Unión: acceso a comunicaciones cifradas, por escrito."
+  },
+  "ice-palantir": {
+    "title": "ICE compra \"ImmigrationOS\" de Palantir",
+    "body": "30 millones de dólares por una plataforma que cruza referencias de bases de datos federales y proporciona \"visibilidad casi en tiempo real\" sobre personas marcadas para expulsión. La vigilancia dirigida de toda una población se convierte en un producto de software disponible comercialmente, operado por una empresa privada."
+  },
+  "ch-vupf": {
+    "title": "Hasta Suiza: la ordenanza que expulsaría a Proton",
+    "body": "La ordenanza de vigilancia revisada (VÜPF) extendería los deberes de identificación de usuarios y retención (registros de IP de 6 meses) a cualquier servicio por encima de 5.000 usuarios. El CEO de Proton promete abandonar el país si se aprueba (\"seríamos menos confidenciales que Google\") y congela la inversión suiza; Threema también protesta. A principios de 2026 el proyecto está estancado: oposición casi unánime en consulta, el parlamento exige una reescritura. El refugio histórico de confidencialidad intentó, por mera ordenanza, lo que la UE debate en Chat Control."
+  },
+  "us-visa-vetting": {
+    "title": "Visados estadounidenses: tus redes sociales en público, o nada",
+    "body": "El Departamento de Estado requiere que los solicitantes de visa de estudiante configuren sus perfiles sociales como públicos (cable del 18 de junio de 2025), examinando cualquier \"hostilidad\" hacia Estados Unidos; el formulario DS-160 ya requería cinco años de identificadores desde 2019. Extendido a H-1B el 15 de diciembre, luego a más de 14 categorías de visa en marzo de 2026. Entrada condicionada a inspección ideológica del discurso en línea: un incentivo mundial para autocensurarse."
+  },
+  "roadmap-lawful-access": {
+    "title": "La hoja de ruta: descifrado estatal programado hasta 2030",
+    "body": "La Comisión publica su programa de \"acceso legal a datos\" (COM(2025) 349): nuevas reglas de retención, intercepción transfronteriza para 2027, análisis de IA de datos incautados para 2028, y una \"capacidad de descifrado de próxima generación\" para Europol desde 2030. La UE está planificando, a lo largo de cinco años, los ladrillos legales y técnicos para leer lo que es ilegible hoy. La EFF lo resume: \"esta hoja de ruta hace a todos menos seguros\"."
+  },
+  "age-blueprint": {
+    "title": "Verificación de edad: la app piloto en cinco países",
+    "body": "La Comisión publica sus directrices DSA \"Artículo 28\" y un modelo de verificación de edad (una \"mini-cartera\"), pilotado con Dinamarca, Francia, Grecia, Italia y España, diseñado para converger en la EUDI Wallet a finales de 2026. Incluso \"preservando la privacidad\", la lógica instala una verificación de identidad en la entrada de internet: probar un atributo de estado civil para ver contenido legal se convierte en un gesto normal."
+  },
+  "fr-pornhub": {
+    "title": "Francia: el Consejo de Estado reinstala la verificación de edad",
+    "body": "Bajo la ley SREN y el marco Arcom (\"doble anonimato\"), los sitios para adultos deben verificar la edad de los visitantes. Aylo (Pornhub) corta el acceso a Francia en protesta; el tribunal administrativo suspende el decreto en junio, el Consejo de Estado anula esa suspensión el 15 de julio: la obligación se mantiene, los sitios vuelven a bloquear. El primer despliegue a gran escala del \"DNI para entrar a internet\", con el bloqueo como palanca de cumplimiento."
+  },
+  "cn-cyber-id": {
+    "title": "China: el ID de internet nacional, centralizado con la policía",
+    "body": "Lanzamiento del \"ID de ciberespacio\": un identificador único emitido conjuntamente por el Ministerio de Seguridad Pública y la Administración del Ciberespacio de China, respaldado por reconocimiento facial y la tarjeta de identidad nacional, usado para iniciar sesión en servicios en línea, efectivo desde el 15 de julio de 2025. Oficialmente voluntario, además del registro de nombre real ya obligatorio en todas partes. Cuando la identificación en línea está centralizada por el estado, el anonimato desaparece por diseño y el acceso a internet se convierte en un privilegio revocable. Es el modelo terminado de lo que los controles de edad y carteras occidentales esbozan."
+  },
+  "emfa-article-4": {
+    "title": "EMFA: protección de periodistas, agujereada por sus excepciones",
+    "body": "La Ley Europea de Libertad de Medios se vuelve plenamente aplicable. Su artículo 4 prohíbe el software espía contra periodistas en principio... luego lo permite por excepción para una lista de delitos graves; durante las negociaciones el Consejo, Francia al frente, impulsó una exclusión general de \"seguridad nacional\", denunciada por RSF. El primer texto europeo destinado a proteger a los periodistas del espionaje estatal codifica, en el espacio negativo, las condiciones bajo las cuales ese espionaje permanece legal."
+  },
+  "ru-max": {
+    "title": "Rusia: la mensajería estatal preinstalada por decreto",
+    "body": "Cada smartphone vendido en Rusia debe venir con MAX, la mensajería construida por VK y designada la \"app nacional\"; funcionarios y profesores son ordenados a usarla. Análisis independientes describen rastreo extenso e integración con el sistema de intercepción del FSB. El punto final de la lógica anti-cifrado: una mensajería legible por los servicios, impuesta a través del propio canal de distribución de hardware."
+  },
+  "ru-recherche-punie": {
+    "title": "Rusia: buscar se convierte en delito",
+    "body": "Buscar \"deliberadamente\" en línea contenido clasificado como \"extremista\" (una lista de más de 5.000 entradas, oposición incluida) se vuelve multable (incluso a través de VPN), y publicitar herramientas de elusión está prohibido. Un umbral histórico: el estado ya no castiga lo que dices, sino lo que intentas averiguar. El punto final lógico de inspeccionar el uso individual."
+  },
+  "scientifiques-csar": {
+    "title": "500 científicos: \"técnicamente inviable\"",
+    "body": "Más de 500 criptógrafos e investigadores de 34 países (unos 800 de 37 países en octubre) firman contra el borrador danés CSAR: la detección fiable es imposible a esta escala, la elusión es trivial para criminales, y cualquier escaneo del lado del cliente \"socava inherentemente\" el cifrado de extremo a extremo. Los datos de la policía criminal federal de Alemania (BKA) hacen el punto por separado: de 205.728 informes NCMEC recibidos en 2024, 99.375 (48,3%) fueron \"no relevantes criminalmente\". El consenso científico es inequívoco. Y el proyecto continúa."
+  },
+  "uk-britcard": {
+    "title": "\"BritCard\": una ID digital para poder trabajar",
+    "body": "El gobierno Starmer anuncia una identidad digital (\"BritCard\" es su apodo informal, no un nombre oficial) que se volverá obligatoria para verificaciones de derecho al trabajo antes del final del parlamento, en nombre de luchar contra la inmigración ilegal. Una petición supera un millón de firmas en unos dos días (más de 2,9 millones desde entonces); el gobierno mantiene el rumbo (un proyecto de ley aparece en el Discurso del Rey de mayo de 2026). Condicionar el derecho al trabajo a un identificador estatal instala un punto de control central en la vida económica de todos."
+  },
+  "berlin-bloque": {
+    "title": "Berlín derriba el escaneo obligatorio",
+    "body": "La presidenta de Signal Meredith Whittaker declara públicamente que la mensajería abandonaría el mercado europeo antes que socavar su cifrado; el grupo CDU/CSU compara el escaneo sin sospecha a abrir el correo de todos al vapor. El punto se retira de la agenda del Consejo JAI del 14 de octubre: la minoría de bloqueo se mantiene. El equilibrio de poder puede cambiar, pero el proyecto nunca muere: reformulado como \"voluntario\", vuelve seis semanas después."
+  },
+  "ees-biometrie": {
+    "title": "EES: cara y dedos se convierten en el pasaporte",
+    "body": "El Sistema de Entrada/Salida entra en funcionamiento: huellas dactilares y una imagen facial de cada viajero no comunitario se recopilan en una base de datos centralizada, reemplazando el sello del pasaporte (despliegue completo el 10 de abril de 2026); ETIAS, una autorización de pago construida sobre esas bases de datos, es la siguiente. La UE cambia a una frontera como base de datos: el cuerpo se convierte en el identificador de viaje predeterminado, almacenado en sistemas diseñados para interconectarse."
+  },
+  "onu-cybercrime": {
+    "title": "Convención de Cibercrimen de la ONU: vigilancia exportada por tratado",
+    "body": "Negociada por iniciativa de Rusia y adoptada a finales de 2024, la convención reúne 72 signatarios en Hanói: 71 estados más la UE. La EFF y Human Rights Watch advierten: definiciones amplias, asistencia mutua obligatoria para recopilar evidencia electrónica (intercepción en tiempo real incluida) para \"delitos graves\" según lo definido por la ley del país solicitante, con salvaguardias opcionales. Un canal mundial legalizado a través del cual los estándares del régimen más represivo pueden viajar."
+  },
+  "euro-numerique-pilote": {
+    "title": "Euro digital: la arquitectura se construye antes que las salvaguardias",
+    "body": "El BCE cierra su \"fase de preparación\" y comienza la siguiente: un ejercicio piloto a mediados de 2027, posible primera emisión en 2029, mientras que la regulación aún no está aprobada. El Eurogrupo acordó en septiembre la gobernanza y el proceso para establecer límites de tenencia. Una moneda digital de banco central es una infraestructura donde cada transacción es nativamente registrable; se está construyendo mientras sus límites legales aún no están escritos."
+  },
+  "au-ban-16": {
+    "title": "Australia: 4,7 millones de cuentas desactivadas en un mes",
+    "body": "Una primicia mundial: desde el 10 de diciembre de 2025, los menores de 16 están prohibidos en las diez plataformas designadas por el regulador eSafety, que deben estimar la edad (inferencia de comportamiento, selfies de escaneo facial, documentos de identidad) bajo pena de multas de 49,5 millones de dólares australianos. A mediados de enero de 2026 el primer ministro anuncia 4,7 millones de cuentas desactivadas, eliminadas o restringidas. Para excluir a menores debes estimar la edad de todos: la biometría se convierte en la caseta de peaje de la web social, y gobiernos de todo el mundo están observando el laboratorio."
+  },
+  "fr-vsa-prolongee": {
+    "title": "CCTV algorítmica: el \"experimento\" de los Juegos Olímpicos va por el año siete",
+    "body": "Autorizada \"experimentalmente\" por la ley de Juegos Olímpicos de 2023 (caducidad marzo de 2025), la videovigilancia algorítmica se extiende hasta finales de 2027, aprobada por el Consejo Constitucional. En mayo de 2026 el Senado ya está votando la secuela (la ley \"Ripost\"): extensión hasta finales de 2030 y expansión a cada espacio de acceso público. El trinquete clásico: la excepción se renueva, el alcance se amplía, la evaluación puede esperar."
+  },
+  "pl-ziobro-asile": {
+    "title": "Pegasus en Polonia: el acusado encuentra asilo... dentro de la UE",
+    "body": "El exministro de justicia Zbigniew Ziobro, enfrentando 26 cargos (incluida la financiación de Pegasus desde un fondo de ayuda a víctimas y su uso contra oponentes), dice que se le ha concedido asilo político en Hungría después de que se levantara su inmunidad; en mayo de 2026 huye a Estados Unidos. El ajuste de cuentas judicial por espionaje político estatal alcanza un callejón sin salida sin precedentes: un estado miembro de la UE protege al presunto culpable, y la rendición de cuentas se detiene en la frontera interna."
+  },
+  "ru-whatsapp-bloque": {
+    "title": "Rusia: WhatsApp cortado para 100 millones de usuarios",
+    "body": "La secuencia completa tomó seis meses: agosto de 2025, las llamadas de WhatsApp y Telegram se ralentizan (las plataformas \"se niegan a compartir datos con las autoridades\"); diciembre, la ralentización se amplía; febrero de 2026, WhatsApp está completamente bloqueado, confirmado por el Kremlin. La lección es clara: exige los datos, estrangula el servicio que se niega, luego córtalo. Negarse a romper el cifrado se castiga con exclusión del país."
+  },
+  "gr-intellexa": {
+    "title": "Predator en Grecia: los vendedores condenados, los compradores inrastreables",
+    "body": "Un tribunal de Atenas condena a cuatro ejecutivos vinculados a Intellexa (fundador Tal Dilian, más Hamou, Bitzios y Lavranos) por acceso ilegal a comunicaciones privadas en el escándalo Predator (~87 objetivos: periodistas, ministros, oficiales militares; un recuento reportado por The Record e ICIJ). La primera condena penal de la UE a comerciantes de software espía. Pero ningún funcionario político es condenado: quien ordenó las escuchas permanece oficialmente inrastreable."
+  },
+  "fr-boites-noires-urls": {
+    "title": "Cajas negras: la inteligencia quiere las URLs completas",
+    "body": "Los diputados amplían las \"cajas negras\" (el análisis algorítmico de metadatos creado en 2015 contra el terrorismo, hecho permanente desde entonces) al crimen organizado y, por primera vez, a las URLs completas de páginas visitadas. El Consejo Constitucional anuló un esquema similar en 2025; el gobierno lo intenta de nuevo, ajustado. Una URL completa revela lo que lees, no solo con quién hablas: un salto cualitativo hacia la inspección automatizada de hábitos de lectura, bajo autorización administrativa (no judicial)."
+  },
+  "palantir-europe": {
+    "title": "Palantir en Europa: el proveedor cambia, la pregunta no",
+    "body": "A mediados de mayo de 2026, el servicio de inteligencia nacional de Alemania (BfV) abandona Palantir por ChapsVision de Francia. La DGSI francesa (que había renovado su contrato con Palantir en noviembre de 2025, hasta 2028) toma el mismo camino después: el 16 de junio de 2026 Sébastien Lecornu anuncia una migración a ChapsVision en el transcurso de 2027. Mientras tanto la policía en Baviera y Hesse sigue usando Gotham (Renania del Norte-Westfalia hasta octubre de 2026), impugnado ante el Tribunal Constitucional. El debate público se ha deslizado de \"¿deberían los archivos policiales ser fusionados por IA?\" a \"¿qué proveedor debería hacerlo?\": la soberanía ha reemplazado a la proporcionalidad, y el análisis masivo en sí ya no se cuestiona."
+  },
+  "us-fisa-702": {
+    "title": "FISA 702 caduca, la recopilación continúa de todos modos",
+    "body": "La Sección 702, la recopilación sin orden judicial de comunicaciones que transitan por proveedores estadounidenses, debía expirar en abril de 2026. Dos extensiones cortas después, la autoridad caduca a mediados de junio con el Congreso estancado sobre requerir una orden judicial para búsquedas del FBI de estadounidenses. Pero las certificaciones existentes permanecen válidas hasta marzo de 2027: la máquina funciona otro año sin base renovada. Un poder de vigilancia \"temporal\" nunca se apaga del todo."
+  },
+  "euro-numerique-econ": {
+    "title": "Euro digital: \"no programable\", pero condicional",
+    "body": "El comité ECON del Parlamento adopta su posición (43 votos a 14, una abstención): rumbo establecido para un lanzamiento en 2029. La propia FAQ del BCE jura que el euro digital \"no será dinero programable\", mientras presenta \"pagos condicionales\" como servicios opcionales; bajo la posición de los eurodiputados, el límite de tenencia sería establecido más tarde por la Comisión por recomendación del BCE, revisado cada dos años. La brecha entre la promesa y la plataforma descansa en una decisión política, no una imposibilidad técnica: la infraestructura de condicionalidad y trazabilidad existirá desde el primer día."
+  },
+  "europol-reforme": {
+    "title": "Europol: presupuesto elevado a 3.000 millones de euros, un mandato sobre cifrado",
+    "body": "La Comisión propone la mayor revisión de Europol en 25 años: presupuesto de 1.900 millones a 3.000 millones de euros, 900 empleados adicionales, un mandato extendido a comunicaciones cifradas, criptoactivos y fraude asistido por IA; un \"hub de tecnología e innovación\" cuyo trabajo de cifrado sigue la hoja de ruta ProtectEU (que programa una capacidad de descifrado de Europol para 2030); un \"espacio europeo de datos policiales\" automatizado. El brazo armado de ProtectEU: una agencia supranacional que un eurodiputado ya advierte \"no debe conducir a vigilancia masiva\"."
+  },
+  "pega-kouloglou": {
+    "title": "Pegasus en el Parlamento: el vigilante estaba siendo vigilado",
+    "body": "Citizen Lab revela que el eurodiputado Stelios Kouloglou, miembro suplente del comité PEGA, el mismo organismo que investigó Pegasus y el abuso de software espía en Europa, fue hackeado con Pegasus mientras servía en él (infecciones fechadas el 21 de octubre de 2022 y el 6-7 de marzo de 2023), con posible acceso a deliberaciones confidenciales. Citizen Lab explícitamente se niega a atribuir el ataque; una coalición de ONGs exige una respuesta de la UE. Espiar al organismo encargado de supervisar el software espía es la inversión final de la supervisión democrática, y nadie es nombrado responsable."
+  }
+}

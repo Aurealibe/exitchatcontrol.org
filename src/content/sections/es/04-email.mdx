@@ -1,0 +1,102 @@
+---
+id: 'email'
+part: 2
+order: 4
+title: 'Correo cifrado & PGP'
+---
+
+<p class="part-num">
+  PARTE 03 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Correo cifrado &amp; PGP
+
+Gmail lee tu correo y vive en EE.UU., bajo jurisdicción "Five Eyes". Abandonar Gmail/Outlook es una victoria enorme con un esfuerzo mínimo.
+
+<ToolCard tool="t-protonmail">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Reemplaza Gmail</span>
+    <span class="tool-tag">🇨🇭 · código abierto · OpenPGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una bandeja de entrada cifrada que reemplaza Gmail u Outlook, y la cuenta pivote para todo el
+    ecosistema Proton.
+  </Fragment>
+  <Fragment slot="why">
+    Basado en Suiza, fuera de la jurisdicción "Five Eyes". Compatible con OpenPGP: cifrado automático
+    entre cuentas Proton y hacia otros servicios PGP.
+  </Fragment>
+  <Fragment slot="who">
+    Todos. Es el mejor punto de partida para abandonar Google (ver sección 05 para el resto de la
+    suite).
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Crea una cuenta en <b>proton.me</b> (la capa gratuita es suficiente para empezar).
+    </li>
+    <li>
+      Importa tus mensajes antiguos y contactos con <b>Easy Switch</b> (integrado).
+    </li>
+    <li>Configura el reenvío desde Gmail y dile a tus contactos tu nueva dirección.</li>
+    <li>
+      Instala la app móvil, activa la <b>autenticación de dos factores</b>, y usa Proton Bridge si quieres
+      Thunderbird.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tuta">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Reemplaza Gmail</span>
+    <span class="tool-tag">🇩🇪 · código abierto · post-cuántico</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un servicio de correo alemán, totalmente de código abierto y libre de cualquier servicio de Google.
+  </Fragment>
+  <Fragment slot="why">
+    También cifra <b>la línea de asunto y algunos metadatos</b>, con cifrado resistente a post-cuántico. Jurisdicción UE.
+  </Fragment>
+  <Fragment slot="who">
+    Aquellos que quieren máximo cifrado de metadatos y software totalmente libre. No usa PGP: para escribir
+    cifrado a externos, proteges el mensaje con contraseña.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Crea una cuenta en <b>tuta.com</b> e instala la app (disponible en F-Droid).
+    </li>
+    <li>
+      Para escribir cifrado a un no usuario: haz clic en el candado y establece una contraseña, compartida con tu
+      corresponsal a través de otro canal.
+    </li>
+    <li>Activa la autenticación de dos factores.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-mailbox">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Correo clásico ético</span>
+    <span class="tool-tag">🇩🇪 · UE · PGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Dos proveedores de correo europeos éticos y de bajo coste, con soporte PGP del lado del servidor.
+  </Fragment>
+  <Fragment slot="why">
+    Conscientes de la privacidad y el medio ambiente, construidos sobre estándares abiertos (IMAP, PGP). Funcionan con cualquier cliente de correo.
+  </Fragment>
+  <Fragment slot="who">
+    Aquellos que quieren un buzón "clásico" (leer en Thunderbird) pero ético, en lugar de una app
+    cifrada cerrada.
+  </Fragment>
+  <ol slot="install">
+    <li>Crea una cuenta (de pago, aproximadamente 1-3 € al mes).</li>
+    <li>Activa el cifrado PGP del lado del servidor (la función "Guard" en mailbox.org).</li>
+    <li>Configura la cuenta en Thunderbird o la app móvil de tu elección.</li>
+  </ol>
+</ToolCard>
+
+#### PGP en un minuto
+
+**PGP** (Pretty Good Privacy) es cifrado basado en claves: tienes una clave _pública_ que repartes, y una clave _privada_ que guardas en secreto. Cualquiera con tu clave pública puede enviarte un mensaje que **solo tú** puedes descifrar. Es la base del correo cifrado independiente del proveedor. Proton Mail lo maneja automáticamente; para uso manual, **OpenPGP** funciona vía Thunderbird (integrado desde v78).

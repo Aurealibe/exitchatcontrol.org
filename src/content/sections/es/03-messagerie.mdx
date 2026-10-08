@@ -1,0 +1,241 @@
+---
+id: 'messagerie'
+part: 1
+order: 3
+title: 'Mensajería cifrada'
+---
+
+<p class="part-num">
+  PARTE 02 · FUNDAMENTOS · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Mensajería cifrada
+
+El primer movimiento, el que te protege más rápido: abandona WhatsApp, Messenger y Telegram por una mensajería genuinamente cifrada (idealmente de código abierto).
+
+<div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Dejas</th>
+        <th>Adoptas</th>
+        <th>Por qué</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="old">WhatsApp</span>
+        </td>
+        <td>
+          <span class="new">Signal</span>
+        </td>
+        <td>Misma simplicidad, sin Meta ni cosecha de metadatos</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="old">Messenger</span>
+        </td>
+        <td>
+          <span class="new">Signal / SimpleX</span>
+        </td>
+        <td>Messenger no tiene E2EE por defecto y fue escaneado bajo Chat Control 1.0</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="old">Telegram</span>
+        </td>
+        <td>
+          <span class="new">Signal / SimpleX</span>
+        </td>
+        <td>Telegram no está cifrado de extremo a extremo por defecto</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ToolCard tool="t-signal">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Reemplaza WhatsApp</span>
+    <span class="tool-tag">🇺🇸 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una mensajería cifrada para tus textos, llamadas, vídeo y grupos. El reemplazo directo de
+    WhatsApp, igual de simple.
+  </Fragment>
+  <Fragment slot="why">
+    Cifrado de extremo a extremo por defecto, sin ánimo de lucro, un protocolo auditado que es el estándar mundial.
+    Casi no se guardan metadatos, y el equipo se ha comprometido a abandonar la UE antes que instalar escaneo.
+  </Fragment>
+  <Fragment slot="who">
+    Todos, desde hoy. Es el primer paso y el más útil. Una salvedad: un número de teléfono, que
+    puedes ocultar tras un nombre de usuario.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Instala desde <b>signal.org</b> (App Store, Google Play, o el APK directo en Android).
+    </li>
+    <li>Confirma tu número por SMS, luego establece un PIN.</li>
+    <li>
+      Ajustes &gt; Privacidad: crea un <b>nombre de usuario</b> para ocultar tu número, y activa el{' '}
+      <b>bloqueo de registro</b>.
+    </li>
+    <li>Invita a tus contactos. En ordenador, vincula la app de escritorio a tu móvil.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-simplex">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Sin identificador</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una mensajería cifrada sin cuenta, sin número y sin identificador. Te conectas compartiendo un
+    enlace o código QR.
+  </Fragment>
+  <Fragment slot="why">
+    Por diseño, ni siquiera los servidores pueden saber quién habla con quién. Es actualmente la opción más fuerte
+    contra la correlación de metadatos.
+  </Fragment>
+  <Fragment slot="who">
+    Cuentas anónimas, contactos sensibles, alto riesgo. Un poco más joven que Signal, con algunos
+    bordes ásperos.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Instala desde <b>simplex.chat</b> (F-Droid, Google Play, App Store o APK).
+    </li>
+    <li>
+      Elige un nombre para mostrar <b>local</b> (nunca tu nombre real: se queda en tu dispositivo).
+    </li>
+    <li>
+      Para añadir un contacto, comparte un <b>enlace de invitación de un solo uso</b> o un código QR.
+    </li>
+    <li>Activa el bloqueo por código de acceso, y (avanzado) configura tus propios servidores SMP.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-session">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Sin teléfono</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Cifrado de grado Signal, pero sin número de teléfono y con enrutamiento onion.
+  </Fragment>
+  <Fragment slot="why">
+    Tu identidad es un "Session ID" aleatorio. El tráfico pasa por una red descentralizada (Lokinet)
+    que reduce drásticamente los metadatos.
+  </Fragment>
+  <Fragment slot="who">
+    Cuando un número de teléfono es un lastre. Ecosistema más pequeño, mejor guardado para conversaciones que importan.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Instala desde <b>getsession.org</b> (todas las plataformas).
+    </li>
+    <li>
+      "Crear cuenta" genera tu Session ID y una <b>frase de recuperación</b>.
+    </li>
+    <li>Escribe la frase de recuperación en papel: es la única llave a tu cuenta.</li>
+    <li>Comparte tu Session ID (o QR) con tus contactos.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-briar">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Offline / P2P</span>
+    <span class="tool-tag">Android · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una mensajería peer-to-peer que funciona <b>sin internet</b>: por Bluetooth, Wi-Fi Direct o
+    Tor.
+  </Fragment>
+  <Fragment slot="why">
+    Sin servidor, así que nada que apagar o incautar. Sobrevive a apagones de internet y censura de red.
+  </Fragment>
+  <Fragment slot="who">
+    Protestas, desastres, zonas remotas, apagones. Solo Android, y ambas personas necesitan la app.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Instala desde <b>briarproject.org</b> o F-Droid (no hay iOS).
+    </li>
+    <li>
+      Crea una cuenta <b>local</b> (apodo + contraseña), almacenada solo en el móvil.
+    </li>
+    <li>Añade un contacto cercano escaneando su código QR, o remotamente vía un enlace.</li>
+    <li>Cuando la red esté caída, activa Bluetooth: los mensajes saltan de dispositivo a dispositivo.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-bitchat">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Malla Bluetooth</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    La mensajería de malla de Jack Dorsey: los móviles cercanos retransmiten mensajes salto a salto, sin internet, servidor
+    ni cuenta.
+  </Fragment>
+  <Fragment slot="why">
+    Cifrado de extremo a extremo (AES-256-GCM) y un "modo pánico" que borra todo con tres toques en
+    el logo.
+  </Fragment>
+  <Fragment slot="who">Protestas y apagones, junto a Briar. Usa con precaución.</Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Precaución: no auditado</span>
+    <p>
+      Su propio repositorio advierte que "no ha recibido revisión de seguridad externa". Genial para resiliencia, pero
+      no apuestes vidas en ello aún.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Instala desde el App Store (iOS) o el APK/GitHub (Android).</li>
+    <li>Abre la app y elige un apodo. No hay cuenta que crear.</li>
+    <li>Los dispositivos cercanos se autodescubren por Bluetooth.</li>
+    <li>En peligro, triple-toca el logo para borrar todo (modo pánico).</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-molly">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Signal endurecido</span>
+    <span class="tool-tag">Android · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una compilación endurecida de Signal para Android, compatible con la misma red.
+  </Fragment>
+  <Fragment slot="why">
+    Base de datos cifrada en reposo, bloqueo automático, y una variante "FOSS" totalmente libre de servicios
+    de Google.
+  </Fragment>
+  <Fragment slot="who">
+    Usuarios avanzados, especialmente en GrapheneOS, con un modelo de amenaza alto. Solo Android.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Añade el repositorio de Molly en F-Droid, o descarga el APK de <b>molly.im</b>.
+    </li>
+    <li>
+      Elige <b>Molly-FOSS</b> si quieres cero dependencias de Google.
+    </li>
+    <li>Regístrate con tu número (misma red que Signal).</li>
+    <li>Establece una contraseña de base de datos y bloqueo automático.</li>
+  </ol>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Contra Chat Control</span>
+  <p>
+    Prefiere apps <strong>de código abierto</strong> <strong>fuera de las grandes plataformas estadounidenses</strong>, cuyos
+    equipos se han comprometido públicamente a abandonar la UE antes que instalar escaneo del lado del cliente (Signal
+    lo ha hecho). Recordatorio: si el propio SO impone el escaneo, la app no puede ayudar, de ahí la sección 12.
+  </p>
+</div>

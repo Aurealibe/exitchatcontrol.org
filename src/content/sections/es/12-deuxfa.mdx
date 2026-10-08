@@ -1,0 +1,76 @@
+---
+id: 'deuxfa'
+part: 7
+order: 12
+title: 'Autenticación de dos factores & llaves físicas'
+---
+
+<p class="part-num">
+  PARTE 11 · SEGURIDAD · 2FA · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Autenticación de dos factores &amp; llaves físicas
+
+Una contraseña, incluso fuerte, puede filtrarse. La autenticación de dos factores (2FA) añade una segunda prueba al iniciar sesión: incluso si tu contraseña es robada, la cuenta permanece bloqueada. Es esencial en tus cuentas sensibles (correo, gestor de contraseñas, social).
+
+<div class="box warn">
+  <span class="lab">Evita 2FA por SMS</span>
+  <p>
+    Un código enviado por SMS es el eslabón débil: es vulnerable a "SIM-swap" (un atacante consigue que tu número
+    sea transferido) y a intercepción sobre la red telefónica (SS7). Los estudios estiman que la mayoría de intentos de SIM-swap
+    tienen éxito. Usa SMS solo como último recurso, nunca como tu protección principal.
+  </p>
+</div>
+
+<ToolCard tool="t-yubikey">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Avanzado</span>
+    <span class="tool-tag">Llave física FIDO2</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una pequeña llave física (USB, a menudo con NFC) que prueba tu identidad con un solo toque.
+  </Fragment>
+  <Fragment slot="why">
+    Es el 2FA más fuerte: resiste el phishing, porque la llave verifica la dirección real del sitio
+    antes de responder. <b>Nitrokey</b> es la alternativa completamente de hardware abierto, firmware abierto. Un sitio
+    falso no puede engañarte.
+  </Fragment>
+  <Fragment slot="who">
+    Aquellos que quieren máxima seguridad en cuentas clave. Compra <b>dos</b> (una principal, una de respaldo).
+  </Fragment>
+  <ol slot="install">
+    <li>Consigue dos llaves de yubico.com o nitrokey.com.</li>
+    <li>
+      En los ajustes de seguridad de cada cuenta (correo, gestor de contraseñas…), añade una "llave de seguridad" o
+      "passkey." Registra ambas llaves.
+    </li>
+    <li>Guarda la llave de respaldo en un lugar seguro y separado.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-aegis">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Códigos TOTP</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Apps que generan los códigos de seis dígitos cambiando cada 30 segundos, reemplazando Google
+    Authenticator.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Aegis</b> (Android) guarda tus códigos en una bóveda cifrada local, sin nube. <b>Ente Auth</b>{' '}
+    añade sincronización cifrada de extremo a extremo entre dispositivos, y ha sido auditado. Mucho más seguro que SMS, y
+    gratuito.
+  </Fragment>
+  <Fragment slot="who">
+    Todos: es el nivel 2FA por defecto a adoptar, antes de las llaves físicas.
+  </Fragment>
+  <ol slot="install">
+    <li>Instala Aegis (F-Droid) o Ente Auth (todas las plataformas).</li>
+    <li>En cada cuenta, activa 2FA de "app autenticadora" y escanea el código QR mostrado.</li>
+    <li>
+      Anota los <b>códigos de respaldo</b> en papel y haz una copia de seguridad cifrada de tu bóveda.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,94 @@
+{
+  "clipper-chip": {
+    "title": "El Clipper Chip",
+    "body": "La NSA impulsa un chip de cifrado con una custodia de claves en manos del gobierno, \"para las fuerzas del orden, solo con orden judicial\". Fallos demostrados ([Blaze, 1994](https://dl.acm.org/doi/pdf/10.1145/191177.191193)), rechazo masivo: abandonado en 1996. La primera guerra cripto, mismo guion que hoy."
+  },
+  "echelon": {
+    "title": "ECHELON confirmado por el Parlamento Europeo",
+    "body": "Seis días antes del 11-S, el Parlamento Europeo adopta en sesión plenaria (367–159–39) el informe de su comité temporal (aprobado en comisión el 3 de julio) confirmando la existencia de una red global interceptando comunicaciones privadas y comerciales (EE.UU., Reino Unido, Canadá, Australia, Nueva Zelanda)."
+  },
+  "nsa-warrantless": {
+    "title": "23 días después del 11-S",
+    "body": "Una orden presidencial secreta inicia el espionaje doméstico sin orden judicial de la NSA. La crisis crea el programa; el programa sobrevive a la crisis. La Ley Patriota sigue el 26 de octubre, también \"temporal\": sus cláusulas de caducidad se renuevan durante 14 años."
+  },
+  "room-641a": {
+    "title": "Sala 641A",
+    "body": "El técnico de AT&T Mark Klein entrega a la EFF los documentos que describen la sala secreta de la NSA en el centro de conmutación de San Francisco: intercepción a nivel de infraestructura, sobre todo el tráfico, no sobre sospechosos."
+  },
+  "retention-directive": {
+    "title": "Directiva de retención de datos de la UE",
+    "body": "La UE ordena la retención de los metadatos de telecomunicaciones de toda la población (6-24 meses), \"contra el crimen grave\". Nadie es sospechoso, todos están fichados. El plano exacto de Chat Control, veinte años antes."
+  },
+  "snowden": {
+    "title": "Snowden: \"recójanlo todo\"",
+    "body": "The Guardian publica la orden secreta FISA que obliga a Verizon a entregar todos los metadatos de clientes, luego PRISM. En marzo, el director de inteligencia Clapper había jurado ante el Congreso que no estaba sucediendo; días después de la filtración lo llama la respuesta [\"menos falsa\"](https://www.washingtonpost.com/blogs/fact-checker/post/james-clappers-least-untruthful-statement-to-the-senate/2013/06/11/e50677a8-d2d8-11e2-a73e-826d299ff459_blog.html) que podía dar."
+  },
+  "digital-rights-ireland": {
+    "title": "El TJUE anula la retención masiva",
+    "body": "Digital Rights Ireland (asuntos acumulados C-293/12 y C-594/12): la directiva de 2006 es anulada por completo: la vigilancia indiscriminada de toda la población viola la Carta de Derechos Fundamentales. Una pequeña ONG voluntaria derribó una directiva de la UE."
+  },
+  "snoopers-charter": {
+    "title": "La \"Carta del Fisgón\" del Reino Unido",
+    "body": "La Ley de Poderes de Investigación legaliza la recopilación masiva y el hackeo estatal, y obliga a los ISP a guardar el historial de navegación de todos. Tres semanas después el TJUE (Tele2/Watson) repite que la retención masiva es ilegal; Londres lo mantiene de todos modos."
+  },
+  "australia-aaa": {
+    "title": "Australia vs las matemáticas",
+    "body": "La Ley de Asistencia y Acceso permite al estado ordenar secretamente a una empresa que reingeniería sus productos (\"avisos de capacidad técnica\"). Los críticos advierten que esto debilita el cifrado en todo menos en el nombre, aunque la Ley nominalmente prohíbe \"debilidades sistémicas\". El primer ministro había dado el tono: \"las leyes de Australia prevalecen sobre las leyes de las matemáticas\"."
+  },
+  "crypto-ag": {
+    "title": "Crypto AG: el fabricante de cajas fuertes guardó las llaves",
+    "body": "The Washington Post revela (respaldado por la propia historia interna de la CIA) que la CIA y el BND poseían secretamente Crypto AG, el proveedor suizo de cifrado de 120 gobiernos, desde 1970. En los años 80, el 40% de los cables diplomáticos que la NSA decodificó vinieron a través de ella. Moraleja: una puerta trasera \"confiable\" es una puerta trasera."
+  },
+  "lqdn-cjeu": {
+    "title": "La Quadrature du Net en el TJUE",
+    "body": "El Tribunal confirma la prohibición de retención masiva contra Francia y Bélgica (asuntos acumulados C-511/18, C-512/18 y C-520/18), y contra el Reino Unido el mismo día en Privacy International (C-623/17), mientras talla ventanas de \"seguridad nacional\". Doble lección: las demandas funcionan, y cada excepción se convierte en la siguiente regla. La Comisión nunca ha abierto un caso de infracción contra estados que retienen de todos modos."
+  },
+  "chatcontrol-1": {
+    "title": "Chat Control 1.0, \"temporal\"",
+    "body": "El Reglamento 2021/1232 permite el escaneo \"voluntario\" de mensajes privados, derogando ePrivacy. Caducidad el 3 de agosto de 2024, prometido. El Reglamento 2024/1307 lo extiende al 3 de abril de 2026, donde expira… luego resurge de entre los muertos (ver abajo)."
+  },
+  "pegasus-project": {
+    "title": "El Proyecto Pegasus",
+    "body": "Más de 80 periodistas de 17 redacciones en 10 países documentan el espionaje a periodistas, abogados, disidentes y jefes de estado mediante el software espía de NSO. Los análisis forenses de Amnistía (revisados por pares por Citizen Lab) prueban infecciones de clic cero de iPhones totalmente parcheados: cuando el dispositivo es atacado, el cifrado no es suficiente. Exactamente la lógica del escaneo del lado del cliente."
+  },
+  "apple-csam": {
+    "title": "Apple anuncia escaneo en el dispositivo… luego da marcha atrás",
+    "body": "Apple presenta escaneo de fotos CSAM en el dispositivo para el iPhone. Investigadores y ONGs se rebelan: es la infraestructura de vigilancia generalizable. Diciembre de 2022: Apple lo abandona, y luego invocará, en una [carta de agosto de 2023](https://appleinsider.com/articles/23/08/31/apple-provides-detailed-reasoning-behind-abandoning-iphone-csam-detection), una \"pendiente resbaladiza de consecuencias no intencionadas\". El mismo mecanismo que Chat Control 2.0 quiere ordenar."
+  },
+  "chatcontrol-2": {
+    "title": "Chat Control 2.0: escaneo obligatorio",
+    "body": "La Comisión propone el reglamento CSAR (COM/2022/209): \"órdenes de detección\" que pueden forzar el escaneo en cada plataforma, incluidas las cifradas de extremo a extremo. Lo voluntario de 2021 se convierte en obligatorio de 2022: deslizamiento de alcance en el sentido literal."
+  },
+  "osa-spy-clause": {
+    "title": "Ley de Seguridad Online: la \"cláusula espía\"",
+    "body": "El Reino Unido se otorga el poder de ordenar a las aplicaciones de mensajería que escaneen contenido cifrado (sección 121). \"Donde sea técnicamente factible\" no está en la Ley: fue la concesión del ministro, [declaración de Lord Parkinson a los Lores](https://techcrunch.com/2023/09/06/osb-encryption-scanning-feasibility/) (6 de septiembre de 2023), después de que Signal y WhatsApp amenazaran con irse. El gobierno admite que no es factible, pero mantiene el poder en los libros."
+  },
+  "first-extension": {
+    "title": "Lo \"temporal\" obtiene su primera extensión",
+    "body": "El Reglamento 2024/1307 empuja la caducidad de Chat Control 1.0 del 3 de agosto de 2024 al 3 de abril de 2026. Una medida de emergencia que se renueva a sí misma ya no es una excepción: es un régimen."
+  },
+  "uk-age-checks": {
+    "title": "Reino Unido: muestra identificación para usar internet",
+    "body": "La Ley de Seguridad Online activa verificación de edad \"altamente efectiva\" (DNI, tarjeta de crédito, estimación facial) para grandes partes de la web. Proton mide saltos de suscripciones VPN por hora de [más del 1.400%](https://www.techradar.com/vpn/vpn-privacy-security/vpn-demand-skyrockets-in-the-uk-as-age-verification-checks-are-enforced); los Lores ya están debatiendo límites a las VPN."
+  },
+  "council-sunset-delete": {
+    "title": "El Consejo se mueve para eliminar la cláusula de caducidad",
+    "body": "La posición de trílogo del Consejo (doc. 15318/25): simplemente eliminar la cláusula de caducidad del escaneo \"voluntario\", haciéndolo permanente. El borrador de la presidencia danesa contemplaba escaneo obligatorio del lado del cliente. En febrero de 2026 el EDPS responde a la propuesta de la Comisión de diciembre de extender la derogación a 2028 (COM(2025) 797): degradación sustancial de la confidencialidad, análisis indiscriminado desproporcionado."
+  },
+  "ep-says-no": {
+    "title": "El Parlamento dice no",
+    "body": "El Parlamento Europeo rechaza extender el escaneo voluntario a 2028 (228 a favor, 311 en contra, 92 abstenciones). Consecuencia: la base legal expira el 3 de abril de 2026. La presión ciudadana y el trabajo de ONGs mantuvieron la línea. Durante tres meses."
+  },
+  "scanning-continues": {
+    "title": "La ley caduca, el escaneo continúa",
+    "body": "Con la derogación caducada, los gigantes que firmaron el llamamiento conjunto del 19 de marzo para afianzar el régimen (Google, Meta, Microsoft, Snap, TikTok) anuncian que seguirán escaneando mensajes, base legal o no. La admisión de que el \"cumplimiento\" era decorado."
+  },
+  "council-resurrects": {
+    "title": "El Consejo resucita el texto caducado",
+    "body": "Tres meses después de la caducidad, el Consejo adopta su posición de reinstaurar el escaneo voluntario hasta el 3 de abril de 2028, enviado al Parlamento en segunda lectura: el procedimiento donde el rechazo necesita una mayoría absoluta (361 de 720), no una mayoría de votos emitidos."
+  },
+  "ep-e2ee-carveout": {
+    "title": "El rechazo falla, pero E2EE es excluido",
+    "body": "Procedimiento urgente aprobado el 7 de julio (331/304/11), votación el 9: 314 eurodiputados votan para rechazar la posición del Consejo: una mayoría simple, por debajo de los 361 requeridos. Pero el Parlamento luego adopta las enmiendas excluyendo las comunicaciones cifradas de extremo a extremo del régimen de escaneo (369 y 362 votos), y un último intento de rechazar la posición enmendada también falla (276/286/30). El texto enmendado vuelve al Consejo, que tiene unos tres meses (hasta alrededor del 9 de octubre de 2026) para aceptar las enmiendas (escaneo voluntario de servicios no E2EE hasta el 3 de abril de 2028) o abrir conciliación. A 10 de julio de 2026, nada está en vigor: la derogación que expiró el 3 de abril nunca fue revivida ([resultados completos](https://howtheyvote.eu/votes/195775))."
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "questions": {
+    "messaging": {
+      "label": "Mensajería",
+      "prompt": "¿Cómo hablas con amigos y familia la mayor parte del tiempo?",
+      "rec": "Mueve las conversaciones sensibles a Signal, SimpleX o Session.",
+      "options": {
+        "o0": {
+          "label": "WhatsApp / Messenger / SMS",
+          "hint": "Los metadatos y las plataformas centralizadas siguen siendo el punto débil."
+        },
+        "o1": {
+          "label": "Telegram para la mayoría de conversaciones",
+          "hint": "Mejor que las grandes plataformas, pero la privacidad sigue siendo limitada."
+        },
+        "o2": {
+          "label": "Signal o Molly para la mayoría de chats",
+          "hint": "Ya es una base sólida para la resistencia a la censura."
+        },
+        "o3": {
+          "label": "SimpleX / Session / Matrix para uso sensible",
+          "hint": "Menos dependencia de un número de teléfono y una plataforma central."
+        }
+      }
+    },
+    "email": {
+      "label": "Correo electrónico",
+      "prompt": "¿Qué servicio usas más para tu correo electrónico?",
+      "rec": "Usa Proton Mail o Tuta, y añade PGP para los contactos que importan.",
+      "options": {
+        "o0": {
+          "label": "Gmail / Outlook / iCloud Mail",
+          "hint": "El almacenamiento y el acceso al contenido siguen muy centralizados."
+        },
+        "o1": {
+          "label": "Proton Mail o Tuta para uso diario",
+          "hint": "Ya es una opción más fuerte para la privacidad."
+        },
+        "o2": {
+          "label": "Proton / Tuta + PGP para algunos contactos",
+          "hint": "Un buen nivel de resistencia si lo usas de forma consistente."
+        },
+        "o3": {
+          "label": "PGP / OpenPGP regular con hábitos cuidadosos de metadatos",
+          "hint": "Una postura mucho más robusta."
+        }
+      }
+    },
+    "browser": {
+      "label": "Navegador y búsqueda",
+      "prompt": "¿Qué navegador y motor de búsqueda usas más?",
+      "rec": "Abandona Chrome + Google por un navegador y motor de búsqueda que respeten la privacidad.",
+      "options": {
+        "o0": {
+          "label": "Chrome + Google",
+          "hint": "Conveniente, pero altamente rastreable."
+        },
+        "o1": {
+          "label": "Firefox o Brave con un motor de búsqueda privado",
+          "hint": "Un paso real hacia adelante para la privacidad."
+        },
+        "o2": {
+          "label": "Brave / Firefox + DuckDuckGo / Startpage / SearXNG",
+          "hint": "Ya es una línea base diaria sólida."
+        },
+        "o3": {
+          "label": "Mullvad Browser / LibreWolf / Tor Browser según contexto",
+          "hint": "Una postura más fuerte contra la vigilancia."
+        }
+      }
+    },
+    "dns": {
+      "label": "DNS",
+      "prompt": "¿Cómo resuelves los nombres de dominio?",
+      "rec": "Cambia a DNS cifrado con un resolutor mínimo y que priorice la privacidad.",
+      "options": {
+        "o0": {
+          "label": "DNS de tu ISP o router",
+          "hint": "La opción más fácil, pero a menudo la menos privada."
+        },
+        "o1": {
+          "label": "DNS cifrado de un proveedor mainstream",
+          "hint": "Un buen primer paso."
+        },
+        "o2": {
+          "label": "Quad9 / Mullvad DNS / NextDNS",
+          "hint": "Una mejora real si quieres limitar la rastreabilidad."
+        },
+        "o3": {
+          "label": "DNS cifrado más una estrategia deliberada anti-rastreo",
+          "hint": "Una postura más deliberada y robusta."
+        }
+      }
+    },
+    "vpn": {
+      "label": "VPN",
+      "prompt": "¿Qué tipo de VPN usas?",
+      "rec": "Usa una VPN reputada sin registros como Mullvad, Proton VPN o IVPN.",
+      "options": {
+        "o0": {
+          "label": "Sin VPN",
+          "hint": "El caso más expuesto para rastreabilidad de red."
+        },
+        "o1": {
+          "label": "Una VPN gratuita o dudosa",
+          "hint": "Puede ser peor que ninguna si el proveedor es opaco."
+        },
+        "o2": {
+          "label": "Una VPN reputada sin registros con política clara",
+          "hint": "Una mejora real a la privacidad."
+        },
+        "o3": {
+          "label": "Mullvad / Proton VPN / IVPN para uso regular",
+          "hint": "Una postura más seria y coherente."
+        }
+      }
+    },
+    "passwords": {
+      "label": "Contraseñas",
+      "prompt": "¿Cómo gestionas tus contraseñas?",
+      "rec": "Adopta un gestor de contraseñas con contraseñas únicas y largas en todas partes.",
+      "options": {
+        "o0": {
+          "label": "Contraseñas reutilizadas o guardadas en el navegador",
+          "hint": "Alto riesgo en una brecha o compromiso de cuenta."
+        },
+        "o1": {
+          "label": "Un gestor de contraseñas básico",
+          "hint": "Ya es un paso muy bueno hacia adelante."
+        },
+        "o2": {
+          "label": "Bitwarden / KeePassXC / Proton Pass",
+          "hint": "Una postura saludable que es simple de mantener."
+        },
+        "o3": {
+          "label": "Gestor de contraseñas + contraseñas únicas y largas",
+          "hint": "La forma más robusta de reducir el daño de una brecha."
+        }
+      }
+    },
+    "twofa": {
+      "label": "Autenticación de dos factores",
+      "prompt": "¿Qué nivel de autenticación de dos factores usas?",
+      "rec": "Mueve el 2FA a una app autenticadora o, mejor aún, una llave física.",
+      "options": {
+        "o0": {
+          "label": "Sin 2FA",
+          "hint": "El nivel más débil de protección de cuenta."
+        },
+        "o1": {
+          "label": "SMS o llamada telefónica",
+          "hint": "Mejor que nada, pero muy frágil."
+        },
+        "o2": {
+          "label": "TOTP en una app (Aegis / Ente Auth)",
+          "hint": "Una buena capa de protección diaria."
+        },
+        "o3": {
+          "label": "Llave física o 2FA resistente a phishing",
+          "hint": "El nivel de resistencia práctica más fuerte."
+        }
+      }
+    },
+    "storage": {
+      "label": "Almacenamiento",
+      "prompt": "¿Dónde almacenas tus archivos sensibles?",
+      "rec": "Mueve los archivos sensibles a Proton Drive, Cryptomator o almacenamiento local cifrado.",
+      "options": {
+        "o0": {
+          "label": "Google Drive / iCloud / OneDrive",
+          "hint": "Muy conveniente, pero centralizado."
+        },
+        "o1": {
+          "label": "Proton Drive o un servicio básico de almacenamiento cifrado",
+          "hint": "Una mejora real."
+        },
+        "o2": {
+          "label": "Cryptomator o almacenamiento local cifrado",
+          "hint": "Una postura más robusta."
+        },
+        "o3": {
+          "label": "Almacenamiento local + autoalojamiento / cifrado avanzado",
+          "hint": "El nivel más serio para la soberanía."
+        }
+      }
+    },
+    "social": {
+      "label": "Social",
+      "prompt": "¿Dónde pasas la mayor parte de tu vida social online?",
+      "rec": "Ancla tu presencia en redes descentralizadas y reduce la dependencia de plataformas.",
+      "options": {
+        "o0": {
+          "label": "Meta / X / grandes plataformas solamente",
+          "hint": "Lo más simple, pero lo más expuesto a presión."
+        },
+        "o1": {
+          "label": "Mastodon / Matrix / Nostr ocasionalmente",
+          "hint": "Una diversificación útil."
+        },
+        "o2": {
+          "label": "Una mezcla de redes descentralizadas y contacto directo",
+          "hint": "Una postura más independiente."
+        },
+        "o3": {
+          "label": "Redes alternativas y baja dependencia de plataformas",
+          "hint": "Esa es la verdadera lógica de resistencia."
+        }
+      }
+    },
+    "os": {
+      "label": "Sistema operativo",
+      "prompt": "¿Qué sistema operativo usas más?",
+      "rec": "Avanza hacia GrapheneOS en móvil y Linux en escritorio.",
+      "options": {
+        "o0": {
+          "label": "Android estándar / iOS / Windows",
+          "hint": "Muy conveniente, pero mucho menos respetuoso con la privacidad."
+        },
+        "o1": {
+          "label": "Un Android más privado / Linux / macOS",
+          "hint": "Ya es una buena mejora."
+        },
+        "o2": {
+          "label": "GrapheneOS / Linux / BSD",
+          "hint": "Una base más fuerte."
+        },
+        "o3": {
+          "label": "GrapheneOS + Linux + disciplina de configuración cuidadosa",
+          "hint": "Ya es una postura muy fuerte."
+        }
+      }
+    },
+    "tor": {
+      "label": "Tor y anonimato",
+      "prompt": "¿Cuánto usas Tor / Tails / herramientas de anonimato?",
+      "rec": "Construye un hábito de Tor (y, cuando sea necesario, Tails) para tus tareas más sensibles.",
+      "options": {
+        "o0": {
+          "label": "Casi nunca",
+          "hint": "Muy expuesto si la amenaza alguna vez se vuelve seria."
+        },
+        "o1": {
+          "label": "Ocasionalmente, sin mucha disciplina",
+          "hint": "Un primer paso, pero aún frágil."
+        },
+        "o2": {
+          "label": "Tor para algunas tareas sensibles",
+          "hint": "Ya más serio."
+        },
+        "o3": {
+          "label": "Tor + Tails con disciplina fuerte",
+          "hint": "El nivel más adecuado para un contexto de alta amenaza."
+        }
+      }
+    },
+    "money": {
+      "label": "Dinero",
+      "prompt": "¿Cómo manejas tu dinero digital?",
+      "rec": "Añade opciones de pago conscientes de la privacidad y separa identidades donde puedas.",
+      "options": {
+        "o0": {
+          "label": "Tarjetas bancarias y cuentas estándar solamente",
+          "hint": "La rastreabilidad es alta."
+        },
+        "o1": {
+          "label": "Algunas herramientas de pago más conscientes de la privacidad",
+          "hint": "Un primer esfuerzo de separación."
+        },
+        "o2": {
+          "label": "Una mezcla de cuentas privadas y uso limitado de cripto",
+          "hint": "Ya más deliberado."
+        },
+        "o3": {
+          "label": "Prácticas más fuertes de soberanía financiera",
+          "hint": "Una postura mucho más seria."
+        }
+      }
+    }
+  },
+  "bands": {
+    "exposed": {
+      "title": "Expuesto",
+      "summary": "Tu configuración aún está muy atada a las grandes plataformas. Los primeros pasos son simples y de alto impacto."
+    },
+    "awakening": {
+      "title": "Despertar",
+      "summary": "Has empezado a diversificar tus herramientas. Algunos cambios deliberados podrían marcar una diferencia real."
+    },
+    "resistant": {
+      "title": "Resistente",
+      "summary": "Tu configuración ya es seria. Tienes una base sólida de resistencia a la censura y la vigilancia."
+    },
+    "hardened": {
+      "title": "Endurecido",
+      "summary": "Ejecutas una pila endurecida con una línea base seudónima fuerte. El próximo enfoque es disciplina y compartimentación."
+    },
+    "sovereign": {
+      "title": "Soberano",
+      "summary": "Tu postura ya es muy fuerte. Estás cerca de una alta soberanía digital, con elecciones técnicas exigentes."
+    }
+  }
+}

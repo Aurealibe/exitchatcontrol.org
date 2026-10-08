@@ -1,0 +1,114 @@
+---
+id: 'ia'
+part: 9
+order: 15
+title: 'IA conversacional'
+---
+
+<p class="part-num">
+  PARTE 14 · PUNTO CIEGO · LA LOCURA DE LA IA · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## IA conversacional
+
+Mientras luchamos por cifrar nuestros mensajes, cientos de millones de personas vierten sus pensamientos más íntimos en ChatGPT, Gemini o Copilot, en servidores estadounidenses. Este es el punto ciego de toda la historia. Una locura absoluta.
+
+Lo que escribes en una IA en la nube es una **confesión escrita, con marca temporal, almacenada**. Peor que un mensaje: derramas tus ansiedades, tu salud, tus finanzas, los secretos de tu trabajo, a menudo más honestamente que a un amigo. Y a diferencia de una mensajería cifrada, todo es legible en texto plano en el servidor.
+
+<div class="box warn">
+  <span class="lab">Lo que dicen los hechos (2025-2026)</span>
+  <p>
+    Las versiones de consumo <strong>entrenan con tus datos por defecto</strong>. En enero de 2026, un juez
+    estadounidense ordenó a OpenAI producir <strong>20 millones de conversaciones de ChatGPT</strong> como
+    prueba: los usuarios afectados no fueron notificados ni consultados. Borrar un chat{' '}
+    <strong>no garantiza</strong> que haya desaparecido. Y en una filtración, 47.000 conversaciones
+    expuestas contenían correos, números de teléfono y detalles íntimos reidentificables.
+  </p>
+</div>
+
+#### La réplica: IA local
+
+<ToolCard tool="t-localai">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Reemplaza ChatGPT</span>
+    <span class="tool-tag">🌍 · 100% local</span>
+  </Fragment>
+  <Fragment slot="what">Software para ejecutar un modelo de IA directamente en tu propio ordenador.</Fragment>
+  <Fragment slot="why">
+    Tus preguntas nunca salen del dispositivo: sin servidor, sin cuenta, sin telemetría, y funciona
+    offline. La calidad depende de tu hardware, pero nada se filtra. <b>Ollama</b> y <b>LM Studio</b> son
+    los más fáciles; <b>Jan</b> y <b>GPT4All</b> apuntan a máxima privacidad.
+  </Fragment>
+  <Fragment slot="who">
+    Cualquiera que use IA para temas aunque sea ligeramente personales y no quiera entregarlos a un
+    servidor estadounidense.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Para empezar suavemente, instala <b>LM Studio</b> o <b>Jan</b> (una interfaz gráfica, como una app
+      normal).
+    </li>
+    <li>
+      Descarga un modelo ofrecido en la app (por ejemplo Llama o Mistral), adaptado a la potencia de tu
+      máquina.
+    </li>
+    <li>
+      Chatea: todo ocurre localmente. Ollama es la versión de línea de comandos para los más técnicos.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-pocketpal">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Reemplaza ChatGPT en móvil</span>
+    <span class="tool-tag">📱 · 100% local</span>
+  </Fragment>
+  <Fragment slot="what">Una app que ejecuta modelos de IA directamente en tu teléfono, completamente offline.</Fragment>
+  <Fragment slot="why">
+    Tus prompts nunca salen del teléfono: sin cuenta, sin nube, sin telemetría, y funciona en modo avión.
+    Código abierto (MIT), descarga modelos <b>GGUF</b> (Gemma, Qwen, Phi, Llama) de Hugging Face y los
+    ejecuta en la CPU, GPU o NPU de tu dispositivo. El equivalente móvil a Ollama y LM Studio.
+  </Fragment>
+  <Fragment slot="who">
+    Cualquiera que recurra a ChatGPT en su teléfono para preguntas personales y no quiera entregarlas a un
+    servidor estadounidense.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Instala <b>PocketPal</b> desde la App Store o Google Play (o compílalo desde el código fuente).
+    </li>
+    <li>
+      Abre <b>Models</b>, elige uno que se ajuste a tu teléfono, y descárgalo.
+    </li>
+    <li>Cárgalo y chatea: todo se ejecuta offline, en el dispositivo.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cloudai">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Nube respetuosa con la privacidad</span>
+  </Fragment>
+  <Fragment slot="what">
+    Acceso a IA en la nube, pero construido para la privacidad, cuando una IA local no es posible.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Duck.ai</b> (DuckDuckGo) da acceso anonimizado a varios modelos. <b>Lumo</b> (Proton) cifra los
+    intercambios y no entrena con ellos. Mucho mejor que el ChatGPT de consumo, pero sigue siendo un
+    servidor remoto.
+  </Fragment>
+  <Fragment slot="who">
+    Aquellos que quieren la conveniencia de la nube sin alimentar a los gigantes. Mantén ahí temas no
+    sensibles.
+  </Fragment>
+</ToolCard>
+
+<div class="box honest">
+  <span class="lab">La regla simple</span>
+  <p>
+    Nunca pegues en una IA en la nube lo que no contarías a un extraño que está grabando: identidad,
+    salud, contraseñas, secretos laborales, confesiones. Para cualquier cosa sensible, usa una IA local.
+  </p>
+</div>

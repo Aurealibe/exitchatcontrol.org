@@ -1,0 +1,139 @@
+---
+id: 'os'
+part: 12
+order: 19
+title: 'Sistemas operativos libres'
+---
+
+<p class="part-num">
+  PARTE 18 · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Sistemas operativos libres
+
+La piedra angular. Si el escaneo del lado del cliente puede imponerse por el propio sistema operativo, la única réplica real es controlar ese SO. Eso es cierto en el teléfono (GrapheneOS) y en el ordenador (Linux). No lo subestimes: mientras sigas en Windows, macOS o un Android de Google, no controlas verdaderamente tu máquina.
+
+<ToolCard tool="t-grapheneos">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">Móvil sin Google</span>
+    <span class="tool-tag">Android · Pixel · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un Android completamente sin Google, instalado en un teléfono Pixel: soberanía móvil.
+  </Fragment>
+  <Fragment slot="why">
+    Es la defensa estructural por excelencia contra un SO o tienda de apps que te escaneara. Servicios de
+    Google en un sandbox opcional, <b>permisos de red por app</b>, perfiles aislados, reinicio automático
+    que purga claves de la memoria, un PIN de coacción que borra el teléfono. Tan respetado por su
+    seguridad que lo usan objetivos de spyware.
+  </Fragment>
+  <Fragment slot="who">
+    Perfiles expuestos, pero también cualquier ciudadano dispuesto a comprar un Pixel para retomar el
+    control de su teléfono.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Consigue un teléfono <b>Google Pixel</b> compatible (es el único hardware soportado, por razones de
+      seguridad).
+    </li>
+    <li>
+      En un ordenador, ve a <b>grapheneos.org/install</b> y sigue el instalador web (unos pocos clics, no
+      se necesita terminal).
+    </li>
+    <li>
+      Para tus apps, instala la tienda gratuita F-Droid; añade Google Play en sandbox solo si es
+      necesario.
+    </li>
+    <li>Establece una frase de contraseña larga (no un PIN de 4 dígitos) y aprende el modo "Lockdown".</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-linux">
+  <Fragment slot="name">Linux (en escritorio)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Reemplaza Windows / macOS</span>
+    <span class="tool-tag">🌍 · libre</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un sistema operativo libre para tu ordenador, reemplazando Windows o macOS. Viene en muchos sabores,
+    llamados "distribuciones".
+  </Fragment>
+  <Fragment slot="why">
+    Es el punto ciego de mucha gente: cifran sus mensajes pero mantienen un Windows que envía telemetría a
+    Microsoft sin parar (cuya función "Recall" intentó hacer capturas de pantalla continuamente), o un
+    macOS que reporta las apps que lanzas. Linux no te espía, es gratis, revive ordenadores viejos, y por
+    fin te hace maestro de tu máquina. Es más fácil que su reputación: las distribuciones modernas se
+    parecen a Windows o macOS.
+  </Fragment>
+  <Fragment slot="who">
+    Cualquiera puede hacer el cambio. Para empezar, <b>Linux Mint</b> (más cercano a Windows) o{' '}
+    <b>Fedora</b>; <b>Debian</b> para estabilidad. No necesitas borrar nada: puedes probar primero, luego
+    instalar junto a tu sistema actual.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      ¿No estás seguro de qué distribución? Responde el cuestionario <b>distrochooser.de/fr</b>, que te
+      apunta a la correcta para tus necesidades.
+    </li>
+    <li>
+      Pruébala <b>sin instalar nada</b>, directamente en tu navegador, en <b>distrosea.com</b>.
+    </li>
+    <li>
+      Una vez convencido, descarga la imagen de la distribución y crea un USB arrancable (con Ventoy o
+      Balena Etcher).
+    </li>
+    <li>
+      Arranca desde el USB para probar el sistema "en vivo", luego ejecuta la instalación. Activa el
+      cifrado de disco que ofrece.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tails">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">USB amnésico</span>
+    <span class="tool-tag">🌍 · todo vía Tor</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un sistema que arranca desde una memoria USB, enruta todo el tráfico a través de Tor y no deja{' '}
+    <b>ningún rastro</b> al apagarse.
+  </Fragment>
+  <Fragment slot="why">
+    Al apagar, todo se olvida: es "amnésico". Ideal para trabajo sensible puntual en un ordenador que no es
+    tuyo, sin dejar nada atrás.
+  </Fragment>
+  <Fragment slot="who">
+    Filtradores, periodistas, fuentes. La herramienta de referencia para trabajo de alto riesgo.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Descarga Tails desde <b>tails.net</b> y sigue el asistente para crear la memoria USB.
+    </li>
+    <li>Reinicia el ordenador desde ese USB. Úsalo, luego apaga: todo desaparece.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-qubes">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Experto</span>
+    <span class="tool-tag">Compartimentación</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Dos sistemas de nicho: Qubes compartimenta tu PC en máquinas virtuales selladas; postmarketOS ejecuta
+    Linux en teléfonos viejos.
+  </Fragment>
+  <Fragment slot="why">
+    Qubes aísla cada actividad (trabajo, banca, navegación arriesgada) en su propio compartimento: un
+    compromiso no alcanza el resto. postmarketOS extiende la vida de teléfonos abandonados por su
+    fabricante.
+  </Fragment>
+  <Fragment slot="who">Usuarios expertos con un modelo de amenaza muy alto.</Fragment>
+</ToolCard>
+
+#### Endurece tu dispositivo
+
+Incluso sin cambiar de SO, ganas mucho: instala apps vía **F-Droid** (tienda libre) o **Aurora Store**, reemplaza servicios de Google con **microG**, crea perfiles separados, corta permisos de red innecesarios, desactiva la copia de seguridad automática en la nube y el ID publicitario.

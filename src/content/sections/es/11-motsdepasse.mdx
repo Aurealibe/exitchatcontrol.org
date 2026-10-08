@@ -1,0 +1,85 @@
+---
+id: 'motsdepasse'
+part: 7
+order: 11
+title: 'Gestor de contraseñas'
+---
+
+<p class="part-num">
+  PARTE 10 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Gestor de contraseñas
+
+Una contraseña fuerte y única por servicio: la base de todo lo que sigue. Abandona el cuaderno, abandona la contraseña reutilizada.
+
+<ToolCard tool="t-bitwarden">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Mejor para empezar</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una bóveda de contraseñas que recuerda, genera y rellena tus contraseñas por ti, en todos tus
+    dispositivos.
+  </Fragment>
+  <Fragment slot="why">
+    Gratuito, auditado, multiplataforma, y cifrado de extremo a extremo. Solo necesitas recordar una contraseña
+    fuerte. Incluso es <b>autoalojable</b> (vía Vaultwarden) así que no dependes de nadie.
+  </Fragment>
+  <Fragment slot="who">
+    Todos. Es la base de toda seguridad: una contraseña fuerte y única por servicio.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Crea una cuenta en bitwarden.com y elige una contraseña maestra <b>larga</b> (una frase). Nunca
+      la olvides: no puede recuperarse.
+    </li>
+    <li>Instala la extensión de navegador y la app móvil.</li>
+    <li>
+      A medida que inicias sesión, deja que Bitwarden guarde y luego reemplace tus contraseñas antiguas con unas generadas.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-keepassxc">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzado</span>
+    <span class="tool-tag">100% local</span>
+    <span class="tool-tag">🌍 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una bóveda <b>local</b>: un archivo cifrado que solo tú posees, sin nube y sin cuenta.
+  </Fragment>
+  <Fragment slot="why">
+    Nada sale de tu dispositivo, a menos que elijas sincronizar el archivo tú mismo (por ejemplo vía
+    Cryptomator). Es la elección del purista, sin intermediario alguno.
+  </Fragment>
+  <Fragment slot="who">
+    Perfiles avanzados que quieren control total y cero dependencia online.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Instala KeePassXC (escritorio) y una app móvil compatible (KeePassDX en Android, Strongbox en
+      iOS).
+    </li>
+    <li>Crea un archivo de base de datos protegido por una contraseña maestra.</li>
+    <li>Para tenerlo en todos los dispositivos, sincroniza ese archivo a través de una nube cifrada.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-protonpass">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Con alias de correo</span>
+    <span class="tool-tag">🇨🇭 · código abierto</span>
+  </Fragment>
+  <Fragment slot="what">
+    El gestor de contraseñas del ecosistema Proton, con alias de correo desechables integrados.
+  </Fragment>
+  <Fragment slot="why">
+    Ideal si ya estás en Proton: una cuenta para correo, nube y contraseñas. Sus alias de correo
+    te salvan de dar tu dirección real en todas partes.
+  </Fragment>
+  <Fragment slot="who">Aquellos que quieren todo en un lugar con Proton.</Fragment>
+</ToolCard>
