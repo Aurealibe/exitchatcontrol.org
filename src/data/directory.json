@@ -196,6 +196,14 @@
     "license": "BSD-3-Clause"
   },
   {
+    "id": "nymvpn",
+    "category": "vpn-reseau",
+    "name": "NymVPN",
+    "url": "https://nym.com",
+    "license": "GPL-3.0",
+    "iconSlug": "nym"
+  },
+  {
     "id": "pi-hole",
     "category": "dns",
     "name": "Pi-hole",

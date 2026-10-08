@@ -1129,5 +1129,22 @@
     "color": "#1d5fa8",
     "level": 2,
     "profiles": ["🟡", "🔴"]
+  },
+  {
+    "id": "t-nym",
+    "pricing": "paid",
+    "name": "NymVPN",
+    "url": "https://nym.com",
+    "links": [
+      {
+        "label": "nym.com",
+        "href": "https://nym.com"
+      }
+    ],
+    "iconSlug": "nym",
+    "monogram": "Ny",
+    "color": "#14e76f",
+    "level": 3,
+    "profiles": ["🟡", "🔴"]
   }
 ]

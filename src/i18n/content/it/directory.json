@@ -93,5 +93,6 @@
   "jellyfin": { "body": "Il tuo media server per film, serie e musica che possiedi." },
   "magic-wormhole": {
     "body": "Invia un file cifrato end-to-end con un breve codice monouso (riga di comando)."
-  }
+  },
+  "nymvpn": { "body": "VPN con una modalità mixnet a 5 salti che offusca i metadati del traffico." }
 }

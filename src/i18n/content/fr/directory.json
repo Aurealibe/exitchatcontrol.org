@@ -90,5 +90,6 @@
   },
   "magic-wormhole": {
     "body": "Envoyer un fichier chiffré de bout en bout avec un code court à usage unique (ligne de commande)."
-  }
+  },
+  "nymvpn": { "body": "VPN avec un mode mixnet à 5 sauts qui brouille les métadonnées du trafic." }
 }

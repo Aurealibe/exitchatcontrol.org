@@ -225,5 +225,6 @@
   "jellyfin": { "body": "Uw eigen mediaserver voor films, series en muziek die u bezit." },
   "magic-wormhole": {
     "body": "Stuur een bestand end-to-end versleuteld met een korte eenmalige code (opdrachtregel)."
-  }
+  },
+  "nymvpn": { "body": "Vpn met een mixnet-modus van 5 hops die verkeersmetadata vervaagt." }
 }

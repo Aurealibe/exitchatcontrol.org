@@ -222,5 +222,8 @@
   "jellyfin": { "body": "Dein eigener Medienserver für Filme, Serien und Musik, die dir gehören." },
   "magic-wormhole": {
     "body": "Eine Datei Ende-zu-Ende-verschlüsselt mit einem kurzen Einmalcode senden (Kommandozeile)."
+  },
+  "nymvpn": {
+    "body": "VPN mit einem Mixnet-Modus über 5 Knoten, der Verkehrsmetadaten verschleiert."
   }
 }

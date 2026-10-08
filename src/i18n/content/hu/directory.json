@@ -233,5 +233,6 @@
   },
   "magic-wormhole": {
     "body": "Fájlküldés végponttól végpontig titkosítva, rövid egyszeri kóddal (parancssor)."
-  }
+  },
+  "nymvpn": { "body": "VPN 5 ugrásos mixnet móddal, amely elmossa a forgalom metaadatait." }
 }
