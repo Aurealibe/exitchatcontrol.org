@@ -1,0 +1,81 @@
+---
+id: 'deuxfa'
+part: 7
+order: 12
+title: 'Autenticazione a due fattori e chiavi hardware'
+---
+
+<p class="part-num">
+  PARTE 11 · SICUREZZA · 2FA · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Autenticazione a due fattori e chiavi hardware
+
+Una password, anche robusta, può trapelare. L'autenticazione a due fattori (2FA) aggiunge una seconda prova al momento dell'accesso: anche se la tua password viene rubata, l'account resta bloccato. È indispensabile sui tuoi account sensibili (e-mail, gestore di password, social).
+
+<div class="box warn">
+  <span class="lab">Evita la 2FA via SMS</span>
+  <p>
+    Un codice inviato via SMS è l'anello debole: è vulnerabile al "SIM swap" (un aggressore si fa
+    trasferire il tuo numero) e all'intercettazione sulla rete telefonica (SS7). Gli studi stimano
+    che la maggior parte dei tentativi di SIM swap vada a segno. Usa l'SMS solo come ultima risorsa,
+    mai come protezione principale.
+  </p>
+</div>
+
+<ToolCard tool="t-yubikey">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Avanzato</span>
+    <span class="tool-tag">Chiave hardware FIDO2</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una piccola chiave fisica (USB, spesso con NFC) che dimostra la tua identità con un solo tocco.
+  </Fragment>
+  <Fragment slot="why">
+    È la 2FA più robusta: resiste al phishing, perché la chiave verifica il vero indirizzo del sito
+    prima di rispondere. <b>Nitrokey</b> è l'alternativa con hardware e firmware completamente
+    aperti. Un sito falso non può ingannarti.
+  </Fragment>
+  <Fragment slot="who">
+    Chi vuole la massima sicurezza sugli account chiave. Comprane <b>due</b> (una principale, una di
+    riserva).
+  </Fragment>
+  <ol slot="install">
+    <li>Procurati due chiavi su yubico.com o nitrokey.com.</li>
+    <li>
+      Nelle impostazioni di sicurezza di ogni account (e-mail, gestore di password…), aggiungi una
+      "chiave di sicurezza" o una "passkey". Registra entrambe le chiavi.
+    </li>
+    <li>Conserva la chiave di riserva in un luogo sicuro e separato.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-aegis">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Codici TOTP</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    App che generano i codici a sei cifre che cambiano ogni 30 secondi, in sostituzione di Google
+    Authenticator.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Aegis</b> (Android) conserva i tuoi codici in una cassaforte locale cifrata, senza cloud.{' '}
+    <b>Ente Auth</b> aggiunge una sincronizzazione cifrata end-to-end tra dispositivi ed è stato
+    verificato. Molto più sicuri degli SMS, e gratuiti.
+  </Fragment>
+  <Fragment slot="who">
+    Tutti: è il livello di 2FA predefinito da adottare, prima delle chiavi hardware.
+  </Fragment>
+  <ol slot="install">
+    <li>Installa Aegis (F-Droid) o Ente Auth (tutte le piattaforme).</li>
+    <li>
+      Su ogni account, attiva la 2FA tramite "app di autenticazione" e scansiona il codice QR
+      mostrato.
+    </li>
+    <li>
+      Annota i <b>codici di backup</b> su carta e fai un backup cifrato della tua cassaforte.
+    </li>
+  </ol>
+</ToolCard>

@@ -1,0 +1,176 @@
+---
+id: 'vpn'
+part: 4
+order: 7
+title: 'VPN: la verità'
+---
+
+<p class="part-num">
+  PARTE 06 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## VPN: la verità
+
+Una VPN è utile, ma viene venduta con molte bugie. Ecco cosa protegge davvero.
+
+<div class="box warn">
+  <span class="lab">Cosa una VPN NON fa</span>
+  <p>
+    Una VPN <strong>non ti protegge dalla scansione lato client di Chat Control</strong>: quella
+    legge i tuoi messaggi sul dispositivo, prima della cifratura e quindi prima della VPN. Non è
+    nemmeno un mantello dell'invisibilità: il tuo sistema operativo e le tue app vedono più del tuo
+    fornitore VPN.
+  </p>
+</div>
+
+<div class="box ok">
+  <span class="lab">Cosa una VPN fa bene</span>
+  <p>
+    Nasconde la tua attività al tuo <strong>provider</strong> e maschera il tuo{' '}
+    <strong>indirizzo IP</strong> (e quindi la tua posizione) ai siti che visiti. Utile contro la
+    sorveglianza di rete, la geolocalizzazione e la censura. Un pezzo del puzzle, non la soluzione.
+  </p>
+</div>
+
+<ToolCard tool="t-mullvad">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡🔴 Tutti i livelli</span>
+    <span class="tool-tag">Nessun account · contanti/Monero</span>
+    <span class="tool-tag">🇸🇪 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una VPN che maschera il tuo indirizzo IP e cifra il tuo traffico fino ai suoi server, senza mai
+    chiederti una sola informazione personale.
+  </Fragment>
+  <Fragment slot="why">
+    È il punto di riferimento per la privacy. Niente e-mail, niente nome: all'iscrizione ricevi un
+    semplice numero di account. Politica no-log verificata, un unico prezzo onesto (5 € al mese,
+    nessun piano, nessuna falsa promessa) e pagamento in contanti o in Monero. È esattamente ciò che
+    conta il giorno in cui uno Stato prova a bloccare l'accesso alle VPN: un account che non può
+    essere collegato alla tua identità e un pagamento che le banche non possono bloccare.
+  </Fragment>
+  <Fragment slot="who">
+    Tutti, dal cittadino che aggira una verifica d'identità al profilo ad alto rischio. È la VPN da
+    consigliare per prima.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Vai su <b>mullvad.net</b>. Se il sito è bloccato nel tuo paese, aprilo tramite Tor Browser o
+      il suo indirizzo <b>.onion</b>. Clicca su "Genera numero di account": non vengono chiesti
+      e-mail né nome. Salva questo numero nel tuo gestore di password e non condividerlo mai, è la
+      tua unica chiave di accesso.
+    </li>
+    <li>
+      Scegli la durata e il metodo di pagamento. Il prezzo è fisso. Tre strade: carta di credito (la
+      più semplice se non è bloccata), contanti spediti per posta, o criptovaluta.
+    </li>
+    <li>
+      <b>Pagamento anonimo in cripto:</b> clicca su "Crea un indirizzo di pagamento monouso".
+      Mullvad mostra un indirizzo (Bitcoin o Monero) e un importo esatto. Invia quell'importo dal
+      tuo wallet. Per il massimo anonimato, preferisci <b>Monero</b> (privato per impostazione
+      predefinita); Bitcoin è più semplice ma tracciabile. Vedi la sezione 09 per acquistare
+      criptovalute. Calcola circa 30 minuti per la conferma.
+    </li>
+    <li>
+      Scarica l'app da <b>mullvad.net/download</b> (tramite Tor se il sito è filtrato) e installala.
+      Su mobile, usa l'App Store, Google Play o l'APK ufficiale se l'app è stata rimossa dal tuo
+      store.
+    </li>
+    <li>
+      Avvia l'app, inserisci il tuo numero di account, poi connettiti a un server{' '}
+      <b>fuori dal tuo paese</b>, idealmente fuori dall'UE (Svizzera, Stati Uniti…). Attiva il "kill
+      switch" (che interrompe internet se la VPN cade) e il DNS di Mullvad.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-protonvpn">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Piano gratuito onesto</span>
+    <span class="tool-tag">🇨🇭 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    La VPN dell'ecosistema Proton, con un vero piano gratuito (raro e onesto).
+  </Fragment>
+  <Fragment slot="why">
+    Con sede in Svizzera, verificata, open source. Il suo piano gratuito non ha pubblicità, non
+    rivende dati e non ha limiti di traffico (è limitato solo il numero di paesi). È la porta
+    d'ingresso ideale per un principiante, soprattutto se usi già Proton Mail.
+  </Fragment>
+  <Fragment slot="who">
+    I principianti e chiunque sia già nell'ecosistema Proton e voglia un unico account per tutto.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Vai su <b>protonvpn.com</b> e accedi con il tuo account Proton (o creane uno).
+    </li>
+    <li>Installa l'app (Windows, macOS, Linux, Android, iOS).</li>
+    <li>
+      Usa "Connessione rapida" o scegli un paese, poi attiva il kill switch e NetShield (blocco di
+      pubblicità e tracker).
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-ivpn">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Interm. / Avanzato</span>
+    <span class="tool-tag">Nessuna e-mail · no-log</span>
+    <span class="tool-tag">🇬🇮 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un piccolo fornitore VPN particolarmente rigoroso e trasparente, sullo stesso modello di
+    Mullvad.
+  </Fragment>
+  <Fragment slot="why">
+    Politica no-log verificata, nessuna e-mail obbligatoria, pagamento in cripto o in contanti.
+    Offre persino opzioni anti-tracciamento (blocco dei tracker a livello di rete) e l'iscrizione
+    senza alcun identificativo.
+  </Fragment>
+  <Fragment slot="who">
+    Una solida alternativa a Mullvad, per i profili pseudonimi e ad alto rischio che vogliono
+    diversificare.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Su <b>ivpn.net</b>, genera un account (viene creato un ID per te, senza e-mail).
+    </li>
+    <li>Paga in cripto o in contanti, come con Mullvad.</li>
+    <li>
+      Installa l'app, connettiti fuori dall'UE, attiva il kill switch e il protocollo WireGuard.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tailscale">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzato</span>
+    <span class="tool-tag">Accesso privato al tuo server</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una rete privata cifrata che collega i tuoi dispositivi al tuo server, senza mai esporlo su
+    internet pubblico.
+  </Fragment>
+  <Fragment slot="why">
+    Invece di aprire porte (e subire attacchi), <b>Tailscale</b> costruisce un tunnel WireGuard solo
+    tra i tuoi dispositivi autorizzati: il tuo server non ha alcuna superficie di attacco pubblica.{' '}
+    <b>Headscale</b> è la versione self-hosted, così non dipendi da nessuna terza parte.{' '}
+    <b>WireGuard</b> da solo offre il pieno controllo, al prezzo di una configurazione manuale.
+  </Fragment>
+  <Fragment slot="who">
+    Chiunque faccia self-hosting. È il modo sicuro per raggiungere il tuo Nextcloud o le tue foto
+    dall'esterno.
+  </Fragment>
+  <ol slot="install">
+    <li>Installa Tailscale sul tuo server e sul tuo telefono/PC, collegali allo stesso account.</li>
+    <li>
+      I tuoi dispositivi si vedono subito su una rete privata; raggiungi il tuo server al suo
+      indirizzo Tailscale.
+    </li>
+    <li>
+      Per zero dipendenze, sostituisci il server di coordinamento con Headscale in self-hosting.
+    </li>
+  </ol>
+</ToolCard>

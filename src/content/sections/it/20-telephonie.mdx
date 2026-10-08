@@ -1,0 +1,47 @@
+---
+id: 'telephonie'
+part: 12
+order: 20
+title: 'Telefonia & dispositivo fisico'
+---
+
+<p class="part-num">
+  PARTE 19 · HARDWARE · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Telefonia &amp; dispositivo fisico
+
+La migliore app non serve a nulla se è il dispositivo stesso a tradirti. Ecco le minacce hardware e le mosse che le neutralizzano.
+
+#### Il numero di telefono è un tracker
+
+Il tuo numero collega la tua SIM, il tuo dispositivo (il suo identificativo IMEI), la tua posizione e la tua identità (nella maggior parte dei paesi serve un documento per comprare una SIM). È il filo che permette di incrociare tutto.
+
+- Usa app di messaggistica **senza numero** (SimpleX, Session) per i contatti sensibili, e preferisci sempre Signal agli SMS.
+- Per un'identità separata, una SIM "solo dati" o una eSIM prepagata limita il collegamento al punto vendita (verifica le regole del tuo paese).
+
+#### IMSI-catcher &amp; rete telefonica
+
+Gli "IMSI-catcher" (o "stingray") sono false antenne di telefonia mobile che costringono i telefoni a connettersi per registrarne l'identificativo e talvolta intercettare le comunicazioni, spesso forzando il passaggio al 2G, debolmente cifrato. Parallelamente, una vecchia falla della rete (SS7) permette ancora di intercettare gli SMS e localizzare un telefono a distanza: un motivo in più per abbandonare gli SMS.
+
+- **Disattiva il 2G** nelle impostazioni (possibile su Android e GrapheneOS) per eliminare il principale vettore di intercettazione.
+- A una manifestazione o in una zona sensibile, passa in **modalità aereo** o infila il telefono in una **borsa di Faraday** (che blocca qualsiasi segnale). L'EFF pubblica persino uno strumento gratuito, Rayhunter, per rilevare gli IMSI-catcher.
+
+#### Biometria o codice?
+
+<div class="box warn">
+  <span class="lab">Un dito si può forzare, un codice no</span>
+  <p>
+    Il tuo volto o il tuo dito possono essere appoggiati al sensore mentre sei trattenuto (a una
+    frontiera, durante un arresto); una password nella tua testa no. Prima di una situazione a
+    rischio, forza il ritorno al codice: su iPhone, tieni premuti il tasto laterale e un tasto del
+    volume (la schermata "SOS"); su Android/GrapheneOS, usa <b>Blocco</b> nel menu di accensione,
+    che disattiva la biometria finché non viene inserito il PIN. Scegli una passphrase lunga, non un
+    PIN a quattro cifre. GrapheneOS offre persino un <b>PIN di emergenza</b> che cancella il
+    telefono.
+  </p>
+</div>
+
+#### Liberarsi da Microsoft e Apple
+
+Non dimenticare il computer: Windows invia telemetria senza sosta (e la sua funzione "Recall" ha tentato di catturare lo schermo di continuo), macOS segnala le app che avvii. La vera via d'uscita è Linux (vedi sezione 12). In alternativa, disattiva la telemetria, l'ID pubblicità e "Recall", e aggiungi un firewall in uscita (come Little Snitch su Mac).

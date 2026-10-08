@@ -1,0 +1,392 @@
+---
+id: 'messagerie'
+part: 1
+order: 3
+title: 'Messaggistica cifrata'
+---
+
+<p class="part-num">
+  PARTE 02 · LE BASI · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Messaggistica cifrata
+
+La prima mossa, quella che ti protegge più in fretta: lascia WhatsApp, Messenger e Telegram per un'app di messaggistica davvero cifrata (idealmente open source).
+
+<div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Lasci</th>
+        <th>Adotti</th>
+        <th>Perché</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="old">WhatsApp</span>
+        </td>
+        <td>
+          <span class="new">Signal</span>
+        </td>
+        <td>Stessa semplicità, senza Meta né raccolta di metadati</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="old">Messenger</span>
+        </td>
+        <td>
+          <span class="new">Signal / SimpleX</span>
+        </td>
+        <td>
+          Messenger non è E2EE per impostazione predefinita ed è stato scansionato con Chat Control
+          1.0
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="old">Telegram</span>
+        </td>
+        <td>
+          <span class="new">Signal / SimpleX</span>
+        </td>
+        <td>Telegram non è cifrato end-to-end per impostazione predefinita</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ToolCard tool="t-signal">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Sostituisce WhatsApp</span>
+    <span class="tool-tag">🇺🇸 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un'app di messaggistica cifrata per messaggi, chiamate, video e gruppi. Il sostituto diretto di
+    WhatsApp, altrettanto semplice.
+  </Fragment>
+  <Fragment slot="why">
+    Crittografia end-to-end predefinita, organizzazione senza scopo di lucro, un protocollo
+    verificato che è lo standard mondiale. Quasi nessun metadato conservato, e il team si è
+    impegnato a lasciare l'UE piuttosto che installare la scansione.
+  </Fragment>
+  <Fragment slot="who">
+    Tutti, da oggi stesso. È il primo passo e il più utile. Un limite: serve un numero di telefono,
+    che puoi nascondere dietro un nome utente.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installalo da <b>signal.org</b> (App Store, Google Play o l'APK diretto su Android).
+    </li>
+    <li>Conferma il tuo numero via SMS, poi imposta un PIN.</li>
+    <li>
+      Impostazioni &gt; Privacy: crea un <b>nome utente</b> per nascondere il tuo numero e attiva il{' '}
+      <b>blocco della registrazione</b>.
+    </li>
+    <li>Invita i tuoi contatti. Sul computer, collega l'app desktop al telefono.</li>
+    <li>
+      Per i contatti importanti, confronta il <b>numero di sicurezza</b> (di persona o tramite un
+      altro canale): esclude un'intercettazione man-in-the-middle.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-simplex">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Nessun identificativo</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un'app di messaggistica cifrata senza account, senza numero e senza identificativo. Ti colleghi
+    condividendo un link o un codice QR.
+  </Fragment>
+  <Fragment slot="why">
+    Per progettazione, nemmeno i server possono sapere chi parla con chi. È attualmente l'opzione
+    più solida contro la correlazione dei metadati.
+  </Fragment>
+  <Fragment slot="who">
+    Account pseudonimi, contatti sensibili, alto rischio. Un po' più giovane di Signal, con qualche
+    asperità.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installalo da <b>simplex.chat</b> (F-Droid, Google Play, App Store o APK).
+    </li>
+    <li>
+      Scegli un nome visualizzato <b>locale</b> (mai il tuo vero nome: resta sul tuo dispositivo).
+    </li>
+    <li>
+      Per aggiungere un contatto, condividi un <b>link di invito monouso</b> o un codice QR.
+    </li>
+    <li>Attiva il blocco con codice e (avanzato) configura i tuoi server SMP.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-session">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Senza telefono</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una crittografia al livello di Signal, ma senza numero di telefono e con instradamento onion.
+  </Fragment>
+  <Fragment slot="why">
+    La tua identità è un "Session ID" casuale. Il traffico passa per una rete decentralizzata
+    (Lokinet) che riduce drasticamente i metadati.
+  </Fragment>
+  <Fragment slot="who">
+    Quando un numero di telefono è un rischio. Ecosistema più piccolo, da riservare alle
+    conversazioni che contano.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installalo da <b>getsession.org</b> (tutte le piattaforme).
+    </li>
+    <li>
+      "Crea account" genera il tuo Session ID e una <b>frase di recupero</b>.
+    </li>
+    <li>Scrivi la frase di recupero su carta: è l'unica chiave del tuo account.</li>
+    <li>Condividi il tuo Session ID (o QR) con i tuoi contatti.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-threema">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Senza numero di telefono</span>
+    <span class="tool-tag">🇨🇭 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un'app di messaggistica svizzera completa (messaggi, chiamate, gruppi) in cui sei identificato
+    da un <b>Threema ID</b> casuale, senza numero di telefono né e-mail.
+  </Fragment>
+  <Fragment slot="why">
+    Crittografia end-to-end, app open source (AGPL) e verificate, un'azienda di diritto svizzero.
+    Pagata una sola volta, non vive dei tuoi dati.
+  </Fragment>
+  <Fragment slot="who">
+    Chi vuole un'alternativa a Signal senza fornire un numero di telefono e accetta di pagare l'app.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Acquista e installa Threema da <b>threema.com</b>, dall'App Store o da Google Play (esiste
+      anche una licenza per la versione F-Droid).
+    </li>
+    <li>Annota il tuo Threema ID e crea un backup protetto da password.</li>
+    <li>
+      Aggiungi i contatti scansionando il loro codice QR: ottengono il livello di verifica più alto.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-olvid">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Senza numero di telefono</span>
+    <span class="tool-tag">🇫🇷 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un'app di messaggistica francese che funziona <b>senza alcun dato personale</b>: niente numero
+    di telefono, niente e-mail, niente rubrica.
+  </Fragment>
+  <Fragment slot="why">
+    Crittografia end-to-end, codice sorgente delle app pubblicato (AGPL), certificata dall'agenzia
+    francese per la cybersicurezza ANSSI (CSPN). Usata dal governo francese per le sue
+    comunicazioni.
+  </Fragment>
+  <Fragment slot="who">
+    Tutti, in particolare chi preferisce un editore e server europei. I contatti si aggiungono di
+    persona o tramite invito.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installa Olvid da <b>olvid.io</b>, dall'App Store o da Google Play. La versione base è
+      gratuita.
+    </li>
+    <li>Scegli un nome visualizzato: non serve alcuna registrazione.</li>
+    <li>
+      Aggiungi un contatto scansionando il suo codice QR, oppure scambiando un invito e poi un
+      codice a 4 cifre.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-deltachat">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Senza numero di telefono</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un'app di messaggistica basata sulla rete e-mail: i profili si creano con un tocco su relay
+    "chatmail", senza numero di telefono né indirizzo personale.
+  </Fragment>
+  <Fragment slot="why">
+    Crittografia end-to-end automatica, una rete di relay decentralizzata (chiunque può gestirne
+    uno), app libere e verificate.
+  </Fragment>
+  <Fragment slot="who">
+    Chi vuole una rete decentralizzata senza numero di telefono e la possibilità di non dipendere da
+    un unico fornitore.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installa Delta Chat da <b>delta.chat</b>, F-Droid, dall'App Store o da Google Play.
+    </li>
+    <li>
+      Crea un profilo: viene proposto un relay chatmail predefinito, senza bisogno di numero di
+      telefono né e-mail.
+    </li>
+    <li>
+      Aggiungi i contatti tramite codice QR o link di invito, così la crittografia è verificata.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-briar">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzato</span>
+    <span class="tool-tag">Offline / P2P</span>
+    <span class="tool-tag">Android · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un'app di messaggistica peer-to-peer che funziona <b>senza internet</b>: tramite Bluetooth,
+    Wi-Fi Direct o Tor.
+  </Fragment>
+  <Fragment slot="why">
+    Nessun server, quindi niente da spegnere o sequestrare. Resiste ai blackout di internet e alla
+    censura di rete.
+  </Fragment>
+  <Fragment slot="who">
+    Manifestazioni, catastrofi, zone isolate, blackout. Solo Android, e serve l'app a entrambe le
+    persone.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Installalo da <b>briarproject.org</b> o da F-Droid (niente iOS).
+    </li>
+    <li>
+      Crea un account <b>locale</b> (nickname + password), salvato solo sul telefono.
+    </li>
+    <li>
+      Aggiungi un contatto vicino scansionando il suo codice QR, o a distanza tramite un link.
+    </li>
+    <li>
+      Quando la rete è giù, attiva il Bluetooth: i messaggi passano da un dispositivo all'altro.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-bitchat">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzato</span>
+    <span class="tool-tag">Mesh Bluetooth</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    L'app di messaggistica mesh di Jack Dorsey: i telefoni vicini inoltrano i messaggi di salto in
+    salto, senza internet, server né account.
+  </Fragment>
+  <Fragment slot="why">
+    Crittografia end-to-end (AES-256-GCM) e una "modalità panico" che cancella tutto con tre tocchi
+    sul logo.
+  </Fragment>
+  <Fragment slot="who">Manifestazioni e blackout, insieme a Briar. Da usare con cautela.</Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Attenzione: non verificato</span>
+    <p>
+      Il suo stesso repository avverte che "non ha ricevuto una revisione di sicurezza esterna".
+      Ottimo per la resilienza, ma non scommetterci ancora delle vite.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Installalo dall'App Store (iOS) o dall'APK/GitHub (Android).</li>
+    <li>Apri l'app e scegli un nickname. Nessun account da creare.</li>
+    <li>I dispositivi vicini si rilevano automaticamente via Bluetooth.</li>
+    <li>In caso di pericolo, tocca tre volte il logo per cancellare tutto (modalità panico).</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-meshtastic">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzato</span>
+    <span class="tool-tag">Radio fuori rete</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Messaggi di testo trasportati via <b>radio LoRa</b>, da dispositivo a dispositivo, senza rete
+    mobile né internet. Il tuo telefono si collega al dispositivo via Bluetooth.
+  </Fragment>
+  <Fragment slot="why">
+    Nessun operatore, nessun server: niente da interrompere o costringere. Diversi chilometri di
+    portata e una rete mesh che inoltra i messaggi.
+  </Fragment>
+  <Fragment slot="who">
+    Escursioni, zone senza copertura, guasti e crisi. Serve hardware (un dispositivo radio a
+    persona) e bisogna accettare messaggi brevi e lenti.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Limiti da conoscere</span>
+    <p>
+      Il canale predefinito può essere letto da chiunque. I messaggi diretti sono cifrati (firmware
+      2.5 e successivi), ma i metadati radio restano visibili. Meshtastic non comunica con MeshCore,
+      un progetto concorrente.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Acquista un dispositivo supportato (elenco su <b>meshtastic.org</b>) e installa l'app.
+    </li>
+    <li>
+      Seleziona la regione radio del tuo paese: frequenze consentite e tempo di trasmissione
+      variano.
+    </li>
+    <li>
+      Crea un canale privato con una chiave casuale: il canale pubblico predefinito usa una chiave
+      nota a tutti.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-molly">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzato</span>
+    <span class="tool-tag">Signal rinforzato</span>
+    <span class="tool-tag">Android · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una versione rinforzata di Signal per Android, compatibile con la stessa rete.
+  </Fragment>
+  <Fragment slot="why">
+    Database cifrato a riposo, blocco automatico e una variante "FOSS" completamente priva dei
+    servizi Google.
+  </Fragment>
+  <Fragment slot="who">
+    Utenti avanzati, in particolare su GrapheneOS, con un modello di minaccia elevato. Solo Android.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Aggiungi il repository di Molly in F-Droid, o scarica l'APK da <b>molly.im</b>.
+    </li>
+    <li>
+      Scegli <b>Molly-FOSS</b> se vuoi zero dipendenze da Google.
+    </li>
+    <li>Registrati con il tuo numero (stessa rete di Signal).</li>
+    <li>Imposta una password per il database e il blocco automatico.</li>
+  </ol>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Contro Chat Control</span>
+  <p>
+    Preferisci app <strong>open source</strong> i cui team si sono impegnati pubblicamente a
+    lasciare il mercato europeo piuttosto che installare la scansione lato client (Signal l'ha
+    fatto), oppure app decentralizzate senza un fornitore centrale da costringere. Promemoria: se è
+    il sistema operativo stesso a imporre la scansione, l'app non può farci nulla, da qui la sezione
+    12.
+  </p>
+</div>

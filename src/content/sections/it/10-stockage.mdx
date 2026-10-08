@@ -1,0 +1,122 @@
+---
+id: 'stockage'
+part: 6
+order: 10
+title: 'Archiviazione cifrata'
+---
+
+<p class="part-num">
+  PARTE 09 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Archiviazione cifrata
+
+<ToolCard tool="t-protondrive">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Principiante</span>
+    <span class="tool-tag">Sostituisce Google Drive / iCloud</span>
+    <span class="tool-tag">🇨🇭 · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un cloud cifrato end-to-end per i tuoi file e le tue foto, parte di Proton.
+  </Fragment>
+  <Fragment slot="why">
+    A differenza di Google Drive o iCloud, Proton non può leggere i tuoi file: vengono cifrati prima
+    di lasciare il tuo dispositivo. Giurisdizione svizzera, stesso account di Proton Mail.
+  </Fragment>
+  <Fragment slot="who">
+    Tutti, come sostituto semplice e diretto del cloud di Google o di Apple.
+  </Fragment>
+  <ol slot="install">
+    <li>Attiva Proton Drive nel tuo account Proton e installa l'app.</li>
+    <li>Attiva il backup automatico delle foto, poi disattiva quello di Google/Apple.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cryptomator">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Cifra prima del caricamento</span>
+    <span class="tool-tag">🇩🇪 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Una cassaforte che cifra i tuoi file <b>prima</b> di caricarli su qualsiasi cloud, anche Google
+    Drive o Dropbox.
+  </Fragment>
+  <Fragment slot="why">
+    Il trucco perfetto se devi tenere un cloud esistente: conservi il servizio comodo, ma il
+    fornitore vede solo dati cifrati incomprensibili. Solo tu hai la chiave.
+  </Fragment>
+  <Fragment slot="who">
+    Chi non può ancora lasciare un cloud mainstream, ma vuole proteggere i propri file da subito.
+  </Fragment>
+  <ol slot="install">
+    <li>Installa Cryptomator (desktop e mobile) da cryptomator.org.</li>
+    <li>
+      Crea una "cassaforte" nella cartella sincronizzata del tuo cloud e scegli una password
+      robusta.
+    </li>
+    <li>
+      Metti i tuoi file nella cassaforte: vengono cifrati e poi sincronizzati automaticamente.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-veracrypt">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Intermedio</span>
+    <span class="tool-tag">Sostituisce BitLocker</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Il riferimento per la cifratura <b>locale</b>: un disco intero, una partizione, una chiavetta
+    USB o un contenitore cifrato (un file che si monta come un'unità).
+  </Fragment>
+  <Fragment slot="why">
+    Nulla lascia il tuo computer: nessun account, nessun cloud, nessuna chiave di recupero inviata a
+    un produttore. Gratuito, verificato, successore di TrueCrypt. È il corrispettivo locale di
+    Cryptomator, che è pensato per il cloud.
+  </Fragment>
+  <Fragment slot="who">
+    Su Windows, per sostituire BitLocker; ovunque, per un contenitore cifrato o un disco esterno. Su
+    Linux e macOS, la cifratura integrata (LUKS, FileVault) basta per il disco di sistema.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Cifratura di sistema e Secure Boot</span>
+    <p>
+      Nel 2026 Microsoft revoca l'autorità di certificazione UEFI del 2011 che firmava il vecchio
+      bootloader. Se cifri il disco di sistema, usa la versione 1.26.29 o successiva, che include
+      bootloader firmati sia per l'autorità del 2011 sia per quella del 2023.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Scarica VeraCrypt da <b>veracrypt.jp</b> e verifica la firma PGP o il checksum del file.
+    </li>
+    <li>
+      Crea un volume con le impostazioni predefinite (AES, SHA-512); Argon2id è disponibile dalla
+      versione 1.26.29.
+    </li>
+    <li>Scegli una passphrase lunga (diverse parole casuali), mai riutilizzata.</li>
+    <li>Avanzato: crea un volume nascosto all'interno del volume per la negabilità plausibile.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nc-storage">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzato</span>
+    <span class="tool-tag">Il tuo cloud</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Il tuo cloud personale (file, calendario, contatti, note) ospitato sul tuo server.
+  </Fragment>
+  <Fragment slot="why">
+    Il massimo grado di controllo: i tuoi dati non lasciano mai il tuo hardware. Descritto nel
+    dettaglio nella sezione 10 (Self-hosting).
+  </Fragment>
+  <Fragment slot="who">Chi fa self-hosting. Vedi la scheda completa nella sezione 10.</Fragment>
+  <a slot="links" class="tool-link" href="#selfhost">
+    → Sezione 10
+  </a>
+</ToolCard>

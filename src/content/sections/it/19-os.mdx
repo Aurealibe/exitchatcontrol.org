@@ -1,0 +1,147 @@
+---
+id: 'os'
+part: 12
+order: 19
+title: 'Sistemi operativi liberi'
+---
+
+<p class="part-num">
+  PARTE 18 · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Sistemi operativi liberi
+
+La chiave di volta. Se la scansione lato client può essere imposta dal sistema operativo stesso, l'unica vera contromossa è controllare quel sistema operativo. Vale sia per il telefono (GrapheneOS) sia per il computer (Linux). Non sottovalutarlo: finché resti su Windows, macOS o un Android di Google, non controlli davvero la tua macchina.
+
+<ToolCard tool="t-grapheneos">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzato</span>
+    <span class="tool-tag">Mobile senza Google</span>
+    <span class="tool-tag">Android · Pixel · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un Android completamente "degooglizzato", installato su un telefono Pixel: la sovranità sul
+    mobile.
+  </Fragment>
+  <Fragment slot="why">
+    È la difesa strutturale per eccellenza contro un sistema operativo o uno store di app che ti
+    scansionerebbe. Servizi Google in una sandbox opzionale, <b>permessi di rete app per app</b>,
+    profili isolati, riavvio automatico che elimina le chiavi dalla memoria, un PIN di emergenza che
+    cancella il telefono. Talmente rispettato per la sicurezza da essere usato da persone prese di
+    mira da spyware.
+  </Fragment>
+  <Fragment slot="who">
+    Profili esposti, ma anche qualsiasi cittadino disposto a comprare un Pixel per riprendere il
+    controllo del proprio telefono.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Procurati un telefono <b>Google Pixel</b> compatibile (è l'unico hardware supportato, per
+      motivi di sicurezza).
+    </li>
+    <li>
+      Da un computer, vai su <b>grapheneos.org/install</b> e segui l'installer web (pochi clic,
+      nessun terminale necessario).
+    </li>
+    <li>
+      Per le tue app, installa lo store libero F-Droid; aggiungi Google Play in sandbox solo se
+      necessario.
+    </li>
+    <li>
+      Imposta una passphrase lunga (non un PIN a 4 cifre) e impara a usare la modalità "Lockdown".
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-linux">
+  <Fragment slot="name">Linux (su computer)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Sostituisce Windows / macOS</span>
+    <span class="tool-tag">🌍 · libero</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un sistema operativo libero per il tuo computer, che sostituisce Windows o macOS. Esiste in
+    molte varianti, chiamate "distribuzioni".
+  </Fragment>
+  <Fragment slot="why">
+    È il punto cieco di molte persone: cifrano i loro messaggi ma tengono un Windows che invia
+    telemetria a Microsoft senza sosta (la cui funzione "Recall" ha tentato di catturare lo schermo
+    di continuo), o un macOS che segnala le app che avvii. Linux non ti spia, è gratuito, ridà vita
+    ai vecchi computer e ti rende finalmente padrone della tua macchina. È più facile di quanto si
+    dica: le distribuzioni moderne somigliano a Windows o macOS.
+  </Fragment>
+  <Fragment slot="who">
+    Chiunque può fare il passaggio. Per iniziare, <b>Linux Mint</b> (la più vicina a Windows) o{' '}
+    <b>Fedora</b>; <b>Debian</b> per la stabilità. Non serve cancellare nulla: puoi prima provare,
+    poi installare accanto al tuo sistema attuale.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Non sai quale distribuzione scegliere? Rispondi al quiz su <b>distrochooser.de/fr</b>, che ti
+      indica quella giusta per le tue esigenze.
+    </li>
+    <li>
+      Provala <b>senza installare nulla</b>, direttamente nel browser, su <b>distrosea.com</b>.
+    </li>
+    <li>
+      Una volta convinto, scarica l'immagine della distribuzione e crea una chiavetta USB avviabile
+      (con Ventoy o Balena Etcher).
+    </li>
+    <li>
+      Avvia dalla chiavetta per provare il sistema "live", poi lancia l'installazione. Attiva la
+      crittografia del disco che ti viene proposta.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tails">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzato</span>
+    <span class="tool-tag">USB amnesica</span>
+    <span class="tool-tag">🌍 · tutto via Tor</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un sistema che si avvia da una chiavetta USB, fa passare tutto il traffico attraverso Tor e non
+    lascia <b>nessuna traccia</b> allo spegnimento.
+  </Fragment>
+  <Fragment slot="why">
+    Allo spegnimento, tutto viene dimenticato: è "amnesico". Ideale per un lavoro sensibile e
+    occasionale su un computer che non è tuo, senza lasciare nulla dietro di sé.
+  </Fragment>
+  <Fragment slot="who">
+    Whistleblower, giornalisti, fonti. Lo strumento di riferimento per il lavoro ad alto rischio.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Scarica Tails da <b>tails.net</b> e segui la procedura guidata per creare la chiavetta USB.
+    </li>
+    <li>Riavvia il computer da quella chiavetta. Usala, poi spegni: tutto sparisce.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-qubes">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Esperto</span>
+    <span class="tool-tag">Compartimentazione</span>
+    <span class="tool-tag">🌍 · open source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Due sistemi di nicchia: Qubes suddivide il tuo PC in macchine virtuali isolate; postmarketOS fa
+    girare Linux sui vecchi telefoni.
+  </Fragment>
+  <Fragment slot="why">
+    Qubes isola ogni attività (lavoro, banca, navigazione rischiosa) nel proprio compartimento: una
+    compromissione non raggiunge il resto. postmarketOS allunga la vita dei telefoni abbandonati dal
+    loro produttore.
+  </Fragment>
+  <Fragment slot="who">Utenti esperti con un modello di minaccia molto elevato.</Fragment>
+</ToolCard>
+
+#### iPhone: Modalità di isolamento
+
+Su iPhone, iPad e Mac, Apple offre la **Modalità di isolamento**, pensata per le persone che potrebbero essere prese di mira da spyware sofisticati. Blocca la maggior parte degli allegati in Messaggi, le chiamate FaceTime da persone che non hai chiamato di recente, alcune tecnologie web complesse, le connessioni via cavo mentre il dispositivo è bloccato e l'installazione di profili di configurazione. L'uso quotidiano diventa meno comodo: è il prezzo di una superficie di attacco ridotta. Attivala in Impostazioni > Privacy e sicurezza > Modalità di isolamento, separatamente su ogni dispositivo, dopo aver installato l'ultimo aggiornamento.
+
+#### Rafforza il tuo dispositivo
+
+Anche senza cambiare sistema operativo, guadagni molto: installa le app tramite **F-Droid** (store libero) o **Aurora Store**, sostituisci i servizi Google con **microG**, crea profili separati, togli i permessi di rete inutili, disattiva il backup automatico nel cloud e l'ID pubblicità.

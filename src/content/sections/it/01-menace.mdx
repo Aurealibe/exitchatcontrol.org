@@ -1,0 +1,216 @@
+---
+id: 'menace'
+part: 0
+order: 1
+title: 'Comprendi la minaccia'
+---
+
+<p class="part-num">PARTE 00 · IL PERCHÉ</p>
+
+## Comprendi la minaccia
+
+Prima di cambiare strumenti, capisci da cosa ti stai proteggendo. Altrimenti installi app a caso e ti senti al sicuro quando non lo sei.
+
+### Chat Control 1.0 e 2.0, in parole semplici
+
+"Chat Control" è il soprannome di due testi dell'UE che consentono (o imporrebbero) la scansione dei tuoi messaggi privati alla ricerca di materiale pedopornografico (CSAM). L'obiettivo dichiarato è legittimo; il metodo, la scansione generalizzata delle comunicazioni di persone non sospettate, equivale a una sorveglianza di massa.
+
+<div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Chat Control 1.0</th>
+        <th>Chat Control 2.0 (CSAR)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Testo</td>
+        <td>Regolamento (UE) 2021/1232, deroga alla direttiva ePrivacy</td>
+        <td>Proposta COM/2022/209 (Ylva Johansson, maggio 2022)</td>
+      </tr>
+      <tr>
+        <td>Scansione</td>
+        <td>
+          Volontaria, le piattaforme <em>possono</em> scansionare
+        </td>
+        <td>
+          Proposta della Commissione: obbligatoria tramite "ordini di rilevamento". Posizione del
+          Consiglio (nov. 2025): scansione volontaria resa permanente, più "misure di attenuazione
+          del rischio"
+        </td>
+      </tr>
+      <tr>
+        <td>Chi</td>
+        <td>
+          Soprattutto servizi statunitensi non cifrati: Gmail, Messenger/Instagram, Skype, Snapchat,
+          iCloud Mail, Xbox
+        </td>
+        <td>
+          <strong>Tutte</strong> le piattaforme, comprese le app di messaggistica con crittografia
+          end-to-end
+        </td>
+      </tr>
+      <tr>
+        <td>Durata</td>
+        <td>
+          Temporanea: scaduta il 3 aprile 2026, ripristinata il 23 luglio 2026 fino al 3 aprile 2028
+        </td>
+        <td>Permanente (nessuna scadenza prevista)</td>
+      </tr>
+      <tr>
+        <td>Stato (ott. 2026)</td>
+        <td>
+          <strong>In vigore</strong>, comunicazioni con crittografia end-to-end escluse dal suo
+          ambito
+        </td>
+        <td>In negoziazione (trilogo): nessun testo definitivo, nulla in vigore</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Chat Control 1.0 oggi: cosa è coperto, cosa no
+
+Il regolamento provvisorio è scaduto il 3 aprile 2026, poi è tornato: dopo una seconda lettura al Parlamento europeo, il Consiglio lo ha approvato definitivamente il 23 luglio 2026 (Regolamento (UE) 2026/1881), fino al 3 aprile 2028. **Consente**, senza imporlo, ai fornitori di scansionare le comunicazioni private alla ricerca di materiale pedopornografico.
+
+- **Cosa è coperto**: i servizi di comunicazione che non sono cifrati end-to-end e il cui fornitore sceglie di scansionare, ad esempio i messaggi di Messenger o Instagram, le e-mail di Gmail o Outlook, le chat integrate in console e piattaforme di gioco. Google, Microsoft, Meta e Snapchat sono tra i firmatari dell'appello del 19 marzo 2026 per mantenere attivo questo rilevamento.
+- **Cosa è escluso**: un emendamento adottato dal Parlamento, poi accettato dal Consiglio, esclude dal suo ambito le comunicazioni "alle quali la crittografia end-to-end è, è stata o sarà applicata". Le app di messaggistica cifrate end-to-end per impostazione predefinita, come Signal, Session, Threema, SimpleX Chat o Olvid, non sono quindi coperte da questo testo (vedi [messaggistica cifrata](#messagerie)).
+
+Questa esclusione vale solo per questo testo provvisorio. Il regolamento permanente, o una versione più severa, può tornare indietro: questa guida prevede tale scenario e consiglia strumenti che restano protettivi anche se la scansione diventasse obbligatoria.
+
+<div class="box warn">
+  <span class="lab">L'e-mail, l'anello debole</span>
+  <p>
+    Proton Mail e Tuta cifrano i messaggi tra i propri utenti. Ma un'e-mail scambiata con un
+    indirizzo Gmail o Outlook arriva in chiaro a quel fornitore, che può scansionarla dal suo lato:
+    né Proton né Tuta possono impedirlo. La crittografia PGP funziona anche da Gmail; protegge il
+    corpo del messaggio, ma non l'oggetto né i metadati (vedi [e-mail cifrata](#email)).
+  </p>
+</div>
+
+### Chat Control 2.0: cosa farebbe il testo
+
+Il regolamento permanente (CSAR) è ancora in negoziazione tra Commissione, Consiglio e Parlamento (trilogo). Il sesto trilogo, il 29 settembre 2026, si è chiuso senza accordo e i negoziati tecnici proseguono. **Non esiste un testo definitivo e nulla è in vigore.**
+
+- **La Commissione** ha proposto nel 2022 "ordini di rilevamento" obbligatori, app di messaggistica cifrate comprese.
+- **Il Consiglio** (posizione del 26 novembre 2025) ha abbandonato gli ordini obbligatori, ma rende permanente la scansione volontaria e impone "misure di attenuazione del rischio", che potrebbero includere la scansione.
+- **Il Parlamento** vuole un rilevamento limitato ai sospettati, su ordine di un giudice, e la tutela della crittografia end-to-end.
+
+#### Se la scansione lato client diventasse obbligatoria
+
+Quanto segue non è in vigore: sono le conseguenze plausibili se il testo finale imponesse la scansione sui dispositivi.
+
+1. **Le app di messaggistica che si adeguano** distribuirebbero una versione UE con un modulo di scansione eseguito prima della cifratura, distinta dalle versioni offerte altrove.
+2. **Le app di messaggistica che rifiutano** potrebbero lasciare il mercato europeo, come Signal ha annunciato pubblicamente nell'ottobre 2025. L'app sparirebbe allora dagli store europei: su iOS diventerebbe difficile o impossibile ottenerla; su Android l'editore può offrire l'APK sul proprio sito ufficiale. Se il download o il servizio fossero bloccati dall'UE, solo una [VPN](#vpn) o [Tor](#tor) permetterebbe di raggiungerli.
+3. **Scansione a livello di sistema operativo**: se l'obbligo riguardasse i sistemi stessi, un'app libera non basterebbe più. Resterebbero fuori portata i sistemi che non collaborano, GrapheneOS su mobile e le distribuzioni GNU/Linux non regionali su computer (vedi [sistemi operativi liberi](#os)), usati con un'app di messaggistica che rifiuta anch'essa la scansione.
+
+### La scansione lato client: l'intercettazione legale
+
+Il cuore di Chat Control 2.0 è una tecnica chiamata **scansione lato client** (client-side scanning). L'idea: invece di rompere la crittografia durante il transito, si installa un software **direttamente sul tuo telefono** per ispezionare ogni messaggio, foto o link **prima** che venga cifrato e inviato. Signal l'ha riassunto in una frase: è "come un malware sul tuo dispositivo".
+
+<div class="box honest">
+  <span class="lab">Onestà tecnica, da leggere due volte</span>
+  <p>
+    Contro la scansione lato client,{' '}
+    <strong>né una VPN né la crittografia end-to-end bastano</strong> se l'app o il sistema
+    operativo collaborano. La scansione avviene sul dispositivo, prima della cifratura: la VPN non
+    ha nulla da proteggere e la crittografia interviene troppo tardi. Ciò che ti protegge davvero è
+    scegliere <strong>software libero/open source che rifiuta di implementare la scansione</strong>,{' '}
+    <strong>giurisdizioni</strong> favorevoli, il <strong>self-hosting</strong> e{' '}
+    <strong>riprendere il controllo del tuo dispositivo</strong> (un sistema operativo non
+    manomesso). Tutto il resto di questa guida deriva da questa verità.
+  </p>
+</div>
+
+<div class="box warn">
+  <span class="lab">Il colmo: lo strumento non funziona nemmeno</span>
+  <p>
+    La privacy di tutti viene sacrificata per una tecnologia che fallisce. Lo studio stesso del
+    Parlamento europeo conclude che nessun sistema rileva questi contenuti senza un alto tasso di
+    errore (perché su miliardi di messaggi, anche un tasso minimo di falsi positivi produce milioni
+    di false accuse). I dati della polizia irlandese lo dimostrano: delle segnalazioni automatiche,
+    solo il 20% circa riguardava materiale effettivo, e oltre l'11% erano veri e propri falsi
+    positivi. Una ricerca di riferimento ("Bugs in Our Pockets", 2021) mostra inoltre che, una volta
+    installata, la scansione lato client viene inevitabilmente riutilizzata per altri scopi
+    (terrorismo, diritto d'autore, opinioni).
+  </p>
+</div>
+
+### Il pretesto: "proteggere i bambini"
+
+Nessuno è contrario alla protezione dei minori, ed è proprio questo a renderla una leva così efficace. La lotta contro gli abusi sui minori fa da **cavallo di Troia emotivo**: chi oserebbe opporsi? Sotto questa bandiera si fa accettare un principio che, da solo, sarebbe respinto senza appello: l'ispezione automatizzata delle comunicazioni private di **centinaia di milioni di persone non sospettate**. I bambini sono il motivo dichiarato; il vero bersaglio è la crittografia e la privacy di tutti.
+
+L'indizio: le aziende che spingono di più per questa scansione sono proprio quelle il cui modello di business **è** la sorveglianza. Il 19 marzo 2026, un appello congiunto ha esortato i legislatori europei a consolidare il rilevamento "volontario", firmato da:
+
+<div class="namewall" aria-label="Google, LinkedIn, Snapchat, Microsoft, TikTok, Meta">
+  <span>Google</span>
+  <span>LinkedIn</span>
+  <span>Snapchat</span>
+  <span>Microsoft</span>
+  <span>TikTok</span>
+  <span>Meta</span>
+</div>
+
+<blockquote class="pull">
+  "Non farlo sarebbe irresponsabile." L'argomento dei giganti della tecnologia per mantenere in vita
+  la scansione dei messaggi.
+</blockquote>
+
+Questi stessi attori hanno persino annunciato che avrebbero **continuato a scansionare** i messaggi dopo la scadenza della base giuridica il 3 aprile 2026. Ai cittadini si chiede così di affidare l'ispezione delle loro conversazioni intime proprio alle aziende note per raccogliere e monetizzare i loro dati. Questo è il vero volto di Chat Control: un **attacco alla privacy** avvolto in un motivo che nessuno può rifiutare.
+
+### Non è "solo" sorveglianza
+
+Cercano di rassicurarti: "riguarda solo Gmail, Instagram, Snapchat, Messenger." È falso, ed è la parte più allarmante. Dietro questa minimizzazione si nascondono tre svolte.
+
+1. **Non è un'azione mirata, è una pesca a strascico.** Non sorveglia dei sospettati: istituisce la raccolta sistematica delle comunicazioni di intere popolazioni. Una sorveglianza su scala statale, in modo continuo.
+2. **Non è più leggere, è il potere di bloccare.** Un software che ispeziona un messaggio prima dell'invio può anche **rifiutarsi di inviarlo**. La scansione lato client costruisce l'infrastruttura della censura preventiva: bloccare la parola prima ancora che raggiunga il destinatario.
+3. **Una volta che l'infrastruttura esiste, viene riutilizzata.** Un sistema costruito "per i bambini" diventa uno strumento di controllo universale. Il motivo cambia; la macchina resta.
+
+<div class="box warn">
+  <span class="lab">Il prossimo passo logico: l'euro digitale</span>
+  <p>
+    La stessa logica sta per arrivare al tuo denaro. L'euro digitale della BCE si basa su una moneta{' '}
+    <strong>tracciabile</strong>, vieta alle aziende di detenerne e prevede un{' '}
+    <strong>tetto di detenzione</strong>: la BCE ha ipotizzato circa 3.000 € a persona come ipotesi
+    di lavoro, e la posizione votata nella commissione del Parlamento europeo (giugno 2026) lascia
+    alla Commissione il compito di fissare il tetto su raccomandazione della BCE, con revisione ogni
+    due anni. La BCE giura che la moneta non sarà "programmabile", ma il tetto e la tracciabilità
+    sono ben presenti nel menu. Quando arriverà, dirai "tranquillo, è solo un tetto"? È esattamente
+    la stessa trappola retorica di "riguarda solo Gmail". La vera domanda non è mai cosa viene
+    controllato oggi, ma l'infrastruttura di controllo che si sta installando per domani.
+  </p>
+</div>
+
+### Che profilo sei?
+
+Nessuno strumento è magico e nessuno deve fare tutto. Trova il tuo profilo: ogni sezione ti dice fin dove spingerti.
+
+<div class="profiles">
+  <div class="profile p1">
+    <div class="lvl lvl-1">Principiante</div>
+    <h4>🟢 Il cittadino comune</h4>
+    <p>
+      Vuoi solo che le tue conversazioni e la tua vita privata smettano di essere scansionate e
+      monetizzate. Obiettivo: privacy quotidiana, senza diventare un esperto.
+    </p>
+  </div>
+  <div class="profile p2">
+    <div class="lvl lvl-2">Intermedio</div>
+    <h4>🟡 L'account pseudonimo</h4>
+    <p>
+      Account di informazione, pagina attivista, creator: temi di essere deanonimizzato, di subire
+      doxxing o di perdere il tuo account. Obiettivo: separare la tua identità reale da quella
+      pubblica.
+    </p>
+  </div>
+  <div class="profile p3">
+    <div class="lvl lvl-3">Avanzato</div>
+    <h4>🔴 Il whistleblower</h4>
+    <p>
+      Giornalista, attivista, fonte, di fronte a un avversario potente (Stato, datore di lavoro).
+      Obiettivo: anonimato forte, anti-correlazione, trasmettere documenti senza farsi scoprire.
+    </p>
+  </div>
+</div>

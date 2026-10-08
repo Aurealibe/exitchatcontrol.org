@@ -1,0 +1,97 @@
+{
+  "_machineTranslated": "2026-10-08",
+  "signal": { "body": "Sostituisce WhatsApp. E2EE di default, fondazione senza scopo di lucro." },
+  "simplex-chat": {
+    "body": "Nessun identificativo: nemmeno i server possono sapere chi parla con chi."
+  },
+  "session": { "body": "Nessun numero di telefono, onion routing." },
+  "element-matrix": { "body": "Sostituisce Discord/Slack. Federato, self-hostabile." },
+  "briar": { "body": "P2P senza Internet (Bluetooth/Tor): manifestazioni, blackout." },
+  "molly": { "body": "Signal rinforzato per Android (variante interamente FOSS)." },
+  "delta-chat": {
+    "body": "Chat cifrata end-to-end sulla rete e-mail (relay chatmail): nessun numero di telefono richiesto."
+  },
+  "thunderbird": { "body": "Il client di posta libero di riferimento, OpenPGP integrato." },
+  "proton-mail": { "body": "App open source del servizio cifrato svizzero." },
+  "tuta": { "body": "App libere, crittografia post-quantistica, giurisdizione UE." },
+  "firefox": { "body": "Sostituisce Chrome. Il motore indipendente." },
+  "tor-browser": { "body": "Anonimato di rete, anti-fingerprinting." },
+  "mullvad-browser": { "body": "Il browser del Tor Project, senza la rete Tor." },
+  "brave": { "body": "Chromium che blocca pubblicità e tracker di default." },
+  "ublock-origin": { "body": "IL bloccatore di pubblicità e tracker." },
+  "searxng": { "body": "Metamotore di ricerca self-hostabile." },
+  "wireguard": { "body": "Il protocollo VPN moderno su cui tutti costruiscono." },
+  "mullvad-vpn": { "body": "Client della VPN senza account (contanti/Monero accettati)." },
+  "proton-vpn": { "body": "Client liberi, piano gratuito onesto." },
+  "tor": { "body": "La rete che separa chi sei da ciò che fai." },
+  "tailscale": { "body": "Rete WireGuard privata tra i tuoi dispositivi." },
+  "headscale": { "body": "Il server di coordinamento di Tailscale, sul tuo hardware." },
+  "pi-hole": { "body": "Blocca pubblicità e tracker per tutta la rete." },
+  "adguard-home": { "body": "Alternativa a Pi-hole con un'interfaccia moderna." },
+  "bitwarden": { "body": "Gestore di password multipiattaforma." },
+  "vaultwarden": { "body": "Server Bitwarden leggero in self-hosting." },
+  "keepassxc": { "body": "Cassaforte 100% locale, zero cloud." },
+  "aegis": { "body": "Codici 2FA (TOTP) in una cassaforte locale cifrata (Android)." },
+  "ente-auth": { "body": "2FA con sincronizzazione cifrata end-to-end." },
+  "nextcloud": { "body": "Sostituisce l'intera suite Google, a casa tua." },
+  "cryptomator": { "body": "Cifra i tuoi file PRIMA di qualsiasi cloud." },
+  "syncthing": { "body": "Sincronizzazione da dispositivo a dispositivo, senza server." },
+  "restic": { "body": "Backup cifrati, deduplicati, automatici." },
+  "immich": { "body": "Google Foto in self-hosting (volti, ricerca)." },
+  "ente-photos": { "body": "Foto E2EE, riconoscimento sul dispositivo." },
+  "libreoffice": { "body": "La suite per ufficio libera." },
+  "onlyoffice": { "body": "Ufficio collaborativo self-hostabile." },
+  "joplin": { "body": "Note in Markdown, cifratura e sincronizzazione opzionali." },
+  "standard-notes": { "body": "Note cifrate di default." },
+  "cryptpad": { "body": "Google Docs collaborativo, interamente cifrato." },
+  "organic-maps": { "body": "Mappe offline senza alcun tracciamento (OpenStreetMap)." },
+  "osmand": { "body": "Mappe per utenti esperti (escursionismo, curve di livello)." },
+  "jitsi-meet": { "body": "Videochiamate senza account, self-hostabile." },
+  "mastodon": { "body": "Sostituisce X/Twitter. Federato, nessun algoritmo imposto." },
+  "pixelfed": { "body": "L'Instagram del fediverso." },
+  "peertube": { "body": "YouTube federato." },
+  "lemmy": { "body": "Reddit federato." },
+  "damus": { "body": "Client Nostr: la tua identità è una coppia di chiavi." },
+  "ollama": { "body": "Esegui LLM in locale, con un solo comando." },
+  "llama-cpp": { "body": "Il motore di inferenza locale che ha reso tutto possibile." },
+  "jan": { "body": "Un ChatGPT 100% locale, interfaccia semplice." },
+  "gpt4all": { "body": "LLM locali attenti alla privacy, adatti alla CPU." },
+  "pocketpal": { "body": "Esegui LLM offline sul telefono (iOS/Android), senza account." },
+  "grapheneos": { "body": "Android de-googlizzato e rinforzato (Pixel)." },
+  "tails": { "body": "Sistema operativo amnesico su USB, tutto passa per Tor." },
+  "qubes-os": { "body": "Compartimentazione tramite VM isolate." },
+  "f-droid": { "body": "Lo store di app 100% libero." },
+  "postmarketos": { "body": "Linux sui telefoni abbandonati." },
+  "yunohost": { "body": "Server personale chiavi in mano (e-mail inclusa)." },
+  "startos": { "body": "Server sovrano, Tor di default." },
+  "synapse": { "body": "Il tuo server di chat federato." },
+  "bitcoin-core": { "body": "Denaro che custodisci da solo." },
+  "monero": { "body": "Transazioni private di default." },
+  "securedrop": { "body": "Deposito anonimo di documenti per le redazioni." },
+  "onionshare": { "body": "Condividi file tramite Tor, senza intermediari." },
+  "rayhunter": { "body": "Rilevatore di IMSI catcher." },
+  "mat2": { "body": "Rimuove i metadati prima della pubblicazione." },
+  "exiftool": { "body": "Legge e cancella i metadati EXIF." },
+  "threema": {
+    "body": "Messenger svizzero a pagamento, senza numero di telefono né e-mail (ID casuale)."
+  },
+  "olvid": {
+    "body": "Messenger francese senza numero di telefono, certificato dall'ANSSI (CSPN)."
+  },
+  "meshtastic": { "body": "Messaggistica radio LoRa fuori rete su piccoli dispositivi dedicati." },
+  "veracrypt": { "body": "Cifratura locale di dischi, partizioni e container." },
+  "forgejo": {
+    "body": "Forgia Git libera self-hostabile; Codeberg è la sua istanza senza scopo di lucro."
+  },
+  "radicle": { "body": "Forgia di codice peer-to-peer, senza server centrale." },
+  "technitium-dns": {
+    "body": "Server DNS in self-hosting con blocco della pubblicità e DNS cifrato."
+  },
+  "unbound": {
+    "body": "Il tuo resolver ricorsivo: nessun fornitore DNS terzo. Si abbina a Pi-hole."
+  },
+  "jellyfin": { "body": "Il tuo media server per film, serie e musica che possiedi." },
+  "magic-wormhole": {
+    "body": "Invia un file cifrato end-to-end con un breve codice monouso (riga di comando)."
+  }
+}
