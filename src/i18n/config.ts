@@ -2,6 +2,9 @@ import en from './en.json'
 import fr from './fr.json'
 import nl from './nl.json'
 import de from './de.json'
+import es from './es.json'
+import cs from './cs.json'
+import hu from './hu.json'
 import { defaultLocale, locales, type Locale } from './locales'
 
 export { locales, defaultLocale, localeNames, localeFlags, type Locale } from './locales'
@@ -9,7 +12,7 @@ export { locales, defaultLocale, localeNames, localeFlags, type Locale } from '.
 type Dict = typeof en
 // Translations are type-checked against the English shape: a missing key is a
 // build error, not a silent English fallback.
-const dicts: Record<Locale, Dict> = { en, fr, nl, de }
+const dicts: Record<Locale, Dict> = { en, fr, nl, de, es, cs, hu }
 
 function lookup(dict: Dict, path: string): unknown {
   return path.split('.').reduce<unknown>((node, key) => {

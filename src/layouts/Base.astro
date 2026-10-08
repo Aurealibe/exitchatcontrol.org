@@ -110,7 +110,7 @@ const jsonLd = JSON.stringify([
             explicit choice, else follow the browser language once.
             No JS = English, which is the fallback anyway. */
       ;(() => {
-        const LANGS = ['en', 'fr', 'nl', 'de']
+        const LANGS = ['en', 'fr', 'nl', 'de', 'es', 'cs', 'hu']
         const read = (key) => {
           try {
             return localStorage.getItem(key) || ''
