@@ -25,14 +25,25 @@ jobs:
           node-version: 22
 
       - name: Check cited sources
-        run: node scripts/check-links.mjs
+        run: node scripts/check-links.mjs | tee link-report.txt
 
-      - name: Open triage issue on failure
+      # One standing issue: comment on it if it is still open, otherwise open it.
+      # The body carries only the failing lines of our own script's output.
+      - name: Report failures on the link-rot issue
         if: failure()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh issue create \
-            --repo "$GITHUB_REPOSITORY" \
-            --title "link-rot: cited sources failing ($(date -u +%F))" \
-            --body "The weekly link check failed. See the run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          {
+            echo "Weekly link check failed on $(date -u +%F). Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+            echo
+            echo '```'
+            grep '✗' link-report.txt || true
+            echo '```'
+          } > body.md
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search 'link-rot: in:title' --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body-file body.md
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "link-rot: cited sources failing" --body-file body.md
+          fi
