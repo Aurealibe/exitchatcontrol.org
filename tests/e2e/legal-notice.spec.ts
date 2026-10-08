@@ -7,7 +7,7 @@ test('the legal notice is an English-only static page', async ({ page }) => {
   await expect(page.locator('html')).toHaveAttribute('lang', 'en')
   await expect(page.getByRole('heading', { level: 1, name: 'Legal Notice' })).toBeVisible()
   await expect(page.getByText('Publication director:')).toBeVisible()
-  await expect(page.getByText('Hostinger International Ltd.')).toBeVisible()
+  await expect(page.getByText('Vercel Inc.')).toBeVisible()
   await expect(page.getByText('does not collect or process any personal data')).toBeVisible()
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     'href',
