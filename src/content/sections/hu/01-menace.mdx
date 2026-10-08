@@ -5,7 +5,9 @@ order: 1
 title: 'A fenyegetés megértése'
 ---
 
-<p class="part-num"><span>00.</span> RÉSZ · A MIÉRT</p>
+<p class="part-num">
+  <span>00.</span> RÉSZ · A MIÉRT
+</p>
 
 ## A fenyegetés megértése
 
@@ -27,7 +29,7 @@ A „Chat Control” annak a két uniós szövegnek a gúnyneve, amelyek lehető
     <tbody>
       <tr>
         <td>Szöveg</td>
-        <td>(EU) 2021/1232 rendelet, eltérés az ePrivacy (e-hírközlési adatvédelmi) irányelvtől</td>
+        <td>(EU) 2021/1232 rendelet, eltérés az ePrivacy irányelvtől</td>
         <td>COM/2022/209 javaslat (Ylva Johansson, 2022. május)</td>
       </tr>
       <tr>
@@ -35,49 +37,112 @@ A „Chat Control” annak a két uniós szövegnek a gúnyneve, amelyek lehető
         <td>
           Önkéntes, a platformok <em>szkennelhetnek</em>
         </td>
-        <td>Kötelező „felderítési határozatokon” és „kockázatcsökkentő intézkedéseken” keresztül</td>
+        <td>
+          Bizottsági javaslat: kötelező „felderítési határozatokon” keresztül. A Tanács álláspontja
+          (2025. nov.): az önkéntes szkennelés véglegessé tétele, plusz „kockázatcsökkentő
+          intézkedések”
+        </td>
       </tr>
       <tr>
         <td>Kire vonatkozik?</td>
         <td>
-          Leginkább titkosítatlan amerikai szolgáltatásokra: Gmail, Messenger/Instagram, Skype, Snapchat, iCloud Mail, Xbox
+          Leginkább titkosítatlan amerikai szolgáltatásokra: Gmail, Messenger/Instagram, Skype,
+          Snapchat, iCloud Mail, Xbox
         </td>
         <td>
-          <strong>Minden</strong> platformra, beleértve a végponttól végpontig titkosított üzenetküldőket is
+          <strong>Minden</strong> platformra, beleértve a végponttól végpontig titkosított
+          üzenetküldőket is
         </td>
+      </tr>
+      <tr>
+        <td>Időtartam</td>
+        <td>
+          Ideiglenes: 2026. április 3-án lejárt, 2026. július 23-án visszaállították 2028. április
+          3-ig
+        </td>
+        <td>Állandó (nincs tervezett lejárati dátum)</td>
+      </tr>
+      <tr>
+        <td>Helyzet (2026. okt.)</td>
+        <td>
+          <strong>Hatályos</strong>, a végponttól végpontig titkosított kommunikáció kikerült a
+          hatálya alól
+        </td>
+        <td>Tárgyalás alatt (trilógus): nincs végleges szöveg, semmi sem hatályos</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-### Kliensoldali szkennelés (Client-side scanning): a legális drótlehallgatás
+### A Chat Control 1.0 ma: mire vonatkozik, és mire nem
 
-A Chat Control 2.0 szíve egy **kliensoldali szkennelésnek** nevezett technika. Az ötlet: ahelyett, hogy a tranzit (út közbeni) titkosítást törnék fel, egy szoftvert telepítenek **közvetlenül a telefonodra**, hogy minden üzenetet, fényképet vagy linket megvizsgáljanak **még azelőtt**, hogy az titkosításra és elküldésre kerülne. A Signal egy mondatban összefoglalta: ez „olyan, mint egy kártékony program (malware) az eszközödön”.
+Az ideiglenes rendelet 2026. április 3-án lejárt, majd visszatért: az Európai Parlament második olvasata után a Tanács 2026. július 23-án véglegesen jóváhagyta ((EU) 2026/1881 rendelet), 2028. április 3-ig. **Lehetővé teszi**, de nem írja elő, hogy a szolgáltatók gyermekek szexuális bántalmazását ábrázoló anyagok után kutatva átvizsgálják a privát kommunikációt.
+
+- **Mire vonatkozik**: azokra a kommunikációs szolgáltatásokra, amelyek nem végponttól végpontig titkosítottak, és amelyek szolgáltatója a szkennelés mellett dönt, például a Messenger- vagy Instagram-üzenetekre, a Gmail- vagy Outlook-e-mailekre, a játékkonzolokba és -platformokba épített csevegésre. A Google, a Microsoft, a Meta és a Snapchat is aláírta a 2026. március 19-i felhívást, amely e felderítés folytatását sürgeti.
+- **Mi van kizárva**: a Parlament által elfogadott, majd a Tanács által is elfogadott módosítás kiveszi a hatálya alól azokat a kommunikációkat, „amelyekre végponttól végpontig terjedő titkosítást alkalmaznak, alkalmaztak vagy alkalmazni fognak”. Az alapértelmezetten végponttól végpontig titkosított üzenetküldőkre, mint a Signal, a Session, a Threema, a SimpleX Chat vagy az Olvid, ez a szöveg tehát nem vonatkozik (lásd [titkosított üzenetküldés](#messagerie)).
+
+Ez a kizárás csak erre az ideiglenes szövegre vonatkozik. Az állandó rendelet vagy egy szigorúbb változat visszaléphet tőle: ez az útmutató számol ezzel a forgatókönyvvel, és olyan eszközöket ajánl, amelyek akkor is védelmet nyújtanak, ha a szkennelés kötelezővé válna.
+
+<div class="box warn">
+  <span class="lab">Az e-mail, a gyenge láncszem</span>
+  <p>
+    A Proton Mail és a Tuta a saját felhasználóik közötti üzeneteket titkosítja. Egy Gmail- vagy
+    Outlook-címmel váltott e-mail azonban titkosítatlanul érkezik meg az adott szolgáltatóhoz, amely
+    a maga oldalán átvizsgálhatja: ezt sem a Proton, sem a Tuta nem tudja megakadályozni. A
+    PGP-titkosítás a Gmailből is működik; az üzenet törzsét védi, de a tárgysort és a metaadatokat
+    nem (lásd [titkosított e-mail](#email)).
+  </p>
+</div>
+
+### A Chat Control 2.0: mit tenne a szöveg
+
+Az állandó rendeletről (CSAR) még mindig folynak a tárgyalások a Bizottság, a Tanács és a Parlament között (trilógus). A hatodik trilógus 2026. szeptember 29-én megállapodás nélkül zárult, a technikai egyeztetések folytatódnak. **Nincs végleges szöveg, és semmi sem hatályos.**
+
+- **A Bizottság** 2022-ben kötelező „felderítési határozatokat” javasolt, a titkosított üzenetküldőkre is kiterjedően.
+- **A Tanács** (2025. november 26-i álláspont) elvetette a kötelező határozatokat, de véglegessé teszi az önkéntes szkennelést, és „kockázatcsökkentő intézkedéseket” ír elő, amelyek akár szkennelést is magukban foglalhatnak.
+- **A Parlament** azt akarja, hogy a felderítés csak gyanúsítottakra korlátozódjon, bírói végzés alapján, és hogy a végponttól végpontig terjedő titkosítás védelmet kapjon.
+
+#### Ha a kliensoldali szkennelés kötelezővé válna
+
+Az alábbiak nem hatályosak: ezek a valószínű következmények, ha a végleges szöveg az eszközökön történő szkennelést írná elő.
+
+1. **Az együttműködő üzenetküldők** egy uniós változatot adnának ki, amelyben a titkosítás előtt egy szkennelőmodul fut, eltérően a máshol kínált változatoktól.
+2. **Az elutasító üzenetküldők** kivonulhatnának az európai piacról, ahogy azt a Signal 2025 októberében nyilvánosan bejelentette. Az alkalmazás ekkor eltűnne az európai alkalmazásboltokból: iOS-en nehezen vagy egyáltalán nem lenne beszerezhető; Androidon a kiadó a hivatalos weboldalán kínálhatja az APK-t. Ha a letöltést vagy a szolgáltatást az EU-ból blokkolnák, csak [VPN](#vpn) vagy [Tor](#tor) segítségével lehetne elérni.
+3. **Szkennelés az operációs rendszer szintjén**: ha a kötelezettség magukat a rendszereket célozná, egy szabad alkalmazás már nem lenne elég. Elérhetetlenek maradnának az együtt nem működő rendszerek, mobilon a GrapheneOS, számítógépen a nem regionális GNU/Linux-disztribúciók (lásd [szabad operációs rendszerek](#os)), egy olyan üzenetküldővel együtt használva, amely szintén elutasítja a szkennelést.
+
+### Kliensoldali szkennelés: a legális drótlehallgatás
+
+A Chat Control 2.0 szíve egy **kliensoldali szkennelésnek** nevezett technika. Az ötlet: ahelyett, hogy az út közbeni titkosítást törnék fel, egy szoftvert telepítenek **közvetlenül a telefonodra**, hogy minden üzenetet, fényképet vagy linket megvizsgáljanak **még azelőtt**, hogy az titkosításra és elküldésre kerülne. A Signal egy mondatban összefoglalta: ez „olyan, mint egy kártékony program az eszközödön”.
 
 <div class="box honest">
   <span class="lab">Technikai őszinteség, olvasd el kétszer</span>
   <p>
-    A kliensoldali szkenneléssel szemben <strong>sem a VPN, sem a végponttól végpontig terjedő titkosítás (E2EE) nem elég</strong>,{' '}
-    ha az alkalmazás vagy az operációs rendszer együttműködik. A szkennelés az eszközön történik, még a
-    titkosítás előtt: a VPN-nek nincs mit megvédenie, a titkosítás pedig túl későn lép életbe. Ami valójában
-    megvéd téged, az olyan{' '}
-    <strong>szabad/nyílt forráskódú szoftverek választása, amelyek megtagadják a szkennelés implementálását</strong>, a kedvező{' '}
-    <strong>joghatóságok</strong>, a <strong>saját szerver üzemeltetése (self-hosting)</strong>, és{' '}
-    <strong>az eszközöd feletti irányítás visszavétele</strong> (egy módosítatlan operációs rendszer). Minden más ebben az
-    útmutatóban ebből az igazságból következik.
+    A kliensoldali szkenneléssel szemben{' '}
+    <strong>sem a VPN, sem a végponttól végpontig terjedő titkosítás (E2EE) nem elég</strong>, ha az
+    alkalmazás vagy az operációs rendszer együttműködik. A szkennelés az eszközön történik, még a
+    titkosítás előtt: a VPN-nek nincs mit megvédenie, a titkosítás pedig túl későn lép életbe. Ami
+    valójában megvéd téged, az olyan{' '}
+    <strong>
+      szabad/nyílt forráskódú szoftverek választása, amelyek megtagadják a szkennelés
+      implementálását
+    </strong>
+    , a kedvező <strong>joghatóságok</strong>, a <strong>saját szerver üzemeltetése</strong>, és{' '}
+    <strong>az eszközöd feletti irányítás visszavétele</strong> (egy módosítatlan operációs
+    rendszer). Minden más ebben az útmutatóban ebből az igazságból következik.
   </p>
 </div>
 
 <div class="box warn">
   <span class="lab">A legrosszabb az egészben: az eszköz még csak nem is működik</span>
   <p>
-    Mindenki magánéletét feláldozzák egy olyan technológiáért, ami megbukik. Az Európai Parlament saját
-    tanulmánya arra a következtetésre jutott, hogy egyetlen rendszer sem képes magas hibaarány nélkül észlelni ezeket a tartalmakat
-    (mert több milliárd üzenet esetében még egy apró téves-pozitív (false-positive) arány is több millió hamis vádat eredményez).
-    Az ír rendőrség adatai is ezt mutatják: az automatizált jelentéseknek csak körülbelül 20%-a volt tényleges anyag,
-    és több mint 11%-uk egyértelműen téves-pozitív riasztás volt. Egy mérföldkőnek számító kutatás („Bugs in Our Pockets”, 2021) továbbá
-    rámutat, hogy amint a kliensoldali szkennelés telepítésre kerül, azt elkerülhetetlenül más célokra is felhasználják majd (terrorizmus,
-    szerzői jogok, vélemények).
+    Mindenki magánéletét feláldozzák egy olyan technológiáért, ami megbukik. Az Európai Parlament
+    saját tanulmánya arra a következtetésre jutott, hogy egyetlen rendszer sem képes magas hibaarány
+    nélkül észlelni ezeket a tartalmakat (mert több milliárd üzenet esetében még egy apró téves
+    pozitív arány is több millió hamis vádat eredményez). Az ír rendőrség adatai is ezt mutatják: az
+    automatizált jelentéseknek csak körülbelül 20%-a volt tényleges anyag, és több mint 11%-uk
+    egyértelműen téves-pozitív riasztás volt. Egy mérföldkőnek számító kutatás („Bugs in Our
+    Pockets”, 2021) továbbá rámutat, hogy amint a kliensoldali szkennelés telepítésre kerül, azt
+    elkerülhetetlenül más célokra is felhasználják majd (terrorizmus, szerzői jogok, vélemények).
   </p>
 </div>
 
@@ -97,32 +162,33 @@ Az intő jel: azok a cégek lobbiznak a leginkább ezért a szkennelésért, ame
 </div>
 
 <blockquote class="pull">
-  „Ennek elmulasztása felelőtlenség lenne.” A tech-óriások érve az üzenetek szkennelésének
-  életben tartása mellett.
+  „Ennek elmulasztása felelőtlenség lenne.” A tech-óriások érve az üzenetek szkennelésének életben
+  tartása mellett.
 </blockquote>
 
-Ugyanezek a szereplők még azt is bejelentették, hogy **tovább fogják szkennelni** az üzeneteket azután is, hogy a jogalap 2026. április 4-én lejárt. A polgárokat tehát arra kérik, hogy intim beszélgetéseik ellenőrzését bízzák azokra a vállalatokra, amelyek az adataik begyűjtéséről és pénzzé tételéről (monetizálásáról) híresek. Ez a Chat Control igazi arca: egy **támadás a magánélet ellen**, egy olyan indítékba csomagolva, amelyet senki sem utasíthat vissza.
+Ugyanezek a szereplők még azt is bejelentették, hogy **tovább fogják szkennelni** az üzeneteket azután is, hogy a jogalap 2026. április 3-án lejárt. A polgárokat tehát arra kérik, hogy intim beszélgetéseik ellenőrzését bízzák azokra a vállalatokra, amelyek az adataik begyűjtéséről és pénzzé tételéről híresek. Ez a Chat Control igazi arca: egy **támadás a magánélet ellen**, egy olyan indítékba csomagolva, amelyet senki sem utasíthat vissza.
 
 ### Ez nem „csak” megfigyelés
 
 Próbálnak megnyugtatni: „ez csak a Gmail, az Instagram, a Snapchat, a Messenger”. Ez hamis állítás, és ez a legriasztóbb az egészben. E mögött a bagatellizálás mögött három eltolódás bújik meg.
 
-1. **Ez nem célzott megfigyelés, hanem hálós (dragnet) adatgyűjtés.** Ez nem gyanúsítottakat figyel meg: egész populációk kommunikációjának szisztematikus gyűjtését vezeti be. Megfigyelés állami léptékben, folyamatosan.
+1. **Ez nem célzott megfigyelés, hanem hálós adatgyűjtés.** Ez nem gyanúsítottakat figyel meg: egész populációk kommunikációjának szisztematikus gyűjtését vezeti be. Megfigyelés állami léptékben, folyamatosan.
 2. **Ez már nem csak olvasás, hanem a blokkolás hatalma.** Egy szoftver, amely megvizsgál egy üzenetet az elküldése előtt, **meg is tagadhatja annak elküldését**. A kliensoldali szkennelés az előzetes cenzúra infrastruktúráját építi ki: a beszéd blokkolását még azelőtt, hogy az elérné a címzettet.
 3. **Amint az infrastruktúra létezik, más célokra is felhasználják.** Egy „a gyermekekért” épített rendszer általános célú ellenőrző eszközzé válik. Az indíték megváltozik; a gépezet marad.
 
 <div class="box warn">
   <span class="lab">A logikus következő lépés: a digitális euró</span>
   <p>
-    Ugyanez a logika hamarosan a pénzedet is eléri. Az EKB (Európai Központi Bank) digitális eurója egy{' '}
-    <strong>nyomon követhető</strong> valután nyugszik, megtiltja a vállalatoknak, hogy birtokolják, és egy{' '}
-    <strong>birtoklási limittel (cap)</strong> érkezik: az EKB munkafeltevésként körülbelül 3000 eurót lebegtetett meg személyenként, 
-    és az Európai Parlament bizottságában (2026. június) megszavazott álláspont szerint 
-    a limit megállapítását a Bizottságra bízzák az EKB ajánlása alapján, kétévente felülvizsgálva azt. Az EKB
-    esküszik, hogy a valuta nem lesz „programozható”, de a limit és a nyomonkövethetőség nagyon is terítéken van. 
-    Amikor ez megvalósul, azt fogod mondani: „nyugi, ez csak egy limit”? Ez pontosan ugyanaz a retorikai csapda,
-    mint az, hogy „ez csak a Gmail”. A valódi kérdés sohasem az, hogy mit ellenőriznek ma, hanem az a kontroll-infrastruktúra,
-    amit a holnap számára építenek ki.
+    Ugyanez a logika hamarosan a pénzedet is eléri. Az EKB (Európai Központi Bank) digitális eurója
+    egy <strong>nyomon követhető</strong> valután nyugszik, megtiltja a vállalatoknak, hogy
+    birtokolják, és egy <strong>birtoklási limittel</strong> érkezik: az EKB munkafeltevésként
+    körülbelül 3000 eurót lebegtetett meg személyenként, és az Európai Parlament bizottságában
+    (2026. június) megszavazott álláspont szerint a limit megállapítását a Bizottságra bízzák az EKB
+    ajánlása alapján, kétévente felülvizsgálva azt. Az EKB esküszik, hogy a valuta nem lesz
+    „programozható”, de a limit és a nyomonkövethetőség nagyon is terítéken van. Amikor ez
+    megvalósul, azt fogod mondani: „nyugi, ez csak egy limit”? Ez pontosan ugyanaz a retorikai
+    csapda, mint az, hogy „ez csak a Gmail”. A valódi kérdés sohasem az, hogy mit ellenőriznek ma,
+    hanem az a kontroll-infrastruktúra, amit a holnap számára építenek ki.
   </p>
 </div>
 
@@ -135,24 +201,25 @@ Nincs varázseszköz, és senkinek sem kell mindent megcsinálnia. Keresd meg a 
     <div class="lvl lvl-1">Kezdő</div>
     <h4>🟢 Az átlagpolgár</h4>
     <p>
-      Csak azt szeretnéd, hogy a beszélgetéseidet és a magánéletedet ne szkenneljék és ne tegyék pénzzé. A cél:
-      mindennapi adatvédelem anélkül, hogy szakértővé válnál.
+      Csak azt szeretnéd, hogy a beszélgetéseidet és a magánéletedet ne szkenneljék és ne tegyék
+      pénzzé. A cél: mindennapi adatvédelem anélkül, hogy szakértővé válnál.
     </p>
   </div>
   <div class="profile p2">
     <div class="lvl lvl-2">Középhaladó</div>
     <h4>🟡 Az álnéves fiók</h4>
     <p>
-      Információs fiók, aktivista oldal, tartalomgyártó: félsz a leleplezéstől (deanonymisation), a doxxingtól (személyes adatok nyilvánosságra hozatalától) vagy a fiókod
-      elvesztésétől. A cél: a valódi személyazonosságod elválasztása a nyilvánostól.
+      Információs fiók, aktivista oldal, tartalomgyártó: félsz a leleplezéstől, a személyes adataid
+      nyilvánosságra hozatalától vagy a fiókod elvesztésétől. A cél: a valódi személyazonosságod
+      elválasztása a nyilvánostól.
     </p>
   </div>
   <div class="profile p3">
     <div class="lvl lvl-3">Haladó</div>
-    <h4>🔴 A kiszivárogtató (Whistleblower)</h4>
+    <h4>🔴 A kiszivárogtató</h4>
     <p>
-      Újságíró, aktivista, forrás, aki egy erős ellenféllel (állam, munkáltató) néz szembe. A cél: erős
-      anonimitás, korreláció (összekapcsolás) elleni védelem, dokumentumok átadása lebukás nélkül.
+      Újságíró, aktivista, forrás, aki egy erős ellenféllel (állam, munkáltató) néz szembe. A cél:
+      erős anonimitás, összekapcsolás elleni védelem, dokumentumok átadása lebukás nélkül.
     </p>
   </div>
 </div>

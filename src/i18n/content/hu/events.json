@@ -1,4 +1,5 @@
 {
+  "_machineTranslated": "2026-10-08",
   "clipper-chip": {
     "title": "A Clipper Chip",
     "body": "Az NSA egy olyan titkosító chipet erőltet, amelynek kulcsa kormányzati letétben van, „csak bűnüldözési célokra, kizárólag bírói engedéllyel”. A sebezhetőségeket demonstrálják ([Blaze, 1994](https://dl.acm.org/doi/pdf/10.1145/191177.191193)), amit tömeges elutasítás követ: 1996-ra elvetik a projektet. Az első kriptoháború, pontosan ugyanaz a forgatókönyv, mint ma."
@@ -21,7 +22,7 @@
   },
   "snowden": {
     "title": "Snowden: „Gyűjtsétek be az egészet”",
-    "body": "A Guardian közzéteszi azt a titkos FISA-végzést, amely arra kényszeríti a Verizont, hogy adja át az összes ügyfelének metaadatait, majd a PRISM programot. Márciusban Clapper hírszerzési igazgató a Kongresszus előtt megesküdött, hogy ilyesmi nem történik; a kiszivárogtatás után néhány nappal úgy nyilatkozik, hogy ez volt a „legkevésbé valótlan” válasz, amit adhatott."
+    "body": "A Guardian közzéteszi azt a titkos FISA-végzést, amely arra kényszeríti a Verizont, hogy adja át az összes ügyfelének metaadatait, majd a PRISM programot. Márciusban Clapper hírszerzési igazgató a Kongresszus előtt megesküdött, hogy ilyesmi nem történik; a kiszivárogtatás után néhány nappal úgy nyilatkozik, hogy ez volt a [„legkevésbé valótlan” válasz](https://www.washingtonpost.com/blogs/fact-checker/post/james-clappers-least-untruthful-statement-to-the-senate/2013/06/11/e50677a8-d2d8-11e2-a73e-826d299ff459_blog.html), amit adhatott."
   },
   "digital-rights-ireland": {
     "title": "Az EUB megsemmisíti a tömeges adatmegőrzést",
@@ -49,7 +50,7 @@
   },
   "pegasus-project": {
     "title": "A Pegasus Projekt",
-    "body": "Több mint 80 újságíró 10 ország 17 szerkesztőségében dokumentálja újságírók, ügyvédek, ellenzékiek és államfők megfigyelését az NSO kémszoftverén keresztül. Az Amnesty törvényszéki elemzései (amelyeket a Citizen Lab szakértői is megerősítettek) bizonyítják a teljesen frissített iPhone-ok kattintás nélküli (zero-click) fertőzéseit: ha az eszközt célba veszik, a titkosítás önmagában nem elég. Pontosan ez a kliensoldali szkennelés logikája."
+    "body": "Több mint 80 újságíró 10 ország 17 szerkesztőségében dokumentálja újságírók, ügyvédek, ellenzékiek és államfők megfigyelését az NSO kémszoftverén keresztül. Az Amnesty törvényszéki elemzései (amelyeket a Citizen Lab szakértői is megerősítettek) bizonyítják a teljesen frissített iPhone-ok kattintás nélküli fertőzéseit: ha az eszközt célba veszik, a titkosítás önmagában nem elég. Pontosan ez a kliensoldali szkennelés logikája."
   },
   "apple-csam": {
     "title": "Az Apple bejelenti az eszközön belüli szkennelést... majd visszakozik",
@@ -57,7 +58,7 @@
   },
   "chatcontrol-2": {
     "title": "Chat Control 2.0: kötelező szkennelés",
-    "body": "A Bizottság javaslatot tesz a CSAR rendeletre (COM/2022/209): „felderítési határozatok”, amelyek minden platformra rákényszeríthetik a szkennelést, beleértve a végponttól végpontig titkosítottakat is. Ami 2021-ben önkéntes volt, 2022-ben kötelezővé válik: hatáskörkiterjesztés (scope creep) a szó szoros értelmében."
+    "body": "A Bizottság javaslatot tesz a CSAR rendeletre (COM/2022/209): „felderítési határozatok”, amelyek minden platformra rákényszeríthetik a szkennelést, beleértve a végponttól végpontig titkosítottakat is. Ami 2021-ben önkéntes volt, 2022-ben kötelezővé válik: hatáskörkiterjesztés a szó szoros értelmében."
   },
   "osa-spy-clause": {
     "title": "Online Safety Act (Online Biztonsági Törvény): a „kém-záradék”",
@@ -89,6 +90,10 @@
   },
   "ep-e2ee-carveout": {
     "title": "Az elutasítás elbukik, de az E2EE kivételt kap",
-    "body": "A sürgősségi eljárást július 7-én elfogadják (331/304/11), a szavazás 9-én történik: 314 EP-képviselő szavaz a Tanács álláspontjának elutasítására: egyszerű többség, amely elmarad a szükséges 361-től. De a Parlament ezután elfogadja azokat a módosításokat, amelyek kizárják a végponttól végpontig titkosított kommunikációt a szkennelési rendszerből (369 és 362 szavazat), és egy utolsó kísérlet a módosított álláspont elutasítására szintén elbukik (276/286/30). A módosított szöveg visszakerül a Tanácshoz, amelynek körülbelül három hónapja van (2026. október 9-ig), hogy elfogadja a módosításokat (a nem E2EE szolgáltatások önkéntes szkennelése 2028. április 3-ig) vagy egyeztetést indítson. 2026. július 10-én semmi sincs hatályban: az április 3-án lejárt eltérést soha nem élesztették újjá ([teljes név szerinti szavazások](https://howtheyvote.eu/votes/195775))."
+    "body": "A sürgősségi eljárást július 7-én elfogadják (331/304/11), a szavazás 9-én történik: 314 EP-képviselő szavaz a Tanács álláspontjának elutasítására: egyszerű többség, amely elmarad a szükséges 361-től. De a Parlament ezután elfogadja azokat a módosításokat, amelyek kizárják a végponttól végpontig titkosított kommunikációt a szkennelési rendszerből (369 és 362 szavazat), és egy utolsó kísérlet a módosított álláspont elutasítására szintén elbukik (276/286/30). A módosított szöveg visszakerül a Tanácshoz, amelynek körülbelül három hónapja van (nagyjából 2026. október 9-ig), hogy elfogadja a módosításokat (a nem E2EE szolgáltatások önkéntes szkennelése 2028. április 3-ig) vagy egyeztetést indítson. A Tanács július 23-án elfogadja a módosításokat ([teljes név szerinti szavazások](https://howtheyvote.eu/votes/195775))."
+  },
+  "council-final-adoption": {
+    "title": "A Chat Control 1.0 visszaáll, a titkosítás kizárva",
+    "body": "A Tanács elfogadja a Parlament módosításait, és véglegesen jóváhagyja a szöveget: az üzenetek önkéntes szkennelését lehetővé tevő eltérés 2028. április 3-ig visszaáll. A végponttól végpontig titkosított kommunikáció (WhatsApp, Signal…) kikerül a hatálya alól. Az állandó rendeletről (Chat Control 2.0) továbbra is folynak a tárgyalások."
   }
 }

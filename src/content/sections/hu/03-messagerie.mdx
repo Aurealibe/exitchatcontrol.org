@@ -39,7 +39,9 @@ Az első lépés, az, ami a leggyorsabban megvéd: hagyd el a WhatsAppot, a Mess
         <td>
           <span class="new">Signal / SimpleX</span>
         </td>
-        <td>A Messenger nem alapértelmezetten E2EE, és a Chat Control 1.0 hatálya alatt szkennelték.</td>
+        <td>
+          A Messenger nem alapértelmezetten E2EE, és a Chat Control 1.0 hatálya alatt szkennelték.
+        </td>
       </tr>
       <tr>
         <td>
@@ -61,16 +63,17 @@ Az első lépés, az, ami a leggyorsabban megvéd: hagyd el a WhatsAppot, a Mess
     <span class="tool-tag">🇺🇸 · nyílt forráskódú</span>
   </Fragment>
   <Fragment slot="what">
-    Egy titkosított üzenetküldő szöveges üzenetekhez, hívásokhoz, videókhoz és csoportokhoz. A WhatsApp közvetlen helyettesítője,
-    ugyanolyan egyszerű.
+    Egy titkosított üzenetküldő szöveges üzenetekhez, hívásokhoz, videókhoz és csoportokhoz. A
+    WhatsApp közvetlen helyettesítője, ugyanolyan egyszerű.
   </Fragment>
   <Fragment slot="why">
-    Alapértelmezetten végponttól végpontig titkosított, nonprofit, egy auditált protokoll, amely világstandardnak számít.
-    Szinte semmilyen metaadatot nem őriz meg, és a csapat megfogadta, hogy inkább elhagyja az EU-t, minthogy beépítse a szkennelést.
+    Alapértelmezetten végponttól végpontig titkosított, nonprofit, egy auditált protokoll, amely
+    világstandardnak számít. Szinte semmilyen metaadatot nem őriz meg, és a csapat megfogadta, hogy
+    inkább elhagyja az EU-t, minthogy beépítse a szkennelést.
   </Fragment>
   <Fragment slot="who">
-    Mindenki számára, már mától. Ez az első és leghasznosabb lépés. Egyetlen bökkenő: a telefonszám, amit
-    viszont elrejthetsz egy felhasználónév mögé.
+    Mindenki számára, már mától. Ez az első és leghasznosabb lépés. Egyetlen bökkenő: a telefonszám,
+    amit viszont elrejthetsz egy felhasználónév mögé.
   </Fragment>
   <ol slot="install">
     <li>
@@ -78,10 +81,16 @@ Az első lépés, az, ami a leggyorsabban megvéd: hagyd el a WhatsAppot, a Mess
     </li>
     <li>Erősítsd meg a számodat SMS-ben, majd állíts be egy PIN-kódot.</li>
     <li>
-      Beállítások &gt; Adatvédelem: hozz létre egy <b>felhasználónevet (username)</b> a számod elrejtéséhez, és kapcsold be
-      a <b>regisztrációs zárat (registration lock)</b>.
+      Beállítások &gt; Adatvédelem: hozz létre egy <b>felhasználónevet</b> a számod elrejtéséhez, és
+      kapcsold be a <b>regisztrációs zárat</b>.
     </li>
-    <li>Hívd meg a kapcsolataidat. Asztali gépen kapcsold össze az asztali alkalmazást a telefonoddal.</li>
+    <li>
+      Hívd meg a kapcsolataidat. Asztali gépen kapcsold össze az asztali alkalmazást a telefonoddal.
+    </li>
+    <li>
+      A fontos kapcsolataiddal hasonlítsd össze a <b>biztonsági számot</b> (személyesen vagy egy
+      másik csatornán): ez kizárja a közbeékelődéses lehallgatást.
+    </li>
   </ol>
 </ToolCard>
 
@@ -96,8 +105,8 @@ Az első lépés, az, ami a leggyorsabban megvéd: hagyd el a WhatsAppot, a Mess
     csatlakozol.
   </Fragment>
   <Fragment slot="why">
-    Kialakításából adódóan (by design) még a szerverek sem tudhatják, ki kivel beszél. Jelenleg ez a legerősebb opció
-    a metaadat-korreláció (összekapcsolás) ellen.
+    Kialakításából adódóan még a szerverek sem tudhatják, ki kivel beszél. Jelenleg ez a legerősebb
+    opció a metaadatok összekapcsolása ellen.
   </Fragment>
   <Fragment slot="who">
     Álnéves fiókok, érzékeny kapcsolatok, magas kockázat. Kicsit fiatalabb, mint a Signal, néhány
@@ -108,12 +117,14 @@ Az első lépés, az, ami a leggyorsabban megvéd: hagyd el a WhatsAppot, a Mess
       Telepítsd a <b>simplex.chat</b> oldalról (F-Droid, Google Play, App Store vagy APK).
     </li>
     <li>
-      Válassz egy <b>helyi</b> megjelenített nevet (soha ne a valódi nevedet: ez az eszközödön marad).
+      Válassz egy <b>helyi</b> megjelenített nevet (soha ne a valódi nevedet: ez az eszközödön
+      marad).
     </li>
     <li>
-      Egy kapcsolat hozzáadásához ossz meg egy <b>egyszer használatos meghívó linket</b> vagy egy QR-kódot.
+      Egy kapcsolat hozzáadásához ossz meg egy <b>egyszer használatos meghívó linket</b> vagy egy
+      QR-kódot.
     </li>
-    <li>Kapcsold be a jelkódos (passcode) zárat, és (haladóknak) konfiguráld a saját SMP szervereidet.</li>
+    <li>Kapcsold be a jelkódos zárat, és (haladóknak) konfiguráld a saját SMP szervereidet.</li>
   </ol>
 </ToolCard>
 
@@ -124,24 +135,122 @@ Az első lépés, az, ami a leggyorsabban megvéd: hagyd el a WhatsAppot, a Mess
     <span class="tool-tag">🌍 · nyílt forráskódú</span>
   </Fragment>
   <Fragment slot="what">
-    Signal-szintű titkosítás, de telefonszám nélkül és hagyma-útválasztással (onion routing).
+    Signal-szintű titkosítás, de telefonszám nélkül és hagyma-útválasztással.
   </Fragment>
   <Fragment slot="why">
-    A személyazonosságod egy véletlenszerű „Session ID”. A forgalom egy decentralizált hálózaton (Lokinet) halad keresztül,
-    amely radikálisan csökkenti a metaadatokat.
+    A személyazonosságod egy véletlenszerű „Session ID”. A forgalom egy decentralizált hálózaton
+    (Lokinet) halad keresztül, amely radikálisan csökkenti a metaadatokat.
   </Fragment>
   <Fragment slot="who">
-    Amikor egy telefonszám kockázatot jelent. Kisebb ökoszisztéma, érdemes a fontos beszélgetésekre fenntartani.
+    Amikor egy telefonszám kockázatot jelent. Kisebb ökoszisztéma, érdemes a fontos beszélgetésekre
+    fenntartani.
   </Fragment>
   <ol slot="install">
     <li>
       Telepítsd a <b>getsession.org</b> oldalról (minden platformra elérhető).
     </li>
     <li>
-      A „Fiók létrehozása” generálja a Session ID-dat és egy <b>helyreállítási mondatot (recovery phrase)</b>.
+      A „Fiók létrehozása” generálja a Session ID-dat és egy <b>helyreállítási mondatot</b>.
     </li>
     <li>Írd fel a helyreállítási mondatot papírra: ez az egyetlen kulcs a fiókodhoz.</li>
     <li>Oszd meg a Session ID-dat (vagy a QR-kódodat) a kapcsolataiddal.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-threema">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Középhaladó</span>
+    <span class="tool-tag">Nincs telefonszám</span>
+    <span class="tool-tag">🇨🇭 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy teljes értékű svájci üzenetküldő (üzenetek, hívások, csoportok), ahol egy véletlenszerű{' '}
+    <b>Threema ID</b> azonosít, telefonszám és e-mail nélkül.
+  </Fragment>
+  <Fragment slot="why">
+    Végponttól végpontig terjedő titkosítás, nyílt forráskódú (AGPL) és auditált alkalmazások,
+    svájci jog alá tartozó vállalat. Egyszeri díjért cserébe nem a te adataidból él.
+  </Fragment>
+  <Fragment slot="who">
+    Bárkinek, aki telefonszám megadása nélküli alternatívát szeretne a Signal helyett, és nem bánja,
+    hogy fizetnie kell az alkalmazásért.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Vásárold meg és telepítsd a Threemát a <b>threema.com</b> oldalról, az App Store-ból vagy a
+      Google Playből (az F-Droid-verzióhoz is létezik licenc).
+    </li>
+    <li>Írd fel a Threema ID-dat, és készíts jelszóval védett biztonsági mentést.</li>
+    <li>
+      A kapcsolataidat a QR-kódjuk beolvasásával add hozzá: így a legmagasabb ellenőrzési szintet
+      kapják.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-olvid">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Nincs telefonszám</span>
+    <span class="tool-tag">🇫🇷 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy francia üzenetküldő, amely <b>semmilyen személyes adat nélkül</b> működik: nincs
+    telefonszám, nincs e-mail, nincs címjegyzék.
+  </Fragment>
+  <Fragment slot="why">
+    Végponttól végpontig terjedő titkosítás, nyilvános alkalmazás-forráskód (AGPL), a francia
+    kiberbiztonsági ügynökség, az ANSSI tanúsítványával (CSPN). A francia kormány is ezt használja a
+    kommunikációjához.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek, különösen azoknak, akik európai kiadót és szervereket részesítenek előnyben. A
+    kapcsolatokat személyesen vagy meghívóval lehet hozzáadni.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd az Olvidot az <b>olvid.io</b> oldalról, az App Store-ból vagy a Google Playből. Az
+      alapverzió ingyenes.
+    </li>
+    <li>Válassz egy megjelenített nevet: nincs szükség regisztrációra.</li>
+    <li>
+      Adj hozzá egy kapcsolatot a QR-kódja beolvasásával, vagy egy meghívó, majd egy 4 számjegyű kód
+      cseréjével.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-deltachat">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Középhaladó</span>
+    <span class="tool-tag">Nincs telefonszám</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Az e-mail-hálózatra épülő üzenetküldő: a profilok egyetlen koppintással jönnek létre „chatmail”
+    továbbítókon, telefonszám és személyes cím nélkül.
+  </Fragment>
+  <Fragment slot="why">
+    Automatikus végponttól végpontig terjedő titkosítás, decentralizált továbbítóhálózat (bárki
+    üzemeltethet egyet), szabad és auditált alkalmazások.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik telefonszám nélküli, decentralizált hálózatot szeretnének, és azt a lehetőséget,
+    hogy ne függjenek egyetlen szolgáltatótól sem.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a Delta Chatet a <b>delta.chat</b> oldalról, az F-Droidból, az App Store-ból vagy a
+      Google Playből.
+    </li>
+    <li>
+      Hozz létre egy profilt: alapértelmezetten felajánl egy chatmail-továbbítót, nincs szükség
+      telefonszámra vagy e-mailre.
+    </li>
+    <li>
+      A kapcsolataidat QR-kóddal vagy meghívó linkkel add hozzá, hogy a titkosítás ellenőrzött
+      legyen.
+    </li>
   </ol>
 </ToolCard>
 
@@ -152,14 +261,16 @@ Az első lépés, az, ami a leggyorsabban megvéd: hagyd el a WhatsAppot, a Mess
     <span class="tool-tag">Android · nyílt forráskódú</span>
   </Fragment>
   <Fragment slot="what">
-    Egy peer-to-peer (egyenrangú) üzenetküldő, amely <b>internet nélkül is működik</b>: Bluetooth-on, Wi-Fi Direct-en vagy
-    Tor-on keresztül.
+    Egy peer-to-peer (egyenrangú) üzenetküldő, amely <b>internet nélkül is működik</b>:
+    Bluetooth-on, Wi-Fi Direct-en vagy Tor-on keresztül.
   </Fragment>
   <Fragment slot="why">
-    Nincs szerver, így nincs mit lekapcsolni vagy lefoglalni. Túlél internet-leállásokat és hálózati cenzúrát.
+    Nincs szerver, így nincs mit lekapcsolni vagy lefoglalni. Túlél internet-leállásokat és hálózati
+    cenzúrát.
   </Fragment>
   <Fragment slot="who">
-    Tüntetések, katasztrófák, elszigetelt területek, áramszünetek (blackouts). Csak Androidra, és mindkét félnek rendelkeznie kell az alkalmazással.
+    Tüntetések, katasztrófák, elszigetelt területek, áramszünetek. Csak Androidra, és mindkét félnek
+    rendelkeznie kell az alkalmazással.
   </Fragment>
   <ol slot="install">
     <li>
@@ -168,31 +279,39 @@ Az első lépés, az, ami a leggyorsabban megvéd: hagyd el a WhatsAppot, a Mess
     <li>
       Hozz létre egy <b>helyi</b> fiókot (becenév + jelszó), amelyet kizárólag a telefon tárol.
     </li>
-    <li>Adj hozzá egy közeli kapcsolatot a QR-kódja beolvasásával, vagy távolról egy link segítségével.</li>
-    <li>Amikor a hálózat nem működik, kapcsold be a Bluetooth-t: az üzenetek eszközről eszközre ugranak.</li>
+    <li>
+      Adj hozzá egy közeli kapcsolatot a QR-kódja beolvasásával, vagy távolról egy link
+      segítségével.
+    </li>
+    <li>
+      Amikor a hálózat nem működik, kapcsold be a Bluetooth-t: az üzenetek eszközről eszközre
+      ugranak.
+    </li>
   </ol>
 </ToolCard>
 
 <ToolCard tool="t-bitchat">
   <Fragment slot="tags">
     <span class="tool-tag">🔴 Haladó</span>
-    <span class="tool-tag">Bluetooth háló (mesh)</span>
+    <span class="tool-tag">Bluetooth mesh</span>
     <span class="tool-tag">🌍 · nyílt forráskódú</span>
   </Fragment>
   <Fragment slot="what">
-    Jack Dorsey mesh (hálós) üzenetküldője: a közeli telefonok ugrásról ugrásra (hop by hop) továbbítják az üzeneteket, internet, szerver
-    vagy fiók nélkül.
+    Jack Dorsey hálós (mesh) üzenetküldője: a közeli telefonok ugrásról ugrásra továbbítják az
+    üzeneteket, internet, szerver vagy fiók nélkül.
   </Fragment>
   <Fragment slot="why">
     Végponttól végpontig terjedő titkosítás (AES-256-GCM) és egy „pánik mód”, amely mindent töröl a
     logó háromszori megérintésével.
   </Fragment>
-  <Fragment slot="who">Tüntetések és áramszünetek idejére, a Briar mellett. Óvatosan használandó.</Fragment>
+  <Fragment slot="who">
+    Tüntetések és áramszünetek idejére, a Briar mellett. Óvatosan használandó.
+  </Fragment>
   <div class="box warn" slot="extra">
     <span class="lab">Figyelem: nem auditált</span>
     <p>
-      A saját tárolója is (repo) figyelmeztet, hogy „nem kapott külső biztonsági felülvizsgálatot”. Kiváló a rugalmassághoz (resilience), de
-      még ne kockáztass vele életeket.
+      A saját tárolója (repója) is figyelmeztet, hogy „nem kapott külső biztonsági
+      felülvizsgálatot”. Kiváló a rugalmas ellenálláshoz, de még ne kockáztass vele életeket.
     </p>
   </div>
   <ol slot="install">
@@ -200,6 +319,48 @@ Az első lépés, az, ami a leggyorsabban megvéd: hagyd el a WhatsAppot, a Mess
     <li>Nyisd meg az alkalmazást, és válassz egy becenevet. Nem kell fiókot létrehozni.</li>
     <li>A közeli eszközök automatikusan felfedezik egymást Bluetooth-on keresztül.</li>
     <li>Veszély esetén érintsd meg háromszor a logót, hogy mindent törölj (pánik mód).</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-meshtastic">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Hálózatfüggetlen rádió</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    <b>LoRa-rádión</b> továbbított szöveges üzenetek, eszközről eszközre, mobilhálózat és internet
+    nélkül. A telefonod Bluetooth-on kapcsolódik az eszközhöz.
+  </Fragment>
+  <Fragment slot="why">
+    Nincs szolgáltató, nincs szerver: nincs mit lekapcsolni vagy kényszeríteni. Több kilométeres
+    hatótáv, és egy háló, amely továbbítja az üzeneteket.
+  </Fragment>
+  <Fragment slot="who">
+    Túrázás, lefedetlen területek, kimaradások és válsághelyzetek. Hardver kell hozzá (személyenként
+    egy rádiós eszköz), és el kell fogadni a rövid, lassú üzeneteket.
+  </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Korlátok, amelyeket ismerni kell</span>
+    <p>
+      Az alapértelmezett csatornát bárki olvashatja. A közvetlen üzenetek titkosítottak (2.5-ös és
+      újabb firmware), de a rádiós metaadatok láthatók maradnak. A Meshtastic nem kommunikál a
+      MeshCore-ral, egy konkurens projekttel.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Vásárolj egy támogatott eszközt (lista a <b>meshtastic.org</b> oldalon), és telepítsd az
+      alkalmazást.
+    </li>
+    <li>
+      Válaszd ki az országod rádiós régióját: az engedélyezett frekvenciák és adási idő országonként
+      eltér.
+    </li>
+    <li>
+      Hozz létre egy privát csatornát véletlenszerű kulccsal: az alapértelmezett nyilvános csatorna
+      olyan kulcsot használ, amelyet mindenki ismer.
+    </li>
   </ol>
 </ToolCard>
 
@@ -213,15 +374,15 @@ Az első lépés, az, ami a leggyorsabban megvéd: hagyd el a WhatsAppot, a Mess
     Egy megerősített Signal verzió Androidra, kompatibilis ugyanazzal a hálózattal.
   </Fragment>
   <Fragment slot="why">
-    Nyugalmi állapotban is titkosított adatbázis (encrypted at rest), automatikus zárolás, és egy „FOSS” változat, amely teljesen mentes a Google
-    szolgáltatásaitól.
+    Nyugalmi állapotban is titkosított adatbázis, automatikus zárolás, és egy „FOSS” változat, amely
+    teljesen mentes a Google szolgáltatásaitól.
   </Fragment>
   <Fragment slot="who">
-    Haladó felhasználóknak, különösen GrapheneOS-en, magas fenyegetettségi modellel (threat model). Csak Androidra.
+    Haladó felhasználóknak, különösen GrapheneOS-en, magas fenyegetettségi modellel. Csak Androidra.
   </Fragment>
   <ol slot="install">
     <li>
-      Add hozzá a Molly repót (tárolót) az F-Droidhoz, vagy töltsd le az APK-t a <b>molly.im</b> oldalról.
+      Add hozzá a Molly tárolóját az F-Droidhoz, vagy töltsd le az APK-t a <b>molly.im</b> oldalról.
     </li>
     <li>
       Válaszd a <b>Molly-FOSS</b>-t, ha zéró Google-függőséget szeretnél.
@@ -234,8 +395,10 @@ Az első lépés, az, ami a leggyorsabban megvéd: hagyd el a WhatsAppot, a Mess
 <div class="box">
   <span class="lab">A Chat Control ellen</span>
   <p>
-    Részesítsd előnyben a <strong>nyílt forráskódú</strong> alkalmazásokat <strong>a nagy amerikai platformokon kívül</strong>, amelyeknek a
-    csapatai nyilvánosan megfogadták, hogy inkább elhagyják az EU-t, minthogy beépítsék a kliensoldali szkennelést (a Signal
-    megtette). Emlékeztető: ha maga az operációs rendszer kényszeríti ki a szkennelést, az alkalmazás nem tud segíteni, erről szól a 12. szakasz.
+    Részesítsd előnyben azokat a <strong>nyílt forráskódú</strong> alkalmazásokat, amelyeknek a
+    csapatai nyilvánosan megfogadták, hogy inkább elhagyják az európai piacot, minthogy beépítsék a
+    kliensoldali szkennelést (a Signal megtette), vagy a decentralizált alkalmazásokat, amelyeknél
+    nincs központi szolgáltató, akit kényszeríteni lehetne. Emlékeztető: ha maga az operációs
+    rendszer kényszeríti ki a szkennelést, az alkalmazás nem tud segíteni, erről szól a 12. szakasz.
   </p>
 </div>

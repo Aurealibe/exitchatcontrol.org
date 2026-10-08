@@ -1,4 +1,5 @@
 {
+  "_machineTranslated": "2026-10-08",
   "questions": {
     "messaging": {
       "label": "Üzenetküldés",
@@ -72,7 +73,7 @@
     "dns": {
       "label": "DNS",
       "prompt": "Hogyan oldod fel a domain neveket?",
-      "rec": "Válts titkosított DNS-re egy minimális, adatvédelem-központú feloldóval (resolver).",
+      "rec": "Válts titkosított DNS-re egy minimális, adatvédelem-központú feloldóval.",
       "options": {
         "o0": {
           "label": "Az internetszolgáltatód (ISP) vagy a routered DNS-e",
@@ -95,7 +96,7 @@
     "vpn": {
       "label": "VPN",
       "prompt": "Milyen VPN-t használsz?",
-      "rec": "Használj egy megbízható, naplózásmentes (no-log) VPN-t, mint például a Mullvad, Proton VPN vagy IVPN.",
+      "rec": "Használj egy megbízható, naplózásmentes VPN-t, mint például a Mullvad, Proton VPN vagy IVPN.",
       "options": {
         "o0": {
           "label": "Nincs VPN",
@@ -156,7 +157,7 @@
           "hint": "Egy jó mindennapi védelmi réteg."
         },
         "o3": {
-          "label": "Hardveres kulcs vagy adathalászatnak ellenálló (phishing-resistant) 2FA",
+          "label": "Hardveres kulcs vagy adathalászatnak ellenálló 2FA",
           "hint": "A legerősebb gyakorlati védelem."
         }
       }
@@ -179,7 +180,7 @@
           "hint": "Robusztusabb hozzáállás."
         },
         "o3": {
-          "label": "Helyi tárolás + saját szerver (self-hosting) / haladó szintű titkosítás",
+          "label": "Helyi tárolás + saját szerver / haladó szintű titkosítás",
           "hint": "A legkomolyabb szint a digitális szuverenitásért."
         }
       }
@@ -267,7 +268,7 @@
           "hint": "Az első próbálkozás a szétválasztásra."
         },
         "o2": {
-          "label": "Privát számlák és korlátozott kriptohasználat (crypto) keveréke",
+          "label": "Privát számlák és korlátozott kriptohasználat keveréke",
           "hint": "Már sokkal tudatosabb."
         },
         "o3": {
@@ -292,7 +293,7 @@
     },
     "hardened": {
       "title": "Megerősített",
-      "summary": "Megerősített (hardened) rendszereket futtatsz egy erős álnéves alapvonallal. A következő fókusz a fegyelem és a szeparáció (kompartmentalizáció)."
+      "summary": "Megerősített rendszereket futtatsz egy erős álnéves alapvonallal. A következő fókusz a fegyelem és a szeparáció (kompartmentalizáció)."
     },
     "sovereign": {
       "title": "Szuverén",

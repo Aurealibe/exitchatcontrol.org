@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Lépj ki a Chat Controlból · Válj kormányozhatatlanná",
-    "description": "Gyakorlati terepútmutató a Chat Control elkerüléséhez és a digitális magánéleted visszaszerzéséhez: titkosított üzenetküldés, e-mail, VPN, DNS, jelszavak, Linux, GrapheneOS, saját szerver. Ingyenes, nyílt forráskódú, nincs nyomon követés."
+    "description": "Terepútmutató a Chat Control elkerüléséhez és a magánéleted védelméhez: titkosított üzenetküldés, e-mail, VPN, jelszavak, Linux, GrapheneOS. Ingyenes, nyílt forráskódú, nincs nyomon követés."
   },
   "nav": {
     "skip": "Ugrás a tartalomra",
@@ -24,12 +24,12 @@
     "p3": "Kiszivárogtató"
   },
   "status": {
-    "label": "Friss · 2026. július 9.",
-    "headline": "Az Európai Parlament átengedte a Chat Controlt.",
-    "body": "Az elutasítási indítvány elbukott: 314 EP-képviselő szavazott a szöveg ellen, 276 mellette, 17 tartózkodott. 361 szavazatra lett volna szükség a blokkoláshoz. A többség elutasítást akart; a procedúra eltemette ezt. Egyetlen védvonalat sikerült kiharcolni: a végponttól végpontig titkosított üzenetküldők kikerültek a szkennelés alól (a módosításokat 369 és 362 szavazattal fogadták el). A szöveg most a Tanács asztalán hever: egyetlen aláírás októberig, és az üzeneteid „önkéntes” szkennelése 2028. április 3-ig engedélyezetté válik. Ezzel párhuzamosan a Chat Control 2.0 (CSAR) - a kötelező szkennelés még a titkosított üzenetküldők esetében is - szeptemberben visszatér a tárgyalóasztalhoz. A fenyegetés nem múlt el; egyre inkább berendezkedik.",
-    "cta": "Az átállásra most van itt az idő, amíg a választás még a te kezedben van.",
-    "sourceEp": "EP sajtóközlemény, 2026. július 9.",
-    "sourceVotes": "hivatalos név szerinti szavazási eredmények"
+    "label": "Helyzetkép · 2026. október",
+    "headline": "A Chat Control 1.0 ismét hatályos, 2028. április 3-ig.",
+    "body": "Miután július 9-én az Európai Parlamentben elbukott az elutasítási indítvány (314 szavazat mellette, 361 kellett volna), a Tanács 2026. július 23-án véglegesen jóváhagyta a szöveget. A szolgáltatók ismét „önkéntesen” átvizsgálhatják a privát kommunikációt, kivéve a végponttól végpontig titkosított kommunikációt, amelyet egy módosítás kizár. Ezzel párhuzamosan a Chat Control 2.0 (CSAR), az állandó rendelet, még mindig tárgyalás alatt áll: a szeptember 29-i háromoldalú egyeztetés (trilógus) megállapodás nélkül zárult.",
+    "cta": "Ez az útmutató abból indul ki, hogy egy szigorúbb változat is következhet: az itt bemutatott eszközök ebben a forgatókönyvben is védelmet nyújtanak.",
+    "sourceEp": "Tanácsi sajtóközlemény, 2026. július 23.",
+    "sourceVotes": "a július 9-i hivatalos név szerinti szavazások"
   },
   "noscript": {
     "notice": "A JavaScript ki van kapcsolva: jó ösztön. A teljes útmutató működik nélküle: csak a témaváltónak, a szűrőknek és az ellenőrzőlistának van szüksége szkriptekre."
@@ -121,7 +121,7 @@
         "social": "Közösségi hálózatok",
         "ia-locale-agentique": "Helyi és ágens alapú AI",
         "os-mobile": "Operációs rendszerek",
-        "selfhost": "Saját szerver (self-hosting)",
+        "selfhost": "Saját szerver",
         "finance": "Pénzügyek",
         "opsec": "OPSEC és kiszivárogtatás"
       }
@@ -157,7 +157,7 @@
     "eyebrow": "Becsüld meg a cenzúrával szembeni ellenállásodat",
     "title": "Ellenállási kvíz",
     "lede": "Egy iránytű, nem pedig eredményjelző tábla: válaszolj tizenkét gyors kérdésre, hogy felmérd a rendszered gyenge pontjait - mindenféle szégyenérzet nélkül -, majd kövesd az útmutató konkrét javítási javaslatait.",
-    "privacyNote": "A pontszámot helyben, a böngésződben számolja ki a rendszer. Semmit sem küld el, semmit sem tárol.",
+    "privacyNote": "A pontszámot helyben, a böngésződben számolja ki a rendszer. Semmit sem küld el sehová; a válaszaid az eszközödön maradnak.",
     "start": "Kvíz indítása",
     "readGuide": "A teljes útmutató elolvasása",
     "progress": "{done} / {total} megválaszolva",
@@ -173,7 +173,25 @@
     "share": "Megosztás",
     "shareX": "Posztolás X-en",
     "shareText": "A cenzúrával szembeni ellenállási pontszámom: {score}/100 - {band}. Nézd meg a tiédet:",
+    "scorecardHeading": "Megosztható eredménykártya",
+    "scorecardHint": "Az eszközödön készül. Töltsd le a képet, hogy csatold X-en, Mastodonon vagy bárhol máshol - a linkelőnézet szándékosan általános marad (a pontszámod soha nem hagyja el ezt a böngészőt).",
+    "downloadScorecard": "Eredménykártya letöltése",
+    "copyScorecard": "Eredménykártya képének másolása",
+    "scorecardCopied": "Kép másolva ✓",
+    "scorecardBrand": "Exit Chat Control",
+    "scorecardTitle": "Cenzúrával szembeni ellenállási pontszám",
+    "scorecardStamp": "Csak helyben · Nincs nyomkövető",
+    "scorecardCta": "Töltsd ki a kvízt →",
+    "scorecardFile": "ecc-pontszam-{score}.png",
+    "nextBand": "Már csak {points} pont kell a(z) „{band}” szinthez.",
+    "topBand": "Elérted a legfelső szintet - most a fegyelem megtartásán a sor.",
     "bandsHeading": "Mit jelent a pontszám?",
     "categoriesHeading": "A tizenkét terület, és hol érdemes fejlődni"
+  },
+  "seo": {
+    "quizTitle": "Ellenállási kvíz: teszteld a digitális magánéleted védelmét · Exit Chat Control",
+    "quizDescription": "Tizenkét gyors kérdés a magánéleted védelmének gyenge pontjairól, majd konkrét javítások az útmutatóból. A böngésződben fut, semmit sem küld el.",
+    "notFoundTitle": "Az oldal nem található · Exit Chat Control",
+    "ogImageAlt": "Exit Chat Control, terepútmutató a digitális magánélet védelméhez"
   }
 }

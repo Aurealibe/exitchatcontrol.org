@@ -1,4 +1,5 @@
 {
+  "_machineTranslated": "2026-10-08",
   "prum-2": {
     "title": "Prüm II: arckeresés minden európai rendőrségen keresztül",
     "body": "A 2024/982-es rendelet arcképeket - beleértve a soha el nem ítélt gyanúsítottakét is - ad a tagállamok közötti automatizált rendőrségi adatcseréhez egy központi útválasztón keresztül. Egy páneurópai biometrikus azonosítási képesség, amelyet valódi nemzeti vita nélkül fogadtak el; az EDRi ezt „állami túlkapásnak és tömeges megfigyelésnek” nevezi."
@@ -93,7 +94,7 @@
   },
   "euro-numerique-pilote": {
     "title": "Digitális euró: az architektúra hamarabb épül meg, mint a biztosítékok",
-    "body": "Az EKB lezárja az „előkészítő szakaszát”, és megkezdi a következőt: egy kísérleti (pilot) gyakorlatot 2027 közepén, lehetséges első kibocsátással 2029-ben, miközben a rendelet még el sincs fogadva. Az Eurócsoport szeptemberben megállapodott az irányításról és a birtoklási limitek meghatározásának folyamatáról. A jegybanki digitális valuta (CBDC) egy olyan infrastruktúra, ahol minden tranzakció natívan rögzíthető; ezt úgy építik, hogy annak jogi korlátai még nincsenek megírva."
+    "body": "Az EKB lezárja az „előkészítő szakaszát”, és megkezdi a következőt: egy kísérleti gyakorlatot 2027 közepén, lehetséges első kibocsátással 2029-ben, miközben a rendelet még el sincs fogadva. Az Eurócsoport szeptemberben megállapodott az irányításról és a birtoklási limitek meghatározásának folyamatáról. A jegybanki digitális valuta (CBDC) egy olyan infrastruktúra, ahol minden tranzakció natívan rögzíthető; ezt úgy építik, hogy annak jogi korlátai még nincsenek megírva."
   },
   "au-ban-16": {
     "title": "Ausztrália: 4,7 millió fiók lekapcsolva egy hónap alatt",
@@ -127,6 +128,10 @@
     "title": "A FISA 702 lejár, az adatgyűjtés mégis folytatódik",
     "body": "A 702-es szakasz, az amerikai szolgáltatókon keresztülhaladó kommunikációk bírói engedély nélküli gyűjtése 2026 áprilisában járt volna le. Két rövid meghosszabbítás után a felhatalmazás június közepén lejár, mivel a Kongresszus holtpontra jut abban a kérdésben, hogy az FBI amerikaiakra vonatkozó kereséseihez elő kellene-e írni bírói engedélyt. A meglévő tanúsítványok azonban 2027 márciusáig érvényesek maradnak: a gépezet még egy évig fut bármiféle megújított jogalap nélkül. Egy „ideiglenes” megfigyelési jogosultság sosem kapcsol ki teljesen."
   },
+  "uk-under16-ban": {
+    "title": "Egyesült Királyság: közösségi média tilalma 16 év alattiaknak",
+    "body": "A kormány bejelenti a közösségi média tilalmát a 16 év alattiak számára (Snapchat, TikTok, YouTube, Instagram, Facebook, X; az olyan üzenetküldő alkalmazások, mint a WhatsApp és a Signal, kivételt képeznek). A rendeleteket 2026 karácsonyáig várják a Parlament elé, a hatálybalépést 2027 tavaszára tervezik. A rendszer „rendkívül hatékony” életkor-ellenőrzésre épül, amelyet az Ofcomnak kell megvizsgálnia: ez ezeknek a platformoknak minden felhasználójára vonatkozna."
+  },
   "euro-numerique-econ": {
     "title": "Digitális euró: „nem programozható”, mégis feltételhez kötött",
     "body": "A Parlament ECON (Gazdasági és Monetáris) bizottsága elfogadja álláspontját (43 szavazat mellette, 14 ellene, egy tartózkodás): az irányt 2029-es indulásra állítják be. Az EKB saját GYIK-je esküszik rá, hogy a digitális euró „nem lesz programozható pénz”, miközben a „feltételes fizetéseket” opcionális szolgáltatásként mutatja be; a képviselők álláspontja szerint a birtoklási limitet később a Bizottság határozná meg az EKB ajánlása alapján, és kétévente felülvizsgálná azt. Az ígéret és a platform közötti szakadék egy politikai döntésen múlik, nem pedig technikai lehetetlenségen: a feltételhez kötöttségi és nyomonkövethetőségi infrastruktúra már az első naptól kezdve létezni fog."
@@ -135,8 +140,28 @@
     "title": "Europol: a költségvetés 3 milliárd euróra nő, felhatalmazás a titkosításra",
     "body": "A Bizottság az Europol legnagyobb reformját javasolja az elmúlt 25 évben: a költségvetés 1,9 milliárdról 3 milliárd euróra nő, 900 további munkatárs, a felhatalmazást kiterjesztik a titkosított kommunikációra, a kriptoeszközökre és a mesterséges intelligenciával támogatott csalásokra; egy „technológiai és innovációs központ”, amelynek titkosítással kapcsolatos munkája a ProtectEU ütemtervét követi (amely az Europol dekódolási képességét 2030-ra ütemezi be); egy automatizált „európai rendőrségi adattér”. A ProtectEU fegyveres szárnya: egy szupranacionális (nemzetek feletti) ügynökség, amelyről az egyik EP-képviselő már most figyelmeztet, hogy „nem vezethet tömeges megfigyeléshez”."
   },
+  "ai-act-omnibus-delay": {
+    "title": "AI Act: a magas kockázatú rendszerekre vonatkozó kötelezettségek elhalasztva",
+    "body": "A Tanács véglegesen jóváhagyja az AI Act „Omnibus VII” egyszerűsítését. A magas kockázatú AI-rendszerekre (többek között biometria, rendfenntartás, migráció, foglalkoztatás) vonatkozó, 2026. augusztus 2-án esedékes kötelezettségek 2027. december 2-től (önálló rendszerek), illetve 2028. augusztus 2-től (termékekbe épített rendszerek) lesznek alkalmazandók. A szöveg emellett betiltja az AI által generált, beleegyezés nélküli szexuális tartalmakat és a gyermekek szexuális bántalmazását ábrázoló anyagokat (CSAM)."
+  },
   "pega-kouloglou": {
     "title": "Pegasus a Parlamentben: a megfigyelőt megfigyelték",
     "body": "A Citizen Lab leleplezi, hogy Stelios Kouloglou EP-képviselőt, a PEGA bizottság póttagját - pont annak a testületnek a tagját, amely a Pegasus és a kémszoftverek európai visszaéléseit vizsgálta - feltörték a Pegasusszal, miközben a bizottságban szolgált (a fertőzések dátuma 2022. október 21. és 2023. március 6-7.), ami hozzáférést biztosíthatott a bizalmas tanácskozásokhoz. A Citizen Lab kifejezetten elzárkózik a támadás attribúciójától; a civil szervezetek koalíciója EU-s választ követel. Annak a testületnek a megfigyelése, amelynek feladata a kémszoftverek felügyelete, a demokratikus kontroll végső kifordítása, és senkit sem neveznek meg felelősként."
+  },
+  "scotus-texas-app-store": {
+    "title": "Texas: a Legfelsőbb Bíróság hatályban hagyja az alkalmazásboltok életkor-ellenőrzését",
+    "body": "A Legfelsőbb Bíróság elutasítja az ideiglenes intézkedés felfüggesztésének feloldását (No. 25A1390, CCIA v. Paxton): Texas App Store Accountability Act nevű törvénye alkalmazandó. Az Apple-nek és a Google-nek ellenőriznie kell az alkalmazásboltok texasi felhasználóinak életkorát, és kiskorúak esetén szülői hozzájárulást kell beszereznie, miközben az első alkotmánykiegészítésre hivatkozó megtámadás érdemben folytatódik. A végzés nem tartalmaz indoklást."
+  },
+  "ripost-vsa-supprime": {
+    "title": "RIPOST: törölték az algoritmikus videómegfigyelés meghosszabbítását",
+    "body": "A francia Nemzetgyűlés első olvasatban elfogadja a RIPOST törvényjavaslatot (366 szavazattal 182 ellenében). A 19. cikket, amely 2030. december 31-ig meghosszabbította és kiterjesztette volna a 2024-es olimpiáról örökölt algoritmikus videómegfigyelési kísérletet, a jogi bizottság törölte; a plenáris ülésen nem állították vissza."
+  },
+  "euro-numerique-mandat": {
+    "title": "Digitális euró: a Parlament megerősíti tárgyalási megbízatását",
+    "body": "A plenáris ülés megerősíti a tárgyalási megbízatást (416 igen, 169 nem, 22 tartózkodás), miután az ECON bizottsági szavazást megtámadták; a Tanáccsal folytatott háromoldalú egyeztetések július 13-án kezdődnek. A megbízatás védelmet tartalmaz a készpénz számára és a tranzakciók ellenőrzésére személyes adatok felfedése nélkül, a tartási limitet pedig az EKB ajánlása alapján a Bizottságra bízza."
+  },
+  "ofcom-fapello": {
+    "title": "Egyesült Királyság: 630 000 font bírság a hiányzó életkor-ellenőrzés miatt",
+    "body": "Az Ofcom 630 000 font bírságot szab ki egy pornográf oldal üzemeltetőjére: 600 000 fontot az Online Safety Act által előírt „rendkívül hatékony” életkor-ellenőrzés hiánya miatt, 30 000 fontot pedig azért, mert nem válaszolt egy jogilag kötelező információkérésre. Nem ez az első ilyen szankció: a YoungTek Solutions 2026 májusában 600 000 font bírságot kapott."
   }
 }
