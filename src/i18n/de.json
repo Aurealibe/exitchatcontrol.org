@@ -192,6 +192,23 @@
     "quizTitle": "Widerstandsquiz: Teste deine digitale Privatsphäre · Exit Chat Control",
     "quizDescription": "Zwölf kurze Fragen zeigen die Schwachstellen deines Datenschutzes, dazu konkrete Lösungen aus dem Leitfaden. Alles bleibt in deinem Browser.",
     "notFoundTitle": "Seite nicht gefunden · Exit Chat Control",
-    "ogImageAlt": "Exit Chat Control, Praxisleitfaden für digitale Privatsphäre"
+    "ogImageAlt": "Exit Chat Control, Praxisleitfaden für digitale Privatsphäre",
+    "toolTitle": "{name}: wofür es gut ist und wie du es einrichtest · Exit Chat Control",
+    "fullTitle": "Der vollständige Leitfaden auf einer Seite · Exit Chat Control"
+  },
+  "guide": {
+    "home": "Startseite",
+    "breadcrumb": "Brotkrumen",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "backTo": "Zurück zu {section}",
+    "alternatives": "Weitere Optionen in dieser Kategorie",
+    "pager": "Weiterlesen",
+    "fullGuide": "Den ganzen Leitfaden auf einer Seite lesen",
+    "toolCount": "{n} Werkzeuge",
+    "oneTool": "1 Werkzeug",
+    "quizCta": "Unsicher, wo du anfangen sollst? Mach das Quiz mit 12 Fragen",
+    "hubHeading": "Der Leitfaden, Thema für Thema",
+    "inSection": "In diesem Abschnitt"
   }
 }

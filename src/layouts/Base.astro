@@ -2,7 +2,7 @@
 import { ClientRouter } from 'astro:transitions'
 import Footer from '../components/Footer.astro'
 import TopBar from '../components/TopBar.astro'
-import { localePath, locales, useT, type Locale } from '../i18n/config'
+import { defaultLocale, localePath, locales, useT, type Locale } from '../i18n/config'
 import { ogLocales } from '../i18n/locales'
 import '../styles/global.css'
 import '../styles/components.css'
@@ -17,11 +17,26 @@ interface Props {
   // English-only pages keep their canonical URL without advertising
   // non-existent translations through hreflang links.
   localized?: boolean
-  // Pages that must stay out of search results (404).
+  // Pages that must stay out of search results (404, the one-page guide).
   noindex?: boolean
+  // Localized pages whose slug differs per locale (guide sections, tools):
+  // the root-relative href of this page in every locale. Overrides `path`.
+  hrefs?: Record<Locale, string>
+  // Visible trail is rendered by the page; this feeds the BreadcrumbList.
+  breadcrumbs?: { name: string; href: string }[]
+  // Extra JSON-LD nodes (e.g. SoftwareApplication on product pages).
+  schema?: Record<string, unknown>[]
 }
 
-const { locale, path = '', localized = true, noindex = false } = Astro.props
+const {
+  locale,
+  path = '',
+  localized = true,
+  noindex = false,
+  hrefs,
+  breadcrumbs = [],
+  schema = [],
+} = Astro.props
 const t = useT(locale)
 const title = Astro.props.title ?? t('site.title')
 const description = Astro.props.description ?? t('site.description')
@@ -31,11 +46,11 @@ const localeRoot = (l: Locale) => `${localePath(l)}/`.replace('//', '/')
 // Trailing slash on subpages too, matching the sitemap and the served
 // directory index (/quiz/), so canonical and sitemap never disagree.
 const localeHref = (l: Locale) =>
-  new URL(path ? `${localeRoot(l)}${path}/` : localeRoot(l), site).href
+  new URL(hrefs ? hrefs[l] : path ? `${localeRoot(l)}${path}/` : localeRoot(l), site).href
 
 const canonical = new URL(localeHref(locale))
 const alternates = localized ? locales.map((l) => ({ hreflang: l, href: localeHref(l) })) : []
-const xDefaultHref = new URL(path ? `/${path}/` : '/', site).href
+const xDefaultHref = localeHref(defaultLocale)
 const ogImage = new URL('/og.png', site).href
 // Structured data: a data block, not a script — the CSP doesn't apply to it.
 const jsonLd = JSON.stringify([
@@ -49,6 +64,7 @@ const jsonLd = JSON.stringify([
   {
     '@context': 'https://schema.org',
     '@type': path ? 'WebPage' : 'TechArticle',
+    isPartOf: { '@type': 'WebSite', name: 'Exit Chat Control', url: new URL('/', site).href },
     headline: title,
     description,
     url: canonical.href,
@@ -59,6 +75,21 @@ const jsonLd = JSON.stringify([
     license: 'https://opensource.org/licenses/MIT',
     publisher: { '@type': 'Organization', name: 'Exit Chat Control', url: new URL('/', site).href },
   },
+  ...(breadcrumbs.length
+    ? [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: breadcrumbs.map((b, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name: b.name,
+            item: new URL(b.href, site).href,
+          })),
+        },
+      ]
+    : []),
+  ...schema.map((node) => ({ '@context': 'https://schema.org', ...node })),
 ])
 ---
 
@@ -145,7 +176,7 @@ const jsonLd = JSON.stringify([
   <body>
     <a href="#content" class="skip-link">{t('nav.skip')}</a>
     <div class="sheet">
-      <TopBar locale={locale} />
+      <TopBar locale={locale} hrefs={localized ? hrefs : undefined} path={localized ? path : ''} />
       <noscript>
         <p class="noscript-note">{t('noscript.notice')}</p>
       </noscript>

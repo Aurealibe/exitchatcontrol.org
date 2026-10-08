@@ -1,0 +1,43 @@
+---
+// Contents of the split guide as a grid of numbered cards (hub page): each
+// card links to a section page with its lead line and tool count.
+import { useT, type Locale } from '../../i18n/config'
+import type { GuidePage } from '../../lib/guide'
+
+interface Props {
+  locale: Locale
+  pages: GuidePage[]
+  fullHref: string
+}
+
+const { locale, pages, fullHref } = Astro.props
+const t = useT(locale)
+const count = (n: number) =>
+  n === 1 ? t('guide.oneTool') : t('guide.toolCount').replace('{n}', String(n))
+---
+
+<nav id="toc" aria-labelledby="toc-title" class="hub-toc">
+  <p class="eyebrow mb-1">{t('nav.toc')}</p>
+  <h2 id="toc-title" class="hub-toc-title">{t('guide.hubHeading')}</h2>
+  <ol class="hub-grid">
+    {
+      pages
+        .filter((p) => p.kind !== 'hub')
+        .map((p) => (
+          <li>
+            <a href={p.href} class="hub-card">
+              <span class="hub-card-num" aria-hidden="true">
+                {p.prefix}
+              </span>
+              <span class="hub-card-title">{p.title}</span>
+              <span class="hub-card-desc">{p.description}</span>
+              {p.tools.length > 0 && <span class="hub-card-meta">{count(p.tools.length)}</span>}
+            </a>
+          </li>
+        ))
+    }
+  </ol>
+  <p class="hub-full">
+    <a href={fullHref}>{t('guide.fullGuide')} →</a>
+  </p>
+</nav>

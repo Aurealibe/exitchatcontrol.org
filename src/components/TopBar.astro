@@ -3,10 +3,16 @@ import { localeFlags, localeNames, localePath, locales, useT, type Locale } from
 
 interface Props {
   locale: Locale
+  // The current page in every locale, so the language menu switches to the
+  // same page instead of the other language's home page.
+  hrefs?: Record<Locale, string>
+  path?: string
 }
 
-const { locale } = Astro.props
+const { locale, hrefs, path = '' } = Astro.props
 const t = useT(locale)
+const root = (l: Locale) => `${localePath(l)}/`
+const langHref = (l: Locale) => hrefs?.[l] ?? (path ? `${root(l)}${path}/` : root(l))
 ---
 
 <header class="topbar sticky top-0 z-40 border-b border-rule bg-surface/95 backdrop-blur-sm">
@@ -18,7 +24,7 @@ const t = useT(locale)
       EXIT CHAT CONTROL
     </a>
     <a
-      href={`${localePath(locale)}/#toc`.replace('//', '/')}
+      href={`${root(locale)}#toc`}
       class="font-mono text-xs text-dim no-underline hover:text-accent"
     >
       {t('nav.toc')}
@@ -43,7 +49,7 @@ const t = useT(locale)
               locales.map((l) => (
                 <li>
                   <a
-                    href={`${localePath(l)}/`.replace('//', '/')}
+                    href={langHref(l)}
                     data-lang-choice={l}
                     aria-current={l === locale ? 'page' : undefined}
                     class="lang-option"

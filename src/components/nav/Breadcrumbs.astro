@@ -1,0 +1,26 @@
+---
+// Visible trail on section and product pages (Home › Section › Tool). The
+// last item is the current page: plain text, aria-current.
+interface Props {
+  label: string
+  items: { name: string; href: string }[]
+}
+
+const { label, items } = Astro.props
+---
+
+<nav aria-label={label} class="crumbs">
+  <ol>
+    {
+      items.map((item, i) => (
+        <li>
+          {i < items.length - 1 ? (
+            <a href={item.href}>{item.name}</a>
+          ) : (
+            <span aria-current="page">{item.name}</span>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>

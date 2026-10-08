@@ -4,6 +4,7 @@ import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import tailwindcss from '@tailwindcss/vite'
 import { defaultLocale, locales } from './src/i18n/locales'
+import { fullGuidePaths, sitemapAlternates } from './src/lib/alternates'
 
 // Static multilingual guide. `/` is English (canonical); every other
 // locale in src/i18n/config.ts gets a full prerendered translation at
@@ -28,9 +29,11 @@ export default defineConfig({
   integrations: [
     mdx(),
     sitemap({
-      i18n: {
-        defaultLocale,
-        locales: Object.fromEntries(locales.map((l) => [l, l])),
+      filter: (page) => !fullGuidePaths.has(new URL(page).pathname),
+      // hreflang clusters from the localized slugs (see src/lib/alternates.ts)
+      serialize(item) {
+        item.links = sitemapAlternates.get(new URL(item.url).pathname)
+        return item
       },
     }),
   ],

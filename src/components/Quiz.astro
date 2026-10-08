@@ -7,8 +7,9 @@
 // static key still teaches the whole thing. No third-party request, no inline
 // styles (bar widths come from a CSS custom property set via the CSSOM, which
 // style-src 'self' allows), no inline handlers (delegated on document).
-import { localePath, useT, type Locale } from '../i18n/config'
+import { useT, type Locale } from '../i18n/config'
 import { loadQuiz } from '../lib/content'
+import { homeHref, sectionHref } from '../lib/pages'
 import Ext from './Ext.astro'
 
 interface Props {
@@ -19,8 +20,7 @@ const { locale } = Astro.props
 const t = useT(locale)
 const { bands, questions } = loadQuiz(locale)
 
-const localeRoot = `${localePath(locale)}/`.replace('//', '/')
-const guideHref = (anchor: string) => `${localeRoot}#${anchor}`
+const guideHref = (anchor: string) => sectionHref(locale, anchor)
 const total = questions.length
 const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', String(total))
 ---
@@ -39,7 +39,7 @@ const progress0 = t('quiz.progress').replace('{done}', '0').replace('{total}', S
         {t('quiz.start')}
       </a>
       <a
-        href={localeRoot}
+        href={homeHref(locale)}
         class="rounded-dossier border border-rule bg-surface px-3 py-1.5 font-mono text-xs text-ink no-underline hover:border-accent"
       >
         {t('quiz.readGuide')}

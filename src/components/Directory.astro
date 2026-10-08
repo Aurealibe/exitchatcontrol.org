@@ -11,9 +11,11 @@ import Ext from './Ext.astro'
 
 interface Props {
   locale: Locale
+  // h1 when the section is its own page, h2 inside the one-page guide.
+  heading?: 'h1' | 'h2'
 }
 
-const { locale } = Astro.props
+const { locale, heading: Heading = 'h2' } = Astro.props
 const t = useT(locale)
 
 const entries = loadDataset('directory', locale)
@@ -25,7 +27,7 @@ const byCategory = DIRECTORY_CATEGORIES.map((category) => ({
 
 <section id="directory">
   <p class="eyebrow">{t('sections2.directory.eyebrow')}</p>
-  <h2>{t('sections2.directory.title')}</h2>
+  <Heading>{t('sections2.directory.title')}</Heading>
   <p class="text-dim">{t('sections2.directory.intro')}</p>
   {
     byCategory.map(({ category, rows }) => (

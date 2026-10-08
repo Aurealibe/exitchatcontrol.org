@@ -1,0 +1,51 @@
+---
+// Locale home page of the split guide: hero, legislative status, the threat
+// section (what Chat Control is), then the contents grid that leads to one
+// page per topic. Legacy one-page anchors (/#messagerie, /fr/#t-signal…)
+// are forwarded to their new page by the small script at the bottom.
+import { render } from 'astro:content'
+import type { Locale } from '../i18n/config'
+import { loadGuide } from '../lib/guide'
+import { anchorTargets, HUB_SECTION, pageHref } from '../lib/pages'
+import Hero from './Hero.astro'
+import Manifesto from './Manifesto.astro'
+import SectionGrid from './nav/SectionGrid.astro'
+import ShareRow from './ShareRow.astro'
+import StatusBanner from './StatusBanner.astro'
+import Tool from './Tool.astro'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const pages = await loadGuide(locale)
+const hub = pages.find((p) => p.id === HUB_SECTION)!
+const { Content } = await render(hub.entry!)
+const fullHref = pageHref(locale, 'full')
+const legacy = JSON.stringify({ map: anchorTargets(locale), fallback: fullHref })
+---
+
+<Hero locale={locale} />
+<StatusBanner locale={locale} />
+<main id="content" class="mx-auto max-w-3xl px-4 py-8">
+  <SectionGrid locale={locale} pages={pages} fullHref={fullHref} />
+  <section id={HUB_SECTION}>
+    <Content components={{ Tool }} />
+  </section>
+  <Manifesto locale={locale} />
+  <ShareRow locale={locale} />
+</main>
+<script is:inline type="application/json" id="legacy-anchors" set:html={legacy} />
+<script is:inline>
+  /* Legacy deep links: the guide used to be one page, so /#vpn or
+     /fr/#t-signal are shared everywhere. Forward a hash that has no target
+     here to its new page (or to the one-page guide). Block comments only. */
+  ;(() => {
+    const id = decodeURIComponent(location.hash.slice(1))
+    const data = document.getElementById('legacy-anchors')
+    if (!id || !data || document.getElementById(id)) return
+    const { map, fallback } = JSON.parse(data.textContent)
+    location.replace(map[id] || fallback + '#' + encodeURIComponent(id))
+  })()
+</script>

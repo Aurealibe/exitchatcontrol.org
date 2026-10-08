@@ -192,6 +192,23 @@
     "quizTitle": "Resistance quiz: test your digital privacy · Exit Chat Control",
     "quizDescription": "Twelve quick questions to find the weak points in your privacy setup, then concrete fixes from the guide. Runs in your browser, nothing is sent.",
     "notFoundTitle": "Page not found · Exit Chat Control",
-    "ogImageAlt": "Exit Chat Control, field guide to digital privacy"
+    "ogImageAlt": "Exit Chat Control, field guide to digital privacy",
+    "toolTitle": "{name}: what it's for and how to set it up · Exit Chat Control",
+    "fullTitle": "The complete guide on one page · Exit Chat Control"
+  },
+  "guide": {
+    "home": "Home",
+    "breadcrumb": "Breadcrumb",
+    "prev": "Previous",
+    "next": "Next",
+    "backTo": "Back to {section}",
+    "alternatives": "Other options in this category",
+    "pager": "Keep reading",
+    "fullGuide": "Read the whole guide on one page",
+    "toolCount": "{n} tools",
+    "oneTool": "1 tool",
+    "quizCta": "Not sure where to start? Take the 12-question quiz",
+    "hubHeading": "The guide, topic by topic",
+    "inSection": "In this section"
   }
 }

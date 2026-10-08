@@ -192,6 +192,23 @@
     "quizTitle": "Quiz de resistencia: pon a prueba tu privacidad digital · Exit Chat Control",
     "quizDescription": "Doce preguntas rápidas para detectar los puntos débiles de tu protección y luego soluciones concretas de la guía. Funciona en tu navegador, no se envía nada.",
     "notFoundTitle": "Página no encontrada · Exit Chat Control",
-    "ogImageAlt": "Exit Chat Control, guía de campo de privacidad digital"
+    "ogImageAlt": "Exit Chat Control, guía de campo de privacidad digital",
+    "toolTitle": "{name}: para qué sirve y cómo configurarlo · Exit Chat Control",
+    "fullTitle": "La guía completa en una página · Exit Chat Control"
+  },
+  "guide": {
+    "home": "Inicio",
+    "breadcrumb": "Ruta de navegación",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "backTo": "Volver a {section}",
+    "alternatives": "Otras opciones en esta categoría",
+    "pager": "Seguir leyendo",
+    "fullGuide": "Leer toda la guía en una sola página",
+    "toolCount": "{n} herramientas",
+    "oneTool": "1 herramienta",
+    "quizCta": "¿No sabes por dónde empezar? Haz el cuestionario de 12 preguntas",
+    "hubHeading": "La guía, tema por tema",
+    "inSection": "En esta sección"
   }
 }

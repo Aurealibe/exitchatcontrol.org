@@ -192,6 +192,23 @@
     "quizTitle": "Quiz de résistance : testez votre vie privée numérique · Exit Chat Control",
     "quizDescription": "Douze questions rapides pour repérer les points faibles de votre protection, puis des solutions concrètes du guide. Tout reste dans votre navigateur.",
     "notFoundTitle": "Page introuvable · Exit Chat Control",
-    "ogImageAlt": "Exit Chat Control, guide pratique de la vie privée numérique"
+    "ogImageAlt": "Exit Chat Control, guide pratique de la vie privée numérique",
+    "toolTitle": "{name} : à quoi ça sert et comment l’installer · Exit Chat Control",
+    "fullTitle": "Le guide complet sur une page · Exit Chat Control"
+  },
+  "guide": {
+    "home": "Accueil",
+    "breadcrumb": "Fil d'Ariane",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "backTo": "Retour à {section}",
+    "alternatives": "Autres options dans cette catégorie",
+    "pager": "Continuer la lecture",
+    "fullGuide": "Lire tout le guide sur une seule page",
+    "toolCount": "{n} outils",
+    "oneTool": "1 outil",
+    "quizCta": "Vous ne savez pas par où commencer ? Faites le quiz en 12 questions",
+    "hubHeading": "Le guide, thème par thème",
+    "inSection": "Dans cette section"
   }
 }

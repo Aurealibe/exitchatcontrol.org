@@ -18,7 +18,10 @@ function htmlFiles(dir) {
 }
 
 const hashes = new Set()
-const inlineScript = /<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi
+// Data blocks (JSON-LD, application/json) are not executed, so the CSP
+// never applies to them: hashing them would only bloat the header.
+const inlineScript =
+  /<script(?![^>]*\bsrc=)(?![^>]*\btype="application\/(?:ld\+)?json")[^>]*>([\s\S]*?)<\/script>/gi
 
 for (const file of htmlFiles(DIST)) {
   const html = readFileSync(file, 'utf8')

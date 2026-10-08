@@ -2,251 +2,313 @@
    Brand tile background + WCAG-picked ink per tool (from tools.json).
    A stylesheet, not style= attributes: the CSP (style-src 'self')
    blocks inline styles in production. */
-#t-signal .tool-logo {
+#t-signal .tool-logo,
+[data-tool='t-signal'] .tool-logo {
   background: #3a76f0;
   color: #14161a;
 }
-#t-simplex .tool-logo {
+#t-simplex .tool-logo,
+[data-tool='t-simplex'] .tool-logo {
   background: #1e63d0;
   color: #faf7ee;
 }
-#t-session .tool-logo {
+#t-session .tool-logo,
+[data-tool='t-session'] .tool-logo {
   background: #178a5a;
   color: #14161a;
 }
-#t-briar .tool-logo {
+#t-briar .tool-logo,
+[data-tool='t-briar'] .tool-logo {
   background: #c1272d;
   color: #faf7ee;
 }
-#t-bitchat .tool-logo {
+#t-bitchat .tool-logo,
+[data-tool='t-bitchat'] .tool-logo {
   background: #e8871e;
   color: #14161a;
 }
-#t-molly .tool-logo {
+#t-molly .tool-logo,
+[data-tool='t-molly'] .tool-logo {
   background: #6d4bb3;
   color: #faf7ee;
 }
-#t-protonmail .tool-logo {
+#t-protonmail .tool-logo,
+[data-tool='t-protonmail'] .tool-logo {
   background: #6d4aff;
   color: #faf7ee;
 }
-#t-tuta .tool-logo {
+#t-tuta .tool-logo,
+[data-tool='t-tuta'] .tool-logo {
   background: #b01e2e;
   color: #faf7ee;
 }
-#t-mailbox .tool-logo {
+#t-mailbox .tool-logo,
+[data-tool='t-mailbox'] .tool-logo {
   background: #2470d4;
   color: #faf7ee;
 }
-#t-mullvadbrowser .tool-logo {
+#t-mullvadbrowser .tool-logo,
+[data-tool='t-mullvadbrowser'] .tool-logo {
   background: #2b4b8f;
   color: #faf7ee;
 }
-#t-firefox .tool-logo {
+#t-firefox .tool-logo,
+[data-tool='t-firefox'] .tool-logo {
   background: #e66000;
   color: #14161a;
 }
-#t-brave .tool-logo {
+#t-brave .tool-logo,
+[data-tool='t-brave'] .tool-logo {
   background: #fb542b;
   color: #14161a;
 }
-#t-ublock .tool-logo {
+#t-ublock .tool-logo,
+[data-tool='t-ublock'] .tool-logo {
   background: #7a0d0d;
   color: #faf7ee;
 }
-#t-search .tool-logo {
+#t-search .tool-logo,
+[data-tool='t-search'] .tool-logo {
   background: #de5833;
   color: #14161a;
 }
-#t-quad9 .tool-logo {
+#t-quad9 .tool-logo,
+[data-tool='t-quad9'] .tool-logo {
   background: #1a5fb4;
   color: #faf7ee;
 }
-#t-mullvaddns .tool-logo {
+#t-mullvaddns .tool-logo,
+[data-tool='t-mullvaddns'] .tool-logo {
   background: #2b4b8f;
   color: #faf7ee;
 }
-#t-cloudflare .tool-logo {
+#t-cloudflare .tool-logo,
+[data-tool='t-cloudflare'] .tool-logo {
   background: #f38020;
   color: #14161a;
 }
-#t-pihole .tool-logo {
+#t-pihole .tool-logo,
+[data-tool='t-pihole'] .tool-logo {
   background: #96060c;
   color: #faf7ee;
 }
-#t-mullvad .tool-logo {
+#t-mullvad .tool-logo,
+[data-tool='t-mullvad'] .tool-logo {
   background: #2b4b8f;
   color: #faf7ee;
 }
-#t-protonvpn .tool-logo {
+#t-protonvpn .tool-logo,
+[data-tool='t-protonvpn'] .tool-logo {
   background: #6d4aff;
   color: #faf7ee;
 }
-#t-ivpn .tool-logo {
+#t-ivpn .tool-logo,
+[data-tool='t-ivpn'] .tool-logo {
   background: #3b5bdb;
   color: #faf7ee;
 }
-#t-protondrive .tool-logo {
+#t-protondrive .tool-logo,
+[data-tool='t-protondrive'] .tool-logo {
   background: #6d4aff;
   color: #faf7ee;
 }
-#t-cryptomator .tool-logo {
+#t-cryptomator .tool-logo,
+[data-tool='t-cryptomator'] .tool-logo {
   background: #26a69a;
   color: #14161a;
 }
-#t-nc-storage .tool-logo {
+#t-nc-storage .tool-logo,
+[data-tool='t-nc-storage'] .tool-logo {
   background: #0082c9;
   color: #14161a;
 }
-#t-bitwarden .tool-logo {
+#t-bitwarden .tool-logo,
+[data-tool='t-bitwarden'] .tool-logo {
   background: #175ddc;
   color: #faf7ee;
 }
-#t-keepassxc .tool-logo {
+#t-keepassxc .tool-logo,
+[data-tool='t-keepassxc'] .tool-logo {
   background: #2c6b9e;
   color: #faf7ee;
 }
-#t-protonpass .tool-logo {
+#t-protonpass .tool-logo,
+[data-tool='t-protonpass'] .tool-logo {
   background: #6d4aff;
   color: #faf7ee;
 }
-#t-yubikey .tool-logo {
+#t-yubikey .tool-logo,
+[data-tool='t-yubikey'] .tool-logo {
   background: #84bd00;
   color: #14161a;
 }
-#t-aegis .tool-logo {
+#t-aegis .tool-logo,
+[data-tool='t-aegis'] .tool-logo {
   background: #2c5c9c;
   color: #faf7ee;
 }
-#t-mastodon .tool-logo {
+#t-mastodon .tool-logo,
+[data-tool='t-mastodon'] .tool-logo {
   background: #6364ff;
   color: #14161a;
 }
-#t-nostr .tool-logo {
+#t-nostr .tool-logo,
+[data-tool='t-nostr'] .tool-logo {
   background: #8e30eb;
   color: #faf7ee;
 }
-#t-element .tool-logo {
+#t-element .tool-logo,
+[data-tool='t-element'] .tool-logo {
   background: #0dbd8b;
   color: #14161a;
 }
-#t-fediverse .tool-logo {
+#t-fediverse .tool-logo,
+[data-tool='t-fediverse'] .tool-logo {
   background: #ea580c;
   color: #14161a;
 }
-#t-bitcoin .tool-logo {
+#t-bitcoin .tool-logo,
+[data-tool='t-bitcoin'] .tool-logo {
   background: #f7931a;
   color: #14161a;
 }
-#t-monero .tool-logo {
+#t-monero .tool-logo,
+[data-tool='t-monero'] .tool-logo {
   background: #ff6600;
   color: #14161a;
 }
-#t-localai .tool-logo {
+#t-localai .tool-logo,
+[data-tool='t-localai'] .tool-logo {
   background: #111111;
   color: #faf7ee;
 }
-#t-pocketpal .tool-logo {
+#t-pocketpal .tool-logo,
+[data-tool='t-pocketpal'] .tool-logo {
   background: #6b4eff;
   color: #faf7ee;
 }
-#t-cloudai .tool-logo {
+#t-cloudai .tool-logo,
+[data-tool='t-cloudai'] .tool-logo {
   background: #de5833;
   color: #14161a;
 }
-#t-maps .tool-logo {
+#t-maps .tool-logo,
+[data-tool='t-maps'] .tool-logo {
   background: #0a7d33;
   color: #faf7ee;
 }
-#t-notes .tool-logo {
+#t-notes .tool-logo,
+[data-tool='t-notes'] .tool-logo {
   background: #2e7d6b;
   color: #faf7ee;
 }
-#t-visio .tool-logo {
+#t-visio .tool-logo,
+[data-tool='t-visio'] .tool-logo {
   background: #1d6fb8;
   color: #faf7ee;
 }
-#t-photos .tool-logo {
+#t-photos .tool-logo,
+[data-tool='t-photos'] .tool-logo {
   background: #7b3fbf;
   color: #faf7ee;
 }
-#t-alias .tool-logo {
+#t-alias .tool-logo,
+[data-tool='t-alias'] .tool-logo {
   background: #c0392b;
   color: #faf7ee;
 }
-#t-backups .tool-logo {
+#t-backups .tool-logo,
+[data-tool='t-backups'] .tool-logo {
   background: #5a6570;
   color: #faf7ee;
 }
-#t-databrokers .tool-logo {
+#t-databrokers .tool-logo,
+[data-tool='t-databrokers'] .tool-logo {
   background: #b8860b;
   color: #14161a;
 }
-#t-yunohost .tool-logo {
+#t-yunohost .tool-logo,
+[data-tool='t-yunohost'] .tool-logo {
   background: #e29100;
   color: #14161a;
 }
-#t-nextcloud .tool-logo {
+#t-nextcloud .tool-logo,
+[data-tool='t-nextcloud'] .tool-logo {
   background: #0082c9;
   color: #14161a;
 }
-#t-synapse .tool-logo {
+#t-synapse .tool-logo,
+[data-tool='t-synapse'] .tool-logo {
   background: #0dbd8b;
   color: #14161a;
 }
-#t-tailscale .tool-logo {
+#t-tailscale .tool-logo,
+[data-tool='t-tailscale'] .tool-logo {
   background: #242424;
   color: #faf7ee;
 }
-#t-website .tool-logo {
+#t-website .tool-logo,
+[data-tool='t-website'] .tool-logo {
   background: #7a4ddb;
   color: #faf7ee;
 }
-#t-tor .tool-logo {
+#t-tor .tool-logo,
+[data-tool='t-tor'] .tool-logo {
   background: #7d4698;
   color: #faf7ee;
 }
-#t-grapheneos .tool-logo {
+#t-grapheneos .tool-logo,
+[data-tool='t-grapheneos'] .tool-logo {
   background: #1f8a70;
   color: #14161a;
 }
-#t-linux .tool-logo {
+#t-linux .tool-logo,
+[data-tool='t-linux'] .tool-logo {
   background: #2b2b2b;
   color: #faf7ee;
 }
-#t-tails .tool-logo {
+#t-tails .tool-logo,
+[data-tool='t-tails'] .tool-logo {
   background: #56347c;
   color: #faf7ee;
 }
-#t-qubes .tool-logo {
+#t-qubes .tool-logo,
+[data-tool='t-qubes'] .tool-logo {
   background: #3874d8;
   color: #14161a;
 }
-#t-threema .tool-logo {
+#t-threema .tool-logo,
+[data-tool='t-threema'] .tool-logo {
   background: #3fe669;
   color: #14161a;
 }
-#t-olvid .tool-logo {
+#t-olvid .tool-logo,
+[data-tool='t-olvid'] .tool-logo {
   background: #2a5ad8;
   color: #faf7ee;
 }
-#t-deltachat .tool-logo {
+#t-deltachat .tool-logo,
+[data-tool='t-deltachat'] .tool-logo {
   background: #364e59;
   color: #faf7ee;
 }
-#t-meshtastic .tool-logo {
+#t-meshtastic .tool-logo,
+[data-tool='t-meshtastic'] .tool-logo {
   background: #67ea94;
   color: #14161a;
 }
-#t-veracrypt .tool-logo {
+#t-veracrypt .tool-logo,
+[data-tool='t-veracrypt'] .tool-logo {
   background: #1d5fa8;
   color: #faf7ee;
 }
-#t-nym .tool-logo {
+#t-nym .tool-logo,
+[data-tool='t-nym'] .tool-logo {
   background: #14e76f;
   color: #14161a;
 }
-#t-wasabi .tool-logo {
+#t-wasabi .tool-logo,
+[data-tool='t-wasabi'] .tool-logo {
   background: #2f7d32;
   color: #faf7ee;
 }

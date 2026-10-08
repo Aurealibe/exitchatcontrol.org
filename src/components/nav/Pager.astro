@@ -1,0 +1,45 @@
+---
+// Previous / next pair at the foot of a section or product page.
+interface Link {
+  href: string
+  title: string
+  prefix?: string
+}
+
+interface Props {
+  label: string
+  prevLabel: string
+  nextLabel: string
+  prev?: Link
+  next?: Link
+}
+
+const { label, prevLabel, nextLabel, prev, next } = Astro.props
+---
+
+<nav aria-label={label} class="pager">
+  {
+    prev ? (
+      <a href={prev.href} rel="prev" class="pager-link pager-prev">
+        <span class="pager-dir">← {prevLabel}</span>
+        <span class="pager-title">
+          {prev.prefix && <span class="toc-p">{prev.prefix}</span>}
+          {prev.title}
+        </span>
+      </a>
+    ) : (
+      <span />
+    )
+  }
+  {
+    next && (
+      <a href={next.href} rel="next" class="pager-link pager-next">
+        <span class="pager-dir">{nextLabel} →</span>
+        <span class="pager-title">
+          {next.prefix && <span class="toc-p">{next.prefix}</span>}
+          {next.title}
+        </span>
+      </a>
+    )
+  }
+</nav>

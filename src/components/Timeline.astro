@@ -11,9 +11,11 @@ import Ext from './Ext.astro'
 
 interface Props {
   locale: Locale
+  // h1 when the section is its own page, h2 inside the one-page guide.
+  heading?: 'h1' | 'h2'
 }
 
-const { locale } = Astro.props
+const { locale, heading: Heading = 'h2' } = Astro.props
 const t = useT(locale)
 
 const events = [...loadDataset('events', locale)].sort((a, b) => a.date.localeCompare(b.date))
@@ -29,7 +31,7 @@ const KIND_CLASS: Record<EventKind, string> = {
 
 <section id="precedents">
   <p class="eyebrow">{t('sections2.precedents.eyebrow')}</p>
-  <h2>{t('sections2.precedents.title')}</h2>
+  <Heading>{t('sections2.precedents.title')}</Heading>
   <p class="text-dim">{t('sections2.precedents.intro')}</p>
   <ol class="m-0 mt-6 list-none border-s border-rule-strong p-0 ps-5">
     {

@@ -1,0 +1,41 @@
+---
+// Compact tool tile (logo, name, one-line purpose) linking to a product
+// page: the "other options" grid and the per-section tool index.
+import { BRAND_ICONS } from '../../icons.generated'
+import type { GuideTool } from '../../lib/guide'
+import { snippet } from '../../lib/guide'
+
+interface Props {
+  item: GuideTool
+  current?: boolean
+}
+
+const { item, current = false } = Astro.props
+const { tool } = item
+const icon = tool.iconSlug ? BRAND_ICONS[tool.iconSlug] : undefined
+---
+
+<a
+  href={item.href}
+  class="tool-mini"
+  data-tool={tool.id}
+  aria-current={current ? 'page' : undefined}
+>
+  <span class="tool-logo" aria-hidden="true">
+    {
+      icon ? (
+        <svg viewBox={icon.viewBox} fill="currentColor">
+          {icon.paths.map((p) => (
+            <path d={p.d} transform={p.transform} />
+          ))}
+        </svg>
+      ) : (
+        tool.monogram
+      )
+    }
+  </span>
+  <span class="tool-mini-text">
+    <span class="tool-mini-name">{item.name}</span>
+    <span class="tool-mini-what">{snippet(item.what, 90)}</span>
+  </span>
+</a>
