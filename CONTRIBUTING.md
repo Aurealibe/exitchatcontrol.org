@@ -27,7 +27,8 @@ If you are the author, maintainer, employee, investor, or otherwise affiliated w
 ## Content and facts
 
 - Every dated claim (timeline, observatory) needs a source URL, primary wherever possible (legislation, court rulings, institutional press releases — not blog posts).
-- Translations: UI strings live in `src/i18n/<lang>.json`; long-form content in `src/content/sections/<lang>/`; dataset prose in `src/i18n/content/<lang>/`. Adding a language = adding those files plus one line in `src/i18n/locales.ts`. Parity is tested.
+- Translations: UI strings live in `src/i18n/<lang>.json`; long-form content in `src/content/sections/<lang>/`; tool cards in `src/content/tools/<lang>/`; dataset prose in `src/i18n/content/<lang>/`; localized URL slugs in `src/i18n/slugs.ts`. Adding a language = adding those files plus one line in `src/i18n/locales.ts`. Parity is tested.
+- Pages: each section and each tool card has its own page (`src/pages/[...path].astro`, URLs from `src/lib/pages.ts`). A new tool = an entry in `src/data/tools.json` (with `section` and `slug`), one `src/content/tools/<lang>/<file>.mdx` per language, and `<Tool id="t-…" />` where it belongs in the section. Slugs are public URLs: add, never rename.
 
 ## Large changes
 

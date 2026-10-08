@@ -5,7 +5,8 @@
     "name": "Signal",
     "url": "https://signal.org",
     "license": "AGPL-3.0",
-    "iconSlug": "signal"
+    "iconSlug": "signal",
+    "tool": "t-signal"
   },
   {
     "id": "simplex-chat",
@@ -13,7 +14,8 @@
     "name": "SimpleX Chat",
     "url": "https://simplex.chat",
     "license": "AGPL-3.0",
-    "iconSlug": "simplex"
+    "iconSlug": "simplex",
+    "tool": "t-simplex"
   },
   {
     "id": "session",
@@ -21,7 +23,8 @@
     "name": "Session",
     "url": "https://getsession.org",
     "license": "GPL-3.0",
-    "iconSlug": "session"
+    "iconSlug": "session",
+    "tool": "t-session"
   },
   {
     "id": "element-matrix",
@@ -36,14 +39,16 @@
     "category": "messagerie",
     "name": "Briar",
     "url": "https://briarproject.org",
-    "license": "GPL-3.0"
+    "license": "GPL-3.0",
+    "tool": "t-briar"
   },
   {
     "id": "molly",
     "category": "messagerie",
     "name": "Molly",
     "url": "https://molly.im",
-    "license": "GPL-3.0"
+    "license": "GPL-3.0",
+    "tool": "t-molly"
   },
   {
     "id": "threema",
@@ -51,7 +56,8 @@
     "name": "Threema",
     "url": "https://threema.com",
     "license": "AGPL-3.0",
-    "iconSlug": "threema"
+    "iconSlug": "threema",
+    "tool": "t-threema"
   },
   {
     "id": "olvid",
@@ -59,7 +65,8 @@
     "name": "Olvid",
     "url": "https://olvid.io",
     "license": "AGPL-3.0",
-    "iconSlug": "olvid"
+    "iconSlug": "olvid",
+    "tool": "t-olvid"
   },
   {
     "id": "meshtastic",
@@ -67,14 +74,16 @@
     "name": "Meshtastic",
     "url": "https://meshtastic.org",
     "license": "GPL-3.0",
-    "iconSlug": "meshtastic"
+    "iconSlug": "meshtastic",
+    "tool": "t-meshtastic"
   },
   {
     "id": "delta-chat",
     "category": "messagerie",
     "name": "Delta Chat",
     "url": "https://delta.chat",
-    "license": "GPL-3.0"
+    "license": "GPL-3.0",
+    "tool": "t-deltachat"
   },
   {
     "id": "thunderbird",
@@ -98,7 +107,8 @@
     "name": "Tuta (apps)",
     "url": "https://tuta.com",
     "license": "GPL-3.0",
-    "iconSlug": "tuta"
+    "iconSlug": "tuta",
+    "tool": "t-tuta"
   },
   {
     "id": "firefox",
@@ -106,7 +116,8 @@
     "name": "Firefox",
     "url": "https://www.mozilla.org/firefox",
     "license": "MPL-2.0",
-    "iconSlug": "firefox"
+    "iconSlug": "firefox",
+    "tool": "t-firefox"
   },
   {
     "id": "tor-browser",
@@ -114,7 +125,8 @@
     "name": "Tor Browser",
     "url": "https://www.torproject.org",
     "license": "MPL-2.0",
-    "iconSlug": "torbrowser"
+    "iconSlug": "torbrowser",
+    "tool": "t-tor"
   },
   {
     "id": "mullvad-browser",
@@ -122,7 +134,8 @@
     "name": "Mullvad Browser",
     "url": "https://mullvad.net/browser",
     "license": "MPL-2.0",
-    "iconSlug": "mullvad"
+    "iconSlug": "mullvad",
+    "tool": "t-mullvadbrowser"
   },
   {
     "id": "brave",
@@ -130,7 +143,8 @@
     "name": "Brave",
     "url": "https://brave.com",
     "license": "MPL-2.0",
-    "iconSlug": "brave"
+    "iconSlug": "brave",
+    "tool": "t-brave"
   },
   {
     "id": "ublock-origin",
@@ -138,7 +152,8 @@
     "name": "uBlock Origin",
     "url": "https://github.com/gorhill/uBlock",
     "license": "GPL-3.0",
-    "iconSlug": "ublockorigin"
+    "iconSlug": "ublockorigin",
+    "tool": "t-ublock"
   },
   {
     "id": "searxng",
@@ -178,7 +193,8 @@
     "name": "Tor",
     "url": "https://www.torproject.org",
     "license": "BSD-3-Clause",
-    "iconSlug": "torproject"
+    "iconSlug": "torproject",
+    "tool": "t-tor"
   },
   {
     "id": "tailscale",
@@ -186,7 +202,8 @@
     "name": "Tailscale",
     "url": "https://tailscale.com",
     "license": "BSD-3-Clause",
-    "iconSlug": "tailscale"
+    "iconSlug": "tailscale",
+    "tool": "t-tailscale"
   },
   {
     "id": "headscale",
@@ -201,7 +218,8 @@
     "name": "NymVPN",
     "url": "https://nym.com",
     "license": "GPL-3.0",
-    "iconSlug": "nym"
+    "iconSlug": "nym",
+    "tool": "t-nym"
   },
   {
     "id": "pi-hole",
@@ -239,7 +257,8 @@
     "name": "Bitwarden",
     "url": "https://bitwarden.com",
     "license": "GPL-3.0",
-    "iconSlug": "bitwarden"
+    "iconSlug": "bitwarden",
+    "tool": "t-bitwarden"
   },
   {
     "id": "vaultwarden",
@@ -255,14 +274,16 @@
     "name": "KeePassXC",
     "url": "https://keepassxc.org",
     "license": "GPL-2.0/3.0",
-    "iconSlug": "keepassxc"
+    "iconSlug": "keepassxc",
+    "tool": "t-keepassxc"
   },
   {
     "id": "aegis",
     "category": "mots-de-passe",
     "name": "Aegis",
     "url": "https://getaegis.app",
-    "license": "GPL-3.0"
+    "license": "GPL-3.0",
+    "tool": "t-aegis"
   },
   {
     "id": "ente-auth",
@@ -278,7 +299,8 @@
     "name": "Nextcloud",
     "url": "https://nextcloud.com",
     "license": "AGPL-3.0",
-    "iconSlug": "nextcloud"
+    "iconSlug": "nextcloud",
+    "tool": "t-nc-storage"
   },
   {
     "id": "cryptomator",
@@ -286,7 +308,8 @@
     "name": "Cryptomator",
     "url": "https://cryptomator.org",
     "license": "GPL-3.0",
-    "iconSlug": "cryptomator"
+    "iconSlug": "cryptomator",
+    "tool": "t-cryptomator"
   },
   {
     "id": "veracrypt",
@@ -294,7 +317,8 @@
     "name": "VeraCrypt",
     "url": "https://veracrypt.jp",
     "license": "Apache-2.0",
-    "iconSlug": "veracrypt"
+    "iconSlug": "veracrypt",
+    "tool": "t-veracrypt"
   },
   {
     "id": "syncthing",
@@ -396,7 +420,8 @@
     "name": "Mastodon",
     "url": "https://joinmastodon.org",
     "license": "AGPL-3.0",
-    "iconSlug": "mastodon"
+    "iconSlug": "mastodon",
+    "tool": "t-mastodon"
   },
   {
     "id": "pixelfed",
@@ -463,7 +488,8 @@
     "category": "ia-locale-agentique",
     "name": "PocketPal AI",
     "url": "https://pocketpal.dev",
-    "license": "MIT"
+    "license": "MIT",
+    "tool": "t-pocketpal"
   },
   {
     "id": "grapheneos",
@@ -471,7 +497,8 @@
     "name": "GrapheneOS",
     "url": "https://grapheneos.org",
     "license": "MIT",
-    "iconSlug": "grapheneos"
+    "iconSlug": "grapheneos",
+    "tool": "t-grapheneos"
   },
   {
     "id": "tails",
@@ -479,7 +506,8 @@
     "name": "Tails",
     "url": "https://tails.net",
     "license": "GPL-3.0",
-    "iconSlug": "tails"
+    "iconSlug": "tails",
+    "tool": "t-tails"
   },
   {
     "id": "qubes-os",
@@ -510,7 +538,8 @@
     "name": "YunoHost",
     "url": "https://yunohost.org",
     "license": "AGPL-3.0",
-    "iconSlug": "yunohost"
+    "iconSlug": "yunohost",
+    "tool": "t-yunohost"
   },
   {
     "id": "startos",
@@ -525,7 +554,8 @@
     "name": "Synapse (Matrix)",
     "url": "https://element.io/server-suite",
     "license": "AGPL-3.0",
-    "iconSlug": "matrix"
+    "iconSlug": "matrix",
+    "tool": "t-synapse"
   },
   {
     "id": "forgejo",
@@ -565,14 +595,16 @@
     "name": "Monero",
     "url": "https://www.getmonero.org",
     "license": "BSD-3-Clause",
-    "iconSlug": "monero"
+    "iconSlug": "monero",
+    "tool": "t-monero"
   },
   {
     "id": "wasabi-wallet",
     "category": "finance",
     "name": "Wasabi Wallet",
     "url": "https://wasabiwallet.io",
-    "license": "MIT"
+    "license": "MIT",
+    "tool": "t-wasabi"
   },
   {
     "id": "securedrop",

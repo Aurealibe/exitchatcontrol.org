@@ -151,6 +151,11 @@ export const directoryCoreSchema = z
       .string()
       .regex(/^[a-z0-9]+$/)
       .optional(),
+    // the guide's tool card (src/data/tools.json id) for this entry, if any
+    tool: z
+      .string()
+      .regex(/^t-[a-z0-9-]+$/)
+      .optional(),
   })
   .strict()
 
