@@ -1,0 +1,160 @@
+---
+id: 'navigateur'
+part: 3
+order: 5
+title: 'Böngésző és keresés'
+---
+
+<p class="part-num">
+  <span>04.</span> RÉSZ · BÖNGÉSZŐ ÉS KERESÉS · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Böngésző és keresés
+
+A Chrome egy reklám-követő. A Google Search minden keresést profiloz. Cseréld le mindkettőt.
+
+<ToolCard tool="t-mullvadbrowser">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Középhaladó / Haladó</span>
+    <span class="tool-tag">Anti-ujjlenyomat</span>
+    <span class="tool-tag">🇸🇪 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    A Tor Browser böngészője, de a Tor hálózat nélkül: használd a VPN-eddel együtt egy nehezen
+    követhető asztali gépen.
+  </Fragment>
+  <Fragment slot="why">
+    A Tor Projecttel együtt építették, úgy tervezték, hogy minden felhasználója ugyanazt a digitális
+    ujjlenyomatot mutassa. Az eredmény: ahelyett, hogy egyedi és így követhető lennél, beleolvadsz a
+    tömegbe. Ez a legjobb adatvédelmi választás asztali gépen.
+  </Fragment>
+  <Fragment slot="who">
+    Akik túl akarnak lépni az egyszerű reklámblokkoláson, különösen álnéves fiókok és kitett
+    profilok esetén.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Töltsd le a <b>mullvad.net/browser</b> oldalról (Windows, macOS, Linux).
+    </li>
+    <li>
+      Használd úgy, ahogy van, testreszabás nélkül: minden telepített bővítmény vagy beállítás újra
+      azonosíthatóvá tesz.
+    </li>
+    <li> párosítsd a VPN-eddel, hogy az IP-címedet is elrejtsd.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-firefox">
+  <Fragment slot="name">Firefox (megerősített)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">A Chrome kiváltója</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    A referencia szabad böngésző az adatvédelem-tisztelő mindennapi használathoz.
+  </Fragment>
+  <Fragment slot="why">
+    A Chrome-hoz (egy Google reklám-követő) képest a Firefoxot egy alapítvány készíti, amelynek nem
+    érdeke a profilozásod. Néhány finomhangolással (az <em>arkenfox</em> útmutató) és az uBlock
+    Origin bővítménnyel nagyon megbízhatóvá válik.
+  </Fragment>
+  <Fragment slot="who">Mindenki, mint fő napi böngésző.</Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a Firefoxot a <b>mozilla.org/firefox</b> oldalról.
+    </li>
+    <li>
+      Add hozzá az <b>uBlock Origin</b> bővítményt (reklám- és nyomkövető-blokkolás).
+    </li>
+    <li>
+      Az adatvédelmi beállításokban válaszd a „Szigorú” lehetőséget, tiltsd le a telemetriát, és
+      töröld a sütiket bezáráskor. További lépésekhez alkalmazd az arkenfox útmutatót.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-brave">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Alapértelmezetten mindent blokkol</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy Chromium-alapú böngésző, amely alapértelmezetten blokkolja a reklámokat és a nyomkövetőket,
+    plusz egy Tor-hoz kapcsolódó privát ablak.
+  </Fragment>
+  <Fragment slot="why">
+    Ez a legegyszerűbb választás a Chrome-ról érkezőknek: ugyanaz az érzés, de követés nélkül.
+    Natívan blokkolja a YouTube-reklámokat, titkosított videóhívást kínál (Brave Talk, Jitsi
+    alapokon), és egy kattintásos Tor-hozzáférést, ami hasznos egy blokkolt oldal eléréséhez.
+  </Fragment>
+  <Fragment slot="who">
+    Kezdők, akik fájdalommentesen akarnak váltani a Chrome-ról. (Hagyd figyelmen kívül a
+    kripto/jutalmazott reklám funkciókat, ha nem érdekelnek.)
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a Brave-et a <b>brave.com</b> oldalról.
+    </li>
+    <li>
+      Állítsd a „Shields” beállítást „agresszív”-re, és kapcsold ki a Brave Rewards-ot, ha nem
+      szeretnél reklámokat.
+    </li>
+    <li>
+      Tor-hoz: menü &gt; „Új privát ablak Torral”, majd várj, amíg „Tor connected” nem jelenik meg.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-ublock">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Bővítmény</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    A böngészőbővítmény, amely blokkolja a reklámokat, a nyomkövetőket és a kém szkripteket. A
+    legnagyobb hozamú lépés tíz másodperc alatt.
+  </Fragment>
+  <Fragment slot="why">
+    Az online reklámozás a megfigyelés és a profilozás fő vektora. A blokkolása kivágja a legtöbb
+    követést, felgyorsítja az oldalakat és csökkenti a rosszindulatú szoftverek kockázatát.
+  </Fragment>
+  <Fragment slot="who">Mindenki, Firefoxon és Chromium böngészőkben egyaránt.</Fragment>
+  <ol slot="install">
+    <li>
+      Nyisd meg a böngésződ bővítmény-áruházát, és keress rá az „uBlock Origin”-re (az eredeti,
+      Raymond Hill által készített verzió).
+    </li>
+    <li>Telepítsd. Azonnal működik, beállítás nem szükséges.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-search">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡 Keresőmotorok</span>
+    <span class="tool-tag">A Google Search kiváltója</span>
+  </Fragment>
+  <Fragment slot="what">
+    Keresőmotorok, amelyek nem profiloznak minden keresést, ellentétben a Google-lal.
+  </Fragment>
+  <Fragment slot="why">
+    A DuckDuckGo és a Brave Search nem tárolnak a személyazonosségedhez kötött előzményeket. A
+    Startpage Google-eredményeket szolgál ki követés nélkül. A SearXNG pedig tovább megy: egy saját
+    szerveren futtatható metakereső, a szuverenitás egészen a keresősávig.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenki. A SearXNG azoknak való, akik saját keresőmotort akarnak üzemeltetni.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      A böngésződ beállításaiban váltsd az alapértelmezett keresőt DuckDuckGo-ra, Brave Search-re
+      vagy Startpage-re.
+    </li>
+    <li>
+      SearXNG-hoz: használj egy nyilvános példányt (a searx.space oldalon találod az indexet), vagy
+      üzemeltess sajátot (lásd a 10. szakasz).
+    </li>
+  </ol>
+</ToolCard>

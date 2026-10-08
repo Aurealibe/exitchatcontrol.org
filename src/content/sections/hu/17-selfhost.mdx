@@ -1,0 +1,108 @@
+---
+id: 'selfhost'
+part: 10
+order: 17
+title: 'Saját szerver üzemeltetése (Self-hosting)'
+---
+
+<p class="part-num">
+  <span>16.</span> RÉSZ · HALADÓ ÖNVÉDELEM · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Saját szerver üzemeltetése (Self-hosting)
+
+A szuverenitás végső foka: üzemeltesd magad a szolgáltatásaidat. Az adataid a saját hardvereden élnek, az általad választott joghatóság alatt.
+
+<ToolCard tool="t-yunohost">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Kulcsrakész szerver</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Rendszerek, amelyek egy régi PC-t vagy egy Raspberry Pi-t személyes szerverré alakítanak, egy olyan alkalmazáskatalógussal, amelyből néhány kattintással telepíthetsz.
+  </Fragment>
+  <Fragment slot="why">
+    A saját szerver üzemeltetése ijesztőnek hangzik, de ezek az eszközök elvégzik a nehezét. A <b>YunoHost</b> még a saját e-mailjeidet és az egyszeri bejelentkezést (single sign-on) is futtatja. Az <b>Umbrel</b> egy több mint 300 alkalmazást tartalmazó áruházzal rendelkezik, és nagyon népszerű az adatvédelmet és a Bitcoint kedvelők körében. A <b>Start9</b> titkosítja a biztonsági mentéseket, és alapértelmezés szerint minden szolgáltatáshoz ad egy Tor-címet.
+  </Fragment>
+  <Fragment slot="who">
+    Haladó profiloknak, akik készek rászánni egy délutánt a saját felhőjük felépítésére. Ez a legradikálisabb strukturális válasz a Chat Controlra.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Szerezz egy régi számítógépet, egy Raspberry Pi-t, vagy bérelj egy kis szervert (VPS) egy biztonságos országban.
+    </li>
+    <li>Telepítsd a YunoHostot, az Umbrelt vagy a Start9-et a hivatalos útmutatójuk alapján.</li>
+    <li>A katalógusból telepítsd a Nextcloudot, egy Matrix szervert, egy fotógalériát stb.</li>
+    <li>
+      Érd el privát módon a Tailscale-lel (lásd a VPN szakaszt), ahelyett, hogy kitennéd a szervert a nyilvános internetre.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nextcloud">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">A teljes Google kiváltója</span>
+    <span class="tool-tag">🇩🇪 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    A saját felhőd: fájlok, naptár, névjegyek, fotók, jegyzetek és kollaboratív dokumentumok a szervereden.
+  </Fragment>
+  <Fragment slot="why">
+    Ez a Google Drive, a Naptár és a Névjegyek teljes értékű helyettesítője, de otthon. Te választod meg a joghatóságot, és senki más nem fér hozzá a fájljaidhoz. Megjegyzés: itt „a te szervered” jelenti a privát szférát, az adatok alapértelmezés szerint nincsenek végponttól végpontig titkosítva; neked kell gondoskodnod a frissítésekről.
+  </Fragment>
+  <Fragment slot="who">
+    Self-hostereknek (Saját szervert üzemeltetőknek). A legegyszerűbb út a YunoHoston vagy az Umbrelen keresztüli telepítés.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-synapse">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">A saját chatszervered</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    A saját Matrix chatszervered, amely az Elementet és a titkosított hívásokat működteti.
+  </Fragment>
+  <Fragment slot="why">
+    A szerver üzemeltetésével te irányítod a <b>metaadatokat</b> is (ki kivel és mikor beszél), ami a Matrix gyenge pontja a föderációban. Ez egy olyan közösségi chat, amelyet kizárólag te birtokolsz.
+  </Fragment>
+  <Fragment slot="who">
+    Közösségeknek, kollektíváknak, szerkesztőségeknek, akik saját, független föderált teret szeretnének.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-website">
+  <Fragment slot="name">A saját weboldalad</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Tedd kitilthatatlanná (ban-proof) a hangodat</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy saját oldal, a saját domainneveden, ahol a tartalmad egyetlen platformtól sem függ.
+  </Fragment>
+  <Fragment slot="why">
+    Azon a napon, amikor egy hálózat törli vagy felfüggeszti a fiókodat, minden munkád elenyészik. Egy személyes oldal a horgonyod: a bejegyzéseid ott maradnak, archiválva és naprakészen, történjen bármi. Pontosan ezt csinálják az óvatos információs fiókok. Egy statikus oldal (amely Hugóval, Astróval vagy Jekyll-lel készült) elegendő, és szinte ingyenesen publikálható; egy dinamikus bloghoz egy saját üzemeltetésű (self-hosted) WordPress vagy Ghost tökéletesen megfelel.
+  </Fragment>
+  <Fragment slot="who">
+    Információs fiókoknak, tartalomgyártóknak, aktivistáknak, és bárkinek, aki publikál, és tart a platform-cenzúrától.
+  </Fragment>
+  <ol slot="install">
+    <li>Vásárolj egy domainnevet (ideális esetben egy adatvédelem-tudatos regisztrátortól).</li>
+    <li>
+      Válassz egy statikusoldal-generátort (Astro, Hugo), és hosztold az eredményt, vagy telepíts WordPresst/Ghostot a szerveredre.
+    </li>
+    <li>
+      A közösségi fiókjaidból mindig mutass (linkelj) erre az oldalra: a közönséged így akkor is megtalál, ha valamelyik fiókod elesik.
+    </li>
+  </ol>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">A joghatóság kérdése</span>
+  <p>
+    A saját szerver üzemeltetése (self-hosting) azt is jelenti, hogy kiválasztod, <em>hol</em> éljenek az adataid. Egy otthoni, vagy egy biztonságos országban lévő szerver mentesül a nagy platformokra erőltetett szkennelési kötelezettségek alól. Ez a legradikálisabb strukturális válasz a Chat Controlra.
+  </p>
+</div>

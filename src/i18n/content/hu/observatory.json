@@ -1,0 +1,142 @@
+{
+  "prum-2": {
+    "title": "Prüm II: arckeresés minden európai rendőrségen keresztül",
+    "body": "A 2024/982-es rendelet arcképeket - beleértve a soha el nem ítélt gyanúsítottakét is - ad a tagállamok közötti automatizált rendőrségi adatcseréhez egy központi útválasztón keresztül. Egy páneurópai biometrikus azonosítási képesség, amelyet valódi nemzeti vita nélkül fogadtak el; az EDRi ezt „állami túlkapásnak és tömeges megfigyelésnek” nevezi."
+  },
+  "eidas-wallet": {
+    "title": "eIDAS 2.0: megérkezik a személyazonossági tárca, a böngészők állami felügyelet alá kerülnek",
+    "body": "Minden tagállamnak biztosítania kell egy európai digitális személyazonossági tárcát (EUDI Wallet) 2026. december 24-ig; a bankoknak, a távközlési cégeknek, az egészségügyi szolgáltatásoknak és a nagyon nagy platformoknak el kell fogadniuk azt. Ugyanez a tárca fogja igazolni az életkorodat, megnyitni a fiókodat, és aláírni a fizetést: egyetlen átjáró, ezáltal egyetlen ellenőrző pont; az EDPS (Európai Adatvédelmi Biztos) dokumentálja a keresztirányú használatból eredő nyomonkövetési kockázatokat. A 45. cikk pedig arra kényszeríti a böngészőket, hogy ismerjék el az államilag kijelölt webes tanúsítványokat: több mint 500 kutató figyelmeztetett ([last-chance-for-eidas.org](https://last-chance-for-eidas.org/)), hogy ez a titkosított forgalom lehallgatásának infrastruktúrája."
+  },
+  "going-dark": {
+    "title": "A „Going Dark” (Elsötétülés) terv: beépített rendőrségi hozzáférés",
+    "body": "Az „adatokhoz való hozzáféréssel” foglalkozó, szinte kizárólag bűnüldözési képviselőkből álló magas szintű munkacsoport 2024. május 21-én 42 ajánlást fogad el: „beépített jogszerű hozzáférés” (a tervezőasztaltól kezdve a termékekbe épített rendőrségi hozzáférés), harmonizált metaadat-megőrzés, minden felhasználó azonosításának kötelezettsége, beleértve az üzenetküldőket is. 2024 decemberében 55 civil szervezet, vállalat és egyesület ír alá egy nyílt levelet, amelyben az eredményt [„kudarcot vallott küldetésnek”](https://edri.org/our-work/high-level-group-going-dark-outcome-a-mission-failure/): ez a tömeges megfigyelés tervrajza. Ez mindannak a mátrixa, ami ezután következik."
+  },
+  "roumanie-tiktok": {
+    "title": "Románia: megsemmisített választás, a DSA dönt a láthatóságról",
+    "body": "December 6-án a román Alkotmánybíróság megsemmisíti az elnökválasztás első fordulóját, hivatkozva egy be nem jelentett, összehangolt kampányra a TikTokon; december 17-én a Bizottság hivatalos DSA-eljárást indít a platform ellen (ajánlórendszerek, politikai hirdetések), amely 2026-ban is folyamatban van. Bármi is legyen az eredmény, a precedens megmarad: az, hogy „ki dönti el, mi látható egy választás során”, immár a platformok, a Bizottság és az alkotmánybíróságok között dől el."
+  },
+  "vietnam-decret-147": {
+    "title": "Vietnám: ellenőrzött személyazonosság vagy csend",
+    "body": "A 147-es rendelet arra kényszeríti a platformokat, hogy ellenőrizzék minden felhasználó személyazonosságát (telefonszám vagy személyi igazolványszám), tárolják az adatokat és adják át a hatóságoknak; csak ellenőrzött fiókok posztolhatnak, kommentelhetnek vagy streamelhetnek. Az egyenlet egyszerűen fogalmazódik meg: nincs ellenőrzött személyazonosság, nincs nyilvános beszéd."
+  },
+  "uk-apple-adp": {
+    "title": "London hátsó ajtót követel, az Apple visszavonja a titkosítást",
+    "body": "A Belügyminisztérium titkos paranccsal (az Investigatory Powers Act szerinti Műszaki Képességre Vonatkozó Felszólítás, TCN) hozzáférést követel a titkosított iCloud adatokhoz, világméretű hatállyal, amit a bírósági beadványok is megerősítettek. Az Apple válaszul inkább visszavonja az Advanced Data Protectiont (a végponttól végpontig titkosított iCloudot) az összes brit felhasználótól, minthogy megépítse a kulcsot. Amerikai nyomásra London nyáron „visszavonja” a követelést... majd 2025. szeptember elején új parancsot ad ki, ami október 1-jén lát napvilágot, és amit a brit felhasználók adataira szűkítenek. 2026 közepén a brit felhasználók még mindig E2EE nélkül élnek a biztonsági mentéseiken."
+  },
+  "fr-narcotrafic-8ter": {
+    "title": "Franciaország: elbukik a kábítószer-kereskedelem elleni hátsó ajtó",
+    "body": "A Narcotrafic (kábítószer-kereskedelem elleni) törvény 8. ter cikke arra kényszerítette volna a titkosított üzenetküldőket, hogy biztosítsanak hozzáférést a hírszerző szolgálatoknak a levelezésekhez: ez a „szellem-résztvevő” mechanizmus. A bizottságban törölték, a visszaállítását pedig egy többpárti koalíció a belügyminiszter akarata ellenére [119 szavazattal 24 ellenében elutasította](https://lcp.fr/actualites/narcotrafic-l-assemblee-refuse-l-acces-aux-messageries-chiffrees-contre-l-avis-de-bruno) a 2025. március 20-i éjszakán. Egy nemzeti parlament mondhat nemet; a kormány azonban nem adta fel: a hozzáférési igény ciklikusan visszatér, hol itt, hol Brüsszelben."
+  },
+  "protecteu": {
+    "title": "„ProtectEU”: a titkosítás feltörése hivatalos politikává válik",
+    "body": "A Bizottság belső biztonsági stratégiája (COM(2025) 148) bejelent egy ütemtervet az „adatokhoz való jogszerű és hatékony hozzáférésre” és egy „Technológiai Ütemtervet” a titkosításra vonatkozóan, plusz egy megerősített Europolt. Az elszórt rendőrségi követelésekből az Unió többéves politikai programja lesz: hozzáférés a titkosított kommunikációhoz, írásba foglalva."
+  },
+  "ice-palantir": {
+    "title": "Az ICE megvásárolja az „ImmigrationOS”-t a Palantirtól",
+    "body": "30 millió dollár egy platformért, amely szövetségi adatbázisokat vet össze, és „közel valós idejű láthatóságot” biztosít az eltávolításra kijelölt személyekről. Egy egész lakosság országos megfigyelése egy polcról leemelhető szoftvertermékké válik, amelyet egy magánvállalat üzemeltet."
+  },
+  "ch-vupf": {
+    "title": "Még Svájc is: a rendelet, amely elüldözné a Protont",
+    "body": "A felülvizsgált megfigyelési rendelet (VÜPF) a felhasználó-azonosítási és adatmegőrzési kötelezettségeket (6 hónapos IP-naplózás) minden 5000 felhasználó feletti szolgáltatásra kiterjesztené. A Proton vezérigazgatója megfogadja, hogy elhagyja az országot, ha átmegy a tervezet („kevésbé lennénk bizalmasak, mint a Google”) és befagyasztja a svájci befektetéseket; a Threema is tiltakozik. 2026 elejére a projekt megakad: szinte egyöntetű ellenzés az egyeztetés során, a parlament újraszerkesztést követel. A bizalmasság történelmi menedéke puszta rendelettel próbálta meg azt, amiről az EU a Chat Controlban vitázik."
+  },
+  "us-visa-vetting": {
+    "title": "Amerikai vízumok: nyilvános közösségi média profil, vagy semmi",
+    "body": "A Külügyminisztérium megköveteli a diákvízumot igénylőktől, hogy tegyék nyilvánossá a közösségi profiljaikat (2025. június 18-i távirat), hogy kiszűrjék az Egyesült Államokkal szembeni esetleges „ellenségességet”; a DS-160-as űrlap 2019 óta már eleve megköveteli az elmúlt öt év felhasználóneveit. December 15-én kiterjesztik a H-1B-re, majd 2026 márciusában további 14+ vízumkategóriára. A belépést az online beszéd ideológiai ellenőrzéséhez kötik: egy világméretű ösztönzés az öncenzúrára."
+  },
+  "roadmap-lawful-access": {
+    "title": "Az útiterv: az állami dekódolás menetrendje 2030-ig",
+    "body": "A Bizottság közzéteszi az „adatokhoz való jogszerű hozzáférés” ütemtervét (COM(2025) 349): új adatmegőrzési szabályok, határokon átnyúló lehallgatás 2027-ig, a lefoglalt adatok mesterséges intelligencia (AI) általi elemzése 2028-ig, és egy „újgenerációs dekódolási képesség” az Europol számára 2030-tól. Az EU öt évre előre megtervezi a jogi és technikai építőelemeket ahhoz, hogy elolvassa azt, ami ma még olvashatatlan. Az EFF így összegzi: „ez az útiterv mindenkit kevésbé biztonságossá tesz”."
+  },
+  "age-blueprint": {
+    "title": "Életkor-ellenőrzési tervezet: a kísérleti alkalmazás öt országban",
+    "body": "A Bizottság közzéteszi a DSA (Digitális Szolgáltatásokról Szóló Jogszabály) „28. cikkéhez” kapcsolódó iránymutatásait és egy életkor-ellenőrzési tervezetet (egy „mini-tárcát”), amelyet Dániával, Franciaországgal, Görögországgal, Olaszországgal és Spanyolországgal kísérleteznek ki, és amelyet úgy terveztek, hogy 2026 végére beolvadjon az EUDI Wallet-be. Még ha „adatvédelem-barát” is, a logika egy személyazonosság-ellenőrzést telepít az internet bejáratához: egy polgári státusz-attribútum igazolása a legális tartalmak megtekintéséhez normális gesztussá válik."
+  },
+  "fr-pornhub": {
+    "title": "Franciaország: az Államtanács (Conseil d'État) visszaállítja az életkor-ellenőrzést",
+    "body": "A SREN törvény és az Arcom keretrendszere („kettős anonimitás”) értelmében a felnőtt oldalaknak ellenőrizniük kell a látogatók életkorát. Az Aylo (Pornhub) tiltakozásul lezárja a hozzáférést Franciaországban; a közigazgatási bíróság júniusban felfüggeszti a rendeletet, de az Államtanács július 15-én hatályon kívül helyezi a felfüggesztést: a kötelezettség érvényben marad, az oldalak újra blokkolnak. Az első teljes körű bevezetése az „igazolvány az internetre való belépéshez” koncepciónak, ahol a blokkolás a megfelelés kikényszerítésének eszköze."
+  },
+  "cn-cyber-id": {
+    "title": "Kína: a nemzeti internetes azonosító, a rendőrségnél központosítva",
+    "body": "A „kibertér azonosító” elindítása: a Közbiztonsági Minisztérium és a Kínai Kibertér-igazgatóság által közösen kibocsátott egységes azonosító, amelyet az arcfelismerés és a nemzeti személyi igazolvány támogat, és amelyet online szolgáltatásokba való bejelentkezésre használnak, hatályos 2025. július 15-től. Hivatalosan önkéntes, a már mindenhol kötelező valódi neves regisztráció tetejébe. Amikor az online azonosítást az állam központosítja, az anonimitás tervezéséből fakadóan eltűnik, és az internethozzáférés visszavonható kiváltsággá válik. Ez a befejezett modellje annak, amit a nyugati életkor-ellenőrzések és tárcák felvázolnak."
+  },
+  "emfa-article-4": {
+    "title": "EMFA: az újságírók védelme, kilyuggatva a kivételekkel",
+    "body": "A European Media Freedom Act (Európai Médiaszabadságról Szóló Törvény) teljes mértékben alkalmazandóvá válik. A 4. cikk elviekben tiltja a kémszoftverek használatát az újságírókkal szemben... majd kivételként engedélyezi egy sor súlyos bűncselekmény esetén; a tárgyalások során a Tanács - Franciaországgal az élen - egy átfogó „nemzetbiztonsági” kivételt erőltetett át, amelyet a Riporterek Határok Nélkül (RSF) is elítélt. Az első európai szöveg, amelynek az újságírókat kellene megvédenie az állami kémkedéstől, negatív térben kodifikálja azokat a feltételeket, amelyek mellett ez a kémkedés legális marad."
+  },
+  "ru-max": {
+    "title": "Oroszország: az állami üzenetküldő alkalmazás rendeletben előírva",
+    "body": "Minden Oroszországban eladott okostelefont a MAX-szal kell szállítani, a VK által épített üzenetküldővel, amelyet „nemzeti alkalmazásnak” jelöltek ki; a köztisztviselőket és a tanárokat arra utasítják, hogy térjenek át erre. Független elemzések kiterjedt nyomon követést és az FSZB lehallgatórendszerével való integrációt írnak le. A titkosítás-ellenes logika végpontja: egy olyan üzenetküldő, amelyet a szolgálatok olvashatnak, és amelyet maga a hardverforgalmazási csatorna kényszerít ki."
+  },
+  "ru-recherche-punie": {
+    "title": "Oroszország: a keresés bűncselekménnyé válik",
+    "body": "A „szélsőségesnek” minősített (egy több mint 5000 bejegyzést tartalmazó lista, az ellenzéket is beleértve) tartalmak online „szándékos” keresése (beleértve a VPN-en keresztüli keresést is) pénzbüntetéssel sújthatóvá válik, és a megkerülő eszközök reklámozása is tilos. Történelmi küszöb: az állam már nem azt bünteti, amit mondasz, hanem azt, amit megpróbálsz megtudni. Az egyéni internethasználat ellenőrzésének logikus végpontja."
+  },
+  "scientifiques-csar": {
+    "title": "500 tudós: „műszakilag kivitelezhetetlen”",
+    "body": "Több mint 500 kriptográfus és kutató 34 országból (októberre mintegy 800-an 37 országból) ír alá a dán CSAR-tervezet ellen: a megbízható észlelés ebben a léptékben lehetetlen, a megkerülése a bűnözők számára triviális, és bármilyen kliensoldali szkennelés „inherensen aláássa” a végponttól végpontig terjedő titkosítást. A német szövetségi bűnügyi rendőrség (BKA) adatai külön is bizonyítják ezt a pontot: a 2024-ben beérkezett 205 728 NCMEC bejelentésből 99 375 (48,3%) „nem volt büntetőjogilag releváns”. A tudományos konszenzus egyértelmű. A projekt mégis folytatódik."
+  },
+  "uk-britcard": {
+    "title": "„BritCard”: digitális azonosító a munkavállaláshoz",
+    "body": "A Starmer-kormány bejelent egy digitális személyazonosságot (a „BritCard” a nem hivatalos beceneve), amely a parlamenti ciklus végére kötelezővé válik a munkavállalási jogosultság ellenőrzéséhez, az illegális bevándorlás elleni küzdelem nevében. Egy petíció körülbelül két nap alatt meghaladja az egymillió aláírást (azóta már 2,9 milliónál is több); a kormány tartja az irányt (egy törvényjavaslat már szerepel a 2026. májusi királyi beszédben). A munkavállalás jogának állami azonosítóhoz kötése egy központi ellenőrzőpontot épít be mindenki gazdasági életébe."
+  },
+  "berlin-bloque": {
+    "title": "Berlin megakadályozza a kötelező szkennelést",
+    "body": "A Signal elnöke, Meredith Whittaker nyilvánosan kijelenti, hogy az üzenetküldő inkább elhagyja az európai piacot, minthogy aláássa a titkosítását; a CDU/CSU frakció a gyanú nélküli szkennelést mindenki leveleinek gőz fölötti felbontásához hasonlítja. A napirendi pontot leveszik az október 14-i IB (Igazságügy és Belügy) Tanács üléséről: a blokkoló kisebbség kitart. Az erőviszonyok megfordulhatnak, de a projekt sosem hal meg: „önkéntesként” átdolgozva, hat héttel később visszatér."
+  },
+  "ees-biometrie": {
+    "title": "EES: az arc és az ujjlenyomat lesz az útlevél",
+    "body": "Elindul az Entry/Exit System (Határregisztrációs Rendszer): minden nem EU-s utazó ujjlenyomatait és arcképét begyűjtik egy központosított adatbázisba, felváltva az útlevélbélyegzőt (teljes bevezetés: 2026. április 10.); ezt követi az ETIAS, egy fizetős engedély, amely ezekre az adatbázisokra épül. Az EU áttér a határ-mint-adatbázis koncepcióra: a test válik az alapértelmezett utazási azonosítóvá, olyan rendszerekben tárolva, amelyeket összekapcsolásra terveztek."
+  },
+  "onu-cybercrime": {
+    "title": "ENSZ Kiberbűnözési Egyezmény: szerződésbe foglalt, exportált megfigyelés",
+    "body": "Az orosz kezdeményezésre letárgyalt és 2024 végén elfogadott egyezmény 72 aláírót gyűjt össze Hanoiban: 71 állam plusz az EU. Az EFF és a Human Rights Watch figyelmeztet: tág definíciók, kötelező kölcsönös jogsegély az elektronikus bizonyítékok gyűjtésére (beleértve a valós idejű lehallgatást is) a megkereső ország törvényei szerint meghatározott „súlyos bűncselekmények” esetén, opcionális biztosítékokkal. Egy legalizált világméretű csatorna, amelyen keresztül a legelnyomóbb rendszerek normái is utazhatnak."
+  },
+  "euro-numerique-pilote": {
+    "title": "Digitális euró: az architektúra hamarabb épül meg, mint a biztosítékok",
+    "body": "Az EKB lezárja az „előkészítő szakaszát”, és megkezdi a következőt: egy kísérleti (pilot) gyakorlatot 2027 közepén, lehetséges első kibocsátással 2029-ben, miközben a rendelet még el sincs fogadva. Az Eurócsoport szeptemberben megállapodott az irányításról és a birtoklási limitek meghatározásának folyamatáról. A jegybanki digitális valuta (CBDC) egy olyan infrastruktúra, ahol minden tranzakció natívan rögzíthető; ezt úgy építik, hogy annak jogi korlátai még nincsenek megírva."
+  },
+  "au-ban-16": {
+    "title": "Ausztrália: 4,7 millió fiók lekapcsolva egy hónap alatt",
+    "body": "Világelső: 2025. december 10-től a 16 éven aluliakat kitiltják az eSafety szabályozó által kijelölt tíz platformról, amelyeknek becsülniük kell az életkort (viselkedéses következtetés, arcfelismerő szelfik, személyi okmányok) 49,5 millió ausztrál dolláros bírság terhe mellett. 2026 januárjának közepén a miniszterelnök bejelenti 4,7 millió fiók deaktíválását, eltávolítását vagy korlátozását. Ahhoz, hogy kizárd a kiskorúakat, mindenki életkorát meg kell becsülnöd: a biometria válik a közösségi web fizetőkapujává, és a világ kormányai árgus szemekkel figyelik a laboratóriumot."
+  },
+  "fr-vsa-prolongee": {
+    "title": "Algoritmikus CCTV: az olimpiai „kísérlet” a hetedik évébe lép",
+    "body": "A 2023-as olimpiai törvény által „kísérleti jelleggel” engedélyezett (2025 márciusában lejáró) algoritmikus videómegfigyelést 2027 végéig meghosszabbítják, amit az Alkotmánytanács is jóváhagyott. 2026 májusára a Szenátus már szavaz is a folytatásról (a „Ripost” törvény): meghosszabbítás 2030 végéig és kiterjesztés minden nyilvánosan hozzáférhető térre. A klasszikus racsni: a kivételt meghosszabbítják, a hatály bővül, az értékelés ráér."
+  },
+  "pl-ziobro-asile": {
+    "title": "Pegasus Lengyelországban: a vádlott menedéket talál... az EU-n belül",
+    "body": "Zbigniew Ziobro volt igazságügyi miniszter, akit 26 rendbeli bűncselekménnyel (többek között a „Pegasus finanszírozásával” egy áldozatsegítő alapból és annak ellenzékiekkel szembeni használatával) vádolnak, azt állítja, hogy politikai menedékjogot kapott Magyarországon, miután a mentelmi jogát felfüggesztették; 2026 májusában továbbmenekül az Egyesült Államokba. Az állami politikai kémkedés jogi felelősségre vonása példátlan zsákutcába ér: egy uniós tagállam bújtatja el a feltételezett tettest, és az elszámoltathatóság megáll a belső határnál."
+  },
+  "ru-whatsapp-bloque": {
+    "title": "Oroszország: a WhatsApp elvágva 100 millió felhasználótól",
+    "body": "A teljes sorozat hat hónapot vett igénybe: 2025 augusztusában a WhatsApp és a Telegram hívásokat lefojtják (a platformok „megtagadják az adatok megosztását a hatóságokkal”); decemberben a lassítás tovább terjed; 2026 februárjában a WhatsAppot teljesen blokkolják, amit a Kreml is megerősít. A lecke világos: követeled az adatokat, megfojtod a szolgáltatást, amely megtagadja azt, majd teljesen elvágod. A titkosítás feltörésének megtagadását az országból való kitiltással büntetik."
+  },
+  "gr-intellexa": {
+    "title": "Predator Görögországban: az eladók elítélve, a vevők lenyomozhatatlanok",
+    "body": "Egy athéni bíróság elítél négy, az Intellexához kötődő vezetőt (az alapító Tal Diliant, valamint Hamout, Bitziost és Lavranost) a magánkommunikációkhoz való illegális hozzáférés miatt a Predator-botrányban (~87 célpont: újságírók, miniszterek, katonatisztek; a The Record és az ICIJ által jelentett szám). Az EU első bűnügyi ítélete kémszoftver-kereskedők ellen. De egyetlen politikai tisztségviselőt sem ítélnek el: aki a lehallgatásokat megrendelte, hivatalosan lenyomozhatatlan marad."
+  },
+  "fr-boites-noires-urls": {
+    "title": "Fekete dobozok: a hírszerzés a teljes URL-eket akarja",
+    "body": "A parlamenti képviselők kiterjesztik a „fekete dobozok” (a 2015-ben a terrorizmus ellen létrehozott, és azóta állandósított algoritmikus metaadat-elemzés) használatát a szervezett bűnözésre és - most először - a meglátogatott oldalak teljes URL-jére is. Az Alkotmánytanács 2025-ben egy hasonló rendszert megsemmisített; a kormány újra megpróbálja, átdolgozva. Egy teljes URL feltárja, hogy mit olvasol, nem csak azt, hogy kivel beszélsz: ez egy minőségi ugrás az olvasási szokások automatizált ellenőrzése felé, adminisztratív (nem bírói) engedély alapján."
+  },
+  "palantir-europe": {
+    "title": "Palantir Európában: a szállító változik, a kérdés nem",
+    "body": "2026 májusának közepén a német belső hírszerzés (BfV) lecseréli a Palantirt a francia ChapsVisionre. A francia DGSI (amely 2025 novemberében, 2028-ig meghosszabbította a Palantir-szerződését) később ugyanezt az utat választja: 2026. június 16-án Sébastien Lecornu bejelenti a migrációt a ChapsVisionre valamikor 2027 folyamán. Eközben Bajorország és Hessen rendőrsége továbbra is a Gothamet használja (Észak-Rajna-Vesztfália is 2026 októberéig), amit megtámadtak az Alkotmánybíróságon. A közvita arról, hogy „kell-e a rendőrségi aktákat MI-vel egybefésülni”, arra csúszott át, hogy „melyik szállítónak kellene ezt megtennie”: a szuverenitás felváltotta az arányosságot, és magát a tömeges elemzést már meg sem kérdőjelezik."
+  },
+  "us-fisa-702": {
+    "title": "A FISA 702 lejár, az adatgyűjtés mégis folytatódik",
+    "body": "A 702-es szakasz, az amerikai szolgáltatókon keresztülhaladó kommunikációk bírói engedély nélküli gyűjtése 2026 áprilisában járt volna le. Két rövid meghosszabbítás után a felhatalmazás június közepén lejár, mivel a Kongresszus holtpontra jut abban a kérdésben, hogy az FBI amerikaiakra vonatkozó kereséseihez elő kellene-e írni bírói engedélyt. A meglévő tanúsítványok azonban 2027 márciusáig érvényesek maradnak: a gépezet még egy évig fut bármiféle megújított jogalap nélkül. Egy „ideiglenes” megfigyelési jogosultság sosem kapcsol ki teljesen."
+  },
+  "euro-numerique-econ": {
+    "title": "Digitális euró: „nem programozható”, mégis feltételhez kötött",
+    "body": "A Parlament ECON (Gazdasági és Monetáris) bizottsága elfogadja álláspontját (43 szavazat mellette, 14 ellene, egy tartózkodás): az irányt 2029-es indulásra állítják be. Az EKB saját GYIK-je esküszik rá, hogy a digitális euró „nem lesz programozható pénz”, miközben a „feltételes fizetéseket” opcionális szolgáltatásként mutatja be; a képviselők álláspontja szerint a birtoklási limitet később a Bizottság határozná meg az EKB ajánlása alapján, és kétévente felülvizsgálná azt. Az ígéret és a platform közötti szakadék egy politikai döntésen múlik, nem pedig technikai lehetetlenségen: a feltételhez kötöttségi és nyomonkövethetőségi infrastruktúra már az első naptól kezdve létezni fog."
+  },
+  "europol-reforme": {
+    "title": "Europol: a költségvetés 3 milliárd euróra nő, felhatalmazás a titkosításra",
+    "body": "A Bizottság az Europol legnagyobb reformját javasolja az elmúlt 25 évben: a költségvetés 1,9 milliárdról 3 milliárd euróra nő, 900 további munkatárs, a felhatalmazást kiterjesztik a titkosított kommunikációra, a kriptoeszközökre és a mesterséges intelligenciával támogatott csalásokra; egy „technológiai és innovációs központ”, amelynek titkosítással kapcsolatos munkája a ProtectEU ütemtervét követi (amely az Europol dekódolási képességét 2030-ra ütemezi be); egy automatizált „európai rendőrségi adattér”. A ProtectEU fegyveres szárnya: egy szupranacionális (nemzetek feletti) ügynökség, amelyről az egyik EP-képviselő már most figyelmeztet, hogy „nem vezethet tömeges megfigyeléshez”."
+  },
+  "pega-kouloglou": {
+    "title": "Pegasus a Parlamentben: a megfigyelőt megfigyelték",
+    "body": "A Citizen Lab leleplezi, hogy Stelios Kouloglou EP-képviselőt, a PEGA bizottság póttagját - pont annak a testületnek a tagját, amely a Pegasus és a kémszoftverek európai visszaéléseit vizsgálta - feltörték a Pegasusszal, miközben a bizottságban szolgált (a fertőzések dátuma 2022. október 21. és 2023. március 6-7.), ami hozzáférést biztosíthatott a bizalmas tanácskozásokhoz. A Citizen Lab kifejezetten elzárkózik a támadás attribúciójától; a civil szervezetek koalíciója EU-s választ követel. Annak a testületnek a megfigyelése, amelynek feladata a kémszoftverek felügyelete, a demokratikus kontroll végső kifordítása, és senkit sem neveznek meg felelősként."
+  }
+}

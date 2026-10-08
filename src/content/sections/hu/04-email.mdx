@@ -1,0 +1,102 @@
+---
+id: 'email'
+part: 2
+order: 4
+title: 'Titkosított e-mail és PGP'
+---
+
+<p class="part-num">
+  <span>03.</span> RÉSZ · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Titkosított e-mail és PGP
+
+A Gmail elolvassa az e-mailjeidet, és az Egyesült Államokban működik, a „Five Eyes” (Öt Szem) joghatósága alatt. A Gmail/Outlook elhagyása hatalmas nyereség, minimális erőfeszítéssel.
+
+<ToolCard tool="t-protonmail">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">A Gmail kiváltója</span>
+    <span class="tool-tag">🇨🇭 · nyílt forráskódú · OpenPGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy titkosított postafiók, amely kiváltja a Gmailt vagy az Outlookot, és a központi fiók a teljes Proton
+    ökoszisztémához.
+  </Fragment>
+  <Fragment slot="why">
+    Svájci székhelyű, a „Five Eyes” joghatóságán kívül esik. OpenPGP-kompatibilis: automatikus titkosítás
+    a Proton fiókok között és más PGP szolgáltatások felé.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenki számára. Ez a legjobb kiindulópont a Google elhagyására (lásd a 05. szakaszt a programcsomag többi részéhez).
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Hozz létre egy fiókot a <b>proton.me</b> oldalon (az ingyenes csomag is elég a kezdéshez).
+    </li>
+    <li>
+      Importáld a régi üzeneteidet és kapcsolataidat az <b>Easy Switch</b> (beépített) segítségével.
+    </li>
+    <li>Állíts be továbbítást a Gmailből, és oszd meg az új címedet a kapcsolataiddal.</li>
+    <li>
+      Telepítsd a mobilalkalmazást, kapcsold be a <b>kétlépcsős azonosítást (2FA)</b>, és használd a Proton Bridge-t, ha
+      Thunderbirdöt szeretnél használni.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tuta">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">A Gmail kiváltója</span>
+    <span class="tool-tag">🇩🇪 · nyílt forráskódú · poszt-kvantum</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy német e-mail szolgáltatás, teljesen nyílt forráskódú és mentes minden Google-szolgáltatástól.
+  </Fragment>
+  <Fragment slot="why">
+    Titkosítja a <b>tárgyat és néhány metaadatot</b> is, poszt-kvantum-rezisztens (jövőálló)
+    titkosítással. EU-s joghatóság.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik maximálisan titkosított metaadatokat és teljesen szabad szoftvert szeretnének. Nem használ PGP-t: ahhoz, hogy
+    titkosítva írj külsősöknek, jelszóval kell védened az üzenetet.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Hozz létre egy fiókot a <b>tuta.com</b> oldalon, és telepítsd az alkalmazást (elérhető F-Droidon).
+    </li>
+    <li>
+      Ha titkosított üzenetet akarsz küldeni olyasvalakinek, aki nem használja a szolgáltatást: kattints a lakatra, és állíts be egy jelszót, amit
+      egy másik csatornán osztasz meg a partnereddel.
+    </li>
+    <li>Kapcsold be a kétlépcsős azonosítást.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-mailbox">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Etikus klasszikus mail</span>
+    <span class="tool-tag">🇩🇪 · EU · PGP</span>
+  </Fragment>
+  <Fragment slot="what">
+    Két etikus, alacsony költségű európai e-mail szolgáltató, szerveroldali PGP támogatással.
+  </Fragment>
+  <Fragment slot="why">
+    Adatvédelem- és környezettudatosak, nyílt szabványokra épülnek (IMAP, PGP). Bármilyen e-mail klienssel működnek.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik egy „klasszikus” postafiókot szeretnének (amit Thunderbirdben olvasnak), de etikusan működtetve, nem pedig egy zárt
+    titkosított alkalmazás formájában.
+  </Fragment>
+  <ol slot="install">
+    <li>Hozz létre egy fiókot (fizetős, körülbelül 1-3 euró havonta).</li>
+    <li>Engedélyezd a szerveroldali PGP titkosítást (a „Guard” funkció a mailbox.org-on).</li>
+    <li>Állítsd be a fiókot Thunderbirdben vagy az általad választott mobilalkalmazásban.</li>
+  </ol>
+</ToolCard>
+
+#### PGP egy percben
+
+A **PGP** (Pretty Good Privacy) egy kulcsalapú titkosítás: van egy _nyilvános_ (public) kulcsod, amit kiosztasz, és egy _privát_ kulcsod, amit titokban tartasz. Bárki, akinek megvan a nyilvános kulcsod, küldhet neked egy üzenetet, amit **csak te** tudsz visszafejteni. Ez a szolgáltatófüggetlen titkosított e-mail alapja. A Proton Mail ezt automatikusan kezeli; kézi használathoz az **OpenPGP** a Thunderbirdön keresztül (v78 óta beépítve) működik a legjobban.

@@ -1,0 +1,119 @@
+---
+id: 'dns'
+part: 3
+order: 6
+title: 'Titkosított DNS és a Cloudflare'
+---
+
+<p class="part-num">
+  <span>05.</span> RÉSZ · HÁLÓZAT · DNS · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Titkosított DNS és a Cloudflare
+
+A DNS az a címtár, amely egy oldal nevét (pelda.hu) a gép címévé (IP) alakítja. A bökkenő: alapértelmezés szerint az internetszolgáltatód (ISP) üzemelteti ezt a címtárat, így látja **minden egyes meglátogatott oldaladat**, még akkor is, ha az oldal HTTPS-t használ. A DNS titkosításával visszaveszed ezt a listát a szolgáltatódtól. Ez egy csendes beállítás, de az egyik leghatékonyabb.
+
+<ToolCard tool="t-quad9">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Kártékony programok (Malware) blokkolása</span>
+    <span class="tool-tag">🇨🇭 nonprofit</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy titkosított, svájci, nonprofit DNS-feloldó (resolver), amely blokkolja az ismert rosszindulatú domaineket is.
+  </Fragment>
+  <Fragment slot="why">
+    Svájci joghatóság, nem őrzik meg az IP-címedet, védelem az adathalászat (phishing) és a malware-ek ellen. Egy
+    kiváló „állítsd be és felejtsd el” választás.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek, különösen azoknak, akik egyszerűséget és jó joghatóságot keresnek.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Androidon: Beállítások &gt; Hálózat (vagy Kapcsolatok) &gt; <b>Privát DNS</b> &gt; írd be: <b>dns.quad9.net</b>.
+    </li>
+    <li>
+      iPhone-on/Mac-en: telepítsd a DoH profilt a quad9.net oldalról. PC-n: állítsd be a DNS-over-HTTPS-t a
+      böngészőben vagy a rendszerben.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-mullvaddns">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Középhaladó</span>
+    <span class="tool-tag">Hálózati szűrés</span>
+  </Fragment>
+  <Fragment slot="what">
+    Két titkosított feloldó, amelyek ráadásul blokkolják a reklámokat és a nyomkövetőket az egész eszközön.
+  </Fragment>
+  <Fragment slot="why">
+    A <b>Mullvad DNS</b> (Svédország, no-log/naplózásmentes) ingyenes és blokklistákat is kínál. A <b>NextDNS</b> nagymértékben
+    testreszabható, egy vezérlőpulttal és eszközönkénti profilokkal, de amerikai székhelyű és alapértelmezés szerint naplózik
+    (ez a beállításoknál kikapcsolható).
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik rendszerszintű reklámblokkolást szeretnének a böngésző-bővítmények telepítése nélkül.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Mullvad DNS: használd a mullvad.net/help/dns oldalon található címet privát DNS-ként (ugyanúgy, mint a
+      Quad9 esetében).
+    </li>
+    <li>
+      NextDNS: hozz létre egy profilt a nextdns.io oldalon, <b>tiltsd le a naplózást (logging)</b>, majd alkalmazd a konfigurációt az
+      eszközeidre.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cloudflare">
+  <Fragment slot="name">Cloudflare 1.1.1.1 (árnyalattal)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Gyors, de központosított</span>
+    <span class="tool-tag">🇺🇸</span>
+  </Fragment>
+  <Fragment slot="what">
+    A Cloudflare 1.1.1.1-es titkosított DNS és WARP alkalmazása: gyors, ingyenes, és egy valódi előrelépés az internetszolgáltatód (ISP) feloldójához
+    képest.
+  </Fragment>
+  <Fragment slot="why">
+    Hasznos eszköz egy auditált, naplózásmentes (no-logging) fogadalommal. De legyünk tisztánlátók: a Cloudflare már így is
+    a web jelentős része előtt áll (technikai közvetítőként látja a nyílt szöveges/plaintext forgalmat
+    ezek felé az oldalak felé). A DNS-ed arrafelé irányítása azt jelenti, hogy <b>még jobban koncentrálod a digitális lábnyomodat</b>{' '}
+    egy amerikai cégnél, az amerikai törvények hatálya alatt.
+  </Fragment>
+  <Fragment slot="who">
+    Jó mindennapi használatra és kártékony programok blokkolására (1.1.1.1 for Families). Kerüld el vagy diverzifikálj
+    érzékeny felhasználás esetén: részesítsd előnyben a Quad9-et vagy a Mullvad DNS-t.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-pihole">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Teljes hálózatot lefedő blokkolás</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy reklám- és nyomkövető-blokkoló, amely <b>az egész hálózatodat védi egyszerre</b>, és egy kis
+    számítógépre (például egy Raspberry Pi-re) telepíthető.
+  </Fragment>
+  <Fragment slot="why">
+    Amíg a uBlock Origin egyetlen böngészőt véd, a Pi-hole szűri az otthoni <b>minden eszközt</b>,
+    beleértve azokat is, ahová nem tudsz bővítményt telepíteni: telefonok, okostévék, csatlakoztatott eszközök (IoT). A reklámokat
+    és nyomkövetőket már a DNS szintjén blokkolja, még mielőtt egyáltalán betöltődnének. Az <b>AdGuard Home</b> egy
+    alternatíva modernebb kezelőfelülettel.
+  </Fragment>
+  <Fragment slot="who">
+    Háztartásoknak, amelyek minden eszközüket egyszerre szeretnék megtisztítani, és rendelkeznek (vagy szeretnének
+    rendelkezni) egy Raspberry Pi-vel vagy kisméretű szerverrel.
+  </Fragment>
+  <ol slot="install">
+    <li>Egy Raspberry Pi-n (vagy egy konténerben) futtasd a Pi-hole hivatalos telepítőjét.</li>
+    <li>A routered beállításaiban add meg a Pi-hole címét, mint elsődleges DNS-szervert.</li>
+    <li>Ettől a pillanattól kezdve a hálózatod minden eszköze automatikusan szűrve lesz.</li>
+  </ol>
+</ToolCard>

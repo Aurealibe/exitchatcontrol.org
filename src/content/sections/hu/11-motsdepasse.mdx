@@ -1,0 +1,79 @@
+---
+id: 'motsdepasse'
+part: 7
+order: 11
+title: 'Jelszókezelő'
+---
+
+<p class="part-num">
+  <span>10.</span> RÉSZ · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Jelszókezelő
+
+Szolgáltatásonként egy erős, egyedi jelszó: ez minden további lépés alapja. Dobd el a füzetet, hagyd el az újrahasznált jelszavakat.
+
+<ToolCard tool="t-bitwarden">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">A legjobb a kezdéshez</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy jelszótrezor, amely megjegyzi, generálja és kitölti helyetted a jelszavaidat az összes eszközödön.
+  </Fragment>
+  <Fragment slot="why">
+    Ingyenes, auditált, keresztplatformos és végponttól végpontig titkosított. Csak egyetlen erős jelszót kell megjegyezned. Akár <b>saját szerveren is futtatható (self-hostable)</b> (a Vaultwarden révén), így senkitől sem függsz.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek. Ez minden biztonság alapja: szolgáltatásonként egy erős, egyedi jelszó.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Hozz létre egy fiókot a bitwarden.com oldalon, és válassz egy <b>hosszú</b> mesterjelszót (egy jelmondatot). Soha ne felejtsd el: nem lehet helyreállítani.
+    </li>
+    <li>Telepítsd a böngészőbővítményt és a mobilalkalmazást.</li>
+    <li>
+      Bejelentkezéskor hagyd, hogy a Bitwarden elmentse, majd cseréld le a régi jelszavaidat generáltakra.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-keepassxc">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">100%-ban helyi</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy <b>helyi</b> trezor: egy titkosított fájl, amely csak nálad van, felhő és fiók nélkül.
+  </Fragment>
+  <Fragment slot="why">
+    Semmi sem hagyja el az eszközödet, hacsak nem döntesz úgy, hogy magad szinkronizálod a fájlt (például a Cryptomator segítségével). Ez a puristák választása, mindenféle közvetítő nélkül.
+  </Fragment>
+  <Fragment slot="who">
+    Haladó profiloknak, akik teljes irányítást és nulla online függőséget szeretnének.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a KeePassXC-t (asztali gépre) és egy kompatibilis mobilalkalmazást (KeePassDX Androidra, Strongbox iOS-re).
+    </li>
+    <li>Hozz létre egy adatbázisfájlt, amelyet egy mesterjelszó véd.</li>
+    <li>Ahhoz, hogy minden eszközödön elérhető legyen, szinkronizáld ezt a fájlt egy titkosított felhőn keresztül.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-protonpass">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">E-mail álnév támogatással</span>
+    <span class="tool-tag">🇨🇭 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    A Proton ökoszisztéma jelszókezelője, beépített, eldobható e-mail álnevekkel.
+  </Fragment>
+  <Fragment slot="why">
+    Ideális, ha már használod a Protont: egyetlen fiók az e-mailhez, a felhőhöz és a jelszavakhoz. Az e-mail álnevei megkímélnek attól, hogy mindenhol meg kelljen adnod a valódi címedet.
+  </Fragment>
+  <Fragment slot="who">Azoknak, akik mindent egy helyen szeretnének tudni a Protonnal.</Fragment>
+</ToolCard>

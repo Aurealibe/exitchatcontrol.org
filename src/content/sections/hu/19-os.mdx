@@ -1,0 +1,117 @@
+---
+id: 'os'
+part: 12
+order: 19
+title: 'Szabad operációs rendszerek'
+---
+
+<p class="part-num">
+  <span>18.</span> RÉSZ · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Szabad operációs rendszerek
+
+A zárókő. Ha a kliensoldali szkennelést maga az operációs rendszer kényszerítheti ki, az egyetlen valódi ellenszer, ha te irányítod azt az OS-t. Ez igaz a telefonra (GrapheneOS) és a számítógépre (Linux) is. Ne becsüld ezt alá: amíg Windowson, macOS-en vagy egy Google Androidon maradsz, addig nem te irányítod igazán a gépedet.
+
+<ToolCard tool="t-grapheneos">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Google-mentesített mobil</span>
+    <span class="tool-tag">Android · Pixel · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy teljesen Google-mentesített Android, Pixel telefonra telepítve: mobil szuverenitás.
+  </Fragment>
+  <Fragment slot="why">
+    Kiválósága a strukturális védelem egy olyan operációs rendszerrel vagy alkalmazásbolttal szemben, ami szkennelni akarna. Opcionális homokozóba (sandbox) zárt Google-szolgáltatások, <b>alkalmazásonkénti hálózati engedélyek</b>, elszigetelt profilok, automatikus újraindulás, amely törli a kulcsokat a memóriából, és egy kényszer-PIN (duress PIN), amely letörli a telefont. Annyira elismert a biztonság terén, hogy a kémszoftverek célpontjai is ezt használják.
+  </Fragment>
+  <Fragment slot="who">
+    Kitett profiloknak, de bármely polgárnak is, aki hajlandó venni egy Pixelt, hogy visszavegye az irányítást a telefonja felett.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Szerezz be egy kompatibilis <b>Google Pixel</b> telefont (biztonsági okokból ez az egyetlen támogatott hardver).
+    </li>
+    <li>
+      Egy számítógépen nyisd meg a <b>grapheneos.org/install</b> oldalt, és kövesd a webes telepítőt (néhány kattintás, terminál nem szükséges).
+    </li>
+    <li>
+      Az alkalmazásaidhoz telepítsd az ingyenes F-Droid áruházat; csak akkor add hozzá a homokozóba (sandbox) zárt Google Play-t, ha feltétlenül szükséges.
+    </li>
+    <li>Állítsd be egy hosszú jelmondatot (ne egy 4 jegyű PIN-kódot), és tanuld meg a „Lezárás” (Lockdown) mód használatát.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-linux">
+  <Fragment slot="name">Linux (asztali gépen)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">A Windows / macOS kiváltója</span>
+    <span class="tool-tag">🌍 · szabad</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy szabad operációs rendszer a számítógépedre, a Windows vagy a macOS leváltására. Sokféle ízben (változatban) létezik, ezeket „disztribúcióknak” nevezik.
+  </Fragment>
+  <Fragment slot="why">
+    Sok ember számára ez a vakfolt: titkosítják az üzeneteiket, de megtartanak egy Windowst, amely megállás nélkül telemetriát sugároz a Microsoftnak (amelynek a „Recall” funkciója megpróbált folyamatosan képernyőfotókat készíteni a képernyőről), vagy egy macOS-t, amely jelentést küld az elindított alkalmazásokról. A Linux nem kémkedik utánad, ingyenes, életre kelti a régi számítógépeket, és végre a géped urává tesz. Könnyebb használni, mint amilyen a hírneve: a modern disztribúciók úgy néznek ki, mint a Windows vagy a macOS.
+  </Fragment>
+  <Fragment slot="who">
+    Bárki meglépheti a váltást. Kezdésnek a <b>Linux Mint</b> (ez áll a legközelebb a Windowshoz) vagy a <b>Fedora</b>; a stabilitáshoz pedig a <b>Debian</b> ajánlott. Nem kell letörölnöd semmit: először tesztelheted, majd telepítheted a jelenlegi rendszered mellé.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nem vagy biztos benne, hogy melyik disztribúciót válaszd? Töltsd ki a <b>distrochooser.de</b> kvízét, amely a te igényeidhez megfelelőhöz irányít.
+    </li>
+    <li>
+      Próbáld ki <b>anélkül, hogy bármit telepítenél</b>, közvetlenül a böngésződben, a <b>distrosea.com</b> oldalon.
+    </li>
+    <li>
+      Ha meggyőzött, töltsd le a disztribúció lemezképét (image), és hozz létre egy bootolható USB-t (a Ventoy vagy a Balena Etcher segítségével).
+    </li>
+    <li>
+      Bootolj az USB-ről, hogy kipróbáld a rendszert „élőben” (live), majd futtasd a telepítést. Engedélyezd a felkínált lemeztitkosítást (disk encryption).
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tails">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Amnezikus USB</span>
+    <span class="tool-tag">🌍 · minden a Toron keresztül</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy rendszer, amely egy USB-pendrive-ról bootol, minden forgalmat a Toron keresztül irányít, és a kikapcsoláskor <b>semmilyen nyomot</b> nem hagy.
+  </Fragment>
+  <Fragment slot="why">
+    Kikapcsoláskor mindent elfelejt: ez azt jelenti, hogy „amnezikus”. Ideális érzékeny, egyszeri munkákhoz egy olyan számítógépen, ami nem a tiéd, úgy, hogy semmit sem hagysz hátra.
+  </Fragment>
+  <Fragment slot="who">
+    Kiszivárogtatóknak (whistleblowers), újságíróknak, forrásoknak. A referenciaként szolgáló eszköz magas kockázatú munkákhoz.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Töltsd le a Tails-t a <b>tails.net</b> oldalról, és kövesd a varázslót az USB-pendrive létrehozásához.
+    </li>
+    <li>Indítsd újra a számítógépet erről az USB-ről. Használd, majd állítsd le: minden nyom eltűnik.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-qubes">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Szakértő</span>
+    <span class="tool-tag">Elkülönítés (Compartmentalisation)</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Két réteg-rendszer (niche): a Qubes elkülöníti a PC-det zárt virtuális gépekbe (compartmentalisation); a postmarketOS pedig Linuxot futtat régi telefonokon.
+  </Fragment>
+  <Fragment slot="why">
+    A Qubes minden tevékenységet (munka, bankolás, kockázatos böngészés) egy saját rekeszbe különít el: a kompromittálódás (feltörés) nem éri el a többit. A postmarketOS meghosszabbítja azoknak a telefonoknak az élettartamát, amelyeket a gyártójuk már elhagyott.
+  </Fragment>
+  <Fragment slot="who">Szakértő felhasználóknak, akiknek nagyon magas a fenyegetettségi modelljük.</Fragment>
+</ToolCard>
+
+#### Erősítsd meg az eszközödet
+
+Még az operációs rendszer (OS) lecserélése nélkül is sokat nyerhetsz: telepíts alkalmazásokat az <b>F-Droid</b> (szabad alkalmazásbolt) vagy az <b>Aurora Store</b> segítségével, cseréld le a Google-szolgáltatásokat a <b>microG</b>-re, hozz létre különálló profilokat, vond meg a felesleges hálózati engedélyeket, és tiltsd le az automatikus felhőalapú biztonsági mentést és a hirdetési azonosítót (advertising ID).

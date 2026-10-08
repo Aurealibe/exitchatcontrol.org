@@ -1,0 +1,50 @@
+{
+  "fight-chat-control": {
+    "role": "Polgári kezdeményezésű platform (anonim kollektíva): Kapcsolatfelvételi eszköz az EP-képviselőkkel, tagállami álláspontok nyomon követése, az 1.0 és 2.0 verziók összehasonlítása. Minden szavazásnál újraindul."
+  },
+  "stop-scanning-me": {
+    "role": "Több mint 60 szervezetet tömörítő koalíció: több mint 200 000 aláírással rendelkező petíció, 300-ról 450-re bővült tudományos nyílt levél, 133 civil szervezet közös levele."
+  },
+  "patrick-breyer": {
+    "role": "A Kalózpárt korábbi EP-képviselője, aki a „Chat Control” kifejezést megalkotta. Az ügy legfőbb krónikása, aki 2020 óta szavazásról szavazásra, dokumentumról dokumentumra követi az eseményeket."
+  },
+  "edri": {
+    "role": "Az európai digitális jogvédő hálózat (több mint 50 civil szervezet). Jogi elemzések, brüsszeli érdekképviselet, kampánykoordináció."
+  },
+  "la-quadrature-du-net": {
+    "role": "2008 óta: pereskedés az Európai Unió Bíróságán (a 2020-as adatmegőrzési ítélet), a Technopolice kampány, a francia megfigyelési törvények elemzése."
+  },
+  "noyb": {
+    "role": "Max Schrems civil szervezete: szisztematikus GDPR-perek, amelyek két EU-USA adattovábbítási megállapodást is megdöntöttek (Schrems I és II)."
+  },
+  "eff": {
+    "role": "Harminc évnyi pereskedés és eszközfejlesztés (Jewel kontra NSA, Certbot, Privacy Badger, Rayhunter), valamint a Surveillance Self-Defense (Önvédelmi Útmutató Megfigyelés Ellen)."
+  },
+  "signal-foundation": {
+    "role": "Megfogadta, hogy inkább elhagyja az EU-t, minthogy beépítse a szkennelést. A Meta/WhatsApp (2025. okt.) és a Threema („minden lehetőséget mérlegelve”) szintén csatlakozott az ellenzők táborához."
+  },
+  "eff-nsa-timeline": {
+    "role": "Az amerikai megfigyelés kronológiája 1791-től 2015-ig, a Jewel kontra NSA ügy bizonyítékaira építve: minden bejegyzés dátummal és forrással ellátva. A Precedensek szakaszunk ezt a modellt veszi alapul."
+  },
+  "atlas-of-surveillance": {
+    "role": "Több mint 14 900 dokumentált rendőrségi bevetés több mint 6000 amerikai joghatóságban (drónok, arcfelismerés, IMSI-elfogók...), amelyet több mint 1000 diák és önkéntes állított össze. Inkább földrajzi, mint kronológiai rendszerezés."
+  },
+  "technopolice": {
+    "role": "A La Quadrature 2019-es kampánya, amely városonként és cégenként dokumentálja a „Biztonságos Várost” (Safe City): közbeszerzési iratok, részvételi fórum, kiszivárogtató csatorna."
+  },
+  "ooni": {
+    "role": "A legnagyobb nyílt adatkészlet az internetes cenzúráról: több millió mérés 2012 óta, több mint 200 országban, CC-licences adatok és nyilvános API. A cenzúra bizonyítása valós időben."
+  },
+  "digital-violence": {
+    "role": "A Pegasus/NSO ökoszisztéma interaktív térképe: exportengedélyek, fertőzések, és a célkeresztbe került személyekre gyakorolt fizikai következmények."
+  },
+  "surveillance-watch": {
+    "role": "A kémszoftver-ipar interaktív térképe: kik fejlesztik, kik finanszírozzák, kik vásárolják."
+  },
+  "netblocks": {
+    "role": "Az internetes leállások és blokkolások valós idejű megfigyelőközpontja, országonként és incidensenként."
+  },
+  "big-brother-awards": {
+    "role": "2000 óta a legrosszabb adatvédelmi jogsértőknek járó éves „díj” (több országban is megszervezve): krónika konkrét példákon keresztül, évről évre."
+  }
+}

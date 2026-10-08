@@ -1,0 +1,302 @@
+{
+  "questions": {
+    "messaging": {
+      "label": "Üzenetküldés",
+      "prompt": "Hogyan beszélsz a legtöbbször a barátaiddal és a családoddal?",
+      "rec": "Vidd át az érzékeny beszélgetéseket a Signal, SimpleX vagy Session alkalmazásokba.",
+      "options": {
+        "o0": {
+          "label": "WhatsApp / Messenger / SMS",
+          "hint": "A metaadatok és a központosított platformok jelentik a gyenge pontot."
+        },
+        "o1": {
+          "label": "Telegram a legtöbb beszélgetéshez",
+          "hint": "Jobb, mint a nagy platformok, de a magánélet védelme itt is korlátozott."
+        },
+        "o2": {
+          "label": "Signal vagy Molly a legtöbb chathoz",
+          "hint": "Már egy szilárd alap a cenzúra-ellenálláshoz."
+        },
+        "o3": {
+          "label": "SimpleX / Session / Matrix az érzékenyebb használathoz",
+          "hint": "Kisebb függőség a telefonszámtól és a központi platformtól."
+        }
+      }
+    },
+    "email": {
+      "label": "E-mail",
+      "prompt": "Melyik szolgáltatást használod a leggyakrabban e-mailezésre?",
+      "rec": "Használj Proton Mailt vagy Tutát, és adj hozzá PGP-t a legfontosabb kapcsolataidhoz.",
+      "options": {
+        "o0": {
+          "label": "Gmail / Outlook / iCloud Mail",
+          "hint": "A tárolás és a tartalomhoz való hozzáférés erősen központosított marad."
+        },
+        "o1": {
+          "label": "Proton Mail vagy Tuta mindennapi használatra",
+          "hint": "Ez már egy sokkal erősebb opció az adatvédelem szempontjából."
+        },
+        "o2": {
+          "label": "Proton / Tuta + PGP bizonyos kapcsolatokhoz",
+          "hint": "Jó szintű ellenállás, ha következetesen használod."
+        },
+        "o3": {
+          "label": "Rendszeres PGP / OpenPGP használat körültekintő metaadat-kezeléssel",
+          "hint": "Egy sokkal robusztusabb hozzáállás."
+        }
+      }
+    },
+    "browser": {
+      "label": "Böngésző és keresés",
+      "prompt": "Melyik böngészőt és keresőmotort használod a leggyakrabban?",
+      "rec": "Hagyd el a Chrome + Google párost egy adatvédelem-barát böngészőért és keresőmotorért.",
+      "options": {
+        "o0": {
+          "label": "Chrome + Google",
+          "hint": "Kényelmes, de rendkívül nyomon követhető."
+        },
+        "o1": {
+          "label": "Firefox vagy Brave egy privát keresőmotorral",
+          "hint": "Egy igazi előrelépés az adatvédelem felé."
+        },
+        "o2": {
+          "label": "Brave / Firefox + DuckDuckGo / Startpage / SearXNG",
+          "hint": "Már önmagában is szilárd napi alap."
+        },
+        "o3": {
+          "label": "Mullvad Browser / LibreWolf / Tor Browser az adott kontextustól függően",
+          "hint": "Egy sokkal erősebb pozíció a megfigyeléssel szemben."
+        }
+      }
+    },
+    "dns": {
+      "label": "DNS",
+      "prompt": "Hogyan oldod fel a domain neveket?",
+      "rec": "Válts titkosított DNS-re egy minimális, adatvédelem-központú feloldóval (resolver).",
+      "options": {
+        "o0": {
+          "label": "Az internetszolgáltatód (ISP) vagy a routered DNS-e",
+          "hint": "A legegyszerűbb, de gyakran a legkevésbé privát opció."
+        },
+        "o1": {
+          "label": "Titkosított DNS egy mainstream szolgáltatótól",
+          "hint": "Egy jó első lépés."
+        },
+        "o2": {
+          "label": "Quad9 / Mullvad DNS / NextDNS",
+          "hint": "Valódi előrelépés, ha korlátozni akarod a nyomonkövethetőséget."
+        },
+        "o3": {
+          "label": "Titkosított DNS plusz egy tudatos nyomkövetés-elleni stratégia",
+          "hint": "Egy tudatosabb és robusztusabb hozzáállás."
+        }
+      }
+    },
+    "vpn": {
+      "label": "VPN",
+      "prompt": "Milyen VPN-t használsz?",
+      "rec": "Használj egy megbízható, naplózásmentes (no-log) VPN-t, mint például a Mullvad, Proton VPN vagy IVPN.",
+      "options": {
+        "o0": {
+          "label": "Nincs VPN",
+          "hint": "A leginkább kiszolgáltatott helyzet a hálózati nyomonkövethetőség szempontjából."
+        },
+        "o1": {
+          "label": "Egy ingyenes vagy kétes hátterű VPN",
+          "hint": "Rosszabb lehet a semminél is, ha a szolgáltató átláthatatlan."
+        },
+        "o2": {
+          "label": "Egy jó hírű naplózásmentes VPN tiszta szabályzattal",
+          "hint": "Valódi javulás az adatvédelemben."
+        },
+        "o3": {
+          "label": "Mullvad / Proton VPN / IVPN rendszeres használata",
+          "hint": "Egy sokkal komolyabb és koherensebb pozíció."
+        }
+      }
+    },
+    "passwords": {
+      "label": "Jelszavak",
+      "prompt": "Hogyan kezeled a jelszavaidat?",
+      "rec": "Kezdj el jelszókezelőt használni, és alkalmazz egyedi, hosszú jelszavakat mindenhol.",
+      "options": {
+        "o0": {
+          "label": "Újrahasznált jelszavak, vagy a böngészőbe mentve",
+          "hint": "Magas kockázat adatvédelmi incidens vagy fiókfeltörés esetén."
+        },
+        "o1": {
+          "label": "Egy alap jelszókezelő",
+          "hint": "Már egy nagyon jó lépés előre."
+        },
+        "o2": {
+          "label": "Bitwarden / KeePassXC / Proton Pass",
+          "hint": "Egészséges és egyszerűen fenntartható pozíció."
+        },
+        "o3": {
+          "label": "Jelszókezelő + egyedi, hosszú jelszavak",
+          "hint": "A legrobusztusabb módja az adatszivárgásokból eredő károk csökkentésének."
+        }
+      }
+    },
+    "twofa": {
+      "label": "Kétlépcsős azonosítás (2FA)",
+      "prompt": "Milyen szintű kétlépcsős azonosítást használsz?",
+      "rec": "Vidd át a 2FA-t egy hitelesítő alkalmazásba, vagy ami még jobb, egy hardveres biztonsági kulcsra.",
+      "options": {
+        "o0": {
+          "label": "Nincs 2FA",
+          "hint": "A leggyengébb fiókvédelem."
+        },
+        "o1": {
+          "label": "SMS vagy telefonhívás",
+          "hint": "Jobb a semminél, de nagyon sebezhető."
+        },
+        "o2": {
+          "label": "TOTP egy alkalmazásban (Aegis / Ente Auth)",
+          "hint": "Egy jó mindennapi védelmi réteg."
+        },
+        "o3": {
+          "label": "Hardveres kulcs vagy adathalászatnak ellenálló (phishing-resistant) 2FA",
+          "hint": "A legerősebb gyakorlati védelem."
+        }
+      }
+    },
+    "storage": {
+      "label": "Tárolás",
+      "prompt": "Hol tárolod az érzékeny fájljaidat?",
+      "rec": "Vidd az érzékeny fájlokat a Proton Drive-ra, a Cryptomatorba, vagy helyi titkosított tárhelyre.",
+      "options": {
+        "o0": {
+          "label": "Google Drive / iCloud / OneDrive",
+          "hint": "Nagyon kényelmes, de központosított."
+        },
+        "o1": {
+          "label": "Proton Drive vagy egy alap titkosított tárhelyszolgáltatás",
+          "hint": "Egy valós előrelépés."
+        },
+        "o2": {
+          "label": "Cryptomator vagy helyi titkosított tárhely",
+          "hint": "Robusztusabb hozzáállás."
+        },
+        "o3": {
+          "label": "Helyi tárolás + saját szerver (self-hosting) / haladó szintű titkosítás",
+          "hint": "A legkomolyabb szint a digitális szuverenitásért."
+        }
+      }
+    },
+    "social": {
+      "label": "Közösségi média",
+      "prompt": "Hol töltöd a közösségi életed nagy részét online?",
+      "rec": "Horgonyozd le a jelenlétedet a decentralizált hálózatokon, és csökkentsd a platformfüggőséget.",
+      "options": {
+        "o0": {
+          "label": "Csak Meta / X / nagy platformok",
+          "hint": "A legegyszerűbb, de a leginkább kitett a nyomásgyakorlásnak."
+        },
+        "o1": {
+          "label": "Mastodon / Matrix / Nostr alkalmanként",
+          "hint": "Hasznos diverzifikáció."
+        },
+        "o2": {
+          "label": "A decentralizált hálózatok és a közvetlen kapcsolatok keveréke",
+          "hint": "Függetlenebb helyzet."
+        },
+        "o3": {
+          "label": "Alternatív hálózatok és alacsony platformfüggőség",
+          "hint": "Ez az ellenállás valódi logikája."
+        }
+      }
+    },
+    "os": {
+      "label": "Operációs rendszer",
+      "prompt": "Melyik operációs rendszert használod a legtöbbet?",
+      "rec": "Mobilokon válts GrapheneOS-re, asztali gépeken pedig Linuxra.",
+      "options": {
+        "o0": {
+          "label": "Gyári Android / iOS / Windows",
+          "hint": "Nagyon kényelmes, de sokkal kevésbé tiszteli az adatvédelmet."
+        },
+        "o1": {
+          "label": "Egy privátabb Android / Linux / macOS",
+          "hint": "Már egy jó lépés előre."
+        },
+        "o2": {
+          "label": "GrapheneOS / Linux / BSD",
+          "hint": "Erősebb alap."
+        },
+        "o3": {
+          "label": "GrapheneOS + Linux + gondos beállítási fegyelem",
+          "hint": "Ez már egy rendkívül erős és biztonságos pozíció."
+        }
+      }
+    },
+    "tor": {
+      "label": "Tor és anonimitás",
+      "prompt": "Mennyit használod a Tor-t / Tails-t / anonimizáló eszközöket?",
+      "rec": "Építs ki egy Tor (és szükség esetén Tails) használati szokást a legérzékenyebb feladataidhoz.",
+      "options": {
+        "o0": {
+          "label": "Szinte soha",
+          "hint": "Nagyon kiszolgáltatott vagy, ha a fenyegetés komolyra fordul."
+        },
+        "o1": {
+          "label": "Alkalmanként, mindenféle fegyelem nélkül",
+          "hint": "Egy első lépés, de még mindig nagyon sérülékeny."
+        },
+        "o2": {
+          "label": "Tor használata egyes érzékeny feladatokhoz",
+          "hint": "Már sokkal komolyabb."
+        },
+        "o3": {
+          "label": "Tor + Tails szigorú fegyelemmel",
+          "hint": "A legmegfelelőbb szint egy magas fenyegetettségű kontextushoz."
+        }
+      }
+    },
+    "money": {
+      "label": "Pénzügyek",
+      "prompt": "Hogyan kezeled a digitális pénzügyeidet?",
+      "rec": "Vezess be adatvédelem-tudatos fizetési opciókat, és válaszd külön az identitásaidat, ahol csak lehetséges.",
+      "options": {
+        "o0": {
+          "label": "Csak bankkártyák és hagyományos számlák",
+          "hint": "A nyomonkövethetőség magas."
+        },
+        "o1": {
+          "label": "Néhány adatvédelem-tudatosabb fizetési eszköz használata",
+          "hint": "Az első próbálkozás a szétválasztásra."
+        },
+        "o2": {
+          "label": "Privát számlák és korlátozott kriptohasználat (crypto) keveréke",
+          "hint": "Már sokkal tudatosabb."
+        },
+        "o3": {
+          "label": "Erősebb pénzügyi-szuverenitási gyakorlatok",
+          "hint": "Sokkal komolyabb felkészültség."
+        }
+      }
+    }
+  },
+  "bands": {
+    "exposed": {
+      "title": "Kiszolgáltatott",
+      "summary": "A beállításaid még mindig erősen kötődnek a nagy platformokhoz. Az első lépések egyszerűek és hatalmas hatásúak."
+    },
+    "awakening": {
+      "title": "Ébredő",
+      "summary": "Elkezdtél diverzifikálni az eszközeiden. Néhány tudatos változtatás valódi különbséget tehet."
+    },
+    "resistant": {
+      "title": "Ellenálló",
+      "summary": "A felkészültséged már most is komoly. Szilárd alappal rendelkezel a cenzúrával és a megfigyeléssel szembeni ellenállásban."
+    },
+    "hardened": {
+      "title": "Megerősített",
+      "summary": "Megerősített (hardened) rendszereket futtatsz egy erős álnéves alapvonallal. A következő fókusz a fegyelem és a szeparáció (kompartmentalizáció)."
+    },
+    "sovereign": {
+      "title": "Szuverén",
+      "summary": "A jelenlegi pozíciód már most is nagyon erős. Közel állsz a magas szintű digitális szuverenitáshoz, amely komoly technikai döntésekkel párosul."
+    }
+  }
+}

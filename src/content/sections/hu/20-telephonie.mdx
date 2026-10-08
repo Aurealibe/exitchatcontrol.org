@@ -1,0 +1,41 @@
+---
+id: 'telephonie'
+part: 12
+order: 20
+title: 'Telefónia és a fizikai eszköz'
+---
+
+<p class="part-num">
+  <span>19.</span> RÉSZ · HARDVER · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Telefónia és a fizikai eszköz
+
+A legjobb alkalmazás is haszontalan, ha maga az eszköz árul el. Íme a hardveres fenyegetések és azok a lépések, amelyek semlegesítik őket.
+
+#### A telefonszám egy nyomkövető
+
+A számod összeköti a SIM-kártyádat, az eszközödet (annak IMEI-azonosítóját), a tartózkodási helyedet és a személyazonosságodat (a legtöbb országban igazolvány kell a SIM-kártya vásárlásához). Ez az a szál, amely lehetővé teszi, hogy mindent keresztezzék egymással.
+
+- Használj <b>telefonszám nélküli</b> üzenetküldőket (SimpleX, Session) az érzékeny kapcsolatokhoz, és mindig részesítsd előnyben a Signalt az SMS-sel szemben.
+- Egy különálló személyazonossághoz egy „csak adatforgalmas” (data-only) SIM vagy egy feltöltőkártyás eSIM már az értékesítési ponton korlátozza a kapcsolatot (ellenőrizd az országod szabályait).
+
+#### IMSI-elfogók és a telefonhálózat
+
+Az „IMSI-elfogók” (vagy „stingray”-ek) olyan hamis mobiltornyok, amelyek arra kényszerítik a telefonokat, hogy csatlakozzanak hozzájuk, így naplózni tudják az azonosítójukat, és néha lehallgatják a kommunikációjukat, gyakran a gyengén titkosított 2G-re való visszaminősítéssel (downgrade). Ezzel párhuzamosan egy régi hálózati hiba (SS7) még mindig lehetővé teszi az SMS-ek lehallgatását és a telefonok távoli helymeghatározását: még egy ok arra, hogy elhagyd az SMS-eket.
+
+- A beállításokban <b>tiltsd le a 2G-t</b> (Androidon és GrapheneOS-en lehetséges), hogy megszüntesd a fő lehallgatási vektort.
+- Egy tüntetésen vagy egy érzékeny területen válts <b>repülőgépes (airplane) módra</b>, vagy csúsztasd a telefont egy <b>Faraday-tasakba</b> (amely blokkol minden jelet). Az EFF még egy ingyenes eszközt (Rayhunter) is kiadott az IMSI-elfogók észlelésére.
+
+#### Biometria vagy jelkód (passcode)?
+
+<div class="box warn">
+  <span class="lab">Egy ujjat rá lehet kényszeríteni, egy jelkódot nem</span>
+  <p>
+    Az arcodat vagy az ujjadat a szenzorhoz lehet nyomni, miközben le vagy fogva (egy határon, egy letartóztatás során); a fejedben lévő jelszót viszont nem. Egy kockázatos szituáció előtt kényszerítsd ki a jelkódhoz való visszatérést: iPhone-on tartsd lenyomva az oldalsó gombot és az egyik hangerőgombot (az „SOS” képernyőig); Android/GrapheneOS rendszeren használd a bekapcsológomb menüjében a <b>Lezárás (Lockdown)</b> funkciót, amely a PIN-kód megadásáig letiltja a biometriát. Válassz egy hosszú jelmondatot (passphrase), és ne egy négyjegyű PIN-kódot. A GrapheneOS még egy <b>kényszer-PIN</b> (duress PIN) funkciót is kínál, amivel törölheted a telefont.
+  </p>
+</div>
+
+#### Microsoft-mentesítés, Apple-mentesítés
+
+Ne feledkezz meg a számítógépről sem: a Windows megállás nélkül sugározza a telemetriát (és a „Recall” funkciója folyamatosan képernyőképeket próbált készíteni), a macOS pedig jelenti, hogy milyen alkalmazásokat indítasz el. Az igazi kiút a Linux (lásd a 12. szakaszt). Ha erre nincs lehetőség, tiltsd le a telemetriát, a hirdetési azonosítót és a „Recall”-t, valamint adj hozzá egy kimenő forgalmat szűrő tűzfalat (outbound firewall, mint például a Little Snitch Mac-en).

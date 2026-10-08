@@ -1,0 +1,94 @@
+{
+  "clipper-chip": {
+    "title": "A Clipper Chip",
+    "body": "Az NSA egy olyan titkosító chipet erőltet, amelynek kulcsa kormányzati letétben van, „csak bűnüldözési célokra, kizárólag bírói engedéllyel”. A sebezhetőségeket demonstrálják ([Blaze, 1994](https://dl.acm.org/doi/pdf/10.1145/191177.191193)), amit tömeges elutasítás követ: 1996-ra elvetik a projektet. Az első kriptoháború, pontosan ugyanaz a forgatókönyv, mint ma."
+  },
+  "echelon": {
+    "title": "Az ECHELON-t megerősíti az Európai Parlament",
+    "body": "Hat nappal 9/11 előtt az Európai Parlament plenáris ülésén elfogadja (367-159-39) az ideiglenes bizottságának jelentését (amelyet a bizottság július 3-án hagyott jóvá), megerősítve egy globális, privát és kereskedelmi kommunikációt lehallgató hálózat létezését (USA, Egyesült Királyság, Kanada, Ausztrália, Új-Zéland)."
+  },
+  "nsa-warrantless": {
+    "title": "23 nappal 9/11 után",
+    "body": "Egy titkos elnöki rendelet elindítja az NSA bírói engedély nélküli belföldi megfigyelését. A válság hívja életre a programot; a program pedig túléli a válságot. Október 26-án következik a Patriot Act (Hazafias Törvény), amely szintén „ideiglenes”: annak lejárati záradékait 14 éven át folyamatosan meghosszabbítják."
+  },
+  "room-641a": {
+    "title": "A 641A szoba",
+    "body": "Mark Klein, az AT&T technikusa átadja az EFF-nek azokat a dokumentumokat, amelyek leírják az NSA titkos szobáját a San Franciscó-i kapcsolóközpontban: lehallgatás infrastrukturális szinten, az összes forgalmon, nem csak a gyanúsítottakén."
+  },
+  "retention-directive": {
+    "title": "EU Adatmegőrzési Irányelv",
+    "body": "Az EU kötelezővé teszi a teljes lakosság telekommunikációs metaadatainak megőrzését (6-24 hónapig) „a súlyos bűncselekmények elleni küzdelem” nevében. Senki sem gyanúsított, de mindenki bekerül a nyilvántartásba. A Chat Control pontos tervrajza, húsz évvel korábban."
+  },
+  "snowden": {
+    "title": "Snowden: „Gyűjtsétek be az egészet”",
+    "body": "A Guardian közzéteszi azt a titkos FISA-végzést, amely arra kényszeríti a Verizont, hogy adja át az összes ügyfelének metaadatait, majd a PRISM programot. Márciusban Clapper hírszerzési igazgató a Kongresszus előtt megesküdött, hogy ilyesmi nem történik; a kiszivárogtatás után néhány nappal úgy nyilatkozik, hogy ez volt a „legkevésbé valótlan” válasz, amit adhatott."
+  },
+  "digital-rights-ireland": {
+    "title": "Az EUB megsemmisíti a tömeges adatmegőrzést",
+    "body": "Digital Rights Ireland (C-293/12 és C-594/12 egyesített ügyek): a 2006-os irányelvet teljes egészében megsemmisítik: a teljes lakosság megkülönböztetés nélküli megfigyelése sérti az Alapjogi Chartát. Egy apró, önkéntesekből álló civil szervezet buktatott meg egy uniós irányelvet."
+  },
+  "snoopers-charter": {
+    "title": "Az Egyesült Királyság „Snooper's Charter”-je (Kíváncsiskodók törvénye)",
+    "body": "Az Investigatory Powers Act (Nyomozati Jogkörökről Szóló Törvény) legalizálja a tömeges adatgyűjtést és az állami hackelést, valamint arra kényszeríti az internetszolgáltatókat, hogy őrizzék meg mindenki böngészési előzményeit. Három héttel később az Európai Unió Bírósága (Tele2/Watson ügy) ismét kimondja, hogy a tömeges adatmegőrzés jogellenes; London ennek ellenére fenntartja a gyakorlatot."
+  },
+  "australia-aaa": {
+    "title": "Ausztrália a matematika ellen",
+    "body": "A Hozzáférési Törvény (Assistance and Access Act) lehetővé teszi az állam számára, hogy titokban utasítson egy vállalatot a termékei átalakítására („műszaki képességre vonatkozó felszólítások”). A kritikusok arra figyelmeztetnek, hogy ez minden szempontból gyengíti a titkosítást, bár a törvény névlegesen tiltja a „rendszerszintű gyengeségeket”. A miniszterelnök megadta az alaphangot: „Ausztrália törvényei felülírják a matematika törvényeit”."
+  },
+  "crypto-ag": {
+    "title": "Crypto AG: a trezorgyártó megtartotta a kulcsokat",
+    "body": "A Washington Post leleplezi (a CIA saját belső történelmi feljegyzéseivel alátámasztva), hogy a CIA és a BND (Német Szövetségi Hírszerző Szolgálat) titokban birtokolta a Crypto AG-t, 120 kormány svájci titkosítóberendezés-beszállítóját az 1970-es évek óta. Az 1980-as években az NSA által dekódolt diplomáciai táviratok 40%-a ezen keresztül érkezett. A tanulság: egy „megbízható” hátsó ajtó attól még hátsó ajtó."
+  },
+  "lqdn-cjeu": {
+    "title": "A La Quadrature du Net az EUB előtt",
+    "body": "A Bíróság fenntartja a tömeges adatmegőrzés tilalmát Franciaországgal és Belgiummal szemben (C-511/18, C-512/18 és C-520/18 egyesített ügyek), és ugyanezen a napon az Egyesült Királysággal szemben is a Privacy International ügyben (C-623/17), miközben „nemzetbiztonsági” kiskapukat is kivésnek. Kettős tanulság: a perek működnek, és minden kivétel a következő szabállyá válik. A Bizottság soha nem indított kötelezettségszegési eljárást azon államok ellen, amelyek ennek ellenére is megőrzik az adatokat."
+  },
+  "chatcontrol-1": {
+    "title": "Chat Control 1.0, „ideiglenes”",
+    "body": "A 2021/1232-es rendelet lehetővé teszi a privát üzenetek „önkéntes” szkennelését, eltérve az ePrivacy (e-hírközlési adatvédelmi) irányelvtől. A lejárati záradék ígérete 2024. augusztus 3. A 2024/1307-es rendelet 2026. április 3-ra terjeszti ki a hatályát, amikor is lejár... majd feltámad halottaiból (lásd lejjebb)."
+  },
+  "pegasus-project": {
+    "title": "A Pegasus Projekt",
+    "body": "Több mint 80 újságíró 10 ország 17 szerkesztőségében dokumentálja újságírók, ügyvédek, ellenzékiek és államfők megfigyelését az NSO kémszoftverén keresztül. Az Amnesty törvényszéki elemzései (amelyeket a Citizen Lab szakértői is megerősítettek) bizonyítják a teljesen frissített iPhone-ok kattintás nélküli (zero-click) fertőzéseit: ha az eszközt célba veszik, a titkosítás önmagában nem elég. Pontosan ez a kliensoldali szkennelés logikája."
+  },
+  "apple-csam": {
+    "title": "Az Apple bejelenti az eszközön belüli szkennelést... majd visszakozik",
+    "body": "Az Apple bemutatja az eszközön belüli CSAM (gyermekek szexuális zaklatását ábrázoló anyagok) fotószkennelést iPhone-ra. A kutatók és civil szervezetek fellázadnak: ez az általánosítható megfigyelés infrastruktúrája. 2022 decembere: Az Apple elveti az ötletet, és később, egy [2023. augusztusi levélben](https://appleinsider.com/articles/23/08/31/apple-provides-detailed-reasoning-behind-abandoning-iphone-csam-detection), a „nem kívánt következmények csúszós lejtőjére” hivatkozik. Pontosan arra a mechanizmusra, amelyet a Chat Control 2.0 kötelezővé akar tenni."
+  },
+  "chatcontrol-2": {
+    "title": "Chat Control 2.0: kötelező szkennelés",
+    "body": "A Bizottság javaslatot tesz a CSAR rendeletre (COM/2022/209): „felderítési határozatok”, amelyek minden platformra rákényszeríthetik a szkennelést, beleértve a végponttól végpontig titkosítottakat is. Ami 2021-ben önkéntes volt, 2022-ben kötelezővé válik: hatáskörkiterjesztés (scope creep) a szó szoros értelmében."
+  },
+  "osa-spy-clause": {
+    "title": "Online Safety Act (Online Biztonsági Törvény): a „kém-záradék”",
+    "body": "Az Egyesült Királyság felhatalmazza magát, hogy elrendelje a titkosított tartalmak szkennelését az üzenetküldők számára (121. szakasz). „Ahol technikailag kivitelezhető” - ez a kitétel nincs benne a törvényben: ez csupán a miniszter engedménye volt [Lord Parkinson nyilatkozatában a Lordok Háza előtt](https://techcrunch.com/2023/09/06/osb-encryption-scanning-feasibility/) (2023. szeptember 6.), miután a Signal és a WhatsApp a kivonulással fenyegetőzött. A kormány elismeri, hogy a dolog nem kivitelezhető, de a felhatalmazást azért a jogszabályban hagyja."
+  },
+  "first-extension": {
+    "title": "Az „ideiglenes” megkapja az első hosszabbítást",
+    "body": "A 2024/1307-es rendelet a Chat Control 1.0 lejárati idejét 2024. augusztus 3-ról 2026. április 3-ra tolja ki. Egy vészhelyzeti intézkedés, amely megújítja önmagát, már nem kivétel: ez már egy rendszer."
+  },
+  "uk-age-checks": {
+    "title": "Egyesült Királyság: mutasd fel az igazolványod az internethasználathoz",
+    "body": "Az Online Safety Act bekapcsolja a „rendkívül hatékony” életkor-ellenőrzést (személyi igazolvány, bankkártya, arckor-becslés) a web nagy részén. A Proton mérései szerint az óránkénti VPN-regisztrációk [több mint 1400%-kal](https://www.techradar.com/vpn/vpn-privacy-security/vpn-demand-skyrockets-in-the-uk-as-age-verification-checks-are-enforced) ugrottak meg; a Lordok Háza már vitatja a VPN-ek korlátozását."
+  },
+  "council-sunset-delete": {
+    "title": "A Tanács a lejárati záradék törlését indítványozza",
+    "body": "A Tanács trialógus álláspontja (15318/25 dok.): egyszerűen törölni kell az „önkéntes” szkennelés lejárati záradékát, ezzel állandósítva azt. A dán elnökség tervezete a kötelező kliensoldali szkennelést is fontolgatta. 2026 februárjában az EDPS (Európai Adatvédelmi Biztos) válaszol a Bizottság decemberi javaslatára, amely az eltérés 2028-ig történő meghosszabbítására (COM(2025) 797) vonatkozik: a bizalmasság jelentős romlása, megkülönböztetés nélküli, aránytalan elemzés."
+  },
+  "ep-says-no": {
+    "title": "A Parlament nemet mond",
+    "body": "Az Európai Parlament elutasítja az önkéntes szkennelés 2028-ig történő meghosszabbítását (228 mellette, 311 ellene, 92 tartózkodik). A következmény: a jogalap 2026. április 3-án lejár. A polgári nyomás és a civil szervezetek munkája tartotta a frontot. Három hónapig."
+  },
+  "scanning-continues": {
+    "title": "A törvény lejár, a szkennelés folytatódik",
+    "body": "Az eltérés lejártával azok a gigacégek, amelyek aláírták a március 19-i közös felhívást a rendszer megszilárdítására (Google, Meta, Microsoft, Snap, TikTok), bejelentik, hogy jogalap ide vagy oda, tovább folytatják az üzenetek szkennelését. Ez a beismerése annak, hogy a „megfelelés” csak díszlet volt."
+  },
+  "council-resurrects": {
+    "title": "A Tanács feltámasztja a lejárt szöveget",
+    "body": "Három hónappal a lejárati idő után a Tanács elfogadja álláspontját az önkéntes szkennelés 2028. április 3-ig történő visszaállításáról, és második olvasatra elküldi a Parlamentnek: az az eljárás, ahol az elutasításhoz abszolút többségre (720-ból 361 szavazatra) van szükség, nem pedig a leadott szavazatok többségére."
+  },
+  "ep-e2ee-carveout": {
+    "title": "Az elutasítás elbukik, de az E2EE kivételt kap",
+    "body": "A sürgősségi eljárást július 7-én elfogadják (331/304/11), a szavazás 9-én történik: 314 EP-képviselő szavaz a Tanács álláspontjának elutasítására: egyszerű többség, amely elmarad a szükséges 361-től. De a Parlament ezután elfogadja azokat a módosításokat, amelyek kizárják a végponttól végpontig titkosított kommunikációt a szkennelési rendszerből (369 és 362 szavazat), és egy utolsó kísérlet a módosított álláspont elutasítására szintén elbukik (276/286/30). A módosított szöveg visszakerül a Tanácshoz, amelynek körülbelül három hónapja van (2026. október 9-ig), hogy elfogadja a módosításokat (a nem E2EE szolgáltatások önkéntes szkennelése 2028. április 3-ig) vagy egyeztetést indítson. 2026. július 10-én semmi sincs hatályban: az április 3-án lejárt eltérést soha nem élesztették újjá ([teljes név szerinti szavazások](https://howtheyvote.eu/votes/195775))."
+  }
+}

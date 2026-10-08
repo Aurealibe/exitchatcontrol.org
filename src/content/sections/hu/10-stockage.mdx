@@ -1,0 +1,77 @@
+---
+id: 'stockage'
+part: 6
+order: 10
+title: 'Titkosított tárolás'
+---
+
+<p class="part-num">
+  <span>09.</span> RÉSZ · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Titkosított tárolás
+
+<ToolCard tool="t-protondrive">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">A Google Drive / iCloud kiváltója</span>
+    <span class="tool-tag">🇨🇭 · E2EE (Végponttól végpontig titkosított)</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy végponttól végpontig titkosított felhő a fájljaidhoz és a fotóidhoz, a Proton égisze alatt.
+  </Fragment>
+  <Fragment slot="why">
+    A Google Drive-val vagy az iCloud-dal ellentétben a Proton nem tudja elolvasni a fájljaidat: még azelőtt titkosítva lesznek, hogy elhagynák
+    az eszközödet. Svájci joghatóság, ugyanazzal a fiókkal, mint a Proton Mail.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenki számára, mint egy egyszerű, közvetlen helyettesítője a Google vagy az Apple felhőjének.
+  </Fragment>
+  <ol slot="install">
+    <li>Engedélyezd a Proton Drive-ot a Proton fiókodban, és telepítsd az alkalmazást.</li>
+    <li>Kapcsold be az automatikus fotó-biztonsági mentést, majd tiltsd le a Google/Apple mentését.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cryptomator">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Középhaladó</span>
+    <span class="tool-tag">Titkosítás feltöltés előtt</span>
+    <span class="tool-tag">🇩🇪 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy trezor, amely titkosítja a fájljaidat, <b>mielőtt</b> feltöltenéd őket bármilyen felhőbe, akár a Google Drive-ra vagy a
+    Dropboxra is.
+  </Fragment>
+  <Fragment slot="why">
+    A tökéletes trükk, ha mindenképpen meg kell tartanod egy meglévő felhőszolgáltatást: megtartod a kényelmes szolgáltatást, de a
+    szolgáltató csak titkosított halandzsát lát. A kulcs kizárólag nálad van.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik még nem tudnak elhagyni egy mainstream felhőszolgáltatást, de már most szeretnék megvédeni a fájljaikat.
+  </Fragment>
+  <ol slot="install">
+    <li>Telepítsd a Cryptomatort (asztali és mobil) a cryptomator.org oldalról.</li>
+    <li>Hozz létre egy „trezort” a felhőd szinkronizált mappájában, és válassz egy erős jelszót.</li>
+    <li>Helyezd a fájljaidat a trezorba: azok automatikusan titkosítva lesznek, majd szinkronizálódnak.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nc-storage">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">A saját felhőd</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    A saját felhőd (fájlok, naptár, névjegyek, jegyzetek), a saját szervereden üzemeltetve.
+  </Fragment>
+  <Fragment slot="why">
+    Az irányítás legfelsőbb foka: az adataid soha nem hagyják el a hardveredet. Részletesen a 10. szakaszban
+    (Saját szerver üzemeltetése / Self-hosting).
+  </Fragment>
+  <Fragment slot="who">Self-hostereknek (Akik saját szervert üzemeltetnek). Lásd a teljes kártyát a 10. szakaszban.</Fragment>
+  <a slot="links" class="tool-link" href="#selfhost">
+    → 10. szakasz
+  </a>
+</ToolCard>

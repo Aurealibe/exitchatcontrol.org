@@ -1,0 +1,18 @@
+{
+  "do-signal": { "body": "**Telepítsd a Signalt**, és hozd át a három leggyakoribb kapcsolatodat." },
+  "do-email": { "body": "**Nyiss egy Proton Mail vagy Tuta fiókot**, importáld az adataidat, és állíts be továbbítást a Gmailből." },
+  "do-pass": { "body": "**Telepítsd a Bitwardent** egy hosszú mesterjelszóval (egy jelmondattal)." },
+  "do-ublock": { "body": "**Add hozzá a uBlock Origint** a böngésződhöz (tíz másodperc)." },
+  "do-browser": { "body": "**Cseréld le a Chrome-ot és a Google Keresőt** (Firefox/Brave + DuckDuckGo)." },
+  "do-twofa": {
+    "body": "**Kapcsold be a 2FA-t (Kétlépcsős azonosítást)** (Aegis / Ente Auth, soha ne SMS-t) az e-mailen és a jelszókezelőn."
+  },
+  "do-cloud": { "body": "**Vidd át a fájljaidat** egy titkosított felhőbe (Proton Drive / Cryptomator)." },
+  "do-vpn": { "body": "**Szerezz be egy VPN-t** (Mullvad), ideális esetben anonim módon fizetve." },
+  "do-dns": { "body": "**Titkosítsd a DNS-edet** (Quad9 / Mullvad DNS) a telefonodon és a számítógépeden." },
+  "do-social": { "body": "**Nyisd meg a Mastodon fiókodat**, és rögzítsd a jelenlétedet a nagy platformokon kívül." },
+  "do-linux": { "body": "**Próbáld ki a Linuxot** (distrosea.com), majd telepítsd (kezdésnek Linux Mint)." },
+  "do-graphene": { "body": "**Válts GrapheneOS-re a telefonodon** (Pixel szükséges), vagy tedd biztonságosabbá az Androidot." },
+  "do-selfhost": { "body": "**Hosztolj saját magad** egy első szolgáltatást (YunoHost / Umbrel + Tailscale)." },
+  "do-opsec": { "body": "**Alkalmazz OPSEC (Műveleti Biztonság) fegyelmet**, ha álnéven publikálsz." }
+}

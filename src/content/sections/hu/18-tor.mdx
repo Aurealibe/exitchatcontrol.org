@@ -1,0 +1,47 @@
+---
+id: 'tor'
+part: 11
+order: 18
+title: 'Tor'
+---
+
+<p class="part-num">
+  <span>17.</span> RÉSZ · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Tor
+
+A hálózat, amely elválasztja azt, aki vagy, attól, amit az interneten csinálsz.
+
+<ToolCard tool="t-tor">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Hálózati anonimitás</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy hálózat, amely elválasztja azt, aki vagy, attól, amit az interneten csinálsz, és a Tor Böngészőn keresztül érhető el.
+  </Fragment>
+  <Fragment slot="why">
+    A forgalmad több titkosított csomóponton (relay) keresztül ugrál világszerte: egyik sem ismeri egyszerre a személyazonosságodat és a célállomásodat. Ez az újságírók és a források eszköze, és a módja egy blokkolt oldal elérésének (például egy cenzúrázott VPN letöltéséhez).
+  </Fragment>
+  <Fragment slot="who">
+    Magas kockázatú profiloknak, és bárkinek, akinek le kell választania a tevékenységét a valódi IP-címéről. Alkalmanként használd, ne mindennapi böngészőként.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Töltsd le a Tor Böngészőt a <b>torproject.org</b> oldalról (Windows, macOS, Linux, Android).
+    </li>
+    <li>Indítsd el, és kattints a „Csatlakozás” (Connect) gombra. Ha a Tor blokkolva van az országodban, engedélyezz egy „hidat” (bridge).</li>
+    <li>
+      Böngéssz anélkül, hogy maximalizálnád az ablakot, anélkül, hogy bővítményeket telepítenél, és <b>anélkül, hogy bejelentkeznél a valódi fiókjaidba</b>.
+    </li>
+  </ol>
+</ToolCard>
+
+<div class="box warn">
+  <span class="lab">Vannak határai, nem varázslat</span>
+  <p>
+    A Tor a szállítást (transport) védi, nem a szokásaidat: jelentkezz be a valódi fiókodba, és azonnal leleplezed magad (deanonymise). Lassabb, és a kilépési csomópont (exit node) titkosítatlan forgalmat lát (használj HTTPS-t). Komoly anonimitáshoz párosítsd a Tails-szel (12. szakasz).
+  </p>
+</div>

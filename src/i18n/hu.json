@@ -1,0 +1,179 @@
+{
+  "site": {
+    "title": "Lépj ki a Chat Controlból · Válj kormányozhatatlanná",
+    "description": "Gyakorlati terepútmutató a Chat Control elkerüléséhez és a digitális magánéleted visszaszerzéséhez: titkosított üzenetküldés, e-mail, VPN, DNS, jelszavak, Linux, GrapheneOS, saját szerver. Ingyenes, nyílt forráskódú, nincs nyomon követés."
+  },
+  "nav": {
+    "skip": "Ugrás a tartalomra",
+    "toc": "Tartalomjegyzék",
+    "language": "Nyelv",
+    "theme": "Téma",
+    "themeToggle": "Sötét mód be/ki",
+    "toTop": "Vissza a tetejére",
+    "quiz": "Kvíz"
+  },
+  "banner": {
+    "reviewNote": "Gépi fordítású szakasz, ellenőrzés alatt."
+  },
+  "hero": {
+    "stamp": "Tömeges megfigyelés · EU · 2026",
+    "eyebrow": "Egy digitális szuverenitási terepkézikönyv",
+    "lede": "A Chat Control át akarja vizsgálni a privát üzeneteidet. Íme, hogyan veheted vissza az irányítást a beszélgetéseid, az adataid és az eszközeid felett, lépésről lépésre, a kezdőtől a kiszivárogtatóig.",
+    "p1": "Polgár",
+    "p2": "Álnéves fiók",
+    "p3": "Kiszivárogtató"
+  },
+  "status": {
+    "label": "Friss · 2026. július 9.",
+    "headline": "Az Európai Parlament átengedte a Chat Controlt.",
+    "body": "Az elutasítási indítvány elbukott: 314 EP-képviselő szavazott a szöveg ellen, 276 mellette, 17 tartózkodott. 361 szavazatra lett volna szükség a blokkoláshoz. A többség elutasítást akart; a procedúra eltemette ezt. Egyetlen védvonalat sikerült kiharcolni: a végponttól végpontig titkosított üzenetküldők kikerültek a szkennelés alól (a módosításokat 369 és 362 szavazattal fogadták el). A szöveg most a Tanács asztalán hever: egyetlen aláírás októberig, és az üzeneteid „önkéntes” szkennelése 2028. április 3-ig engedélyezetté válik. Ezzel párhuzamosan a Chat Control 2.0 (CSAR) - a kötelező szkennelés még a titkosított üzenetküldők esetében is - szeptemberben visszatér a tárgyalóasztalhoz. A fenyegetés nem múlt el; egyre inkább berendezkedik.",
+    "cta": "Az átállásra most van itt az idő, amíg a választás még a te kezedben van.",
+    "sourceEp": "EP sajtóközlemény, 2026. július 9.",
+    "sourceVotes": "hivatalos név szerinti szavazási eredmények"
+  },
+  "noscript": {
+    "notice": "A JavaScript ki van kapcsolva: jó ösztön. A teljes útmutató működik nélküle: csak a témaváltónak, a szűrőknek és az ellenőrzőlistának van szüksége szkriptekre."
+  },
+  "footer": {
+    "resources": "Erőforrások",
+    "sourcesLaw": "Források · a törvény",
+    "act": "Cselekedj",
+    "github": "Nyílt forráskód a GitHubon",
+    "download": "Töltsd le az útmutatót (1 fájl)",
+    "proofline": "Zéró nyomkövető, zéró süti, zéró külső lekérdezés. Minden (betűtípusok, ikonok, stílusok) be van ágyazva. Ellenőrizd le: nyisd meg a hálózati vizsgálóeszközt, töltsd újra az oldalt. Semmi sem megy ki harmadik félhez.",
+    "disclaimer": "Ez az útmutató egy tájékoztató dokumentum a magánélet védelméről és a titkosítás megőrzéséről. Semmilyen illegális tevékenységre nem buzdít. Mindig ellenőrizd a jogszabályi híreket: a helyzet gyorsan változik.",
+    "factsUpdated": "Tények utoljára frissítve: 2026. július 10.",
+    "support": "Támogasd a projektet",
+    "links": {
+      "council0207": "Az EU Tanácsa · 2026. július 2-i első olvasatbeli álláspont",
+      "ep2603": "Parlament · 2026. március 26-i elutasítás",
+      "ep0907": "Parlament · 2026. július 9-i módosítások (E2EE kizárva)",
+      "rollcalls": "Hivatalos név szerinti szavazási eredmények · 2026. július 9.",
+      "edps": "EDPS · 2026. február 16-i vélemény (PDF)",
+      "reg1232": "(EU) 2021/1232 rendelet",
+      "ccOverview": "Chat Control 1.0 vs 2.0",
+      "protonCss": "Proton · kliensoldali szkennelés",
+      "jointAppeal": "Techóriások közös felhívása (2026. márc. 19.)",
+      "bigTechScan": "A Big Tech megfogadta, hogy folytatja a szkennelést"
+    }
+  },
+  "sections2": {
+    "precedents": {
+      "eyebrow": "23. RÉSZ · A BIZONYÍTÉKOK",
+      "title": "Harminc évnyi precedens",
+      "intro": "Minden generációnak azt mondják, hogy a megfigyelés új, korlátozott és ideiglenes. Dátummal és forrással ellátva: ugyanez a forgatókönyv 1993 óta. Kattints egy dátumra a bejegyzés hivatkozásához.",
+      "kinds": {
+        "promise": "az ígéret",
+        "creep": "a kiterjesztés",
+        "struck": "megsemmisítve",
+        "revealed": "leleplezve"
+      }
+    },
+    "observatory": {
+      "eyebrow": "24. RÉSZ · A SODRÓDÁS, ÉLŐBEN",
+      "title": "Nagy Testvér megfigyelőközpont",
+      "intro": "A Chat Control csak egy front az öt közül. Mi ment át, mi van az asztalon, mit vertek vissza, régiónként és témánként.",
+      "filterRegion": "Régió",
+      "filterTheme": "Téma",
+      "all": "Összes",
+      "regions": {
+        "eu": "EU",
+        "fr": "Franciaország",
+        "world": "Világ"
+      },
+      "themes": {
+        "messaging": "Üzenetküldés",
+        "identity": "Személyazonosság",
+        "money": "Pénzügyek",
+        "media": "Média",
+        "aibio": "AI és biometria"
+      },
+      "statuses": {
+        "en_vigueur": "hatályos",
+        "adopte": "elfogadva",
+        "negociation": "tárgyalás alatt",
+        "propose": "javasolt",
+        "rejete": "elutasítva",
+        "suspendu": "felfüggesztve",
+        "revele": "leleplezve"
+      }
+    },
+    "allies": {
+      "eyebrow": "25. RÉSZ · NEM VAGY EGYEDÜL",
+      "title": "Szövetséges kezdeményezések",
+      "intro": "A szervezetek, amelyek a tárgyalótermekben és a parlamentekben harcolnak ez ellen, és a projektek, amelyek megőrzik a bizonyítékokat.",
+      "campaigns": "Kampányok és érdekképviselet",
+      "chroniclers": "Dokumentációs projektek"
+    },
+    "directory": {
+      "eyebrow": "26. RÉSZ · AZ ARZENÁL",
+      "title": "Nyílt forráskódú címtár",
+      "intro": "66 szabad szoftveres eszköz 14 kategóriában. Minden bejegyzés nyílt forráskódú: ellenőrizhető kód, nincs szükség vak bizalomra.",
+      "categories": {
+        "messagerie": "Üzenetküldés",
+        "email": "E-mail",
+        "navigation": "Böngészés és keresés",
+        "vpn-reseau": "VPN és hálózat",
+        "dns": "DNS",
+        "mots-de-passe": "Jelszavak és 2FA",
+        "stockage-photos": "Tárolás, fotók és mentések",
+        "quotidien": "Mindennapi eszközök",
+        "social": "Közösségi hálózatok",
+        "ia-locale-agentique": "Helyi és ágens alapú AI",
+        "os-mobile": "Operációs rendszerek",
+        "selfhost": "Saját szerver (self-hosting)",
+        "finance": "Pénzügyek",
+        "opsec": "OPSEC és kiszivárogtatás"
+      }
+    },
+    "checklist": {
+      "eyebrow": "27. RÉSZ · A TERV",
+      "title": "Migrációs ellenőrzőlista",
+      "intro": "Tizennégy lépés, a tízperces győzelmektől a hétvégi projektekig. A pipákat csak ez a böngésző menti el. Semmi sem hagyja el az eszközödet.",
+      "progress": "{done} / {total} lépés kész",
+      "levels": {
+        "green": "gyors győzelem",
+        "yellow": "eltart egy ideig",
+        "red": "haladó"
+      }
+    }
+  },
+  "manifesto": {
+    "label": "Kiáltvány",
+    "p1": "Az eszközök lecserélése az egyéni felelősségvállalás aktusa, amely mindannyiunk sajátja: így utasítod el a törvénytelen tömeges megfigyelést.",
+    "p2": "A titkosítás <strong>a magánéleted védelmét</strong> jelenti. A saját szerver üzemeltetése <strong>a Big Tech megfigyelése alóli kibújást</strong>. Az eszközeid feletti irányítás visszavétele pedig azt, hogy <mark>kormányozhatatlanná és szuverénné válsz</mark>.",
+    "p3": "A harc politikai. Támogasd a tiltakozó szervezeteket, mint például a(z) {link} kezdeményezés, és írj a képviselőidnek. Ez az, ami majdnem megbuktatta a Chat Controlt.",
+    "p4": "De mivel a megoldás valószínűleg sem a szavazóurnákból, sem az Európai Parlamentből nem fog megérkezni, mindannyiunk feladata, hogy kivívjuk a szabadságunkat és megvédjük a magánéletünket az internet nyújtotta összes eszközzel."
+  },
+  "share": {
+    "label": "Add tovább",
+    "share": "Oszd meg ezt az útmutatót",
+    "copy": "Link másolása",
+    "copied": "Link másolva ✓",
+    "print": "Nyomtatás / PDF"
+  },
+  "quiz": {
+    "stamp": "Edukációs kvíz · 3 perc",
+    "eyebrow": "Becsüld meg a cenzúrával szembeni ellenállásodat",
+    "title": "Ellenállási kvíz",
+    "lede": "Egy iránytű, nem pedig eredményjelző tábla: válaszolj tizenkét gyors kérdésre, hogy felmérd a rendszered gyenge pontjait - mindenféle szégyenérzet nélkül -, majd kövesd az útmutató konkrét javítási javaslatait.",
+    "privacyNote": "A pontszámot helyben, a böngésződben számolja ki a rendszer. Semmit sem küld el, semmit sem tárol.",
+    "start": "Kvíz indítása",
+    "readGuide": "A teljes útmutató elolvasása",
+    "progress": "{done} / {total} megválaszolva",
+    "completePrompt": "Válaszolj mind a tizenkét kérdésre a pontszámod felfedéséhez.",
+    "resultEyebrow": "Az eredményed",
+    "outOf": "/ 100",
+    "barsHeading": "Pontszám területenként",
+    "recHeading": "A 3 legfontosabb következő lépésed",
+    "openGuide": "Útmutató megnyitása →",
+    "restart": "Kvíz újrakezdése",
+    "copy": "Eredmény linkjének másolása",
+    "copied": "Link másolva ✓",
+    "share": "Megosztás",
+    "shareX": "Posztolás X-en",
+    "shareText": "A cenzúrával szembeni ellenállási pontszámom: {score}/100 - {band}. Nézd meg a tiédet:",
+    "bandsHeading": "Mit jelent a pontszám?",
+    "categoriesHeading": "A tizenkét terület, és hol érdemes fejlődni"
+  }
+}

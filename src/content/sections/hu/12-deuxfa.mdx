@@ -1,0 +1,68 @@
+---
+id: 'deuxfa'
+part: 7
+order: 12
+title: 'Kétlépcsős azonosítás (2FA) és hardveres kulcsok'
+---
+
+<p class="part-num">
+  <span>11.</span> RÉSZ · BIZTONSÁG · 2FA · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Kétlépcsős azonosítás (2FA) és hardveres kulcsok
+
+Egy jelszó, még ha erős is, kiszivároghat. A kétlépcsős azonosítás (2FA) egy második bizonyítékot ad a bejelentkezéshez: még ha ellopják is a jelszavadat, a fiók zárolva marad. Érzékeny fiókjaid (e-mail, jelszókezelő, közösségi média) esetében elengedhetetlen.
+
+<div class="box warn">
+  <span class="lab">Kerüld az SMS-alapú 2FA-t</span>
+  <p>
+    Az SMS-ben küldött kód a gyenge láncszem: sebezhető a „SIM-swap” (amikor egy támadó áthelyezteti a számodat saját magához) és a telefonhálózaton történő lehallgatás (SS7) által. Tanulmányok becslései szerint a legtöbb SIM-swap kísérlet sikeres. Az SMS-t csak végső esetben használd, soha ne fő védelmi vonalként.
+  </p>
+</div>
+
+<ToolCard tool="t-yubikey">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Közép. / Haladó</span>
+    <span class="tool-tag">FIDO2 hardveres kulcs</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy kisméretű fizikai kulcs (USB, gyakran NFC-vel), amely egyetlen érintéssel bizonyítja a személyazonosságodat.
+  </Fragment>
+  <Fragment slot="why">
+    Ez a legerősebb 2FA: ellenáll az adathalászatnak (phishing), mert a kulcs a válaszadás előtt ellenőrzi az oldal valódi címét. A <b>Nitrokey</b> egy teljesen nyílt hardverű és firmware-ű alternatíva. Egy hamis oldal nem tud átverni.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik maximális biztonságot szeretnének a legfontosabb fiókjaiknál. Vegyél <b>kettőt</b> (egy főt, egy tartalékot).
+  </Fragment>
+  <ol slot="install">
+    <li>Szerezz be két kulcsot a yubico.com vagy a nitrokey.com oldalról.</li>
+    <li>
+      Minden fiók biztonsági beállításaiban (e-mail, jelszókezelő...) adj hozzá egy „biztonsági kulcsot” (security key) vagy „jelkódot” (passkey). Regisztráld mindkét kulcsot.
+    </li>
+    <li>A tartalék kulcsot tartsd biztonságos, külön helyen.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-aegis">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">TOTP kódok</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Alkalmazások, amelyek a 30 másodpercenként változó hatjegyű kódokat generálják, a Google Authenticator kiváltására.
+  </Fragment>
+  <Fragment slot="why">
+    Az <b>Aegis</b> (Android) egy helyi titkosított trezorban tartja a kódjaidat, felhő nélkül. Az <b>Ente Auth</b> eszközök közötti, végponttól végpontig titkosított szinkronizációt is kínál, és auditáláson is átesett. Sokkal biztonságosabb az SMS-nél, és ingyenes.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek: ez az alapértelmezett 2FA szint, amelyet be kell vezetni, még a hardveres kulcsok előtt.
+  </Fragment>
+  <ol slot="install">
+    <li>Telepítsd az Aegist (F-Droid) vagy az Ente Auth-ot (minden platformra).</li>
+    <li>Minden fiókban engedélyezd a „hitelesítő alkalmazás” (authenticator app) alapú 2FA-t, és szkenneld be a megjelenő QR-kódot.</li>
+    <li>
+      Írd fel papírra a <b>biztonsági másolati kódokat (backup codes)</b>, és készíts egy titkosított biztonsági másolatot a trezorodról.
+    </li>
+  </ol>
+</ToolCard>

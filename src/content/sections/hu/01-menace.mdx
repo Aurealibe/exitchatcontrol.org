@@ -1,0 +1,158 @@
+---
+id: 'menace'
+part: 0
+order: 1
+title: 'A fenyegetés megértése'
+---
+
+<p class="part-num"><span>00.</span> RÉSZ · A MIÉRT</p>
+
+## A fenyegetés megértése
+
+Mielőtt eszközöket cserélnél, értsd meg, mi ellen is védekezel. Különben csak véletlenszerű alkalmazásokat telepítesz, és biztonságban érzed magad, miközben nem vagy abban.
+
+### Chat Control 1.0 és 2.0, egyszerűen
+
+A „Chat Control” annak a két uniós szövegnek a gúnyneve, amelyek lehetővé teszik (vagy tennék) a privát üzeneteid szkennelését gyermekek szexuális zaklatását ábrázoló anyagok (CSAM) után kutatva. A kinyilvánított cél legitim; a módszer – gyanúba nem keveredett emberek kommunikációjának átfogó ellenőrzése – azonban tömeges megfigyelésnek minősül.
+
+<div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Chat Control 1.0</th>
+        <th>Chat Control 2.0 (CSAR)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Szöveg</td>
+        <td>(EU) 2021/1232 rendelet, eltérés az ePrivacy (e-hírközlési adatvédelmi) irányelvtől</td>
+        <td>COM/2022/209 javaslat (Ylva Johansson, 2022. május)</td>
+      </tr>
+      <tr>
+        <td>Szkennelés</td>
+        <td>
+          Önkéntes, a platformok <em>szkennelhetnek</em>
+        </td>
+        <td>Kötelező „felderítési határozatokon” és „kockázatcsökkentő intézkedéseken” keresztül</td>
+      </tr>
+      <tr>
+        <td>Kire vonatkozik?</td>
+        <td>
+          Leginkább titkosítatlan amerikai szolgáltatásokra: Gmail, Messenger/Instagram, Skype, Snapchat, iCloud Mail, Xbox
+        </td>
+        <td>
+          <strong>Minden</strong> platformra, beleértve a végponttól végpontig titkosított üzenetküldőket is
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Kliensoldali szkennelés (Client-side scanning): a legális drótlehallgatás
+
+A Chat Control 2.0 szíve egy **kliensoldali szkennelésnek** nevezett technika. Az ötlet: ahelyett, hogy a tranzit (út közbeni) titkosítást törnék fel, egy szoftvert telepítenek **közvetlenül a telefonodra**, hogy minden üzenetet, fényképet vagy linket megvizsgáljanak **még azelőtt**, hogy az titkosításra és elküldésre kerülne. A Signal egy mondatban összefoglalta: ez „olyan, mint egy kártékony program (malware) az eszközödön”.
+
+<div class="box honest">
+  <span class="lab">Technikai őszinteség, olvasd el kétszer</span>
+  <p>
+    A kliensoldali szkenneléssel szemben <strong>sem a VPN, sem a végponttól végpontig terjedő titkosítás (E2EE) nem elég</strong>,{' '}
+    ha az alkalmazás vagy az operációs rendszer együttműködik. A szkennelés az eszközön történik, még a
+    titkosítás előtt: a VPN-nek nincs mit megvédenie, a titkosítás pedig túl későn lép életbe. Ami valójában
+    megvéd téged, az olyan{' '}
+    <strong>szabad/nyílt forráskódú szoftverek választása, amelyek megtagadják a szkennelés implementálását</strong>, a kedvező{' '}
+    <strong>joghatóságok</strong>, a <strong>saját szerver üzemeltetése (self-hosting)</strong>, és{' '}
+    <strong>az eszközöd feletti irányítás visszavétele</strong> (egy módosítatlan operációs rendszer). Minden más ebben az
+    útmutatóban ebből az igazságból következik.
+  </p>
+</div>
+
+<div class="box warn">
+  <span class="lab">A legrosszabb az egészben: az eszköz még csak nem is működik</span>
+  <p>
+    Mindenki magánéletét feláldozzák egy olyan technológiáért, ami megbukik. Az Európai Parlament saját
+    tanulmánya arra a következtetésre jutott, hogy egyetlen rendszer sem képes magas hibaarány nélkül észlelni ezeket a tartalmakat
+    (mert több milliárd üzenet esetében még egy apró téves-pozitív (false-positive) arány is több millió hamis vádat eredményez).
+    Az ír rendőrség adatai is ezt mutatják: az automatizált jelentéseknek csak körülbelül 20%-a volt tényleges anyag,
+    és több mint 11%-uk egyértelműen téves-pozitív riasztás volt. Egy mérföldkőnek számító kutatás („Bugs in Our Pockets”, 2021) továbbá
+    rámutat, hogy amint a kliensoldali szkennelés telepítésre kerül, azt elkerülhetetlenül más célokra is felhasználják majd (terrorizmus,
+    szerzői jogok, vélemények).
+  </p>
+</div>
+
+### Az ürügy: „a gyermekek védelme”
+
+Senki sincs a kiskorúak védelme ellen, és pontosan ez teszi ezt olyan hatékony eszközzé. A gyermekbántalmazás elleni küzdelem **érzelmi trójai falóként** szolgál: ki merne tiltakozni ellene? E zászló alatt olyan elv válik elfogadottá, amelyet önmagában határozottan elutasítanának: **több százmillió, gyanúba nem keveredett ember** privát kommunikációjának automatizált ellenőrzése. A gyermekek a kinyilvánított indíték; a valódi célpont azonban mindenki titkosítása és magánélete.
+
+Az intő jel: azok a cégek lobbiznak a leginkább ezért a szkennelésért, amelyeknek az üzleti modellje **maga** a megfigyelés. 2026. március 19-én egy közös felhívás sürgette az uniós jogalkotókat az „önkéntes” felderítés megszilárdítására, amelyet a következők írtak alá:
+
+<div class="namewall" aria-label="Google, LinkedIn, Snapchat, Microsoft, TikTok, Meta">
+  <span>Google</span>
+  <span>LinkedIn</span>
+  <span>Snapchat</span>
+  <span>Microsoft</span>
+  <span>TikTok</span>
+  <span>Meta</span>
+</div>
+
+<blockquote class="pull">
+  „Ennek elmulasztása felelőtlenség lenne.” A tech-óriások érve az üzenetek szkennelésének
+  életben tartása mellett.
+</blockquote>
+
+Ugyanezek a szereplők még azt is bejelentették, hogy **tovább fogják szkennelni** az üzeneteket azután is, hogy a jogalap 2026. április 4-én lejárt. A polgárokat tehát arra kérik, hogy intim beszélgetéseik ellenőrzését bízzák azokra a vállalatokra, amelyek az adataik begyűjtéséről és pénzzé tételéről (monetizálásáról) híresek. Ez a Chat Control igazi arca: egy **támadás a magánélet ellen**, egy olyan indítékba csomagolva, amelyet senki sem utasíthat vissza.
+
+### Ez nem „csak” megfigyelés
+
+Próbálnak megnyugtatni: „ez csak a Gmail, az Instagram, a Snapchat, a Messenger”. Ez hamis állítás, és ez a legriasztóbb az egészben. E mögött a bagatellizálás mögött három eltolódás bújik meg.
+
+1. **Ez nem célzott megfigyelés, hanem hálós (dragnet) adatgyűjtés.** Ez nem gyanúsítottakat figyel meg: egész populációk kommunikációjának szisztematikus gyűjtését vezeti be. Megfigyelés állami léptékben, folyamatosan.
+2. **Ez már nem csak olvasás, hanem a blokkolás hatalma.** Egy szoftver, amely megvizsgál egy üzenetet az elküldése előtt, **meg is tagadhatja annak elküldését**. A kliensoldali szkennelés az előzetes cenzúra infrastruktúráját építi ki: a beszéd blokkolását még azelőtt, hogy az elérné a címzettet.
+3. **Amint az infrastruktúra létezik, más célokra is felhasználják.** Egy „a gyermekekért” épített rendszer általános célú ellenőrző eszközzé válik. Az indíték megváltozik; a gépezet marad.
+
+<div class="box warn">
+  <span class="lab">A logikus következő lépés: a digitális euró</span>
+  <p>
+    Ugyanez a logika hamarosan a pénzedet is eléri. Az EKB (Európai Központi Bank) digitális eurója egy{' '}
+    <strong>nyomon követhető</strong> valután nyugszik, megtiltja a vállalatoknak, hogy birtokolják, és egy{' '}
+    <strong>birtoklási limittel (cap)</strong> érkezik: az EKB munkafeltevésként körülbelül 3000 eurót lebegtetett meg személyenként, 
+    és az Európai Parlament bizottságában (2026. június) megszavazott álláspont szerint 
+    a limit megállapítását a Bizottságra bízzák az EKB ajánlása alapján, kétévente felülvizsgálva azt. Az EKB
+    esküszik, hogy a valuta nem lesz „programozható”, de a limit és a nyomonkövethetőség nagyon is terítéken van. 
+    Amikor ez megvalósul, azt fogod mondani: „nyugi, ez csak egy limit”? Ez pontosan ugyanaz a retorikai csapda,
+    mint az, hogy „ez csak a Gmail”. A valódi kérdés sohasem az, hogy mit ellenőriznek ma, hanem az a kontroll-infrastruktúra,
+    amit a holnap számára építenek ki.
+  </p>
+</div>
+
+### Melyik profil vagy te?
+
+Nincs varázseszköz, és senkinek sem kell mindent megcsinálnia. Keresd meg a profilodat: minden szakasz megmondja, meddig érdemes elmenned.
+
+<div class="profiles">
+  <div class="profile p1">
+    <div class="lvl lvl-1">Kezdő</div>
+    <h4>🟢 Az átlagpolgár</h4>
+    <p>
+      Csak azt szeretnéd, hogy a beszélgetéseidet és a magánéletedet ne szkenneljék és ne tegyék pénzzé. A cél:
+      mindennapi adatvédelem anélkül, hogy szakértővé válnál.
+    </p>
+  </div>
+  <div class="profile p2">
+    <div class="lvl lvl-2">Középhaladó</div>
+    <h4>🟡 Az álnéves fiók</h4>
+    <p>
+      Információs fiók, aktivista oldal, tartalomgyártó: félsz a leleplezéstől (deanonymisation), a doxxingtól (személyes adatok nyilvánosságra hozatalától) vagy a fiókod
+      elvesztésétől. A cél: a valódi személyazonosságod elválasztása a nyilvánostól.
+    </p>
+  </div>
+  <div class="profile p3">
+    <div class="lvl lvl-3">Haladó</div>
+    <h4>🔴 A kiszivárogtató (Whistleblower)</h4>
+    <p>
+      Újságíró, aktivista, forrás, aki egy erős ellenféllel (állam, munkáltató) néz szembe. A cél: erős
+      anonimitás, korreláció (összekapcsolás) elleni védelem, dokumentumok átadása lebukás nélkül.
+    </p>
+  </div>
+</div>

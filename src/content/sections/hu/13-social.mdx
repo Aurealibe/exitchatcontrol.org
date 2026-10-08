@@ -1,0 +1,108 @@
+---
+id: 'social'
+part: 8
+order: 13
+title: 'Decentralizált közösségi média'
+---
+
+<p class="part-num">
+  <span>12.</span> RÉSZ · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Decentralizált közösségi média
+
+Az Instagram, az X és a Facebook olyan cégek tulajdonában vannak, amelyek profiloznak téged, és egyik napról a másikra cenzúrázhatnak vagy törölhetnek. A „fediverzum” (fediverse) olyan hálózatokat kínál, amelyek a felhasználók tulajdonában vannak.
+
+<ToolCard tool="t-mastodon">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Az X / Twitter kiváltója</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Az X/Twitter alternatívája: egy közösségi hálózat, amely több ezer független, egymással kommunikáló szerverből áll (ez a „fediverzum”).
+  </Fragment>
+  <Fragment slot="why">
+    Nincs egyetlen tulajdonos, nincs helyetted döntő algoritmus, nincs önkényes tiltás egy cég részéről. A hírfolyam kronologikus, reklámok és manipuláció nélkül.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek. Ideális információs fiókok számára, amelyek olyan jelenlétet akarnak, amit egyetlen cég sem tud elvágni.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      A joinmastodon.org oldalon válassz egy neked megfelelő szervert (vagy „példányt” / instance), majd hozz létre egy fiókot.
+    </li>
+    <li>
+      Telepíts egy alkalmazást (a hivatalosat, vagy az Ivory-t, Tusky-t...) és kövess be fiókokat: a teljes fediverzumot látod, függetlenül attól, melyik szerveren vannak.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nostr">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cenzúrázhatatlan</span>
+    <span class="tool-tag">🌍 · nyílt protokoll</span>
+  </Fragment>
+  <Fragment slot="what">
+    Nem egy alkalmazás, hanem egy protokoll: egy közösségi hálózat, ahol a személyazonosságod egy egyszerű kulcspár, akárcsak a Bitcoinnál.
+  </Fragment>
+  <Fragment slot="why">
+    Nincs e-mail, nincs jelszó, nincs fiók, amit bárki is törölhetne. A posztjaid decentralizált közvetítőkön (relays) keresztül utaznak, és te valóban birtoklod a közönségedet: senki sem tud végleg kitiltani. Akár Bitcoin-borravalókat („zaps”) is fogadhatsz, és bármikor válthatsz alkalmazást anélkül, hogy elveszítenéd a követőidet.
+  </Fragment>
+  <Fragment slot="who">
+    Információs fiókoknak és tartalomgyártóknak, akik tartanak a platform-cenzúrától, és egy igazán saját jelenlétre vágynak.
+  </Fragment>
+  <ol slot="install">
+    <li>Telepíts egy klienst: Damus (iPhone), Amethyst vagy Primal (Android), vagy egy webes verziót.</li>
+    <li>
+      Az alkalmazás generálja a kulcspárodat. <b>Készíts biztonsági másolatot a privát kulcsodról (nsec)</b> akárcsak egy Bitcoin seed-kifejezésről: papíron, és soha ne oszd meg senkivel.
+    </li>
+    <li>Hozd létre a profilodat, kövess embereket, engedélyezd a zappolást („zaps”), hogy satoshikat („sats”) kaphass.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-element">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">A Discord / Slack kiváltója</span>
+    <span class="tool-tag">🌍 · föderált · E2EE</span>
+  </Fragment>
+  <Fragment slot="what">
+    Közösségi chat a Discord vagy a Slack szellemében, de föderáltan és végponttól végpontig titkosítható formában. Az Element az alkalmazás, a Matrix pedig a hálózat.
+  </Fragment>
+  <Fragment slot="why">
+    Üzemeltetheted a saját szerveredet (Synapse), és te irányíthatod az adataidat. Tökéletes egy kollektívának, szerkesztőségnek vagy egyesületnek, amely saját, független teret szeretne.
+  </Fragment>
+  <Fragment slot="who">Közösségeknek és csoportoknak. Lásd a metaadatokra vonatkozó figyelmeztetést alább.</Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd az Elementet (element.io), és hozz létre egy fiókot egy nyilvános szerveren, vagy a sajátodon (10. szakasz).
+    </li>
+    <li>Csatlakozz szobákhoz, vagy hozz létre újakat, és engedélyezd a végponttól végpontig terjedő titkosítást a privát beszélgetésekhez.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-fediverse">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡</span>
+    <span class="tool-tag">Insta · YouTube · Reddit</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Az Instagram (Pixelfed), a YouTube (PeerTube) és a Reddit (Lemmy) föderált unokatestvérei.
+  </Fragment>
+  <Fragment slot="why">
+    Ugyanaz a logika, mint a Mastodonnál: nincs egyetlen tulajdonos, nincs reklám-algoritmus, nincs nyomon követés. Fényképeket, videókat vagy beszélgetéseket posztolsz anélkül, hogy egy profilozó gépezetet etetnél.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik el akarják hagyni az Instagramot, a YouTube-ot vagy a Redditet, anélkül, hogy feladnák magát a formátumot.
+  </Fragment>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Figyelmeztetés a metaadatokkal kapcsolatban</span>
+  <p>
+    A Matrix jól titkosítja a <em>tartalmat</em>, de a föderációban a résztvevő szerverek látják a szobák tagságát és az üzenetek időzítését. Rendkívül érzékeny használat esetén részesítsd előnyben a SimpleX/Session alkalmazásokat, vagy üzemeltesd a saját szerveredet.
+  </p>
+</div>

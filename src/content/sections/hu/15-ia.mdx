@@ -1,0 +1,98 @@
+---
+id: 'ia'
+part: 9
+order: 15
+title: 'Társalgási mesterséges intelligencia (AI)'
+---
+
+<p class="part-num">
+  <span>14.</span> RÉSZ · VAKFOLT · AZ AI ŐRÜLET · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Társalgási mesterséges intelligencia (AI)
+
+Miközben azért küzdünk, hogy titkosítsuk az üzeneteinket, emberek százmilliói öntik a legintimebb gondolataikat a ChatGPT-be, a Geminibe vagy a Copilotba, amerikai szervereken. Ez az egész történet vakfoltja. Kész őrület.
+
+Amit egy felhőalapú AI-ba gépelsz, az egy <b>leírt, időbélyeggel ellátott, eltárolt vallomás</b>. Rosszabb, mint egy üzenet: kiöntöd a szorongásaidat, az egészségi állapotodat, a pénzügyeidet, a munkahelyi titkaidat, gyakran őszintébben, mint egy barátnak. És egy titkosított üzenetküldővel ellentétben ez mind nyílt szövegként olvasható a szerveren.
+
+<div class="box warn">
+  <span class="lab">Mit mondanak a tények (2025-2026)</span>
+  <p>
+    A fogyasztói (consumer) csomagok <strong>alapértelmezés szerint a te adataidból tanulnak (train)</strong>. 2026 januárjában egy amerikai bíró elrendelte, hogy az OpenAI szolgáltasson ki <strong>20 millió ChatGPT beszélgetést</strong> bizonyítékként: az érintett felhasználókat sem nem értesítették, sem nem kérdezték meg. Egy csevegés törlése <strong>nem garantálja</strong>, hogy az eltűnik. És egy kiszivárogtatás (leak) során 47 000 nyilvánosságra került beszélgetés tartalmazott e-maileket, telefonszámokat és újraazonosítható intim részleteket.
+  </p>
+</div>
+
+#### Az ellenszer: helyi AI
+
+<ToolCard tool="t-localai">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">A ChatGPT kiváltója</span>
+    <span class="tool-tag">🌍 · 100%-ban helyi</span>
+  </Fragment>
+  <Fragment slot="what">Szoftverek egy AI modell futtatásához közvetlenül a saját számítógépeden.</Fragment>
+  <Fragment slot="why">
+    A kérdéseid soha nem hagyják el az eszközt: nincs szerver, nincs fiók, nincs telemetria, és offline is működik. A minőség a hardveredtől függ, de semmi sem szivárog ki. Az <b>Ollama</b> és az <b>LM Studio</b> a legegyszerűbbek; a <b>Jan</b> és a <b>GPT4All</b> a maximális adatvédelmet célozzák.
+  </Fragment>
+  <Fragment slot="who">
+    Bárkinek, aki az AI-t akár csak egy kicsit is személyes témákra használja, és nem akarja azokat átadni egy amerikai szervernek.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      A kíméletes kezdéshez telepítsd az <b>LM Studiót</b> vagy a <b>Jan</b>-t (amelyeknek grafikus felületük van, mint egy normál alkalmazásnak).
+    </li>
+    <li>
+      Tölts le egy, az alkalmazásban kínált modellt (például Llama vagy Mistral), amely megfelel a géped teljesítményének.
+    </li>
+    <li>
+      Csevegj bátran: minden helyben történik. Az Ollama a parancssoros (command-line) verzió a technikaibb beállítottságúaknak.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-pocketpal">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">A ChatGPT kiváltója mobilon</span>
+    <span class="tool-tag">📱 · 100%-ban helyi</span>
+  </Fragment>
+  <Fragment slot="what">Egy alkalmazás, amely AI modelleket futtat közvetlenül a telefonodon, teljesen offline.</Fragment>
+  <Fragment slot="why">
+    A parancsaid (prompts) soha nem hagyják el a telefont: nincs fiók, nincs felhő, nincs telemetria, és repülőgépes (airplane) módban is működik. Nyílt forráskódú (MIT licenc), <b>GGUF</b> modelleket (Gemma, Qwen, Phi, Llama) tölt le a Hugging Face-ről, és az eszközöd CPU-ján, GPU-ján vagy NPU-ján futtatja őket. Az Ollama és az LM Studio mobilos megfelelője.
+  </Fragment>
+  <Fragment slot="who">
+    Bárkinek, aki a telefonján nyúl a ChatGPT-hez személyes kérdésekkel, és nem akarja azokat átadni egy amerikai szervernek.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a <b>PocketPal</b>-t az App Store-ból vagy a Google Play-ből (vagy fordítsd le forráskódból).
+    </li>
+    <li>
+      Nyisd meg a <b>Modelleket (Models)</b>, válassz egyet, amelyik illeszkedik a telefonodhoz, és töltsd le.
+    </li>
+    <li>Töltsd be és csevegj: minden offline fut, az eszközön.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-cloudai">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Adatvédelem-tudatos felhő</span>
+  </Fragment>
+  <Fragment slot="what">
+    Felhőalapú AI-hozzáférés, de az adatvédelem jegyében építve, arra az esetre, amikor egy helyi AI nem lehetséges.
+  </Fragment>
+  <Fragment slot="why">
+    A <b>Duck.ai</b> (DuckDuckGo) anonimizált hozzáférést biztosít több modellhez. A <b>Lumo</b> (Proton) titkosítja a váltott üzeneteket, és nem tanítja rajtuk a modellt. Sokkal jobb, mint a fogyasztói ChatGPT, de ez még mindig egy távoli szerver.
+  </Fragment>
+  <Fragment slot="who">
+    Azoknak, akik a felhő kényelmét akarják anélkül, hogy a gigacégeket etetnék. A nem érzékeny témákat tartsd meg itt.
+  </Fragment>
+</ToolCard>
+
+<div class="box honest">
+  <span class="lab">Az egyszerű szabály</span>
+  <p>
+    Soha ne illessz be olyasmit egy felhőalapú AI-ba, amit nem mondanál el egy idegennek, aki mindent rögzít: személyazonosság, egészségügy, jelszavak, munkahelyi titkok, vallomások. Bármilyen érzékeny dologhoz használj helyi AI-t.
+  </p>
+</div>

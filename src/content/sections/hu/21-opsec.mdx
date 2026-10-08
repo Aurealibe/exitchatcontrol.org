@@ -1,0 +1,34 @@
+---
+id: 'opsec'
+part: 13
+order: 21
+title: 'Anonimitás és OPSEC'
+---
+
+<p class="part-num">
+  <span>20.</span> RÉSZ · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Anonimitás és OPSEC (Műveleti Biztonság)
+
+Az álnéves fiókoknak és a kiszivárogtatóknak. Itt már nem csupán egy üzenetet védesz: egy **személyazonosságot** védesz.
+
+#### Álnév (pszeudonimitás) kontra anonimitás
+
+Az aranyszabály: **soha ne keresztezd a valódi személyazonosságodat a nyilvánossal**. Ne legyen ugyanaz az e-mail, telefonszám, eszköz, hálózat, posztolási idő vagy írási stílus. Egyetlen adatszivárgás is összeköti a kettőt.
+
+- **Személyazonosság nélküli fiókok**: A SimpleX és a Session nem igényel telefonszámot; párosítsd őket eldobható e-mail álnevekkel. Óvakodj az újraértékesített, nyomon követhető „virtuális számoktól”.
+- **Tiszta metaadatok**: egy posztolt fénykép gyakran hordozza a dátumot, az eszköz modelljét és néha a GPS-koordinátákat (EXIF-adatok). Távolítsd el ezeket a _Metadata Cleaner_, a _mat2_ vagy az _ExifTool_ segítségével posztolás előtt; figyelj a fájlnevekre és a dokumentumok metaadataira is.
+- **Hálózati összekapcsolás elleni védelem (anti-correlation)**: használd a Tor/Tails rendszereket, hogy leválaszd a tevékenységedet az otthoni IP-címedről. Soha ne keverd a személyes és az álnéves hálózataidat. Egy nevedre szóló SIM-kártya elárulja a helyzetedet, függetlenül attól, hogy mit csinálsz máskülönben.
+- **Elkülönítés (Kompartmentalizáció)**: egy eszköz, vagy legalább egy profil, amelyet a nyilvános identitásnak szentelsz, egy külön jelszókezelő, és soha semmilyen keresztbejelentkezés a két világ között.
+
+#### Dokumentumok átadása forrásként
+
+A **SecureDrop** az az anonim beküldési rendszer, amelyet sok szerkesztőség használ a forrásokból származó dokumentumok fogadására. Számos médium tesz közzé PGP-kulcsot és Signal-elérhetőséget is. Soha ne küldj be semmit a munkahelyi hardvereden vagy a megszokott hálózatodon keresztül.
+
+<div class="box honest">
+  <span class="lab">Őszinteség: ne értékeld túl magad</span>
+  <p>
+    Az erős anonimitás fenntartása egy állami ellenféllel szemben <strong>nehéz és esendő</strong>. Ez az útmutató iránymutatást ad, nem garanciákat. Ha életek múlnak rajta, képezd magad a leghitelesebb forrásokból: <em>EFF Surveillance Self-Defense</em>, <em>Freedom of the Press Foundation</em>, <em>Privacy Guides</em>. Szigorúan védekező (defenzív) és újságírói kontextus.
+  </p>
+</div>

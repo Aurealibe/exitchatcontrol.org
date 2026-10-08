@@ -1,0 +1,167 @@
+---
+id: 'vpn'
+part: 4
+order: 7
+title: 'VPN: az igazság'
+---
+
+<p class="part-num">
+  <span>06.</span> RÉSZ · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## VPN: az igazság
+
+A VPN hasznos dolog, de rengeteg hazugsággal adják el. Íme, hogy mit is véd valójában.
+
+<div class="box warn">
+  <span class="lab">Mit NEM csinál egy VPN</span>
+  <p>
+    Egy VPN <strong>nem véd meg téged a Chat Control kliensoldali szkennelésétől</strong>: az ugyanis a
+    készülékeden olvassa el az üzeneteidet, még a titkosítás, és így a VPN előtt. Ugyancsak nem egy
+    láthatatlanná tévő köpeny: az operációs rendszered és az alkalmazásaid többet látnak, mint a VPN-szolgáltatód.
+  </p>
+</div>
+
+<div class="box ok">
+  <span class="lab">Mit csinál jól egy VPN</span>
+  <p>
+    Elrejti a tevékenységedet az <strong>internetszolgáltatód (ISP)</strong> elől, és elmaszkolja az <strong>IP-címedet</strong>{' '}
+    (és ezáltal a tartózkodási helyedet) a meglátogatott weboldalak elől. Hasznos a hálózati megfigyelés, a földrajzi helymeghatározás
+    és a cenzúra ellen. A kirakós egy darabja, nem maga a megoldás.
+  </p>
+</div>
+
+<ToolCard tool="t-mullvad">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡🔴 Minden szint</span>
+    <span class="tool-tag">Nincs fiók · készpénz/Monero</span>
+    <span class="tool-tag">🇸🇪 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy VPN, amely elmaszkolja az IP-címedet és titkosítja a forgalmadat egészen a szervereiig, anélkül, hogy valaha is
+    kérne tőled egyetlen személyes adatot is.
+  </Fragment>
+  <Fragment slot="why">
+    Ez az adatvédelem aranystandardja. Nincs e-mail cím, nincs név: a regisztrációnál kapsz egy sima fiókszámot. 
+    Auditált naplózásmentes (no-log) szabályzat, egyetlen, tisztességes ár (5 euró/hó, nincsenek szintek, nincsenek hamis
+    ígéretek), és fizetés készpénzzel vagy Moneróval. Pontosan ez számít azon a napon, amikor egy állam megpróbálja
+    elvágni a VPN-hozzáférést: egy fiók, amely nem köthető a személyazonosságodhoz, és egy fizetés, amelyet a bankok nem tudnak
+    blokkolni.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenki számára, a polgártól, aki megkerüli az igazolvány-ellenőrzést, a magas kockázatú profilokig. Ezt a VPN-t
+    érdemes elsőként ajánlani.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Menj a <b>mullvad.net</b> oldalra. Ha az oldal blokkolva van az országodban, nyisd meg a Tor
+      Böngészővel vagy az <b>.onion</b> címén. Kattints a „Generate account number” (Fiókszám generálása) gombra: se e-mail, se név nem
+      kell. Mentsd el ezt a számot a jelszókezelődbe, és soha ne oszd meg senkivel, ez az egyetlen hozzáférési kulcsod.
+    </li>
+    <li>
+      Válaszd ki az időtartamot és a fizetési módot. Az ár fix. Három útvonal: bankkártya (a legegyszerűbb,
+      ha nincs blokkolva), postán küldött készpénz, vagy kriptovaluta.
+    </li>
+    <li>
+      <b>Anonim kriptós fizetés:</b> kattints a „Create a one-time payment address” (Egyszeri fizetési cím létrehozása) gombra. A Mullvad mutat egy
+      címet (Bitcoin vagy Monero) és egy pontos összeget. Küldd el ezt az összeget a tárcádból. A maximális
+      anonimitáshoz részesítsd előnyben a <b>Monerót</b> (alapértelmezetten privát); a Bitcoin egyszerűbb, de
+      nyomon követhető. A kriptovaluta vásárlásához lásd a 09. szakaszt. Hagyj kb. 30 percet a megerősítésre.
+    </li>
+    <li>
+      Töltsd le az alkalmazást a <b>mullvad.net/download</b> oldalról (a Toron keresztül, ha az oldal szűrve van) és
+      telepítsd fel. Mobilon használd az App Store-t, a Google Play-t, vagy a hivatalos APK-t, ha az alkalmazást
+      levették a helyi áruházból.
+    </li>
+    <li>
+      Indítsd el az alkalmazást, írd be a fiókszámodat, majd csatlakozz egy, az <b>országodon kívüli</b> szerverhez,
+      ideálisan az EU-n kívülre (Svájc, USA...). Engedélyezd a „kill switch” funkciót (ami megszakítja az internetet,
+      ha a VPN megszakad) és a Mullvad DNS-ét.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-protonvpn">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Tisztességes ingyenes csomag</span>
+    <span class="tool-tag">🇨🇭 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    A VPN a Proton ökoszisztémából, valódi ingyenes csomaggal (ez ritka és tisztességes).
+  </Fragment>
+  <Fragment slot="why">
+    Svájci székhelyű, auditált, nyílt forráskódú. Ingyenes csomagja mentes a reklámoktól, az adateladásoktól és nem tartalmaz adatkorlátot
+    (csak az országok száma korlátozott). Ideális belépő szint (on-ramp) a kezdőknek, különösen,
+    ha már használod a Proton Mailt.
+  </Fragment>
+  <Fragment slot="who">
+    Kezdőknek, és bárkinek a Proton ökoszisztémán belül, aki egyetlen fiókot szeretne mindenhez.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Menj a <b>protonvpn.com</b> oldalra, és jelentkezz be a Proton fiókoddal (vagy hozz létre egyet).
+    </li>
+    <li>Telepítsd az alkalmazást (Windows, macOS, Linux, Android, iOS).</li>
+    <li>
+      Használd a „Gyors csatlakozást” (Quick Connect), vagy válassz egy országot, majd kapcsold be a kill switch-et és a NetShieldet (reklám- és nyomkövető-blokkoló).
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-ivpn">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Közép. / Haladó</span>
+    <span class="tool-tag">Nincs e-mail · naplózásmentes</span>
+    <span class="tool-tag">🇬🇮 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy kicsi, különösen szigorú és átlátható VPN szolgáltató, ugyanazon a modellen, mint a Mullvad.
+  </Fragment>
+  <Fragment slot="why">
+    Auditált naplózásmentes (no-log) irányelv, nincs kötelező e-mail cím, fizetés kriptóban vagy készpénzzel. Ráadásul kínál
+    nyomonkövetés-elleni opciókat (hálózati szintű nyomkövető-blokkolás) és a regisztrációhoz semmilyen azonosítóra nincs szükség.
+  </Fragment>
+  <Fragment slot="who">
+    Szolid alternatíva a Mullvad mellett az álnéves és magas kockázatú profiloknak, akik diverzifikálni szeretnének.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Az <b>ivpn.net</b> oldalon generálj egy fiókot (egy azonosítót/ID-t generálnak neked, e-mail cím nem kell).
+    </li>
+    <li>Fizess kriptóval vagy készpénzzel, akárcsak a Mullvadnál.</li>
+    <li>
+      Telepítsd az alkalmazást, csatlakozz az EU-n kívülre, engedélyezd a kill switch-et és a WireGuard protokollt.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tailscale">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Privát hozzáférés a szerveredhez</span>
+    <span class="tool-tag">🌍 · nyílt forráskódú</span>
+  </Fragment>
+  <Fragment slot="what">
+    Egy privát titkosított hálózat, amely összeköti az eszközeidet a szerverreddel, anélkül, hogy valaha is
+    kitenéd azt a nyilvános internetre.
+  </Fragment>
+  <Fragment slot="why">
+    Portok megnyitása (és a támadások elszenvedése) helyett a <b>Tailscale</b> felépít egy WireGuard alagutat
+    kizárólag az engedélyezett eszközeid között: a szerverednek nincs nyilvános támadási felülete. A <b>Headscale</b>{' '}
+    a saját szerveren futtatható (self-hosted) változat, így nem függsz harmadik féltől. Önmagában a <b>WireGuard</b> is{' '}
+    teljes irányítást biztosít, de manuális beállítást igényel.
+  </Fragment>
+  <Fragment slot="who">
+    Minden self-hoster számára. Ez a biztonságos módja annak, hogy elérd a Nextcloudodat vagy a fotóidat kívülről.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Telepítsd a Tailscale-t a szerveredre és a telefonodra/számítógépedre, majd csatlakoztasd őket ugyanahhoz a fiókhoz.
+    </li>
+    <li>
+      Az eszközeid azonnal látják egymást egy privát hálózaton; a szerveredet a Tailscale címén tudod elérni.
+    </li>
+    <li>A zéró függőség (zero dependency) érdekében cseréld le a koordinációs szervert egy saját üzemeltetésű (self-hosted) Headscale-re.</li>
+  </ol>
+</ToolCard>
