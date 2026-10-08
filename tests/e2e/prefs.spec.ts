@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test'
+import { checklistPath } from './helpers'
 
 test.skip(({ javaScriptEnabled }) => javaScriptEnabled === false, 'prefs need JS')
 
@@ -32,7 +33,7 @@ test('explicit language choice is remembered on the root', async ({ page }) => {
 })
 
 test('checklist state survives a reload (when present)', async ({ page }) => {
-  await page.goto('/')
+  await page.goto(checklistPath)
   const box = page.locator('[data-checklist] input[type="checkbox"]').first()
   test.skip((await box.count()) === 0, 'checklist not yet wired')
   await box.check()

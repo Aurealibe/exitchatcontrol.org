@@ -59,8 +59,8 @@ const sitename = 'Exit Chat Control'
 let page: GuidePage | undefined
 let tool: GuideTool | undefined
 let siblings: GuideTool[] = []
+const tools = props.kind === 'full' ? new Map<string, GuideTool>() : await loadTools(locale)
 if (props.kind !== 'full') {
-  const tools = await loadTools(locale)
   if (props.kind === 'tool') {
     tool = tools.get(props.id)!
     page = pages.find((p) => p.id === tool!.tool.section)!
@@ -93,7 +93,11 @@ if (props.kind === 'full') {
   description = t('site.description')
   hrefs = allLocales((l) => pageHref(l, 'full'))
 } else if (tool) {
-  title = t('seo.toolTitle').replace('{name}', tool.name)
+  // Two cards can share a name (Nextcloud in storage and in self-hosting):
+  // the section then tells their pages apart.
+  const homonyms = [...tools.values()].filter((x) => x.name === tool!.name).length > 1
+  const name = homonyms ? `${tool.name} (${page!.title})` : tool.name
+  title = t('seo.toolTitle').replace('{name}', name)
   description = snippet(tool.what)
   hrefs = allLocales((l) => toolHref(l, tool!.tool.id))
   breadcrumbs = [

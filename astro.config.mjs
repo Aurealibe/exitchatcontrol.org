@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
+import { URL } from 'node:url'
 import tailwindcss from '@tailwindcss/vite'
 import { defaultLocale, locales } from './src/i18n/locales'
 import { fullGuidePaths, sitemapAlternates } from './src/lib/alternates'

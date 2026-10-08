@@ -168,7 +168,7 @@ const jsonLd = JSON.stringify([
               .find((l) => LANGS.includes(l))
             if (nav && nav !== 'en') target = nav
           }
-          if (target) location.replace('/' + target + '/')
+          if (target) location.replace('/' + target + '/' + location.hash)
         }
       })()
     </script>

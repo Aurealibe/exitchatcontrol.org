@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/build-offline.mjs && node scripts/gen-csp.mjs",
+    "build": "astro build && node scripts/build-offline.mjs && node scripts/gen-csp.mjs && node scripts/build-id.mjs",
     "preview": "astro preview",
     "check": "astro check",
     "lint": "eslint . --max-warnings 0",

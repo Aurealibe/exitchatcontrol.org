@@ -1,0 +1,32 @@
+# IndexNow ping after each production deploy: waits until the live site
+# serves this commit (Vercel deploys from main on its own), then submits the
+# live sitemap's URLs to Bing, Yandex, Seznam, Naver… (scripts/indexnow.mjs).
+# Only runner-provided values are interpolated (GITHUB_SHA).
+name: indexnow
+
+on:
+  push:
+    branches: [main]
+    paths: ['src/**', 'public/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: true
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: 22
+
+      - name: Submit URLs once the deploy is live
+        run: node scripts/indexnow.mjs --wait "$GITHUB_SHA"

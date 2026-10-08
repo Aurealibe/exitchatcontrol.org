@@ -1,9 +1,9 @@
 import { expect, test } from '@playwright/test'
-import { localePaths } from './helpers'
+import { localePaths, samplePages } from './helpers'
 
 // The site's core promise, enforced: not a single request leaves for a
 // third-party host. Fonts, icons, styles, scripts — everything same-origin.
-for (const path of localePaths) {
+for (const path of [...localePaths, ...samplePages]) {
   test(`zero third-party requests on ${path}`, async ({ page, baseURL }) => {
     const origin = new URL(baseURL!).origin
     const offenders: string[] = []
