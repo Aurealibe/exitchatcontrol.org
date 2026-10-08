@@ -221,5 +221,13 @@
   "radicle": {
     "body": "Peer-to-peer platforma pro kód, bez centrálního serveru."
   },
-  "_machineTranslated": "2026-07-10"
+  "_machineTranslated": "2026-07-10",
+  "technitium-dns": { "body": "Vlastní DNS server s blokováním reklam a šifrovaným DNS." },
+  "unbound": {
+    "body": "Vlastní rekurzivní resolver bez cizího poskytovatele DNS. Doplňuje Pi-hole."
+  },
+  "jellyfin": { "body": "Vlastní mediální server pro filmy, seriály a hudbu, které vlastníte." },
+  "magic-wormhole": {
+    "body": "Pošlete soubor s koncovým šifrováním pomocí krátkého jednorázového kódu (příkazový řádek)."
+  }
 }

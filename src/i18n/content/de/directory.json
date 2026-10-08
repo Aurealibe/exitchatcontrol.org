@@ -212,5 +212,15 @@
   "meshtastic": { "body": "Netzunabhängige LoRa-Funknachrichten über kleine eigene Geräte." },
   "veracrypt": { "body": "Lokale Verschlüsselung von Laufwerken, Partitionen und Containern." },
   "forgejo": { "body": "Selbst hostbare freie Git-Forge; Codeberg ist die gemeinnützige Instanz." },
-  "radicle": { "body": "Peer-to-Peer-Code-Forge ohne zentralen Server." }
+  "radicle": { "body": "Peer-to-Peer-Code-Forge ohne zentralen Server." },
+  "technitium-dns": {
+    "body": "Selbst gehosteter DNS-Server mit Werbeblocker und verschlüsseltem DNS."
+  },
+  "unbound": {
+    "body": "Dein eigener rekursiver Resolver, ohne fremden DNS-Anbieter. Passt zu Pi-hole."
+  },
+  "jellyfin": { "body": "Dein eigener Medienserver für Filme, Serien und Musik, die dir gehören." },
+  "magic-wormhole": {
+    "body": "Eine Datei Ende-zu-Ende-verschlüsselt mit einem kurzen Einmalcode senden (Kommandozeile)."
+  }
 }

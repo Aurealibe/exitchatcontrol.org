@@ -220,5 +220,15 @@
   },
   "radicle": {
     "body": "Forja de código entre pares (P2P), sin servidor central."
+  },
+  "technitium-dns": { "body": "Servidor DNS autoalojado, con bloqueo de anuncios y DNS cifrado." },
+  "unbound": {
+    "body": "Tu propio resolvedor recursivo, sin proveedor DNS externo. Se combina con Pi-hole."
+  },
+  "jellyfin": {
+    "body": "Tu propio servidor multimedia para las películas, series y música que posees."
+  },
+  "magic-wormhole": {
+    "body": "Enviar un archivo cifrado de extremo a extremo con un código corto de un solo uso (línea de comandos)."
   }
 }

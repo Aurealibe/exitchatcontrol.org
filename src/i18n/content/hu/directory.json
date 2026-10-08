@@ -221,5 +221,17 @@
   },
   "radicle": {
     "body": "Peer-to-peer kódplatform, központi szerver nélkül."
+  },
+  "technitium-dns": {
+    "body": "Saját üzemeltetésű DNS-szerver reklámszűréssel és titkosított DNS-sel."
+  },
+  "unbound": {
+    "body": "Saját rekurzív feloldó, külső DNS-szolgáltató nélkül. Pi-hole-lal együtt használható."
+  },
+  "jellyfin": {
+    "body": "Saját médiaszerver a tulajdonodban lévő filmekhez, sorozatokhoz és zenékhez."
+  },
+  "magic-wormhole": {
+    "body": "Fájlküldés végponttól végpontig titkosítva, rövid egyszeri kóddal (parancssor)."
   }
 }

@@ -212,6 +212,20 @@
     "iconSlug": "adguard"
   },
   {
+    "id": "technitium-dns",
+    "category": "dns",
+    "name": "Technitium DNS Server",
+    "url": "https://technitium.com/dns/",
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "unbound",
+    "category": "dns",
+    "name": "Unbound",
+    "url": "https://nlnetlabs.nl/projects/unbound/about/",
+    "license": "BSD-3-Clause"
+  },
+  {
     "id": "bitwarden",
     "category": "mots-de-passe",
     "name": "Bitwarden",
@@ -522,6 +536,14 @@
     "iconSlug": "radicle"
   },
   {
+    "id": "jellyfin",
+    "category": "selfhost",
+    "name": "Jellyfin",
+    "url": "https://jellyfin.org",
+    "license": "GPL-2.0",
+    "iconSlug": "jellyfin"
+  },
+  {
     "id": "bitcoin-core",
     "category": "finance",
     "name": "Bitcoin Core",
@@ -571,5 +593,12 @@
     "name": "ExifTool",
     "url": "https://exiftool.org",
     "license": "Artistic/GPL"
+  },
+  {
+    "id": "magic-wormhole",
+    "category": "opsec",
+    "name": "Magic Wormhole",
+    "url": "https://magic-wormhole.readthedocs.io",
+    "license": "MIT"
   }
 ]

@@ -74,5 +74,13 @@
   "meshtastic": { "body": "Off-grid LoRa radio messaging on small dedicated devices." },
   "veracrypt": { "body": "Local encryption of disks, partitions and containers." },
   "forgejo": { "body": "Self-hostable free Git forge; Codeberg is its non-profit instance." },
-  "radicle": { "body": "Peer-to-peer code forge, no central server." }
+  "radicle": { "body": "Peer-to-peer code forge, no central server." },
+  "technitium-dns": { "body": "Self-hosted DNS server with ad blocking and encrypted DNS." },
+  "unbound": {
+    "body": "Your own recursive resolver: no third-party DNS provider. Pairs with Pi-hole."
+  },
+  "jellyfin": { "body": "Your own media server for films, series and music you own." },
+  "magic-wormhole": {
+    "body": "Send a file end-to-end encrypted with a short one-time code (command line)."
+  }
 }

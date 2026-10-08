@@ -215,5 +215,15 @@
   "forgejo": {
     "body": "Zelf te hosten vrije Git-forge; Codeberg is de instantie van een vereniging zonder winstoogmerk."
   },
-  "radicle": { "body": "Peer-to-peer code-forge, zonder centrale server." }
+  "radicle": { "body": "Peer-to-peer code-forge, zonder centrale server." },
+  "technitium-dns": {
+    "body": "Zelf gehoste DNS-server met advertentieblokkering en versleutelde DNS."
+  },
+  "unbound": {
+    "body": "Uw eigen recursieve resolver, zonder externe DNS-aanbieder. Combineert met Pi-hole."
+  },
+  "jellyfin": { "body": "Uw eigen mediaserver voor films, series en muziek die u bezit." },
+  "magic-wormhole": {
+    "body": "Stuur een bestand end-to-end versleuteld met een korte eenmalige code (opdrachtregel)."
+  }
 }

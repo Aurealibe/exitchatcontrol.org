@@ -80,5 +80,15 @@
   "forgejo": {
     "body": "Forge Git libre auto-hébergeable ; Codeberg en est l'instance associative."
   },
-  "radicle": { "body": "Forge de code pair-à-pair, sans serveur central." }
+  "radicle": { "body": "Forge de code pair-à-pair, sans serveur central." },
+  "technitium-dns": { "body": "Serveur DNS auto-hébergé, avec blocage des pubs et DNS chiffré." },
+  "unbound": {
+    "body": "Votre propre résolveur récursif, sans fournisseur DNS tiers. Se couple à Pi-hole."
+  },
+  "jellyfin": {
+    "body": "Votre serveur multimédia pour les films, séries et musiques que vous possédez."
+  },
+  "magic-wormhole": {
+    "body": "Envoyer un fichier chiffré de bout en bout avec un code court à usage unique (ligne de commande)."
+  }
 }
