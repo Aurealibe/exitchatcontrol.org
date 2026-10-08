@@ -1,0 +1,303 @@
+{
+  "questions": {
+    "messaging": {
+      "label": "Zprávy",
+      "prompt": "Jak nejčastěji komunikujete s přáteli a rodinou?",
+      "rec": "Přesuňte citlivé konverzace na Signal, SimpleX nebo Session.",
+      "options": {
+        "o0": {
+          "label": "WhatsApp / Messenger / SMS",
+          "hint": "Metadata a centralizované platformy zůstávají slabým místem."
+        },
+        "o1": {
+          "label": "Telegram pro většinu konverzací",
+          "hint": "Lepší než velké platformy, ale soukromí je stále omezené."
+        },
+        "o2": {
+          "label": "Signal nebo Molly pro většinu chatů",
+          "hint": "Už jde o solidní základ pro odolnost vůči cenzuře."
+        },
+        "o3": {
+          "label": "SimpleX / Session / Matrix pro citlivé použití",
+          "hint": "Menší závislost na telefonním čísle a centrální platformě."
+        }
+      }
+    },
+    "email": {
+      "label": "E-mail",
+      "prompt": "Kterou službu používáte nejčastěji pro e-mail?",
+      "rec": "Používejte Proton Mail nebo Tuta a pro důležité kontakty přidejte PGP.",
+      "options": {
+        "o0": {
+          "label": "Gmail / Outlook / iCloud Mail",
+          "hint": "Ukládání dat a přístup k obsahu zůstávají silně centralizované."
+        },
+        "o1": {
+          "label": "Proton Mail nebo Tuta pro každodenní použití",
+          "hint": "Už jde o silnější možnost z hlediska soukromí."
+        },
+        "o2": {
+          "label": "Proton / Tuta + PGP pro některé kontakty",
+          "hint": "Dobrá úroveň odolnosti, pokud to používáte důsledně."
+        },
+        "o3": {
+          "label": "Pravidelné používání PGP / OpenPGP s pečlivým přístupem k metadatům",
+          "hint": "Mnohem robustnější přístup."
+        }
+      }
+    },
+    "browser": {
+      "label": "Prohlížeč a vyhledávání",
+      "prompt": "Který prohlížeč a vyhledávač používáte nejčastěji?",
+      "rec": "Nahraďte Chrome + Google prohlížečem a vyhledávačem respektujícím soukromí.",
+      "options": {
+        "o0": {
+          "label": "Chrome + Google",
+          "hint": "Pohodlné, ale snadno sledovatelné."
+        },
+        "o1": {
+          "label": "Firefox nebo Brave se soukromým vyhledávačem",
+          "hint": "Skutečný krok vpřed pro soukromí."
+        },
+        "o2": {
+          "label": "Brave / Firefox + DuckDuckGo / Startpage / SearXNG",
+          "hint": "Už jde o solidní základ pro každodenní použití."
+        },
+        "o3": {
+          "label": "Mullvad Browser / LibreWolf / Tor Browser podle kontextu",
+          "hint": "Silnější přístup proti sledování."
+        }
+      }
+    },
+    "dns": {
+      "label": "DNS",
+      "prompt": "Jak překládáte názvy domén?",
+      "rec": "Přejděte na šifrované DNS s minimalistickým resolverem zaměřeným na soukromí.",
+      "options": {
+        "o0": {
+          "label": "DNS vašeho poskytovatele internetu nebo routeru",
+          "hint": "Nejsnazší možnost, ale často nejméně soukromá."
+        },
+        "o1": {
+          "label": "Šifrované DNS od běžného poskytovatele",
+          "hint": "Dobrý první krok."
+        },
+        "o2": {
+          "label": "Quad9 / Mullvad DNS / NextDNS",
+          "hint": "Skutečné zlepšení, pokud chcete omezit sledovatelnost."
+        },
+        "o3": {
+          "label": "Šifrované DNS spolu s promyšlenou strategií proti sledování",
+          "hint": "Promyšlenější a robustnější přístup."
+        }
+      }
+    },
+    "vpn": {
+      "label": "VPN",
+      "prompt": "Jaký druh VPN používáte?",
+      "rec": "Používejte důvěryhodnou VPN bez záznamů, jako je Mullvad, Proton VPN nebo IVPN.",
+      "options": {
+        "o0": {
+          "label": "Žádná VPN",
+          "hint": "Nejvíce vystavená varianta z hlediska sledovatelnosti v síti."
+        },
+        "o1": {
+          "label": "Bezplatná nebo pochybná VPN",
+          "hint": "Pokud poskytovatel není transparentní, může být horší než žádná."
+        },
+        "o2": {
+          "label": "Důvěryhodná VPN bez záznamů s jasnými zásadami",
+          "hint": "Skutečné zlepšení soukromí."
+        },
+        "o3": {
+          "label": "Mullvad / Proton VPN / IVPN pro pravidelné použití",
+          "hint": "Vážnější a ucelenější přístup."
+        }
+      }
+    },
+    "passwords": {
+      "label": "Hesla",
+      "prompt": "Jak spravujete svá hesla?",
+      "rec": "Začněte používat správce hesel s jedinečnými dlouhými hesly všude.",
+      "options": {
+        "o0": {
+          "label": "Opakovaně používaná hesla nebo hesla uložená v prohlížeči",
+          "hint": "Vysoké riziko při úniku dat nebo napadení účtu."
+        },
+        "o1": {
+          "label": "Základní správce hesel",
+          "hint": "Už velmi dobrý krok vpřed."
+        },
+        "o2": {
+          "label": "Bitwarden / KeePassXC / Proton Pass",
+          "hint": "Zdravý přístup, který se snadno udržuje."
+        },
+        "o3": {
+          "label": "Správce hesel + jedinečná dlouhá hesla",
+          "hint": "Nejrobustnější způsob, jak omezit škody při úniku dat."
+        }
+      }
+    },
+    "twofa": {
+      "label": "Dvoufaktorové ověřování",
+      "prompt": "Jakou úroveň dvoufaktorového ověřování používáte?",
+      "rec": "Přejděte u 2FA na autentizační aplikaci nebo ještě lépe na hardwarový klíč.",
+      "options": {
+        "o0": {
+          "label": "Žádné 2FA",
+          "hint": "Nejslabší úroveň ochrany účtu."
+        },
+        "o1": {
+          "label": "SMS nebo telefonní hovor",
+          "hint": "Lepší než nic, ale velmi křehké."
+        },
+        "o2": {
+          "label": "TOTP v aplikaci (Aegis / Ente Auth)",
+          "hint": "Dobrá každodenní vrstva ochrany."
+        },
+        "o3": {
+          "label": "Hardwarový klíč nebo 2FA odolné vůči phishingu",
+          "hint": "Nejsilnější praktická úroveň odolnosti."
+        }
+      }
+    },
+    "storage": {
+      "label": "Úložiště",
+      "prompt": "Kam ukládáte citlivé soubory?",
+      "rec": "Přesuňte citlivé soubory na Proton Drive, Cryptomator nebo šifrované lokální úložiště.",
+      "options": {
+        "o0": {
+          "label": "Google Drive / iCloud / OneDrive",
+          "hint": "Velmi pohodlné, ale centralizované."
+        },
+        "o1": {
+          "label": "Proton Drive nebo základní služba šifrovaného úložiště",
+          "hint": "Skutečné zlepšení."
+        },
+        "o2": {
+          "label": "Cryptomator nebo lokální šifrované úložiště",
+          "hint": "Robustnější přístup."
+        },
+        "o3": {
+          "label": "Lokální úložiště + vlastní hosting / pokročilé šifrování",
+          "hint": "Nejvážnější úroveň pro digitální suverenitu."
+        }
+      }
+    },
+    "social": {
+      "label": "Sociální sítě",
+      "prompt": "Kde trávíte většinu svého společenského života online?",
+      "rec": "Založte svou přítomnost na decentralizovaných sítích a snižte závislost na platformách.",
+      "options": {
+        "o0": {
+          "label": "Pouze Meta / X / velké platformy",
+          "hint": "Nejjednodušší, ale nejvíce vystavené tlaku."
+        },
+        "o1": {
+          "label": "Mastodon / Matrix / Nostr příležitostně",
+          "hint": "Užitečná diverzifikace."
+        },
+        "o2": {
+          "label": "Kombinace decentralizovaných sítí a přímého kontaktu",
+          "hint": "Nezávislejší přístup."
+        },
+        "o3": {
+          "label": "Alternativní sítě a malá závislost na platformách",
+          "hint": "To je skutečná logika odolnosti."
+        }
+      }
+    },
+    "os": {
+      "label": "Operační systém",
+      "prompt": "Jaký operační systém používáte nejčastěji?",
+      "rec": "Přejděte postupně na GrapheneOS v mobilu a Linux na desktopu.",
+      "options": {
+        "o0": {
+          "label": "Běžný Android / iOS / Windows",
+          "hint": "Velmi pohodlné, ale mnohem méně respektující soukromí."
+        },
+        "o1": {
+          "label": "Soukromější Android / Linux / macOS",
+          "hint": "Už jde o dobré zlepšení."
+        },
+        "o2": {
+          "label": "GrapheneOS / Linux / BSD",
+          "hint": "Silnější základ."
+        },
+        "o3": {
+          "label": "GrapheneOS + Linux + důsledná disciplína při nastavování",
+          "hint": "Už velmi silný přístup."
+        }
+      }
+    },
+    "tor": {
+      "label": "Tor a anonymita",
+      "prompt": "Nakolik používáte Tor / Tails / nástroje pro anonymitu?",
+      "rec": "Vytvořte si návyk používat Tor (a v případě potřeby Tails) pro nejcitlivější úkoly.",
+      "options": {
+        "o0": {
+          "label": "Téměř nikdy",
+          "hint": "Pokud by hrozba někdy začala být vážná, jste velmi vystaveni."
+        },
+        "o1": {
+          "label": "Příležitostně, bez velké disciplíny",
+          "hint": "První krok, ale stále křehký."
+        },
+        "o2": {
+          "label": "Tor pro některé citlivé úkoly",
+          "hint": "Už vážnější přístup."
+        },
+        "o3": {
+          "label": "Tor + Tails s důslednou disciplínou",
+          "hint": "Nejvhodnější úroveň pro kontext vysokého ohrožení."
+        }
+      }
+    },
+    "money": {
+      "label": "Peníze",
+      "prompt": "Jak nakládáte se svými digitálními penězi?",
+      "rec": "Přidejte platební možnosti zohledňující soukromí a tam, kde to jde, oddělujte identity.",
+      "options": {
+        "o0": {
+          "label": "Pouze bankovní karty a standardní účty",
+          "hint": "Sledovatelnost je vysoká."
+        },
+        "o1": {
+          "label": "Některé platební nástroje více zohledňující soukromí",
+          "hint": "První snaha o oddělení."
+        },
+        "o2": {
+          "label": "Kombinace soukromých účtů a omezeného používání kryptoměn",
+          "hint": "Už promyšlenější přístup."
+        },
+        "o3": {
+          "label": "Silnější postupy pro finanční suverenitu",
+          "hint": "Mnohem vážnější přístup."
+        }
+      }
+    }
+  },
+  "bands": {
+    "exposed": {
+      "title": "Vystavení",
+      "summary": "Vaše nastavení je stále silně vázáno na velké platformy. První kroky jsou jednoduché a mají velký dopad."
+    },
+    "awakening": {
+      "title": "Procitnutí",
+      "summary": "Začali jste diverzifikovat své nástroje. Několik promyšlených změn by mohlo přinést skutečný rozdíl."
+    },
+    "resistant": {
+      "title": "Odolní",
+      "summary": "Vaše nastavení je už seriózní. Máte solidní základ odolnosti vůči cenzuře a sledování."
+    },
+    "hardened": {
+      "title": "Zpevnění",
+      "summary": "Používáte zpevněnou sestavu se silným základem pseudonymity. Dalším zaměřením je disciplína a oddělování činností."
+    },
+    "sovereign": {
+      "title": "Suverénní",
+      "summary": "Váš přístup je už velmi silný. Blížíte se vysoké digitální suverenitě, která vyžaduje náročná technická rozhodnutí."
+    }
+  },
+  "_machineTranslated": "2026-07-10"
+}

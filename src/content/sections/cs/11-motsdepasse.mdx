@@ -1,0 +1,88 @@
+---
+id: 'motsdepasse'
+part: 7
+order: 11
+title: 'Správce hesel'
+---
+
+<p class="part-num">
+  ČÁST 10 · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Správce hesel
+
+Jedno silné, jedinečné heslo pro každou službu: základ všeho, co následuje. Zahoďte zápisník, přestaňte používat stejná hesla opakovaně.
+
+<ToolCard tool="t-bitwarden">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Nejlepší pro začátek</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Trezor na hesla, který si vaše hesla pamatuje, vytváří je a vyplňuje za vás na všech vašich
+    zařízeních.
+  </Fragment>
+  <Fragment slot="why">
+    Zdarma, auditovaný, multiplatformní a s koncovým šifrováním. Stačí si pamatovat jediné silné
+    heslo. Dokonce jej můžete <b>provozovat sami</b> (přes Vaultwarden), takže nejste na nikom
+    závislí.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého. Je základem veškerého zabezpečení: jedno silné, jedinečné heslo pro každou službu.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Vytvořte si účet na bitwarden.com a zvolte si <b>dlouhé</b> hlavní heslo (větu). Nikdy ho
+      nezapomeňte: nelze ho obnovit.
+    </li>
+    <li>Nainstalujte rozšíření do prohlížeče a mobilní aplikaci.</li>
+    <li>
+      Při přihlašování nechte Bitwarden uložit vaše stará hesla a poté je nahraďte vygenerovanými.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-keepassxc">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">100% lokální</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    <b>Lokální</b> trezor: šifrovaný soubor, který máte pouze vy, bez cloudu a bez účtu.
+  </Fragment>
+  <Fragment slot="why">
+    Nic neopustí vaše zařízení, pokud se nerozhodnete soubor synchronizovat sami (například přes
+    Cryptomator). Je to volba puristů, zcela bez prostředníka.
+  </Fragment>
+  <Fragment slot="who">
+    Pro pokročilé uživatele, kteří chtějí plnou kontrolu a nulovou závislost na internetu.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte KeePassXC (na počítač) a kompatibilní mobilní aplikaci (KeePassDX na Androidu,
+      Strongbox na iOS).
+    </li>
+    <li>Vytvořte soubor databáze chráněný hlavním heslem.</li>
+    <li>
+      Chcete-li jej mít na všech zařízeních, synchronizujte tento soubor přes šifrovaný cloud.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-protonpass">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">S e-mailovými aliasy</span>
+    <span class="tool-tag">🇨🇭 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Správce hesel z ekosystému Proton s integrovanými jednorázovými e-mailovými aliasy.
+  </Fragment>
+  <Fragment slot="why">
+    Ideální, pokud už Proton používáte: jeden účet pro e-mail, cloud i hesla. Jeho e-mailové aliasy
+    vám ušetří nutnost všude uvádět vaši skutečnou adresu.
+  </Fragment>
+  <Fragment slot="who">Pro ty, kteří chtějí mít s Protonem vše na jednom místě.</Fragment>
+</ToolCard>

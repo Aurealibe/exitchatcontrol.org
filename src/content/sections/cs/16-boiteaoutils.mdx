@@ -1,0 +1,206 @@
+---
+id: 'boiteaoutils'
+part: 9
+order: 16
+title: 'Každodenní sada nástrojů'
+---
+
+<p class="part-num">
+  ČÁST 15 · NAHRAĎTE ZBYTEK · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Každodenní sada nástrojů
+
+Google a Apple nejsou jen e-mail: mapy, poznámky, kalendář, fotky, videohovory – všechno je spojeno s vaší identitou. Zde je návod, jak nahradit každý dílek postupně, aniž byste přišli o pohodlí.
+
+<ToolCard tool="t-maps">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Nahrazuje Google Maps</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Mapové a navigační aplikace postavené na OpenStreetMap, které fungují offline.
+  </Fragment>
+  <Fragment slot="why">
+    Google Maps zaznamenává každou cestu a vytváří mrazivě přesnou historii polohy.{' '}
+    <b>Organic Maps</b> nic nesleduje a nezobrazuje reklamy; <b>OsmAnd</b> je určen pro pokročilé
+    uživatele (turistika, vrstevnice, podrobná navigace).
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého. Aktuální dopravní informace a veřejná doprava jsou méně kompletní než u Googlu, ale
+    pro každodenní navigaci jsou vynikající.
+  </Fragment>
+  <ol slot="install">
+    <li>Nainstalujte z F-Droidu, App Storu nebo Google Play.</li>
+    <li>Předem si stáhněte mapy oblastí, které potřebujete, pro offline použití.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-notes">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Nahrazuje Docs / Notion</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Koncově šifrované poznámky a dokumenty jako náhrada za Google Docs, Notion nebo Evernote.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Standard Notes</b> (od Protonu) ve výchozím nastavení šifruje vaše poznámky. <b>Joplin</b>{' '}
+    pracuje s poznámkovými bloky v Markdownu s volitelným šifrováním a synchronizací podle vaší
+    volby. <b>CryptPad</b> (francouzský) nabízí plně šifrovanou obdobu Google Docs v reálném čase.
+  </Fragment>
+  <Fragment slot="who">Pro každého na poznámky; CryptPad pro spolupráci více lidí.</Fragment>
+  <ol slot="install">
+    <li>
+      Standard Notes / Joplin: vytvořte si účet, nainstalujte aplikaci a zapněte šifrování (ve
+      Standard Notes je ve výchozím nastavení zapnuté, v Joplinu jej musíte zapnout).
+    </li>
+    <li>CryptPad: použijte cryptpad.fr nebo jinou instanci, pro začátek není potřeba účet.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-visio">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">Nahrazuje Zoom / Meet</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Nástroje pro videokonference bez účtu nebo náročné instalace, které nahrazují Zoom, Google Meet
+    nebo Teams.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Jitsi Meet</b> běží v prohlížeči, nevyžaduje účet a lze jej hostovat na vlastním serveru (je
+    také základem Brave Talk). <b>Element Call</b> je koncově šifrovaný a federovaný přes Matrix.
+    Pro jednoduchý, plně šifrovaný hovor poslouží i hovory v <b>Signalu</b>.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého. Na veřejném serveru Jitsi jsou hovory více účastníků šifrované při přenosu; koncové
+    šifrování je volitelné.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Jitsi: přejděte na meet.jit.si, vytvořte název místnosti a sdílejte odkaz. Není třeba nic
+      instalovat.
+    </li>
+    <li>Element Call: z aplikace Element (Matrix) zahajte hovor v místnosti.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-photos">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Nahrazuje Google Photos</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Dva způsoby, jak uchovávat své fotky, aniž byste je předávali Googlu nebo Applu.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Ente</b> je spravovaná služba s koncovým šifrováním, rozpoznáváním a vyhledáváním přímo v
+    zařízení: jednoduchá a bezpečná. <b>Immich</b> je klon Google Photos, který{' '}
+    <b>hostujete sami</b> (včetně vyhledávání obličejů a objektů), pro ty, kdo zvládnou provoz
+    vlastního serveru.
+  </Fragment>
+  <Fragment slot="who">
+    Ente pro každého; Immich pro ty, kdo hostují sami. Poznámka: Immich není koncově šifrovaný, jeho
+    bezpečnost závisí na vašem serveru.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Ente: nainstalujte aplikaci, vytvořte si účet a zapněte automatické zálohování fotek z
+      fotoaparátu.
+    </li>
+    <li>
+      Immich: nasaďte jej na svůj server (viz část 10) pomocí Dockeru a poté připojte mobilní
+      aplikaci.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-alias">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡</span>
+    <span class="tool-tag">E-mailové aliasy</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Jednorázové e-mailové aliasy: jedinečná adresa pro každý web, která přeposílá zprávy do vaší
+    skutečné schránky, aniž by ji kdy odhalila.
+  </Fragment>
+  <Fragment slot="why">
+    Přestanete všude uvádět svou skutečnou adresu. Pokud dojde k úniku dat z webu nebo vám posílá
+    spam, zrušíte tento jediný alias a okamžitě víte, kdo vaše data unikl. <b>SimpleLogin</b> je
+    integrován s Protonem; <b>addy.io</b> nabízí v bezplatném tarifu neomezené množství aliasů.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého, a zejména pro pseudonymní účty, které chtějí oddělit své registrace.
+  </Fragment>
+  <ol slot="install">
+    <li>Vytvořte si účet a nainstalujte rozšíření do prohlížeče.</li>
+    <li>Při každé registraci si místo zadávání skutečné adresy vygenerujte nový alias.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-backups">
+  <Fragment slot="name">Šifrované zálohy</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Cryptomator · restic</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Způsob zálohování telefonu a počítače, který data zašifruje <b>předtím</b>, než odejdou do
+    jakéhokoli cloudu.
+  </Fragment>
+  <Fragment slot="why">
+    Zálohy iCloud/Google jsou často přístupné poskytovateli, a tedy i soudům. <b>Cryptomator</b>{' '}
+    šifruje vaše soubory před jejich odesláním do jakéhokoli cloudu; <b>restic</b> vytváří
+    automatické šifrované zálohy; <b>Proton Drive</b> je koncově šifrovaný. Na iPhonu zapněte
+    „Advanced Data Protection“, abyste zašifrovali své zálohy na iCloudu.
+  </Fragment>
+  <Fragment slot="who">
+    Každý by měl své zálohy šifrovat. Zlaté pravidlo: dvě šifrované kopie, na dvou médiích, na dvou
+    místech.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      iPhone: Nastavení &gt; vaše jméno &gt; iCloud &gt; Advanced Data Protection: zapněte ji.
+    </li>
+    <li>
+      PC: nainstalujte Cryptomator, vytvořte trezor a před synchronizací do cloudu do něj vložte své
+      soubory.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-databrokers">
+  <Fragment slot="name">Vymažte svá data (GDPR)</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡</span>
+    <span class="tool-tag">Datoví zprostředkovatelé</span>
+  </Fragment>
+  <Fragment slot="what">
+    Odstranění vašich osobních údajů od „datových zprostředkovatelů“, kteří je shromažďují a dále
+    prodávají.
+  </Fragment>
+  <Fragment slot="why">
+    V Evropě vám GDPR (článek 17) poskytuje <b>právo na výmaz</b>: můžete bezplatně požadovat, aby
+    společnost vaše údaje smazala, zpravidla do jednoho měsíce. Služby jako <b>Incogni</b> tyto
+    žádosti za poplatek automatizují ve velkém měřítku.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo chtějí snížit svou digitální stopu. Poznámka: data se postupem času znovu objevují a
+    toto se netýká veřejných záznamů ani sociálních sítí. Udělat to svépomocí je zdarma, ale
+    zdlouhavé.
+  </Fragment>
+  <ol slot="install">
+    <li>Pro ruční žádost: napište zprostředkovateli, uveďte článek 17 GDPR a požádejte o výmaz.</li>
+    <li>
+      Pro automatizaci: předplaťte si službu pro odstraňování dat a nechte ji posílat žádosti vaším
+      jménem.
+    </li>
+  </ol>
+</ToolCard>

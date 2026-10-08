@@ -1,0 +1,172 @@
+---
+id: 'vpn'
+part: 4
+order: 7
+title: 'VPN: pravda'
+---
+
+<p class="part-num">
+  ČÁST 06 · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## VPN: pravda
+
+VPN je užitečná, ale prodává se s mnoha lžemi. Zde je, co skutečně chrání.
+
+<div class="box warn">
+  <span class="lab">Co VPN NEDĚLÁ</span>
+  <p>
+    VPN vás <strong>nechrání před skenováním na straně klienta v rámci Chat Control</strong>: to čte
+    vaše zprávy na vašem zařízení, před šifrováním, a tedy před VPN. Není to ani plášť
+    neviditelnosti: váš OS a aplikace vidí více než váš poskytovatel VPN.
+  </p>
+</div>
+
+<div class="box ok">
+  <span class="lab">V čem je VPN dobrá</span>
+  <p>
+    Skryje vaši aktivitu před vaším <strong>ISP</strong> a maskuje vaši <strong>IP adresu</strong>{' '}
+    (a tím i polohu) před weby, které navštěvujete. Je užitečná proti sledování sítě, geolokaci a
+    cenzuře. Je to jeden dílek skládačky, ne řešení.
+  </p>
+</div>
+
+<ToolCard tool="t-mullvad">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢🟡🔴 Všechny úrovně</span>
+    <span class="tool-tag">Bez účtu · hotovost/Monero</span>
+    <span class="tool-tag">🇸🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    VPN, která maskuje vaši IP adresu a šifruje váš provoz až k jejím serverům, aniž by kdy
+    požadovala jediný osobní údaj.
+  </Fragment>
+  <Fragment slot="why">
+    Je to zlatý standard soukromí. Žádný e-mail, žádné jméno: při registraci dostanete prosté číslo
+    účtu. Auditovaná politika bez logování, jediná poctivá cena (5 € měsíčně, žádné úrovně, žádné
+    falešné sliby) a platba v hotovosti nebo Moneru. To je přesně to, na čem záleží v den, kdy se
+    stát pokusí odříznout přístup k VPN: účet, který nelze spojit s vaší identitou, a platba, kterou
+    banky nemohou zablokovat.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého, od občana obcházejícího kontrolu identity až po vysoce rizikový profil. Je to VPN,
+    kterou doporučit jako první.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Přejděte na <b>mullvad.net</b>. Pokud je web ve vaší zemi zablokovaný, otevřete jej přes Tor
+      Browser nebo jeho adresu <b>.onion</b>. Klikněte na „Generate account number“: nebude
+      vyžadován e-mail ani jméno. Toto číslo si uložte do správce hesel a nikdy ho nesdílejte, je to
+      váš jediný přístupový klíč.
+    </li>
+    <li>
+      Vyberte délku předplatného a způsob platby. Cena je jednotná. Máte tři možnosti: platební
+      karta (nejjednodušší, pokud není blokovaná), hotovost zaslaná poštou nebo kryptoměna.
+    </li>
+    <li>
+      <b>Anonymní platba kryptoměnou:</b> klikněte na „Create a one-time payment address.“ Mullvad
+      zobrazí adresu (Bitcoin nebo Monero) a přesnou částku. Tuto částku odešlete ze své peněženky.
+      Pro maximální anonymitu upřednostněte <b>Monero</b> (soukromé už ve výchozím nastavení);
+      Bitcoin je jednodušší, ale dohledatelný. Informace o nákupu kryptoměn najdete v části 09. Na
+      potvrzení počítejte přibližně 30 minut.
+    </li>
+    <li>
+      Stáhněte si aplikaci z <b>mullvad.net/download</b> (pokud je web filtrován, přes Tor) a
+      nainstalujte ji. Na mobilu použijte App Store, Google Play nebo oficiální APK, pokud byla
+      aplikace z vašeho obchodu stažena.
+    </li>
+    <li>
+      Spusťte aplikaci, zadejte číslo účtu a poté se připojte k serveru <b>mimo vaši zemi</b>,
+      ideálně mimo EU (Švýcarsko, USA…). Zapněte „kill switch“ (který odpojí internet při výpadku
+      VPN) a DNS od Mullvadu.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-protonvpn">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Poctivá bezplatná úroveň</span>
+    <span class="tool-tag">🇨🇭 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    VPN z ekosystému Proton se skutečně bezplatnou úrovní (vzácné a poctivé).
+  </Fragment>
+  <Fragment slot="why">
+    Sídlí ve Švýcarsku, je auditovaná a open-source. Její bezplatná úroveň nemá reklamy, neprodává
+    data ani nemá datový limit (omezený je pouze počet zemí). Je ideálním vstupním bodem pro
+    začátečníka, zejména pokud již používáte Proton Mail.
+  </Fragment>
+  <Fragment slot="who">
+    Začátečníci a každý, kdo již používá ekosystém Proton a chce jeden účet pro vše.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Přejděte na <b>protonvpn.com</b> a přihlaste se svým účtem Proton (nebo si jej vytvořte).
+    </li>
+    <li>Nainstalujte aplikaci (Windows, macOS, Linux, Android, iOS).</li>
+    <li>
+      Použijte „Quick Connect“ nebo vyberte zemi, poté zapněte kill switch a NetShield (blokování
+      reklam a trackerů).
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-ivpn">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Středně pokročilý / pokročilý</span>
+    <span class="tool-tag">Bez e-mailu · bez logování</span>
+    <span class="tool-tag">🇬🇮 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Malý, mimořádně důsledný a transparentní poskytovatel VPN, fungující na stejném modelu jako
+    Mullvad.
+  </Fragment>
+  <Fragment slot="why">
+    Auditovaná politika bez logování, žádný povinný e-mail, platba kryptoměnou nebo hotovostí.
+    Nabízí dokonce možnosti ochrany proti sledování (blokování trackerů na úrovni sítě) a registraci
+    bez jakéhokoli identifikátoru.
+  </Fragment>
+  <Fragment slot="who">
+    Solidní alternativa k Mullvadu pro pseudonymní a vysoce rizikové profily, které chtějí
+    diverzifikovat.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Na <b>ivpn.net</b> si vygenerujte účet (vytvoří se pro vás ID, bez e-mailu).
+    </li>
+    <li>Zaplaťte kryptoměnou nebo hotovostí, stejně jako u Mullvadu.</li>
+    <li>Nainstalujte aplikaci, připojte se mimo EU, zapněte kill switch a protokol WireGuard.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-tailscale">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Soukromý přístup k vašemu serveru</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Soukromá šifrovaná síť propojující vaše zařízení s vaším serverem, aniž by jej kdy vystavila
+    veřejnému internetu.
+  </Fragment>
+  <Fragment slot="why">
+    Namísto otevírání portů (a následných útoků) <b>Tailscale</b> vytváří tunel WireGuard pouze mezi
+    vašimi autorizovanými zařízeními: váš server nemá žádnou veřejnou útočnou plochu.
+    <b>Headscale</b> je verze hostovaná svépomocí, takže nezávisíte na žádné třetí straně. Samotný{' '}
+    <b>WireGuard</b>
+    poskytuje úplnou kontrolu za cenu ručního nastavení.
+  </Fragment>
+  <Fragment slot="who">
+    Každý, kdo provozuje vlastní služby. Je to bezpečný způsob, jak se zvenčí dostat k vašemu
+    Nextcloudu nebo fotografiím.
+  </Fragment>
+  <ol slot="install">
+    <li>Nainstalujte Tailscale na server i telefon/PC a připojte je ke stejnému účtu.</li>
+    <li>
+      Vaše zařízení se okamžitě uvidí v soukromé síti; ke svému serveru se dostanete na jeho adrese
+      Tailscale.
+    </li>
+    <li>Pro nulovou závislost nahraďte koordinační server vlastním Headscale.</li>
+  </ol>
+</ToolCard>

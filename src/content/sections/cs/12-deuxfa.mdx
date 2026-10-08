@@ -1,0 +1,79 @@
+---
+id: 'deuxfa'
+part: 7
+order: 12
+title: 'Dvoufaktorové ověřování a hardwarové klíče'
+---
+
+<p class="part-num">
+  ČÁST 11 · BEZPEČNOST · 2FA · <span class="lvl lvl-2">🟡</span>
+</p>
+
+## Dvoufaktorové ověřování a hardwarové klíče
+
+Heslo, i silné, může uniknout. Dvoufaktorové ověřování (2FA) při přihlášení přidává druhý důkaz: i když vám někdo heslo ukradne, účet zůstane uzamčený. Je nezbytné pro vaše citlivé účty (e-mail, správce hesel, sociální sítě).
+
+<div class="box warn">
+  <span class="lab">Vyhněte se 2FA přes SMS</span>
+  <p>
+    Kód zaslaný SMS je slabým článkem: je zranitelný vůči „SIM-swapu“ (útočník si nechá vaše číslo
+    převést) i vůči odposlechu v telefonní síti (SS7). Studie odhadují, že většina pokusů o SIM-swap
+    je úspěšná. SMS používejte jen jako poslední možnost, nikdy ne jako hlavní ochranu.
+  </p>
+</div>
+
+<ToolCard tool="t-yubikey">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴 Středně pokročilí / Pokročilí</span>
+    <span class="tool-tag">Hardwarový klíč FIDO2</span>
+  </Fragment>
+  <Fragment slot="what">
+    Malý fyzický klíč (USB, často s NFC), který jediným dotykem potvrdí vaši identitu.
+  </Fragment>
+  <Fragment slot="why">
+    Jde o nejsilnější 2FA: odolává phishingu, protože klíč před odpovědí ověří skutečnou adresu
+    webu. <b>Nitrokey</b> je alternativou s plně otevřeným hardwarem a firmwarem. Falešný web vás
+    nemůže oklamat.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo chtějí maximální zabezpečení klíčových účtů. Kupte <b>dva</b> (jeden hlavní, jeden
+    záložní).
+  </Fragment>
+  <ol slot="install">
+    <li>Pořiďte si dva klíče z yubico.com nebo nitrokey.com.</li>
+    <li>
+      V nastavení zabezpečení každého účtu (e-mail, správce hesel…) přidejte „bezpečnostní klíč“
+      nebo „passkey“. Zaregistrujte oba klíče.
+    </li>
+    <li>Záložní klíč uchovávejte na bezpečném, odděleném místě.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-aegis">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečníci</span>
+    <span class="tool-tag">Kódy TOTP</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Aplikace, které generují šestimístné kódy měnící se každých 30 sekund a nahrazují Google
+    Authenticator.
+  </Fragment>
+  <Fragment slot="why">
+    <b>Aegis</b> (Android) uchovává vaše kódy v místním šifrovaném trezoru bez cloudu.{' '}
+    <b>Ente Auth</b> přidává koncově šifrovanou synchronizaci mezi zařízeními a prošel auditem. Je
+    mnohem bezpečnější než SMS a zdarma.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého: jde o výchozí úroveň 2FA, kterou byste měli přijmout, před hardwarovými klíči.
+  </Fragment>
+  <ol slot="install">
+    <li>Nainstalujte Aegis (F-Droid) nebo Ente Auth (všechny platformy).</li>
+    <li>
+      U každého účtu zapněte 2FA pomocí „aplikace pro ověřování“ a naskenujte zobrazený QR kód.
+    </li>
+    <li>
+      Zapište si <b>záložní kódy</b> na papír a vytvořte šifrovanou zálohu svého trezoru.
+    </li>
+  </ol>
+</ToolCard>

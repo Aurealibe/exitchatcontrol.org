@@ -1,0 +1,246 @@
+---
+id: 'messagerie'
+part: 1
+order: 3
+title: 'Šifrované zprávy'
+---
+
+<p class="part-num">
+  ČÁST 02 · ZÁKLADY · <span class="lvl lvl-1">🟢</span>
+</p>
+
+## Šifrované zprávy
+
+První krok, ten, který vás ochrání nejrychleji: opusťte WhatsApp, Messenger a Telegram ve prospěch skutečně šifrovaného (ideálně open-source) messengeru.
+
+<div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Opustíte</th>
+        <th>Zvolíte</th>
+        <th>Proč</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="old">WhatsApp</span>
+        </td>
+        <td>
+          <span class="new">Signal</span>
+        </td>
+        <td>Stejná jednoduchost bez Mety a sběru metadat</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="old">Messenger</span>
+        </td>
+        <td>
+          <span class="new">Signal / SimpleX</span>
+        </td>
+        <td>
+          Messenger ve výchozím nastavení nepoužívá E2EE a byl skenován v rámci Chat Control 1.0
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="old">Telegram</span>
+        </td>
+        <td>
+          <span class="new">Signal / SimpleX</span>
+        </td>
+        <td>Telegram ve výchozím nastavení nepoužívá end-to-end šifrování</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ToolCard tool="t-signal">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Nahrazuje WhatsApp</span>
+    <span class="tool-tag">🇺🇸 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Šifrovaný messenger pro zprávy, hovory, videohovory a skupiny. Přímá náhrada WhatsAppu, stejně
+    jednoduchá.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end šifrování ve výchozím nastavení, nezisková organizace a auditovaný protokol, který je
+    světovým standardem. Uchovává téměř žádná metadata a tým se zavázal raději opustit EU, než
+    zavést skenování.
+  </Fragment>
+  <Fragment slot="who">
+    Pro každého, hned od dneška. Je to první a nejužitečnější krok. Jeden háček: telefonní číslo,
+    které můžete skrýt za uživatelské jméno.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte z <b>signal.org</b> (App Store, Google Play nebo přímé APK pro Android).
+    </li>
+    <li>Potvrďte své číslo pomocí SMS a poté nastavte PIN.</li>
+    <li>
+      Nastavení &gt; Soukromí: vytvořte si <b>uživatelské jméno</b>, abyste skryli své číslo, a
+      zapněte <b>zámek registrace</b>.
+    </li>
+    <li>Pozvěte své kontakty. Na počítači propojte desktopovou aplikaci s telefonem.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-simplex">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Pokročilý</span>
+    <span class="tool-tag">Bez identifikátoru</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Šifrovaný messenger bez účtu, čísla i identifikátoru. Propojíte se sdílením odkazu nebo QR kódu.
+  </Fragment>
+  <Fragment slot="why">
+    Už z principu ani servery nemohou vědět, kdo s kým mluví. V současnosti jde o nejsilnější volbu
+    proti korelaci metadat.
+  </Fragment>
+  <Fragment slot="who">
+    Pseudonymní účty, citlivé kontakty, vysoké riziko. Je o něco mladší než Signal a má několik
+    nedotažených míst.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte z <b>simplex.chat</b> (F-Droid, Google Play, App Store nebo APK).
+    </li>
+    <li>
+      Zvolte <b>místní</b> zobrazované jméno (nikdy své skutečné jméno: zůstává ve vašem zařízení).
+    </li>
+    <li>
+      Chcete-li přidat kontakt, sdílejte <b>jednorázový zvací odkaz</b> nebo QR kód.
+    </li>
+    <li>Zapněte zámek přístupovým kódem a (pro pokročilé) nakonfigurujte vlastní servery SMP.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-session">
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡 Pokročilý</span>
+    <span class="tool-tag">Bez telefonu</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Šifrování na úrovni Signalu, ale bez telefonního čísla a s onion routingem.
+  </Fragment>
+  <Fragment slot="why">
+    Vaší identitou je náhodné „Session ID“. Provoz prochází decentralizovanou sítí (Lokinet), která
+    výrazně omezuje metadata.
+  </Fragment>
+  <Fragment slot="who">
+    Když je telefonní číslo přítěží. Menší ekosystém, nejlépe si ho nechte pro konverzace, na
+    kterých záleží.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte z <b>getsession.org</b> (všechny platformy).
+    </li>
+    <li>
+      „Create account“ vygeneruje vaše Session ID a <b>obnovovací frázi</b>.
+    </li>
+    <li>Obnovovací frázi si napište na papír: je to jediný klíč k vašemu účtu.</li>
+    <li>Sdílejte své Session ID (nebo QR) s kontakty.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-briar">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Offline / P2P</span>
+    <span class="tool-tag">Android · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Peer-to-peer messenger, který funguje <b>bez internetu</b>: přes Bluetooth, Wi-Fi Direct nebo
+    Tor.
+  </Fragment>
+  <Fragment slot="why">
+    Žádný server, tedy nic, co by bylo možné vypnout nebo zabavit. Přežije výpadky internetu i
+    síťovou cenzuru.
+  </Fragment>
+  <Fragment slot="who">
+    Protesty, katastrofy, odlehlé oblasti, výpadky proudu. Pouze pro Android a aplikaci musí mít oba
+    lidé.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Nainstalujte z <b>briarproject.org</b> nebo F-Droidu (bez iOS).
+    </li>
+    <li>
+      Vytvořte <b>místní</b> účet (přezdívka + heslo), uložený pouze v telefonu.
+    </li>
+    <li>Přidejte blízký kontakt naskenováním jeho QR kódu nebo vzdáleně pomocí odkazu.</li>
+    <li>Když síť nefunguje, zapněte Bluetooth: zprávy putují ze zařízení do zařízení.</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-bitchat">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Bluetooth mesh</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Mesh messenger Jacka Dorseyho: blízké telefony přeposílají zprávy po krocích, bez internetu,
+    serveru i účtu.
+  </Fragment>
+  <Fragment slot="why">
+    End-to-end šifrování (AES-256-GCM) a „panic mode“, který třemi klepnutími na logo smaže vše.
+  </Fragment>
+  <Fragment slot="who">Pro protesty a výpadky proudu, vedle Briaru. Používejte opatrně.</Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Pozor: bez auditu</span>
+    <p>
+      Vlastní repozitář upozorňuje, že aplikace „has not received external security review“. Je
+      skvělá pro odolnost, ale zatím na ni nesázejte životy.
+    </p>
+  </div>
+  <ol slot="install">
+    <li>Nainstalujte z App Store (iOS) nebo APK/GitHubu (Android).</li>
+    <li>Otevřete aplikaci a zvolte přezdívku. Není třeba vytvářet účet.</li>
+    <li>Blízká zařízení se automaticky najdou přes Bluetooth.</li>
+    <li>V nebezpečí třikrát klepněte na logo a vše smažte (panic mode).</li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-molly">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilý</span>
+    <span class="tool-tag">Zabezpečený Signal</span>
+    <span class="tool-tag">Android · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Zabezpečená verze Signalu pro Android, kompatibilní se stejnou sítí.
+  </Fragment>
+  <Fragment slot="why">
+    Databáze šifrovaná v klidovém stavu, automatické zamykání a varianta „FOSS“ zcela bez služeb
+    Googlu.
+  </Fragment>
+  <Fragment slot="who">
+    Pokročilí uživatelé, zejména na GrapheneOS, s vysokým modelem hrozeb. Pouze pro Android.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Přidejte repozitář Molly do F-Droidu nebo stáhněte APK z <b>molly.im</b>.
+    </li>
+    <li>
+      Pokud chcete nulovou závislost na Googlu, zvolte <b>Molly-FOSS</b>.
+    </li>
+    <li>Zaregistrujte se pomocí svého čísla (stejná síť jako Signal).</li>
+    <li>Nastavte heslo databáze a automatické zamykání.</li>
+  </ol>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Proti Chat Control</span>
+  <p>
+    Upřednostňujte aplikace <strong>open-source</strong>{' '}
+    <strong>mimo velké americké platformy</strong>, jejichž týmy se veřejně zavázaly raději opustit
+    EU, než zavést skenování na straně klienta (Signal to učinil). Připomínka: pokud skenování
+    vynucuje samotný OS, aplikace vám nepomůže, proto sekce 12.
+  </p>
+</div>

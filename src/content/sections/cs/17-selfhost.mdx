@@ -1,0 +1,128 @@
+---
+id: 'selfhost'
+part: 10
+order: 17
+title: 'Vlastní hosting'
+---
+
+<p class="part-num">
+  ČÁST 16 · POKROČILÁ SEBEOBRANA · <span class="lvl lvl-3">🔴</span>
+</p>
+
+## Vlastní hosting
+
+Nejvyšší úroveň suverenity: provozujte své služby sami. Vaše data jsou na vašem hardwaru, v jurisdikci, kterou si zvolíte.
+
+<ToolCard tool="t-yunohost">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilé</span>
+    <span class="tool-tag">Server na klíč</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Systémy, které promění starý počítač nebo Raspberry Pi v osobní server s katalogem aplikací, jež
+    nainstalujete několika kliknutími.
+  </Fragment>
+  <Fragment slot="why">
+    Vlastní hosting zní děsivě, ale tyto nástroje udělají většinu práce za vás. <b>YunoHost</b>
+    dokonce provozuje váš vlastní e-mail a jednotné přihlašování. <b>Umbrel</b> nabízí obchod s více
+    než 300 aplikacemi, oblíbený mezi lidmi zaměřenými na soukromí a Bitcoin. <b>Start9</b> šifruje
+    zálohy a každé službě ve výchozím nastavení přidělí Tor adresu.
+  </Fragment>
+  <Fragment slot="who">
+    Pro pokročilé uživatele připravené věnovat odpoledne budování vlastního cloudu. Je to
+    nejradikálnější strukturální protiváha vůči Chat Control.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Pořiďte si starý počítač, Raspberry Pi nebo si pronajměte malý server (VPS) v zemi chránící
+      soukromí.
+    </li>
+    <li>Nainstalujte YunoHost, Umbrel nebo Start9 podle jejich oficiálního návodu.</li>
+    <li>Z katalogu nainstalujte Nextcloud, Matrix server, fotogalerii atd.</li>
+    <li>
+      Přistupujte k němu soukromě přes Tailscale (sekce VPN), místo abyste server vystavili
+      veřejnosti.
+    </li>
+  </ol>
+</ToolCard>
+
+<ToolCard tool="t-nextcloud">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilé</span>
+    <span class="tool-tag">Nahradí celý Google</span>
+    <span class="tool-tag">🇩🇪 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Váš vlastní cloud: soubory, kalendář, kontakty, fotky, poznámky a společně upravované dokumenty
+    na vašem serveru.
+  </Fragment>
+  <Fragment slot="why">
+    Je to plnohodnotná domácí náhrada za Google Drive, Calendar a Contacts. Volíte si jurisdikci a
+    nikdo jiný nekontroluje vaše soubory. Poznámka: ve výchozím nastavení jde o soukromí typu „váš
+    server“, nikoli o end-to-end šifrování; musíte jej udržovat aktualizovaný.
+  </Fragment>
+  <Fragment slot="who">
+    Pro ty, kdo provozují vlastní hosting. Nejsnazší cesta je nainstalovat jej přes YunoHost nebo
+    Umbrel.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-synapse">
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Pokročilé</span>
+    <span class="tool-tag">Váš chatovací server</span>
+    <span class="tool-tag">🌍 · open-source</span>
+  </Fragment>
+  <Fragment slot="what">
+    Váš vlastní Matrix chatovací server pro Element a šifrované hovory.
+  </Fragment>
+  <Fragment slot="why">
+    Provozováním serveru ovládáte také <b>metadata</b> (kdo s kým mluví a kdy), slabé místo federace
+    Matrixu. Je to komunitní chat, který vlastníte jen vy.
+  </Fragment>
+  <Fragment slot="who">
+    Komunity, kolektivy a redakce, které chtějí vlastní nezávislý federovaný prostor.
+  </Fragment>
+</ToolCard>
+
+<ToolCard tool="t-website">
+  <Fragment slot="name">Vlastní web</Fragment>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟡🔴</span>
+    <span class="tool-tag">Zajistěte, aby váš hlas nešel umlčet zákazem</span>
+  </Fragment>
+  <Fragment slot="what">
+    Váš vlastní web na vlastní doméně, kde váš obsah nezávisí na žádné platformě.
+  </Fragment>
+  <Fragment slot="why">
+    V den, kdy síť smaže nebo pozastaví váš účet, zmizí veškerá vaše práce. Osobní web je vaše
+    kotva: vaše příspěvky tam zůstávají, archivované a aktuální, ať se stane cokoli. Přesně tak to
+    dělají opatrné informační účty. Statický web (vytvořený pomocí Hugo, Astro nebo Jekyll) stačí a
+    lze jej publikovat téměř zdarma; pro dynamický blog poslouží WordPress nebo Ghost provozovaný na
+    vlastním serveru.
+  </Fragment>
+  <Fragment slot="who">
+    Informační účty, tvůrci, aktivisté, kdokoli, kdo publikuje a obává se cenzury platforem.
+  </Fragment>
+  <ol slot="install">
+    <li>Kupte si doménové jméno (ideálně od registrátora respektujícího soukromí).</li>
+    <li>
+      Vyberte generátor statických webů (Astro, Hugo) a hostujte výstup, nebo nainstalujte
+      WordPress/Ghost na svůj server.
+    </li>
+    <li>
+      Vždy na něj odkazujte ze svých účtů na sociálních sítích: vaše publikum vás najde, i když
+      jeden účet padne.
+    </li>
+  </ol>
+</ToolCard>
+
+<div class="box">
+  <span class="lab">Otázka jurisdikce</span>
+  <p>
+    Vlastní hosting také znamená volbu <em>kde</em> vaše data jsou. Server doma nebo v zemi chránící
+    soukromí se vyhne povinnostem skenování uloženým velkým platformám. Je to nejradikálnější
+    strukturální protiváha vůči Chat Control.
+  </p>
+</div>
