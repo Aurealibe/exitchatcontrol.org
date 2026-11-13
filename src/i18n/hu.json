@@ -193,8 +193,7 @@
     "quizDescription": "Tizenkét gyors kérdés a magánéleted védelmének gyenge pontjairól, majd konkrét javítások az útmutatóból. A böngésződben fut, semmit sem küld el.",
     "notFoundTitle": "Az oldal nem található · Exit Chat Control",
     "ogImageAlt": "Exit Chat Control, terepútmutató a digitális magánélet védelméhez",
-    "toolTitle": "{name}: mire való és hogyan állítsd be · Exit Chat Control",
-    "fullTitle": "A teljes útmutató egy oldalon · Exit Chat Control"
+    "toolTitle": "{name}: mire való és hogyan állítsd be · Exit Chat Control"
   },
   "guide": {
     "home": "Kezdőlap",
@@ -205,10 +204,7 @@
     "alternatives": "További lehetőségek ebben a kategóriában",
     "pager": "Olvass tovább",
     "fullGuide": "A teljes útmutató egy oldalon",
-    "toolCount": "{n} eszköz",
-    "oneTool": "1 eszköz",
     "quizCta": "Nem tudod, hol kezdd? Töltsd ki a 12 kérdéses kvízt",
-    "hubHeading": "Az útmutató témánként",
     "inSection": "Ebben a részben",
     "toolPage": "Részletes adatlap"
   }

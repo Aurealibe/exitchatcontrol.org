@@ -1,12 +1,12 @@
 ---
-// Every page of the split guide, in every locale (see src/lib/pages.ts):
-// one page per section, per dataset section, per tool card, plus the whole
-// guide on one page. More specific routes (/[lang]/, /quiz) win over this one.
+// The guide split for search engines, in every locale (src/lib/pages.ts):
+// one page per section, per dataset section and per tool card. Readers get
+// the whole guide on the locale home; each page links back into it.
+// More specific routes (/[lang]/, /quiz) win over this one.
 import { render } from 'astro:content'
 import Allies from '../components/Allies.astro'
 import Checklist from '../components/Checklist.astro'
 import Directory from '../components/Directory.astro'
-import Guide from '../components/Guide.astro'
 import Breadcrumbs from '../components/nav/Breadcrumbs.astro'
 import Pager from '../components/nav/Pager.astro'
 import ToolMini from '../components/nav/ToolMini.astro'
@@ -20,18 +20,12 @@ import { allLocales, homeHref, pageHref, sectionHref, toolHref } from '../lib/pa
 import type { PageId } from '../i18n/slugs'
 
 type Props =
-  | { kind: 'full'; locale: Locale }
-  | { kind: 'page'; locale: Locale; id: string }
-  | { kind: 'tool'; locale: Locale; id: string }
+  { kind: 'page'; locale: Locale; id: string } | { kind: 'tool'; locale: Locale; id: string }
 
 export async function getStaticPaths() {
   const strip = (href: string) => href.replace(/^\/|\/$/g, '')
   const paths = []
   for (const locale of locales) {
-    paths.push({
-      params: { path: strip(pageHref(locale, 'full')) },
-      props: { kind: 'full', locale },
-    })
     for (const page of await loadGuide(locale)) {
       if (page.kind === 'hub') continue
       paths.push({
@@ -56,23 +50,22 @@ const pages = await loadGuide(locale)
 const home = { name: t('guide.home'), href: homeHref(locale) }
 const sitename = 'Exit Chat Control'
 
-let page: GuidePage | undefined
+let page: GuidePage
 let tool: GuideTool | undefined
-let siblings: GuideTool[] = []
-const tools = props.kind === 'full' ? new Map<string, GuideTool>() : await loadTools(locale)
-if (props.kind !== 'full') {
-  if (props.kind === 'tool') {
-    tool = tools.get(props.id)!
-    page = pages.find((p) => p.id === tool!.tool.section)!
-  } else {
-    page = pages.find((p) => p.id === props.id)!
-  }
-  siblings = page.tools.map((id) => tools.get(id)!)
+const tools = await loadTools(locale)
+if (props.kind === 'tool') {
+  tool = tools.get(props.id)!
+  page = pages.find((p) => p.id === tool!.tool.section)!
+} else {
+  page = pages.find((p) => p.id === props.id)!
 }
+const siblings = page.tools.map((id) => tools.get(id)!)
+// The same content inside the one-page guide on the home.
+const readAll = `${homeHref(locale)}#${tool ? tool.tool.id : page.id}`
 
 // Reading order for the pager: section pages, then the dataset pages.
 const order = pages.filter((p) => p.kind !== 'hub')
-const at = page ? order.indexOf(page) : -1
+const at = order.indexOf(page)
 const prevPage = order[at - 1]
 const nextPage = order[at + 1]
 const link = (p?: GuidePage) => p && { href: p.href, title: p.title, prefix: p.prefix }
@@ -86,25 +79,17 @@ const toolLink = (x?: GuideTool) => x && { href: x.href, title: x.name }
 let title: string
 let description: string
 let hrefs: Record<Locale, string>
-let breadcrumbs: { name: string; href: string }[] = []
+let breadcrumbs: { name: string; href: string }[]
 let schema: Record<string, unknown>[] = []
-if (props.kind === 'full') {
-  title = t('seo.fullTitle')
-  description = t('site.description')
-  hrefs = allLocales((l) => pageHref(l, 'full'))
-} else if (tool) {
+if (tool) {
   // Two cards can share a name (Nextcloud in storage and in self-hosting):
   // the section then tells their pages apart.
   const homonyms = [...tools.values()].filter((x) => x.name === tool!.name).length > 1
-  const name = homonyms ? `${tool.name} (${page!.title})` : tool.name
+  const name = homonyms ? `${tool.name} (${page.title})` : tool.name
   title = t('seo.toolTitle').replace('{name}', name)
   description = snippet(tool.what)
   hrefs = allLocales((l) => toolHref(l, tool!.tool.id))
-  breadcrumbs = [
-    home,
-    { name: page!.title, href: page!.href },
-    { name: tool.name, href: tool.href },
-  ]
+  breadcrumbs = [home, { name: page.title, href: page.href }, { name: tool.name, href: tool.href }]
   schema = [
     {
       '@type': 'SoftwareApplication',
@@ -120,18 +105,18 @@ if (props.kind === 'full') {
 } else {
   const names = siblings.slice(0, 3).map((s) => s.name.split(' · ')[0])
   // "VPN : la vérité" already has a colon: join the tool names with a dash.
-  const colon = page!.title.includes(':') ? ' — ' : locale === 'fr' ? ' : ' : ': '
+  const colon = page.title.includes(':') ? ' — ' : locale === 'fr' ? ' : ' : ': '
   title = names.length
-    ? `${page!.title}${colon}${names.join(', ')} · ${sitename}`
-    : `${page!.title} · ${sitename}`
-  description = page!.description || t('site.description')
+    ? `${page.title}${colon}${names.join(', ')} · ${sitename}`
+    : `${page.title} · ${sitename}`
+  description = page.description || t('site.description')
   hrefs = allLocales((l) =>
-    page!.kind === 'data' ? pageHref(l, page!.id as PageId) : sectionHref(l, page!.id),
+    page.kind === 'data' ? pageHref(l, page.id as PageId) : sectionHref(l, page.id),
   )
-  breadcrumbs = [home, { name: page!.title, href: page!.href }]
+  breadcrumbs = [home, { name: page.title, href: page.href }]
 }
 
-const Content = page?.entry && props.kind === 'page' ? (await render(page.entry)).Content : null
+const Content = page.entry && props.kind === 'page' ? (await render(page.entry)).Content : null
 const DATA = {
   precedents: Timeline,
   observatory: Observatory,
@@ -139,7 +124,7 @@ const DATA = {
   directory: Directory,
   checklist: Checklist,
 }
-const DataSection = page?.kind === 'data' ? DATA[page.id as keyof typeof DATA] : null
+const DataSection = page.kind === 'data' ? DATA[page.id as keyof typeof DATA] : null
 ---
 
 <Base
@@ -149,76 +134,76 @@ const DataSection = page?.kind === 'data' ? DATA[page.id as keyof typeof DATA] :
   hrefs={hrefs}
   breadcrumbs={breadcrumbs}
   schema={schema}
-  noindex={props.kind === 'full'}
 >
-  {
-    props.kind === 'full' ? (
-      <Guide locale={locale} />
-    ) : (
-      <main id="content" class="mx-auto max-w-3xl px-4 py-8">
-        <div class="page-head">
-          <Breadcrumbs label={t('guide.breadcrumb')} items={breadcrumbs} />
-          {tool && (
-            <a href={page!.href} class="back-link">
-              ← {t('guide.backTo').replace('{section}', page!.title)}
-            </a>
+  <main id="content" class="mx-auto max-w-3xl px-4 py-8">
+    <div class="page-head">
+      <Breadcrumbs label={t('guide.breadcrumb')} items={breadcrumbs} />
+      {
+        tool && (
+          <a href={page.href} class="back-link">
+            ← {t('guide.backTo').replace('{section}', page.title)}
+          </a>
+        )
+      }
+      <a href={readAll} class="read-all">{t('guide.fullGuide')} →</a>
+    </div>
+
+    {
+      tool ? (
+        <>
+          <Tool id={tool.tool.id} variant="page" />
+          {(prevTool || nextTool) && (
+            <Pager
+              label={t('guide.pager')}
+              prevLabel={t('guide.prev')}
+              nextLabel={t('guide.next')}
+              prev={toolLink(prevTool)}
+              next={toolLink(nextTool)}
+            />
           )}
-        </div>
+          {siblings.length > 1 && (
+            <section aria-labelledby="alternatives">
+              <h2 id="alternatives" class="alt-title">
+                {t('guide.alternatives')}
+              </h2>
+              <ul class="tool-mini-grid">
+                {siblings
+                  .filter((s) => s !== tool)
+                  .map((s) => (
+                    <li>
+                      <ToolMini item={s} />
+                    </li>
+                  ))}
+              </ul>
+            </section>
+          )}
+        </>
+      ) : (
+        <>
+          {Content && (
+            <section id={page.id}>
+              <Content components={{ Tool, h2: 'h1' }} />
+            </section>
+          )}
+          {DataSection && <DataSection locale={locale} heading="h1" />}
+        </>
+      )
+    }
 
-        {tool ? (
-          <>
-            <Tool id={tool.tool.id} variant="page" />
-            {(prevTool || nextTool) && (
-              <Pager
-                label={t('guide.pager')}
-                prevLabel={t('guide.prev')}
-                nextLabel={t('guide.next')}
-                prev={toolLink(prevTool)}
-                next={toolLink(nextTool)}
-              />
-            )}
-            {siblings.length > 1 && (
-              <section aria-labelledby="alternatives">
-                <h2 id="alternatives" class="alt-title">
-                  {t('guide.alternatives')}
-                </h2>
-                <ul class="tool-mini-grid">
-                  {siblings
-                    .filter((s) => s !== tool)
-                    .map((s) => (
-                      <li>
-                        <ToolMini item={s} />
-                      </li>
-                    ))}
-                </ul>
-              </section>
-            )}
-          </>
-        ) : (
-          <>
-            {Content && (
-              <section id={page!.id}>
-                <Content components={{ Tool, h2: 'h1' }} />
-              </section>
-            )}
-            {DataSection && <DataSection locale={locale} heading="h1" />}
-          </>
-        )}
+    <p class="quiz-cta">
+      <a href={`${homeHref(locale)}quiz/`}>{t('guide.quizCta')} →</a>
+    </p>
 
-        <p class="quiz-cta">
-          <a href={`${homeHref(locale)}quiz/`}>{t('guide.quizCta')} →</a>
-        </p>
-
-        {!tool && (
-          <Pager
-            label={t('guide.pager')}
-            prevLabel={t('guide.prev')}
-            nextLabel={t('guide.next')}
-            prev={link(prevPage)}
-            next={link(nextPage)}
-          />
-        )}
-      </main>
-    )
-  }
+    {
+      !tool && (
+        <Pager
+          label={t('guide.pager')}
+          prevLabel={t('guide.prev')}
+          nextLabel={t('guide.next')}
+          prev={link(prevPage)}
+          next={link(nextPage)}
+        />
+      )
+    }
+  </main>
 </Base>

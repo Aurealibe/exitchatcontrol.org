@@ -6,16 +6,14 @@
 import tools from '../data/tools.json'
 import { localePath, locales, type Locale } from '../i18n/config'
 import { pageSlugs, type PageId } from '../i18n/slugs'
-import { allLocales, homeHref, pageHref, toolHref } from './pages'
+import { allLocales, homeHref, legacyFullGuideHref, pageHref, toolHref } from './pages'
 
 const SITE = 'https://exitchatcontrol.org'
 
 const clusters: Record<Locale, string>[] = [
   allLocales(homeHref),
   allLocales((l) => `${localePath(l)}/quiz/`),
-  ...(Object.keys(pageSlugs) as PageId[])
-    .filter((id) => id !== 'full')
-    .map((id) => allLocales((l) => pageHref(l, id))),
+  ...(Object.keys(pageSlugs) as PageId[]).map((id) => allLocales((l) => pageHref(l, id))),
   ...tools.map((t) => allLocales((l) => toolHref(l, t.id))),
 ]
 
@@ -30,5 +28,9 @@ export const sitemapAlternates = new Map(
   }),
 )
 
-/** The one-page guide: noindex, so kept out of the sitemap. */
-export const fullGuidePaths = new Set(locales.map((l) => pageHref(l, 'full')))
+/** Former one-page guide URLs → the locale home that now carries the guide
+    (Astro `redirects`; static output writes a meta-refresh page). */
+export const legacyRedirects = Object.fromEntries(
+  locales.map((l) => [legacyFullGuideHref(l), homeHref(l)]),
+)
+export const legacyPaths = new Set(Object.keys(legacyRedirects))

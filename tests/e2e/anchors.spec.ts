@@ -1,11 +1,10 @@
 import { readFileSync } from 'node:fs'
 import { expect, test } from '@playwright/test'
-import { fullGuidePaths } from './helpers'
+import { legacyFullGuidePaths, localePaths } from './helpers'
 
 // Legacy deep links (/#messagerie, /#t-signal…) are shared all over the
 // place. The inventory is produced by migration/extract.mjs. Every anchor
-// id must still exist on the one-page guide of every locale, and a legacy
-// link to the hub must land on the new page of that section or tool.
+// id must still exist on the one-page guide (the home) of every locale.
 // Four legacy ids were toggle BUTTONS in the old chrome (never link
 // targets, nothing on the web points at them) — the new chrome replaces
 // them, so they are deliberately not preserved.
@@ -17,7 +16,7 @@ const inventory = (
   ) as string[]
 ).filter((id) => !LEGACY_CHROME_IDS.has(id))
 
-for (const path of fullGuidePaths) {
+for (const path of localePaths) {
   test(`all ${inventory.length} legacy anchors exist on ${path}`, async ({ page }) => {
     await page.goto(path)
     const present = await page.evaluate(
@@ -28,27 +27,21 @@ for (const path of fullGuidePaths) {
   })
 }
 
-test.describe('legacy hub anchors forward to the split pages', () => {
-  test.skip(({ javaScriptEnabled }) => javaScriptEnabled === false, 'forwarding needs JS')
+test('in-text links to a section stay on the one-page guide', async ({ page }) => {
+  await page.goto('/fr/')
+  const link = page.locator('#menace a[href="#vpn"]').first()
+  await expect(link).toHaveCount(1)
+  await link.click()
+  expect(new URL(page.url()).pathname).toBe('/fr/')
+  await expect(page.locator('#vpn')).toBeInViewport()
+})
 
-  const cases: [string, RegExp][] = [
-    ['/#messagerie', /\/encrypted-messaging\/$/],
-    ['/#t-signal', /\/encrypted-messaging\/signal\/$/],
-    ['/fr/#vpn', /\/fr\/vpn\/$/],
-    ['/fr/#t-veracrypt', /\/fr\/stockage-chiffre\/veracrypt\/$/],
-    ['/de/#directory', /\/de\/open-source-verzeichnis\/$/],
-    ['/#tl-unknown-anchor', /\/full-guide\/#tl-unknown-anchor$/],
-  ]
-  for (const [from, to] of cases) {
+test.describe('old one-page guide URLs redirect to the home', () => {
+  test.skip(({ javaScriptEnabled }) => javaScriptEnabled === false, 'meta refresh only')
+  for (const [from, to] of legacyFullGuidePaths) {
     test(`${from} → ${to}`, async ({ page }) => {
       await page.goto(from)
-      await page.waitForURL(to)
+      await page.waitForURL((url) => url.pathname === to)
     })
   }
-
-  test('an anchor present on the hub stays put', async ({ page }) => {
-    await page.goto('/#menace')
-    await expect(page.locator('#menace')).toBeVisible()
-    expect(new URL(page.url()).pathname).toBe('/')
-  })
 })

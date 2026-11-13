@@ -2,9 +2,9 @@ import type { Locale } from './locales'
 
 // Localized URL slugs of the guide pages (SEO split). Keys are the stable
 // internal ids: the legacy section anchors (menace, messagerie…), the
-// dataset sections, and `full` for the one-page complete guide. Slugs are
-// part of public URLs: renaming one breaks inbound links, so add, don't edit.
-// `menace` has no entry: that section lives on the locale home page (hub).
+// dataset sections. Slugs are part of public URLs: renaming one breaks
+// inbound links, so add, don't edit. `menace` has no entry: that section
+// opens the one-page guide on the locale home.
 export const pageSlugs = {
   memo: {
     en: 'delete-adopt',
@@ -276,16 +276,19 @@ export const pageSlugs = {
     hu: 'migracios-ellenorzolista',
     it: 'checklist-migrazione',
   },
-  full: {
-    en: 'full-guide',
-    fr: 'guide-complet',
-    nl: 'volledige-gids',
-    de: 'vollstaendiger-leitfaden',
-    es: 'guia-completa',
-    cs: 'kompletni-pruvodce',
-    hu: 'teljes-utmutato',
-    it: 'guida-completa',
-  },
 } satisfies Record<string, Record<Locale, string>>
 
 export type PageId = keyof typeof pageSlugs
+
+// Former URLs of the one-page guide (/fr/guide-complet/…): the guide now
+// lives on the locale home, these only redirect there.
+export const fullGuideSlugs = {
+  en: 'full-guide',
+  fr: 'guide-complet',
+  nl: 'volledige-gids',
+  de: 'vollstaendiger-leitfaden',
+  es: 'guia-completa',
+  cs: 'kompletni-pruvodce',
+  hu: 'teljes-utmutato',
+  it: 'guida-completa',
+} satisfies Record<Locale, string>

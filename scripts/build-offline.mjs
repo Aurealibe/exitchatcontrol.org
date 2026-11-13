@@ -1,4 +1,4 @@
-/* Post-build: packs each locale's one-page guide — and its quiz — into self-contained
+/* Post-build: packs each locale's one-page guide (the home) — and its quiz — into self-contained
    HTML files (stylesheets and scripts inlined, favicon as a data URI) so the
    site can be mirrored, e-mailed, or carried on a USB stick and opened from
    file://. No parallel implementation: each artifact IS the built page,
@@ -14,27 +14,19 @@ const DEFAULT = /defaultLocale: Locale = '(\w+)'/.exec(
   readFileSync('src/i18n/locales.ts', 'utf8'),
 )?.[1]
 if (!DEFAULT) throw new Error('[build-offline] cannot read defaultLocale from src/i18n/locales.ts')
-// The one-page guide's localized slug (src/i18n/slugs.ts, `full`).
-const FULL_SLUGS = Object.fromEntries(
-  [
-    ...(/full: \{([^}]+)\}/.exec(readFileSync('src/i18n/slugs.ts', 'utf8'))?.[1] ?? '').matchAll(
-      /(\w+): '([^']+)'/g,
-    ),
-  ].map(([, code, slug]) => [code, slug]),
-)
 const LOCALES = readdirSync('src/i18n')
   .filter((f) => /^[a-z]{2}\.json$/.test(f))
   .map((f) => f.slice(0, 2))
   .map((code) => {
     const prefix = code === DEFAULT ? '' : `/${code}`
     const suffix = code === DEFAULT ? '' : `.${code}`
-    if (!FULL_SLUGS[code]) throw new Error(`[build-offline] no full-guide slug for ${code}`)
     return {
       code,
       pages: [
         {
-          route: `${prefix}/${FULL_SLUGS[code]}`,
-          page: `${prefix}/${FULL_SLUGS[code]}/index.html`.slice(1),
+          // the locale home is the whole guide on one page
+          route: prefix,
+          page: `${prefix}/index.html`.slice(1),
           out: `exitchatcontrol-offline${suffix}.html`,
         },
         {
@@ -74,8 +66,8 @@ function inlineAssets(html) {
 // Internal routes → sibling artifacts, with anchors carried over, so the
 // whole multilingual guide+quiz set navigates side-by-side from file://
 // (language switcher, brand link, quiz nav, the quiz's deep links into the
-// guide). The split guide's pages (hub, one page per section and per tool)
-// all collapse into the one-page guide, at the anchor of their content.
+// guide). The SEO pages (one per section and per tool) all collapse into
+// the one-page guide, at the anchor of their content.
 // A page's links to its own artifact become in-page anchors.
 // Root-absolute hrefs must never survive: from file:// they point at the
 // reader's filesystem (tests/unit/offline-links.test.ts enforces this).
@@ -84,7 +76,6 @@ const ROUTES = LOCALES.flatMap(({ code, pages }) => {
   const prefix = code === DEFAULT ? '' : `/${code}`
   const routes = [
     { route: guide.route, out: guide.out },
-    { route: prefix, out: guide.out },
     { route: quiz.route, out: quiz.out },
   ]
   // every other page under this locale's prefix: its content anchor is the

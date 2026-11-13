@@ -193,8 +193,7 @@
     "quizDescription": "Twaalf snelle vragen om de zwakke plekken in uw privacy te vinden, met concrete oplossingen uit de gids. Alles blijft in uw browser.",
     "notFoundTitle": "Pagina niet gevonden · Exit Chat Control",
     "ogImageAlt": "Exit Chat Control, praktische gids voor digitale privacy",
-    "toolTitle": "{name}: waarvoor het dient en hoe je het instelt · Exit Chat Control",
-    "fullTitle": "De volledige gids op één pagina · Exit Chat Control"
+    "toolTitle": "{name}: waarvoor het dient en hoe je het instelt · Exit Chat Control"
   },
   "guide": {
     "home": "Home",
@@ -205,10 +204,7 @@
     "alternatives": "Andere opties in deze categorie",
     "pager": "Verder lezen",
     "fullGuide": "Lees de hele gids op één pagina",
-    "toolCount": "{n} tools",
-    "oneTool": "1 tool",
     "quizCta": "Weet je niet waar te beginnen? Doe de quiz met 12 vragen",
-    "hubHeading": "De gids, onderwerp per onderwerp",
     "inSection": "In deze sectie",
     "toolPage": "Volledige fiche"
   }

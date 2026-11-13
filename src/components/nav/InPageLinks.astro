@@ -1,0 +1,24 @@
+---
+// The home renders the whole guide on one page, but the guide's prose links
+// to the per-section pages (/fr/vpn/…), which exist for search engines.
+// Here those links become in-page anchors (#vpn) so the reader never leaves
+// the page. Build time, works with JS off. Tool-page links stay as they are.
+import type { Locale } from '../../i18n/config'
+import { sectionTargets } from '../../lib/pages'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const byHref = new Map(Object.entries(sectionTargets(locale)).map(([id, href]) => [href, id]))
+const html = (await Astro.slots.render('default')).replace(
+  /href="(\/[^"#]*?)\/?(#[^"]*)?"/g,
+  (match, path: string, hash?: string) => {
+    const id = byHref.get(path.endsWith('/') ? path : `${path}/`)
+    return id ? `href="${hash || `#${id}`}"` : match
+  },
+)
+---
+
+<Fragment set:html={html} />
