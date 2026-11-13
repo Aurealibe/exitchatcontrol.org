@@ -3,9 +3,9 @@
 #   docker compose -f docker-compose.dev.yml up preview   # prod-like on :8080
 services:
   dev:
-    image: node:22-alpine@sha256:16e22a550f3863206a3f701448c45f7912c6896a62de43add43bb9c86130c3e2
+    image: node:26-alpine@sha256:6bd9ab43c0ec0190ca7b2d193906cb8b7edf6e7f4afa43ddeccd6452710bffb5
     working_dir: /app
-    command: sh -c "corepack enable && pnpm install --frozen-lockfile && pnpm dev --host"
+    command: sh -c "npm install -g \"$$(node -p \"require('./package.json').packageManager\")\" && pnpm install --frozen-lockfile && pnpm dev --host"
     ports:
       - '4321:4321'
     volumes:
