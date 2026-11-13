@@ -942,73 +942,22 @@
     }
   }
 
-  .hub-toc {
-    margin-block: 2.5rem;
-  }
-  .hub-toc-title {
-    font-size: clamp(1.4rem, 3.4vw, 2rem);
-    text-transform: uppercase;
-    margin: 0 0 1.2rem;
-  }
-  .hub-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    gap: 0.8rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .hub-grid li {
-    margin: 0;
-  }
-  .hub-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-    height: 100%;
-    padding: 1rem 1.05rem;
-    background: var(--surface);
-    border: 1px solid var(--rule);
-    border-top: 3px solid var(--accent);
+  /* section/tool pages: back into the one-page guide */
+  .read-all {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 0.35rem 0.7rem;
+    border: 1px solid var(--accent);
     border-radius: var(--radius-dossier);
-    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
     text-decoration: none;
-    transition: border-color 0.15s;
   }
-  .hub-card:hover {
-    border-color: var(--accent);
-  }
-  .hub-card-num {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    color: var(--accent);
-    letter-spacing: 0.1em;
-  }
-  .hub-card-title {
-    font-family: var(--font-mono);
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.25;
-    text-transform: uppercase;
-  }
-  .hub-card-desc {
-    font-size: 0.88rem;
-    line-height: 1.45;
-    color: var(--text-dim);
-  }
-  .hub-card-meta {
-    margin-top: auto;
-    padding-top: 0.3rem;
-    font-family: var(--font-mono);
-    font-size: 0.66rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-dim);
-  }
-  .hub-full {
-    margin-top: 1.4rem;
-    font-family: var(--font-mono);
-    font-size: 0.82rem;
+  .read-all:hover {
+    text-decoration: underline;
   }
 
   .tool-mini-grid {

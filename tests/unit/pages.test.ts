@@ -3,12 +3,12 @@ import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import tools from '../../src/data/tools.json'
 import { defaultLocale, locales } from '../../src/i18n/locales'
-import { pageSlugs } from '../../src/i18n/slugs'
+import { fullGuideSlugs, pageSlugs } from '../../src/i18n/slugs'
 
 // The split guide, checked against the BUILT site: every section and tool
 // page exists in every locale with its own title, description and canonical,
-// hreflang clusters are reciprocal, internal links resolve, and the one-page
-// guide stays out of the index. Requires `pnpm build` first.
+// hreflang clusters are reciprocal, internal links resolve, and each locale
+// home carries the whole guide on one page. Requires `pnpm build` first.
 
 const DIST = 'dist'
 const SITE = 'https://exitchatcontrol.org'
@@ -93,11 +93,41 @@ describe.skipIf(!built)('split guide pages', () => {
     expect([...broken]).toEqual([])
   })
 
-  it('keeps the one-page guide out of the index and the sitemap', () => {
+  it('serves the whole guide on each locale home, linked by anchors only', () => {
+    const sectionRoutes = new Set(
+      locales.flatMap((l) => Object.values(pageSlugs).map((s) => `${prefix(l)}/${s[l]}/`)),
+    )
+    for (const l of locales) {
+      const html = pages.get(`${prefix(l)}/`)!
+      for (const id of [...Object.keys(pageSlugs), 'menace', 'manifesto'])
+        expect(html, `${l}: #${id}`).toContain(`id="${id}"`)
+      // the reader stays on the page: no link out to a section page
+      const out = [...html.matchAll(/<a\s[^>]*href="(\/[^"#?]*)/g)]
+        .map((m) => m[1])
+        .filter((href) => sectionRoutes.has(href))
+      expect(out, `${l}: links to section pages`).toEqual([])
+      expect(html).not.toContain('name="robots" content="noindex"')
+    }
+  })
+
+  it('numbers the home contents 00, 01, … in reading order', () => {
+    for (const l of locales) {
+      const html = pages.get(`${prefix(l)}/`)!
+      const toc = /<nav id="toc"[\s\S]*?<\/nav>/.exec(html)![0]
+      const nums = [...toc.matchAll(/class="toc-p"[^>]*>\s*(\d*)\s*</g)].map((m) => m[1])
+      const parts = nums.filter(Boolean)
+      expect(parts, l).toEqual(parts.map((_, i) => String(i).padStart(2, '0')))
+      expect(parts.length, l).toBe(Object.keys(pageSlugs).length + 1)
+    }
+  })
+
+  it('redirects the old one-page guide URLs to the home, out of the sitemap', () => {
     const sitemap = readFileSync(join(DIST, 'sitemap-0.xml'), 'utf8')
     for (const l of locales) {
-      const route = `${prefix(l)}/${pageSlugs.full[l]}/`
-      expect(pages.get(route)).toContain('<meta name="robots" content="noindex">')
+      const route = `${prefix(l)}/${fullGuideSlugs[l]}/`
+      expect(pages.get(route), route).toMatch(
+        new RegExp(`http-equiv="refresh" content="0;url=${prefix(l)}/"`),
+      )
       expect(sitemap).not.toContain(`${SITE}${route}<`)
     }
   })

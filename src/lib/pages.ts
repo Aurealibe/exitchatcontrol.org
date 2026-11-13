@@ -1,9 +1,8 @@
 /* URL model of the split guide (one page per section and per tool).
 
-     /<lang>/                       hub: hero, the threat section, contents grid
-     /<lang>/<section-slug>/        one guide section, or a dataset page
-     /<lang>/<section-slug>/<tool>/ one tool card, as a product page
-     /<lang>/<full-slug>/           the whole guide on one page (noindex, print)
+     /<lang>/                       the whole guide on one page (reading)
+     /<lang>/<section-slug>/        one guide section, or a dataset page (SEO)
+     /<lang>/<section-slug>/<tool>/ one tool card, as a product page (SEO)
 
    English has no prefix. Slugs are localized (src/i18n/slugs.ts); tool slugs
    come from src/data/tools.json. Everything returned here ends with "/",
@@ -11,14 +10,14 @@
 
 import tools from '../data/tools.json'
 import { localePath, locales, type Locale } from '../i18n/config'
-import { pageSlugs, type PageId } from '../i18n/slugs'
+import { fullGuideSlugs, pageSlugs, type PageId } from '../i18n/slugs'
 
 export type Tool = (typeof tools)[number]
 
 /** Dataset sections rendered after the MDX sections, in reading order. */
 export const DATA_PAGES = ['precedents', 'observatory', 'allies', 'directory', 'checklist'] as const
 
-/** The section that lives on the hub instead of its own page. */
+/** The opening section: it has no page of its own, it lives on the home. */
 export const HUB_SECTION = 'menace'
 
 export const homeHref = (locale: Locale) => `${localePath(locale)}/`
@@ -53,13 +52,17 @@ export const toolHref = (locale: Locale, id: string) => {
 export const allLocales = (href: (l: Locale) => string) =>
   Object.fromEntries(locales.map((l) => [l, href(l)])) as Record<Locale, string>
 
-/** Legacy one-page anchors (/#messagerie, /fr/#t-signal…) → new URLs. Used
-    by the hub's redirect script and to relink the offline single file. */
-export function anchorTargets(locale: Locale): Record<string, string> {
-  const map: Record<string, string> = {}
-  for (const id of Object.keys(pageSlugs) as PageId[]) {
-    if (id !== 'full') map[id] = pageHref(locale, id)
+/** Section and dataset pages by anchor id (#vpn → /fr/vpn/): the home,
+    which carries every section, folds links to these pages into anchors. */
+export function sectionTargets(locale: Locale): Record<string, string> {
+  return {
+    [HUB_SECTION]: homeHref(locale),
+    ...Object.fromEntries(
+      (Object.keys(pageSlugs) as PageId[]).map((id) => [id, pageHref(locale, id)]),
+    ),
   }
-  for (const tool of tools) map[tool.id] = toolHref(locale, tool.id)
-  return map
 }
+
+/** Old URLs of the one-page guide, now served by the locale home. */
+export const legacyFullGuideHref = (locale: Locale) =>
+  `${localePath(locale)}/${fullGuideSlugs[locale]}/`

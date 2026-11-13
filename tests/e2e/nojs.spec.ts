@@ -1,10 +1,10 @@
 import { expect, test } from '@playwright/test'
-import { fullGuidePaths, localePaths, samplePages } from './helpers'
+import { localePaths, samplePages } from './helpers'
 
 // Tor Browser "safest" mode is part of this site's audience: the FULL
 // guide must be readable with JavaScript disabled. These run in the
 // `nojs` project (javaScriptEnabled: false) — and still pass with JS on.
-for (const path of fullGuidePaths) {
+for (const path of localePaths) {
   test(`guide fully readable without JS on ${path}`, async ({ page }) => {
     await page.goto(path)
     await expect(page.locator('h1')).toBeVisible()
@@ -24,13 +24,13 @@ for (const path of fullGuidePaths) {
   })
 }
 
-// The hub and the split pages are plain links too: contents grid,
-// breadcrumbs and previous/next all work with no script.
-for (const path of [...localePaths, ...samplePages]) {
+// The SEO pages are plain links too: breadcrumbs, previous/next and the
+// way back into the one-page guide all work with no script.
+for (const path of samplePages) {
   test(`page navigable without JS on ${path}`, async ({ page }) => {
     await page.goto(path)
     await expect(page.locator('h1').first()).toBeVisible()
-    const nav = page.locator('.hub-card, .crumbs a, .pager-link')
+    const nav = page.locator('.crumbs a, .pager-link, .read-all')
     expect(await nav.count()).toBeGreaterThan(0)
   })
 }

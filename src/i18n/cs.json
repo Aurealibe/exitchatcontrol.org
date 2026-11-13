@@ -193,8 +193,7 @@
     "quizDescription": "Dvanáct rychlých otázek odhalí slabá místa ve vaší ochraně soukromí, k tomu konkrétní řešení z průvodce. Běží ve vašem prohlížeči, nic se neodesílá.",
     "notFoundTitle": "Stránka nenalezena · Exit Chat Control",
     "ogImageAlt": "Exit Chat Control, terénní průvodce digitálním soukromím",
-    "toolTitle": "{name}: k čemu slouží a jak ho nastavit · Exit Chat Control",
-    "fullTitle": "Celý průvodce na jedné stránce · Exit Chat Control"
+    "toolTitle": "{name}: k čemu slouží a jak ho nastavit · Exit Chat Control"
   },
   "guide": {
     "home": "Domů",
@@ -205,10 +204,7 @@
     "alternatives": "Další možnosti v této kategorii",
     "pager": "Číst dál",
     "fullGuide": "Přečíst celého průvodce na jedné stránce",
-    "toolCount": "Nástroje: {n}",
-    "oneTool": "1 nástroj",
     "quizCta": "Nevíte, kde začít? Vyplňte kvíz o 12 otázkách",
-    "hubHeading": "Průvodce téma po tématu",
     "inSection": "V této části",
     "toolPage": "Podrobná karta"
   }

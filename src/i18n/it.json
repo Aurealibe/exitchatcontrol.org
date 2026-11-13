@@ -193,8 +193,7 @@
     "quizDescription": "Dodici domande rapide per trovare i punti deboli della tua privacy, poi soluzioni concrete dalla guida. Funziona nel tuo browser, nulla viene inviato.",
     "notFoundTitle": "Pagina non trovata · Exit Chat Control",
     "ogImageAlt": "Exit Chat Control, guida pratica alla privacy digitale",
-    "toolTitle": "{name}: a cosa serve e come configurarlo · Exit Chat Control",
-    "fullTitle": "La guida completa in una pagina · Exit Chat Control"
+    "toolTitle": "{name}: a cosa serve e come configurarlo · Exit Chat Control"
   },
   "guide": {
     "home": "Home",
@@ -205,10 +204,7 @@
     "alternatives": "Altre opzioni in questa categoria",
     "pager": "Continua a leggere",
     "fullGuide": "Leggi tutta la guida in un'unica pagina",
-    "toolCount": "{n} strumenti",
-    "oneTool": "1 strumento",
     "quizCta": "Non sai da dove iniziare? Fai il quiz in 12 domande",
-    "hubHeading": "La guida, tema per tema",
     "inSection": "In questa sezione",
     "toolPage": "Scheda completa"
   }
