@@ -8,23 +8,34 @@ tool: 't-mullvaddns'
     <span class="tool-tag">Hálózati szűrés</span>
   </Fragment>
   <Fragment slot="what">
-    Két titkosított feloldó, amelyek ráadásul blokkolják a reklámokat és a nyomkövetőket az egész
-    eszközön.
+    Titkosított feloldó, amely a teljes eszközön a hirdetéseket és nyomkövetőket is blokkolja.
   </Fragment>
   <Fragment slot="why">
-    A <b>Mullvad DNS</b> (Svédország, no-log/naplózásmentes) ingyenes és blokklistákat is kínál. A{' '}
-    <b>NextDNS</b> nagymértékben testreszabható, egy vezérlőpulttal és eszközönkénti profilokkal, de
-    amerikai székhelyű és alapértelmezés szerint naplózik (ez a beállításoknál kikapcsolható).
+    A <b>NextDNS</b> nagymértékben testreszabható, vezérlőpulttal és eszközönkénti profilokkal.
+    Viszont amerikai székhelyű, a szolgáltatás nem nyílt forráskódú, és alapértelmezés szerint
+    naplóz (ezt a beállításokban kapcsold ki).
   </Fragment>
   <Fragment slot="who">
     Azoknak, akik rendszerszintű reklámblokkolást szeretnének a böngésző-bővítmények telepítése
     nélkül.
   </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">A Mullvad DNS megszűnt</span>
+    <p>
+      Ez a kártya korábban a Mullvad DNS-t is ajánlotta. A Mullvad 2026. november 2-án{' '}
+      <a
+        href="https://mullvad.net/en/blog/2026/9/3/shutting-down-our-public-encrypted-dns-servers-and-sponsoring-quad9-instead"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        megszüntette nyilvános titkosított DNS-ét
+      </a>
+      , és helyette most a Quad9-et támogatja. Ha beállítottad, válts Quad9-re, vagy
+      Franciaországból a Digitale Gesellschaft DNS-re. A Mullvad VPN alkalmazás saját DNS-ét ez nem
+      érinti.
+    </p>
+  </div>
   <ol slot="install">
-    <li>
-      Mullvad DNS: használd a mullvad.net/help/dns oldalon található címet privát DNS-ként
-      (ugyanúgy, mint a Quad9 esetében).
-    </li>
     <li>
       NextDNS: hozz létre egy profilt a nextdns.io oldalon, <b>tiltsd le a naplózást</b>, majd
       alkalmazd a konfigurációt az eszközeidre.

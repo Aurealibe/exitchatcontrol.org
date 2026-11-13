@@ -15,7 +15,9 @@
     "body": "**Migrez vos fichiers** vers un cloud chiffré (Proton Drive / Cryptomator)."
   },
   "do-vpn": { "body": "**Prenez un VPN** (Mullvad), idéalement payé anonymement." },
-  "do-dns": { "body": "**Chiffrez votre DNS** (Quad9 / Mullvad DNS) sur téléphone et ordinateur." },
+  "do-dns": {
+    "body": "**Chiffrez votre DNS** (Quad9 / Digitale Gesellschaft) sur téléphone et ordinateur."
+  },
   "do-social": {
     "body": "**Créez votre compte Mastodon** et ancrez votre présence hors plateformes."
   },

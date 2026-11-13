@@ -1,0 +1,36 @@
+---
+tool: 't-dgdns'
+---
+
+<ToolCard tool="t-dgdns" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Začátečník</span>
+    <span class="tool-tag">Bez filtrování · bez logů</span>
+    <span class="tool-tag">🇨🇭 nezisková organizace</span>
+  </Fragment>
+  <Fragment slot="what">
+    Malý šifrovaný DNS resolver provozovaný sdružením Digitale Gesellschaft (Digitální společnost
+    Švýcarsko), neziskovou organizací hájící občanské svobody.
+  </Fragment>
+  <Fragment slot="why">
+    Neuchovává žádné logy IP adres ani dotazovaných domén a nic nefiltruje. Běží na vlastním
+    hardwaru ve Švýcarsku, na GitHubu zveřejňuje svou produkční konfiguraci (postavenou na dnsdist a
+    Unbound) a každoročně zprávu o transparentnosti. Malý a mimo velké poskytovatele: dobrý druhý
+    resolver, nebo první tam, kde Quad9 už není dostupný.
+  </Fragment>
+  <Fragment slot="who">
+    Všichni, zejména ve Francii od 24. listopadu 2026. Provozují ho dobrovolníci bez záruky
+    dostupnosti: mějte na paměti druhý resolver.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      V Androidu: Nastavení &gt; Síť &gt; <b>Soukromý DNS</b> &gt; zadejte{' '}
+      <b>dns.digitale-gesellschaft.ch</b>.
+    </li>
+    <li>
+      Jinde (prohlížeč, PC, iPhone): nastavte DNS-over-HTTPS na{' '}
+      <b>{'https://dns.digitale-gesellschaft.ch/dns-query'}</b>. Nešifrovaná služba na portu 53
+      záměrně neexistuje.
+    </li>
+  </ol>
+</ToolCard>

@@ -13,10 +13,24 @@ title: 'DNS chiffré & Cloudflare'
 
 Le DNS, c'est l'annuaire qui traduit un nom de site (exemple.com) en adresse machine. Problème : par défaut, c'est votre fournisseur d'accès qui gère cet annuaire, et il voit donc **chaque site que vous visitez**, même quand la page est en HTTPS. Chiffrer son DNS, c'est reprendre cette liste à son FAI. C'est un réglage discret mais parmi les plus efficaces.
 
+<div class="box warn">
+  <span class="lab">Novembre 2026 : les résolveurs publics sous pression</span>
+  <p>
+    Mullvad a fermé son DNS chiffré public le 2 novembre 2026, et Quad9 cesse de servir la France le
+    24 novembre 2026 plutôt que d'obéir à une décision de justice lui imposant de bloquer des
+    domaines (détails dans les fiches ci-dessous). Un résolveur public peut être contraint de
+    filtrer, ou de partir. Gardez-en un second en réserve, ou hébergez le vôtre avec Unbound.
+  </p>
+</div>
+
 <Tool id="t-quad9" />
+
+<Tool id="t-dgdns" />
 
 <Tool id="t-mullvaddns" />
 
 <Tool id="t-cloudflare" />
 
 <Tool id="t-pihole" />
+
+<Tool id="t-unbound" />

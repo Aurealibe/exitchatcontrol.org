@@ -13,10 +13,24 @@ title: 'Encrypted DNS & Cloudflare'
 
 DNS is the directory that turns a site name (example.com) into a machine address. The catch: by default your internet provider runs that directory, so it sees **every site you visit**, even when the page is HTTPS. Encrypting your DNS takes that list back from your ISP. It's a quiet setting but one of the most effective.
 
+<div class="box warn">
+  <span class="lab">November 2026: public resolvers under pressure</span>
+  <p>
+    Mullvad shut down its public encrypted DNS on 2 November 2026, and Quad9 stops serving France on
+    24 November 2026 rather than obey a court order to block domains (details in the cards below). A
+    public resolver can be ordered to filter, or leave. Keep a second one in reserve, or run your
+    own with Unbound.
+  </p>
+</div>
+
 <Tool id="t-quad9" />
+
+<Tool id="t-dgdns" />
 
 <Tool id="t-mullvaddns" />
 
 <Tool id="t-cloudflare" />
 
 <Tool id="t-pihole" />
+
+<Tool id="t-unbound" />

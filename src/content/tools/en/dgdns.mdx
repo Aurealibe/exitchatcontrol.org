@@ -1,0 +1,36 @@
+---
+tool: 't-dgdns'
+---
+
+<ToolCard tool="t-dgdns" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Beginner</span>
+    <span class="tool-tag">Unfiltered · no logs</span>
+    <span class="tool-tag">🇨🇭 non-profit</span>
+  </Fragment>
+  <Fragment slot="what">
+    A small encrypted DNS resolver run by the Digital Society Switzerland, a non-profit
+    civil-liberties association.
+  </Fragment>
+  <Fragment slot="why">
+    It keeps no logs of IP addresses or queried domains, and filters nothing. It runs on its own
+    hardware in Switzerland, publishes its production configuration on GitHub (built on dnsdist and
+    Unbound) and a yearly transparency report. Being small and outside the big providers, it is a
+    good second resolver, or a first one where Quad9 is no longer available.
+  </Fragment>
+  <Fragment slot="who">
+    Everyone, especially in France from 24 November 2026. Volunteer-run with no availability
+    guarantee: keep a second resolver in mind.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      On Android: Settings &gt; Network &gt; <b>Private DNS</b> &gt; enter{' '}
+      <b>dns.digitale-gesellschaft.ch</b>.
+    </li>
+    <li>
+      Elsewhere (browser, PC, iPhone): set DNS-over-HTTPS to{' '}
+      <b>{'https://dns.digitale-gesellschaft.ch/dns-query'}</b>. There is no unencrypted service on
+      port 53, on purpose.
+    </li>
+  </ol>
+</ToolCard>

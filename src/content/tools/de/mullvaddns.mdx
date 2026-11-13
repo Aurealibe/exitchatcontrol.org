@@ -8,23 +8,34 @@ tool: 't-mullvaddns'
     <span class="tool-tag">Netzwerkfilterung</span>
   </Fragment>
   <Fragment slot="what">
-    Zwei verschlüsselte Resolver, die außerdem Werbung und Tracker auf dem gesamten Gerät
-    blockieren.
+    Ein verschlüsselter Resolver, der zusätzlich Werbung und Tracker für das ganze Gerät blockiert.
   </Fragment>
   <Fragment slot="why">
-    <b>Mullvad DNS</b> (Schweden, keine Protokollierung) ist kostenlos und bietet Blocklisten.{' '}
-    <b>NextDNS</b> lässt sich mit einem Dashboard und gerätespezifischen Profilen stark anpassen,
-    sitzt jedoch in den USA und protokolliert standardmäßig (deaktiviere das in den Einstellungen).
+    <b>NextDNS</b> lässt sich mit einem Dashboard und gerätespezifischen Profilen stark anpassen.
+    Aber es sitzt in den USA, der Dienst ist nicht quelloffen und protokolliert standardmäßig (in
+    den Einstellungen abschaltbar).
   </Fragment>
   <Fragment slot="who">
     Wenn du systemweit Werbung blockieren möchtest, ohne in jedem Browser eine Erweiterung zu
     installieren.
   </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Mullvad DNS wurde eingestellt</span>
+    <p>
+      Diese Karte empfahl früher auch Mullvad DNS. Mullvad hat am 2. November 2026{' '}
+      <a
+        href="https://mullvad.net/en/blog/2026/9/3/shutting-down-our-public-encrypted-dns-servers-and-sponsoring-quad9-instead"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        sein öffentliches verschlüsseltes DNS eingestellt
+      </a>{' '}
+      und unterstützt jetzt stattdessen Quad9. Falls du es eingerichtet hattest, wechsle zu Quad9
+      oder, aus Frankreich, zu Digitale Gesellschaft DNS. Das DNS in der Mullvad-VPN-App ist nicht
+      betroffen.
+    </p>
+  </div>
   <ol slot="install">
-    <li>
-      Mullvad DNS: Verwende die unter mullvad.net/help/dns angezeigte Adresse als privates DNS (wie
-      bei Quad9).
-    </li>
     <li>
       NextDNS: Erstelle auf nextdns.io ein Profil, <b>deaktiviere die Protokollierung</b> und wende
       die Konfiguration anschließend auf deine Geräte an.

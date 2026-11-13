@@ -249,7 +249,8 @@
     "category": "dns",
     "name": "Unbound",
     "url": "https://nlnetlabs.nl/projects/unbound/about/",
-    "license": "BSD-3-Clause"
+    "license": "BSD-3-Clause",
+    "tool": "t-unbound"
   },
   {
     "id": "bitwarden",

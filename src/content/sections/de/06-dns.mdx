@@ -13,10 +13,25 @@ title: 'Verschlüsseltes DNS & Cloudflare'
 
 DNS ist das Verzeichnis, das einen Domainnamen (example.com) in eine IP-Adresse übersetzt. Der Haken: Standardmäßig betreibt dein Internetanbieter dieses Verzeichnis und sieht dadurch **jede Website, die du besuchst** – selbst wenn die Seite HTTPS nutzt. Wenn du dein DNS verschlüsselst, entziehst du deinem Anbieter diese Liste. Es ist eine unauffällige Einstellung, aber eine der wirksamsten.
 
+<div class="box warn">
+  <span class="lab">November 2026: öffentliche Resolver unter Druck</span>
+  <p>
+    Mullvad hat sein öffentliches verschlüsseltes DNS am 2. November 2026 eingestellt, und Quad9
+    bedient Frankreich ab dem 24. November 2026 nicht mehr, statt einer gerichtlichen Anordnung zur
+    Sperrung von Domains zu folgen (Details in den Karten unten). Ein öffentlicher Resolver kann zum
+    Filtern gezwungen werden – oder er geht. Halte einen zweiten in Reserve oder betreibe deinen
+    eigenen mit Unbound.
+  </p>
+</div>
+
 <Tool id="t-quad9" />
+
+<Tool id="t-dgdns" />
 
 <Tool id="t-mullvaddns" />
 
 <Tool id="t-cloudflare" />
 
 <Tool id="t-pihole" />
+
+<Tool id="t-unbound" />
