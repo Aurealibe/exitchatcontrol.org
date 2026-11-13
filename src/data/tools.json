@@ -1119,11 +1119,11 @@
     "slug": "linux",
     "pricing": "free",
     "name": "Linux (on desktop)",
-    "url": "https://distrochooser.de/fr",
+    "url": "https://distrochooser.de/",
     "links": [
       {
-        "label": "distrochooser.de/fr",
-        "href": "https://distrochooser.de/fr"
+        "label": "distrochooser.de",
+        "href": "https://distrochooser.de/"
       },
       {
         "label": "distrosea.com",
