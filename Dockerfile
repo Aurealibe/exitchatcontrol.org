@@ -1,10 +1,12 @@
 # syntax=docker/dockerfile:1
 
 # ── build: Astro static site + offline artifact + CSP hashes ──────────────
-FROM node:22-alpine@sha256:16e22a550f3863206a3f701448c45f7912c6896a62de43add43bb9c86130c3e2 AS build
+FROM node:26-alpine@sha256:6bd9ab43c0ec0190ca7b2d193906cb8b7edf6e7f4afa43ddeccd6452710bffb5 AS build
 WORKDIR /app
-RUN corepack enable
 COPY package.json pnpm-lock.yaml ./
+# Node 25+ no longer ships corepack: install the exact pnpm pinned in
+# package.json ("packageManager"), so there is still one source of truth.
+RUN npm install -g "$(node -p "require('./package.json').packageManager")"
 RUN --mount=type=cache,target=/root/.local/share/pnpm/store \
     pnpm install --frozen-lockfile
 COPY . .
