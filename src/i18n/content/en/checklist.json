@@ -9,7 +9,9 @@
   },
   "do-cloud": { "body": "**Move your files** to an encrypted cloud (Proton Drive / Cryptomator)." },
   "do-vpn": { "body": "**Get a VPN** (Mullvad), ideally paid anonymously." },
-  "do-dns": { "body": "**Encrypt your DNS** (Quad9 / Mullvad DNS) on phone and computer." },
+  "do-dns": {
+    "body": "**Encrypt your DNS** (Quad9 / Digitale Gesellschaft) on phone and computer."
+  },
   "do-social": { "body": "**Open your Mastodon account** and anchor your presence off-platform." },
   "do-linux": { "body": "**Try Linux** (distrosea.com), then install it (Mint to start)." },
   "do-graphene": { "body": "**Move the phone to GrapheneOS** (Pixel needed) or harden Android." },

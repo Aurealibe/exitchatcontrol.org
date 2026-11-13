@@ -297,23 +297,41 @@
     "profiles": ["🟢", "🟡"]
   },
   {
+    "id": "t-dgdns",
+    "section": "dns",
+    "slug": "digitale-gesellschaft-dns",
+    "pricing": "free",
+    "name": "Digitale Gesellschaft DNS",
+    "url": "https://www.digitale-gesellschaft.ch/dns/",
+    "links": [
+      {
+        "label": "digitale-gesellschaft.ch/dns",
+        "href": "https://www.digitale-gesellschaft.ch/dns/"
+      },
+      {
+        "label": "github.com/DigitaleGesellschaft/DNS-Resolver",
+        "href": "https://github.com/DigitaleGesellschaft/DNS-Resolver"
+      }
+    ],
+    "monogram": "DG",
+    "color": "#c8102e",
+    "level": 1,
+    "profiles": ["🟢", "🟡"]
+  },
+  {
     "id": "t-mullvaddns",
     "section": "dns",
     "slug": "mullvad-dns-nextdns",
     "pricing": "freemium",
-    "name": "Mullvad DNS · NextDNS",
-    "url": "https://mullvad.net/help/dns-over-https-and-dns-over-tls",
+    "name": "NextDNS",
+    "url": "https://nextdns.io",
     "links": [
-      {
-        "label": "mullvad.net/dns",
-        "href": "https://mullvad.net/help/dns-over-https-and-dns-over-tls"
-      },
       {
         "label": "nextdns.io",
         "href": "https://nextdns.io"
       }
     ],
-    "iconSlug": "mullvad",
+    "iconSlug": "nextdns",
     "monogram": "DNS",
     "color": "#2b4b8f",
     "level": 2,
@@ -358,6 +376,28 @@
     "iconSlug": "pihole",
     "monogram": "π",
     "color": "#96060c",
+    "level": 3,
+    "profiles": ["🔴"]
+  },
+  {
+    "id": "t-unbound",
+    "section": "dns",
+    "slug": "unbound",
+    "pricing": "free",
+    "name": "Unbound",
+    "url": "https://nlnetlabs.nl/projects/unbound/about/",
+    "links": [
+      {
+        "label": "nlnetlabs.nl/unbound",
+        "href": "https://nlnetlabs.nl/projects/unbound/about/"
+      },
+      {
+        "label": "docs.pi-hole.net · Unbound",
+        "href": "https://docs.pi-hole.net/guides/dns/unbound/"
+      }
+    ],
+    "monogram": "Ub",
+    "color": "#2e5c8a",
     "level": 3,
     "profiles": ["🔴"]
   },

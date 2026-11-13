@@ -8,21 +8,33 @@ tool: 't-mullvaddns'
     <span class="tool-tag">Netwerkfiltering</span>
   </Fragment>
   <Fragment slot="what">
-    Twee versleutelde resolvers die ook advertenties en trackers blokkeren voor het hele apparaat.
+    Een versleutelde resolver die ook advertenties en trackers blokkeert voor het hele apparaat.
   </Fragment>
   <Fragment slot="why">
-    <b>Mullvad DNS</b> (Zweden, no-log) is gratis en biedt blokkeerlijsten. <b>NextDNS</b> is zeer
-    aanpasbaar, met een dashboard en profielen per apparaat, maar is in de VS gevestigd en logt
-    standaard (schakel dit uit in de instellingen).
+    <b>NextDNS</b> is zeer aanpasbaar, met een dashboard en profielen per apparaat. Maar het is
+    gevestigd in de VS, de dienst is niet open source en het logt standaard (uit te schakelen in de
+    instellingen).
   </Fragment>
   <Fragment slot="who">
     Wie systeembrede advertentieblokkering wil zonder per browser een extensie te installeren.
   </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Mullvad DNS is gestopt</span>
+    <p>
+      Deze kaart raadde ook Mullvad DNS aan. Mullvad{' '}
+      <a
+        href="https://mullvad.net/en/blog/2026/9/3/shutting-down-our-public-encrypted-dns-servers-and-sponsoring-quad9-instead"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        heeft zijn publieke versleutelde DNS stopgezet
+      </a>{' '}
+      op 2 november 2026 en sponsort nu Quad9. Had u het ingesteld, stap dan over op Quad9 of,
+      vanuit Frankrijk, op Digitale Gesellschaft DNS. De DNS in de Mullvad VPN-app is niet
+      getroffen.
+    </p>
+  </div>
   <ol slot="install">
-    <li>
-      Mullvad DNS: gebruik het adres op mullvad.net/help/dns als uw privé-DNS (dezelfde methode als
-      Quad9).
-    </li>
     <li>
       NextDNS: maak een profiel op nextdns.io, <b>schakel logging uit</b> en pas de configuratie toe
       op uw apparaten.

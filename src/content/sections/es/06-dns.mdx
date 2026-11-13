@@ -13,10 +13,24 @@ title: 'DNS cifrado & Cloudflare'
 
 DNS es el directorio que convierte un nombre de sitio (example.com) en una dirección de máquina. El truco: por defecto tu proveedor de internet ejecuta ese directorio, así que ve **cada sitio que visitas**, incluso cuando la página es HTTPS. Cifrar tu DNS recupera esa lista de tu ISP. Es un ajuste silencioso pero uno de los más efectivos.
 
+<div class="box warn">
+  <span class="lab">Noviembre de 2026: resolutores públicos bajo presión</span>
+  <p>
+    Mullvad cerró su DNS cifrado público el 2 de noviembre de 2026, y Quad9 deja de dar servicio en
+    Francia el 24 de noviembre de 2026 antes que obedecer una orden judicial de bloquear dominios
+    (detalles en las fichas de abajo). A un resolutor público se le puede obligar a filtrar, o a
+    irse. Ten un segundo en reserva, o monta el tuyo propio con Unbound.
+  </p>
+</div>
+
 <Tool id="t-quad9" />
+
+<Tool id="t-dgdns" />
 
 <Tool id="t-mullvaddns" />
 
 <Tool id="t-cloudflare" />
 
 <Tool id="t-pihole" />
+
+<Tool id="t-unbound" />

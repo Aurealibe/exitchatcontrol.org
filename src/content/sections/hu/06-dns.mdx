@@ -13,10 +13,25 @@ title: 'Titkosított DNS és a Cloudflare'
 
 A DNS az a címtár, amely egy oldal nevét (pelda.hu) a gép címévé (IP) alakítja. A bökkenő: alapértelmezés szerint az internetszolgáltatód (ISP) üzemelteti ezt a címtárat, így látja **minden egyes meglátogatott oldaladat**, még akkor is, ha az oldal HTTPS-t használ. A DNS titkosításával visszaveszed ezt a listát a szolgáltatódtól. Ez egy csendes beállítás, de az egyik leghatékonyabb.
 
+<div class="box warn">
+  <span class="lab">2026. november: nyomás alatt a nyilvános feloldók</span>
+  <p>
+    A Mullvad 2026. november 2-án megszüntette nyilvános titkosított DNS-szolgáltatását, a Quad9
+    pedig 2026. november 24-től nem szolgálja ki Franciaországot, ahelyett hogy engedelmeskedne egy
+    domainek blokkolását előíró bírósági végzésnek (részletek az alábbi kártyákon). Egy nyilvános
+    feloldót kötelezhetnek szűrésre – vagy távozik. Tarts egy másodikat tartalékban, vagy futtasd a
+    sajátodat Unbounddal.
+  </p>
+</div>
+
 <Tool id="t-quad9" />
+
+<Tool id="t-dgdns" />
 
 <Tool id="t-mullvaddns" />
 
 <Tool id="t-cloudflare" />
 
 <Tool id="t-pihole" />
+
+<Tool id="t-unbound" />

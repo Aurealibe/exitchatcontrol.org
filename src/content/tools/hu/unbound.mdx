@@ -1,0 +1,43 @@
+---
+tool: 't-unbound'
+---
+
+<ToolCard tool="t-unbound" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Haladó</span>
+    <span class="tool-tag">Saját feloldó</span>
+    <span class="tool-tag">🇳🇱 · nyílt forráskódú (BSD)</span>
+  </Fragment>
+  <Fragment slot="what">
+    Rekurzív DNS-feloldó, amelyet te magad futtatsz: közvetlenül az internet gyökér- és mérvadó
+    szervereit kérdezi, DNS-szolgáltató nélkül.
+  </Fragment>
+  <Fragment slot="why">
+    A nyilvános feloldók jönnek-mennek, és kötelezhetők domainek blokkolására. A saját feloldódnak
+    nincs szolgáltatója, amelyet le lehetne állítani vagy cenzúrázni lehetne, és egyetlen harmadik
+    fél sem gyűjti a meglátogatott oldalaid listáját. A holland nonprofit NLnet Labs tartja karban;
+    ellenőrzi a DNSSEC-et, és természetes párja a Pi-hole-nak.
+  </Fragment>
+  <Fragment slot="who">
+    Akik már futtatnak Pi-hole-t, otthoni szervert vagy kompatibilis routert, és tartós megoldást
+    akarnak.
+  </Fragment>
+  <div class="box honest" slot="extra">
+    <span class="lab">Amit nem rejt el</span>
+    <p>
+      Az Unbound titkosítatlan DNS-sel, a te IP-címedről kommunikál a mérvadó szerverekkel: az
+      internetszolgáltatód továbbra is láthatja ezeket a lekérdezéseket. Ha ezeket is el akarod
+      rejteni, futtasd VPN mögött, vagy állítsd be, hogy egy titkosított feloldóhoz továbbítson
+      (DNS-over-TLS).
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Telepítsd az <b>unbound</b> csomagot (Debian, Raspberry Pi OS, OpenWrt, OPNsense, pfSense…).
+    </li>
+    <li>
+      Pi-hole-lal: kövesd a Pi-hole Unbound-útmutatóját, majd állítsd be a <b>127.0.0.1#5335</b>{' '}
+      címet a Pi-hole egyetlen upstream DNS-eként.
+    </li>
+  </ol>
+</ToolCard>
