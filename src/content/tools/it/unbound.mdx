@@ -1,0 +1,42 @@
+---
+tool: 't-unbound'
+---
+
+<ToolCard tool="t-unbound" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🔴 Avanzato</span>
+    <span class="tool-tag">Il tuo resolver</span>
+    <span class="tool-tag">🇳🇱 · open source (BSD)</span>
+  </Fragment>
+  <Fragment slot="what">
+    Un resolver DNS ricorsivo che gestisci tu: interroga direttamente i server radice e autoritativi
+    di internet, senza alcun fornitore DNS in mezzo.
+  </Fragment>
+  <Fragment slot="why">
+    I resolver pubblici vanno e vengono, e possono essere costretti a bloccare domini. Il tuo
+    resolver non ha un fornitore da chiudere o da censurare, e nessuna terza parte raccoglie
+    l'elenco dei siti che visiti. Mantenuto da NLnet Labs, fondazione olandese senza scopo di lucro,
+    convalida DNSSEC e si abbina naturalmente a Pi-hole.
+  </Fragment>
+  <Fragment slot="who">
+    Chi ha già un Pi-hole, un server domestico o un router compatibile, e vuole la soluzione
+    duratura.
+  </Fragment>
+  <div class="box honest" slot="extra">
+    <span class="lab">Cosa non nasconde</span>
+    <p>
+      Unbound parla con i server autoritativi in DNS in chiaro, dal tuo IP: il tuo provider internet
+      può ancora vedere quelle richieste. Per nasconderle, usalo dietro una VPN, oppure fallo
+      inoltrare a un resolver cifrato (DNS-over-TLS).
+    </p>
+  </div>
+  <ol slot="install">
+    <li>
+      Installa il pacchetto <b>unbound</b> (Debian, Raspberry Pi OS, OpenWrt, OPNsense, pfSense…).
+    </li>
+    <li>
+      Con Pi-hole: segui la guida Unbound di Pi-hole, poi imposta <b>127.0.0.1#5335</b> come unico
+      DNS upstream di Pi-hole.
+    </li>
+  </ol>
+</ToolCard>

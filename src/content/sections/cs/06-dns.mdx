@@ -13,10 +13,24 @@ title: 'Šifrované DNS a Cloudflare'
 
 DNS je adresář, který převádí název webu (example.com) na strojovou adresu. Háček je v tom, že tento adresář ve výchozím nastavení provozuje váš poskytovatel internetu, takže vidí **každý web, který navštívíte**, i když stránka používá HTTPS. Šifrováním DNS tento seznam svému ISP vezmete zpět. Je to nenápadné nastavení, ale jedno z nejúčinnějších.
 
+<div class="box warn">
+  <span class="lab">Listopad 2026: veřejné resolvery pod tlakem</span>
+  <p>
+    Mullvad 2. listopadu 2026 ukončil svou veřejnou šifrovanou DNS a Quad9 od 24. listopadu 2026
+    přestává obsluhovat Francii, místo aby uposlechl soudní příkaz k blokování domén (podrobnosti v
+    kartách níže). Veřejný resolver může být donucen filtrovat, nebo odejít. Mějte v záloze druhý,
+    nebo provozujte vlastní s Unboundem.
+  </p>
+</div>
+
 <Tool id="t-quad9" />
+
+<Tool id="t-dgdns" />
 
 <Tool id="t-mullvaddns" />
 
 <Tool id="t-cloudflare" />
 
 <Tool id="t-pihole" />
+
+<Tool id="t-unbound" />

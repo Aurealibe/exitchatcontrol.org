@@ -1,0 +1,37 @@
+---
+tool: 't-dgdns'
+---
+
+<ToolCard tool="t-dgdns" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Einsteiger</span>
+    <span class="tool-tag">Ungefiltert · keine Logs</span>
+    <span class="tool-tag">🇨🇭 gemeinnützig</span>
+  </Fragment>
+  <Fragment slot="what">
+    Ein kleiner verschlüsselter DNS-Resolver der Digitalen Gesellschaft, eines gemeinnützigen
+    Schweizer Vereins für Grundrechte im digitalen Raum.
+  </Fragment>
+  <Fragment slot="why">
+    Er speichert weder IP-Adressen noch abgefragte Domains und filtert nichts. Er läuft auf eigener
+    Hardware in der Schweiz und veröffentlicht seine Produktionskonfiguration auf GitHub (auf Basis
+    von dnsdist und Unbound) sowie einen jährlichen Transparenzbericht. Klein und unabhängig von den
+    großen Anbietern: ein guter zweiter Resolver – oder der erste, wo Quad9 nicht mehr verfügbar
+    ist.
+  </Fragment>
+  <Fragment slot="who">
+    Alle, besonders in Frankreich ab dem 24. November 2026. Ehrenamtlich betrieben, ohne
+    Verfügbarkeitsgarantie: Behalte einen zweiten Resolver im Hinterkopf.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Unter Android: Einstellungen &gt; Netzwerk &gt; <b>Privates DNS</b> &gt;{' '}
+      <b>dns.digitale-gesellschaft.ch</b> eingeben.
+    </li>
+    <li>
+      Anderswo (Browser, PC, iPhone): DNS-over-HTTPS auf{' '}
+      <b>{'https://dns.digitale-gesellschaft.ch/dns-query'}</b> setzen. Einen unverschlüsselten
+      Dienst auf Port 53 gibt es bewusst nicht.
+    </li>
+  </ol>
+</ToolCard>

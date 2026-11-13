@@ -8,22 +8,34 @@ tool: 't-mullvaddns'
     <span class="tool-tag">Filtrado de red</span>
   </Fragment>
   <Fragment slot="what">
-    Dos resolutores cifrados que también bloquean anuncios y rastreadores para todo el dispositivo.
+    Un resolutor cifrado que además bloquea anuncios y rastreadores en todo el dispositivo.
   </Fragment>
   <Fragment slot="why">
-    <b>Mullvad DNS</b> (Suecia, sin registros) es gratuito y ofrece listas de bloqueo.{' '}
-    <b>NextDNS</b> es altamente personalizable, con un panel y perfiles por dispositivo, pero está
-    basado en EE.UU. y registra por defecto (desactívalo en ajustes).
+    <b>NextDNS</b> es altamente personalizable, con un panel y perfiles por dispositivo. Pero tiene
+    sede en EE. UU., el servicio no es de código abierto y registra por defecto (desactívalo en la
+    configuración).
   </Fragment>
   <Fragment slot="who">
     Aquellos que quieren bloqueo de anuncios a nivel de sistema sin instalar una extensión por
     navegador.
   </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Mullvad DNS ha cerrado</span>
+    <p>
+      Esta ficha también recomendaba Mullvad DNS. Mullvad{' '}
+      <a
+        href="https://mullvad.net/en/blog/2026/9/3/shutting-down-our-public-encrypted-dns-servers-and-sponsoring-quad9-instead"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        cerró su DNS cifrado público
+      </a>{' '}
+      el 2 de noviembre de 2026 y ahora patrocina Quad9 en su lugar. Si lo tenías configurado,
+      cambia a Quad9 o, desde Francia, a Digitale Gesellschaft DNS. El DNS integrado en la app
+      Mullvad VPN no se ve afectado.
+    </p>
+  </div>
   <ol slot="install">
-    <li>
-      Mullvad DNS: usa la dirección mostrada en mullvad.net/help/dns como tu DNS privado (mismo
-      método que Quad9).
-    </li>
     <li>
       NextDNS: crea un perfil en nextdns.io, <b>desactiva el registro</b>, luego aplica la
       configuración a tus dispositivos.

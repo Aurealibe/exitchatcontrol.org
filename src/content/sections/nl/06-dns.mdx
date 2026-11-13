@@ -13,10 +13,25 @@ title: 'Versleutelde DNS & Cloudflare'
 
 DNS is de telefoongids die een sitenaam (example.com) omzet in een machineadres. Het addertje: standaard beheert uw internetaanbieder die gids, dus ziet hij **elke site die u bezoekt**, zelfs wanneer de pagina HTTPS gebruikt. Uw DNS versleutelen haalt die lijst terug bij uw provider. Het is een stille instelling, maar een van de meest effectieve.
 
+<div class="box warn">
+  <span class="lab">November 2026: publieke resolvers onder druk</span>
+  <p>
+    Mullvad heeft zijn publieke versleutelde DNS op 2 november 2026 stopgezet, en Quad9 stopt op 24
+    november 2026 met zijn dienst in Frankrijk in plaats van een rechterlijk bevel tot het blokkeren
+    van domeinen op te volgen (details in de kaarten hieronder). Een publieke resolver kan worden
+    gedwongen te filteren, of te vertrekken. Houd een tweede achter de hand, of draai uw eigen
+    resolver met Unbound.
+  </p>
+</div>
+
 <Tool id="t-quad9" />
+
+<Tool id="t-dgdns" />
 
 <Tool id="t-mullvaddns" />
 
 <Tool id="t-cloudflare" />
 
 <Tool id="t-pihole" />
+
+<Tool id="t-unbound" />

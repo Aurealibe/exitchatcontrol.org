@@ -8,22 +8,32 @@ tool: 't-mullvaddns'
     <span class="tool-tag">Filtrování sítě</span>
   </Fragment>
   <Fragment slot="what">
-    Dva šifrované resolvery, které zároveň blokují reklamy a trackery pro celé zařízení.
+    Šifrovaný resolver, který navíc blokuje reklamy a sledovače pro celé zařízení.
   </Fragment>
   <Fragment slot="why">
-    <b>Mullvad DNS</b> (Švédsko, bez logování) je zdarma a nabízí blokovací seznamy. <b>NextDNS</b>{' '}
-    je vysoce přizpůsobitelný, s přehledem a profily pro jednotlivá zařízení, ale sídlí v USA a ve
-    výchozím nastavení zaznamenává logy (v nastavení to vypněte).
+    <b>NextDNS</b> je velmi přizpůsobitelný, s ovládacím panelem a profily pro jednotlivá zařízení.
+    Sídlí ale v USA, služba není open source a ve výchozím stavu loguje (vypněte to v nastavení).
   </Fragment>
   <Fragment slot="who">
     Pro ty, kteří chtějí blokování reklam v celém systému bez instalace rozšíření do každého
     prohlížeče.
   </Fragment>
+  <div class="box warn" slot="extra">
+    <span class="lab">Mullvad DNS skončil</span>
+    <p>
+      Tato karta dříve doporučovala i Mullvad DNS. Mullvad 2. listopadu 2026{' '}
+      <a
+        href="https://mullvad.net/en/blog/2026/9/3/shutting-down-our-public-encrypted-dns-servers-and-sponsoring-quad9-instead"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ukončil svou veřejnou šifrovanou DNS
+      </a>{' '}
+      a místo toho nyní sponzoruje Quad9. Pokud jste ji měli nastavenou, přejděte na Quad9, nebo z
+      Francie na Digitale Gesellschaft DNS. DNS v aplikaci Mullvad VPN se to netýká.
+    </p>
+  </div>
   <ol slot="install">
-    <li>
-      Mullvad DNS: použijte adresu uvedenou na mullvad.net/help/dns jako své soukromé DNS (stejný
-      postup jako u Quad9).
-    </li>
     <li>
       NextDNS: vytvořte profil na nextdns.io, <b>vypněte logování</b> a poté konfiguraci použijte na
       svých zařízeních.

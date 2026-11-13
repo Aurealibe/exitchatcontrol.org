@@ -1,0 +1,36 @@
+---
+tool: 't-dgdns'
+---
+
+<ToolCard tool="t-dgdns" variant={props.variant}>
+  <Fragment slot="tags">
+    <span class="tool-tag">🟢 Kezdő</span>
+    <span class="tool-tag">Szűretlen · naplózás nélkül</span>
+    <span class="tool-tag">🇨🇭 nonprofit</span>
+  </Fragment>
+  <Fragment slot="what">
+    Kis titkosított DNS-feloldó, amelyet a Digitale Gesellschaft (Svájci Digitális Társaság), egy
+    nonprofit szabadságjogi egyesület üzemeltet.
+  </Fragment>
+  <Fragment slot="why">
+    Nem naplózza sem az IP-címeket, sem a lekérdezett domaineket, és semmit sem szűr. Saját
+    hardveren fut Svájcban, a GitHubon közzéteszi éles konfigurációját (dnsdist és Unbound alapon),
+    és éves átláthatósági jelentést ad ki. Kicsi és a nagy szolgáltatóktól független: jó második
+    feloldó, vagy első ott, ahol a Quad9 már nem elérhető.
+  </Fragment>
+  <Fragment slot="who">
+    Mindenkinek, különösen Franciaországban 2026. november 24-től. Önkéntesek üzemeltetik,
+    rendelkezésre állási garancia nélkül: tarts észben egy második feloldót.
+  </Fragment>
+  <ol slot="install">
+    <li>
+      Androidon: Beállítások &gt; Hálózat (vagy Kapcsolatok) &gt; <b>Privát DNS</b> &gt; írd be:{' '}
+      <b>dns.digitale-gesellschaft.ch</b>.
+    </li>
+    <li>
+      Máshol (böngésző, PC, iPhone): állítsd a DNS-over-HTTPS-t erre:{' '}
+      <b>{'https://dns.digitale-gesellschaft.ch/dns-query'}</b>. Titkosítatlan szolgáltatás az 53-as
+      porton szándékosan nincs.
+    </li>
+  </ol>
+</ToolCard>
